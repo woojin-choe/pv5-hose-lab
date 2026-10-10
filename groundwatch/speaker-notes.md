@@ -8,7 +8,7 @@
 출처: 국토교통부 정책브리핑 '땅꺼짐 사고 조사결과 발표'(2025.12.3) https://m.korea.kr/briefing/policyBriefingView.do?newsId=156732996
 최종보고서: https://www.molit.go.kr/USR/policyData/m_34681/dtl.jsp?id=4872
 
-표현 원칙: 희생자 이름, 얼굴, 구조 장면은 쓰지 않습니다. 특정 기관 책임을 단정하지 않습니다. 배경은 실제 사고 사진이 아닌 개념 일러스트입니다.
+표현 원칙: 희생자 이름, 얼굴, 구조 장면은 쓰지 않습니다. 특정 기관 책임을 단정하지 않습니다. 배경은 사고 현장이 아닌 해외 야간 도로 사진(PattayaPatrol, CC BY-SA 4.0)에 노면 아래 공동 단면을 합성한 개념 이미지입니다.
 
 ## 2장
 
@@ -25,6 +25,7 @@
 - 누적 33,129km, 공동 7,760개(2014~2025.9): 경향신문 2025.10.19 https://www.khan.co.kr/article/202510191122011
 - 2026년 16,423km, GPR 인력 9명→19명: 서울시 보도자료 https://www.seoul.go.kr/news/news_report.do?nttNo=454742 (언론에 나온 18,000km 계획과 차이가 있어 공식 발표 값을 씀)
 - 고주파 GPR 탐지 깊이 약 2m: https://www.safetimes.co.kr/news/articleView.html?idxno=231486
+사진: Ground Penetrating Radar in use, The Charles Machine Works, CC BY-SA 2.0, https://commons.wikimedia.org/wiki/File:Ground_Penetrating_Radar_in_use.jpg
 
 ## 4장
 
@@ -56,6 +57,7 @@ PV5를 센서를 실어 나르는 차가 아니라, 탐사하고 차 안에서 �
 [사실] PV5 카고 롱 카고룸 2,255×1,565×1,520mm(4,420L), 적재고 419mm, 실내·실외 V2L 220V(최대 3.6kW). https://www.kia.com/kr/vehicles/pv5-cargo/specification , https://www.hyundaimotorgroup.com/ko/story/CONT0000000000178473
 [설계 판단] PV5 하부는 배터리 팩이므로 GPR 안테나는 후방 오버행 하부에 다는 것을 기본안으로 하고, 배터리 케이스와 차체 금속의 간섭을 시험합니다.
 [실증 필요] 적재중량, 차량총중량, 전후축 하중, 전자파 간섭, 구조변경 승인.
+사진: Kia PV5 Cargo IMG 7825, Alexander Migl, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Kia_PV5_Cargo_IMG_7825.jpg
 
 ## 9장
 

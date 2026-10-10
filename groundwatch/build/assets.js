@@ -29,49 +29,67 @@ const COMMON_DEFS = `
   <linearGradient id="asph" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A3F48"/><stop offset="1" stop-color="#23272E"/></linearGradient>`;
 const svg = (w, h, body, defs = "") => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><defs>${COMMON_DEFS}${defs}</defs>${body}</svg>`;
 
-// PV5 카고 측면(오른쪽 진행). 로컬 0..400 x 0..185
+// PV5 카고 측면(오른쪽 진행). 실차 비례: 평평한 루프, 짧은 앞 오버행, 검은 글라스 밴드, ㄱ자 라이트, 각진 휠아치
+// 로컬 0..410 x 0..190, 바퀴 하단 y≈186
 function pv5Side(x, y, s, o = {}) {
   const night = !!o.night;
+  const body = night ? "url(#bodyNight)" : "url(#bodyDay)";
   let g = `<g transform="translate(${x},${y}) scale(${s})">`;
-  if (o.shadow !== false) g += `<ellipse cx="210" cy="183" rx="215" ry="10" fill="#000" opacity="${night ? 0.65 : 0.22}" filter="url(#b6)"/>`;
-  if (night) g += `<path d="M 396 106 L 640 70 L 640 170 L 396 128 Z" fill="url(#beam)" filter="url(#b6)"/>`;
+  if (o.shadow !== false) g += `<ellipse cx="212" cy="186" rx="210" ry="9" fill="#000" opacity="${night ? 0.65 : 0.22}" filter="url(#b6)"/>`;
+  if (night) g += `<path d="M 404 112 L 660 80 L 660 176 L 404 136 Z" fill="url(#beam)" filter="url(#b6)"/>`;
   if (o.gpr) {
-    g += `<rect x="8" y="148" width="6" height="22" fill="#2B3138"/><rect x="60" y="148" width="6" height="22" fill="#2B3138"/>`;
-    g += `<rect x="-14" y="166" width="98" height="11" rx="2" fill="#2B3138"/><rect x="-14" y="166" width="98" height="4" rx="2" fill="${C.amber}"/>`;
-    if (o.waves) for (let k = 1; k <= 4; k++) g += `<path d="M ${-20 - k * 12} ${184 + k * 9} Q 35 ${196 + k * 22} ${90 + k * 12} ${184 + k * 9}" fill="none" stroke="${C.amber}" stroke-width="1.6" opacity="${0.8 - k * 0.17}"/>`;
+    g += `<rect x="10" y="150" width="6" height="22" fill="#2B3138"/><rect x="58" y="150" width="6" height="22" fill="#2B3138"/>`;
+    g += `<rect x="-12" y="168" width="96" height="11" rx="2" fill="#2B3138"/><rect x="-12" y="168" width="96" height="4" rx="2" fill="#F5B400"/>`;
+    if (o.waves) for (let k = 1; k <= 4; k++) g += `<path d="M ${-18 - k * 12} ${186 + k * 9} Q 36 ${198 + k * 22} ${90 + k * 12} ${186 + k * 9}" fill="none" stroke="#F5B400" stroke-width="1.6" opacity="${0.8 - k * 0.17}"/>`;
   }
-  g += `<path d="M 18 142 L 18 46 Q 18 21 44 20 L 318 16 Q 334 16 340 28 L 376 90 Q 380 96 390 100 Q 399 104 399 118 L 399 142 Q 399 152 389 152 L 28 152 Q 18 152 18 142 Z" fill="${night ? "url(#bodyNight)" : "url(#bodyDay)"}"/>`;
-  g += `<path d="M 44 20 L 318 16 Q 334 16 340 28 L 342 31 L 44 25 Z" fill="#fff" opacity="${night ? 0.35 : 0.8}"/>`;
-  g += `<path d="M 330 26 L 340 28 L 376 91 L 364 92 Z" fill="url(#glass)"/>`;
-  g += `<path d="M 270 30 L 326 27 L 360 90 L 270 90 Z" fill="url(#glass)"/><path d="M 286 30 L 300 29 L 282 90 L 270 90 L 270 60 Z" fill="#fff" opacity=".08"/>`;
-  g += `<line x1="182" y1="30" x2="182" y2="128" stroke="#000" stroke-opacity=".14" stroke-width="1.2"/><line x1="266" y1="26" x2="266" y2="128" stroke="#000" stroke-opacity=".14" stroke-width="1.2"/>`;
-  g += `<rect x="236" y="74" width="14" height="3.5" rx="1.7" fill="#000" opacity=".25"/>`;
-  g += `<path d="M 18 124 L 399 124 L 399 142 Q 399 152 389 152 L 28 152 Q 18 152 18 142 Z" fill="url(#clad)"/>`;
-  g += `<rect x="18" y="36" width="4" height="80" rx="2" fill="${night ? "#FF4B4B" : "#B4232A"}"/>`;
-  if (night) g += `<rect x="6" y="40" width="22" height="72" rx="10" fill="#FF3B3B" opacity=".55" filter="url(#b6)"/>`;
-  g += `<rect x="378" y="58" width="4" height="36" rx="2" fill="${night ? "#FFF6DD" : "#E6EAF0"}"/>`;
-  if (night) g += `<ellipse cx="392" cy="100" rx="16" ry="22" fill="#FFF6DD" opacity=".6" filter="url(#b6)"/>`;
-  for (const cx of [86, 322]) {
-    g += `<path d="M ${cx - 38} 152 A 38 38 0 0 1 ${cx + 38} 152 Z" fill="#0E1116"/>`;
-    g += `<circle cx="${cx}" cy="152" r="30" fill="#14181E"/><circle cx="${cx}" cy="152" r="18" fill="url(#rim)"/><circle cx="${cx}" cy="152" r="5" fill="#2B3138"/>`;
+  // 차체 실루엣
+  g += `<path d="M 30 16 L 296 14 Q 312 14 320 24 L 372 82 Q 378 90 390 94 L 400 98 Q 408 102 408 114 L 408 156 Q 408 164 400 164 L 26 164 Q 16 164 16 154 L 16 30 Q 16 16 30 16 Z" fill="${body}"/>`;
+  // 검은 루프 + 글라스 밴드(윈드실드, 1열 창)
+  g += `<path d="M 30 16 L 296 14 Q 312 14 320 24 L 323 28 L 16 30 Q 16 16 30 16 Z" fill="#14181E"/>`;
+  g += `<path d="M 262 28 L 322 27 L 371 84 L 262 84 Z" fill="url(#glass)"/>`;
+  g += `<path d="M 300 28 L 314 28 L 290 84 L 276 84 Z" fill="#fff" opacity=".07"/>`;
+  g += `<path d="M 322 27 L 372 83 Q 377 89 388 93 L 384 96 Q 372 92 366 85 L 316 28 Z" fill="#0B1018"/>`;
+  g += `<path d="M 318 62 L 334 60 Q 338 60 338 64 L 338 72 Q 338 76 334 76 L 320 76 Z" fill="#0B1018"/>`;
+  // ㄱ자 라이트 바(앞 모서리)
+  g += `<path d="M 382 92 L 396 98 L 392 118" fill="none" stroke="${night ? "#FFF6DD" : "#F1F3F5"}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  if (night) g += `<ellipse cx="392" cy="106" rx="12" ry="18" fill="#FFF6DD" opacity=".55" filter="url(#b6)"/>`;
+  // 앞 하단 검은 범퍼
+  g += `<path d="M 404 124 L 408 124 L 408 156 Q 408 164 400 164 L 360 164 L 360 136 Q 380 132 404 124 Z" fill="#14181E"/>`;
+  // 슬라이딩 도어 라인, 손잡이, 캐릭터 라인
+  g += `<line x1="182" y1="32" x2="182" y2="134" stroke="#000" stroke-opacity=".16" stroke-width="1.2"/><line x1="262" y1="30" x2="262" y2="134" stroke="#000" stroke-opacity=".16" stroke-width="1.2"/>`;
+  g += `<rect x="236" y="92" width="14" height="3.5" rx="1.7" fill="#000" opacity=".3"/><rect x="164" y="92" width="12" height="3.5" rx="1.7" fill="#000" opacity=".3"/>`;
+  g += `<line x1="22" y1="86" x2="258" y2="86" stroke="#000" stroke-opacity=".07" stroke-width="1.2"/>`;
+  // 하단 클래딩 + 각진 휠아치
+  g += `<path d="M 16 134 L 360 134 L 360 164 L 26 164 Q 16 164 16 154 Z" fill="url(#clad)"/>`;
+  for (const cx of [84, 316]) {
+    g += `<path d="M ${cx - 46} 164 L ${cx - 46} 130 Q ${cx - 46} 112 ${cx - 28} 112 L ${cx + 28} 112 Q ${cx + 46} 112 ${cx + 46} 130 L ${cx + 46} 164 Z" fill="#1A1E25"/>`;
+    g += `<circle cx="${cx}" cy="156" r="32" fill="#0F1216"/>`;
+    g += `<circle cx="${cx}" cy="156" r="23" fill="${night ? "#3A424D" : "#5B636E"}"/>`;
+    g += `<path d="M ${cx - 16} ${156 - 16} L ${cx + 16} ${156 + 16} M ${cx + 16} ${156 - 16} L ${cx - 16} ${156 + 16}" stroke="${night ? "#6B7480" : "#8C949E"}" stroke-width="4" stroke-linecap="round"/>`;
+    g += `<circle cx="${cx}" cy="156" r="23" fill="none" stroke="#2A3038" stroke-width="2"/><circle cx="${cx}" cy="156" r="5" fill="#1A1E25"/>`;
   }
-  if (o.roof) g += `<rect x="54" y="13" width="22" height="7" rx="3" fill="#2B3138"/><ellipse cx="65" cy="12" rx="9" ry="4" fill="#E9EDF2"/><rect x="232" y="11" width="22" height="9" rx="3" fill="#2B3138"/><circle cx="249" cy="15.5" r="3" fill="#7CC4FF"/>`;
+  // 세로 리어램프
+  g += `<rect x="16" y="36" width="4" height="92" rx="2" fill="${night ? "#FF4B4B" : "#B4232A"}"/>`;
+  if (night) g += `<rect x="4" y="40" width="22" height="84" rx="10" fill="#FF3B3B" opacity=".55" filter="url(#b6)"/>`;
+  if (o.roof) g += `<rect x="52" y="8" width="22" height="7" rx="3" fill="#2B3138"/><ellipse cx="63" cy="7" rx="9" ry="4" fill="#E9EDF2"/><rect x="232" y="6" width="22" height="9" rx="3" fill="#2B3138"/><circle cx="249" cy="10.5" r="3" fill="#7CC4FF"/>`;
   if (o.beacon) {
-    g += `<rect x="134" y="12" width="50" height="6" rx="3" fill="${C.amber}"/>`;
-    if (night) g += `<ellipse cx="159" cy="14" rx="40" ry="12" fill="${C.amber}" opacity=".5" filter="url(#b6)"/>`;
+    g += `<rect x="134" y="8" width="50" height="6" rx="3" fill="#F5B400"/>`;
+    if (night) g += `<ellipse cx="159" cy="10" rx="40" ry="12" fill="#F5B400" opacity=".5" filter="url(#b6)"/>`;
   }
   return g + `</g>`;
 }
+// PV5 후면. 세로 리어램프, 검은 루프, 넓은 후면 유리. 로컬 0..200 x 0..190
 function pv5Rear(x, y, s) {
   let g = `<g transform="translate(${x},${y}) scale(${s})">`;
-  g += `<ellipse cx="100" cy="188" rx="110" ry="9" fill="#000" opacity=".6" filter="url(#b6)"/>`;
-  g += `<rect x="18" y="150" width="30" height="36" rx="6" fill="#111"/><rect x="152" y="150" width="30" height="36" rx="6" fill="#111"/>`;
-  g += `<path d="M 14 160 L 14 40 Q 14 18 38 16 L 162 16 Q 186 18 186 40 L 186 160 Z" fill="url(#bodyNight)"/>`;
-  g += `<path d="M 38 16 L 162 16 Q 186 18 186 30 L 14 30 Q 14 18 38 16 Z" fill="#fff" opacity=".25"/>`;
-  g += `<rect x="40" y="36" width="120" height="42" rx="6" fill="url(#glass)"/><line x1="100" y1="34" x2="100" y2="150" stroke="#000" stroke-opacity=".25" stroke-width="1.5"/>`;
-  for (const lx of [16, 177]) g += `<rect x="${lx}" y="28" width="7" height="100" rx="3" fill="#FF4B4B"/><rect x="${lx - 10}" y="30" width="27" height="96" rx="12" fill="#FF3B3B" opacity=".55" filter="url(#b6)"/>`;
-  g += `<rect x="14" y="146" width="172" height="20" rx="4" fill="url(#clad)"/><rect x="40" y="168" width="120" height="8" rx="2" fill="#2B3138"/><rect x="40" y="168" width="120" height="3" rx="1" fill="${C.amber}"/>`;
-  g += `<rect x="74" y="10" width="52" height="6" rx="3" fill="${C.amber}"/><ellipse cx="100" cy="12" rx="44" ry="11" fill="${C.amber}" opacity=".45" filter="url(#b6)"/>`;
+  g += `<ellipse cx="100" cy="188" rx="112" ry="9" fill="#000" opacity=".6" filter="url(#b6)"/>`;
+  g += `<rect x="16" y="150" width="32" height="36" rx="6" fill="#0F1216"/><rect x="152" y="150" width="32" height="36" rx="6" fill="#0F1216"/>`;
+  g += `<path d="M 12 162 L 12 30 Q 12 14 28 14 L 172 14 Q 188 14 188 30 L 188 162 Z" fill="url(#bodyNight)"/>`;
+  g += `<path d="M 28 14 L 172 14 Q 188 14 188 28 L 12 28 Q 12 14 28 14 Z" fill="#14181E"/>`;
+  g += `<rect x="34" y="36" width="132" height="50" rx="5" fill="url(#glass)"/><line x1="100" y1="30" x2="100" y2="146" stroke="#000" stroke-opacity=".25" stroke-width="1.5"/>`;
+  for (const lx of [14, 181]) g += `<rect x="${lx}" y="32" width="5" height="108" rx="2.5" fill="#FF4B4B"/><rect x="${lx - 10}" y="34" width="25" height="104" rx="11" fill="#FF3B3B" opacity=".55" filter="url(#b6)"/>`;
+  g += `<path d="M 12 140 L 188 140 L 188 166 L 12 166 Z" fill="url(#clad)"/>`;
+  g += `<rect x="40" y="168" width="120" height="8" rx="2" fill="#2B3138"/><rect x="40" y="168" width="120" height="3" rx="1" fill="#F5B400"/>`;
+  g += `<rect x="74" y="8" width="52" height="6" rx="3" fill="#F5B400"/><ellipse cx="100" cy="10" rx="44" ry="11" fill="#F5B400" opacity=".45" filter="url(#b6)"/>`;
   return g + `</g>`;
 }
 function worker(x, y, s) {
@@ -165,22 +183,87 @@ async function icon(name, Comp, color, size = 256) {
 }
 
 const jobs = {};
-jobs.cover = async () => {
-  const W = 1920, H = 1080;
-  const { g, d, hz } = nightCity(W, H, { horizon: 0.52 });
-  let b = g;
-  const top = hz + 150;
-  b += `<rect y="${top}" width="${W}" height="${H - top}" fill="#07090D"/><rect y="${top}" width="${W}" height="2" fill="#3A4350"/><rect y="${top + 2}" width="${W}" height="${H - top}" fill="url(#soil)" opacity=".25"/>`;
-  b += `<rect x="0" y="${top + 92}" width="${W}" height="28" fill="#1A1F27"/><rect x="0" y="${top + 92}" width="${W}" height="2" fill="#2E3540"/>`;
-  const cx = 1360, cy = top + 70;
-  b += `<ellipse cx="${cx}" cy="${cy}" rx="190" ry="58" fill="${C.amber}" opacity=".12" filter="url(#b30)"/>`;
-  [[70, 22, 0.35], [120, 38, 0.55], [178, 56, 0.9]].forEach(([rx, ry, op], k) => (b += `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="${C.amber}" stroke-width="${1.2 + k * 0.6}" stroke-dasharray="${k === 2 ? "0" : "6 7"}" opacity="${op}"/>`));
-  b += `<ellipse cx="${cx}" cy="${cy}" rx="150" ry="44" fill="#000" opacity=".65" filter="url(#b6)"/>`;
-  for (let k = 0; k < 7; k++) b += `<path d="M ${cx - 70 + k * 22} ${top + 120} q 4 8 0 11 q -4 -3 0 -11 z" fill="#6CB4FF" opacity=".55"/>`;
-  const dd = d + `<linearGradient id="shadeL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#050A14" stop-opacity=".92"/><stop offset=".45" stop-color="#050A14" stop-opacity=".7"/><stop offset=".75" stop-color="#050A14" stop-opacity="0"/></linearGradient>`;
-  b += `<rect width="${W}" height="${H}" fill="url(#shadeL)"/>`;
-  return save("cover", W, H, b, dd);
+// 실사 사진 합성: 크롭 + 텍스트 가독성용 그라데이션
+const PH = path.join(OUT, "photos");
+async function photo(name, src, w, h, o = {}) {
+  let img = sharp(path.join(PH, src + ".jpg")).resize(w, h, { fit: "cover", position: o.pos || "centre" });
+  if (o.gray) img = img.grayscale();
+  if (o.tint) img = img.tint(o.tint);
+  if (o.mod) img = img.modulate(o.mod);
+  const layers = [];
+  const g = o.grad;
+  if (g) {
+    let stops = "";
+    if (g === "left") stops = `<linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#050A14" stop-opacity="${o.a || 0.9}"/><stop offset="${o.mid || 0.45}" stop-color="#050A14" stop-opacity="${(o.a || 0.9) * 0.75}"/><stop offset="${o.end || 0.75}" stop-color="#050A14" stop-opacity="0"/></linearGradient>`;
+    if (g === "top") stops = `<linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050A14" stop-opacity="${o.a || 0.85}"/><stop offset=".55" stop-color="#050A14" stop-opacity="${(o.a || 0.85) * 0.5}"/><stop offset="1" stop-color="#050A14" stop-opacity="${o.b || 0.25}"/></linearGradient>`;
+    if (g === "flat") stops = `<linearGradient id="g"><stop offset="0" stop-color="#050A14" stop-opacity="${o.a || 0.4}"/><stop offset="1" stop-color="#050A14" stop-opacity="${o.a || 0.4}"/></linearGradient>`;
+    layers.push({ input: Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><defs>${stops}</defs><rect width="${w}" height="${h}" fill="url(#g)"/></svg>`) });
+  }
+  if (o.overlay) layers.push({ input: Buffer.from(svg(w, h, o.overlay, o.defs || "")) });
+  if (layers.length) img = sharp(await img.png().toBuffer()).composite(layers);
+  await img.jpeg({ quality: 88 }).toFile(path.join(OUT, name + ".jpg"));
+}
+
+// ---- 실사 위 편집 ----
+const AMB = "#F5B400", GRN = "#5AD27A";
+const hud = (x, y, w, h) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14" fill="#07101E" opacity=".8"/><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14" fill="none" stroke="#7CC4FF" stroke-opacity=".55" stroke-width="1.5"/>`;
+const warn = (W, H) => `<rect x="220" y="${H - 64}" width="${W - 440}" height="42" rx="8" fill="#3A1216" opacity=".92"/>` + T(W / 2, H - 36, 19, "GPR 기반 추정 위치입니다. 굴착 전 정밀조사와 관계기관 승인이 필요합니다.", { a: "middle", c: "#FFC9C9", w: 600 });
+const bracket = (x, y, w, h, label, col = GRN) => { const L = 24; return `<path d="M ${x} ${y + L} V ${y} H ${x + L} M ${x + w - L} ${y} H ${x + w} V ${y + L} M ${x + w} ${y + h - L} V ${y + h} H ${x + w - L} M ${x + L} ${y + h} H ${x} V ${y + h - L}" stroke="${col}" stroke-width="4" fill="none"/><rect x="${x}" y="${y - 36}" width="${label.length * 19 + 26}" height="30" rx="4" fill="${col}"/>` + T(x + 12, y - 15, 18, label, { w: 700, c: "#06120A" }); };
+jobs.photoEdits = async () => {
+  // 표지: 실제 야간 도로 + 노면 아래 단면
+  const W = 1920, H = 1080, top = 835;
+  let ov = `<rect y="${top}" width="${W}" height="${H - top}" fill="#0B0D11"/>`;
+  ov += `<rect y="${top}" width="${W}" height="20" fill="#2A2E35"/><rect y="${top + 20}" width="${W}" height="38" fill="#7D6E5E"/><rect y="${top + 58}" width="${W}" height="${H - top - 58}" fill="url(#soil)" opacity=".9"/>`;
+  ov += `<rect y="${top}" width="${W}" height="2.5" fill="#D9DEE5" opacity=".85"/>`;
+  for (let i = 0; i < 110; i++) ov += `<circle cx="${(i * 137) % W}" cy="${top + 64 + ((i * 53) % (H - top - 70))}" r="${1 + (i % 3) * 0.7}" fill="#241B14" opacity=".5"/>`;
+  ov += `<rect y="${top + 108}" width="${W}" height="34" fill="#3B4048"/><rect y="${top + 108}" width="${W}" height="3" fill="#5C636D"/>`;
+  ov += T(1880, top + 132, 18, "노후 하수관", { c: "#C9D0D9", w: 600, a: "end" });
+  for (let k = 0; k < 8; k++) ov += `<path d="M ${1150 + k * 24} ${top + 146} q 5 9 0 13 q -5 -4 0 -13 z" fill="#7CC4FF" opacity=".75"/>`;
+  const cx = 1330, cy = top + 185;
+  ov += `<ellipse cx="${cx}" cy="${cy}" rx="260" ry="70" fill="${AMB}" opacity=".16" filter="url(#b30)"/>`;
+  ov += `<path d="M ${cx - 190} ${cy} C ${cx - 170} ${cy - 62}, ${cx + 150} ${cy - 70}, ${cx + 200} ${cy - 6} C ${cx + 170} ${cy + 46}, ${cx - 140} ${cy + 52}, ${cx - 190} ${cy} Z" fill="#050608"/>`;
+  [[120, 30, 0.45], [190, 46, 0.7], [255, 62, 0.95]].forEach(([rx, ry, op], k) => (ov += `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="${AMB}" stroke-width="${1.6 + k * 0.6}" stroke-dasharray="${k === 2 ? "0" : "8 7"}" opacity="${op}"/>`));
+  ov += `<line x1="${cx}" y1="${top}" x2="${cx}" y2="${cy - 60}" stroke="${AMB}" stroke-width="2" stroke-dasharray="6 6" opacity=".8"/>`;
+  ov += T(cx + 20, top + 80, 22, "커지는 빈 공간", { c: "#FFE7A3", w: 700 });
+  await photo("ph_cover", "night_street_empty", W, H, { pos: "north", grad: "left", a: 0.88, mid: 0.38, end: 0.66, overlay: ov });
+
+  // 7장: 새벽 골목 노면 위 GPR 스캔 구간
+  let sw = `<path d="M 915 470 L 1072 470 L 1112 650 L 880 650 Z" fill="${AMB}" fill-opacity=".22" stroke="${AMB}" stroke-width="3"/>`;
+  for (let k = 1; k < 6; k++) { const t = k / 6, y = 470 + t * 180, xl = 915 - t * 35, xr = 1072 + t * 40; sw += `<line x1="${xl}" y1="${y}" x2="${xr}" y2="${y}" stroke="${AMB}" stroke-width="1.5" opacity=".6"/>`; }
+  sw += `<rect x="1130" y="430" width="230" height="40" rx="6" fill="${AMB}"/>` + T(1146, 458, 22, "GPR 스캔 구간", { w: 700, c: "#1A1300" });
+  await photo("ph_dawn", "seoul_hapjeong", W, H, { pos: "centre", gray: true, tint: { r: 70, g: 105, b: 160 }, mod: { brightness: 0.62 }, grad: "left", a: 0.9, mid: 0.38, end: 0.62, overlay: sw });
+
+  // 14·15장: 실제 야간 도로 위 AR 화면
+  const AW = 1700, AH = 900;
+  let c1 = bracket(360, 600, 180, 72, "배수구 덮개") + bracket(470, 690, 120, 200, "경계석") + bracket(560, 560, 70, 300, "차선 모서리");
+  c1 += `<circle cx="450" cy="636" r="7" fill="${GRN}"/><polyline points="450,636 530,780 595,700" fill="none" stroke="${GRN}" stroke-width="2.5" stroke-dasharray="8 6"/>`;
+  c1 += hud(40, 40, 460, 170) + T(68, 92, 26, "위치 보정", { w: 700, c: "#fff" }) + T(68, 136, 21, "기준점 3개 + RTK 결합", { c: "#A9D3FF" }) + T(68, 178, 22, "위치 오차 ±[실증 필요]", { w: 700, c: GRN });
+  c1 += hud(AW - 500, 40, 460, 64) + T(AW - 474, 82, 21, "정차 확인됨 · 작업 모드", { c: "#fff" }) + warn(AW, AH);
+  await photo("ar_calib", "night_street_empty", AW, AH, { pos: "centre", overlay: c1 });
+  let c2 = `<path d="M 610 620 L 860 620 L 1280 860 L 600 860 Z" fill="${AMB}" fill-opacity=".2" stroke="${AMB}" stroke-width="4"/>`;
+  for (let k = 1; k < 5; k++) { const t = k / 5, y = 620 + t * 240; c2 += `<line x1="${610 - t * 10}" y1="${y}" x2="${860 + t * 420}" y2="${y}" stroke="${AMB}" stroke-width="1.5" opacity=".55"/>`; }
+  for (let k = 0; k < 4; k++) { const x0 = 650 + k * 60, x1 = 640 + k * 160; c2 += `<path d="M ${x0} 640 L ${x1} 830" stroke="#7CC4FF" stroke-width="4" stroke-dasharray="12 9"/><path d="M ${x1 - 11} 822 L ${x1 + 11} 822 L ${x1} 852 Z" fill="#7CC4FF"/>`; }
+  c2 += `<circle cx="650" cy="640" r="11" fill="${GRN}"/><rect x="1100" y="810" width="22" height="22" rx="3" fill="#D93025"/>`;
+  c2 += hud(40, 40, 460, 210) + T(68, 92, 26, "재탐사 3 / 4회", { w: 700, c: "#fff" }) + T(68, 134, 21, "추정 깊이 0.9–1.3 m", { c: "#A9D3FF" }) + T(68, 172, 21, "이전 대비 +17%", { c: AMB }) + T(68, 210, 21, "AI 신뢰도 84%", { c: "#A9D3FF" });
+  c2 += hud(AW - 500, 40, 460, 64) + T(AW - 474, 82, 21, "음성 “이상 위치 표시”", { c: "#fff" }) + warn(AW, AH);
+  await photo("ar_scan", "night_street_empty", AW, AH, { pos: "centre", overlay: c2 });
+
+  // 4장·17장 실사
+  await photo("ph_crack", "sinkhole_driveway", 1200, 900, { pos: "centre" });
+  await photo("ph_patched", "sinkhole_patched", 1200, 900, { pos: "centre" });
 };
+jobs.photos = async () => {
+  await photo("ph_road", "seoul_traffic_3", 1600, 900, { pos: "centre" });
+  await photo("ph_closing", "seoul_traffic_1", 1920, 1080, { pos: "south", grad: "top", a: 0.93, b: 0.55, mod: { brightness: 0.8, saturation: 0.8 } });
+  await photo("ph_pv5", "pv5_cargo_c", 1920, 1278, { pos: "centre" });
+  await photo("ph_pv5_169", "pv5_cargo_c", 1600, 900, { pos: "centre" });
+  await photo("ph_pv5_ov", "pv5_cargo_c", 1200, 840, { pos: "centre" });
+  await photo("ph_pv5_rear", "pv5_cargo_d", 1600, 900, { pos: "centre" });
+  await photo("ph_gpr_cart", "gpr_in_use", 1400, 1050, { pos: "centre" });
+  await photo("ph_alley", "seoul_hapjeong", 1600, 900, { pos: "centre", gray: true, tint: { r: 70, g: 105, b: 160 }, mod: { brightness: 0.7 } });
+};
+
+// (preview removed)
 jobs.mechanism = async () => {
   const W = 1600, H = 820;
   let b = `<rect width="${W}" height="${H}" fill="#EEF2F7"/>` + groundSection(0, 110, W, 710);
@@ -351,8 +434,8 @@ function arPov(mode) {
   b += `<rect x="220" y="${H - 66}" width="${W - 440}" height="42" rx="8" fill="#3A1216" opacity=".92"/>` + T(W / 2, H - 38, 19, "GPR 기반 추정 위치입니다. 굴착 전 정밀조사와 관계기관 승인이 필요합니다.", { a: "middle", c: "#FFC9C9", w: 600 });
   return { W, H, b, d };
 }
-jobs.arCalib = async () => { const s = arPov("calib"); return save("ar_calib", s.W, s.H, s.b, s.d); };
-jobs.arScan = async () => { const s = arPov("scan"); return save("ar_scan", s.W, s.H, s.b, s.d); };
+
+
 jobs.crossCheck = async () => {
   const W = 1600, H = 720;
   let b = `<rect width="${W}" height="${H}" fill="#fff"/><rect x="0" y="40" width="${W}" height="640" rx="12" fill="url(#asph)"/>`;
@@ -379,7 +462,7 @@ jobs.fleet = async () => {
   [[30, "A 권역", "#4E8FD9"], [550, "B 권역", "#3BA55C"], [1070, "C 권역", "#F08C00"]].forEach(([x, t, col]) => {
     b += `<rect x="${x}" y="30" width="500" height="430" rx="12" fill="#132238"/>` + T(x + 24, 76, 26, t, { w: 700, c: col });
     for (let k = 0; k < 5; k++) b += `<line x1="${x + 30}" y1="${120 + k * 60}" x2="${x + 470}" y2="${120 + k * 60}" stroke="#1D2E48" stroke-width="3"/>`;
-    b += `<polyline points="${x + 60},420 ${x + 60},180 ${x + 300},180 ${x + 300},300 ${x + 440},300" fill="none" stroke="${col}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>` + pv5Side(x + 150, 250, 0.42, { night: true, beacon: true, shadow: false });
+    b += `<polyline points="${x + 60},420 ${x + 60},180 ${x + 300},180 ${x + 300},300 ${x + 440},300" fill="none" stroke="${col}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>` + `<circle cx="${x + 300}" cy="240" r="26" fill="${col}" opacity=".25"/><circle cx="${x + 300}" cy="240" r="13" fill="${col}" stroke="#fff" stroke-width="4"/>`;
   });
   b += `<rect x="30" y="490" width="1540" height="360" rx="12" fill="#132238"/>` + T(60, 542, 24, "차량별 현황 [예시]", { w: 700, c: "#fff" });
   ["차량", "권역", "순찰거리", "재확인", "배터리"].forEach((h, i) => (b += T(60 + i * 300, 600, 20, h, { c: "#7D8BA0", w: 600 })));

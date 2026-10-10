@@ -9,7 +9,7 @@
 | `PV5_GroundWatch.pptx` | 편집 가능한 27장 제안서, 장마다 발표자 노트와 출처 포함 |
 | `PV5_GroundWatch.pdf` | 제출·공유용 PDF (PowerPoint로 내보냄, 글꼴 포함) |
 | `renders/slide-01.png` … `slide-27.png` | 27장 전체 렌더링 이미지 |
-| `images/` | 슬라이드에 쓴 일러스트·목업·아이콘 원본 PNG |
+| `images/` | 슬라이드에 쓴 실사 합성·목업·아이콘 원본, `images/photos/`에 원본 사진과 `CREDITS.md` |
 | `speaker-notes.md` | 발표자 노트 전체(출처 링크 포함) |
 | `fonts/` | Pretendard(SIL OFL 1.1). PPTX를 편집할 PC에 설치하면 렌더와 같은 모양으로 보입니다 |
 
