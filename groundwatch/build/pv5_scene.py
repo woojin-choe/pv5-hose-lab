@@ -9,7 +9,8 @@ bpy.ops.wm.read_factory_settings(use_empty=True)
 sc = bpy.context.scene
 mm = lambda v: v / 1000.0
 NIGHT = VIEW == "night"
-SHELL = VIEW in ("interior", "cutaway")
+SHELL = VIEW in ("interior", "cutaway", "interior_side")
+CUTV = VIEW in ("cutaway", "interior_side")
 W = 947.5
 
 def mat(name, col, rough=0.4, metal=0.0, emit=None, strength=0.0, coat=0.0):
@@ -87,13 +88,13 @@ if not SHELL:
 else:
     prism("wall_far", cargo, W - 30, W, PAINT, 0.012)
     near = prism("wall_near", cargo, -W, -W + 30, PAINT, 0.012)
-    if VIEW == "cutaway":
+    if CUTV:
         c = box("cut", 1300, -W, 1290, 2160, 200, 1120, INNER, 0); c.hide_render = True
         bo = near.modifiers.new("cut", "BOOLEAN"); bo.object = c; bo.operation = "DIFFERENCE"
     else:
         box("roof", 1215, 0, 1890, 2430, 1895, 30, PAINT, 0.012)
     box("sill", 1215, 0, 365, 2430, 1895, 130, CLAD, 0.01)
-    for yy in ((1,) if VIEW == "cutaway" else (-1, 1)): box("liner", 1215, yy * (W - 45), 1150, 2380, 10, 1400, INNER, 0)
+    for yy in ((1,) if CUTV else (-1, 1)): box("liner", 1215, yy * (W - 45), 1150, 2380, 10, 1400, INNER, 0)
     box("bulkhead", 2415, 0, 1110, 30, 1830, 1400, INNER, 0)
     if False:
         for s_ in (-1, 1):   # 열린 뒷문(경첩 기준 약 100도)
@@ -172,7 +173,7 @@ for s_ in (-1, 1):
     box("stripe_amber", 1700, y, 920, 3250, 3, 18, AMB2, 0)
     rz = 0 if s_ < 0 else math.pi
     xx = 330 if s_ < 0 else 2230
-    if VIEW == "cutaway" and s_ < 0: continue
+    if CUTV and s_ < 0: continue
     text("wm", "GroundWatch", xx, y + s_ * 1, 1430, 230, NAVY, rotz=rz)
     text("wm2", "지하안전 순찰 · GPR 탐사", xx + (0 if s_ < 0 else 0), y + s_ * 1, 1280, 105, mat("sub", (0.15, 0.17, 0.2), 0.4), rotz=rz)
 text("rear_wm", "GroundWatch", -2, 0, 1500, 130, NAVY, rotz=-math.pi / 2, align="CENTER") if not SHELL else None
@@ -264,9 +265,11 @@ V = {
   "rear": ((-4.4, -5.0, 1.25), (1.2, 0, 0.75), 40),
   "interior": ((-2.1, -0.15, 1.3), (1.6, 0.05, 0.95), 24),
   "cutaway": ((4.3, -6.2, 6.2), (1.7, 0.1, 0.7), 50),
+  "interior_side": ((1.25, -3.1, 1.3), (1.25, 0.7, 1.0), 20),
+  "gpr": ((-1.9, -1.7, 0.45), (0.2, 0.0, 0.18), 45),
 }[VIEW]
 co.location = V[0]; cam.lens = V[2]; co.rotation_euler = (Vector(V[1]) - Vector(V[0])).to_track_quat("-Z", "Y").to_euler()
-cam.dof.use_dof = VIEW in ("front", "night", "rear"); cam.dof.focus_distance = (Vector(V[1]) - Vector(V[0])).length; cam.dof.aperture_fstop = 4.0
+cam.dof.use_dof = VIEW in ("front", "night", "rear", "gpr"); cam.dof.focus_distance = (Vector(V[1]) - Vector(V[0])).length; cam.dof.aperture_fstop = 4.0
 # ---------------- 렌더 ----------------
 sc.render.engine = "CYCLES"
 try:

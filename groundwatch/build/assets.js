@@ -276,7 +276,10 @@ function camPod(x, y, w, h) {
   return shadow(x + w / 2, y + h + 2, w * 0.6, 4, 0.45) + `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${h * 0.3}" fill="url(#blk)"/><rect x="${x + 3}" y="${y + 2}" width="${w - 6}" height="2" rx="1" fill="#FFFFFF" opacity=".25"/><circle cx="${x + w / 2}" cy="${y + h / 2 + 1}" r="${h * 0.3}" fill="url(#lensG)"/>`;
 }
 function equipFront() {
-  return camPod(566, 198, 72, 20) + beacon(1048, 184, 184, false) + dome(1560, 222, 26) + camPod(1086, 398, 38, 22) ;
+  const rack = `<polygon points="640,214 1640,198 1652,206 652,224" fill="url(#blk)"/><polygon points="620,236 1610,222 1620,230 630,246" fill="url(#blk)" opacity=".9"/>` +
+    [700, 1000, 1300, 1580].map((x) => `<rect x="${x}" y="${206 - (x - 640) * 0.016}" width="10" height="34" fill="url(#blk)"/>`).join("");
+  const mast = `<rect x="1706" y="120" width="10" height="100" fill="url(#blk)"/><circle cx="1711" cy="112" r="20" fill="url(#lensG)"/><rect x="1693" y="104" width="36" height="12" rx="4" fill="url(#blk)"/>`;
+  return rack + mast + camPod(566, 198, 72, 20) + beacon(1048, 184, 184, false) + dome(1560, 222, 26) + camPod(1086, 398, 38, 22) ;
 }
 function glowFront() {
   return `<ellipse cx="1140" cy="192" rx="190" ry="54" fill="#F5B400" opacity=".5" filter="url(#b30)"/><ellipse cx="1140" cy="192" rx="96" ry="14" fill="#FFD25A" opacity=".85" filter="url(#b6)"/>` + beacon(1048, 184, 184, true) +
@@ -284,10 +287,6 @@ function glowFront() {
 }
 function equipRear() {
   let g = beacon(988, 120, 184, false) + dome(1450, 164, 24) + camPod(300, 142, 72, 20);
-  for (const bx of [220, 500, 780]) g += `<rect x="${bx}" y="1060" width="12" height="32" fill="url(#blk)"/>`;
-  g += shadow(505, 1140, 400, 16, 0.55);
-  g += `<rect x="148" y="1086" width="716" height="40" rx="8" fill="url(#blk)"/>`;
-  
   return g;
 }
 function glowRear() {

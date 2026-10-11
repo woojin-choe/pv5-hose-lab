@@ -114,7 +114,7 @@ async function build() {
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "문제" });
   s.background = { color: K.white };
   s.addShape(pres.ShapeType.rect, { x: 6.9, y: 0, w: 6.433, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "g_night", 6.9, 1.2, 6.433, 5.1);
+  img(s, "f_front_n", 6.9, 1.2, 6.433, 5.1);
   s.addText("제5회 기아 PBV 아이디어 공모전  |  일반 부문 제안서", { x: M, y: 0.7, w: 6, h: 0.3, fontSize: 11, color: K.steel, margin: 0, isTextBox: true });
   s.addText("PV5 GroundWatch", { x: M, y: 1.35, w: 6.1, h: 0.8, fontFace: HF, fontSize: 38, bold: true, color: K.navy, margin: 0, isTextBox: true });
   s.addText("반복 관측 기반 도심 지하공동 변화 감지 순찰체계", { x: M, y: 2.2, w: 6.1, h: 0.45, fontFace: HF, fontSize: 18, color: K.ink, margin: 0, isTextBox: true });
@@ -186,7 +186,7 @@ async function build() {
   // ===== 5. 솔루션 개요 =====
   s = slideC("같은 길을 반복해서 보고, 달라진 곳만 다시 확인한다", "솔루션 개요", K.amber, "문제");
   lead(s, "순찰, 비교, 현장 재확인이 한 바퀴를 돌 때마다 같은 도로의 기록이 한 겹씩 쌓입니다.");
-  img(s, "g_front", M, 1.75, 4.1, 2.85, { stretch: true });
+  img(s, "f_front", M, 1.75, 4.1, 2.85, { stretch: true });
   block(s, M, 4.75, 4.1, "1  새벽 순찰", "같은 경로를 같은 장비로 반복 주행하며 GPR과 영상을 수집합니다.", { h: 0.8 });
   arrowLine(s, 4.85, 3.17, 5.35, 3.17);
   panel(s, 5.45, 1.75, 3.5, 2.85, K.night);
@@ -213,7 +213,7 @@ async function build() {
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "운영 모델" });
   s.background = { color: K.white };
   s.addShape(pres.ShapeType.rect, { x: 7.4, y: 0, w: 5.933, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "g_interior", 7.4, 1.2, 5.933, 5.1);
+  img(s, "f_int", 7.4, 1.2, 5.933, 5.1);
   s.addText("Ⅱ", { x: M, y: 1.2, w: 3, h: 1.0, fontFace: HF, fontSize: 54, bold: true, color: K.navy, margin: 0, isTextBox: true });
   s.addText("지금 바로 적용 가능한 운영 모델", { x: M, y: 2.25, w: 6.4, h: 0.6, fontFace: HF, fontSize: 26, bold: true, color: K.ink, margin: 0, isTextBox: true });
   s.addShape(pres.ShapeType.line, { x: M, y: 3.05, w: 6.2, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
@@ -223,7 +223,7 @@ async function build() {
   // ===== 7. #1 새벽 순찰 =====
   s = slideC("교통량이 적은 시간에 도로 아래 변화를 기록합니다", "#1 새벽 순찰", K.amber, "운영 모델");
   s.addShape(pres.ShapeType.rect, { x: M, y: 1.15, w: 4.5, h: 5.6, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "g_rear", 5.25, 1.15, 7.48, 4.2, { stretch: true, cap: "후방 하부 다채널 GPR 어레이와 루프 장비 장착 예상도" });
+  img(s, "f_rear_n", 5.25, 1.15, 7.48, 4.99, { stretch: true, cap: "새벽 순찰 장착 예상도(루프 랙·경광등·GNSS 안테나)" });
   s.addText("보이지 않는 위험은,\n반복해서 봐야 보입니다.", { x: M + 0.1, y: 1.55, w: 4.3, h: 1.3, fontSize: 30, bold: true, color: K.white, margin: 0, valign: "top", isTextBox: true });
   [["moon_w", "차량과 보행이 가장 적은 새벽에 반복 주행"], ["car_w", "엔진 소음과 배기가스 없이 주택가 저속 운행"], ["route_w", "같은 경로, 같은 장비로 회차끼리 비교"], ["radar_w", "후방 하부 GPR 어레이로 차로를 연속 스캔"]].forEach(([ic, t], i) => {
     ico(s, ic, M + 0.1, 3.3 + i * 0.62, 0.34);
@@ -236,11 +236,12 @@ async function build() {
   // ===== 8. #2 이동형 탐사실 =====
   s = slideC("PV5는 센서 운반차가 아니라 이동형 탐사·분석·검증 플랫폼", "#2 이동형 탐사실", K.amber, "운영 모델");
   lead(s, "장비를 차량에 고정해 회차마다 같은 측정 환경을 유지하고, 차 안에서 분석하고, 내려서 검증합니다.");
-  const cw = img(s, "g_cutaway", M, 1.6, 7.55, 4.247, { stretch: true, cap: "PV5 GroundWatch 카고룸 장비 배치 3D 절개도(제안 예시)" });
-  // 렌더 좌표(1920x1080) 기준 번호 표시
-  const PIN = [["1", 1460, 340, "전방 카메라"], ["2", 1300, 280, "경광등"], ["3", 1120, 145, "RTK-GNSS 안테나"], ["4", 560, 75, "360° 카메라 마스트"], ["5", 1080, 340, "Edge Gateway 랙"], ["6", 880, 560, "수동 GPR 카트"], ["7", 1010, 185, "AR 글래스 충전함"], ["8", 760, 300, "장비 수납장"], ["9", 420, 730, "후방 하부 다채널 GPR"], ["10", 570, 775, "휠 인코더"]];
-  PIN.forEach(([n, px, py]) => { const x = cw.x + (px / 1920) * cw.w, y = cw.y + (py / 1080) * cw.h; s.addText(n, { shape: pres.ShapeType.ellipse, x: x - 0.15, y: y - 0.15, w: 0.3, h: 0.3, fill: { color: K.navy }, line: { color: K.white, width: 1.5 }, fontSize: 10, bold: true, color: K.white, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "pin" }); });
-  PIN.forEach(([n, , , t2], i) => { const x = M + (i % 5) * 1.51, y = 6.18 + Math.floor(i / 5) * 0.25; s.addText([{ text: n + " ", options: { bold: true, color: K.navy } }, { text: t2, options: { color: K.ink } }], { x, y, w: 1.5, h: 0.24, fontSize: 9.5, margin: 0, valign: "middle", isTextBox: true }); });
+  const cw = img(s, "f_int", M, 1.6, 5.4, 3.04, { stretch: true, cap: "카고룸 탑재 예상도(뒷문 개방)" });
+  const gp = img(s, "f_gpr", M + 5.55, 1.6, 2.05, 3.04, { stretch: true, cap: "후방 하부 다채널 GPR" });
+  const PIN = [["1", 0.418, 0.32, "Edge Gateway·엣지 AI 랙"], ["2", 0.54, 0.42, "작업대·모니터"], ["3", 0.463, 0.64, "수동 GPR 카트(고정)"], ["4", 0.3, 0.27, "장비 수납장"], ["5", 0.65, 0.62, "라바콘·안전장비"], ["6", 0.495, 0.11, "작업 조명"]];
+  PIN.forEach(([n, fx, fy]) => { const x = cw.x + fx * cw.w, y = cw.y + fy * cw.h; s.addText(n, { shape: pres.ShapeType.ellipse, x: x - 0.14, y: y - 0.14, w: 0.28, h: 0.28, fill: { color: K.navy }, line: { color: K.white, width: 1.5 }, fontSize: 10, bold: true, color: K.white, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "pin" }); });
+  s.addText("7", { shape: pres.ShapeType.ellipse, x: gp.x + gp.w * 0.5 - 0.14, y: gp.y + gp.h * 0.62 - 0.14, w: 0.28, h: 0.28, fill: { color: K.navy }, line: { color: K.white, width: 1.5 }, fontSize: 10, bold: true, color: K.white, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "pin" });
+  [...PIN, ["7", 0, 0, "후방 하부 다채널 GPR"], ["8", 0, 0, "루프 경광등·GNSS"]].forEach(([n, , , t2], i) => { const x = M + (i % 4) * 1.9, y = 5.0 + Math.floor(i / 4) * 0.27; s.addText([{ text: n + " ", options: { bold: true, color: K.navy } }, { text: t2, options: { color: K.ink } }], { x, y, w: 1.88, h: 0.26, fontSize: 10, margin: 0, valign: "middle", isTextBox: true }); });
   [["외부", "후방 하부 다채널 GPR, 전방·좌우·후방 카메라, RTK-GNSS, IMU, 휠 인코더, 거리 센서, 노면 조명과 경광장치", K.ink], ["화물실 전방", "Edge Gateway, 산업용 엣지 AI 컴퓨터, GPR 제어장치, 저장장치, 보안 네트워크, RTK 수신, 전원 분배", K.blue], ["화물실 측면", "지면 밀착형 수동 GPR, AR 글래스와 충전 보관함, RTK 이동국, 현장 기준 마커, 교체형 안테나", K.navy], ["화물실 후방", "관로 내시경, 작업 조명, 안전 표지판, 라바콘, 반사조끼, 개인보호장비, 세척·점검 도구", "B4232A"]].forEach(([t, b, c], i) => {
     const y = 1.65 + i * 0.8;
     s.addShape(pres.ShapeType.ellipse, { x: 8.45, y: y + 0.09, w: 0.15, h: 0.15, fill: { color: c }, line: { color: c }, objectName: "dot" });
@@ -406,7 +407,7 @@ async function build() {
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "확장" });
   s.background = { color: K.white };
   s.addShape(pres.ShapeType.rect, { x: 7.4, y: 0, w: 5.933, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "g_front", 7.4, 1.2, 5.933, 5.1);
+  img(s, "f_rear", 7.4, 1.2, 5.933, 5.1);
   s.addText("Ⅲ", { x: M, y: 1.2, w: 3, h: 1.0, fontFace: HF, fontSize: 54, bold: true, color: K.navy, margin: 0, isTextBox: true });
   s.addText("도시 지하 안전망으로의 확장", { x: M, y: 2.25, w: 6.4, h: 0.6, fontFace: HF, fontSize: 26, bold: true, color: K.ink, margin: 0, isTextBox: true });
   s.addShape(pres.ShapeType.line, { x: M, y: 3.05, w: 6.2, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
@@ -466,7 +467,7 @@ async function build() {
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "확장" });
   s.background = { color: K.white };
   s.addShape(pres.ShapeType.rect, { x: 6.9, y: 0, w: 6.433, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "g_rear", 6.9, 1.2, 6.433, 5.1);
+  img(s, "f_front2", 6.9, 1.2, 6.433, 5.1);
   s.addText("맺음말", { x: M, y: 0.7, w: 6, h: 0.3, fontSize: 11, color: K.steel, margin: 0, isTextBox: true });
   s.addText("한 번의 조기 발견이,\n한 사람의 무사 귀가가 되도록.", { x: M, y: 1.25, w: 6.1, h: 1.3, fontFace: HF, fontSize: 26, bold: true, color: K.navy, margin: 0, valign: "top", isTextBox: true });
   s.addShape(pres.ShapeType.line, { x: M, y: 2.85, w: 5.9, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
