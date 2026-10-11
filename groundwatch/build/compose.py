@@ -81,6 +81,6 @@ rear_liv = [
     (band_art(1600, 60), [(112, 844), (892, 844), (892, 876), (112, 876)]),
     (sign_art(460, 84, "저속 탐사 차량"), [(522, 734), (750, 734), (750, 778), (522, 778)]),
 ]
-build("gw_front", "pv5_cargo_c.jpg", front_liv, "eq_front.png", "eq_front_glow.png", 120)
-build("gw_rear", "pv5_cargo_d.jpg", rear_liv, "eq_rear.png", "eq_rear_glow.png", 190)
-print("composed")
+if __name__ == "__main__": build("gw_front", "pv5_cargo_c.jpg", front_liv, "eq_front.png", "eq_front_glow.png", 120)
+if __name__ == "__main__": build("gw_rear", "pv5_cargo_d.jpg", rear_liv, "eq_rear.png", "eq_rear_glow.png", 190)
+if __name__ == "__main__": print("composed")

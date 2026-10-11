@@ -281,8 +281,7 @@ function equipFront() {
 }
 function glowFront() {
   return `<ellipse cx="1140" cy="192" rx="190" ry="54" fill="#F5B400" opacity=".5" filter="url(#b30)"/><ellipse cx="1140" cy="192" rx="96" ry="14" fill="#FFD25A" opacity=".85" filter="url(#b6)"/>` + beacon(1048, 184, 184, true) +
-    `<path d="M 618 640 L 790 492" stroke="#FFF6DD" stroke-width="10" stroke-linecap="round" filter="url(#b6)"/><path d="M 618 640 L 790 492" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>` +
-    `<ellipse cx="560" cy="1040" rx="520" ry="70" fill="#FFF2D0" opacity=".14" filter="url(#b30)"/>`;
+    `<path d="M 618 640 L 790 492" stroke="#FFF6DD" stroke-width="10" stroke-linecap="round" filter="url(#b6)"/><path d="M 618 640 L 790 492" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>` ;
 }
 function equipRear() {
   let g = beacon(988, 120, 184, false) + dome(1450, 164, 24) + camPod(300, 142, 72, 20);
@@ -295,7 +294,6 @@ function equipRear() {
 function glowRear() {
   let g = `<ellipse cx="1080" cy="128" rx="190" ry="54" fill="#F5B400" opacity=".5" filter="url(#b30)"/><ellipse cx="1080" cy="128" rx="96" ry="14" fill="#FFD25A" opacity=".85" filter="url(#b6)"/>` + beacon(988, 120, 184, true);
   for (const [x, y, w, h] of [[900, 345, 85, 370], [96, 330, 64, 340]]) g += `<rect x="${x - 25}" y="${y}" width="${w + 50}" height="${h}" rx="30" fill="#FF2A2A" opacity=".5" filter="url(#b30)"/><rect x="${x + w * 0.38}" y="${y + 24}" width="${w * 0.24}" height="${h - 48}" rx="5" fill="#FF6A6A"/>`;
-  g += `<ellipse cx="520" cy="1160" rx="560" ry="70" fill="#FF3B3B" opacity=".12" filter="url(#b30)"/>`;
   for (let k = 1; k <= 4; k++) g += `<ellipse cx="505" cy="${1150 + k * 14}" rx="${330 + k * 60}" ry="${12 + k * 9}" fill="none" stroke="#F5B400" stroke-width="2.4" opacity="${0.8 - k * 0.15}"/>`;
   return g;
 }

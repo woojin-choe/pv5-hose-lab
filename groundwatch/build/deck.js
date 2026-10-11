@@ -114,7 +114,7 @@ async function build() {
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "문제" });
   s.background = { color: K.white };
   s.addShape(pres.ShapeType.rect, { x: 6.9, y: 0, w: 6.433, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "ph_pv5", 6.9, 1.2, 6.433, 5.1);
+  img(s, "r_front_n", 6.9, 1.2, 6.433, 5.1);
   s.addText("제5회 기아 PBV 아이디어 공모전  |  일반 부문 제안서", { x: M, y: 0.7, w: 6, h: 0.3, fontSize: 11, color: K.steel, margin: 0, isTextBox: true });
   s.addText("PV5 GroundWatch", { x: M, y: 1.35, w: 6.1, h: 0.8, fontFace: HF, fontSize: 38, bold: true, color: K.navy, margin: 0, isTextBox: true });
   s.addText("반복 관측 기반 도심 지하공동 변화 감지 순찰체계", { x: M, y: 2.2, w: 6.1, h: 0.45, fontFace: HF, fontSize: 18, color: K.ink, margin: 0, isTextBox: true });
@@ -124,7 +124,7 @@ async function build() {
   s.addTable([[HH("구분"), HH("서울 강동구 명일동 땅꺼짐(2025.3.24)")], ["규모", "길이 22m, 폭 18m, 깊이 16m (약 1~2분 만에 확대)"], ["인명 피해", "사망 1명, 부상 1명"]], { x: M, y: 3.85, w: 5.9, colW: [1.2, 4.7], fontFace: FONT, fontSize: 11, color: K.ink, border: { type: "solid", color: K.line, pt: 0.75 }, rowH: 0.34, valign: "middle", margin: [0, 0.08, 0, 0.08], objectName: "facts" });
   s.addText([{ text: "팀  ", options: { color: K.steel } }, { text: "한 명이라도 살릴 수 있다면", options: { bold: true, color: K.ink } }], { x: M, y: 5.7, w: 6, h: 0.32, fontSize: 13, margin: 0, isTextBox: true });
   s.addText("2026. 10.", { x: M, y: 6.05, w: 6, h: 0.3, fontSize: 12, color: K.steel, margin: 0, isTextBox: true });
-  s.addText("자료: 국토교통부·중앙지하사고조사위원회 「서울 명일동 땅꺼짐 사고 조사결과」(2025.12.3). 우측: 기아 PV5 카고 실차(사진 Alexander Migl, CC BY-SA 4.0)", { x: M, y: 6.8, w: 6.1, h: 0.45, fontSize: 8.5, color: K.mute, margin: 0, valign: "top", isTextBox: true });
+  s.addText("자료: 국토교통부·중앙지하사고조사위원회 「서울 명일동 땅꺼짐 사고 조사결과」(2025.12.3). 우측: 장착 예상 이미지(PV5 실차 사진 Alexander Migl, CC BY-SA 4.0 기반 AI 생성)", { x: M, y: 6.8, w: 6.1, h: 0.45, fontSize: 8.5, color: K.mute, margin: 0, valign: "top", isTextBox: true });
   s.addNotes("이 숫자 뒤에는 집으로 돌아가지 못한 한 사람이 있습니다. 우리가 찾으려는 것은 이미 생긴 구멍이 아니라, 구멍이 되기 전의 변화입니다.\n\n[사실] 2025.3.24 18:28경 서울 강동구 명일동. 붕괴 시작 후 약 1~2분 만에 길이 22m, 폭 18m, 깊이 16m로 확대. 사망 1명, 부상 1명.\n출처: 국토교통부 정책브리핑 '땅꺼짐 사고 조사결과 발표'(2025.12.3) https://m.korea.kr/briefing/policyBriefingView.do?newsId=156732996\n최종보고서: https://www.molit.go.kr/USR/policyData/m_34681/dtl.jsp?id=4872\n\n표현 원칙: 희생자 이름, 얼굴, 구조 장면은 쓰지 않습니다. 특정 기관 책임을 단정하지 않습니다.\n이미지: PV5 실차 사진(Alexander Migl, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Kia_PV5_Cargo_IMG_7825.jpg).");
 
   // ===== 2. 제안 배경 =====
@@ -187,7 +187,7 @@ async function build() {
   // ===== 5. 솔루션 개요 =====
   s = slideC("같은 길을 반복해서 보고, 달라진 곳만 다시 확인한다", "솔루션 개요", K.amber, "문제");
   lead(s, "순찰, 비교, 현장 재확인이 한 바퀴를 돌 때마다 같은 도로의 기록이 한 겹씩 쌓입니다.");
-  img(s, "ph_pv5_ov", M, 1.75, 4.1, 2.85, { stretch: true });
+  img(s, "r_front", M, 1.75, 4.1, 2.85, { stretch: true });
   block(s, M, 4.75, 4.1, "1  새벽 순찰", "같은 경로를 같은 장비로 반복 주행하며 GPR과 영상을 수집합니다.", { h: 0.8 });
   arrowLine(s, 4.85, 3.17, 5.35, 3.17);
   panel(s, 5.45, 1.75, 3.5, 2.85, K.night);
@@ -214,25 +214,25 @@ async function build() {
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "운영 모델" });
   s.background = { color: K.white };
   s.addShape(pres.ShapeType.rect, { x: 7.4, y: 0, w: 5.933, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "ph_pv5_rear", 7.4, 1.2, 5.933, 5.1);
+  img(s, "r_rear_n", 7.4, 1.2, 5.933, 5.1);
   s.addText("Ⅱ", { x: M, y: 1.2, w: 3, h: 1.0, fontFace: HF, fontSize: 54, bold: true, color: K.navy, margin: 0, isTextBox: true });
   s.addText("지금 바로 적용 가능한 운영 모델", { x: M, y: 2.25, w: 6.4, h: 0.6, fontFace: HF, fontSize: 26, bold: true, color: K.ink, margin: 0, isTextBox: true });
   s.addShape(pres.ShapeType.line, { x: M, y: 3.05, w: 6.2, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
   s.addText(["2.1  새벽 정기순찰", "2.2  PV5 이동형 탐사실", "2.3  4D 지하 변화지도", "2.4  AI 변화 감지", "2.5  재확인 포인트 생성", "2.6  GroundWatch Patrol 차량 앱", "2.7  차량·센서·AR 소프트웨어 브리지", "2.8  AR 위치 보정", "2.9  AR 수동 GPR 재탐사", "2.10  수동 GPR 교차검증", "2.11  정밀조사와 결과 저장"].map((t, i, a) => ({ text: t, options: { breakLine: i < a.length - 1 } })), { x: M, y: 3.25, w: 6.4, h: 3.4, fontSize: 12.5, color: K.steel, margin: 0, valign: "top", paraSpaceAfter: 4, isTextBox: true });
-  s.addText("기아 PV5 카고 실차(사진 Alexander Migl, CC BY-SA 4.0)", { x: 7.5, y: 7.15, w: 5.7, h: 0.24, fontSize: 8.5, color: "D8DEE6", align: "right", margin: 0, isTextBox: true });
+  s.addText("장착 예상 이미지: PV5 실차 사진(Alexander Migl, CC BY-SA 4.0) 기반 AI 생성", { x: 7.5, y: 7.15, w: 5.7, h: 0.24, fontSize: 8.5, color: "D8DEE6", align: "right", margin: 0, isTextBox: true });
   s.addNotes("여기서부터는 지금 기술로 바로 꾸릴 수 있는 운영 모델 열한 가지를 순서대로 보여드립니다.");
 
   // ===== 7. #1 새벽 순찰 =====
   s = slideC("교통량이 적은 시간에 도로 아래 변화를 기록합니다", "#1 새벽 순찰", K.amber, "운영 모델");
   s.addShape(pres.ShapeType.rect, { x: M, y: 1.15, w: 4.5, h: 5.6, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "draw_rear", 5.25, 1.15, 7.48, 5.25, { cap: "후면도: 후방 하부 다채널 GPR 어레이와 스캔 폭(제안 예시)" });
+  img(s, "r_rear_n", 5.25, 1.15, 7.48, 4.99, { stretch: true, cap: "새벽 순찰 장착 예상 이미지(후방 하부 다채널 GPR, AI 생성)" });
   s.addText("보이지 않는 위험은,\n반복해서 봐야 보입니다.", { x: M + 0.1, y: 1.55, w: 4.3, h: 1.3, fontSize: 30, bold: true, color: K.white, margin: 0, valign: "top", isTextBox: true });
   [["moon_w", "차량과 보행이 가장 적은 새벽에 반복 주행"], ["car_w", "엔진 소음과 배기가스 없이 주택가 저속 운행"], ["route_w", "같은 경로, 같은 장비로 회차끼리 비교"], ["radar_w", "후방 하부 GPR 어레이로 차로를 연속 스캔"]].forEach(([ic, t], i) => {
     ico(s, ic, M + 0.1, 3.3 + i * 0.62, 0.34);
     s.addText(t, { x: M + 0.6, y: 3.27 + i * 0.62, w: 3.9, h: 0.42, fontSize: 14, color: "E2E8F0", margin: 0, valign: "middle", isTextBox: true });
   });
   bubble(s, "어제와 같은 길, 같은 장비, 같은 속도", M + 0.1, 5.95, 4.2, 0.55, { fs: 14 });
-  src(s, "저속 운행 시 실제 소음과 주행거리 영향은 [실증 필요]");
+  src(s, "PV5 실차 사진(Alexander Migl, CC BY-SA 4.0)을 바탕으로 AI로 생성한 예상 이미지입니다. 저속 운행 시 실제 소음과 주행거리 영향은 [실증 필요]");
   s.addNotes("새벽은 주차 차량과 보행자가 가장 적은 시간이라 같은 경로를 같은 조건으로 반복 주행하기 좋습니다. PV5는 전기차라 엔진 공회전 소음과 배기가스 없이 주택가를 저속으로 오래 달릴 수 있습니다.\n[실증 필요] 저속 장시간 운행 시 배터리 소모와 주행거리 영향, 실제 소음 수준.\n참고: https://www.kia.com/kr/vehicles/pv5-cargo/features");
 
   // ===== 8. #2 이동형 탐사실 =====
@@ -406,12 +406,12 @@ async function build() {
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "확장" });
   s.background = { color: K.white };
   s.addShape(pres.ShapeType.rect, { x: 7.4, y: 0, w: 5.933, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "ph_pv5", 7.4, 1.2, 5.933, 5.1);
+  img(s, "r_front_b", 7.4, 1.2, 5.933, 5.1);
   s.addText("Ⅲ", { x: M, y: 1.2, w: 3, h: 1.0, fontFace: HF, fontSize: 54, bold: true, color: K.navy, margin: 0, isTextBox: true });
   s.addText("도시 지하 안전망으로의 확장", { x: M, y: 2.25, w: 6.4, h: 0.6, fontFace: HF, fontSize: 26, bold: true, color: K.ink, margin: 0, isTextBox: true });
   s.addShape(pres.ShapeType.line, { x: M, y: 3.05, w: 6.2, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
   s.addText(["3.1  위험도별 순찰망", "3.2  여러 대의 PV5 플릿", "3.3  도시 지하 데이터 통합", "3.4  4D 도시 지하 디지털 트윈"].map((t, i, a) => ({ text: t, options: { breakLine: i < a.length - 1 } })), { x: M, y: 3.25, w: 6.4, h: 3.4, fontSize: 12.5, color: K.steel, margin: 0, valign: "top", paraSpaceAfter: 4, isTextBox: true });
-  s.addText("기아 PV5 카고 실차(사진 Alexander Migl, CC BY-SA 4.0)", { x: 7.5, y: 7.15, w: 5.7, h: 0.24, fontSize: 8.5, color: "D8DEE6", align: "right", margin: 0, isTextBox: true });
+  s.addText("장착 예상 이미지: PV5 실차 사진(Alexander Migl, CC BY-SA 4.0) 기반 AI 생성", { x: 7.5, y: 7.15, w: 5.7, h: 0.24, fontSize: 8.5, color: "D8DEE6", align: "right", margin: 0, isTextBox: true });
   s.addNotes("여기부터는 운영 모델이 검증된 뒤의 확장 방향입니다.");
 
   // ===== 19. 확장1 =====
@@ -467,7 +467,7 @@ async function build() {
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "확장" });
   s.background = { color: K.white };
   s.addShape(pres.ShapeType.rect, { x: 6.9, y: 0, w: 6.433, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "ph_pv5_rear", 6.9, 1.2, 6.433, 5.1);
+  img(s, "r_rear", 6.9, 1.2, 6.433, 5.1);
   s.addText("맺음말", { x: M, y: 0.7, w: 6, h: 0.3, fontSize: 11, color: K.steel, margin: 0, isTextBox: true });
   s.addText("한 번의 조기 발견이,\n한 사람의 무사 귀가가 되도록.", { x: M, y: 1.25, w: 6.1, h: 1.3, fontFace: HF, fontSize: 26, bold: true, color: K.navy, margin: 0, valign: "top", isTextBox: true });
   s.addShape(pres.ShapeType.line, { x: M, y: 2.85, w: 5.9, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
@@ -481,7 +481,7 @@ async function build() {
   ], { x: M, y: 3.05, w: 6.0, h: 2.6, fontSize: 13, margin: 0, valign: "top", paraSpaceAfter: 5, isTextBox: true });
   s.addText([{ text: "PV5 GroundWatch", options: { bold: true, color: K.navy } }, { text: "   팀 한 명이라도 살릴 수 있다면", options: { color: K.steel } }], { x: M, y: 6.05, w: 6, h: 0.32, fontSize: 12, margin: 0, isTextBox: true });
   s.addText("감사합니다", { x: M, y: 6.45, w: 3, h: 0.3, fontSize: 12, color: K.steel, margin: 0, isTextBox: true });
-  s.addText("기아 PV5 카고 실차(사진 Alexander Migl, CC BY-SA 4.0)", { x: 7.0, y: 7.15, w: 6.2, h: 0.24, fontSize: 8.5, color: "D8DEE6", align: "right", margin: 0, isTextBox: true });
+  s.addText("장착 예상 이미지: PV5 실차 사진(Alexander Migl, CC BY-SA 4.0) 기반 AI 생성", { x: 7.0, y: 7.15, w: 6.2, h: 0.24, fontSize: 8.5, color: "D8DEE6", align: "right", margin: 0, isTextBox: true });
   s.addNotes("도로가 무너진 뒤에는 누구나 구멍을 볼 수 있습니다. 우리가 찾으려는 것은 아직 보이지 않을 때 시작된 변화입니다. 한 번의 조기 발견이 한 사람의 무사 귀가가 되도록, PV5 GroundWatch를 제안합니다. 감사합니다.\n이미지: PV5 실차 사진(Alexander Migl, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Kia_PV5_Cargo_IMG_7829.jpg).");
 
   // ===== 24. 부록1 =====
