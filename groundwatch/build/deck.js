@@ -213,7 +213,7 @@ async function build() {
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "운영 모델" });
   s.background = { color: K.white };
   s.addShape(pres.ShapeType.rect, { x: 7.4, y: 0, w: 5.933, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "f_int", 7.4, 1.2, 5.933, 5.1);
+  img(s, "f_int6", 7.4, 1.2, 5.933, 5.1);
   s.addText("Ⅱ", { x: M, y: 1.2, w: 3, h: 1.0, fontFace: HF, fontSize: 54, bold: true, color: K.navy, margin: 0, isTextBox: true });
   s.addText("지금 바로 적용 가능한 운영 모델", { x: M, y: 2.25, w: 6.4, h: 0.6, fontFace: HF, fontSize: 26, bold: true, color: K.ink, margin: 0, isTextBox: true });
   s.addShape(pres.ShapeType.line, { x: M, y: 3.05, w: 6.2, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
@@ -223,7 +223,7 @@ async function build() {
   // ===== 7. #1 새벽 순찰 =====
   s = slideC("교통량이 적은 시간에 도로 아래 변화를 기록합니다", "#1 새벽 순찰", K.amber, "운영 모델");
   s.addShape(pres.ShapeType.rect, { x: M, y: 1.15, w: 4.5, h: 5.6, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "f_rear_n", 5.25, 1.15, 7.48, 4.99, { stretch: true, cap: "새벽 순찰 장착 예상도(루프 랙·경광등·GNSS 안테나)" });
+  img(s, "f_rear_n", 5.25, 1.15, 7.48, 4.99, { stretch: true, cap: "새벽 순찰 차량 구성(루프 랙·경광등·GNSS 안테나)" });
   s.addText("보이지 않는 위험은,\n반복해서 봐야 보입니다.", { x: M + 0.1, y: 1.55, w: 4.3, h: 1.3, fontSize: 30, bold: true, color: K.white, margin: 0, valign: "top", isTextBox: true });
   [["moon_w", "차량과 보행이 가장 적은 새벽에 반복 주행"], ["car_w", "엔진 소음과 배기가스 없이 주택가 저속 운행"], ["route_w", "같은 경로, 같은 장비로 회차끼리 비교"], ["radar_w", "후방 하부 GPR 어레이로 차로를 연속 스캔"]].forEach(([ic, t], i) => {
     ico(s, ic, M + 0.1, 3.3 + i * 0.62, 0.34);
@@ -236,9 +236,9 @@ async function build() {
   // ===== 8. #2 이동형 탐사실 =====
   s = slideC("PV5는 센서 운반차가 아니라 이동형 탐사·분석·검증 플랫폼", "#2 이동형 탐사실", K.amber, "운영 모델");
   lead(s, "장비를 차량에 고정해 회차마다 같은 측정 환경을 유지하고, 차 안에서 분석하고, 내려서 검증합니다.");
-  const cw = img(s, "f_int", M, 1.6, 5.4, 3.04, { stretch: true, cap: "카고룸 탑재 예상도(뒷문 개방)" });
+  const cw = img(s, "f_int", M, 1.6, 5.4, 3.04, { stretch: true, cap: "카고룸 탐사실 구성(뒷문 개방)" });
   const gp = img(s, "f_gpr", M + 5.55, 1.6, 2.05, 3.04, { stretch: true, cap: "후방 하부 다채널 GPR" });
-  const PIN = [["1", 0.418, 0.32, "Edge Gateway·엣지 AI 랙"], ["2", 0.54, 0.42, "작업대·모니터"], ["3", 0.463, 0.64, "수동 GPR 카트(고정)"], ["4", 0.3, 0.27, "장비 수납장"], ["5", 0.65, 0.62, "라바콘·안전장비"], ["6", 0.495, 0.11, "작업 조명"]];
+  const PIN = [["1", 0.383, 0.536, "Edge Gateway·엣지 AI 랙"], ["2", 0.454, 0.49, "작업대·모니터"], ["3", 0.588, 0.747, "수동 GPR 카트(고정)"], ["4", 0.588, 0.41, "장비 수납장"], ["5", 0.658, 0.8, "라바콘·안전장비"], ["6", 0.504, 0.222, "작업 조명"]];
   PIN.forEach(([n, fx, fy]) => { const x = cw.x + fx * cw.w, y = cw.y + fy * cw.h; s.addText(n, { shape: pres.ShapeType.ellipse, x: x - 0.14, y: y - 0.14, w: 0.28, h: 0.28, fill: { color: K.navy }, line: { color: K.white, width: 1.5 }, fontSize: 10, bold: true, color: K.white, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "pin" }); });
   s.addText("7", { shape: pres.ShapeType.ellipse, x: gp.x + gp.w * 0.5 - 0.14, y: gp.y + gp.h * 0.62 - 0.14, w: 0.28, h: 0.28, fill: { color: K.navy }, line: { color: K.white, width: 1.5 }, fontSize: 10, bold: true, color: K.white, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "pin" });
   [...PIN, ["7", 0, 0, "후방 하부 다채널 GPR"], ["8", 0, 0, "루프 경광등·GNSS"]].forEach(([n, , , t2], i) => { const x = M + (i % 4) * 1.9, y = 5.0 + Math.floor(i / 4) * 0.27; s.addText([{ text: n + " ", options: { bold: true, color: K.navy } }, { text: t2, options: { color: K.ink } }], { x, y, w: 1.88, h: 0.26, fontSize: 10, margin: 0, valign: "middle", isTextBox: true }); });
@@ -266,7 +266,7 @@ async function build() {
   bubble(s, "지난 조사보다 이상 반사 면적이 17% 늘었습니다", 9.15, 4.65, 3.58, 0.85, { fill: K.amber, color: K.ink, fs: 14 });
   s.addText("[예시] 화면의 수치는 설명용입니다.", { x: 9.15, y: 5.6, w: 3.58, h: 0.32, fontSize: 12, color: K.mute, margin: 0, isTextBox: true });
   s.addText("지도에서 구간을 고르면 실제 위치, 지상 영상, GPR 지하 단면, 회차별 변화 그래프를 한 화면에서 봅니다. 조사하지 않은 구간과 신뢰도가 낮은 구간은 숨기지 않고 따로 표시합니다.", { x: M, y: 6.38, w: CW, h: 0.45, fontSize: 12, color: K.ink, margin: 0, valign: "top", isTextBox: true });
-  src(s, "목업 화면. 회색 미조사, 초록 변화 없음, 노랑 새 이상 신호, 주황 확대 의심, 빨강 정밀 재탐사, 점선 신뢰도 낮음");
+  src(s, "범례: 회색 미조사, 초록 변화 없음, 노랑 새 이상 신호, 주황 확대 의심, 빨강 정밀 재탐사, 점선 신뢰도 낮음");
   s.addNotes("4D 지하 변화지도는 도시 전체를 다 조사했다는 지도가 아닙니다. PV5가 실제로 주행하고 측정한 도로만 위치, 깊이, 시간으로 쌓습니다.\n색 규칙: 회색 미조사, 초록 이전과 변화 없음, 노랑 새 이상 신호, 주황 확대 의심, 빨강 정밀 재탐사, 점선 신뢰도 낮음.\n[예시] 17% 증가, 추정 깊이 0.9~1.3m, AI 신뢰도 84%는 화면 설명용 예시 값입니다.");
 
   // ===== 10. #4 AI 변화 감지 =====
@@ -316,7 +316,7 @@ async function build() {
   bubble(s, "주행 중에는 분석 화면을 띄우지도, 조작하게 하지도 않습니다", M, 5.35, 7.3, 0.6, { fs: 14 });
   s.addText([{ text: "배포 경로  ", options: { bold: true, color: K.ink } }, { text: "Pleos App Market 또는 기아 PBV 파트너 프로그램", options: { color: K.steel } }], { x: M, y: 6.35, w: 7.3, h: 0.4, fontSize: 13, margin: 0, valign: "top", isTextBox: true });
   s.addText("앱 배포와 차량 데이터 접근은 기아 PBV 파트너 승인과 공식 API 범위 확인이 필요합니다. 사이드로딩과 ADB 활성화는 가정하지 않습니다.", { x: 8.15, y: 6.18, w: 4.58, h: 0.7, fontSize: 12, bold: true, color: K.red, margin: 0, valign: "top", isTextBox: true });
-  src(s, "출처: Kia PBV IVI·App Market(AAOS 기반, 개발 목표 고지), 기아 PBV 소프트웨어 솔루션(준비 중인 솔루션, 내용 변경 가능). 화면은 목업입니다.");
+  src(s, "출처: Kia PBV IVI·App Market(AAOS 기반, 개발 목표 고지), 기아 PBV 소프트웨어 솔루션(준비 중인 솔루션, 내용 변경 가능).");
   s.addNotes("PV5는 Android Automotive OS 기반 PBV 전용 인포테인먼트와 Pleos App Market을 지원합니다. GroundWatch Patrol은 이 환경에서 돌아가는 업무용 앱을 목표로 합니다. 완전한 독자 OS라고 표현하지 않습니다.\n활용 후보 데이터: 차량 위치, 주행·주차 상태, 배터리 잔량, 충전 상태, 운행거리, 내비게이션 목적지 전달, 업무 상태.\n기아와 추가 협의가 필요한 데이터: 조향각, 세부 차량 제어, ADAS 원시 데이터, 차량 카메라 원시 영상, 안전 관련 ECU 데이터.\n출처: https://eu-www.kia.com/uk/pbv/solutions/software/ , https://www.kia.com/kr/pbv/solution/software ('준비 중인 솔루션' 고지), PIM 제어기 https://www.hyundaimotorgroup.com/ko/news/CONT0000000000201311 (패신저 도너모델 기준, 카고 적용은 [추가 확인 필요])");
 
   // ===== 13. #7 SW 브리지 =====
@@ -340,7 +340,7 @@ async function build() {
   // ===== 14. #8 AR 위치 보정 =====
   s = slideC("작업자는 고정된 기준점을 인식해 지하 데이터의 위치를 맞춘다", "#8 AR 위치 보정", K.amber, "운영 모델");
   lead(s, "AR 글래스는 PV5가 안전하게 정차하고 작업자가 내린 뒤에만 켭니다. 운전자는 주행 중 착용하지 않습니다.");
-  img(s, "ar_calib", M, 1.7, 8.0, 4.24, { align: "left", cap: "AR 기준점 인식과 위치 보정 화면(실사 합성 목업)" });
+  img(s, "ar_calib", M, 1.7, 8.0, 4.24, { align: "left", cap: "AR 기준점 인식과 위치 보정 화면" });
   ["정차 확인 후 앱에서 현장 정밀점검 시작", "작업 패키지가 Edge Gateway로 전송", "작업자가 글래스 착용, 보안 Wi-Fi 자동 연결", "맨홀 중심 인식", "도로 경계석과 차선 모서리 인식", "RTK 좌표와 시각 기준점 결합", "위치 오차가 기준 이내면 보정 완료"].forEach((t, i) => {
     const y = 1.7 + i * 0.6;
     num(s, i + 1, 8.85, y, 0.36, i >= 3 && i <= 5 ? K.green : K.navy);
@@ -348,13 +348,13 @@ async function build() {
   });
   bubble(s, "맨홀 하나로 확정하지 않고, 기준점 2~3개를 결합합니다", M, 6.1, 7.0, 0.6, { fs: 15 });
   s.addText("기준 후보: 맨홀 중심, 차선 모서리, 경계석, 고정 표지판, 건물 모서리, 현장 기준 마커, RTK-GNSS", { x: 7.85, y: 6.1, w: 4.88, h: 0.72, fontSize: 12, color: K.steel, margin: 0, valign: "middle", isTextBox: true });
-  src(s, "AR 화면은 실사 위에 합성한 목업입니다. 위치 오차 기준과 야간 인식 성능은 [실증 필요]. 사진: PattayaPatrol, CC BY-SA 4.0");
+  src(s, "위치 오차 기준과 야간 인식 성능은 [실증 필요]. 사진: PattayaPatrol, CC BY-SA 4.0");
   s.addNotes("AR 글래스는 차량이 안전하게 정차한 뒤 차 밖에서 작업자만 씁니다. 차량 안 멀미 보정은 핵심 기능에서 빼고, 글래스가 차 밖에서 독립적으로 위치를 추적합니다.\n위치는 맨홀 하나로 확정하지 않고 맨홀, 차선 모서리, 경계석, RTK 좌표 중 2~3개를 결합해 보정합니다.\n[실증 필요] AR 위치 정확도, 야간 기준점 인식 성능.");
 
   // ===== 15. #9 AR 재탐사 =====
   s = slideC("AR이 표시한 검색 범위를 따라 양손으로 수동 GPR을 조작한다", "#9 AR 재탐사", K.amber, "운영 모델");
   lead(s, "AR은 공동의 실제 모양이 아니라, AI가 지정한 재탐사 검색 범위를 도로 위에 맞춰 보여줍니다.");
-  img(s, "ar_scan", M, 1.7, 8.0, 4.24, { align: "left", cap: "AR 재탐사 범위 안내 화면(실사 합성 목업)" });
+  img(s, "ar_scan", M, 1.7, 8.0, 4.24, { align: "left", cap: "AR 재탐사 범위 안내 화면" });
   s.addText("화면에 보이는 것", { x: 8.85, y: 1.7, w: 3.88, h: 0.38, fontSize: 16, bold: true, color: K.ink, margin: 0, isTextBox: true });
   s.addText(L(["탐사 시작점과 종료점", "진행 방향과 반복 횟수", "추정 깊이와 이전 대비 변화량", "위치 오차와 AI 신뢰도"], { bullet: true }), { x: 8.85, y: 2.12, w: 3.88, h: 1.5, fontSize: 14, color: K.steel, margin: 0, paraSpaceAfter: 5, valign: "top", isTextBox: true });
   ico(s, "mic", 8.85, 3.85, 0.4);
@@ -362,7 +362,7 @@ async function build() {
   s.addText("재탐사 시작, 이상 위치 표시, 사진 촬영, 음성 메모, 재탐사 완료, 추가 조사 요청", { x: 8.85, y: 4.32, w: 3.88, h: 0.95, fontSize: 14, color: K.steel, margin: 0, valign: "top", isTextBox: true });
   bubble(s, "두 손은 장비에, 눈은 도로에", M, 6.1, 3.6, 0.65, { fs: 15 });
   s.addText("화면 아래에는 늘 경고를 띄웁니다. “GPR 기반 추정 위치입니다. 굴착 전 정밀조사와 관계기관 승인이 필요합니다.”", { x: 4.5, y: 6.1, w: 8.23, h: 0.7, fontSize: 13, bold: true, color: K.red, margin: 0, valign: "middle", isTextBox: true });
-  src(s, "실사 위 합성 목업, 수치는 설명용 예시입니다. 검색 범위는 공동의 모양이 아니라 재탐사 영역입니다. 사진: PattayaPatrol, CC BY-SA 4.0");
+  src(s, "수치는 설명용 예시입니다. 검색 범위는 공동의 모양이 아니라 재탐사 영역입니다. 사진: PattayaPatrol, CC BY-SA 4.0");
   s.addNotes("작업자는 AR이 도로 위에 그린 검색 범위를 따라 양손으로 수동 GPR을 밉니다. 시작점과 종료점, 진행 방향, 반복 횟수가 보이고, 사진, 메모, 이상 위치 표시는 음성으로 처리합니다.\nAR은 공동의 실제 모양을 보여주지 않습니다. 화면 아래에는 늘 '굴착 전 정밀조사와 관계기관 승인이 필요하다'는 경고를 띄웁니다.");
 
   // ===== 16. #10 교차검증 =====
@@ -460,7 +460,7 @@ async function build() {
   img(s, "twin", M, 1.7, 7.4, 3.92, { align: "left", cap: "4D 도시 지하 디지털 트윈 개념" });
   [["공사 전후 비교", "굴착공사 착공 전, 공사 중, 완료 후 같은 구간을 비교합니다."], ["재난 대응", "집중호우나 지진 뒤 우선 점검 구간을 고릅니다."], ["유지관리 계획", "변화가 잦은 구간의 관로 교체 우선순위 근거가 됩니다."], ["범위 원칙", "PV5가 측정한 도로에 한정하고, 측정하지 않은 구간은 비워 둡니다."]].forEach(([t, b], i) => block(s, 8.3, 1.75 + i * 1.03, 4.43, t, b, { h: 0.6, tfs: 16, fs: 13 }));
   bubble(s, "도시가 같은 길을 기억하면, 작은 변화도 놓치지 않을 수 있습니다", M, 5.95, 7.4, 0.7, { fs: 15 });
-  src(s, "개념 일러스트. 디지털 트윈은 운영 데이터가 충분히 쌓인 뒤의 장기 확장 방향입니다.");
+  src(s, "디지털 트윈은 운영 데이터가 충분히 쌓인 뒤의 장기 확장 방향입니다.");
   s.addNotes("반복 순찰 데이터가 쌓이면 지상 지도, 지하 시설물, 공동 의심 신호, 시간에 따른 변화를 하나의 모델에서 볼 수 있습니다. 공사 전후 비교, 재난 대응, 유지관리 계획에 쓸 수 있습니다. 다만 측정한 도로에 한정하고, 측정하지 않은 구간은 비워 둡니다.");
 
   // ===== 23. 마무리 =====

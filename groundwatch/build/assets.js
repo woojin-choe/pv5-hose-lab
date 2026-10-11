@@ -605,7 +605,7 @@ function tex(x, y, w, h, base, o = {}) {
 }
 const LBL = (x, y, t, o = {}) => `<rect x="${x - 6}" y="${y - (o.s || 20) - 4}" width="${t.length * (o.s || 20) * 0.95 + 12}" height="${(o.s || 20) + 12}" rx="3" fill="${o.bg || "#0E1726"}" opacity="${o.op || 0.82}"/>` + T(x, y, o.s || 20, t, { c: o.c || "#FFFFFF", w: 500 });
 
-jobs.mechanism = async () => {
+jobs.mechanismSvgOld = async () => {
   const W = 1600, H = 820;
   let b = `<rect width="${W}" height="${H}" fill="#E9EDF2"/>`;
   b += tex(0, 92, W, 26, "#2C3036", { g: 0.7, agg: 0.25 });
@@ -658,7 +658,7 @@ jobs.surfaceCrack = async () => {
   await sharp(base).composite([{ input: Buffer.from(svg(W, H, ov)) }]).png().toFile(path.join(OUT, "surface_crack.png"));
 };
 
-jobs.crossCheck = async () => {
+jobs.crossCheckSvgOld = async () => {
   const W = 1600, H = 720;
   let b = `<rect width="${W}" height="${H}" fill="#fff"/>` + tex(0, 30, W, 660, "#3D4249", { m: 0.45, g: 0.75, agg: 0.35 });
   b += `<rect x="0" y="352" width="${W}" height="10" fill="#E8E2C8" opacity=".75" filter="url(#grainF)"/>`;
@@ -704,7 +704,7 @@ jobs.fleet = async () => {
   return save("fleet", W, H, b);
 };
 
-jobs.layers = async () => {
+jobs.layersSvgOld = async () => {
   const W = 1600, H = 880, md = await mapData("gangdong_z16");
   let b = `<rect width="${W}" height="${H}" fill="#fff"/>`;
   const Ls = [["보수 이력", "#C5CDD8"], ["강우", "#A9D3FF"], ["지하수", "#6CB4FF"], ["지하철 구조물", "#5B6573"], ["굴착공사", "#F08C00"], ["하수관", "#8A94A3"], ["GPR 변화 신호", null]];
@@ -720,7 +720,7 @@ jobs.layers = async () => {
   return save("layers", W, H, b, TEXDEFS);
 };
 
-jobs.twin = async () => {
+jobs.twinSvgOld = async () => {
   const W = 1700, H = 900, md = await mapData("gangdong_z16");
   let b = `<rect width="${W}" height="${H}" fill="#0A1222"/><ellipse cx="850" cy="520" rx="720" ry="300" fill="#1C3560" opacity=".35" filter="url(#b30)"/>`;
   const side = (y, h, c1, c2) => `<path d="M 350 ${y} L 850 ${y + 200} L 850 ${y + 200 + h} L 350 ${y + h} Z" fill="${c1}"/><path d="M 850 ${y + 200} L 1350 ${y} L 1350 ${y + h} L 850 ${y + 200 + h} Z" fill="${c2}"/>`;
@@ -739,7 +739,7 @@ jobs.twin = async () => {
   return save("twin", W, H, b, TEXDEFS);
 };
 
-jobs.freqDepth = async () => {
+jobs.freqDepthSvgOld = async () => {
   const W = 1400, H = 700;
   let b = `<rect width="${W}" height="${H}" fill="#fff"/>` + tex(0, 60, W, 22, "#2C3036", { agg: 0.25 }) + tex(0, 82, W, 40, "#8F7E6B", { agg: 0.2 }) + tex(0, 122, W, 578, "#6E5948", { m: 0.6 });
   [["저주파", 0.85, "#6CB4FF", "깊게 · 해상도 낮음"], ["중주파", 0.55, C.amber, "균형"], ["고주파", 0.3, C.red, "얕게 · 해상도 높음"]].forEach(([t, dd, col, desc], i) => {
@@ -750,6 +750,119 @@ jobs.freqDepth = async () => {
   const y2 = 60 + 0.32 * 640;
   b += `<line x1="0" y1="${y2}" x2="${W}" y2="${y2}" stroke="#fff" stroke-width="2.5" stroke-dasharray="12 8"/>` + LBL(W - 250, y2 + 36, "주 대상 약 2 m 내외", { s: 18 });
   return save("freq_depth", W, H, b, TEXDEFS);
+};
+
+// 3D 지하 단면 렌더(underground.py) 위에 지시선 라벨을 얹는다. 앵커는 Blender가 카메라 투영으로 뽑은 정규화 좌표
+function callout(W, H, a, lx, ly, t, o = {}) {
+  const ax = a[0] * W, ay = a[1] * H, c = o.c || C.navy, fs = o.fs || 60, right = lx > ax;
+  const ex = lx + (right ? -18 : 18);
+  let g = `<polyline points="${ax},${ay} ${ex},${ly}" fill="none" stroke="${c}" stroke-width="4"/>`;
+  g += `<circle cx="${ax}" cy="${ay}" r="13" fill="#fff" stroke="${c}" stroke-width="6"/>`;
+  g += `<text x="${lx}" y="${ly + fs * 0.36}" font-family="${FONT}" font-size="${fs}" font-weight="700" fill="${o.tc || C.ink}" text-anchor="${right ? "start" : "end"}">${t}</text>`;
+  if (o.sub) g += `<text x="${lx}" y="${ly + fs * 0.36 + fs * 0.95}" font-family="${FONT}" font-size="${fs * 0.72}" font-weight="500" fill="#5B6573" text-anchor="${right ? "start" : "end"}">${o.sub}</text>`;
+  return g;
+}
+jobs.mechanism = async () => {
+  const src = path.join(OUT, "3d", "ug_mech.png"), A = JSON.parse(require("fs").readFileSync(path.join(OUT, "3d", "ug_mech.json")));
+  const W = 3200, H = 1640, P = (k) => [A[k][0] * W, A[k][1] * H];
+  const [w1, w2, wa] = ["w1", "w2", "wa"].map(P), [g1, g2, g3] = ["gw_l", "gw_r", "gw_rb"].map(P);
+  let ov = `<path d="M ${w1} L ${wa} L ${w2} Z" fill="${C.red}" opacity=".16"/><path d="M ${w1} L ${wa} L ${w2}" fill="none" stroke="${C.red}" stroke-width="7" stroke-dasharray="26 14"/>`;
+  ov += `<polyline points="${g1} ${g2} ${g3}" fill="none" stroke="#8FD0FF" stroke-width="7" stroke-dasharray="26 14"/>`;
+  const ax = g2[0] + 70; ov += `<line x1="${ax}" y1="${g2[1] - 230}" x2="${ax}" y2="${g2[1] - 40}" stroke="#8FD0FF" stroke-width="9"/><path d="M ${ax - 22} ${g2[1] - 60} L ${ax} ${g2[1] - 14} L ${ax + 22} ${g2[1] - 60} Z" fill="#8FD0FF"/>`;
+  const wc = [(w1[0] + w2[0] + wa[0]) / 3 / W, (w1[1] + w2[1] + wa[1]) / 3 / H];
+  ov += callout(W, H, A.asph, 540, 300, "포장층", { c: "#5B6573" });
+  ov += callout(W, H, wc, 540, 760, "쐐기형 토체", { c: C.red, sub: "불연속면을 따라 미끄러짐" });
+  ov += callout(W, H, A.tun, 540, 1190, "하부 터널 굴착", { c: "#5B6573" });
+  ov += callout(W, H, A.cav, 2700, 420, "공동·이완 영역", { c: C.amber });
+  ov += callout(W, H, A.pipe, 2700, 760, "노후 하수관 누수", { c: "#2F80ED", sub: "경계면 강도 저하" });
+  ov += callout(W, H, [g3[0] / W, g3[1] / H], 2700, 1100, "지하수위 저하", { c: "#2F80ED", sub: "인근 공사로 최대 26m" });
+  await sharp({ create: { width: W, height: H, channels: 4, background: "#FFFFFF" } })
+    .composite([{ input: src }, { input: Buffer.from(svg(W, H, ov)) }]).flatten({ background: "#FFFFFF" }).png().toFile(path.join(OUT, "mechanism.png"));
+};
+
+jobs.twin = async () => {
+  const src = path.join(OUT, "3d", "ug_twin.png"), A = JSON.parse(require("fs").readFileSync(path.join(OUT, "3d", "ug_twin.json")));
+  const W = 3400, H = 1800;
+  let ov = callout(W, H, A.map, 560, 330, "지상 · 도로 지도", { c: "#5B6573", sub: "차량 GPR 순찰 경로" });
+  ov += callout(W, H, A.dot, 2900, 300, "변화 신호 위치", { c: C.amber, sub: "지도 좌표와 연결" });
+  ov += callout(W, H, A.glow, 2900, 1240, "공동 의심 신호", { c: C.amber, sub: "깊이 · 회차별 변화량" });
+  ov += callout(W, H, A.sewer, 560, 1080, "하수관", { c: "#5B6573" });
+  ov += callout(W, H, A.water, 560, 1330, "상수관", { c: "#2F80ED" });
+  ov += callout(W, H, A.gas, 2900, 1560, "가스 · 통신관로", { c: "#5B6573" });
+  await sharp({ create: { width: W, height: H, channels: 4, background: "#FFFFFF" } })
+    .composite([{ input: src }, { input: Buffer.from(svg(W, H, ov)) }]).flatten({ background: "#FFFFFF" }).png().toFile(path.join(OUT, "twin.png"));
+};
+
+const ug = (n) => JSON.parse(require("fs").readFileSync(path.join(OUT, "3d", n + ".json")));
+async function ugCompose(name, srcName, W, H, ov) {
+  await sharp({ create: { width: W, height: H, channels: 4, background: "#FFFFFF" } })
+    .composite([{ input: await sharp(path.join(OUT, "3d", srcName + ".png")).resize(W, H).png().toBuffer() }, { input: Buffer.from(svg(W, H, ov)) }]).flatten({ background: "#FFFFFF" }).png().toFile(path.join(OUT, name + ".png"));
+}
+jobs.freqDepth = async () => {
+  const W = 2800, H = 1400, A = ug("ug_freq"), P = (k) => `${A[k][0] * W},${A[k][1] * H}`;
+  let ov = "";
+  [["저주파", "#5AA9FF", "깊게 · 해상도 낮음"], ["중주파", C.amber, "균형"], ["고주파", C.red, "얕게 · 해상도 높음"]].forEach(([t, col, d], i) => {
+    ov += `<polygon points="${P(`a${i}-1`)} ${P(`a${i}1`)} ${P(`b${i}1`)} ${P(`b${i}-1`)}" fill="${col}" opacity=".30"/>`;
+    ov += `<polyline points="${P(`a${i}-1`)} ${P(`b${i}-1`)} ${P(`b${i}1`)} ${P(`a${i}1`)}" fill="none" stroke="${col}" stroke-width="5"/>`;
+    const tx = (A[`a${i}-1`][0] + A[`a${i}1`][0]) / 2 * W;
+    ov += `<text x="${tx}" y="120" font-family="${FONT}" font-size="58" font-weight="700" fill="${C.ink}" text-anchor="middle">${t}</text><text x="${tx}" y="190" font-family="${FONT}" font-size="42" font-weight="500" fill="#5B6573" text-anchor="middle">${d}</text>`;
+    ov += `<circle cx="${tx}" cy="228" r="9" fill="${col}"/>`;
+  });
+  ov += `<polyline points="${P("dl")} ${P("dr")} ${P("drb")}" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-dasharray="24 14"/>`;
+  ov += callout(W, H, A.drb, A.drb[0] * W + 90, A.drb[1] * H + 160, "주 대상 약 2m 내외", { c: "#5B6573", fs: 52 });
+  await ugCompose("freq_depth", "ug_freq", W, H, ov);
+};
+jobs.crossCheck = async () => {
+  const W = 3200, H = 1440, A = ug("ug_road"), P = (k) => `${A[k][0] * W},${A[k][1] * H}`;
+  let ov = "";
+  for (let k = 0; k < 8; k++) ov += `<polygon points="${P(`s${k}l`)} ${P(`s${k}r`)} ${P(`t${k}r`)} ${P(`t${k}l`)}" fill="${C.amber}" opacity="${k % 2 ? 0.07 : 0.13}"/>`;
+  ov += `<polygon points="${P("r00")} ${P("r10")} ${P("r11")} ${P("r01")}" fill="none" stroke="${C.red}" stroke-width="7"/>`;
+  for (let k = 0; k < 6; k++) ov += `<line x1="${A[`v${k}a`][0] * W}" y1="${A[`v${k}a`][1] * H}" x2="${A[`v${k}b`][0] * W}" y2="${A[`v${k}b`][1] * H}" stroke="#7CC4FF" stroke-width="7"/>`;
+  for (let k = 0; k < 4; k++) ov += `<line x1="${A[`h${k}a`][0] * W}" y1="${A[`h${k}a`][1] * H}" x2="${A[`h${k}b`][0] * W}" y2="${A[`h${k}b`][1] * H}" stroke="#5AD27A" stroke-width="7" stroke-dasharray="26 14"/>`;
+  ov += callout(W, H, A.r01, A.r01[0] * W - 140, A.r01[1] * H - 110, "수동 GPR 재탐사 범위", { c: C.red, fs: 54, tc: "#fff" });
+  const [dx, dy] = [A.dir[0] * W, A.dir[1] * H];
+  ov += `<rect x="${dx - 20}" y="${dy - 62}" width="560" height="92" rx="10" fill="#0E1726" opacity=".82"/><text x="${dx + 16}" y="${dy}" font-family="${FONT}" font-size="48" font-weight="700" fill="#fff">차량형 GPR 스캔 폭  →</text>`;
+  await ugCompose("cross_check", "ug_road", W, H, ov);
+};
+
+// 데이터 레이어 3D 스택(underground.py layers)용 판 텍스처 7장: 어두운 지도 바탕 + 레이어별 요소
+jobs.layerTex = async () => {
+  const W = 2048, H = 1280, k = 2048 / 1300, Q = (p) => [p[0] * k, p[1] * k];
+  const base = await sharp(path.join(OUT, "map", "gangdong_z16.png")).resize(W, H).flatten({ background: "#FFFFFF" }).grayscale().linear(2.2, -470).tint({ r: 70, g: 110, b: 170 }).png().toBuffer();
+  const pl = (pts, c, w, o = {}) => `<polyline points="${pts.map((p) => Q(p).join(",")).join(" ")}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" ${o.d ? `stroke-dasharray="${o.d}"` : ""} opacity="${o.op || 1}"/>`;
+  const R = ROADS, all = Object.values(R);
+  let rnd = 7; const rand = () => ((rnd = (rnd * 16807) % 2147483647) / 2147483647);
+  const L = [];
+  // 1 GPR 변화 신호: 순찰 경로 + 이상 신호 점
+  let g = all.map((p) => pl(p, "#7FA7D8", 7, { op: 0.6 })).join("");
+  for (const [x, y, r, c] of [[790, 390, 34, "#FF4D3A"], [700, 422, 22, "#FFB000"], [960, 470, 18, "#FFB000"], [560, 268, 16, "#FFB000"], [760, 600, 20, "#FFB000"], [290, 500, 14, "#FFB000"]]) {
+    const [cx, cy] = Q([x, y]); g += `<circle cx="${cx}" cy="${cy}" r="${r * 3}" fill="${c}" opacity=".22"/><circle cx="${cx}" cy="${cy}" r="${r}" fill="${c}"/>`;
+  }
+  L.push(g);
+  // 2 하수관: 도로 밑 관망(굵기 차등)
+  L.push(all.map((p, i) => pl(p, "#C9D3E0", i % 2 ? 10 : 18, { op: 0.9 })).join("") + [[235, 268, 235, 120], [560, 268, 560, 140], [1160, 250, 1160, 120], [600, 430, 600, 560], [980, 568, 980, 700]].map(([a, b, c, d]) => pl([[a, b], [c, d]], "#C9D3E0", 8, { op: 0.8 })).join(""));
+  // 3 굴착공사: 공사 구역 폴리곤
+  L.push([[840, 300, 150, 110], [520, 470, 120, 90], [1010, 610, 170, 80], [330, 170, 110, 120]].map(([x, y, w, h]) => { const [a, b] = Q([x, y]); return `<rect x="${a}" y="${b}" width="${w * k}" height="${h * k}" rx="6" fill="#F08C00" opacity=".55" stroke="#FFB45C" stroke-width="6"/>`; }).join(""));
+  // 4 지하철 구조물: 노선 + 역
+  { const line = [[150, 760], [420, 640], [790, 420], [1100, 300], [1300, 260]]; let t = pl(line, "#B07CFF", 30, { op: 0.85 }); for (const p of [line[1], line[2], line[3]]) { const [a, b] = Q(p); t += `<rect x="${a - 60}" y="${b - 34}" width="120" height="68" rx="16" fill="#E0CCFF"/>`; } L.push(t); }
+  // 5 지하수: 등수위선
+  L.push(Array.from({ length: 9 }, (_, i) => `<path d="M -50 ${200 + i * 130} C 500 ${120 + i * 140}, 1200 ${320 + i * 120}, 2100 ${180 + i * 135}" fill="none" stroke="#5AA9FF" stroke-width="${i === 4 ? 10 : 5}" opacity="${0.35 + (i % 3) * 0.2}"/>`).join(""));
+  // 6 강우: 격자 강도
+  { let t = ""; for (let y = 0; y < 8; y++) for (let x = 0; x < 13; x++) { const v = Math.max(0, Math.sin(x * 0.5 + y * 0.35) * 0.5 + 0.5 - rand() * 0.25); t += `<rect x="${x * 158 + 6}" y="${y * 160 + 6}" width="146" height="148" rx="8" fill="#6FB3FF" opacity="${0.08 + v * 0.5}"/>`; } L.push(t); }
+  // 7 보수 이력: 보수 지점 마커
+  { let t = ""; for (let i = 0; i < 26; i++) { const p = all[i % all.length][Math.floor(rand() * all[i % all.length].length)]; const [a, b] = Q([p[0] + (rand() - 0.5) * 140, p[1] + (rand() - 0.5) * 60]); t += `<circle cx="${a}" cy="${b}" r="16" fill="#5AD27A" stroke="#D9FFE4" stroke-width="5"/>`; } L.push(t); }
+  for (let i = 0; i < L.length; i++)
+    await sharp(base).composite([{ input: Buffer.from(svg(W, H, L[i])) }]).png().toFile(path.join(OUT, "3d", `lt_${i}.png`));
+};
+
+jobs.layers = async () => {
+  const W = 3200, H = 1760, A = ug("ug_layers");
+  let ov = "";
+  [["GPR 변화 신호", C.amber], ["하수관", "#8A94A3"], ["굴착공사", "#F08C00"], ["지하철 구조물", "#9B6BEF"], ["지하수", "#2F80ED"], ["강우", "#5AA9FF"], ["보수 이력", "#3BA55C"]].forEach(([t, c], i) => {
+    ov += callout(W, H, A[`l${i}`], 2560, A[`l${i}`][1] * H, t, { c, fs: 56 });
+  });
+  ov += callout(W, H, A.beam, 700, A.beam[1] * H - 40, "같은 좌표로 겹쳐 보기", { c: C.amber, fs: 56, sub: "한 지점의 원인을 층별로 확인" });
+  await ugCompose("layers", "ug_layers", W, H, ov);
 };
 
 (async () => {
