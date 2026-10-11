@@ -1,5 +1,5 @@
 # 도로 지하 단면 실사 렌더 (Blender Cycles). view: mech(사고 원인 단면) / twin(지상 지도 + 지하 블록)
-import bpy, bmesh, math, sys, os
+import bpy, bmesh, math, sys, os, json
 from mathutils import Vector
 argv = sys.argv[sys.argv.index("--") + 1:]
 OUT, VIEW = argv[0], argv[1]
@@ -230,6 +230,29 @@ elif VIEW == "layers":  # 데이터 레이어 분해 스택: 지도 기반 판 7
         bpy.ops.mesh.primitive_torus_add(major_radius=0.14, minor_radius=0.014, location=(bx, by, (6 - i) * GAP + 0.04)); bpy.context.active_object.data.materials.append(BEAM)
     Y0, Y1, L0, L1, BOT = -PD / 2, PD / 2, -PW / 2, PW / 2, -0.3
     cam_loc, cam_tgt, lens = (12.5, -20.0, 10.5), (1.2, 0.0, 2.9), 44  # L
+elif VIEW == "patrol":  # 위험도별 순찰망: 기울인 어두운 지도 위에 빛나는 경로 튜브
+    IMG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "images", "3d")
+    PR = json.load(open(os.path.join(IMG, "patrol_routes.json"))); MW, MH = 24.0, 15.0
+    def mxy(px, py): u = px * PR["k"] / 2048; v = py * PR["k"] / 1280; return ((u - 0.5) * MW, (0.5 - v) * MH)
+    bpy.ops.mesh.primitive_plane_add(size=1, location=(0, 0, 0)); mp = bpy.context.active_object; mp.scale = (MW, MH, 1); bpy.ops.object.transform_apply(scale=True)
+    M = bpy.data.materials.new("mapd"); nt, b = nodes(M); it = nt.nodes.new("ShaderNodeTexImage"); it.image = bpy.data.images.load(os.path.join(IMG, "map_dark.png"))
+    tn = nt.nodes.new("ShaderNodeMix"); tn.data_type = "RGBA"; tn.blend_type = "MULTIPLY"; tn.inputs["Factor"].default_value = 1.0; tn.inputs["B"].default_value = (0.45, 0.65, 1.0, 1)
+    nt.links.new(it.outputs["Color"], tn.inputs["A"]); nt.links.new(tn.outputs["Result"], b.inputs["Base Color"]); nt.links.new(tn.outputs["Result"], b.inputs["Emission Color"]); b.inputs["Emission Strength"].default_value = 0.6; b.inputs["Roughness"].default_value = 0.5
+    mp.data.materials.append(M)
+    box("under", -60, 60, -60, 60, -0.03, -0.01, plain("und", (0.035, 0.045, 0.065), 0.6))
+    def hx(c): c = c.lstrip("#"); return tuple(int(c[i:i + 2], 16) / 255 for i in (0, 2, 4))
+    for r in PR["routes"]:
+        cu = bpy.data.curves.new(r["n"], "CURVE"); cu.dimensions = "3D"; sp = cu.splines.new("POLY"); sp.points.add(len(r["pts"]) - 1)
+        for i, (px, py) in enumerate(r["pts"]): x, y = mxy(px, py); sp.points[i].co = (x, y, 0.05, 1)
+        cu.bevel_depth = 0.07 if r["n"] != "B2" else 0.1; cu.bevel_resolution = 4
+        o = bpy.data.objects.new(r["n"], cu); sc.collection.objects.link(o)
+        col = hx(r["c"]); col = tuple(v ** 2.2 for v in col); o.data.materials.append(plain("r" + r["n"], col, 0.3, e=col, s=0.9 if r["n"] != "B2" else 1.3))
+    sx, sy = mxy(*PR["station"])
+    cyl("st", 0.22, 0.12, (sx, sy, 0.08), (0, 0, 0), plain("stw", (0.95, 0.95, 0.97), 0.3), 48)
+    cyl("st2", 0.14, 0.14, (sx, sy, 0.1), (0, 0, 0), plain("stn", (0.04, 0.12, 0.23), 0.3), 48)
+    Y0, Y1, L0, L1, BOT = -MH / 2, MH / 2, -MW / 2, MW / 2, -0.01
+    cam_loc, cam_tgt, lens = (sx + 3.5, sy - 13.0, 9.5), (sx + 0.6, sy - 0.4, 0.0), 32
+    PATROL_ST = (sx, sy, 0.1)
 else:  # twin: 지도 상판 + 지하 블록(층·관로·공동 신호)
     YA, YB, DB = -3.6, 3.6, -3.4
     box("asph", L0, L1, YA, YB, -0.2, 0.0, ASPH); box("base", L0, L1, YA, YB, -0.5, -0.2, BASE)
@@ -275,17 +298,20 @@ if VIEW == "twin":
     pl = bpy.data.lights.new("glow", "POINT"); pl.energy = 120; pl.color = (1, 0.6, 0.15); po = bpy.data.objects.new("glow", pl); po.location = (0.6, -3.9, -1.25); sc.collection.objects.link(po)
 world = bpy.data.worlds.new("w"); sc.world = world; world.use_nodes = True
 bg = world.node_tree.nodes["Background"]; bg.inputs[0].default_value = (0.8, 0.83, 0.88, 1); bg.inputs[1].default_value = 0.35
-cam = bpy.data.cameras.new("c"); co = bpy.data.objects.new("c", cam); sc.collection.objects.link(co); sc.camera = co
+cam = bpy.data.cameras.new("c"); co = bpy.data.objects.new("c", cam)
+if VIEW == "patrol": bg.inputs[0].default_value = (0.01, 0.02, 0.04, 1); bg.inputs[1].default_value = 1.0; sun.energy = 0.3; key.energy = 150
+if VIEW == "patrol": cam.dof.use_dof = True; cam.dof.focus_distance = (Vector(cam_loc) - Vector(PATROL_ST)).length; cam.dof.aperture_fstop = 2.2; sc.collection.objects.link(co); sc.camera = co
 co.location = cam_loc; cam.lens = lens; co.rotation_euler = (Vector(cam_tgt) - Vector(cam_loc)).to_track_quat("-Z", "Y").to_euler()
 sc.render.engine = "CYCLES"
 try:
     p = bpy.context.preferences.addons["cycles"].preferences; p.compute_device_type = "METAL"; p.get_devices(); [setattr(d, "use", True) for d in p.devices]; sc.cycles.device = "GPU"
 except Exception: pass
 sc.cycles.samples = int(os.environ.get("SAMPLES", "256")); sc.cycles.use_denoising = True
-sc.render.film_transparent = True
-sc.render.resolution_x, sc.render.resolution_y = {"mech": (3200, 1640), "twin": (3400, 1800), "freq": (2800, 1400), "road": (3200, 1440), "layers": (3200, 1760)}[VIEW]
+sc.render.film_transparent = VIEW != "patrol"
+sc.render.resolution_x, sc.render.resolution_y = {"mech": (3200, 1640), "twin": (3400, 1800), "freq": (2800, 1400), "road": (3200, 1440), "layers": (3200, 1760), "patrol": (3200, 1800)}[VIEW]
 sc.render.resolution_percentage = int(os.environ.get("PCT", "100"))
 sc.view_settings.view_transform = "AgX"; sc.view_settings.look = "AgX - Medium High Contrast"
+if VIEW == "patrol": sc.view_settings.view_transform = "Standard"; sc.view_settings.look = "Medium High Contrast"; sc.render.use_compositing = True
 sc.render.image_settings.color_mode = "RGBA"
 import json
 from bpy_extras.object_utils import world_to_camera_view
@@ -298,6 +324,7 @@ A = {"mech": {"asph": (-4.2, Y0, -0.11), "base": (-4.2, Y0, -0.41), "fill": (-4.
      "road": dict([(f"s{k}{e}", (L0 if e == "l" else L1, -3.2 + k * 0.92 + o, 0.0)) for k in range(8) for e in ("l", "r") for o in (0,)] + [(f"t{k}{e}", (L0 if e == "l" else L1, -3.2 + k * 0.92 + 0.62, 0.0)) for k in range(8) for e in ("l", "r")] +
                    [("r00", (0.6, -2.4, 0)), ("r10", (4.6, -2.4, 0)), ("r11", (4.6, 1.6, 0)), ("r01", (0.6, 1.6, 0))] + [(f"v{k}{e}", (0.95 + k * 0.66, -2.25 if e == "a" else 1.45, 0)) for k in range(6) for e in ("a", "b")] + [(f"h{k}{e}", (0.75 if e == "a" else 4.45, -1.8 + k * 0.95, 0)) for k in range(4) for e in ("a", "b")] + [("dir", (-7.5, -3.6, 0))]),
      "layers": dict([(f"l{i}", (4.0, -2.5, (6 - i) * 0.95)) for i in range(7)] + [("beam", (-0.6, -0.15, 6 * 0.95 + 0.3))]),
+     "patrol": {"st": PATROL_ST} if VIEW == "patrol" else {},
      "twin": {"map": (-4.6, -3.6, 2.2), "dot": (0.6, -3.0, 2.23), "glow": (0.6, -3.6, -1.25), "sewer": (-3.2, -3.6, -1.5), "water": (-1.4, -3.6, -1.1), "gas": (2.4, -3.6, -0.9), "tel": (3.55, -3.6, -0.85), "asph": (-4.6, -3.6, -0.1)}}[VIEW]
 json.dump({k: proj(v) for k, v in A.items()}, open(OUT.rsplit(".", 1)[0] + ".json", "w"))
 sc.render.filepath = OUT

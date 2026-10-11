@@ -149,24 +149,17 @@ function groundSection(x, y, w, h) {
   return g + `</g>`;
 }
 let BS = 0;
+// GPR B-scan: bscan.py가 합성한 레이더그램(반사계수 × 리커 웨이블릿)을 칸에 맞춰 넣는다
+const BSIMG = {};
+function bsData(which) {
+  if (!BSIMG[which]) BSIMG[which] = "data:image/png;base64," + require("fs").readFileSync(path.join(OUT, "3d", `bscan_${which}.png`)).toString("base64");
+  return BSIMG[which];
+}
 function bscan(x, y, w, h, o = {}) {
-  const id = "bs" + BS++;
-  const d = `<clipPath id="c${id}"><rect width="${w}" height="${h}" rx="4"/></clipPath><filter id="${id}" x="0" y="0" width="1" height="1"><feTurbulence type="fractalNoise" baseFrequency="0.9 0.05" numOctaves="2" seed="${o.seed || 3}"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .5"/></feComponentTransfer></filter>`;
-  let g = `<g transform="translate(${x},${y})"><g clip-path="url(#c${id})"><rect width="${w}" height="${h}" fill="#575B61"/><rect width="${w}" height="${h}" filter="url(#${id})"/>`;
-  for (let i = 0; i < 9; i++) {
-    const yy = 14 + i * (h / 10);
-    let p = `M 0 ${yy}`;
-    for (let xx = 0; xx <= w; xx += 20) p += ` L ${xx} ${yy + Math.sin((xx + i * 37) / 41) * 2.2}`;
-    g += `<path d="${p}" fill="none" stroke="${i % 2 ? "#E9ECEF" : "#1C1F23"}" stroke-width="${i < 2 ? 2.6 : 1.2}" opacity=".6"/>`;
-  }
-  const hyp = (cx, cy, a, k, col, sw) => { let p = ""; for (let t = -a; t <= a; t += 4) p += `${p ? "L" : "M"} ${cx + t} ${cy + (t * t) / k} `; return `<path d="${p}" fill="none" stroke="${col}" stroke-width="${sw}"/>`; };
-  g += hyp(w * 0.22, h * 0.42, w * 0.15, w * 0.12, "#F8F9FA", 2.6) + hyp(w * 0.22, h * 0.42 + 6, w * 0.14, w * 0.12, "#16191D", 1.8);
-  if (o.cavity) {
-    const cx = w * 0.64, cy = h * 0.52, sc = o.cavity;
-    g += hyp(cx, cy, w * 0.18 * sc, w * 0.1, "#FFFFFF", 3.4) + hyp(cx, cy + 7, w * 0.17 * sc, w * 0.1, "#0D0F12", 2.6);
-    g += `<ellipse cx="${cx}" cy="${cy + 16 * sc}" rx="${w * 0.1 * sc}" ry="${h * 0.06 * sc}" fill="#000" opacity=".45" filter="url(#b2)"/>`;
-  }
-  if (o.box) { const b = o.box; g += `<rect x="${w * b[0]}" y="${h * b[1]}" width="${w * b[2]}" height="${h * b[3]}" rx="3" fill="${C.amber}" fill-opacity=".12" stroke="${C.amber}" stroke-width="2.5"/>`; }
+  const id = "bs" + BS++, which = (o.cavity || 0) >= 0.7 ? "cur" : "prev";
+  const d = `<clipPath id="c${id}"><rect width="${w}" height="${h}" rx="4"/></clipPath>`;
+  let g = `<g transform="translate(${x},${y})"><g clip-path="url(#c${id})"><image href="${bsData(which)}" width="${w}" height="${h}" preserveAspectRatio="none"/>`;
+  if (o.box) { const b = o.box; g += `<rect x="${w * b[0]}" y="${h * b[1]}" width="${w * b[2]}" height="${h * b[3]}" rx="3" fill="${C.amber}" fill-opacity=".10" stroke="${C.amber}" stroke-width="2.5"/>`; }
   g += `</g>`;
   for (let i = 1; i <= 3; i++) g += `<line x1="0" y1="${(h / 4) * i}" x2="7" y2="${(h / 4) * i}" stroke="#fff" stroke-width="1.2"/>` + T(11, (h / 4) * i + 4, 12, `${(i * 0.5).toFixed(1)}m`, { c: "#fff" });
   return { g: g + `</g>`, d };
@@ -240,14 +233,14 @@ jobs.photoEdits = async () => {
   c1 += `<circle cx="450" cy="636" r="7" fill="${GRN}"/><polyline points="450,636 530,780 595,700" fill="none" stroke="${GRN}" stroke-width="2.5" stroke-dasharray="8 6"/>`;
   c1 += hud(40, 40, 460, 170) + T(68, 92, 26, "위치 보정", { w: 700, c: "#fff" }) + T(68, 136, 21, "기준점 3개 + RTK 결합", { c: "#A9D3FF" }) + T(68, 178, 22, "위치 오차 ±[실증 필요]", { w: 700, c: GRN });
   c1 += hud(AW - 500, 40, 460, 64) + T(AW - 474, 82, 21, "정차 확인됨 · 작업 모드", { c: "#fff" }) + warn(AW, AH);
-  await photo("ar_calib", "night_street_empty", AW, AH, { pos: "centre", overlay: c1 });
+  await photo("ar_calib", "night_street_kr", AW, AH, { pos: "centre", overlay: c1 });
   let c2 = `<path d="M 610 620 L 860 620 L 1280 860 L 600 860 Z" fill="${AMB}" fill-opacity=".2" stroke="${AMB}" stroke-width="4"/>`;
   for (let k = 1; k < 5; k++) { const t = k / 5, y = 620 + t * 240; c2 += `<line x1="${610 - t * 10}" y1="${y}" x2="${860 + t * 420}" y2="${y}" stroke="${AMB}" stroke-width="1.5" opacity=".55"/>`; }
   for (let k = 0; k < 4; k++) { const x0 = 650 + k * 60, x1 = 640 + k * 160; c2 += `<path d="M ${x0} 640 L ${x1} 830" stroke="#7CC4FF" stroke-width="4" stroke-dasharray="12 9"/><path d="M ${x1 - 11} 822 L ${x1 + 11} 822 L ${x1} 852 Z" fill="#7CC4FF"/>`; }
   c2 += `<circle cx="650" cy="640" r="11" fill="${GRN}"/><rect x="1100" y="810" width="22" height="22" rx="3" fill="#D93025"/>`;
   c2 += hud(40, 40, 460, 210) + T(68, 92, 26, "재탐사 3 / 4회", { w: 700, c: "#fff" }) + T(68, 134, 21, "추정 깊이 0.9–1.3 m", { c: "#A9D3FF" }) + T(68, 172, 21, "이전 대비 +17%", { c: AMB }) + T(68, 210, 21, "AI 신뢰도 84%", { c: "#A9D3FF" });
   c2 += hud(AW - 500, 40, 460, 64) + T(AW - 474, 82, 21, "음성 “이상 위치 표시”", { c: "#fff" }) + warn(AW, AH);
-  await photo("ar_scan", "night_street_empty", AW, AH, { pos: "centre", overlay: c2 });
+  await photo("ar_scan", "night_street_kr", AW, AH, { pos: "centre", overlay: c2 });
 
   // 4장·17장 실사
   await photo("ph_crack", "sinkhole_driveway", 1200, 900, { pos: "centre" });
@@ -401,10 +394,10 @@ jobs.map4dOld = async () => {
 jobs.aiCompare = async () => {
   const W = 1700, H = 600;
   const a = bscan(0, 56, 800, 520, { cavity: 0.55, seed: 4 });
-  const c = bscan(900, 56, 800, 520, { cavity: 0.9, seed: 4, box: [0.46, 0.3, 0.38, 0.52] });
+  const c = bscan(900, 56, 800, 520, { cavity: 0.9, seed: 4, box: [0.47, 0.27, 0.36, 0.6] });
   let b = `<rect width="${W}" height="${H}" fill="#fff"/>` + a.g + c.g + T(0, 36, 26, "이전 탐사 회차", { w: 700, c: "#5B6573" }) + T(900, 36, 26, "현재 탐사 회차", { w: 700, c: C.navy });
   b += `<line x1="812" y1="316" x2="878" y2="316" stroke="${C.navy}" stroke-width="3"/><path d="M 872 306 L 890 316 L 872 326 Z" fill="${C.navy}"/>`;
-  b += `<rect x="${900 + 368}" y="${56 + 156 - 36}" width="190" height="30" rx="4" fill="${C.amber}"/>` + T(900 + 380, 56 + 156 - 15, 18, "새로 커진 신호", { w: 700 });
+  b += `<rect x="${900 + 376}" y="${56 + 140 - 36}" width="190" height="30" rx="4" fill="${C.amber}"/>` + T(900 + 388, 56 + 140 - 15, 18, "새로 커진 신호", { w: 700 });
   return save("ai_compare", W, H, b, a.d + c.d);
 };
 jobs.surfaceCrackOld = async () => {
@@ -568,6 +561,15 @@ jobs.icons = async () => {
 // ================= v3: 실지도·질감 기반 도판 =================
 const fsx = require("fs");
 let MAPB64 = {};
+// 어두운 관제 화면용 지도: 회색조 반전 대신 밝기 곡선으로 남색 톤을 만든다
+async function mapDark(name) {
+  const key = name + "_dark";
+  if (!MAPB64[key]) {
+    const buf = await sharp(path.join(OUT, "map", name + ".png")).flatten({ background: "#FFFFFF" }).grayscale().linear(2.2, -470).tint({ r: 70, g: 110, b: 170 }).png().toBuffer();
+    MAPB64[key] = "data:image/png;base64," + buf.toString("base64");
+  }
+  return MAPB64[key];
+}
 async function mapData(name) {
   if (!MAPB64[name]) {
     const buf = await sharp(path.join(OUT, "map", name + ".png")).modulate({ saturation: 0.12, brightness: 1.04 }).linear(0.82, 38).png().toBuffer();
@@ -629,7 +631,7 @@ jobs.mechanismSvgOld = async () => {
 };
 
 jobs.map4d = async () => {
-  const W = 1700, H = 900, md = await mapData("gangdong_z16");
+  const W = 1700, H = 900, md = await mapDark("gangdong_z16");
   let b = `<rect width="${W}" height="${H}" rx="10" fill="#0D1828"/>` + T(32, 46, 22, "GroundWatch Cloud", { w: 700, c: "#fff" }) + T(250, 46, 18, "4D 도로 지하 변화지도 · 서울 강동구 명일동 일대", { c: "#9AA8BC" }) + T(W - 32, 46, 16, "예시 화면", { a: "end", c: "#7D8BA0" });
   const mx = 20, my = 70, mw = 1080, mh = 810, m = mapFit(mx, my, mw, mh, 1.25, 0.62, 0.45);
   b += `<clipPath id="mc"><rect x="${mx}" y="${my}" width="${mw}" height="${mh}" rx="6"/></clipPath><g clip-path="url(#mc)"><image href="${md}" x="${m.ox}" y="${m.oy}" width="${m.sw}" height="${m.sh}" preserveAspectRatio="none"/>`;
@@ -638,12 +640,12 @@ jobs.map4d = async () => {
   for (const [k, c] of segs) b += poly(m, ROADS[k], c, 9);
   const [rx, ry] = m.P(782, 430);
   b += `<circle cx="${rx}" cy="${ry}" r="30" fill="${C.red}" opacity=".18"/><circle cx="${rx}" cy="${ry}" r="9" fill="${C.red}" stroke="#fff" stroke-width="3"/>` + LBL(rx + 22, ry - 14, "R-0427", { s: 17 });
-  b += `</g><rect x="${mx + 14}" y="${my + mh - 58}" width="900" height="44" rx="6" fill="#fff" opacity=".95"/>`;
-  [["#9AA3AE", "미조사"], ["#3BA55C", "변화 없음"], [C.amber, "새 이상 신호"], ["#F08C00", "확대 의심"], [C.red, "정밀 재탐사"]].forEach(([c, t], i) => (b += `<rect x="${mx + 32 + i * 172}" y="${my + mh - 41}" width="28" height="9" rx="4" fill="${c}"/>` + T(mx + 68 + i * 172, my + mh - 30, 16, t, { c: "#2B3138", w: 500 })));
+  b += `</g><rect x="${mx + 14}" y="${my + mh - 58}" width="900" height="44" rx="6" fill="#0D1828" opacity=".92"/>`;
+  [["#9AA3AE", "미조사"], ["#3BA55C", "변화 없음"], [C.amber, "새 이상 신호"], ["#F08C00", "확대 의심"], [C.red, "정밀 재탐사"]].forEach(([c, t], i) => (b += `<rect x="${mx + 32 + i * 172}" y="${my + mh - 41}" width="28" height="9" rx="4" fill="${c}"/>` + T(mx + 68 + i * 172, my + mh - 30, 16, t, { c: "#E2E8F0", w: 500 })));
   b += T(mx + mw - 10, my + mh - 8, 11, "© OpenStreetMap contributors", { a: "end", c: "#5B6573" });
   const px = 1120, py = 70;
   b += `<rect x="${px}" y="${py}" width="560" height="810" rx="8" fill="#132238"/>` + T(px + 24, py + 40, 20, "구간 상세", { w: 700, c: "#fff" }) + T(px + 536, py + 40, 16, "R-0427", { a: "end", c: "#9AA8BC" });
-  const bs = bscan(px + 24, py + 62, 512, 210, { cavity: 0.8, seed: 7, box: [0.45, 0.28, 0.42, 0.62] });
+  const bs = bscan(px + 24, py + 62, 512, 210, { cavity: 0.8, seed: 7, box: [0.47, 0.27, 0.36, 0.6] });
   b += bs.g + T(px + 24, py + 312, 15, "회차별 이상 반사 면적", { c: "#9AA8BC" });
   [[0, 40, "#3BA55C"], [1, 44, "#3BA55C"], [2, 62, C.amber], [3, 86, "#F08C00"], [4, 106, C.red]].forEach(([i, v, col]) => (b += `<rect x="${px + 40 + i * 100}" y="${py + 445 - v}" width="56" height="${v}" rx="3" fill="${col}"/>` + T(px + 68 + i * 100, py + 470, 14, `${i + 1}회`, { a: "middle", c: "#7D8BA0" })));
   [["마지막 조사", "최근 회차"], ["반복 조사", "5회"], ["추정 깊이", "0.9–1.3 m"], ["AI 위험점수 · 신뢰도", "높음 · 84%"], ["위치 오차", "±[실증 필요]"], ["전문가 검토", "대기"]].forEach(([k, v], i) => (b += `<line x1="${px + 24}" y1="${py + 508 + i * 46}" x2="${px + 536}" y2="${py + 508 + i * 46}" stroke="#22344F"/>` + T(px + 24, py + 539 + i * 46, 16, k, { c: "#9AA8BC" }) + T(px + 536, py + 539 + i * 46, 16, v, { a: "end", w: 700, c: i === 3 ? C.amber : "#fff" })));
@@ -675,7 +677,7 @@ jobs.crossCheckSvgOld = async () => {
   return save("cross_check", W, H, b, TEXDEFS);
 };
 
-jobs.patrolNet = async () => {
+jobs.patrolNetSvgOld = async () => {
   const W = 1600, H = 900, md = await mapData("gangdong_z16"), m = mapFit(0, 0, W, H, 1.0, 0.5, 0.5);
   let b = `<image href="${md}" x="${m.ox}" y="${m.oy}" width="${m.sw}" height="${m.sh}" preserveAspectRatio="none"/>`;
   const R = [["A", "#3BA55C", 8], ["F", "#4E8FD9", 8], ["C1", "#F08C00", 10], ["C2", "#F08C00", 10], ["B2", C.red, 13], ["B", "#4E8FD9", 8], ["B3", "#4E8FD9", 8], ["D", "#7048E8", 8, "14 10"]];
@@ -688,7 +690,7 @@ jobs.patrolNet = async () => {
 };
 
 jobs.fleet = async () => {
-  const W = 1600, H = 880, md = await mapData("gangdong_z15");
+  const W = 1600, H = 880, md = await mapDark("gangdong_z15");
   let b = `<rect width="${W}" height="${H}" rx="10" fill="#0D1828"/>`;
   const mx = 30, my = 30, mw = 1540, mh = 440, m = mapFit(mx, my, mw, mh, 1.0, 0.5, 0.5);
   b += `<clipPath id="fc"><rect x="${mx}" y="${my}" width="${mw}" height="${mh}" rx="6"/></clipPath><g clip-path="url(#fc)"><image href="${md}" x="${m.ox}" y="${m.oy}" width="${m.sw}" height="${m.sh}" preserveAspectRatio="none"/>`;
@@ -871,6 +873,18 @@ jobs.layers = async () => {
   });
   ov += callout(W, H, A.beam, 700, A.beam[1] * H - 40, "같은 좌표로 겹쳐 보기", { c: C.amber, fs: 56, sub: "한 지점의 원인을 층별로 확인" });
   await ugCompose("layers", "ug_layers", W, H, ov);
+};
+
+jobs.patrolTex = async () => {
+  const buf = await sharp(path.join(OUT, "map", "gangdong_z16.png")).resize(2048, 1280).flatten({ background: "#FFFFFF" }).grayscale().linear(2.2, -470).tint({ r: 70, g: 110, b: 170 }).png().toFile(path.join(OUT, "3d", "map_dark.png"));
+  const R = [["A", "#3BA55C"], ["F", "#4E8FD9"], ["C1", "#F08C00"], ["C2", "#F08C00"], ["B2", "#E03131"], ["B", "#4E8FD9"], ["B3", "#4E8FD9"], ["D", "#8A63F0"]];
+  require("fs").writeFileSync(path.join(OUT, "3d", "patrol_routes.json"), JSON.stringify({ k: 2048 / 1300, routes: R.map(([n, c]) => ({ n, c, pts: ROADS[n] })), station: [790, 383] }));
+};
+
+jobs.patrolNet = async () => {
+  const W = 3200, H = 1800, A = ug("ug_patrol");
+  const ov = callout(W, H, A.st, A.st[0] * W - 260, A.st[1] * H - 220, "명일역", { c: "#FFFFFF", tc: "#FFFFFF", fs: 60 }) + T(W - 24, H - 20, 26, "지도 © OpenStreetMap contributors", { a: "end", c: "#7D8BA0" });
+  await sharp(path.join(OUT, "3d", "ug_patrol.png")).resize(W, H).composite([{ input: Buffer.from(svg(W, H, ov)) }]).png().toFile(path.join(OUT, "patrol_net.png"));
 };
 
 (async () => {

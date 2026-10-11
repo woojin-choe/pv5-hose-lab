@@ -309,9 +309,9 @@ async function build() {
   lead(s, "PV5는 Android Automotive OS 기반 PBV 전용 인포테인먼트와 Pleos App Market을 지원합니다. GroundWatch Patrol은 이 환경의 B2B 업무용 앱을 목표로 합니다.", { h: 0.6 });
   img(s, "ivi_device", M, 1.8, 7.3, 2.83, { align: "left" });
   s.addText("운행 전: 순찰거리, 재확인 지점, 장비 상태를 확인하고 순찰을 시작합니다", { x: M, y: 4.72, w: 7.3, h: 0.35, fontSize: 13, color: K.steel, margin: 0, isTextBox: true });
-  img(s, "ivi_drive", 8.15, 1.8, 4.58, 1.78);
+  img(s, "ivi_dev_drive", 8.15, 1.8, 4.58, 1.78);
   s.addText("주행 중: 스캔 상태와 다음 지점 거리만", { x: 8.15, y: 3.6, w: 4.58, h: 0.3, fontSize: 12, color: K.steel, margin: 0, isTextBox: true });
-  img(s, "ivi_stop", 8.15, 3.98, 4.58, 1.78);
+  img(s, "ivi_dev_stop", 8.15, 3.98, 4.58, 1.78);
   s.addText("정차 후: 위험등급, 변화량, 안전 정차, AR 연결", { x: 8.15, y: 5.78, w: 4.58, h: 0.3, fontSize: 12, color: K.steel, margin: 0, isTextBox: true });
   bubble(s, "주행 중에는 분석 화면을 띄우지도, 조작하게 하지도 않습니다", M, 5.35, 7.3, 0.6, { fs: 14 });
   s.addText([{ text: "배포 경로  ", options: { bold: true, color: K.ink } }, { text: "Pleos App Market 또는 기아 PBV 파트너 프로그램", options: { color: K.steel } }], { x: M, y: 6.35, w: 7.3, h: 0.4, fontSize: 13, margin: 0, valign: "top", isTextBox: true });
@@ -396,9 +396,9 @@ async function build() {
   s.addText("결과 저장과 학습 순환", { x: 5.6, y: 3.4, w: 6.9, h: 0.42, fontSize: 18, bold: true, color: K.amber, margin: 0, isTextBox: true });
   s.addText(L(["확인 결과와 보수 이력을 4D 지도의 해당 구간에 저장합니다", "AI 후보와 실제 확인 결과를 짝지어 검증 데이터로 쌓습니다", "오탐과 미탐 사례로 AI 성능을 점검하고 고칩니다", "보수 후 같은 구간을 다시 순찰해 재검증합니다"], { bullet: true }), { x: 5.6, y: 3.92, w: 6.9, h: 1.8, fontSize: 15, color: K.white, margin: 0, paraSpaceAfter: 6, valign: "top", isTextBox: true });
   arrowLine(s, 9.0, 5.95, 9.0, 6.4, K.amber, 2);
-  s.addShape(pres.ShapeType.line, { x: 2.8, y: 6.4, w: 6.2, h: 0, line: { color: K.amber, width: 2 }, objectName: "loop" });
-  arrowLine(s, 2.8, 6.4, 2.8, 5.95, K.amber, 2);
-  s.addText("다음 순찰로 돌아갑니다", { x: 3.6, y: 6.45, w: 4.6, h: 0.36, fontSize: 14, bold: true, color: K.navy, align: "center", margin: 0, isTextBox: true });
+  s.addShape(pres.ShapeType.line, { x: 4.6, y: 6.4, w: 4.4, h: 0, line: { color: K.amber, width: 2 }, objectName: "loop" });
+  arrowLine(s, 4.6, 6.4, 4.6, 5.95, K.amber, 2);
+  s.addText("다음 순찰로 돌아갑니다", { x: 4.6, y: 6.45, w: 4.4, h: 0.36, fontSize: 14, bold: true, color: K.navy, align: "center", margin: 0, isTextBox: true });
   src(s, "일반적인 공동 확인 흐름을 바탕으로 한 제안안입니다. 실제 승인 절차는 관할 기관 기준을 따릅니다. 사진: Famartin, CC BY-SA 4.0");
   s.addNotes("수동 GPR 재확인으로 공동 가능성이 높아지면 관제센터가 정밀조사를 요청하고, 도로관리기관 승인과 교통통제 뒤 천공과 내시경으로 최종 확인합니다. 결과는 복구 또는 지속 관찰로 이어지고, 다시 4D 지도에 저장돼 AI 검증 데이터가 됩니다.\n승인 절차는 관할 기관 기준을 따릅니다.");
 
