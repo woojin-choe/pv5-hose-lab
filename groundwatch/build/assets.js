@@ -252,6 +252,75 @@ jobs.photoEdits = async () => {
   await photo("ph_crack", "sinkhole_driveway", 1200, 900, { pos: "centre" });
   await photo("ph_patched", "sinkhole_patched", 1200, 900, { pos: "centre" });
 };
+// ---- PV5 GroundWatch 장착 예상도(실차 사진 위 합성, 1920x1278 좌표) ----
+const TF = "Pretendard SemiBold, Pretendard, sans-serif";
+const TX = (x, y, s, t, c, o = {}) => `<text x="${x}" y="${y}" font-family="${o.f || TF}" font-size="${s}" fill="${c}" ${o.a ? `text-anchor="${o.a}"` : ""} ${o.ls ? `letter-spacing="${o.ls}"` : ""}>${t}</text>`;
+function gwFront(night) {
+  const dk = night ? "#1C2129" : "#2B3138", dome = night ? "#AEB7C4" : "#F4F6F8";
+  let g = "";
+  // 전방 루프 카메라 포드
+  g += `<rect x="560" y="212" width="84" height="16" rx="4" fill="${dk}"/><rect x="574" y="200" width="56" height="14" rx="4" fill="${dk}"/><circle cx="602" cy="207" r="4.5" fill="#6FB6FF"/>`;
+  // 경광등 바
+  g += `<rect x="1040" y="198" width="200" height="12" rx="3" fill="${dk}"/><rect x="1052" y="186" width="176" height="14" rx="7" fill="#F5B400"/><rect x="1052" y="186" width="176" height="4" rx="2" fill="#FFE08A" opacity=".8"/>`;
+  if (night) g += `<ellipse cx="1140" cy="192" rx="170" ry="46" fill="#F5B400" opacity=".55" filter="url(#b30)"/><ellipse cx="1140" cy="192" rx="90" ry="16" fill="#FFD25A" opacity=".8" filter="url(#b6)"/>`;
+  // RTK GNSS 안테나
+  g += `<rect x="1555" y="204" width="10" height="20" fill="${dk}"/><ellipse cx="1560" cy="204" rx="30" ry="8" fill="${dk}"/><path d="M 1532 202 Q 1560 168 1588 202 Z" fill="${dome}"/>`;
+  // 미러 위 측면 카메라
+  g += `<rect x="1088" y="400" width="34" height="20" rx="4" fill="${dk}"/><circle cx="1105" cy="410" r="4" fill="#6FB6FF"/>`;
+  // 랩핑
+  g += TX(1352, 404, 58, "GroundWatch", night ? "#C9D4E3" : "#0B1F3A", { ls: -1 });
+  g += TX(1356, 450, 26, "지하안전 순찰 · GPR 탐사", night ? "#93A2B8" : "#4A5566", { f: "Pretendard Medium, Pretendard, sans-serif" });
+  g += `<path d="M 1004 694 L 1832 644 L 1832 650 L 1004 700 Z" fill="#F5B400"/><path d="M 1004 702 L 1832 652 L 1832 672 L 1004 722 Z" fill="${night ? "#16233A" : "#0B1F3A"}"/>`;
+  // 후방 하부 GPR(일부 노출)
+  g += `<rect x="1800" y="846" width="10" height="20" fill="${dk}"/><rect x="1780" y="864" width="110" height="18" rx="3" fill="${dk}"/><rect x="1780" y="864" width="110" height="4" fill="#F5B400"/>`;
+  if (night) {
+    g += `<path d="M 618 640 L 790 492" stroke="#FFF6DD" stroke-width="8" stroke-linecap="round" filter="url(#b6)" opacity=".95"/><path d="M 618 640 L 790 492" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>`;
+  }
+  return g;
+}
+function gwRear(night) {
+  const dk = night ? "#1C2129" : "#2B3138", dome = night ? "#AEB7C4" : "#F4F6F8";
+  let g = "";
+  // 경광등 + RTK + 후방 카메라
+  g += `<rect x="980" y="134" width="200" height="12" rx="3" fill="${dk}"/><rect x="992" y="122" width="176" height="14" rx="7" fill="#F5B400"/><rect x="992" y="122" width="176" height="4" rx="2" fill="#FFE08A" opacity=".8"/>`;
+  if (night) g += `<ellipse cx="1080" cy="128" rx="180" ry="50" fill="#F5B400" opacity=".55" filter="url(#b30)"/><ellipse cx="1080" cy="128" rx="90" ry="16" fill="#FFD25A" opacity=".8" filter="url(#b6)"/>`;
+  g += `<rect x="1445" y="146" width="10" height="18" fill="${dk}"/><ellipse cx="1450" cy="146" rx="28" ry="7" fill="${dk}"/><path d="M 1424 144 Q 1450 112 1476 144 Z" fill="${dome}"/>`;
+  g += `<rect x="300" y="146" width="70" height="18" rx="4" fill="${dk}"/><circle cx="335" cy="155" r="4.5" fill="#6FB6FF"/>`;
+  // 랩핑
+  g += TX(180, 392, 46, "GroundWatch", night ? "#C9D4E3" : "#0B1F3A", { ls: -1 });
+  g += TX(182, 432, 22, "지하안전 순찰 · GPR 탐사", night ? "#93A2B8" : "#4A5566", { f: "Pretendard Medium, Pretendard, sans-serif" });
+  g += `<rect x="110" y="846" width="782" height="6" fill="#F5B400"/><rect x="110" y="854" width="782" height="22" fill="${night ? "#16233A" : "#0B1F3A"}"/>`;
+  g += `<rect x="520" y="736" width="230" height="42" rx="4" fill="${night ? "#2A2410" : "#FFF4CC"}" stroke="#F5B400" stroke-width="2"/>` + TX(635, 766, 22, "저속 탐사 차량", night ? "#F5D27A" : "#5C4400", { a: "middle" });
+  // 후방 하부 GPR 어레이
+  for (const bx of [220, 500, 780]) g += `<rect x="${bx}" y="1062" width="12" height="30" fill="${dk}"/>`;
+  g += `<ellipse cx="505" cy="1135" rx="390" ry="16" fill="#000" opacity=".35" filter="url(#b6)"/>`;
+  g += `<rect x="150" y="1088" width="712" height="34" rx="5" fill="${dk}"/><rect x="150" y="1088" width="712" height="5" rx="2" fill="#F5B400"/>`;
+  for (let i = 0; i < 16; i++) g += `<rect x="${170 + i * 43}" y="1100" width="26" height="14" rx="2" fill="${night ? "#2C333D" : "#3C444F"}"/>`;
+  for (let k = 1; k <= 4; k++) g += `<ellipse cx="505" cy="${1150 + k * 14}" rx="${330 + k * 60}" ry="${12 + k * 9}" fill="none" stroke="#F5B400" stroke-width="2.4" opacity="${(night ? 0.85 : 0.7) - k * 0.15}"/>`;
+  if (night) {
+    for (const [x, y, w, h] of [[900, 345, 85, 370], [96, 330, 64, 340]]) g += `<rect x="${x - 25}" y="${y}" width="${w + 50}" height="${h}" rx="30" fill="#FF2A2A" opacity=".55" filter="url(#b30)"/><rect x="${x + w * 0.35}" y="${y + 20}" width="${w * 0.3}" height="${h - 40}" rx="6" fill="#FF5A5A"/>`;
+    g += `<ellipse cx="520" cy="1150" rx="560" ry="80" fill="#FF3B3B" opacity=".12" filter="url(#b30)"/>`;
+  }
+  return g;
+}
+async function pvComp(name, src, ov, night, crops) {
+  const W = 1920, H = 1278;
+  let img = sharp(path.join(PH, src + ".jpg")).resize(W, H, { fit: "cover" });
+  if (night) img = img.modulate({ brightness: 0.38, saturation: 0.45 }).tint({ r: 70, g: 92, b: 140 });
+  const layers = [];
+  if (night) layers.push({ input: Buffer.from(svg(W, H, `<rect width="${W}" height="${H}" fill="url(#ng)"/>`, `<linearGradient id="ng" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#040A16" stop-opacity=".7"/><stop offset=".45" stop-color="#040A16" stop-opacity=".1"/><stop offset="1" stop-color="#040A16" stop-opacity=".45"/></linearGradient>`)) });
+  layers.push({ input: Buffer.from(svg(W, H, ov)) });
+  const base = await sharp(await img.png().toBuffer()).composite(layers).png().toBuffer();
+  await sharp(base).jpeg({ quality: 90 }).toFile(path.join(OUT, name + ".jpg"));
+  for (const [suf, top] of crops || []) await sharp(base).extract({ left: 0, top, width: W, height: 1080 }).jpeg({ quality: 90 }).toFile(path.join(OUT, name + suf + ".jpg"));
+}
+jobs.gw = async () => {
+  await pvComp("gw_front", "pv5_cargo_c", gwFront(false), false, [["_169", 120]]);
+  await pvComp("gw_front_n", "pv5_cargo_c", gwFront(true), true, [["_169", 120]]);
+  await pvComp("gw_rear", "pv5_cargo_d", gwRear(false), false, [["_169", 90]]);
+  await pvComp("gw_rear_n", "pv5_cargo_d", gwRear(true), true, [["_169", 190]]);
+};
+
 jobs.photos = async () => {
   await photo("ph_road", "seoul_traffic_3", 1600, 900, { pos: "centre" });
   await photo("ph_closing", "seoul_traffic_1", 1920, 1080, { pos: "south", grad: "top", a: 0.93, b: 0.55, mod: { brightness: 0.8, saturation: 0.8 } });

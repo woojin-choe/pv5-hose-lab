@@ -9,9 +9,10 @@ const { applyTheme } = require(process.env.PPTX_SKILL + "/scripts/apply_theme.js
 const IMG = path.join(__dirname, "..", "images");
 const OUT = path.join(__dirname, "..", "PV5_GroundWatch.pptx");
 const FONT = "Pretendard";
+const HF = "Pretendard";
 const K = { night: "0A1628", navy: "0B1F3A", amber: "F5B400", red: "D93025", ink: "101828", steel: "5B6573", mute: "8A94A3", fog: "F2F4F7", line: "DCE1E8", white: "FFFFFF", green: "2F9E44", blue: "1C64B5" };
 const THEME = {
-  name: "GroundWatch", headFontFace: FONT, bodyFontFace: FONT,
+  name: "GroundWatch", headFontFace: HF, bodyFontFace: FONT,
   colors: { dk1: K.ink, lt1: K.white, dk2: K.navy, lt2: K.fog, accent1: K.navy, accent2: K.amber, accent3: K.red, accent4: K.green, accent5: K.blue, accent6: K.steel, hlink: K.blue, folHlink: "7048E8" },
 };
 const BASIS = "작성 기준일 2026.10.10";
@@ -21,15 +22,30 @@ const pres = new pptxgen();
 pres.layout = "LAYOUT_WIDE";
 pres.title = "PV5 GroundWatch";
 pres.author = "한 명이라도 살릴 수 있다면";
-pres.theme = { headFontFace: FONT, bodyFontFace: FONT };
+pres.theme = { headFontFace: HF, bodyFontFace: FONT };
+// 굵은 글씨는 SemiBold 서체로, 큰 글씨는 한 단계 줄여 보고서 톤으로 맞춘다
+const tsize = (n) => (n >= 40 ? Math.round(n * 0.72) : n >= 24 ? Math.round(n * 0.8) : n >= 15 ? n - 1 : n);
+function tone(o) {
+  if (!o) return o;
+  const r = { ...o };
+  if (r.fontSize) r.fontSize = tsize(r.fontSize);
+  return r;
+}
+const _addSlide = pres.addSlide.bind(pres);
+pres.addSlide = (...a) => {
+  const sl = _addSlide(...a);
+  const _t = sl.addText.bind(sl);
+  sl.addText = (t, o) => _t(Array.isArray(t) ? t.map((r) => ({ ...r, options: tone(r.options) })) : t, o && o.placeholder ? o : tone(o));
+  return sl;
+};
 
 pres.defineSlideMaster({
   title: "GW_CONTENT",
   background: { color: K.white },
   objects: [
     { rect: { x: M, y: 0.42, w: 1.95, h: 0.42, fill: { color: K.navy } } },
-    { text: { text: "PV5 GroundWatch", options: { x: M, y: 0.42, w: 1.95, h: 0.42, fontFace: FONT, fontSize: 13, bold: true, color: K.white, align: "center", valign: "middle", margin: 0 } } },
-    { placeholder: { options: { name: "title", type: "title", x: 4.85, y: 0.42, w: 7.9, h: 0.42, fontFace: FONT, fontSize: 19, bold: true, color: K.ink, valign: "middle", margin: 0 }, text: "" } },
+    { text: { text: "PV5 GroundWatch", options: { x: M, y: 0.42, w: 1.95, h: 0.42, fontFace: HF, fontSize: 12, bold: true, color: K.white, align: "center", valign: "middle", margin: 0 } } },
+    { placeholder: { options: { name: "title", type: "title", x: 4.85, y: 0.42, w: 7.9, h: 0.42, fontFace: HF, fontSize: 17, bold: true, color: K.ink, valign: "middle", margin: 0 }, text: "" } },
   ],
   slideNumber: { x: 12.25, y: 7.0, w: 0.5, h: 0.28, fontFace: FONT, fontSize: 10, color: K.mute, align: "right" },
 });
@@ -37,8 +53,8 @@ pres.defineSlideMaster({
   title: "GW_DIVIDER",
   background: { color: K.night },
   objects: [
-    { placeholder: { options: { name: "title", type: "title", x: M, y: 1.1, w: CW, h: 0.9, fontFace: FONT, fontSize: 40, bold: true, color: K.white, align: "center", valign: "middle", margin: 0 }, text: "" } },
-    { placeholder: { options: { name: "body", type: "body", x: 3.4, y: 2.15, w: 6.53, h: 0.6, fontFace: FONT, fontSize: 22, bold: true, color: K.ink, align: "center", valign: "middle", margin: 0 }, text: "" } },
+    { placeholder: { options: { name: "title", type: "title", x: M, y: 1.1, w: CW, h: 0.9, fontFace: HF, fontSize: 32, bold: true, color: K.white, align: "center", valign: "middle", margin: 0 }, text: "" } },
+    { placeholder: { options: { name: "body", type: "body", x: 3.4, y: 2.15, w: 6.53, h: 0.6, fontFace: HF, fontSize: 18, bold: true, color: K.white, align: "center", valign: "middle", margin: 0 }, text: "" } },
   ],
   slideNumber: { x: 12.25, y: 7.0, w: 0.5, h: 0.28, fontFace: FONT, fontSize: 10, color: "6B7A90", align: "right" },
 });
@@ -59,8 +75,8 @@ function img(s, name, x, y, w, h, o = {}) {
 const ico = (s, name, x, y, sz) => s.addImage({ path: path.join(IMG, "ico_" + name + ".png"), x, y, w: sz, h: sz, objectName: "icon_" + name });
 function slideC(desc, tag, tagColor, section) {
   const s = pres.addSlide({ masterName: "GW_CONTENT", sectionTitle: section });
-  const dark = tagColor !== K.amber;
-  s.addText(tag, { shape: pres.ShapeType.rect, x: 2.62, y: 0.42, w: 2.05, h: 0.42, fill: { color: tagColor }, line: { color: tagColor }, fontSize: 14, bold: true, color: dark ? K.white : K.ink, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "tag" });
+  const tc = tagColor === K.red ? "B4232A" : K.navy;
+  s.addText(tag, { shape: pres.ShapeType.rect, x: 2.62, y: 0.42, w: 2.05, h: 0.42, fill: { color: K.white }, line: { color: tc, width: 1 }, fontSize: 13, bold: true, color: tc, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "tag" });
   s.addText(desc, { placeholder: "title" });
   return s;
 }
@@ -69,7 +85,8 @@ function lead(s, text, o = {}) {
 }
 function src(s, text, dark) { s.addText(text, { x: M, y: 7.0, w: 11.4, h: 0.28, fontSize: 10, color: dark ? "8C9BB0" : K.mute, margin: 0, valign: "middle", isTextBox: true, objectName: "source" }); }
 function bubble(s, text, x, y, w, h, o = {}) {
-  s.addText(text, { shape: pres.ShapeType.wedgeRectCallout, x, y, w, h, fill: { color: o.fill || K.navy }, line: { color: o.fill || K.navy }, fontSize: o.fs || 15, bold: true, color: o.color || K.white, align: "center", valign: "middle", margin: 6, isTextBox: true, objectName: "bubble" });
+  const dk = (o.fill || K.navy) !== K.amber;
+  s.addText(text.replace(/\n/g, " "), { shape: pres.ShapeType.rect, x, y, w, h, fill: { color: dk ? K.navy : K.fog }, line: { color: dk ? K.navy : K.line, width: 0.75 }, fontSize: o.fs || 15, bold: true, color: dk ? K.white : K.ink, align: "left", valign: "middle", margin: 10, isTextBox: true, objectName: "keyMessage" });
 }
 function arrowLine(s, x1, y1, x2, y2, color = K.navy, w = 1.75) {
   const flipH = x2 < x1, flipV = y2 < y1;
@@ -171,7 +188,7 @@ async function build() {
   // ===== 5. 솔루션 개요 =====
   s = slideC("같은 길을 반복해서 보고, 달라진 곳만 다시 확인한다", "솔루션 개요", K.amber, "문제");
   lead(s, "순찰, 비교, 현장 재확인이 한 바퀴를 돌 때마다 같은 도로의 기록이 한 겹씩 쌓입니다.");
-  img(s, "ph_pv5_ov", M, 1.75, 4.1, 2.85, { stretch: true });
+  img(s, "gw_front_n", M, 1.75, 4.1, 2.85, { stretch: true });
   block(s, M, 4.75, 4.1, "1  새벽 순찰", "같은 경로를 같은 장비로 반복 주행하며 GPR과 영상을 수집합니다.", { h: 0.8 });
   arrowLine(s, 4.85, 3.17, 5.35, 3.17);
   panel(s, 5.45, 1.75, 3.5, 2.85, K.night);
@@ -197,43 +214,48 @@ async function build() {
   pres.addSection({ title: "운영 모델" });
   s = pres.addSlide({ masterName: "GW_DIVIDER", sectionTitle: "운영 모델" });
   s.addText("PV5 GroundWatch", { placeholder: "title" });
-  s.addShape(pres.ShapeType.rect, { x: 3.4, y: 2.15, w: 6.53, h: 0.6, fill: { color: K.amber }, line: { color: K.amber }, objectName: "sectionBand" });
+  s.addShape(pres.ShapeType.rect, { x: 3.4, y: 2.15, w: 6.53, h: 0.6, fill: { color: "1A2E4F" }, line: { color: "3A5070", width: 0.75 }, objectName: "sectionBand" });
   s.addText("지금 바로 적용 가능한 운영 모델", { placeholder: "body" });
-  img(s, "ph_alley", 1.55, 3.3, 4.95, 2.78, { stretch: true });
-  img(s, "ph_pv5_169", 6.85, 3.3, 4.95, 2.78, { stretch: true });
+  img(s, "gw_rear_n_169", 1.55, 3.3, 4.95, 2.78, { stretch: true });
+  img(s, "gw_front_169", 6.85, 3.3, 4.95, 2.78, { stretch: true });
   s.addText("새벽 정기순찰", { x: 1.55, y: 6.2, w: 4.95, h: 0.4, fontSize: 16, bold: true, color: K.white, align: "center", margin: 0, isTextBox: true });
   s.addText("PV5 이동형 탐사실", { x: 6.85, y: 6.2, w: 4.95, h: 0.4, fontSize: 16, bold: true, color: K.white, align: "center", margin: 0, isTextBox: true });
-  src(s, "사진: Anton Strogonoff, CC BY 3.0(색 보정), Alexander Migl, CC BY-SA 4.0, Wikimedia Commons", true);
+  src(s, "PV5 실차 사진(Alexander Migl, CC BY-SA 4.0) 위에 장비와 랩핑을 합성한 예상도", true);
   s.addNotes("여기서부터는 지금 기술로 바로 꾸릴 수 있는 운영 모델 열한 가지를 순서대로 보여드립니다.");
 
   // ===== 7. #1 새벽 순찰 =====
   s = slideC("교통량이 적은 시간에 도로 아래 변화를 기록합니다", "#1 새벽 순찰", K.amber, "운영 모델");
-  img(s, "ph_dawn", 0, 1.05, 13.333, 5.85, { stretch: true });
-  s.addText("보이지 않는 위험은,\n반복해서 봐야 보입니다.", { x: M + 0.1, y: 1.45, w: 6.0, h: 1.3, fontSize: 30, bold: true, color: K.white, margin: 0, valign: "top", isTextBox: true });
-  [["moon_w", "차량과 보행이 가장 적은 새벽에 반복 주행"], ["car_w", "엔진 소음과 배기가스 없이 주택가 저속 운행"], ["route_w", "같은 경로, 같은 장비로 회차끼리 비교"]].forEach(([ic, t], i) => {
-    ico(s, ic, M + 0.1, 3.15 + i * 0.62, 0.36);
-    s.addText(t, { x: M + 0.62, y: 3.12 + i * 0.62, w: 6.0, h: 0.44, fontSize: 16, color: "E2E8F0", margin: 0, valign: "middle", isTextBox: true });
+  s.addShape(pres.ShapeType.rect, { x: 0, y: 1.05, w: 13.333, h: 5.85, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
+  img(s, "gw_rear_n_169", 5.0, 1.05, 8.333, 5.85, { stretch: true });
+  s.addText("보이지 않는 위험은,\n반복해서 봐야 보입니다.", { x: M + 0.1, y: 1.55, w: 4.3, h: 1.3, fontSize: 30, bold: true, color: K.white, margin: 0, valign: "top", isTextBox: true });
+  [["moon_w", "차량과 보행이 가장 적은 새벽에 반복 주행"], ["car_w", "엔진 소음과 배기가스 없이 주택가 저속 운행"], ["route_w", "같은 경로, 같은 장비로 회차끼리 비교"], ["radar_w", "후방 하부 GPR 어레이로 차로를 연속 스캔"]].forEach(([ic, t], i) => {
+    ico(s, ic, M + 0.1, 3.3 + i * 0.62, 0.34);
+    s.addText(t, { x: M + 0.6, y: 3.27 + i * 0.62, w: 3.9, h: 0.42, fontSize: 14, color: "E2E8F0", margin: 0, valign: "middle", isTextBox: true });
   });
-  bubble(s, "어제와 같은 길, 같은 장비, 같은 속도", 8.6, 1.4, 3.9, 0.62, { fill: K.amber, color: K.ink, fs: 14 });
-  src(s, "저속 운행 시 실제 소음과 주행거리 영향은 [실증 필요]. 사진: Anton Strogonoff, CC BY 3.0, Wikimedia Commons(서울 합정동 골목, 색 보정)");
+  bubble(s, "어제와 같은 길, 같은 장비, 같은 속도", M + 0.1, 5.95, 4.2, 0.55, { fs: 14 });
+  src(s, "새벽 순찰 장착 예상도(PV5 실차 사진 Alexander Migl, CC BY-SA 4.0 위 합성). 저속 운행 시 실제 소음과 주행거리 영향은 [실증 필요]");
   s.addNotes("새벽은 주차 차량과 보행자가 가장 적은 시간이라 같은 경로를 같은 조건으로 반복 주행하기 좋습니다. PV5는 전기차라 엔진 공회전 소음과 배기가스 없이 주택가를 저속으로 오래 달릴 수 있습니다.\n[실증 필요] 저속 장시간 운행 시 배터리 소모와 주행거리 영향, 실제 소음 수준.\n참고: https://www.kia.com/kr/vehicles/pv5-cargo/features");
 
   // ===== 8. #2 이동형 탐사실 =====
   s = slideC("PV5는 센서 운반차가 아니라 이동형 탐사·분석·검증 플랫폼", "#2 이동형 탐사실", K.amber, "운영 모델");
   lead(s, "장비를 차량에 고정해 회차마다 같은 측정 환경을 유지하고, 차 안에서 분석하고, 내려서 검증합니다.");
-  const ph = img(s, "ph_pv5", M, 1.65, 7.55, 5.03, { stretch: true });
+  const ph = img(s, "gw_front", M, 1.65, 7.55, 5.03, { stretch: true });
   const P = (fx, fy) => [ph.x + ph.w * fx, ph.y + ph.h * fy];
   const callout = (fx, fy, lx, ly, n, label) => {
     const [px, py] = P(fx, fy);
-    s.addShape(pres.ShapeType.line, { x: Math.min(px, lx), y: Math.min(py, ly), w: Math.abs(lx - px) || 0.001, h: Math.abs(ly - py) || 0.001, flipH: lx < px, flipV: ly < py, line: { color: K.amber, width: 1.5 }, objectName: "leader" });
-    s.addShape(pres.ShapeType.ellipse, { x: px - 0.09, y: py - 0.09, w: 0.18, h: 0.18, fill: { color: K.amber }, line: { color: K.white, width: 1.5 }, objectName: "pin" });
-    s.addText([{ text: n + "  ", options: { bold: true, color: K.amber } }, { text: label, options: { bold: true, color: K.white } }], { shape: pres.ShapeType.rect, x: lx - (lx < px ? 2.05 : 0), y: ly - 0.19, w: 2.05, h: 0.38, fill: { color: K.night, transparency: 8 }, line: { color: K.night }, fontSize: 12, align: "left", valign: "middle", margin: [0, 6, 0, 6], isTextBox: true, objectName: "calloutLabel" });
+    const w = 0.55 + label.length * 0.135, h = 0.34;
+    const ax = px < lx ? lx : px > lx + w ? lx + w : px;
+    const ay = px >= lx && px <= lx + w ? (py > ly ? ly + h / 2 : ly - h / 2) : ly;
+    s.addShape(pres.ShapeType.line, { x: Math.min(px, ax), y: Math.min(py, ay), w: Math.abs(ax - px) || 0.001, h: Math.abs(ay - py) || 0.001, flipH: ax < px, flipV: ay < py, line: { color: K.amber, width: 1.25 }, objectName: "leader" });
+    s.addShape(pres.ShapeType.ellipse, { x: px - 0.08, y: py - 0.08, w: 0.16, h: 0.16, fill: { color: K.amber }, line: { color: K.white, width: 1.5 }, objectName: "pin" });
+    s.addText([{ text: n + "  ", options: { bold: true, color: K.amber } }, { text: label, options: { color: K.white } }], { shape: pres.ShapeType.rect, x: lx, y: ly - h / 2, w, h, fill: { color: K.night, transparency: 10 }, line: { color: K.night }, fontSize: 12, align: "left", valign: "middle", margin: 4, isTextBox: true, objectName: "calloutLabel" });
   };
-  callout(0.69, 0.165, 6.1, 1.95, "1", "루프: RTK, 카메라, 경광");
-  callout(0.36, 0.3, 2.95, 2.0, "2", "운전석: 12.9인치 IVI");
-  callout(0.8, 0.38, 6.1, 3.3, "3", "화물실: 엣지·수동 GPR");
-  callout(0.94, 0.66, 6.1, 4.7, "4", "후방 하부: 다채널 GPR");
-  callout(0.27, 0.62, 2.7, 5.6, "5", "전방: 카메라, 거리 센서");
+  callout(0.313, 0.165, 0.8, 1.95, "1", "전방 카메라");
+  callout(0.594, 0.15, 3.4, 1.95, "2", "경광등");
+  callout(0.813, 0.145, 5.55, 1.95, "3", "RTK-GNSS 안테나");
+  callout(0.3, 0.33, 0.8, 3.0, "4", "운전석 12.9인치 IVI");
+  callout(0.85, 0.47, 5.1, 4.75, "5", "화물실 엣지·수동 GPR");
+  callout(0.97, 0.68, 5.1, 5.55, "6", "후방 하부 다채널 GPR");
   [["외부", "후방 하부 다채널 GPR, 전방·좌우·후방 카메라, RTK-GNSS, IMU, 휠 인코더, 거리 센서, 노면 조명과 경광장치", K.ink], ["화물실 전방", "Edge Gateway, 산업용 엣지 AI 컴퓨터, GPR 제어장치, 저장장치, 보안 네트워크, RTK 수신, 전원 분배", K.blue], ["화물실 측면", "지면 밀착형 수동 GPR, AR 글래스와 충전 보관함, RTK 이동국, 현장 기준 마커, 교체형 안테나", K.navy], ["화물실 후방", "관로 내시경, 작업 조명, 안전 표지판, 라바콘, 반사조끼, 개인보호장비, 세척·점검 도구", "B4232A"]].forEach(([t, b, c], i) => {
     const y = 1.65 + i * 0.8;
     s.addShape(pres.ShapeType.ellipse, { x: 8.45, y: y + 0.09, w: 0.15, h: 0.15, fill: { color: c }, line: { color: c }, objectName: "dot" });
@@ -246,7 +268,7 @@ async function build() {
     s.addText(l, { x: 10.8, y: 5.02 + i * 0.4, w: 1.93, h: 0.38, fontSize: 11, color: K.steel, margin: 0, valign: "middle", isTextBox: true });
   });
   s.addText([{ text: "[실증 필요] ", options: { bold: true, color: K.red } }, { text: "적재중량, 차량총중량, 전후축 하중, 전자파 간섭, 구조변경 승인 검토", options: { color: K.ink } }], { x: 8.45, y: 6.25, w: 4.28, h: 0.55, fontSize: 11, margin: 0, valign: "top", isTextBox: true });
-  src(s, "출처: 기아 PV5 카고 제원과 특징, 현대차그룹 「PV5의 모든 것」. 장비 위치는 제안안입니다. 사진: Alexander Migl, CC BY-SA 4.0, Wikimedia Commons");
+  src(s, "출처: 기아 PV5 카고 제원과 특징, 현대차그룹 「PV5의 모든 것」. 장비 위치는 제안안입니다. 사진: Alexander Migl, CC BY-SA 4.0(장비·랩핑 합성 예상도)");
   s.addNotes("PV5를 센서를 실어 나르는 차가 아니라, 탐사하고 차 안에서 분석하고 내려서 검증하는 이동형 플랫폼으로 정의합니다. 운전석의 12.9인치 PBV 전용 인포테인먼트에서 순찰 앱을 띄웁니다.\n[사실] PV5 카고 롱 카고룸 2,255×1,565×1,520mm(4,420L), 적재고 419mm, 실내·실외 V2L 220V(최대 3.6kW). https://www.kia.com/kr/vehicles/pv5-cargo/specification , https://www.hyundaimotorgroup.com/ko/story/CONT0000000000178473\n[설계 판단] PV5 하부는 배터리 팩이므로 GPR 안테나는 후방 오버행 하부에 다는 것을 기본안으로 하고, 배터리 케이스와 차체 금속의 간섭을 시험합니다.\n[실증 필요] 적재중량, 차량총중량, 전후축 하중, 전자파 간섭, 구조변경 승인.\n사진: Kia PV5 Cargo IMG 7825, Alexander Migl, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Kia_PV5_Cargo_IMG_7825.jpg");
 
   // ===== 9. #3 4D 변화지도 =====
@@ -398,7 +420,7 @@ async function build() {
   pres.addSection({ title: "확장" });
   s = pres.addSlide({ masterName: "GW_DIVIDER", sectionTitle: "확장" });
   s.addText("PV5 GroundWatch", { placeholder: "title" });
-  s.addShape(pres.ShapeType.rect, { x: 3.4, y: 2.15, w: 6.53, h: 0.6, fill: { color: K.amber }, line: { color: K.amber }, objectName: "sectionBand" });
+  s.addShape(pres.ShapeType.rect, { x: 3.4, y: 2.15, w: 6.53, h: 0.6, fill: { color: "1A2E4F" }, line: { color: "3A5070", width: 0.75 }, objectName: "sectionBand" });
   s.addText("도시 지하 안전망으로의 확장", { placeholder: "body" });
   img(s, "patrol_net", 1.55, 3.3, 4.95, 2.78, { stretch: true });
   img(s, "twin", 6.85, 3.3, 4.95, 2.78, { stretch: true });
@@ -457,13 +479,16 @@ async function build() {
 
   // ===== 23. 마무리 =====
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "확장" });
-  img(s, "ph_closing", 0, 0, 13.333, 7.5, { stretch: true });
-  s.addText("한 번의 조기 발견이,\n한 사람의 무사 귀가가 되도록.", { x: 1.2, y: 0.95, w: 10.93, h: 1.75, fontSize: 40, bold: true, color: K.white, align: "center", valign: "middle", margin: 0, isTextBox: true });
-  s.addText("PV5 GroundWatch", { x: 1.2, y: 2.85, w: 10.93, h: 0.5, fontSize: 22, bold: true, color: K.amber, align: "center", margin: 0, isTextBox: true });
-  s.addText("팀 한 명이라도 살릴 수 있다면", { x: 1.2, y: 3.38, w: 10.93, h: 0.42, fontSize: 15, color: "DCE3EC", align: "center", margin: 0, isTextBox: true });
-  s.addText("사진: Immanuelle, CC BY 4.0, Wikimedia Commons", { x: M, y: 7.0, w: 6, h: 0.28, fontSize: 9, color: "C9D3E0", margin: 0, isTextBox: true });
-  s.addText("감사합니다", { x: 9.6, y: 6.95, w: 3.13, h: 0.36, fontSize: 13, color: "E6EBF2", align: "right", margin: 0, isTextBox: true });
-  s.addNotes("도로가 무너진 뒤에는 누구나 구멍을 볼 수 있습니다. 우리가 찾으려는 것은 아직 보이지 않을 때 시작된 변화입니다. 한 번의 조기 발견이 한 사람의 무사 귀가가 되도록, PV5 GroundWatch를 제안합니다. 감사합니다.");
+  s.background = { color: K.night };
+  img(s, "gw_front_n", 5.2, 0.6, 8.133, 6.3, { align: "right" });
+  s.addShape(pres.ShapeType.rect, { x: 0, y: 0, w: 5.6, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
+  s.addText("한 번의 조기 발견이,\n한 사람의 무사 귀가가 되도록.", { x: M + 0.1, y: 2.0, w: 5.2, h: 1.6, fontSize: 30, bold: true, color: K.white, margin: 0, valign: "top", isTextBox: true });
+  s.addText("PV5 GroundWatch", { x: M + 0.1, y: 3.95, w: 4.8, h: 0.42, fontSize: 18, bold: true, color: K.amber, margin: 0, isTextBox: true });
+  s.addText("같은 도로를 반복 측정해 지하의 변화를 찾는 PV5 지하안전 순찰차", { x: M + 0.1, y: 4.4, w: 4.6, h: 0.7, fontSize: 13, color: "C9D3E0", margin: 0, valign: "top", isTextBox: true });
+  s.addText("팀 한 명이라도 살릴 수 있다면", { x: M + 0.1, y: 5.35, w: 4.6, h: 0.36, fontSize: 13, color: "C9D3E0", margin: 0, isTextBox: true });
+  s.addText("감사합니다", { x: M + 0.1, y: 6.55, w: 3, h: 0.32, fontSize: 12, color: "8C9BB0", margin: 0, isTextBox: true });
+  s.addText("PV5 실차 사진(Alexander Migl, CC BY-SA 4.0) 위 장비 합성 예상도", { x: 5.4, y: 7.05, w: 7.5, h: 0.26, fontSize: 9, color: "B8C4D4", align: "right", margin: 0, isTextBox: true });
+  s.addNotes("도로가 무너진 뒤에는 누구나 구멍을 볼 수 있습니다. 우리가 찾으려는 것은 아직 보이지 않을 때 시작된 변화입니다. 한 번의 조기 발견이 한 사람의 무사 귀가가 되도록, PV5 GroundWatch를 제안합니다. 감사합니다.\n이미지: PV5 실차 사진(Alexander Migl, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Kia_PV5_Cargo_IMG_7825.jpg)에 장비와 랩핑을 합성한 예상도.");
 
   // ===== 24. 부록1 =====
   pres.addSection({ title: "부록" });
