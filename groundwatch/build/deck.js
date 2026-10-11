@@ -240,7 +240,7 @@ async function build() {
   const gp = img(s, "f_gpr", M + 5.55, 1.6, 2.05, 3.04, { stretch: true, cap: "후방 하부 다채널 GPR" });
   const PIN = [["1", 0.383, 0.536, "Edge Gateway·엣지 AI 랙"], ["2", 0.454, 0.49, "작업대·모니터"], ["3", 0.588, 0.747, "수동 GPR 카트(고정)"], ["4", 0.588, 0.41, "장비 수납장"], ["5", 0.658, 0.8, "라바콘·안전장비"], ["6", 0.504, 0.222, "작업 조명"]];
   PIN.forEach(([n, fx, fy]) => { const x = cw.x + fx * cw.w, y = cw.y + fy * cw.h; s.addText(n, { shape: pres.ShapeType.ellipse, x: x - 0.14, y: y - 0.14, w: 0.28, h: 0.28, fill: { color: K.navy }, line: { color: K.white, width: 1.5 }, fontSize: 10, bold: true, color: K.white, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "pin" }); });
-  s.addText("7", { shape: pres.ShapeType.ellipse, x: gp.x + gp.w * 0.5 - 0.14, y: gp.y + gp.h * 0.62 - 0.14, w: 0.28, h: 0.28, fill: { color: K.navy }, line: { color: K.white, width: 1.5 }, fontSize: 10, bold: true, color: K.white, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "pin" });
+  s.addText("7", { shape: pres.ShapeType.ellipse, x: gp.x + gp.w * 0.45 - 0.14, y: gp.y + gp.h * 0.57 - 0.14, w: 0.28, h: 0.28, fill: { color: K.navy }, line: { color: K.white, width: 1.5 }, fontSize: 10, bold: true, color: K.white, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "pin" });
   [...PIN, ["7", 0, 0, "후방 하부 다채널 GPR"], ["8", 0, 0, "루프 경광등·GNSS"]].forEach(([n, , , t2], i) => { const x = M + (i % 4) * 1.9, y = 5.0 + Math.floor(i / 4) * 0.27; s.addText([{ text: n + " ", options: { bold: true, color: K.navy } }, { text: t2, options: { color: K.ink } }], { x, y, w: 1.88, h: 0.26, fontSize: 10, margin: 0, valign: "middle", isTextBox: true }); });
   [["외부", "후방 하부 다채널 GPR, 전방·좌우·후방 카메라, RTK-GNSS, IMU, 휠 인코더, 거리 센서, 노면 조명과 경광장치", K.ink], ["화물실 전방", "Edge Gateway, 산업용 엣지 AI 컴퓨터, GPR 제어장치, 저장장치, 보안 네트워크, RTK 수신, 전원 분배", K.blue], ["화물실 측면", "지면 밀착형 수동 GPR, AR 글래스와 충전 보관함, RTK 이동국, 현장 기준 마커, 교체형 안테나", K.navy], ["화물실 후방", "관로 내시경, 작업 조명, 안전 표지판, 라바콘, 반사조끼, 개인보호장비, 세척·점검 도구", "B4232A"]].forEach(([t, b, c], i) => {
     const y = 1.65 + i * 0.8;
@@ -307,7 +307,7 @@ async function build() {
   // ===== 12. #6 Patrol 앱 =====
   s = slideC("PV5의 디스플레이가 새벽 순찰의 업무 화면이 된다", "#6 Patrol 앱", K.amber, "운영 모델");
   lead(s, "PV5는 Android Automotive OS 기반 PBV 전용 인포테인먼트와 Pleos App Market을 지원합니다. GroundWatch Patrol은 이 환경의 B2B 업무용 앱을 목표로 합니다.", { h: 0.6 });
-  img(s, "ivi_pre", M, 1.8, 7.3, 2.83, { align: "left" });
+  img(s, "ivi_device", M, 1.8, 7.3, 2.83, { align: "left" });
   s.addText("운행 전: 순찰거리, 재확인 지점, 장비 상태를 확인하고 순찰을 시작합니다", { x: M, y: 4.72, w: 7.3, h: 0.35, fontSize: 13, color: K.steel, margin: 0, isTextBox: true });
   img(s, "ivi_drive", 8.15, 1.8, 4.58, 1.78);
   s.addText("주행 중: 스캔 상태와 다음 지점 거리만", { x: 8.15, y: 3.6, w: 4.58, h: 0.3, fontSize: 12, color: K.steel, margin: 0, isTextBox: true });

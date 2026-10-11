@@ -777,7 +777,7 @@ jobs.mechanism = async () => {
   ov += callout(W, H, A.pipe, 2700, 760, "노후 하수관 누수", { c: "#2F80ED", sub: "경계면 강도 저하" });
   ov += callout(W, H, [g3[0] / W, g3[1] / H], 2700, 1100, "지하수위 저하", { c: "#2F80ED", sub: "인근 공사로 최대 26m" });
   await sharp({ create: { width: W, height: H, channels: 4, background: "#FFFFFF" } })
-    .composite([{ input: src }, { input: Buffer.from(svg(W, H, ov)) }]).flatten({ background: "#FFFFFF" }).png().toFile(path.join(OUT, "mechanism.png"));
+    .composite([{ input: src }, { input: Buffer.from(svg(W, H, ov)) }]).png().toBuffer().then((b) => fitWhite(b, W, H, path.join(OUT, "mechanism.png")));
 };
 
 jobs.twin = async () => {
@@ -790,13 +790,21 @@ jobs.twin = async () => {
   ov += callout(W, H, A.water, 560, 1330, "상수관", { c: "#2F80ED" });
   ov += callout(W, H, A.gas, 2900, 1560, "가스 · 통신관로", { c: "#5B6573" });
   await sharp({ create: { width: W, height: H, channels: 4, background: "#FFFFFF" } })
-    .composite([{ input: src }, { input: Buffer.from(svg(W, H, ov)) }]).flatten({ background: "#FFFFFF" }).png().toFile(path.join(OUT, "twin.png"));
+    .composite([{ input: src }, { input: Buffer.from(svg(W, H, ov)) }]).png().toBuffer().then((b) => fitWhite(b, W, H, path.join(OUT, "twin.png")));
 };
 
+// 흰 여백을 잘라내고 원래 비율 캔버스에 3% 여백으로 다시 맞춘다
+async function fitWhite(buf, W, H, file) {
+  const t = await sharp(buf).flatten({ background: "#FFFFFF" }).trim({ background: "#FFFFFF", threshold: 12 }).png().toBuffer();
+  const pw = Math.round(W * 0.97), ph = Math.round(H * 0.97);
+  const r = await sharp(t).resize(pw, ph, { fit: "inside" }).png().toBuffer(), m = await sharp(r).metadata();
+  await sharp({ create: { width: W, height: H, channels: 3, background: "#FFFFFF" } }).composite([{ input: r, left: Math.round((W - m.width) / 2), top: Math.round((H - m.height) / 2) }]).png().toFile(file);
+}
 const ug = (n) => JSON.parse(require("fs").readFileSync(path.join(OUT, "3d", n + ".json")));
 async function ugCompose(name, srcName, W, H, ov) {
-  await sharp({ create: { width: W, height: H, channels: 4, background: "#FFFFFF" } })
-    .composite([{ input: await sharp(path.join(OUT, "3d", srcName + ".png")).resize(W, H).png().toBuffer() }, { input: Buffer.from(svg(W, H, ov)) }]).flatten({ background: "#FFFFFF" }).png().toFile(path.join(OUT, name + ".png"));
+  const buf = await sharp({ create: { width: W, height: H, channels: 4, background: "#FFFFFF" } })
+    .composite([{ input: await sharp(path.join(OUT, "3d", srcName + ".png")).resize(W, H).png().toBuffer() }, { input: Buffer.from(svg(W, H, ov)) }]).png().toBuffer();
+  await fitWhite(buf, W, H, path.join(OUT, name + ".png"));
 }
 jobs.freqDepth = async () => {
   const W = 2800, H = 1400, A = ug("ug_freq"), P = (k) => `${A[k][0] * W},${A[k][1] * H}`;

@@ -13,4 +13,3 @@ Technical cutaway render of a white Kia PV5 Cargo van side view, cargo area show
 
 ## 주의
 - 기아 로고·엠블럼은 생성 이미지에서 지우거나 흐리게 처리하세요.
-- 생성 이미지는 슬라이드 하단에 "AI 생성 예상 이미지"라고 표기하세요.

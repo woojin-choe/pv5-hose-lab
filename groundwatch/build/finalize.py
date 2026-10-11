@@ -9,9 +9,9 @@ JOBS = {
     "f_int6":    ("lab_open_b.png", 5.933 / 5.1, 0.5, 0.5, 1.12),   # 6 구분장
     "f_rear_n":  ("rear_dawn.png", 7.48 / 4.99, 0.5, 0.5, 1.0),     # 7 새벽 순찰
     "f_int":     ("lab_open.png", 5.4 / 3.04, 0.5, 0.45, 1.0),      # 8 이동형 탐사실
-    "f_gpr":     ("gpr_close.png", 2.05 / 3.04, 0.5, 0.5, 1.0),     # 8 후방 하부 GPR
+    "f_gpr":     ("gpr_close.png", 2.05 / 3.04, 0.6, 0.6, 1.0),     # 8 후방 하부 GPR
     "f_rear":    ("rear_day.png", 5.933 / 5.1, 0.5, 0.5, 1.0),      # 18 구분장
-    "f_front2":  ("street_dawn.png", 6.433 / 5.1, 0.47, 0.5, 1.0),  # 23 맺음말
+    "f_front2":  ("street_dawn.png", 6.433 / 5.1, 0.0, 0.5, 1.0),  # 23 맺음말
 }
 for name in (sys.argv[1:] or JOBS):
     src, ar, fx, fy, z = JOBS[name]
