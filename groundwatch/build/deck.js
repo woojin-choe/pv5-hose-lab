@@ -225,7 +225,7 @@ async function build() {
   // ===== 7. #1 새벽 순찰 =====
   s = slideC("교통량이 적은 시간에 도로 아래 변화를 기록합니다", "#1 새벽 순찰", K.amber, "운영 모델");
   s.addShape(pres.ShapeType.rect, { x: M, y: 1.15, w: 4.5, h: 5.6, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "r_rear_n", 5.25, 1.15, 7.48, 4.99, { stretch: true, cap: "새벽 순찰 장착 예상 이미지(후방 하부 다채널 GPR, AI 생성)" });
+  img(s, "r_patrol", 5.25, 1.15, 7.48, 4.99, { stretch: true, cap: "새벽 순찰 장착 예상 이미지(경광등·GNSS 안테나, AI 생성)" });
   s.addText("보이지 않는 위험은,\n반복해서 봐야 보입니다.", { x: M + 0.1, y: 1.55, w: 4.3, h: 1.3, fontSize: 30, bold: true, color: K.white, margin: 0, valign: "top", isTextBox: true });
   [["moon_w", "차량과 보행이 가장 적은 새벽에 반복 주행"], ["car_w", "엔진 소음과 배기가스 없이 주택가 저속 운행"], ["route_w", "같은 경로, 같은 장비로 회차끼리 비교"], ["radar_w", "후방 하부 GPR 어레이로 차로를 연속 스캔"]].forEach(([ic, t], i) => {
     ico(s, ic, M + 0.1, 3.3 + i * 0.62, 0.34);
@@ -238,9 +238,11 @@ async function build() {
   // ===== 8. #2 이동형 탐사실 =====
   s = slideC("PV5는 센서 운반차가 아니라 이동형 탐사·분석·검증 플랫폼", "#2 이동형 탐사실", K.amber, "운영 모델");
   lead(s, "장비를 차량에 고정해 회차마다 같은 측정 환경을 유지하고, 차 안에서 분석하고, 내려서 검증합니다.");
-  img(s, "draw_side", M, 1.6, 8.0, 3.73, { align: "left", cap: "PV5 GroundWatch 장비 배치도(측면, 제안 예시)" });
-  const legend = [["1", "전방 카메라"], ["2", "경광등"], ["3", "RTK-GNSS 안테나"], ["4", "측면 카메라(미러)"], ["5", "Edge Gateway·엣지 AI 랙"], ["6", "수동 GPR·AR 글래스 보관"], ["7", "내시경·안전장비 보관"], ["8", "후방 하부 다채널 GPR"], ["9", "휠 인코더"]];
-  legend.forEach(([n, t2], i) => { const x = M + (i % 3) * 2.67, y = 5.75 + Math.floor(i / 3) * 0.3; s.addText([{ text: n + "  ", options: { bold: true, color: K.navy } }, { text: t2, options: { color: K.ink } }], { x, y, w: 2.6, h: 0.28, fontSize: 11, margin: 0, valign: "middle", isTextBox: true }); });
+  const cw = img(s, "cut3d", M, 1.6, 7.55, 4.247, { stretch: true, cap: "PV5 GroundWatch 카고룸 장비 배치 3D 절개도(제안 예시)" });
+  // 렌더 좌표(1920x1080) 기준 번호 표시
+  const PIN = [["1", 1440, 335, "전방 카메라"], ["2", 1290, 300, "경광등"], ["3", 1270, 195, "RTK-GNSS 안테나"], ["4", 1420, 745, "측면 카메라"], ["5", 1110, 330, "Edge Gateway 랙"], ["6", 880, 560, "수동 GPR 카트"], ["7", 1050, 215, "AR 글래스 충전함"], ["8", 700, 260, "장비 수납장"], ["9", 420, 720, "후방 하부 다채널 GPR"], ["10", 570, 780, "휠 인코더"]];
+  PIN.forEach(([n, px, py]) => { const x = cw.x + (px / 1920) * cw.w, y = cw.y + (py / 1080) * cw.h; s.addText(n, { shape: pres.ShapeType.ellipse, x: x - 0.15, y: y - 0.15, w: 0.3, h: 0.3, fill: { color: K.navy }, line: { color: K.white, width: 1.5 }, fontSize: 10, bold: true, color: K.white, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "pin" }); });
+  PIN.forEach(([n, , , t2], i) => { const x = M + (i % 5) * 1.51, y = 6.18 + Math.floor(i / 5) * 0.25; s.addText([{ text: n + " ", options: { bold: true, color: K.navy } }, { text: t2, options: { color: K.ink } }], { x, y, w: 1.5, h: 0.24, fontSize: 9.5, margin: 0, valign: "middle", isTextBox: true }); });
   [["외부", "후방 하부 다채널 GPR, 전방·좌우·후방 카메라, RTK-GNSS, IMU, 휠 인코더, 거리 센서, 노면 조명과 경광장치", K.ink], ["화물실 전방", "Edge Gateway, 산업용 엣지 AI 컴퓨터, GPR 제어장치, 저장장치, 보안 네트워크, RTK 수신, 전원 분배", K.blue], ["화물실 측면", "지면 밀착형 수동 GPR, AR 글래스와 충전 보관함, RTK 이동국, 현장 기준 마커, 교체형 안테나", K.navy], ["화물실 후방", "관로 내시경, 작업 조명, 안전 표지판, 라바콘, 반사조끼, 개인보호장비, 세척·점검 도구", "B4232A"]].forEach(([t, b, c], i) => {
     const y = 1.65 + i * 0.8;
     s.addShape(pres.ShapeType.ellipse, { x: 8.45, y: y + 0.09, w: 0.15, h: 0.15, fill: { color: c }, line: { color: c }, objectName: "dot" });

@@ -5,7 +5,6 @@ import compose as C
 OUTD = os.path.join(C.IMG, "sd"); os.makedirs(OUTD, exist_ok=True)
 def make(name, src, eq, glow, band_quad):
     base = Image.open(os.path.join(C.PH, src)).convert("RGB").resize((C.W, C.H), Image.LANCZOS)
-    base = C.multiply(base, C.warp(C.band_art(1600, 60), band_quad))
     day = Image.alpha_composite(base.convert("RGBA"), Image.open(os.path.join(C.LY, eq)).convert("RGBA")).convert("RGB")
     nt = Image.alpha_composite(C.night(day).convert("RGBA"), Image.open(os.path.join(C.LY, glow)).convert("RGBA")).convert("RGB")
     day.save(os.path.join(OUTD, name + "_day.png")); nt.save(os.path.join(OUTD, name + "_night.png"))

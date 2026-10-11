@@ -276,8 +276,7 @@ function camPod(x, y, w, h) {
   return shadow(x + w / 2, y + h + 2, w * 0.6, 4, 0.45) + `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${h * 0.3}" fill="url(#blk)"/><rect x="${x + 3}" y="${y + 2}" width="${w - 6}" height="2" rx="1" fill="#FFFFFF" opacity=".25"/><circle cx="${x + w / 2}" cy="${y + h / 2 + 1}" r="${h * 0.3}" fill="url(#lensG)"/>`;
 }
 function equipFront() {
-  return camPod(566, 198, 72, 20) + beacon(1048, 184, 184, false) + dome(1560, 222, 26) + camPod(1086, 398, 38, 22) +
-    `<rect x="1798" y="846" width="10" height="22" fill="url(#blk)"/><rect x="1778" y="864" width="114" height="20" rx="3" fill="url(#blk)"/><rect x="1778" y="864" width="114" height="4" fill="#E0A21A"/>`;
+  return camPod(566, 198, 72, 20) + beacon(1048, 184, 184, false) + dome(1560, 222, 26) + camPod(1086, 398, 38, 22) ;
 }
 function glowFront() {
   return `<ellipse cx="1140" cy="192" rx="190" ry="54" fill="#F5B400" opacity=".5" filter="url(#b30)"/><ellipse cx="1140" cy="192" rx="96" ry="14" fill="#FFD25A" opacity=".85" filter="url(#b6)"/>` + beacon(1048, 184, 184, true) +
@@ -287,14 +286,13 @@ function equipRear() {
   let g = beacon(988, 120, 184, false) + dome(1450, 164, 24) + camPod(300, 142, 72, 20);
   for (const bx of [220, 500, 780]) g += `<rect x="${bx}" y="1060" width="12" height="32" fill="url(#blk)"/>`;
   g += shadow(505, 1140, 400, 16, 0.55);
-  g += `<rect x="148" y="1088" width="716" height="36" rx="6" fill="url(#blk)"/><rect x="148" y="1088" width="716" height="5" rx="2" fill="#E0A21A"/>`;
-  for (let i = 0; i < 16; i++) g += `<rect x="${168 + i * 43}" y="1100" width="27" height="15" rx="2" fill="#3A414B"/><rect x="${168 + i * 43}" y="1100" width="27" height="3" rx="1" fill="#6B737E" opacity=".6"/>`;
+  g += `<rect x="148" y="1086" width="716" height="40" rx="8" fill="url(#blk)"/>`;
+  
   return g;
 }
 function glowRear() {
   let g = `<ellipse cx="1080" cy="128" rx="190" ry="54" fill="#F5B400" opacity=".5" filter="url(#b30)"/><ellipse cx="1080" cy="128" rx="96" ry="14" fill="#FFD25A" opacity=".85" filter="url(#b6)"/>` + beacon(988, 120, 184, true);
   for (const [x, y, w, h] of [[900, 345, 85, 370], [96, 330, 64, 340]]) g += `<rect x="${x - 25}" y="${y}" width="${w + 50}" height="${h}" rx="30" fill="#FF2A2A" opacity=".5" filter="url(#b30)"/><rect x="${x + w * 0.38}" y="${y + 24}" width="${w * 0.24}" height="${h - 48}" rx="5" fill="#FF6A6A"/>`;
-  for (let k = 1; k <= 4; k++) g += `<ellipse cx="505" cy="${1150 + k * 14}" rx="${330 + k * 60}" ry="${12 + k * 9}" fill="none" stroke="#F5B400" stroke-width="2.4" opacity="${0.8 - k * 0.15}"/>`;
   return g;
 }
 jobs.gwLayers = async () => {
