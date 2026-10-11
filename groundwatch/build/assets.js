@@ -11,7 +11,7 @@ const C = {
   ink: "#0E1726", navy: "#0B1F3A", amber: "#F5B400", red: "#D93025",
   sky0: "#070E1C", sky1: "#0F2142", sky2: "#2A4370", sky3: "#7C8DAE", glow: "#FFD48A",
 };
-const FONT = "Pretendard, Apple SD Gothic Neo, sans-serif";
+const FONT = "Noto Sans CJK KR, Pretendard, sans-serif";
 const T = (x, y, s, txt, o = {}) =>
   `<text x="${x}" y="${y}" font-family="${FONT}" font-size="${s}" font-weight="${o.w || 500}" fill="${o.c || C.ink}" text-anchor="${o.a || "start"}">${txt}</text>`;
 const COMMON_DEFS = `
@@ -185,6 +185,7 @@ async function icon(name, Comp, color, size = 256) {
 const jobs = {};
 // 실사 사진 합성: 크롭 + 텍스트 가독성용 그라데이션
 const PH = path.join(OUT, "photos");
+require("fs").mkdirSync(path.join(OUT, "layers"), { recursive: true });
 async function photo(name, src, w, h, o = {}) {
   let img = sharp(path.join(PH, src + ".jpg")).resize(w, h, { fit: "cover", position: o.pos || "centre" });
   if (o.gray) img = img.grayscale();
@@ -252,75 +253,57 @@ jobs.photoEdits = async () => {
   await photo("ph_crack", "sinkhole_driveway", 1200, 900, { pos: "centre" });
   await photo("ph_patched", "sinkhole_patched", 1200, 900, { pos: "centre" });
 };
-// ---- PV5 GroundWatch 장착 예상도(실차 사진 위 합성, 1920x1278 좌표) ----
-const TF = "Pretendard SemiBold, Pretendard, sans-serif";
-const TX = (x, y, s, t, c, o = {}) => `<text x="${x}" y="${y}" font-family="${o.f || TF}" font-size="${s}" fill="${c}" ${o.a ? `text-anchor="${o.a}"` : ""} ${o.ls ? `letter-spacing="${o.ls}"` : ""}>${t}</text>`;
-function gwFront(night) {
-  const dk = night ? "#1C2129" : "#2B3138", dome = night ? "#AEB7C4" : "#F4F6F8";
-  let g = "";
-  // 전방 루프 카메라 포드
-  g += `<rect x="560" y="212" width="84" height="16" rx="4" fill="${dk}"/><rect x="574" y="200" width="56" height="14" rx="4" fill="${dk}"/><circle cx="602" cy="207" r="4.5" fill="#6FB6FF"/>`;
-  // 경광등 바
-  g += `<rect x="1040" y="198" width="200" height="12" rx="3" fill="${dk}"/><rect x="1052" y="186" width="176" height="14" rx="7" fill="#F5B400"/><rect x="1052" y="186" width="176" height="4" rx="2" fill="#FFE08A" opacity=".8"/>`;
-  if (night) g += `<ellipse cx="1140" cy="192" rx="170" ry="46" fill="#F5B400" opacity=".55" filter="url(#b30)"/><ellipse cx="1140" cy="192" rx="90" ry="16" fill="#FFD25A" opacity=".8" filter="url(#b6)"/>`;
-  // RTK GNSS 안테나
-  g += `<rect x="1555" y="204" width="10" height="20" fill="${dk}"/><ellipse cx="1560" cy="204" rx="30" ry="8" fill="${dk}"/><path d="M 1532 202 Q 1560 168 1588 202 Z" fill="${dome}"/>`;
-  // 미러 위 측면 카메라
-  g += `<rect x="1088" y="400" width="34" height="20" rx="4" fill="${dk}"/><circle cx="1105" cy="410" r="4" fill="#6FB6FF"/>`;
-  // 랩핑
-  g += TX(1352, 404, 58, "GroundWatch", night ? "#C9D4E3" : "#0B1F3A", { ls: -1 });
-  g += TX(1356, 450, 26, "지하안전 순찰 · GPR 탐사", night ? "#93A2B8" : "#4A5566", { f: "Pretendard Medium, Pretendard, sans-serif" });
-  g += `<path d="M 1004 694 L 1832 644 L 1832 650 L 1004 700 Z" fill="#F5B400"/><path d="M 1004 702 L 1832 652 L 1832 672 L 1004 722 Z" fill="${night ? "#16233A" : "#0B1F3A"}"/>`;
-  // 후방 하부 GPR(일부 노출)
-  g += `<rect x="1800" y="846" width="10" height="20" fill="${dk}"/><rect x="1780" y="864" width="110" height="18" rx="3" fill="${dk}"/><rect x="1780" y="864" width="110" height="4" fill="#F5B400"/>`;
-  if (night) {
-    g += `<path d="M 618 640 L 790 492" stroke="#FFF6DD" stroke-width="8" stroke-linecap="round" filter="url(#b6)" opacity=".95"/><path d="M 618 640 L 790 492" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>`;
-  }
+// ---- PV5 GroundWatch 장착 예상도: 장비·빛 레이어(투명 PNG). 랩핑과 합성은 compose.py ----
+const EQDEFS = `
+  <linearGradient id="lens" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE6A0"/><stop offset=".45" stop-color="#F5B400"/><stop offset="1" stop-color="#B37800"/></linearGradient>
+  <linearGradient id="lensOff" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7D88A"/><stop offset=".5" stop-color="#E0A21A"/><stop offset="1" stop-color="#8F6200"/></linearGradient>
+  <linearGradient id="blk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A616B"/><stop offset=".35" stop-color="#2A2F36"/><stop offset="1" stop-color="#121418"/></linearGradient>
+  <radialGradient id="domeG" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#E3E7EC"/><stop offset="1" stop-color="#9AA3AE"/></radialGradient>
+  <radialGradient id="lensG" cx=".35" cy=".35" r=".7"><stop offset="0" stop-color="#9FD3FF"/><stop offset=".5" stop-color="#1D4E80"/><stop offset="1" stop-color="#05101E"/></radialGradient>`;
+const shadow = (cx, cy, rx, ry, op = 0.45) => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="#000" opacity="${op}" filter="url(#b6)"/>`;
+function beacon(x, y, w, lit) {
+  return shadow(x + w / 2, y + 22, w * 0.55, 6, 0.5) +
+    `<rect x="${x - 6}" y="${y + 12}" width="${w + 12}" height="10" rx="3" fill="url(#blk)"/>` +
+    `<rect x="${x}" y="${y}" width="${w}" height="15" rx="7" fill="url(#${lit ? "lens" : "lensOff"})"/>` +
+    `<rect x="${x + 8}" y="${y + 2}" width="${w - 16}" height="3" rx="1.5" fill="#FFF7DA" opacity=".85"/>` +
+    [0.25, 0.5, 0.75].map((f) => `<line x1="${x + w * f}" y1="${y + 2}" x2="${x + w * f}" y2="${y + 14}" stroke="#7A5200" stroke-opacity=".35" stroke-width="1.5"/>`).join("");
+}
+function dome(cx, base, r) {
+  return shadow(cx, base + 4, r * 1.25, 5, 0.5) + `<rect x="${cx - 5}" y="${base - 14}" width="10" height="14" fill="url(#blk)"/><ellipse cx="${cx}" cy="${base - 14}" rx="${r * 1.05}" ry="${r * 0.28}" fill="url(#blk)"/>` +
+    `<path d="M ${cx - r} ${base - 16} Q ${cx - r} ${base - 16 - r * 1.15} ${cx} ${base - 16 - r * 1.15} Q ${cx + r} ${base - 16 - r * 1.15} ${cx + r} ${base - 16} Z" fill="url(#domeG)"/>`;
+}
+function camPod(x, y, w, h) {
+  return shadow(x + w / 2, y + h + 2, w * 0.6, 4, 0.45) + `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${h * 0.3}" fill="url(#blk)"/><rect x="${x + 3}" y="${y + 2}" width="${w - 6}" height="2" rx="1" fill="#FFFFFF" opacity=".25"/><circle cx="${x + w / 2}" cy="${y + h / 2 + 1}" r="${h * 0.3}" fill="url(#lensG)"/>`;
+}
+function equipFront() {
+  return camPod(566, 198, 72, 20) + beacon(1048, 184, 184, false) + dome(1560, 222, 26) + camPod(1086, 398, 38, 22) +
+    `<rect x="1798" y="846" width="10" height="22" fill="url(#blk)"/><rect x="1778" y="864" width="114" height="20" rx="3" fill="url(#blk)"/><rect x="1778" y="864" width="114" height="4" fill="#E0A21A"/>`;
+}
+function glowFront() {
+  return `<ellipse cx="1140" cy="192" rx="190" ry="54" fill="#F5B400" opacity=".5" filter="url(#b30)"/><ellipse cx="1140" cy="192" rx="96" ry="14" fill="#FFD25A" opacity=".85" filter="url(#b6)"/>` + beacon(1048, 184, 184, true) +
+    `<path d="M 618 640 L 790 492" stroke="#FFF6DD" stroke-width="10" stroke-linecap="round" filter="url(#b6)"/><path d="M 618 640 L 790 492" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>` +
+    `<ellipse cx="560" cy="1040" rx="520" ry="70" fill="#FFF2D0" opacity=".14" filter="url(#b30)"/>`;
+}
+function equipRear() {
+  let g = beacon(988, 120, 184, false) + dome(1450, 164, 24) + camPod(300, 142, 72, 20);
+  for (const bx of [220, 500, 780]) g += `<rect x="${bx}" y="1060" width="12" height="32" fill="url(#blk)"/>`;
+  g += shadow(505, 1140, 400, 16, 0.55);
+  g += `<rect x="148" y="1088" width="716" height="36" rx="6" fill="url(#blk)"/><rect x="148" y="1088" width="716" height="5" rx="2" fill="#E0A21A"/>`;
+  for (let i = 0; i < 16; i++) g += `<rect x="${168 + i * 43}" y="1100" width="27" height="15" rx="2" fill="#3A414B"/><rect x="${168 + i * 43}" y="1100" width="27" height="3" rx="1" fill="#6B737E" opacity=".6"/>`;
   return g;
 }
-function gwRear(night) {
-  const dk = night ? "#1C2129" : "#2B3138", dome = night ? "#AEB7C4" : "#F4F6F8";
-  let g = "";
-  // 경광등 + RTK + 후방 카메라
-  g += `<rect x="980" y="134" width="200" height="12" rx="3" fill="${dk}"/><rect x="992" y="122" width="176" height="14" rx="7" fill="#F5B400"/><rect x="992" y="122" width="176" height="4" rx="2" fill="#FFE08A" opacity=".8"/>`;
-  if (night) g += `<ellipse cx="1080" cy="128" rx="180" ry="50" fill="#F5B400" opacity=".55" filter="url(#b30)"/><ellipse cx="1080" cy="128" rx="90" ry="16" fill="#FFD25A" opacity=".8" filter="url(#b6)"/>`;
-  g += `<rect x="1445" y="146" width="10" height="18" fill="${dk}"/><ellipse cx="1450" cy="146" rx="28" ry="7" fill="${dk}"/><path d="M 1424 144 Q 1450 112 1476 144 Z" fill="${dome}"/>`;
-  g += `<rect x="300" y="146" width="70" height="18" rx="4" fill="${dk}"/><circle cx="335" cy="155" r="4.5" fill="#6FB6FF"/>`;
-  // 랩핑
-  g += TX(180, 392, 46, "GroundWatch", night ? "#C9D4E3" : "#0B1F3A", { ls: -1 });
-  g += TX(182, 432, 22, "지하안전 순찰 · GPR 탐사", night ? "#93A2B8" : "#4A5566", { f: "Pretendard Medium, Pretendard, sans-serif" });
-  g += `<rect x="110" y="846" width="782" height="6" fill="#F5B400"/><rect x="110" y="854" width="782" height="22" fill="${night ? "#16233A" : "#0B1F3A"}"/>`;
-  g += `<rect x="520" y="736" width="230" height="42" rx="4" fill="${night ? "#2A2410" : "#FFF4CC"}" stroke="#F5B400" stroke-width="2"/>` + TX(635, 766, 22, "저속 탐사 차량", night ? "#F5D27A" : "#5C4400", { a: "middle" });
-  // 후방 하부 GPR 어레이
-  for (const bx of [220, 500, 780]) g += `<rect x="${bx}" y="1062" width="12" height="30" fill="${dk}"/>`;
-  g += `<ellipse cx="505" cy="1135" rx="390" ry="16" fill="#000" opacity=".35" filter="url(#b6)"/>`;
-  g += `<rect x="150" y="1088" width="712" height="34" rx="5" fill="${dk}"/><rect x="150" y="1088" width="712" height="5" rx="2" fill="#F5B400"/>`;
-  for (let i = 0; i < 16; i++) g += `<rect x="${170 + i * 43}" y="1100" width="26" height="14" rx="2" fill="${night ? "#2C333D" : "#3C444F"}"/>`;
-  for (let k = 1; k <= 4; k++) g += `<ellipse cx="505" cy="${1150 + k * 14}" rx="${330 + k * 60}" ry="${12 + k * 9}" fill="none" stroke="#F5B400" stroke-width="2.4" opacity="${(night ? 0.85 : 0.7) - k * 0.15}"/>`;
-  if (night) {
-    for (const [x, y, w, h] of [[900, 345, 85, 370], [96, 330, 64, 340]]) g += `<rect x="${x - 25}" y="${y}" width="${w + 50}" height="${h}" rx="30" fill="#FF2A2A" opacity=".55" filter="url(#b30)"/><rect x="${x + w * 0.35}" y="${y + 20}" width="${w * 0.3}" height="${h - 40}" rx="6" fill="#FF5A5A"/>`;
-    g += `<ellipse cx="520" cy="1150" rx="560" ry="80" fill="#FF3B3B" opacity=".12" filter="url(#b30)"/>`;
-  }
+function glowRear() {
+  let g = `<ellipse cx="1080" cy="128" rx="190" ry="54" fill="#F5B400" opacity=".5" filter="url(#b30)"/><ellipse cx="1080" cy="128" rx="96" ry="14" fill="#FFD25A" opacity=".85" filter="url(#b6)"/>` + beacon(988, 120, 184, true);
+  for (const [x, y, w, h] of [[900, 345, 85, 370], [96, 330, 64, 340]]) g += `<rect x="${x - 25}" y="${y}" width="${w + 50}" height="${h}" rx="30" fill="#FF2A2A" opacity=".5" filter="url(#b30)"/><rect x="${x + w * 0.38}" y="${y + 24}" width="${w * 0.24}" height="${h - 48}" rx="5" fill="#FF6A6A"/>`;
+  g += `<ellipse cx="520" cy="1160" rx="560" ry="70" fill="#FF3B3B" opacity=".12" filter="url(#b30)"/>`;
+  for (let k = 1; k <= 4; k++) g += `<ellipse cx="505" cy="${1150 + k * 14}" rx="${330 + k * 60}" ry="${12 + k * 9}" fill="none" stroke="#F5B400" stroke-width="2.4" opacity="${0.8 - k * 0.15}"/>`;
   return g;
 }
-async function pvComp(name, src, ov, night, crops) {
+jobs.gwLayers = async () => {
   const W = 1920, H = 1278;
-  let img = sharp(path.join(PH, src + ".jpg")).resize(W, H, { fit: "cover" });
-  if (night) img = img.modulate({ brightness: 0.38, saturation: 0.45 }).tint({ r: 70, g: 92, b: 140 });
-  const layers = [];
-  if (night) layers.push({ input: Buffer.from(svg(W, H, `<rect width="${W}" height="${H}" fill="url(#ng)"/>`, `<linearGradient id="ng" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#040A16" stop-opacity=".7"/><stop offset=".45" stop-color="#040A16" stop-opacity=".1"/><stop offset="1" stop-color="#040A16" stop-opacity=".45"/></linearGradient>`)) });
-  layers.push({ input: Buffer.from(svg(W, H, ov)) });
-  const base = await sharp(await img.png().toBuffer()).composite(layers).png().toBuffer();
-  await sharp(base).jpeg({ quality: 90 }).toFile(path.join(OUT, name + ".jpg"));
-  for (const [suf, top] of crops || []) await sharp(base).extract({ left: 0, top, width: W, height: 1080 }).jpeg({ quality: 90 }).toFile(path.join(OUT, name + suf + ".jpg"));
-}
-jobs.gw = async () => {
-  await pvComp("gw_front", "pv5_cargo_c", gwFront(false), false, [["_169", 120]]);
-  await pvComp("gw_front_n", "pv5_cargo_c", gwFront(true), true, [["_169", 120]]);
-  await pvComp("gw_rear", "pv5_cargo_d", gwRear(false), false, [["_169", 90]]);
-  await pvComp("gw_rear_n", "pv5_cargo_d", gwRear(true), true, [["_169", 190]]);
+  for (const [n, b] of [["eq_front", equipFront()], ["eq_front_glow", glowFront()], ["eq_rear", equipRear()], ["eq_rear_glow", glowRear()]])
+    await sharp(Buffer.from(svg(W, H, b, EQDEFS)), { density: 144 }).resize(W, H).png().toFile(path.join(OUT, "layers", n + ".png"));
 };
-
 jobs.photos = async () => {
   await photo("ph_road", "seoul_traffic_3", 1600, 900, { pos: "centre" });
   await photo("ph_closing", "seoul_traffic_1", 1920, 1080, { pos: "south", grad: "top", a: 0.93, b: 0.55, mod: { brightness: 0.8, saturation: 0.8 } });
@@ -333,7 +316,7 @@ jobs.photos = async () => {
 };
 
 // (preview removed)
-jobs.mechanism = async () => {
+jobs.mechanismOld = async () => {
   const W = 1600, H = 820;
   let b = `<rect width="${W}" height="${H}" fill="#EEF2F7"/>` + groundSection(0, 110, W, 710);
   b += `<path d="M 560 170 L 1040 170 L 860 640 Z" fill="#5E4A3A" opacity=".85"/><path d="M 560 170 L 1040 170 L 860 640 Z" fill="none" stroke="#1E150F" stroke-width="2.5" stroke-dasharray="10 8"/>`;
@@ -399,7 +382,7 @@ jobs.cutaway = async () => {
   b += `<path d="M ${X(32)} ${Y(122)} L ${X(40)} ${Y(96)} L ${X(48)} ${Y(122)} Z" fill="#E8590C"/><path d="M ${X(52)} ${Y(122)} L ${X(60)} ${Y(96)} L ${X(68)} ${Y(122)} Z" fill="#E8590C"/><rect x="${X(74)}" y="${Y(100)}" width="${18 * 3.4}" height="${22 * 3.4}" rx="5" fill="#3A434F"/>`;
   return save("cutaway", W, H, b);
 };
-jobs.map4d = async () => {
+jobs.map4dOld = async () => {
   const W = 1700, H = 900;
   let b = `<rect width="${W}" height="${H}" rx="16" fill="#0D1828"/>` + T(32, 46, 24, "GroundWatch Cloud", { w: 700, c: "#fff" }) + T(268, 46, 20, "4D 도로 지하 변화지도", { c: "#9AA8BC" }) + T(W - 32, 46, 18, "예시 화면", { a: "end", c: "#7D8BA0" });
   const mx = 20, my = 76, mw = 1080, mh = 804;
@@ -429,7 +412,7 @@ jobs.aiCompare = async () => {
   b += `<rect x="${900 + 368}" y="${56 + 156 - 36}" width="190" height="30" rx="4" fill="${C.amber}"/>` + T(900 + 380, 56 + 156 - 15, 18, "새로 커진 신호", { w: 700 });
   return save("ai_compare", W, H, b, a.d + c.d);
 };
-jobs.surfaceCrack = async () => {
+jobs.surfaceCrackOld = async () => {
   const W = 700, H = 420;
   let b = `<rect width="${W}" height="${H}" fill="#353A42"/>`;
   for (let i = 0; i < 380; i++) b += `<circle cx="${(i * 97) % W}" cy="${(i * 53) % H}" r="${0.8 + (i % 3) * 0.6}" fill="#4B525C" opacity=".7"/>`;
@@ -505,7 +488,7 @@ function arPov(mode) {
 }
 
 
-jobs.crossCheck = async () => {
+jobs.crossCheckOld = async () => {
   const W = 1600, H = 720;
   let b = `<rect width="${W}" height="${H}" fill="#fff"/><rect x="0" y="40" width="${W}" height="640" rx="12" fill="url(#asph)"/>`;
   for (let k = 0; k < 9; k++) b += `<rect x="0" y="${70 + k * 66}" width="${W}" height="40" fill="${C.amber}" opacity=".13"/>`;
@@ -516,7 +499,7 @@ jobs.crossCheck = async () => {
   b += `<path d="M 60 600 L 400 600" stroke="#fff" stroke-width="3"/><path d="M 392 590 L 412 600 L 392 610 Z" fill="#fff"/>` + T(60, 640, 22, "차량 진행 방향", { c: "#fff", w: 600 });
   return save("cross_check", W, H, b);
 };
-jobs.patrolNet = async () => {
+jobs.patrolNetOld = async () => {
   const W = 1600, H = 900;
   let b = `<rect width="${W}" height="${H}" fill="#F3F6F9"/><path d="M 0 520 C 300 460, 600 600, 900 520 S 1400 470, ${W} 540 L ${W} 620 C 1300 560, 1000 640, 700 600 S 200 560, 0 610 Z" fill="#CFE5F8"/>`;
   for (let i = 0; i < 22; i++) for (let j = 0; j < 12; j++) if (!(j > 6 && j < 9)) b += `<rect x="${20 + i * 72}" y="${20 + j * 74}" width="58" height="58" rx="6" fill="#E3E8EE"/>`;
@@ -525,7 +508,7 @@ jobs.patrolNet = async () => {
   b += `<circle cx="805" cy="229" r="22" fill="${C.navy}"/>` + T(805, 236, 18, "역", { a: "middle", w: 800, c: "#fff" });
   return save("patrol_net", W, H, b);
 };
-jobs.fleet = async () => {
+jobs.fleetOld = async () => {
   const W = 1600, H = 880;
   let b = `<rect width="${W}" height="${H}" rx="14" fill="#0D1828"/>`;
   [[30, "A 권역", "#4E8FD9"], [550, "B 권역", "#3BA55C"], [1070, "C 권역", "#F08C00"]].forEach(([x, t, col]) => {
@@ -538,7 +521,7 @@ jobs.fleet = async () => {
   [["PV5-01", "A", "24.1 km", "2곳", "71%"], ["PV5-02", "B", "18.6 km", "1곳", "83%"], ["PV5-03", "C", "31.0 km", "4곳", "58%"]].forEach((r, j) => { b += `<line x1="60" y1="${622 + j * 66}" x2="1540" y2="${622 + j * 66}" stroke="#22344F"/>`; r.forEach((v, i) => (b += T(60 + i * 300, 664 + j * 66, 24, v, { c: i === 3 ? C.amber : "#fff", w: 600 }))); });
   return save("fleet", W, H, b);
 };
-jobs.layers = async () => {
+jobs.layersOld = async () => {
   const W = 1600, H = 880;
   let b = `<rect width="${W}" height="${H}" fill="#fff"/>`;
   [["보수 이력", "#C5CDD8"], ["강우", "#A9D3FF"], ["지하수", "#6CB4FF"], ["지하철 구조물", "#5B6573"], ["굴착공사", "#F08C00"], ["하수관", "#8A94A3"], ["GPR 변화 신호", C.amber]].forEach(([t, col], i) => {
@@ -548,7 +531,7 @@ jobs.layers = async () => {
   });
   return save("layers", W, H, b);
 };
-jobs.twin = async () => {
+jobs.twinOld = async () => {
   const W = 1700, H = 900;
   let b = `<rect width="${W}" height="${H}" fill="#0A1222"/><ellipse cx="850" cy="500" rx="700" ry="300" fill="#1C3560" opacity=".35" filter="url(#b30)"/>`;
   const slab = (y, top, side, h) => `<path d="M 350 ${y} L 850 ${y - 200} L 1350 ${y} L 850 ${y + 200} Z" fill="${top}"/><path d="M 350 ${y} L 850 ${y + 200} L 850 ${y + 200 + h} L 350 ${y + h} Z" fill="${side}"/><path d="M 850 ${y + 200} L 1350 ${y} L 1350 ${y + h} L 850 ${y + 200 + h} Z" fill="${side}" opacity=".75"/>`;
@@ -569,7 +552,7 @@ jobs.closing = async () => {
   b += pv5Rear(820, 690, 1.4);
   return save("closing", W, H, b, d);
 };
-jobs.freqDepth = async () => {
+jobs.freqDepthOld = async () => {
   const W = 1400, H = 700;
   let b = `<rect width="${W}" height="${H}" fill="#fff"/>` + groundSection(0, 60, W, 640);
   [["저주파", 0.85, "#6CB4FF", "깊게 · 해상도 낮음"], ["중주파", 0.55, C.amber, "균형"], ["고주파", 0.3, C.red, "얕게 · 해상도 높음"]].forEach(([t, dd, col, desc], i) => {
@@ -586,8 +569,196 @@ jobs.icons = async () => {
   for (const [k, comp] of Object.entries(list)) { await icon(k, comp, "#0B1F3A"); await icon(k + "_w", comp, "#FFFFFF"); await icon(k + "_a", comp, "#F5B400"); }
 };
 
+
+// ================= v3: 실지도·질감 기반 도판 =================
+const fsx = require("fs");
+let MAPB64 = {};
+async function mapData(name) {
+  if (!MAPB64[name]) {
+    const buf = await sharp(path.join(OUT, "map", name + ".png")).modulate({ saturation: 0.12, brightness: 1.04 }).linear(0.82, 38).png().toBuffer();
+    MAPB64[name] = "data:image/png;base64," + buf.toString("base64");
+  }
+  return MAPB64[name];
+}
+// 지도(2048x1280, 썸네일 1300 기준 좌표)를 상자에 cover로 배치하고 좌표 변환기를 돌려준다
+function mapFit(x, y, w, h, zoom = 1, cx = 0.5, cy = 0.5) {
+  const s = Math.max(w / 2048, h / 1280) * zoom, sw = 2048 * s, sh = 1280 * s;
+  const ox = x + (w - sw) * cx, oy = y + (h - sh) * cy, k = s * (2048 / 1300);
+  return { ox, oy, sw, sh, P: (px, py) => [ox + px * k, oy + py * k] };
+}
+const ROADS = {
+  A: [[235, 268], [560, 268], [800, 270], [1160, 250]],
+  B: [[800, 95], [797, 250], [790, 380]], B2: [[790, 380], [775, 480]], B3: [[775, 480], [755, 600], [725, 760]],
+  C1: [[600, 430], [700, 420], [790, 440]], C2: [[790, 440], [950, 470], [1160, 470]],
+  D: [[560, 600], [760, 600], [980, 568], [1150, 575]],
+  F: [[300, 280], [290, 500], [275, 700]],
+};
+const poly = (m, pts, col, w, o = {}) => `<polyline points="${pts.map((p) => m.P(...p).join(",")).join(" ")}" fill="none" stroke="${col}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" ${o.dash ? `stroke-dasharray="${o.dash}"` : ""} opacity="${o.op || 0.95}"/>`;
+const halo = (m, pts, w) => poly(m, pts, "#FFFFFF", w + 5, { op: 0.9 });
+
+const TEXDEFS = `
+  <filter id="grainF" x="0" y="0" width="1" height="1"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="7"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 -0.12"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+  <filter id="mottleF" x="0" y="0" width="1" height="1"><feTurbulence type="fractalNoise" baseFrequency="0.006 0.02" numOctaves="4" seed="3"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.9 -0.3"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+  <filter id="lightF" x="0" y="0" width="1" height="1"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.04" numOctaves="3" seed="11"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.7 -0.35"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+  <filter id="aggF" x="0" y="0" width="1" height="1"><feTurbulence type="turbulence" baseFrequency="0.35" numOctaves="2" seed="5"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -1.6 1.05"/><feComposite in2="SourceGraphic" operator="in"/></filter>`;
+// 질감 있는 면: 바탕색 + 큰 얼룩 + 미세 입자 (+ 골재 반점)
+function tex(x, y, w, h, base, o = {}) {
+  const r = `x="${x}" y="${y}" width="${w}" height="${h}"`;
+  let g = `<rect ${r} fill="${base}"/><rect ${r} fill="#000" filter="url(#mottleF)" opacity="${o.m ?? 0.5}"/><rect ${r} fill="#FFF" filter="url(#lightF)" opacity="${o.l ?? 0.25}"/><rect ${r} fill="#000" filter="url(#grainF)" opacity="${o.g ?? 0.6}"/>`;
+  if (o.agg) g += `<rect ${r} fill="#FFF" filter="url(#aggF)" opacity="${o.agg}"/>`;
+  return g;
+}
+const LBL = (x, y, t, o = {}) => `<rect x="${x - 6}" y="${y - (o.s || 20) - 4}" width="${t.length * (o.s || 20) * 0.95 + 12}" height="${(o.s || 20) + 12}" rx="3" fill="${o.bg || "#0E1726"}" opacity="${o.op || 0.82}"/>` + T(x, y, o.s || 20, t, { c: o.c || "#FFFFFF", w: 500 });
+
+jobs.mechanism = async () => {
+  const W = 1600, H = 820;
+  let b = `<rect width="${W}" height="${H}" fill="#E9EDF2"/>`;
+  b += tex(0, 92, W, 26, "#2C3036", { g: 0.7, agg: 0.25 });
+  b += tex(0, 118, W, 44, "#8F7E6B", { agg: 0.2 });
+  b += tex(0, 162, W, 658, "#6E5948", { m: 0.6 });
+  b += `<path d="M 0 520 C 300 500 600 560 900 548 S 1400 590 ${W} 600 L ${W} 820 L 0 820 Z" fill="#3B5A7A" opacity=".18"/>`;
+  b += `<path d="M 560 162 L 1040 162 L 860 640 Z" fill="#5A4636"/>` ;
+  b += `<clipPath id="wedge"><path d="M 560 162 L 1040 162 L 860 640 Z"/></clipPath><g clip-path="url(#wedge)">${tex(540, 160, 520, 490, "#5E4A3A", { m: 0.7, g: 0.8 })}</g>`;
+  b += `<path d="M 560 162 L 860 640 L 1040 162" fill="none" stroke="#1E150F" stroke-width="2.5" stroke-dasharray="10 6"/>`;
+  for (const [x1, y1, x2, y2] of [[700, 260, 760, 330], [760, 330, 740, 420], [900, 240, 860, 330], [860, 330, 890, 400]]) b += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#1E150F" stroke-width="1.6" opacity=".7"/>`;
+  b += `<rect x="0" y="232" width="${W}" height="40" fill="url(#pipeG)"/>`;
+  for (let k = 0; k < 9; k++) b += `<path d="M ${640 + k * 30} 276 q 6 12 0 17 q -6 -5 0 -17 z" fill="#7CC4FF" opacity=".9"/>`;
+  b += `<path d="M 600 290 C 700 330 820 300 940 340" fill="none" stroke="#7CC4FF" stroke-width="3" stroke-dasharray="4 8" opacity=".8"/>`;
+  b += `<path d="M 0 520 Q 400 500 800 560 T ${W} 600" fill="none" stroke="#9FD0FF" stroke-width="3.5" stroke-dasharray="12 9"/>`;
+  b += `<line x1="1380" y1="470" x2="1380" y2="578" stroke="#9FD0FF" stroke-width="4"/><path d="M 1368 574 L 1380 598 L 1392 574 Z" fill="#9FD0FF"/>`;
+  b += `<rect x="0" y="686" width="${W}" height="104" rx="52" fill="url(#tunG)"/>`;
+  b += LBL(40, 262, "노후 하수관 누수") + LBL(1150, 462, "지하수위 저하") + LBL(40, 746, "하부 터널 굴착") + LBL(740, 420, "쐐기형 토체", { s: 24 });
+  b += LBL(24, 84, "포장층", { s: 18, bg: "#FFFFFF", c: "#2B3138", op: 0.9 });
+  const d = `<linearGradient id="pipeG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8A929C"/><stop offset=".3" stop-color="#5A626C"/><stop offset="1" stop-color="#2E343B"/></linearGradient><linearGradient id="tunG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A4048"/><stop offset=".5" stop-color="#15181C"/><stop offset="1" stop-color="#2A2F36"/></linearGradient>` + TEXDEFS;
+  return save("mechanism", W, H, b, d);
+};
+
+jobs.map4d = async () => {
+  const W = 1700, H = 900, md = await mapData("gangdong_z16");
+  let b = `<rect width="${W}" height="${H}" rx="10" fill="#0D1828"/>` + T(32, 46, 22, "GroundWatch Cloud", { w: 700, c: "#fff" }) + T(250, 46, 18, "4D 도로 지하 변화지도 · 서울 강동구 명일동 일대", { c: "#9AA8BC" }) + T(W - 32, 46, 16, "예시 화면", { a: "end", c: "#7D8BA0" });
+  const mx = 20, my = 70, mw = 1080, mh = 810, m = mapFit(mx, my, mw, mh, 1.25, 0.62, 0.45);
+  b += `<clipPath id="mc"><rect x="${mx}" y="${my}" width="${mw}" height="${mh}" rx="6"/></clipPath><g clip-path="url(#mc)"><image href="${md}" x="${m.ox}" y="${m.oy}" width="${m.sw}" height="${m.sh}" preserveAspectRatio="none"/>`;
+  const segs = [["A", "#3BA55C"], ["F", "#3BA55C"], ["B", "#3BA55C"], ["B2", C.red], ["B3", "#3BA55C"], ["C1", C.amber], ["C2", "#9AA3AE"], ["D", "#F08C00"]];
+  for (const [k] of segs) b += halo(m, ROADS[k], 9);
+  for (const [k, c] of segs) b += poly(m, ROADS[k], c, 9);
+  const [rx, ry] = m.P(782, 430);
+  b += `<circle cx="${rx}" cy="${ry}" r="30" fill="${C.red}" opacity=".18"/><circle cx="${rx}" cy="${ry}" r="9" fill="${C.red}" stroke="#fff" stroke-width="3"/>` + LBL(rx + 22, ry - 14, "R-0427", { s: 17 });
+  b += `</g><rect x="${mx + 14}" y="${my + mh - 58}" width="900" height="44" rx="6" fill="#fff" opacity=".95"/>`;
+  [["#9AA3AE", "미조사"], ["#3BA55C", "변화 없음"], [C.amber, "새 이상 신호"], ["#F08C00", "확대 의심"], [C.red, "정밀 재탐사"]].forEach(([c, t], i) => (b += `<rect x="${mx + 32 + i * 172}" y="${my + mh - 41}" width="28" height="9" rx="4" fill="${c}"/>` + T(mx + 68 + i * 172, my + mh - 30, 16, t, { c: "#2B3138", w: 500 })));
+  b += T(mx + mw - 10, my + mh - 8, 11, "© OpenStreetMap contributors", { a: "end", c: "#5B6573" });
+  const px = 1120, py = 70;
+  b += `<rect x="${px}" y="${py}" width="560" height="810" rx="8" fill="#132238"/>` + T(px + 24, py + 40, 20, "구간 상세", { w: 700, c: "#fff" }) + T(px + 536, py + 40, 16, "R-0427", { a: "end", c: "#9AA8BC" });
+  const bs = bscan(px + 24, py + 62, 512, 210, { cavity: 0.8, seed: 7, box: [0.45, 0.28, 0.42, 0.62] });
+  b += bs.g + T(px + 24, py + 312, 15, "회차별 이상 반사 면적", { c: "#9AA8BC" });
+  [[0, 40, "#3BA55C"], [1, 44, "#3BA55C"], [2, 62, C.amber], [3, 86, "#F08C00"], [4, 106, C.red]].forEach(([i, v, col]) => (b += `<rect x="${px + 40 + i * 100}" y="${py + 445 - v}" width="56" height="${v}" rx="3" fill="${col}"/>` + T(px + 68 + i * 100, py + 470, 14, `${i + 1}회`, { a: "middle", c: "#7D8BA0" })));
+  [["마지막 조사", "최근 회차"], ["반복 조사", "5회"], ["추정 깊이", "0.9–1.3 m"], ["AI 위험점수 · 신뢰도", "높음 · 84%"], ["위치 오차", "±[실증 필요]"], ["전문가 검토", "대기"]].forEach(([k, v], i) => (b += `<line x1="${px + 24}" y1="${py + 508 + i * 46}" x2="${px + 536}" y2="${py + 508 + i * 46}" stroke="#22344F"/>` + T(px + 24, py + 539 + i * 46, 16, k, { c: "#9AA8BC" }) + T(px + 536, py + 539 + i * 46, 16, v, { a: "end", w: 700, c: i === 3 ? C.amber : "#fff" })));
+  return save("map4d", W, H, b, bs.d);
+};
+
+jobs.surfaceCrack = async () => {
+  const W = 700, H = 460, src = path.join(OUT, "photos", "sinkhole_driveway.jpg");
+  const base = await sharp(src).resize(W, H, { fit: "cover" }).png().toBuffer();
+  let ov = `<rect x="150" y="70" width="330" height="300" rx="2" fill="none" stroke="${C.amber}" stroke-width="3"/>` + LBL(156, 64, "균열 신규 · 0.86", { s: 16, bg: C.amber, c: "#1A1300", op: 1 });
+  ov += `<rect x="290" y="190" width="150" height="110" rx="2" fill="none" stroke="#7CC4FF" stroke-width="3" stroke-dasharray="8 5"/>` + LBL(296, 322, "침하·단차 의심", { s: 16, bg: "#1C64B5", op: 1 });
+  await sharp(base).composite([{ input: Buffer.from(svg(W, H, ov)) }]).png().toFile(path.join(OUT, "surface_crack.png"));
+};
+
+jobs.crossCheck = async () => {
+  const W = 1600, H = 720;
+  let b = `<rect width="${W}" height="${H}" fill="#fff"/>` + tex(0, 30, W, 660, "#3D4249", { m: 0.45, g: 0.75, agg: 0.35 });
+  b += `<rect x="0" y="352" width="${W}" height="10" fill="#E8E2C8" opacity=".75" filter="url(#grainF)"/>`;
+  for (let x = 40; x < W; x += 170) b += `<rect x="${x}" y="352" width="100" height="10" fill="#E8E2C8" opacity=".8"/>`;
+  b += `<rect x="0" y="52" width="${W}" height="8" fill="#E9C34A" opacity=".75"/><rect x="0" y="66" width="${W}" height="8" fill="#E9C34A" opacity=".75"/>`;
+  b += `<circle cx="300" cy="560" r="44" fill="#4A4F57" stroke="#23262B" stroke-width="7"/><circle cx="300" cy="560" r="30" fill="none" stroke="#23262B" stroke-width="2"/>`;
+  b += `<path d="M 980 310 l 30 22 l -12 30 l 34 28 M 1010 332 l 40 -6" stroke="#1E2024" stroke-width="2.5" fill="none"/>`;
+  b += `<ellipse cx="1060" cy="380" rx="90" ry="56" fill="#000" opacity=".25" filter="url(#b14)"/>`;
+  for (let k = 0; k < 8; k++) b += `<rect x="0" y="${92 + k * 72}" width="${W}" height="54" fill="${C.amber}" opacity=".10"/>`;
+  b += `<rect x="880" y="222" width="360" height="300" rx="4" fill="none" stroke="${C.red}" stroke-width="3.5"/>`;
+  for (let k = 0; k < 6; k++) b += `<line x1="${915 + k * 58}" y1="236" x2="${915 + k * 58}" y2="508" stroke="#7CC4FF" stroke-width="4"/>`;
+  for (let k = 0; k < 4; k++) b += `<line x1="894" y1="${264 + k * 70}" x2="1226" y2="${264 + k * 70}" stroke="#5AD27A" stroke-width="4" stroke-dasharray="14 8"/>`;
+  b += LBL(70, 650, "차량 진행 방향 →", { s: 18 }) + LBL(1250, 240, "수동 GPR 재탐사 범위", { s: 18, bg: C.red, op: 0.95 });
+  return save("cross_check", W, H, b, TEXDEFS);
+};
+
+jobs.patrolNet = async () => {
+  const W = 1600, H = 900, md = await mapData("gangdong_z16"), m = mapFit(0, 0, W, H, 1.0, 0.5, 0.5);
+  let b = `<image href="${md}" x="${m.ox}" y="${m.oy}" width="${m.sw}" height="${m.sh}" preserveAspectRatio="none"/>`;
+  const R = [["A", "#3BA55C", 8], ["F", "#4E8FD9", 8], ["C1", "#F08C00", 10], ["C2", "#F08C00", 10], ["B2", C.red, 13], ["B", "#4E8FD9", 8], ["B3", "#4E8FD9", 8], ["D", "#7048E8", 8, "14 10"]];
+  for (const [k, , w] of R) b += halo(m, ROADS[k], w);
+  for (const [k, c, w, dash] of R) b += poly(m, ROADS[k], c, w, { dash });
+  const [sx, sy] = m.P(790, 383);
+  b += `<circle cx="${sx}" cy="${sy}" r="16" fill="#0B1F3A" stroke="#fff" stroke-width="3"/>` + LBL(sx + 22, sy + 6, "명일역", { s: 18 });
+  b += T(W - 12, H - 10, 12, "© OpenStreetMap contributors", { a: "end", c: "#5B6573" });
+  return save("patrol_net", W, H, b);
+};
+
+jobs.fleet = async () => {
+  const W = 1600, H = 880, md = await mapData("gangdong_z15");
+  let b = `<rect width="${W}" height="${H}" rx="10" fill="#0D1828"/>`;
+  const mx = 30, my = 30, mw = 1540, mh = 440, m = mapFit(mx, my, mw, mh, 1.0, 0.5, 0.5);
+  b += `<clipPath id="fc"><rect x="${mx}" y="${my}" width="${mw}" height="${mh}" rx="6"/></clipPath><g clip-path="url(#fc)"><image href="${md}" x="${m.ox}" y="${m.oy}" width="${m.sw}" height="${m.sh}" preserveAspectRatio="none"/>`;
+  [[mx, "#4E8FD9", "A 권역"], [mx + mw / 3, "#3BA55C", "B 권역"], [mx + (2 * mw) / 3, "#F08C00", "C 권역"]].forEach(([x, c, t], i) => {
+    b += `<rect x="${x}" y="${my}" width="${mw / 3}" height="${mh}" fill="${c}" opacity=".10"/><line x1="${x}" y1="${my}" x2="${x}" y2="${my + mh}" stroke="${c}" stroke-width="2" stroke-dasharray="8 6"/>` + LBL(x + 18, my + 34, t, { s: 18, bg: c, op: 0.95 });
+    const vx = x + mw / 6 + (i - 1) * 40, vy = my + mh / 2 + (i % 2 ? -40 : 50);
+    b += `<circle cx="${vx}" cy="${vy}" r="26" fill="${c}" opacity=".3"/><circle cx="${vx}" cy="${vy}" r="12" fill="${c}" stroke="#fff" stroke-width="4"/>` + LBL(vx + 20, vy + 6, `PV5-0${i + 1}`, { s: 15 });
+  });
+  b += `</g>` + T(mx + mw - 8, my + mh - 8, 11, "© OpenStreetMap contributors", { a: "end", c: "#5B6573" });
+  b += `<rect x="30" y="500" width="1540" height="350" rx="8" fill="#132238"/>` + T(60, 548, 22, "차량별 현황 [예시]", { w: 700, c: "#fff" });
+  ["차량", "권역", "순찰거리", "재확인", "배터리"].forEach((h, i) => (b += T(60 + i * 300, 602, 18, h, { c: "#7D8BA0", w: 500 })));
+  [["PV5-01", "A", "24.1 km", "2곳", "71%"], ["PV5-02", "B", "18.6 km", "1곳", "83%"], ["PV5-03", "C", "31.0 km", "4곳", "58%"]].forEach((r, j) => { b += `<line x1="60" y1="${622 + j * 64}" x2="1540" y2="${622 + j * 64}" stroke="#22344F"/>`; r.forEach((v, i) => (b += T(60 + i * 300, 662 + j * 64, 22, v, { c: i === 3 ? C.amber : "#fff", w: 500 }))); });
+  return save("fleet", W, H, b);
+};
+
+jobs.layers = async () => {
+  const W = 1600, H = 880, md = await mapData("gangdong_z16");
+  let b = `<rect width="${W}" height="${H}" fill="#fff"/>`;
+  const Ls = [["보수 이력", "#C5CDD8"], ["강우", "#A9D3FF"], ["지하수", "#6CB4FF"], ["지하철 구조물", "#5B6573"], ["굴착공사", "#F08C00"], ["하수관", "#8A94A3"], ["GPR 변화 신호", null]];
+  Ls.forEach(([t, col], i) => {
+    const y = 70 + (6 - i) * 104;
+    const pts = `260,${y + 50} 680,${y} 1280,${y} 860,${y + 50}`;
+    if (col) b += `<polygon points="${pts}" fill="${col}" opacity=".85"/><polygon points="${pts}" fill="#000" filter="url(#grainF)" opacity=".15"/>`;
+    else b += `<clipPath id="tl"><polygon points="${pts}"/></clipPath><g clip-path="url(#tl)"><image href="${md}" x="0" y="0" width="1000" height="625" preserveAspectRatio="none" transform="matrix(0.6 0 0.672 -0.08 260 ${y + 50})"/></g><polygon points="${pts}" fill="none" stroke="#0B1F3A" stroke-width="1.5"/>` +
+      [[0.35, 0.45], [0.55, 0.3], [0.7, 0.6]].map(([u, v]) => { const px = 260 + u * 600 + v * 420, py = y + 50 - v * 50; return `<circle cx="${px}" cy="${py}" r="9" fill="${C.amber}" stroke="#fff" stroke-width="2"/>`; }).join("");
+    b += `<path d="M 260 ${y + 50} L 860 ${y + 50} L 860 ${y + 58} L 260 ${y + 58} Z" fill="#000" opacity=".12"/>`;
+    b += `<line x1="1290" y1="${y + 26}" x2="1336" y2="${y + 26}" stroke="#C5CDD8" stroke-width="1.5"/>` + T(1348, y + 35, 26, t, { w: 600, c: "#2B3138" });
+  });
+  return save("layers", W, H, b, TEXDEFS);
+};
+
+jobs.twin = async () => {
+  const W = 1700, H = 900, md = await mapData("gangdong_z16");
+  let b = `<rect width="${W}" height="${H}" fill="#0A1222"/><ellipse cx="850" cy="520" rx="720" ry="300" fill="#1C3560" opacity=".35" filter="url(#b30)"/>`;
+  const side = (y, h, c1, c2) => `<path d="M 350 ${y} L 850 ${y + 200} L 850 ${y + 200 + h} L 350 ${y + h} Z" fill="${c1}"/><path d="M 850 ${y + 200} L 1350 ${y} L 1350 ${y + h} L 850 ${y + 200 + h} Z" fill="${c2}"/>`;
+  // 지하 블록
+  b += side(560, 150, "#3A2C22", "#2A2018");
+  b += `<clipPath id="sl"><path d="M 350 560 L 850 760 L 850 910 L 350 710 Z"/></clipPath><g clip-path="url(#sl)">${tex(340, 540, 520, 380, "#4A382B", { m: 0.6 })}</g>`;
+  b += `<path d="M 350 560 L 850 360 L 1350 560 L 850 760 Z" fill="#4A3A2E"/>`;
+  b += `<line x1="430" y1="590" x2="1270" y2="590" stroke="#8A94A3" stroke-width="12" opacity=".55"/>`;
+  b += `<ellipse cx="900" cy="612" rx="120" ry="42" fill="${C.amber}" opacity=".35" filter="url(#b14)"/><ellipse cx="900" cy="612" rx="56" ry="20" fill="${C.amber}" opacity=".9"/>`;
+  // 지상 지도 슬래브
+  b += side(330, 30, "#1E2633", "#161C26");
+  b += `<clipPath id="ts"><path d="M 350 330 L 850 130 L 1350 330 L 850 530 Z"/></clipPath><g clip-path="url(#ts)"><image href="${md}" x="0" y="0" width="1000" height="1000" preserveAspectRatio="xMidYMid slice" transform="matrix(0.5 -0.2 0.5 0.2 350 330)"/><path d="M 350 330 L 850 130 L 1350 330 L 850 530 Z" fill="#0B1F3A" opacity=".18"/></g>`;
+  b += `<path d="M 350 330 L 850 130 L 1350 330 L 850 530 Z" fill="none" stroke="#7CC4FF" stroke-opacity=".6" stroke-width="1.5"/>`;
+  b += `<line x1="900" y1="345" x2="900" y2="600" stroke="${C.amber}" stroke-width="2.5" stroke-dasharray="6 6"/><circle cx="900" cy="345" r="8" fill="${C.amber}" stroke="#fff" stroke-width="2"/>`;
+  b += LBL(1380, 330, "지상 · 도로 지도", { s: 20 }) + LBL(1380, 610, "지하 · 공동 의심 신호", { s: 20 }) + T(W - 16, H - 12, 12, "© OpenStreetMap contributors", { a: "end", c: "#7D8BA0" });
+  return save("twin", W, H, b, TEXDEFS);
+};
+
+jobs.freqDepth = async () => {
+  const W = 1400, H = 700;
+  let b = `<rect width="${W}" height="${H}" fill="#fff"/>` + tex(0, 60, W, 22, "#2C3036", { agg: 0.25 }) + tex(0, 82, W, 40, "#8F7E6B", { agg: 0.2 }) + tex(0, 122, W, 578, "#6E5948", { m: 0.6 });
+  [["저주파", 0.85, "#6CB4FF", "깊게 · 해상도 낮음"], ["중주파", 0.55, C.amber, "균형"], ["고주파", 0.3, C.red, "얕게 · 해상도 높음"]].forEach(([t, dd, col, desc], i) => {
+    const x = 220 + i * 460;
+    b += `<path d="M ${x - 110} 60 L ${x + 110} 60 L ${x + 50 + dd * 80} ${60 + dd * 620} L ${x - 50 - dd * 80} ${60 + dd * 620} Z" fill="${col}" opacity=".32"/><path d="M ${x - 110} 60 L ${x - 50 - dd * 80} ${60 + dd * 620} M ${x + 110} 60 L ${x + 50 + dd * 80} ${60 + dd * 620}" stroke="${col}" stroke-width="2" opacity=".8"/>`;
+    b += `<rect x="${x - 110}" y="10" width="220" height="40" rx="4" fill="${col}"/>` + T(x, 38, 22, t, { a: "middle", w: 700, c: i === 1 ? C.ink : "#fff" }) + LBL(x - 95, 160, desc, { s: 18 });
+  });
+  const y2 = 60 + 0.32 * 640;
+  b += `<line x1="0" y1="${y2}" x2="${W}" y2="${y2}" stroke="#fff" stroke-width="2.5" stroke-dasharray="12 8"/>` + LBL(W - 250, y2 + 36, "주 대상 약 2 m 내외", { s: 18 });
+  return save("freq_depth", W, H, b, TEXDEFS);
+};
+
 (async () => {
   const only = process.argv.slice(2);
-  for (const [k, fn] of Object.entries(jobs)) if (!only.length || only.includes(k)) await fn();
+  for (const [k, fn] of Object.entries(jobs)) if (!k.endsWith("Old") && (!only.length || only.includes(k))) await fn();
   console.log("assets done");
 })();

@@ -8,8 +8,8 @@ const { applyTheme } = require(process.env.PPTX_SKILL + "/scripts/apply_theme.js
 
 const IMG = path.join(__dirname, "..", "images");
 const OUT = path.join(__dirname, "..", "PV5_GroundWatch.pptx");
-const FONT = "Pretendard";
-const HF = "Pretendard";
+const FONT = "Noto Sans CJK KR";
+const HF = "Noto Serif CJK KR";
 const K = { night: "0A1628", navy: "0B1F3A", amber: "F5B400", red: "D93025", ink: "101828", steel: "5B6573", mute: "8A94A3", fog: "F2F4F7", line: "DCE1E8", white: "FFFFFF", green: "2F9E44", blue: "1C64B5" };
 const THEME = {
   name: "GroundWatch", headFontFace: HF, bodyFontFace: FONT,
@@ -43,25 +43,18 @@ pres.defineSlideMaster({
   title: "GW_CONTENT",
   background: { color: K.white },
   objects: [
-    { rect: { x: M, y: 0.42, w: 1.95, h: 0.42, fill: { color: K.navy } } },
-    { text: { text: "PV5 GroundWatch", options: { x: M, y: 0.42, w: 1.95, h: 0.42, fontFace: HF, fontSize: 12, bold: true, color: K.white, align: "center", valign: "middle", margin: 0 } } },
-    { placeholder: { options: { name: "title", type: "title", x: 4.85, y: 0.42, w: 7.9, h: 0.42, fontFace: HF, fontSize: 17, bold: true, color: K.ink, valign: "middle", margin: 0 }, text: "" } },
+    { line: { x: M, y: 1.0, w: CW, h: 0, line: { color: "C9D0DA", width: 0.75 } } },
+    { line: { x: M, y: 7.12, w: CW, h: 0, line: { color: "DCE1E8", width: 0.5 } } },
+    { text: { text: "PV5 GroundWatch  |  반복 관측 기반 도심 지하공동 변화 감지 순찰체계", options: { x: M, y: 7.15, w: 9, h: 0.25, fontFace: FONT, fontSize: 8.5, color: K.mute, margin: 0, valign: "middle" } } },
+    { placeholder: { options: { name: "title", type: "title", x: M, y: 0.42, w: CW, h: 0.52, fontFace: HF, fontSize: 21, bold: true, color: K.navy, align: "left", valign: "middle", margin: 0 }, text: "" } },
   ],
-  slideNumber: { x: 12.25, y: 7.0, w: 0.5, h: 0.28, fontFace: FONT, fontSize: 10, color: K.mute, align: "right" },
-});
-pres.defineSlideMaster({
-  title: "GW_DIVIDER",
-  background: { color: K.night },
-  objects: [
-    { placeholder: { options: { name: "title", type: "title", x: M, y: 1.1, w: CW, h: 0.9, fontFace: HF, fontSize: 32, bold: true, color: K.white, align: "center", valign: "middle", margin: 0 }, text: "" } },
-    { placeholder: { options: { name: "body", type: "body", x: 3.4, y: 2.15, w: 6.53, h: 0.6, fontFace: HF, fontSize: 18, bold: true, color: K.white, align: "center", valign: "middle", margin: 0 }, text: "" } },
-  ],
-  slideNumber: { x: 12.25, y: 7.0, w: 0.5, h: 0.28, fontFace: FONT, fontSize: 10, color: "6B7A90", align: "right" },
+  slideNumber: { x: 12.25, y: 7.15, w: 0.5, h: 0.25, fontFace: FONT, fontSize: 9, color: K.mute, align: "right" },
 });
 pres.defineSlideMaster({ title: "GW_FULL", background: { color: "000000" }, objects: [] });
 
 // ---------- 헬퍼 ----------
 const DIM = {};
+const FIG = { n: 0 };
 const EXT = {};
 async function loadDims() { for (const f of fs.readdirSync(IMG)) if (/\.(png|jpg)$/.test(f)) { const m = await sharp(path.join(IMG, f)).metadata(); DIM[f.slice(0, -4)] = m.width / m.height; EXT[f.slice(0, -4)] = f.slice(-3); } }
 function img(s, name, x, y, w, h, o = {}) {
@@ -70,23 +63,28 @@ function img(s, name, x, y, w, h, o = {}) {
   const X = o.align === "left" ? x : o.align === "right" ? x + w - W : x + (w - W) / 2;
   const Y = o.valign === "top" ? y : o.valign === "bottom" ? y + h - H : y + (h - H) / 2;
   s.addImage({ path: path.join(IMG, name + "." + EXT[name]), x: X, y: Y, w: W, h: H, objectName: name });
+  if (o.cap) { FIG.n += 1; s.addText([{ text: `그림 ${FIG.n}. `, options: { bold: true, color: K.ink } }, { text: o.cap, options: { color: K.steel } }], { x: X, y: Y + H + 0.04, w: Math.max(W, 3), h: 0.24, fontSize: 9.5, margin: 0, valign: "top", isTextBox: true, objectName: "caption" }); }
   return { x: X, y: Y, w: W, h: H };
 }
 const ico = (s, name, x, y, sz) => s.addImage({ path: path.join(IMG, "ico_" + name + ".png"), x, y, w: sz, h: sz, objectName: "icon_" + name });
+const SECT = { "문제": ["Ⅰ", "문제 정의", "1"], "운영 모델": ["Ⅱ", "운영 모델", "2"], "확장": ["Ⅲ", "확장 방향", "3"], "부록": ["부록", "", "A"] };
+const SEQ = {};
 function slideC(desc, tag, tagColor, section) {
   const s = pres.addSlide({ masterName: "GW_CONTENT", sectionTitle: section });
-  const tc = tagColor === K.red ? "B4232A" : K.navy;
-  s.addText(tag, { shape: pres.ShapeType.rect, x: 2.62, y: 0.42, w: 2.05, h: 0.42, fill: { color: K.white }, line: { color: tc, width: 1 }, fontSize: 13, bold: true, color: tc, align: "center", valign: "middle", margin: 0, isTextBox: true, objectName: "tag" });
+  const [rn, nm, pre] = SECT[section];
+  SEQ[section] = (SEQ[section] || 0) + 1;
+  const label = tag.replace(/^#\d+\s*/, "").replace(/^(확장|부록)\s*\d+\s*/, "");
+  const crumb = (nm ? `${rn}. ${nm}` : rn) + `   ›   ${pre}.${SEQ[section]}  ${label}`;
+  s.addText(crumb, { x: M, y: 0.16, w: CW, h: 0.26, fontSize: 10, color: K.steel, margin: 0, valign: "middle", isTextBox: true, objectName: "crumb" });
   s.addText(desc, { placeholder: "title" });
   return s;
 }
 function lead(s, text, o = {}) {
-  s.addText(text, { x: o.x || M, y: o.y || 1.08, w: o.w || CW, h: o.h || 0.5, fontSize: o.fs || 16, color: K.steel, margin: 0, valign: "top", isTextBox: true, objectName: "lead" });
+  s.addText([{ text: "□ ", options: { color: K.navy, bold: true } }, { text, options: { color: K.ink } }], { x: o.x || M, y: o.y || 1.12, w: o.w || CW, h: o.h || 0.5, fontSize: o.fs || 15, margin: 0, valign: "top", isTextBox: true, objectName: "lead" });
 }
-function src(s, text, dark) { s.addText(text, { x: M, y: 7.0, w: 11.4, h: 0.28, fontSize: 10, color: dark ? "8C9BB0" : K.mute, margin: 0, valign: "middle", isTextBox: true, objectName: "source" }); }
+function src(s, text, dark) { s.addText(text.replace(/^출처:\s*/, "자료: ").replace(/^참고:\s*/, "자료: "), { x: M, y: 6.86, w: CW, h: 0.24, fontSize: 9, color: dark ? "8C9BB0" : K.mute, margin: 0, valign: "middle", isTextBox: true, objectName: "source" }); }
 function bubble(s, text, x, y, w, h, o = {}) {
-  const dk = (o.fill || K.navy) !== K.amber;
-  s.addText(text.replace(/\n/g, " "), { shape: pres.ShapeType.rect, x, y, w, h, fill: { color: dk ? K.navy : K.fog }, line: { color: dk ? K.navy : K.line, width: 0.75 }, fontSize: o.fs || 15, bold: true, color: dk ? K.white : K.ink, align: "left", valign: "middle", margin: 10, isTextBox: true, objectName: "keyMessage" });
+  s.addText([{ text: "시사점  ", options: { bold: true, color: K.navy } }, { text: text.replace(/\n/g, " "), options: { color: K.ink } }], { shape: pres.ShapeType.rect, x, y, w, h, fill: { color: "EEF2F7" }, line: { color: "C9D0DA", width: 0.75 }, fontSize: Math.min(o.fs || 14, 14), align: "left", valign: "middle", margin: 8, isTextBox: true, objectName: "keyMessage" });
 }
 function arrowLine(s, x1, y1, x2, y2, color = K.navy, w = 1.75) {
   const flipH = x2 < x1, flipV = y2 < y1;
@@ -95,7 +93,7 @@ function arrowLine(s, x1, y1, x2, y2, color = K.navy, w = 1.75) {
 function rule(s, x, y, w, color = K.line) { s.addShape(pres.ShapeType.line, { x, y, w, h: 0, line: { color, width: 1 }, objectName: "rule" }); }
 function panel(s, x, y, w, h, fill = K.fog) { s.addShape(pres.ShapeType.roundRect, { x, y, w, h, rectRadius: 0.06, fill: { color: fill }, line: { color: fill }, objectName: "panel" }); }
 function block(s, x, y, w, title, body, o = {}) {
-  s.addText(title, { x, y, w, h: 0.38, fontSize: o.tfs || 17, bold: true, color: o.tc || K.ink, margin: 0, valign: "top", isTextBox: true });
+  s.addText("○ " + title, { x, y, w, h: 0.38, fontSize: o.tfs || 16, bold: true, color: o.tc || K.ink, margin: 0, valign: "top", isTextBox: true });
   if (body) s.addText(body, { x, y: y + 0.42, w, h: o.h || 0.9, fontSize: o.fs || 14, color: o.bc || K.steel, margin: 0, valign: "top", paraSpaceAfter: 3, isTextBox: true });
 }
 function num(s, n, x, y, d = 0.42, fill = K.navy, color = K.white) {
@@ -105,7 +103,7 @@ function stat(s, x, y, w, value, label, o = {}) {
   s.addText(value, { x, y, w, h: 0.62, fontSize: o.vfs || 32, bold: true, color: o.vc || K.navy, margin: 0, valign: "bottom", isTextBox: true });
   s.addText(label, { x, y: y + 0.66, w, h: 0.5, fontSize: 13, color: o.lc || K.steel, margin: 0, valign: "top", isTextBox: true });
 }
-const L = (arr, o = {}) => arr.map((t, i) => ({ text: t, options: { breakLine: i < arr.length - 1, ...o } }));
+const L = (arr, o = {}) => arr.map((t, i) => ({ text: t, options: { breakLine: i < arr.length - 1, ...o, ...(o.bullet ? { bullet: { code: "2013", indent: 14 } } : {}) } }));
 
 async function build() {
   await loadDims();
@@ -114,23 +112,25 @@ async function build() {
   // ===== 1. 표지 =====
   pres.addSection({ title: "문제" });
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "문제" });
-  img(s, "ph_cover", 0, 0, 13.333, 7.5, { stretch: true });
-  s.addText([{ text: "도로가 무너지기까지,", options: { bold: true, breakLine: true } }, { text: "1~2분.", options: { bold: true } }], { x: M + 0.1, y: 1.0, w: 7.4, h: 2.1, fontSize: 52, bold: true, color: K.white, margin: 0, valign: "top", lineSpacingMultiple: 1.05, isTextBox: true });
-  s.addText("그 아래의 변화는 더 먼저 시작됐습니다.", { x: M + 0.1, y: 3.15, w: 7.2, h: 0.5, fontSize: 22, color: "C9D3E0", margin: 0, isTextBox: true });
-  [["2025.3.24", "서울 강동구 명일동"], ["22×18×16m", "길이, 폭, 깊이"], ["사망 1 부상 1", "인명 피해"]].forEach(([v, l], i) => {
-    const x = M + 0.1 + i * 2.35;
-    s.addText(v, { x, y: 3.85, w: 2.25, h: 0.42, fontSize: 19, bold: true, color: K.white, margin: 0, isTextBox: true });
-    s.addText(l, { x, y: 4.27, w: 2.25, h: 0.32, fontSize: 12, color: "9AA8BC", margin: 0, isTextBox: true });
-  });
-  s.addText("PV5 GroundWatch", { x: M + 0.1, y: 4.78, w: 7.0, h: 0.5, fontSize: 26, bold: true, color: K.white, margin: 0, isTextBox: true });
-  s.addText([{ text: "같은 도로를 반복 측정해 지하의 변화를 찾는 PV5 지하안전 순찰차   ", options: { color: "C9D3E0" } }, { text: "팀 한 명이라도 살릴 수 있다면", options: { color: K.amber, bold: true } }], { x: M + 0.1, y: 5.28, w: 11.0, h: 0.38, fontSize: 15, margin: 0, isTextBox: true });
-  s.addText("출처: 국토교통부·중앙지하사고조사위원회 조사결과(2025.12.3). 배경: PattayaPatrol, CC BY-SA 4.0 사진에 단면 합성", { x: M, y: 7.08, w: 7.6, h: 0.26, fontSize: 9, color: "D8DEE6", margin: 0, isTextBox: true });
-  s.addNotes("이 숫자 뒤에는 집으로 돌아가지 못한 한 사람이 있습니다. 우리가 찾으려는 것은 이미 생긴 구멍이 아니라, 구멍이 되기 전의 변화입니다.\n\n[사실] 2025.3.24 18:28경 서울 강동구 명일동. 붕괴 시작 후 약 1~2분 만에 길이 22m, 폭 18m, 깊이 16m로 확대. 사망 1명, 부상 1명.\n출처: 국토교통부 정책브리핑 '땅꺼짐 사고 조사결과 발표'(2025.12.3) https://m.korea.kr/briefing/policyBriefingView.do?newsId=156732996\n최종보고서: https://www.molit.go.kr/USR/policyData/m_34681/dtl.jsp?id=4872\n\n표현 원칙: 희생자 이름, 얼굴, 구조 장면은 쓰지 않습니다. 특정 기관 책임을 단정하지 않습니다. 배경은 사고 현장이 아닌 해외 야간 도로 사진(PattayaPatrol, CC BY-SA 4.0)에 노면 아래 공동 단면을 합성한 개념 이미지입니다.");
+  s.background = { color: K.white };
+  s.addShape(pres.ShapeType.rect, { x: 6.9, y: 0, w: 6.433, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
+  img(s, "gw_front_n", 6.9, 1.2, 6.433, 5.1);
+  s.addText("제5회 기아 PBV 아이디어 공모전  |  일반 부문 제안서", { x: M, y: 0.7, w: 6, h: 0.3, fontSize: 11, color: K.steel, margin: 0, isTextBox: true });
+  s.addText("PV5 GroundWatch", { x: M, y: 1.35, w: 6.1, h: 0.8, fontFace: HF, fontSize: 38, bold: true, color: K.navy, margin: 0, isTextBox: true });
+  s.addText("반복 관측 기반 도심 지하공동 변화 감지 순찰체계", { x: M, y: 2.2, w: 6.1, h: 0.45, fontFace: HF, fontSize: 18, color: K.ink, margin: 0, isTextBox: true });
+  s.addShape(pres.ShapeType.line, { x: M, y: 2.95, w: 5.9, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
+  s.addText("도로가 무너지기까지 1~2분. 그 아래의 변화는 더 먼저 시작됐습니다.", { x: M, y: 3.15, w: 6.0, h: 0.6, fontSize: 14, color: K.ink, margin: 0, valign: "top", isTextBox: true });
+  const HH = (t) => ({ text: t, options: { bold: true, color: K.steel, fill: { color: K.fog } } });
+  s.addTable([[HH("구분"), HH("서울 강동구 명일동 땅꺼짐(2025.3.24)")], ["규모", "길이 22m, 폭 18m, 깊이 16m (약 1~2분 만에 확대)"], ["인명 피해", "사망 1명, 부상 1명"]], { x: M, y: 3.85, w: 5.9, colW: [1.2, 4.7], fontFace: FONT, fontSize: 11, color: K.ink, border: { type: "solid", color: K.line, pt: 0.75 }, rowH: 0.34, valign: "middle", margin: [0, 0.08, 0, 0.08], objectName: "facts" });
+  s.addText([{ text: "팀  ", options: { color: K.steel } }, { text: "한 명이라도 살릴 수 있다면", options: { bold: true, color: K.ink } }], { x: M, y: 5.7, w: 6, h: 0.32, fontSize: 13, margin: 0, isTextBox: true });
+  s.addText("2026. 10.", { x: M, y: 6.05, w: 6, h: 0.3, fontSize: 12, color: K.steel, margin: 0, isTextBox: true });
+  s.addText("자료: 국토교통부·중앙지하사고조사위원회 「서울 명일동 땅꺼짐 사고 조사결과」(2025.12.3). 우측: PV5 실차 사진(Alexander Migl, CC BY-SA 4.0)에 장비를 합성한 예상도", { x: M, y: 6.8, w: 6.1, h: 0.45, fontSize: 8.5, color: K.mute, margin: 0, valign: "top", isTextBox: true });
+  s.addNotes("이 숫자 뒤에는 집으로 돌아가지 못한 한 사람이 있습니다. 우리가 찾으려는 것은 이미 생긴 구멍이 아니라, 구멍이 되기 전의 변화입니다.\n\n[사실] 2025.3.24 18:28경 서울 강동구 명일동. 붕괴 시작 후 약 1~2분 만에 길이 22m, 폭 18m, 깊이 16m로 확대. 사망 1명, 부상 1명.\n출처: 국토교통부 정책브리핑 '땅꺼짐 사고 조사결과 발표'(2025.12.3) https://m.korea.kr/briefing/policyBriefingView.do?newsId=156732996\n최종보고서: https://www.molit.go.kr/USR/policyData/m_34681/dtl.jsp?id=4872\n\n표현 원칙: 희생자 이름, 얼굴, 구조 장면은 쓰지 않습니다. 특정 기관 책임을 단정하지 않습니다.\n이미지: PV5 실차 사진(Alexander Migl, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Kia_PV5_Cargo_IMG_7825.jpg)에 장비를 합성한 예상도.");
 
   // ===== 2. 제안 배경 =====
   s = slideC("붕괴는 갑자기 보였지만, 원인은 지하에서 쌓이고 있었다", "제안 배경", K.red, "문제");
   lead(s, "사고조사위원회는 하나의 원인이 아니라 지하에서 오래 쌓인 조건들이 겹쳤다고 발표했습니다.");
-  img(s, "mechanism", M, 1.75, 7.3, 3.75, { align: "left" });
+  img(s, "mechanism", M, 1.75, 7.3, 3.75, { align: "left", cap: "명일동 사고 조사결과의 원인 요소 개념도" });
   const causes = [["직접 원인", "심층풍화대 불연속면이 만든 쐐기형 토체가 터널 굴착 중 미끄러짐", K.red], ["간접 원인", "인근 터널공사로 지하수위 최대 26m 저하", K.steel], ["간접 원인", "노후 하수관의 장기 누수로 경계면 강도 저하", K.steel], ["간접 원인", "강관보강 그라우팅의 지보 성능 한계", K.steel]];
   causes.forEach(([k, t, c], i) => {
     const y = 1.75 + i * 0.82;
@@ -152,8 +152,7 @@ async function build() {
   // ===== 3. 현재 탐사 방식 =====
   s = slideC("서울시는 이미 GPR로 도로 아래를 탐사하고 있다", "현재 탐사 방식", K.navy, "문제");
   lead(s, "차량형 GPR로 넓게 선별하고 수동 GPR과 천공·내시경으로 확인합니다. GroundWatch는 이 체계를 보완합니다.");
-  img(s, "ph_gpr_cart", M, 1.7, 5.4, 4.05, { stretch: true });
-  s.addText("수동(손수레형) GPR 실제 장비", { x: M, y: 5.8, w: 5.4, h: 0.3, fontSize: 12, color: K.steel, margin: 0, isTextBox: true });
+  img(s, "ph_gpr_cart", M, 1.7, 5.4, 3.95, { stretch: true, cap: "수동(손수레형) GPR 실제 장비" });
   [["radar", "차량형 GPR", "넓은 도로를 빠르게 선별합니다. 한 번 지나가며 약 3m 폭을 탐사합니다.", "한계: 고주파 GPR 탐지 깊이 약 2m"], ["scan", "수동(손수레형) GPR", "좁은 골목과 보도처럼 차량이 들어가기 어려운 곳을 작업자가 밀며 조사합니다.", "한계: 넓은 구간에는 시간과 인력이 많이 듭니다"], ["camera", "천공과 내시경", "공동이 의심되는 지점을 뚫어 실제 빈 공간과 규모를 확인합니다.", "한계: 승인과 교통통제가 필요한 지점 단위 작업"]].forEach(([ic, t, b, lim], i) => {
     const y = 1.7 + i * 1.38;
     ico(s, ic, 6.4, y + 0.02, 0.5);
@@ -172,16 +171,16 @@ async function build() {
   // ===== 4. 현재 방식의 공백 =====
   s = slideC("탐사와 탐사 사이, 지하의 변화는 기록되지 않는다", "현재 방식의 공백", K.red, "문제");
   lead(s, "2024년 연희동 성산로는 5월 정기 GPR 탐사에서 공동이 발견되지 않았고, 8월 29일 도로가 함몰됐습니다.");
-  img(s, "gap_timeline", M, 1.75, 8.5, 2.1, { align: "left" });
+  img(s, "gap_timeline", M, 1.75, 8.5, 2.1, { align: "left", cap: "연희동 성산로 정기 탐사와 함몰 시점" });
   img(s, "ph_crack", 9.35, 1.7, 3.38, 2.54, { stretch: true });
   s.addText("포장이 갈라지며 꺼지기 시작한 모습(해외 사례)", { x: 9.35, y: 4.27, w: 3.38, h: 0.3, fontSize: 11, color: K.steel, margin: 0, isTextBox: true });
-  bubble(s, "5월엔 없었고, 8월엔 무너졌습니다.", 3.0, 3.95, 3.7, 0.55, { fill: K.red, fs: 15 });
+  bubble(s, "5월엔 없었고, 8월엔 무너졌습니다.", M, 6.35, 6.0, 0.42, { fill: K.red, fs: 14 });
   [["한 시점의 결과", "회차별 결과가 보고서 단위로 끝나 시간축 비교가 어렵습니다."], ["변화 추적", "같은 지점의 신호가 새로 생겼는지, 커졌는지 이어서 보기 어렵습니다."], ["다음 조사 순서", "어느 구간을 먼저 다시 볼지 데이터로 정하기 어렵습니다."], ["같은 지점 찾기", "현장 기술자가 정확히 같은 지점을 다시 찾기 어렵습니다."]].forEach(([t, b], i) => {
     const x = M + i * 3.1;
     rule(s, x, 4.75, 2.85, K.ink);
     block(s, x, 4.88, 2.85, t, b, { h: 1.0 });
   });
-  s.addText("[가설] 위 네 가지 공백은 지자체와 탐사업체 인터뷰로 검증합니다.", { x: M, y: 6.45, w: CW, h: 0.35, fontSize: 13, color: K.steel, margin: 0, isTextBox: true });
+  s.addText("[가설] 위 네 가지 공백은 지자체와 탐사업체 인터뷰로 검증합니다.", { x: 6.9, y: 6.4, w: 5.8, h: 0.35, fontSize: 13, color: K.steel, margin: 0, isTextBox: true });
   src(s, "출처: 뉴시스 2024.8.30(서울시 설명: 5.7~5.16 GPR 탐사차량 2대, 인력 16명 투입, 당시 빈 공간 미발견), 이투데이 2024.9. 연희동 함몰 규모는 공식 확인 전이라 쓰지 않았습니다. 사진: Famartin, CC BY-SA 4.0");
   s.addNotes("연희동 성산로 사례는 반복 관측이 왜 필요한지 보여줍니다. 서울시 설명에 따르면 이 구간은 정기점검 대상으로 2024년 5월 7일부터 16일까지 GPR 탐사차량 2대와 인력 16명을 들여 조사했지만, 당시 빈 공간이 발견되지 않았습니다. 그리고 8월 29일 함몰이 일어났습니다.\n이것이 GPR 탐사의 실패라는 뜻은 아닙니다. 지하는 변하고, 한 시점의 결과는 그 시점만 말해 준다는 뜻입니다.\n\n출처: https://www.newsis.com/view/NISX20240830_0002869815 , https://www.etoday.co.kr/news/view/2397645 , https://mediahub.seoul.go.kr/archives/2012160\n[추가 확인 필요] 연희동 함몰 규모(가로, 세로, 깊이)는 공식 자료로 확인하지 못해 쓰지 않았습니다.\n[가설] 아래 네 가지 공백은 현장 인터뷰로 검증합니다.");
 
@@ -212,21 +211,21 @@ async function build() {
 
   // ===== 6. 구분장 =====
   pres.addSection({ title: "운영 모델" });
-  s = pres.addSlide({ masterName: "GW_DIVIDER", sectionTitle: "운영 모델" });
-  s.addText("PV5 GroundWatch", { placeholder: "title" });
-  s.addShape(pres.ShapeType.rect, { x: 3.4, y: 2.15, w: 6.53, h: 0.6, fill: { color: "1A2E4F" }, line: { color: "3A5070", width: 0.75 }, objectName: "sectionBand" });
-  s.addText("지금 바로 적용 가능한 운영 모델", { placeholder: "body" });
-  img(s, "gw_rear_n_169", 1.55, 3.3, 4.95, 2.78, { stretch: true });
-  img(s, "gw_front_169", 6.85, 3.3, 4.95, 2.78, { stretch: true });
-  s.addText("새벽 정기순찰", { x: 1.55, y: 6.2, w: 4.95, h: 0.4, fontSize: 16, bold: true, color: K.white, align: "center", margin: 0, isTextBox: true });
-  s.addText("PV5 이동형 탐사실", { x: 6.85, y: 6.2, w: 4.95, h: 0.4, fontSize: 16, bold: true, color: K.white, align: "center", margin: 0, isTextBox: true });
-  src(s, "PV5 실차 사진(Alexander Migl, CC BY-SA 4.0) 위에 장비와 랩핑을 합성한 예상도", true);
+  s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "운영 모델" });
+  s.background = { color: K.white };
+  s.addShape(pres.ShapeType.rect, { x: 7.4, y: 0, w: 5.933, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
+  img(s, "gw_rear_n", 7.4, 1.2, 5.933, 5.1);
+  s.addText("Ⅱ", { x: M, y: 1.2, w: 3, h: 1.0, fontFace: HF, fontSize: 54, bold: true, color: K.navy, margin: 0, isTextBox: true });
+  s.addText("지금 바로 적용 가능한 운영 모델", { x: M, y: 2.25, w: 6.4, h: 0.6, fontFace: HF, fontSize: 26, bold: true, color: K.ink, margin: 0, isTextBox: true });
+  s.addShape(pres.ShapeType.line, { x: M, y: 3.05, w: 6.2, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
+  s.addText(["2.1  새벽 정기순찰", "2.2  PV5 이동형 탐사실", "2.3  4D 지하 변화지도", "2.4  AI 변화 감지", "2.5  재확인 포인트 생성", "2.6  GroundWatch Patrol 차량 앱", "2.7  차량·센서·AR 소프트웨어 브리지", "2.8  AR 위치 보정", "2.9  AR 수동 GPR 재탐사", "2.10  수동 GPR 교차검증", "2.11  정밀조사와 결과 저장"].map((t, i, a) => ({ text: t, options: { breakLine: i < a.length - 1 } })), { x: M, y: 3.25, w: 6.4, h: 3.4, fontSize: 12.5, color: K.steel, margin: 0, valign: "top", paraSpaceAfter: 4, isTextBox: true });
+  s.addText("PV5 실차 사진(Alexander Migl, CC BY-SA 4.0)에 장비를 합성한 예상도", { x: 7.5, y: 7.15, w: 5.7, h: 0.24, fontSize: 8.5, color: "D8DEE6", align: "right", margin: 0, isTextBox: true });
   s.addNotes("여기서부터는 지금 기술로 바로 꾸릴 수 있는 운영 모델 열한 가지를 순서대로 보여드립니다.");
 
   // ===== 7. #1 새벽 순찰 =====
   s = slideC("교통량이 적은 시간에 도로 아래 변화를 기록합니다", "#1 새벽 순찰", K.amber, "운영 모델");
-  s.addShape(pres.ShapeType.rect, { x: 0, y: 1.05, w: 13.333, h: 5.85, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  img(s, "gw_rear_n_169", 5.0, 1.05, 8.333, 5.85, { stretch: true });
+  s.addShape(pres.ShapeType.rect, { x: M, y: 1.15, w: 4.5, h: 5.6, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
+  img(s, "gw_rear_n_169", 5.25, 1.15, 7.48, 4.21, { stretch: true, cap: "새벽 순찰 장착 예상도(후방 하부 GPR 어레이 스캔)" });
   s.addText("보이지 않는 위험은,\n반복해서 봐야 보입니다.", { x: M + 0.1, y: 1.55, w: 4.3, h: 1.3, fontSize: 30, bold: true, color: K.white, margin: 0, valign: "top", isTextBox: true });
   [["moon_w", "차량과 보행이 가장 적은 새벽에 반복 주행"], ["car_w", "엔진 소음과 배기가스 없이 주택가 저속 운행"], ["route_w", "같은 경로, 같은 장비로 회차끼리 비교"], ["radar_w", "후방 하부 GPR 어레이로 차로를 연속 스캔"]].forEach(([ic, t], i) => {
     ico(s, ic, M + 0.1, 3.3 + i * 0.62, 0.34);
@@ -239,7 +238,7 @@ async function build() {
   // ===== 8. #2 이동형 탐사실 =====
   s = slideC("PV5는 센서 운반차가 아니라 이동형 탐사·분석·검증 플랫폼", "#2 이동형 탐사실", K.amber, "운영 모델");
   lead(s, "장비를 차량에 고정해 회차마다 같은 측정 환경을 유지하고, 차 안에서 분석하고, 내려서 검증합니다.");
-  const ph = img(s, "gw_front", M, 1.65, 7.55, 5.03, { stretch: true });
+  const ph = img(s, "gw_front", M, 1.6, 7.4, 4.93, { stretch: true, cap: "PV5 GroundWatch 장비 배치 예상도" });
   const P = (fx, fy) => [ph.x + ph.w * fx, ph.y + ph.h * fy];
   const callout = (fx, fy, lx, ly, n, label) => {
     const [px, py] = P(fx, fy);
@@ -274,19 +273,19 @@ async function build() {
   // ===== 9. #3 4D 변화지도 =====
   s = slideC("실제로 달린 도로만, 위치·깊이·시간으로 기록합니다", "#3 4D 변화지도", K.amber, "운영 모델");
   lead(s, "서울 전체의 완성된 지하지도가 아닙니다. PV5가 측정한 도로를 X·Y 위치, Z 깊이, T 시간으로 쌓은 기록입니다.");
-  img(s, "map4d", M, 1.7, 8.25, 4.37, { align: "left" });
+  img(s, "map4d", M, 1.65, 8.0, 4.24, { align: "left", cap: "4D 도로 지하 변화지도 화면 구성(예시, 서울 강동구 명일동 일대)" });
   s.addText("구간마다 남기는 정보", { x: 9.15, y: 1.7, w: 3.58, h: 0.38, fontSize: 16, bold: true, color: K.ink, margin: 0, isTextBox: true });
   s.addText(L(["마지막 조사일과 반복 조사 횟수", "탐사 가능 깊이와 이상 신호 추정 깊이", "이전 회차 대비 변화량", "AI 위험점수, 신뢰도, 위치 오차", "전문가 검토와 정밀조사 결과", "보수 완료 여부"], { bullet: true }), { x: 9.15, y: 2.15, w: 3.58, h: 2.3, fontSize: 14, color: K.steel, margin: 0, paraSpaceAfter: 6, valign: "top", isTextBox: true });
   bubble(s, "지난 조사보다 이상 반사 면적이 17% 늘었습니다", 9.15, 4.65, 3.58, 0.85, { fill: K.amber, color: K.ink, fs: 14 });
   s.addText("[예시] 화면의 수치는 설명용입니다.", { x: 9.15, y: 5.6, w: 3.58, h: 0.32, fontSize: 12, color: K.mute, margin: 0, isTextBox: true });
-  s.addText("지도에서 구간을 고르면 실제 위치, 지상 영상, GPR 지하 단면, 회차별 변화 그래프를 한 화면에서 봅니다. 조사하지 않은 구간과 신뢰도가 낮은 구간은 숨기지 않고 따로 표시합니다.", { x: M, y: 6.2, w: CW, h: 0.65, fontSize: 15, color: K.ink, margin: 0, valign: "top", isTextBox: true });
+  s.addText("지도에서 구간을 고르면 실제 위치, 지상 영상, GPR 지하 단면, 회차별 변화 그래프를 한 화면에서 봅니다. 조사하지 않은 구간과 신뢰도가 낮은 구간은 숨기지 않고 따로 표시합니다.", { x: M, y: 6.38, w: CW, h: 0.45, fontSize: 12, color: K.ink, margin: 0, valign: "top", isTextBox: true });
   src(s, "목업 화면. 회색 미조사, 초록 변화 없음, 노랑 새 이상 신호, 주황 확대 의심, 빨강 정밀 재탐사, 점선 신뢰도 낮음");
   s.addNotes("4D 지하 변화지도는 도시 전체를 다 조사했다는 지도가 아닙니다. PV5가 실제로 주행하고 측정한 도로만 위치, 깊이, 시간으로 쌓습니다.\n색 규칙: 회색 미조사, 초록 이전과 변화 없음, 노랑 새 이상 신호, 주황 확대 의심, 빨강 정밀 재탐사, 점선 신뢰도 낮음.\n[예시] 17% 증가, 추정 깊이 0.9~1.3m, AI 신뢰도 84%는 화면 설명용 예시 값입니다.");
 
   // ===== 10. #4 AI 변화 감지 =====
   s = slideC("AI는 공동을 확정하지 않고, 달라진 곳의 검토 순서를 정합니다", "#4 AI 변화 감지", K.amber, "운영 모델");
   lead(s, "같은 위치의 이전 회차와 현재 회차 GPR 신호를 비교해, 새로 생기거나 커진 신호를 먼저 찾습니다.");
-  img(s, "ai_compare", M, 1.7, 8.3, 2.93, { align: "left" });
+  img(s, "ai_compare", M, 1.7, 8.3, 2.93, { align: "left", cap: "회차 간 GPR 단면 비교(개념)" });
   img(s, "surface_crack", 9.2, 1.7, 3.53, 2.12);
   s.addText("지상 카메라도 함께 봅니다. 균열, 단차, 맨홀 주변 침하, 물 고임 [예시]", { x: 9.2, y: 3.9, w: 3.53, h: 0.7, fontSize: 12, color: K.steel, margin: 0, valign: "top", isTextBox: true });
   rule(s, M, 4.85, CW);
@@ -354,7 +353,7 @@ async function build() {
   // ===== 14. #8 AR 위치 보정 =====
   s = slideC("작업자는 고정된 기준점을 인식해 지하 데이터의 위치를 맞춘다", "#8 AR 위치 보정", K.amber, "운영 모델");
   lead(s, "AR 글래스는 PV5가 안전하게 정차하고 작업자가 내린 뒤에만 켭니다. 운전자는 주행 중 착용하지 않습니다.");
-  img(s, "ar_calib", M, 1.7, 8.0, 4.24, { align: "left" });
+  img(s, "ar_calib", M, 1.7, 8.0, 4.24, { align: "left", cap: "AR 기준점 인식과 위치 보정 화면(실사 합성 목업)" });
   ["정차 확인 후 앱에서 현장 정밀점검 시작", "작업 패키지가 Edge Gateway로 전송", "작업자가 글래스 착용, 보안 Wi-Fi 자동 연결", "맨홀 중심 인식", "도로 경계석과 차선 모서리 인식", "RTK 좌표와 시각 기준점 결합", "위치 오차가 기준 이내면 보정 완료"].forEach((t, i) => {
     const y = 1.7 + i * 0.6;
     num(s, i + 1, 8.85, y, 0.36, i >= 3 && i <= 5 ? K.green : K.navy);
@@ -368,7 +367,7 @@ async function build() {
   // ===== 15. #9 AR 재탐사 =====
   s = slideC("AR이 표시한 검색 범위를 따라 양손으로 수동 GPR을 조작한다", "#9 AR 재탐사", K.amber, "운영 모델");
   lead(s, "AR은 공동의 실제 모양이 아니라, AI가 지정한 재탐사 검색 범위를 도로 위에 맞춰 보여줍니다.");
-  img(s, "ar_scan", M, 1.7, 8.0, 4.24, { align: "left" });
+  img(s, "ar_scan", M, 1.7, 8.0, 4.24, { align: "left", cap: "AR 재탐사 범위 안내 화면(실사 합성 목업)" });
   s.addText("화면에 보이는 것", { x: 8.85, y: 1.7, w: 3.88, h: 0.38, fontSize: 16, bold: true, color: K.ink, margin: 0, isTextBox: true });
   s.addText(L(["탐사 시작점과 종료점", "진행 방향과 반복 횟수", "추정 깊이와 이전 대비 변화량", "위치 오차와 AI 신뢰도"], { bullet: true }), { x: 8.85, y: 2.12, w: 3.88, h: 1.5, fontSize: 14, color: K.steel, margin: 0, paraSpaceAfter: 5, valign: "top", isTextBox: true });
   ico(s, "mic", 8.85, 3.85, 0.4);
@@ -382,7 +381,7 @@ async function build() {
   // ===== 16. #10 교차검증 =====
   s = slideC("넓게 선별하고, 좁게 다른 방향으로 다시 본다", "#10 교차검증", K.amber, "운영 모델");
   lead(s, "수동 GPR이 차량형보다 늘 더 깊게 보는 것은 아닙니다. 두 장비는 역할이 다릅니다.");
-  img(s, "cross_check", M, 1.7, 7.6, 3.42, { align: "left" });
+  img(s, "cross_check", M, 1.7, 7.6, 3.42, { align: "left", cap: "차량형 선별과 수동형 교차검증의 탐사 범위(개념)" });
   [["차량형 다채널 GPR", "넓은 도로를 빠르게 선별합니다.", K.amber], ["지면 밀착형 수동 GPR", "좁은 범위를 다른 주파수와 방향으로 교차검증합니다.", K.red], ["내시경", "기존 맨홀이나 승인된 천공부에서 내부를 확인합니다.", K.navy]].forEach(([t, b, c], i) => {
     const y = 1.7 + i * 1.15;
     s.addShape(pres.ShapeType.ellipse, { x: 8.55, y: y + 0.1, w: 0.18, h: 0.18, fill: { color: c }, line: { color: c }, objectName: "dot" });
@@ -418,20 +417,21 @@ async function build() {
 
   // ===== 18. 구분장 =====
   pres.addSection({ title: "확장" });
-  s = pres.addSlide({ masterName: "GW_DIVIDER", sectionTitle: "확장" });
-  s.addText("PV5 GroundWatch", { placeholder: "title" });
-  s.addShape(pres.ShapeType.rect, { x: 3.4, y: 2.15, w: 6.53, h: 0.6, fill: { color: "1A2E4F" }, line: { color: "3A5070", width: 0.75 }, objectName: "sectionBand" });
-  s.addText("도시 지하 안전망으로의 확장", { placeholder: "body" });
-  img(s, "patrol_net", 1.55, 3.3, 4.95, 2.78, { stretch: true });
-  img(s, "twin", 6.85, 3.3, 4.95, 2.78, { stretch: true });
-  s.addText("위험도별 순찰망", { x: 1.55, y: 6.2, w: 4.95, h: 0.4, fontSize: 16, bold: true, color: K.white, align: "center", margin: 0, isTextBox: true });
-  s.addText("4D 도시 지하 디지털 트윈", { x: 6.85, y: 6.2, w: 4.95, h: 0.4, fontSize: 16, bold: true, color: K.white, align: "center", margin: 0, isTextBox: true });
+  s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "확장" });
+  s.background = { color: K.white };
+  s.addShape(pres.ShapeType.rect, { x: 7.4, y: 0, w: 5.933, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
+  img(s, "gw_front", 7.4, 1.2, 5.933, 5.1);
+  s.addText("Ⅲ", { x: M, y: 1.2, w: 3, h: 1.0, fontFace: HF, fontSize: 54, bold: true, color: K.navy, margin: 0, isTextBox: true });
+  s.addText("도시 지하 안전망으로의 확장", { x: M, y: 2.25, w: 6.4, h: 0.6, fontFace: HF, fontSize: 26, bold: true, color: K.ink, margin: 0, isTextBox: true });
+  s.addShape(pres.ShapeType.line, { x: M, y: 3.05, w: 6.2, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
+  s.addText(["3.1  위험도별 순찰망", "3.2  여러 대의 PV5 플릿", "3.3  도시 지하 데이터 통합", "3.4  4D 도시 지하 디지털 트윈"].map((t, i, a) => ({ text: t, options: { breakLine: i < a.length - 1 } })), { x: M, y: 3.25, w: 6.4, h: 3.4, fontSize: 12.5, color: K.steel, margin: 0, valign: "top", paraSpaceAfter: 4, isTextBox: true });
+  s.addText("PV5 실차 사진(Alexander Migl, CC BY-SA 4.0)에 장비를 합성한 예상도", { x: 7.5, y: 7.15, w: 5.7, h: 0.24, fontSize: 8.5, color: "D8DEE6", align: "right", margin: 0, isTextBox: true });
   s.addNotes("여기부터는 운영 모델이 검증된 뒤의 확장 방향입니다.");
 
   // ===== 19. 확장1 =====
   s = slideC("위험한 곳은 더 자주, 비가 온 뒤에는 바로", "확장 1 순찰망", K.red, "확장");
   lead(s, "구간 위험도에 따라 조사 주기를 다르게 잡습니다. 아래 주기는 [예시]이며 발주기관과 협의해 정합니다.");
-  img(s, "patrol_net", M, 1.7, 7.4, 4.16, { align: "left" });
+  img(s, "patrol_net", M, 1.7, 7.4, 4.16, { align: "left", cap: "위험도별 순찰 경로 예시(서울 강동구 명일동 일대)" });
   [["집중관리 구간", "매일 또는 주 1회", K.red], ["노후 하수관, 공사장 주변", "주 1회", "F08C00"], ["역세권 일반도로", "월 1회", "4E8FD9"], ["일반 관리구간", "분기 또는 반기", K.green], ["집중호우 이후", "긴급 조사", "7048E8"], ["AI가 변화를 감지한 구간", "다음 회차에 우선 재확인", K.amber]].forEach(([k, v, c], i) => {
     const y = 1.72 + i * 0.68;
     s.addShape(pres.ShapeType.rect, { x: 8.3, y: y + 0.12, w: 0.36, h: 0.1, fill: { color: c }, line: { color: c }, objectName: "swatch" });
@@ -446,7 +446,7 @@ async function build() {
   // ===== 20. 확장2 =====
   s = slideC("여러 대의 PV5가 권역을 나눠 같은 기준으로 순찰한다", "확장 2 플릿", K.red, "확장");
   lead(s, "권역을 나누고, 관제센터에서 실시간 상태를 보며, 차량별 순찰거리와 재확인 업무를 배정합니다.");
-  img(s, "fleet", M, 1.7, 7.4, 4.07, { align: "left" });
+  img(s, "fleet", M, 1.7, 7.4, 4.07, { align: "left", cap: "권역 분담 플릿 관제 화면(예시)" });
   block(s, 8.3, 1.75, 4.43, "같은 사양, 같은 기준", "차량과 장비 배치가 같아야 권역이 달라도 회차 데이터를 같은 기준으로 비교할 수 있습니다.", { h: 0.9 });
   block(s, 8.3, 3.05, 4.43, "관제 연동 [추가 확인 필요]", "Pleos Fleet 차량관제 또는 기관 FMS와 배터리, 위치, 업무 상태를 잇는 방안을 검토합니다.", { h: 0.9 });
   block(s, 8.3, 4.35, 4.43, "배정 기준", "권역 위험도, 재확인 대기열, 차량 배터리, 인력 교대", { h: 0.7 });
@@ -457,7 +457,7 @@ async function build() {
   // ===== 21. 확장3 =====
   s = slideC("GPR 변화 신호를 도시의 다른 지하 데이터와 겹쳐 본다", "확장 3 데이터 통합", K.red, "확장");
   lead(s, "하수관, 굴착공사, 지하철 구조물, 지하수, 강우, 보수 이력과 함께 볼 때 원인을 짐작하기 쉬워집니다.");
-  img(s, "layers", M, 1.7, 7.4, 4.07, { align: "left" });
+  img(s, "layers", M, 1.7, 7.4, 4.07, { align: "left", cap: "지하 안전 데이터 레이어 구성" });
   ico(s, "shield", 8.3, 1.75, 0.45);
   block(s, 8.9, 1.75, 3.83, "보안과 접근권한", "지하정보는 보안과 안전 문제가 있어 기관별 접근권한을 나누고, 계약기관이 쓰는 접근제어형 관제 서비스로 제공합니다.", { h: 1.2 });
   ico(s, "db", 8.3, 3.35, 0.45);
@@ -471,7 +471,7 @@ async function build() {
   // ===== 22. 확장4 =====
   s = slideC("시간이 쌓이면, 도로 아래가 변하는 모습이 보인다", "확장 4 디지털 트윈", K.red, "확장");
   lead(s, "지상 지도, 지하 시설물, 공동 의심 신호, 시간에 따른 변화를 하나의 모델에서 봅니다.");
-  img(s, "twin", M, 1.7, 7.4, 3.92, { align: "left" });
+  img(s, "twin", M, 1.7, 7.4, 3.92, { align: "left", cap: "4D 도시 지하 디지털 트윈 개념" });
   [["공사 전후 비교", "굴착공사 착공 전, 공사 중, 완료 후 같은 구간을 비교합니다."], ["재난 대응", "집중호우나 지진 뒤 우선 점검 구간을 고릅니다."], ["유지관리 계획", "변화가 잦은 구간의 관로 교체 우선순위 근거가 됩니다."], ["범위 원칙", "PV5가 측정한 도로에 한정하고, 측정하지 않은 구간은 비워 둡니다."]].forEach(([t, b], i) => block(s, 8.3, 1.75 + i * 1.03, 4.43, t, b, { h: 0.6, tfs: 16, fs: 13 }));
   bubble(s, "도시가 같은 길을 기억하면, 작은 변화도 놓치지 않을 수 있습니다", M, 5.95, 7.4, 0.7, { fs: 15 });
   src(s, "개념 일러스트. 디지털 트윈은 운영 데이터가 충분히 쌓인 뒤의 장기 확장 방향입니다.");
@@ -479,21 +479,29 @@ async function build() {
 
   // ===== 23. 마무리 =====
   s = pres.addSlide({ masterName: "GW_FULL", sectionTitle: "확장" });
-  s.background = { color: K.night };
-  img(s, "gw_front_n", 5.2, 0.6, 8.133, 6.3, { align: "right" });
-  s.addShape(pres.ShapeType.rect, { x: 0, y: 0, w: 5.6, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
-  s.addText("한 번의 조기 발견이,\n한 사람의 무사 귀가가 되도록.", { x: M + 0.1, y: 2.0, w: 5.2, h: 1.6, fontSize: 30, bold: true, color: K.white, margin: 0, valign: "top", isTextBox: true });
-  s.addText("PV5 GroundWatch", { x: M + 0.1, y: 3.95, w: 4.8, h: 0.42, fontSize: 18, bold: true, color: K.amber, margin: 0, isTextBox: true });
-  s.addText("같은 도로를 반복 측정해 지하의 변화를 찾는 PV5 지하안전 순찰차", { x: M + 0.1, y: 4.4, w: 4.6, h: 0.7, fontSize: 13, color: "C9D3E0", margin: 0, valign: "top", isTextBox: true });
-  s.addText("팀 한 명이라도 살릴 수 있다면", { x: M + 0.1, y: 5.35, w: 4.6, h: 0.36, fontSize: 13, color: "C9D3E0", margin: 0, isTextBox: true });
-  s.addText("감사합니다", { x: M + 0.1, y: 6.55, w: 3, h: 0.32, fontSize: 12, color: "8C9BB0", margin: 0, isTextBox: true });
-  s.addText("PV5 실차 사진(Alexander Migl, CC BY-SA 4.0) 위 장비 합성 예상도", { x: 5.4, y: 7.05, w: 7.5, h: 0.26, fontSize: 9, color: "B8C4D4", align: "right", margin: 0, isTextBox: true });
-  s.addNotes("도로가 무너진 뒤에는 누구나 구멍을 볼 수 있습니다. 우리가 찾으려는 것은 아직 보이지 않을 때 시작된 변화입니다. 한 번의 조기 발견이 한 사람의 무사 귀가가 되도록, PV5 GroundWatch를 제안합니다. 감사합니다.\n이미지: PV5 실차 사진(Alexander Migl, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Kia_PV5_Cargo_IMG_7825.jpg)에 장비와 랩핑을 합성한 예상도.");
+  s.background = { color: K.white };
+  s.addShape(pres.ShapeType.rect, { x: 6.9, y: 0, w: 6.433, h: 7.5, fill: { color: K.night }, line: { color: K.night }, objectName: "panel" });
+  img(s, "gw_rear_n", 6.9, 1.2, 6.433, 5.1);
+  s.addText("맺음말", { x: M, y: 0.7, w: 6, h: 0.3, fontSize: 11, color: K.steel, margin: 0, isTextBox: true });
+  s.addText("한 번의 조기 발견이,\n한 사람의 무사 귀가가 되도록.", { x: M, y: 1.25, w: 6.1, h: 1.3, fontFace: HF, fontSize: 26, bold: true, color: K.navy, margin: 0, valign: "top", isTextBox: true });
+  s.addShape(pres.ShapeType.line, { x: M, y: 2.85, w: 5.9, h: 0, line: { color: "C9D0DA", width: 0.75 }, objectName: "rule" });
+  s.addText([
+    { text: "□ 단발성 점검을 반복 관측으로", options: { bold: true, color: K.ink, breakLine: true } },
+    { text: "같은 도로를 같은 장비로 다시 보고, 회차 간 변화를 기록합니다.", options: { color: K.steel, breakLine: true } },
+    { text: "□ AI는 순서를, 전문가는 판정을", options: { bold: true, color: K.ink, breakLine: true } },
+    { text: "AI가 달라진 곳을 먼저 찾고, 확정은 전문가와 천공·내시경이 맡습니다.", options: { color: K.steel, breakLine: true } },
+    { text: "□ PV5를 이동형 탐사·분석·검증 플랫폼으로", options: { bold: true, color: K.ink, breakLine: true } },
+    { text: "새벽 저소음 운행, V2L 전원, 카고룸 장비 고정, 차량 앱 연동을 활용합니다.", options: { color: K.steel } },
+  ], { x: M, y: 3.05, w: 6.0, h: 2.6, fontSize: 13, margin: 0, valign: "top", paraSpaceAfter: 5, isTextBox: true });
+  s.addText([{ text: "PV5 GroundWatch", options: { bold: true, color: K.navy } }, { text: "   팀 한 명이라도 살릴 수 있다면", options: { color: K.steel } }], { x: M, y: 6.05, w: 6, h: 0.32, fontSize: 12, margin: 0, isTextBox: true });
+  s.addText("감사합니다", { x: M, y: 6.45, w: 3, h: 0.3, fontSize: 12, color: K.steel, margin: 0, isTextBox: true });
+  s.addText("PV5 실차 사진(Alexander Migl, CC BY-SA 4.0)에 장비를 합성한 예상도", { x: 7.0, y: 7.15, w: 6.2, h: 0.24, fontSize: 8.5, color: "D8DEE6", align: "right", margin: 0, isTextBox: true });
+  s.addNotes("도로가 무너진 뒤에는 누구나 구멍을 볼 수 있습니다. 우리가 찾으려는 것은 아직 보이지 않을 때 시작된 변화입니다. 한 번의 조기 발견이 한 사람의 무사 귀가가 되도록, PV5 GroundWatch를 제안합니다. 감사합니다.\n이미지: PV5 실차 사진(Alexander Migl, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Kia_PV5_Cargo_IMG_7829.jpg)에 장비를 합성한 예상도.");
 
   // ===== 24. 부록1 =====
   pres.addSection({ title: "부록" });
   s = slideC("GPR은 만능이 아니다. 깊이, 토질, 금속의 한계를 먼저 밝힌다", "부록 1 GPR 한계", K.navy, "부록");
-  img(s, "freq_depth", M, 1.1, 6.3, 3.15, { align: "left" });
+  img(s, "freq_depth", M, 1.15, 6.3, 3.15, { align: "left", cap: "안테나 주파수와 탐지 깊이·해상도의 관계(개념)" });
   [["탐사 깊이", "서울시가 쓰는 고주파 GPR은 약 2m 안팎입니다. GroundWatch도 2m 안팎의 얕은 공동을 주로 봅니다."], ["주파수와 해상도", "저주파는 깊지만 흐릿하고, 고주파는 얕지만 정밀합니다(FHWA)."], ["수분과 점토", "수분과 점토가 많은 흙은 전자파를 약하게 만듭니다(FHWA)."], ["금속 간섭", "금속 관로는 강하게 반사하고 그 아래를 가립니다(FHWA)."], ["깊은 지반과 터널", "지하철 터널 같은 깊은 구조는 대상이 아닙니다. 복합탐사 같은 다른 기법의 영역입니다."]].forEach(([t, b], i) => {
     const y = 1.1 + i * 0.64;
     s.addText(t, { x: 7.2, y, w: 1.65, h: 0.58, fontSize: 14, bold: true, color: K.ink, margin: 0, valign: "top", isTextBox: true });
