@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#000000" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#1C2B47" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="52" height="24" fill="#F5B700" />
+    <text x="222" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">2p-2</text>
+    <text x="260" y="45" font-size="14" fill="#AEB6C2">사고가 발생하는 과정</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#3A4558" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#FFFFFF">보이지 않는 변화가 겹치며 도로 붕괴로 이어진다</text>
+  </g>
+  <g id="section-figure" data-pptx-bounds="40 144 660 423">
+    <image href="../images/ug_mech_crop.png" x="40" y="144" width="660" height="423" preserveAspectRatio="xMidYMid meet" />
+    <g font-size="15" font-weight="bold">
+      <circle cx="318" cy="244" r="15" fill="#F5B700" />
+      <text x="318" y="250" fill="#0B1E3C" text-anchor="middle">5</text>
+      <rect x="340" y="232" width="78" height="24" rx="4" fill="#000000" fill-opacity="0.62" />
+      <text x="350" y="250" fill="#FFFFFF">도로 침하</text>
+      <circle cx="318" cy="306" r="15" fill="#F5B700" />
+      <text x="318" y="312" fill="#0B1E3C" text-anchor="middle">3</text>
+      <rect x="226" y="294" width="74" height="24" rx="4" fill="#000000" fill-opacity="0.62" />
+      <text x="236" y="312" fill="#FFFFFF">공동 형성</text>
+      <circle cx="385" cy="362" r="15" fill="#F5B700" />
+      <text x="385" y="368" fill="#0B1E3C" text-anchor="middle">1</text>
+      <rect x="408" y="350" width="94" height="24" rx="4" fill="#000000" fill-opacity="0.62" />
+      <text x="418" y="368" fill="#FFFFFF">노후 하수관</text>
+      <circle cx="96" cy="400" r="15" fill="#F5B700" />
+      <text x="96" y="406" fill="#0B1E3C" text-anchor="middle">2</text>
+      <rect x="118" y="388" width="124" height="24" rx="4" fill="#000000" fill-opacity="0.62" />
+      <text x="128" y="406" fill="#FFFFFF">누수·지하수 변화</text>
+      <circle cx="187" cy="457" r="15" fill="#F5B700" />
+      <text x="187" y="463" fill="#0B1E3C" text-anchor="middle">4</text>
+      <rect x="210" y="445" width="94" height="24" rx="4" fill="#000000" fill-opacity="0.62" />
+      <text x="220" y="463" fill="#FFFFFF">터널·굴착공사</text>
+    </g>
+  </g>
+  <g id="steps" data-pptx-bounds="740 150 484 420">
+    <g id="step-1">
+      <circle cx="756" cy="172" r="14" fill="#F5B700" />
+      <text x="756" y="178" font-size="15" font-weight="bold" fill="#0B1E3C" text-anchor="middle">1</text>
+      <text x="784" y="180" font-size="21" font-weight="bold" fill="#FFFFFF">노후 시설물과 취약한 지질</text>
+      <text x="784" y="208" font-size="17" fill="#AEB6C2">오래된 하수관과 약한 지층이 먼저 있습니다</text>
+    </g>
+    <g id="step-2">
+      <circle cx="756" cy="252" r="14" fill="#F5B700" />
+      <text x="756" y="258" font-size="15" font-weight="bold" fill="#0B1E3C" text-anchor="middle">2</text>
+      <text x="784" y="260" font-size="21" font-weight="bold" fill="#FFFFFF">누수와 지하수위 변화</text>
+      <text x="784" y="288" font-size="17" fill="#AEB6C2">물이 새거나 빠지면서 주변 흙이 약해집니다</text>
+    </g>
+    <g id="step-3">
+      <circle cx="756" cy="332" r="14" fill="#F5B700" />
+      <text x="756" y="338" font-size="15" font-weight="bold" fill="#0B1E3C" text-anchor="middle">3</text>
+      <text x="784" y="340" font-size="21" font-weight="bold" fill="#FFFFFF">토사 유실과 공동 형성</text>
+      <text x="784" y="368" font-size="17" fill="#AEB6C2">흙이 쓸려 나간 자리에 빈 공간이 생깁니다</text>
+    </g>
+    <g id="step-4">
+      <circle cx="756" cy="412" r="14" fill="#F5B700" />
+      <text x="756" y="418" font-size="15" font-weight="bold" fill="#0B1E3C" text-anchor="middle">4</text>
+      <text x="784" y="420" font-size="21" font-weight="bold" fill="#FFFFFF">차량 하중과 공사 영향</text>
+      <text x="784" y="448" font-size="17" fill="#AEB6C2">하중과 굴착·터널 공사의 영향이 겹칩니다</text>
+    </g>
+    <g id="step-5">
+      <circle cx="756" cy="492" r="14" fill="#C62828" />
+      <text x="756" y="498" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+      <text x="784" y="500" font-size="21" font-weight="bold" fill="#FFFFFF">도로 표면 붕괴</text>
+      <text x="784" y="528" font-size="17" fill="#AEB6C2">상부가 버티지 못하고 차량·보행자가 노출됩니다</text>
+    </g>
+    <line x1="756" y1="188" x2="756" y2="236" stroke="#4A5568" stroke-width="2" />
+    <line x1="756" y1="268" x2="756" y2="316" stroke="#4A5568" stroke-width="2" />
+    <line x1="756" y1="348" x2="756" y2="396" stroke="#4A5568" stroke-width="2" />
+    <line x1="756" y1="428" x2="756" y2="476" stroke="#4A5568" stroke-width="2" />
+  </g>
+  <g id="cause-band" data-pptx-bounds="56 584 1168 84">
+    <rect x="56" y="584" width="1168" height="84" rx="8" fill="#111827" />
+    <text x="80" y="612" font-size="15" font-weight="bold" fill="#F5B700">명일동 사고조사 결과</text>
+    <text x="80" y="638" font-size="15" fill="#E5E9F0"><tspan font-weight="bold">직접 원인</tspan>  심층풍화대 내부 불연속면이 만든 쐐기형 토체</text>
+    <text x="80" y="660" font-size="15" fill="#E5E9F0"><tspan font-weight="bold">간접 원인</tspan>  터널공사로 지하수위 최대 26m 저하 · 노후 하수관 장기 누수 · 지보 성능 한계</text>
+    <line x1="826" y1="600" x2="826" y2="652" stroke="#3A4558" stroke-width="1" />
+    <text x="850" y="612" font-size="18" font-weight="bold" fill="#FFFFFF">보이는 균열만 기다리지 말고<tspan x="850" dy="24">같은 지점의 지하 변화를</tspan><tspan x="850" dy="24">계속 기록해야 합니다.</tspan></text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 690 1168 24" fill="#6B7280" font-size="12">
+    <text x="56" y="706">출처: 국토교통부 「땅꺼짐 사고 조사결과 발표」(2025.12.3) · 단면도는 원리 설명용 3D 도식 · 한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">03 / 12</text>
+  </g>
+</svg>

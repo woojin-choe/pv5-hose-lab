@@ -1,0 +1,1 @@
+GPR 공동 탐사, RTK·IMU 위치 보정, 카메라 노면 기록, 엣지 처리, GIS 이력 관리, AAOS 앱 생태계, 산업용 AR은 모두 지금 쓸 수 있는 기술입니다. 반면 EV 구동계와 GPR 사이의 전자파 간섭, 반복 측정 일관성, 적재와 축하중, 실제 소비전력, 회차별 정합 정확도, AI 탐지율과 오탐률, 야간 AR 위치 오차, 앱 배포 절차는 반드시 실증해야 합니다. 핵심은 기술의 존재가 아니라 한 차량에서 반복 가능한 정확도로 연결되는가입니다. GPR 원리와 한계는 FHWA 자료(https://infotechnology.fhwa.dot.gov/gpr-ground-penetrating-radar-utility-general/)를 참고했습니다.
