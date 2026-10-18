@@ -62,8 +62,8 @@
     <line x1="631" y1="267" x2="648" y2="267" stroke="#0B1E3C" stroke-width="2" marker-end="url(#arrowHead)" />
   </g>
   <g id="stage-3" data-pptx-bounds="652 182 274 336">
-    <image href="../images/night_road.jpg" x="652" y="182" width="274" height="170" preserveAspectRatio="xMidYMid slice" />
-    <polygon points="753,285 773,285 856,325 753,325" fill="#F5B700" fill-opacity="0.30" stroke="#F5B700" stroke-width="2" />
+    <image href="../images/kr_road.jpg" x="652" y="182" width="274" height="170" preserveAspectRatio="xMidYMid slice" />
+    <polygon points="778,278 816,278 844,311 751,311" fill="#F5B700" fill-opacity="0.30" stroke="#F5B700" stroke-width="2" />
     <rect x="658" y="188" width="104" height="20" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
     <text x="710" y="203" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">AR 재탐사 범위</text>
     <text x="652" y="384" font-size="14" font-weight="bold" fill="#6B7280">STEP 03</text>
@@ -103,7 +103,7 @@
     <text x="80" y="621" font-size="21" font-weight="bold" fill="#FFFFFF">AI는 <tspan fill="#F5B700">검토 순서</tspan>를 정하고, 판정은 <tspan fill="#F5B700">전문가</tspan>가, 최종 확인은 <tspan fill="#F5B700">천공·내시경</tspan>이 맡습니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 652 1168 22">
-    <text x="56" y="666" font-size="12" fill="#6B7280">B-scan 비교는 설명용 예시 · PV5: 실차 사진 기반 편집 이미지 · 도로 사진: PattayaPatrol, CC BY-SA 4.0 · 지도 데이터 © OpenStreetMap contributors</text>
+    <text x="56" y="666" font-size="12" fill="#6B7280">B-scan 비교는 설명용 예시 · PV5: 실차 사진 기반 편집 이미지 · 도로 장면은 연출 이미지 · 지도 데이터 © OpenStreetMap contributors</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#6B7280" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
