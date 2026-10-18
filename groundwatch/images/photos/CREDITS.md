@@ -33,3 +33,4 @@
 - `sinkhole_driveway.jpg`: Famartin, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:2020-07-25_08_07_04_A_small_sink_hole_in_a_driveway_along_Old_Dairy_Road_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg
 - `manhole_cityhall.jpg`: ddol-mang, CC BY-SA 2.0, https://commons.wikimedia.org/wiki/File:Seoul-City.Hall-Manhole.cover.jpg
 - `manhole_namdaemun.jpg`: by m-louis, CC BY-SA 2.0, https://commons.wikimedia.org/wiki/File:Seoul-Namdaemun_Market-Manhole-01.jpg
+- `pv5_interior_migl.jpg`: Alexander Migl, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Kia_PV5_Passenger_Ditzingen_Mobil_2026_IMG_5540.jpg (6장 `ivi_car_*.jpg`: 꺼진 디스플레이에 GroundWatch Patrol 화면 합성)
