@@ -72,12 +72,11 @@ def build(name, src, livery, eq, glow, crop_top):
         img.crop((0, crop_top, W, crop_top + 1080)).save(os.path.join(IMG, f"{name}{suf}_169.jpg"), quality=92)
         img.crop((PORT[name], 0, PORT[name] + 1180, H)).save(os.path.join(IMG, f"{name}{suf}_port.jpg"), quality=92)
 
+# 차체 측면 'GroundWatch' 문구는 넣지 않음(2026-10-18 결정). 띠 래핑만 유지
 front_liv = [
-    (text_art("GroundWatch", "지하안전 순찰 · GPR 탐사", 1100, 300, 170, 70), [(1338, 318), (1790, 330), (1790, 452), (1338, 452)]),
     (band_art(1600, 60), [(1004, 692), (1834, 642), (1834, 672), (1004, 724)]),
 ]
 rear_liv = [
-    (text_art("GroundWatch", "지하안전 순찰 · GPR 탐사", 1100, 300, 170, 70), [(178, 330), (470, 328), (470, 412), (178, 416)]),
     (band_art(1600, 60), [(112, 844), (892, 844), (892, 876), (112, 876)]),
     (sign_art(460, 84, "저속 탐사 차량"), [(522, 734), (750, 734), (750, 778), (522, 778)]),
 ]
