@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs>
+    <marker id="downHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#9AA3AF" />
+    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="40" height="24" fill="#F5B700" />
+    <text x="216" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">7p</text>
+    <text x="248" y="45" font-size="14" fill="#4B5563">B2G 비즈니스 모델</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">지자체 탐사 용역으로 시작해 연간 반복관제로 전환한다</text>
+  </g>
+  <g id="revenue-steps" data-pptx-bounds="56 150 664 360">
+    <g id="rev-1">
+      <text x="56" y="196" font-size="40" font-weight="bold" fill="#C9D3E2">01</text>
+      <text x="132" y="182" font-size="24" font-weight="bold" fill="#0B1E3C">파일럿 탐사 용역</text>
+      <text x="132" y="210" font-size="17" fill="#4B5563">위험구간·공사구간의 거리와 회차 기준 계약<tspan x="132" dy="24">기존 조사 결과와 비교한 실증 보고서 제공</tspan></text>
+    </g>
+    <line x1="80" y1="216" x2="80" y2="268" stroke="#9AA3AF" stroke-width="2" marker-end="url(#downHead)" />
+    <g id="rev-2">
+      <text x="56" y="316" font-size="40" font-weight="bold" fill="#2E4A78">02</text>
+      <text x="132" y="302" font-size="24" font-weight="bold" fill="#0B1E3C">연간 반복관제 계약</text>
+      <text x="132" y="330" font-size="17" fill="#4B5563">정기 순찰·변화 감지·재확인 업무·기관용 대시보드<tspan x="132" dy="24">집중호우·민원 발생 시 긴급조사 옵션</tspan></text>
+      <rect x="382" y="284" width="112" height="24" rx="4" fill="none" stroke="#C99600" stroke-width="1.5" />
+      <text x="438" y="301" font-size="14" font-weight="bold" fill="#8A5A00" text-anchor="middle">핵심 반복 매출</text>
+    </g>
+    <line x1="80" y1="336" x2="80" y2="388" stroke="#9AA3AF" stroke-width="2" marker-end="url(#downHead)" />
+    <g id="rev-3">
+      <text x="56" y="436" font-size="40" font-weight="bold" fill="#0B1E3C">03</text>
+      <text x="132" y="422" font-size="24" font-weight="bold" fill="#0B1E3C">차량·소프트웨어 패키지</text>
+      <text x="132" y="450" font-size="17" fill="#4B5563">검증 이후 PV5 컨버전 차량·센서·Patrol 앱·Edge Gateway<tspan x="132" dy="24">AI 분석·관제 대시보드·AR·교육·유지보수 일괄 제공</tspan></text>
+    </g>
+  </g>
+  <g id="stakeholders" data-pptx-bounds="760 150 464 360">
+    <rect x="760" y="150" width="464" height="360" rx="10" fill="#F3F5F8" />
+    <text x="784" y="186" font-size="15" font-weight="bold" fill="#0B1E3C">구매자</text>
+    <text x="784" y="212" font-size="17" fill="#111827">서울시·자치구·도시철도 발주기관<tspan x="784" dy="24">공공시설 관리기관</tspan></text>
+    <line x1="784" y1="260" x2="1200" y2="260" stroke="#D5DAE1" stroke-width="1" />
+    <text x="784" y="292" font-size="15" font-weight="bold" fill="#0B1E3C">실제 사용자</text>
+    <text x="784" y="318" font-size="17" fill="#111827">지하안전·도로관리 담당자<tspan x="784" dy="24">GPR 판독 전문가·현장 조사원</tspan></text>
+    <line x1="784" y1="366" x2="1200" y2="366" stroke="#D5DAE1" stroke-width="1" />
+    <text x="784" y="398" font-size="15" font-weight="bold" fill="#0B1E3C">협력사</text>
+    <text x="784" y="424" font-size="17" fill="#111827">GPR 전문기업·PV5 특장업체<tspan x="784" dy="24">GIS·클라우드 사업자·AR 장비사</tspan></text>
+  </g>
+  <g id="demand" data-pptx-bounds="56 530 1168 70">
+    <rect x="56" y="530" width="1168" height="70" fill="#0B1E3C" />
+    <text x="80" y="560" font-size="15" font-weight="bold" fill="#F5B700">수요 근거 · 서울시 2026년 계획</text>
+    <text x="80" y="588" font-size="22" font-weight="bold" fill="#FFFFFF">GPR 탐사 16,423km · 전담 인력 9명 → 19명으로 확대</text>
+    <text x="1200" y="578" font-size="16" fill="#C3CCD9" text-anchor="end">반복 탐사 수요가 이미 늘고 있습니다</text>
+  </g>
+  <g id="procurement" data-pptx-bounds="56 610 1168 52" fill="#111827" font-size="16">
+    <text x="56" y="630"><tspan font-weight="bold">조달 접근</tspan>  첫 계약은 기존 GPR 조사기관과 공동 수행해 실적과 신뢰를 확보하고, 한 위험구간 입증 후 인접 구역으로 확장</text>
+    <text x="56" y="654"><tspan font-weight="bold">가격</tspan>  일일 조사거리·인력·장비 감가·분석시간을 확인한 뒤 산정 <tspan fill="#6B7280">[실증 필요]</tspan></text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="12" fill="#6B7280">출처: 서울시 보도자료 「지반침하 예방체계 강화」 · 지하정보는 제3자에게 판매하지 않고 계약기관 접근제어형 서비스로 제공</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#6B7280" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">11 / 12</text>
+  </g>
+</svg>

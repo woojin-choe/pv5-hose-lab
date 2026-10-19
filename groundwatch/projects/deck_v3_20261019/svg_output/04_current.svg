@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="40" height="24" fill="#F5B700" />
+    <text x="216" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">3p</text>
+    <text x="248" y="45" font-size="14" fill="#4B5563">기존 조사 방식</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">서울시는 이미 넓게 탐사하고, 의심 지점을 다시 확인한다</text>
+  </g>
+  <g id="gpr-photo" data-pptx-bounds="56 152 520 318">
+    <image href="../images/gpr_handheld.jpg" x="56" y="152" width="520" height="296" preserveAspectRatio="xMidYMid slice" />
+    <text x="56" y="466" font-size="12" fill="#6B7280">수동형 GPR 탐사 장비 · The Charles Machine Works, CC BY-SA 2.0</text>
+  </g>
+  <g id="seoul-kpis" data-pptx-bounds="56 488 520 106">
+    <line x1="56" y1="492" x2="576" y2="492" stroke="#0B1E3C" stroke-width="2" />
+    <text x="56" y="536" font-size="30" font-weight="bold" fill="#0B1E3C">33,129km</text>
+    <text x="56" y="562" font-size="15" fill="#4B5563">누적 차량 GPR 탐사<tspan x="56" dy="20">2014~2025.9</tspan></text>
+    <text x="253" y="536" font-size="30" font-weight="bold" fill="#0B1E3C">7,760개</text>
+    <text x="253" y="562" font-size="15" fill="#4B5563">같은 기간<tspan x="253" dy="20">발견한 공동</tspan></text>
+    <text x="417" y="536" font-size="30" font-weight="bold" fill="#0B1E3C">16,423km</text>
+    <text x="417" y="562" font-size="15" fill="#4B5563">2026년 탐사 계획<tspan x="417" dy="20">GPR 인력 9명 → 19명</tspan></text>
+  </g>
+  <g id="current-flow" data-pptx-bounds="624 152 600 252">
+    <text x="624" y="172" font-size="17" font-weight="bold" fill="#0B1E3C">현재 업무 흐름</text>
+    <g font-size="19" fill="#111827">
+      <circle cx="636" cy="203" r="12" fill="#0B1E3C" />
+      <text x="636" y="208" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+      <text x="660" y="210">민원·노후 관로·공사구간으로 조사 대상 선정</text>
+      <circle cx="636" cy="239" r="12" fill="#0B1E3C" />
+      <text x="636" y="244" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+      <text x="660" y="246">차량형 GPR이 도로를 넓게 스캔 (1회 약 3m 폭)</text>
+      <circle cx="636" cy="275" r="12" fill="#0B1E3C" />
+      <text x="636" y="280" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+      <text x="660" y="282">분석자가 판독해 공동 의심 지점 선별</text>
+      <circle cx="636" cy="311" r="12" fill="#0B1E3C" />
+      <text x="636" y="316" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+      <text x="660" y="318">작업자가 수동 GPR로 다시 조사</text>
+      <circle cx="636" cy="347" r="12" fill="#0B1E3C" />
+      <text x="636" y="352" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+      <text x="660" y="354">승인·교통통제 후 천공·내시경으로 확인</text>
+      <circle cx="636" cy="383" r="12" fill="#0B1E3C" />
+      <text x="636" y="388" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6</text>
+      <text x="660" y="390">공동이 확인되면 복구·재포장</text>
+    </g>
+  </g>
+  <g id="gap-timeline" data-pptx-bounds="624 420 600 164">
+    <text x="624" y="440" font-size="17" font-weight="bold" fill="#C62828">그 사이의 공백 · 2024년 연희동 성산로</text>
+    <rect x="726" y="486" width="461" height="14" fill="#F5B700" fill-opacity="0.28" />
+    <line x1="660" y1="493" x2="1200" y2="493" stroke="#9AA3AF" stroke-width="2" />
+    <g font-size="13" fill="#6B7280" text-anchor="middle">
+      <text x="660" y="520">5월</text>
+      <text x="792" y="520">6월</text>
+      <text x="924" y="520">7월</text>
+      <text x="1059" y="520">8월</text>
+    </g>
+    <rect x="686" y="485" width="40" height="16" rx="3" fill="#0B1E3C" />
+    <text x="686" y="474" font-size="15" font-weight="bold" fill="#0B1E3C">5.7~16 정기 GPR 탐사 · 공동 미발견</text>
+    <circle cx="1187" cy="493" r="9" fill="#C62828" />
+    <text x="1200" y="474" font-size="15" font-weight="bold" fill="#C62828" text-anchor="end">8.29 도로함몰</text>
+    <text x="956" y="548" font-size="17" font-weight="bold" fill="#0B1E3C" text-anchor="middle">이 사이의 지하 변화는 어디에도 기록되지 않았습니다</text>
+    <text x="956" y="574" font-size="15" fill="#4B5563" text-anchor="middle">탐사의 실패가 아니라, 한 시점의 결과는 그 시점만 말해 준다는 뜻입니다</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 600 1168 52">
+    <rect x="56" y="600" width="1168" height="52" fill="#0B1E3C" />
+    <text x="80" y="634" font-size="21" font-weight="bold" fill="#FFFFFF">기존 GPR을 대체하지 않습니다. <tspan fill="#F5B700">측정과 측정 사이의 시간</tspan>, 그리고 현장 업무를 연결합니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 662 1168 22">
+    <text x="56" y="676" font-size="12" fill="#6B7280">출처: 경향신문(2025.10.19) 서울시 GPR 탐사 · 서울시 지반침하 예방체계 강화 보도자료 · 서울시 차량탑재형 GPR · 뉴시스(2024.8.30) 연희동 함몰</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#6B7280" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">04 / 12</text>
+  </g>
+</svg>
