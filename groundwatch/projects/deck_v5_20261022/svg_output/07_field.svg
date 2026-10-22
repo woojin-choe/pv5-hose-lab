@@ -74,16 +74,16 @@
     <text x="932" y="267" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">GPR 기반 추정 위치입니다. 굴착 전 정밀조사와 관계기관 승인이 필요합니다.</text>
     <rect x="656" y="286" width="270" height="72" rx="6" fill="#0B1E3C" fill-opacity="0.85" />
     <text x="672" y="310" font-size="15" font-weight="bold" fill="#FFFFFF">재확인 R-0427 · 재탐사 3 / 4회</text>
-    <text x="672" y="331" font-size="13" fill="#E5E9F0">추정 깊이 0.9~1.3m · AI 신뢰도 84%</text>
+    <text x="672" y="331" font-size="13" fill="#E5E9F0">추정 깊이 0.9~1.3m · 지난 회차 대비 신규</text>
     <text x="672" y="349" font-size="12" fill="#C9D3E2">[화면 예시] 전문가 승인 · 위치 오차 기준 충족</text>
     <text x="640" y="608" font-size="18" font-weight="bold" fill="#111827">차량 밖 · 산업용 AR 글래스 (정차 후 작업자만)</text>
     <text x="640" y="634" font-size="16" fill="#4B5563">두 손으로 수동 GPR을 미는 동안 재탐사 범위를 눈앞에 표시</text>
   </g>
   <g id="source" data-pptx-bounds="56 664 1168 20">
-    <text x="56" y="678" font-size="12" fill="#4B5563">2인 1조 운용 · 운전자는 주행 중 AR 미사용 · 앱 배포는 기아 PBV 파트너 승인 필요 · 화면 수치는 예시 · 실내 사진: Alexander Migl, CC BY-SA 4.0</text>
+    <text x="56" y="678" font-size="13" fill="#4B5563">2인 1조 운용 · 운전자는 주행 중 AR 미사용 · 앱 배포는 기아 PBV 파트너 승인 필요 · 화면 수치는 예시 · 실내 사진: Alexander Migl, CC BY-SA 4.0</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 694 1168 20" fill="#4B5563" font-size="12">
-    <text x="56" y="708">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="708" text-anchor="end">08 / 16</text>
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="708" text-anchor="end">07 / 13</text>
   </g>
 </svg>

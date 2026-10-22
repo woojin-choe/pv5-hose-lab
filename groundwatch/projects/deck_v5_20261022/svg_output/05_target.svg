@@ -17,7 +17,7 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">원인 1위 하수관 손상은 ‘얕은 공동’부터 만듭니다</text>
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">땅꺼짐 원인 1위는 하수관 손상, 그 위 2m가 탐사 대상입니다</text>
   </g>
   <g id="section" data-pptx-bounds="56 160 640 420">
     <image href="../images/ug_section_cut.png" x="56" y="166" width="640" height="407" preserveAspectRatio="xMidYMid meet" />
@@ -50,10 +50,10 @@
     <text x="76" y="630" font-size="21" font-weight="bold" fill="#0B1E3C">차량형 GPR이 보는 깊이(약 2m)에, 가장 흔한 원인이 있습니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="12" fill="#4B5563">출처: 국토교통부 지반침하 원인 통계(2020~2024) · 국토교통부 명일동 사고조사(2025.12.3) · 서울시 차량형 GPR 탐사 깊이 약 2m · 단면도는 원리 설명용</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 국토교통부 지반침하 원인 통계(2020~2024) · 국토교통부 명일동 사고조사(2025.12.3) · 서울시 차량형 GPR 탐사 깊이 약 2m · 단면도는 원리 설명용</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
-    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">05 / 16</text>
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">05 / 13</text>
   </g>
 </svg>

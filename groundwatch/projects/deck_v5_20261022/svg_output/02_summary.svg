@@ -30,49 +30,43 @@
     <text x="354" y="202" font-size="16" font-weight="bold" fill="#B45309">해법</text>
     <text x="354" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">같은 길을 약 2개월마다</text>
     <text x="354" y="282" font-size="17" fill="#374151">PV5가 GPR로 다시 찍고,<tspan x='354' dy='22'>달라진 곳만 골라</tspan><tspan x='354' dy='22'>현장에서 재확인합니다.</tspan></text>
-    <text x="354" y="372" font-size="14" fill="#4B5563">자세히 → 6~8장</text>
+    <text x="354" y="372" font-size="14" fill="#4B5563">자세히 → 6~7장</text>
   </g>
   <g id="col2" data-pptx-bounds="652 168 274 260">
     <rect x="652" y="168" width="274" height="3" fill="#0B1E3C" />
     <text x="652" y="202" font-size="16" font-weight="bold" fill="#B45309">왜 PV5</text>
     <text x="652" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">차가 업무의 일부가 됨</text>
     <text x="652" y="282" font-size="17" fill="#374151">차량 내비·화면과 연동하고,<tspan x='652' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='652' dy='22'>공식 컨버전으로 복제.</tspan></text>
-    <text x="652" y="372" font-size="14" fill="#4B5563">자세히 → 9~11장</text>
+    <text x="652" y="372" font-size="14" fill="#4B5563">자세히 → 8~9장</text>
   </g>
   <g id="col3" data-pptx-bounds="950 168 274 260">
     <rect x="950" y="168" width="274" height="3" fill="#0B1E3C" />
     <text x="950" y="202" font-size="16" font-weight="bold" fill="#B45309">사업</text>
-    <text x="950" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">이미 있는 예산에서</text>
-    <text x="950" y="282" font-size="17" fill="#374151">구·시 GPR 용역 연 1.4~1.8억.<tspan x='950' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='950' dy='22'>흑자, 실증은 4단계로.</tspan></text>
-    <text x="950" y="372" font-size="14" fill="#4B5563">자세히 → 13~15장</text>
+    <text x="950" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">같은 길을 6번, 1회의 1/3</text>
+    <text x="950" y="282" font-size="17" fill="#374151">현행 km당 92만 원 vs<tspan x='950' dy='22'>반복 탐사 원가 4.7만 원.</tspan><tspan x='950' dy='22'>실증은 4단계로.</tspan></text>
+    <text x="950" y="372" font-size="14" fill="#4B5563">자세히 → 10~12장</text>
   </g>
-  <g id="criteria" data-pptx-bounds="56 440 1168 120">
-    <text x="56" y="462" font-size="15" font-weight="bold" fill="#4B5563">심사 기준별 근거 위치</text>
-    <rect x="56" y="476" width="222" height="76" fill="#F3F5F8" />
-    <text x="72" y="506" font-size="17" font-weight="bold" fill="#0B1E3C">기술적 완성도 <tspan font-size="14" font-weight="normal" fill="#4B5563">30점</tspan></text>
-    <text x="72" y="536" font-size="16" fill="#374151">7·8·12장</text>
-    <rect x="292" y="476" width="222" height="76" fill="#F3F5F8" />
-    <text x="308" y="506" font-size="17" font-weight="bold" fill="#0B1E3C">시장 실현성 <tspan font-size="14" font-weight="normal" fill="#4B5563">25점</tspan></text>
-    <text x="308" y="536" font-size="16" fill="#374151">13·14·15장</text>
-    <rect x="528" y="476" width="222" height="76" fill="#F3F5F8" />
-    <text x="544" y="506" font-size="17" font-weight="bold" fill="#0B1E3C">혁신성 <tspan font-size="14" font-weight="normal" fill="#4B5563">20점</tspan></text>
-    <text x="544" y="536" font-size="16" fill="#374151">4·7장</text>
-    <rect x="764" y="476" width="222" height="76" fill="#F3F5F8" />
-    <text x="780" y="506" font-size="17" font-weight="bold" fill="#0B1E3C">PV5 연계성 <tspan font-size="14" font-weight="normal" fill="#4B5563">15점</tspan></text>
-    <text x="780" y="536" font-size="16" fill="#374151">9·10·11장</text>
-    <rect x="1000" y="476" width="222" height="76" fill="#F3F5F8" />
-    <text x="1016" y="506" font-size="17" font-weight="bold" fill="#0B1E3C">사회적 가치 <tspan font-size="14" font-weight="normal" fill="#4B5563">10점</tspan></text>
-    <text x="1016" y="536" font-size="16" fill="#374151">3·5장</text>
+  <g id="keynum" data-pptx-bounds="56 440 1168 120">
+    <text x="56" y="462" font-size="15" font-weight="bold" fill="#4B5563">숫자 셋으로 보면</text>
+    <rect x="56" y="476" width="376" height="3" fill="#0B1E3C" />
+    <text x="56" y="522" font-size="32" font-weight="bold" fill="#0B1E3C">100여 일</text>
+    <text x="56" y="550" font-size="15" fill="#374151">‘이상 없음’ 탐사에서 함몰까지 (연희동)</text>
+    <rect x="452" y="476" width="376" height="3" fill="#0B1E3C" />
+    <text x="452" y="522" font-size="32" font-weight="bold" fill="#0B1E3C">2.4배</text>
+    <text x="452" y="550" font-size="15" fill="#374151">10cm 자란 공동 vs 가장 큰 오탐 요인 (시뮬레이션)</text>
+    <rect x="848" y="476" width="376" height="3" fill="#0B1E3C" />
+    <text x="848" y="522" font-size="32" font-weight="bold" fill="#0B1E3C">92만 → 28만 원</text>
+    <text x="848" y="550" font-size="15" fill="#374151">도로 1km·1년: 현행 1회 vs 반복 6회</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 590 1168 44">
     <rect x="56" y="590" width="4" height="44" fill="#F5B700" />
     <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">한 번의 조기 발견이, 한 사람의 무사 귀가가 되도록.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="12" fill="#4B5563">심사 배점: 기아 PBV 아이디어 공모전 공식 안내(기술적 완성도 30 · 시장 실현성 25 · 혁신성 20 · PV5 연계성 15 · 사회적 가치 10)</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">근거: 3장 뉴시스·세계일보 · 6장 GPR 전자기 시뮬레이션 · 11장 서울시 2024 공동조사용역 최종보고서</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
-    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">02 / 16</text>
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">02 / 13</text>
   </g>
 </svg>

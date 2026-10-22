@@ -49,12 +49,12 @@
       <text x="736" y="278">물류 특화 카고<tspan x="736" dy="21" fill="#374151">밀폐 카고 박스</tspan></text>
       <text x="988" y="278">1톤 트럭<tspan x="988" dy="21" fill="#374151">개방형 적재함</tspan></text>
       <line x1="56" y1="330" x2="1224" y2="330" stroke="#E2E6EC" stroke-width="1" />
-      <text x="232" y="362" font-size="24" font-weight="bold" fill="#0B1E3C">4,520만 원</text>
+      <text x="232" y="362" font-size="21" fill="#0B1E3C">4,520만 원</text>
       <text x="484" y="362" font-size="21">5,792만 원</text>
       <text x="736" y="362" font-size="21">5,874만 원</text>
       <text x="988" y="362" font-size="15" fill="#4B5563">탑 개조 필요 · 비교 제외</text>
       <line x1="56" y1="382" x2="1224" y2="382" stroke="#E2E6EC" stroke-width="1" />
-      <text x="232" y="414" font-size="24" font-weight="bold" fill="#0B1E3C">377km</text>
+      <text x="232" y="414" font-size="21" fill="#0B1E3C">377km</text>
       <text x="484" y="414" font-size="21">387km</text>
       <text x="736" y="414" font-size="21">317km</text>
       <text x="988" y="414" font-size="21">217km</text>
@@ -63,7 +63,7 @@
   <g id="honest" data-pptx-bounds="56 446 1168 134">
     <rect x="56" y="446" width="572" height="134" fill="#F3F5F8" />
     <text x="76" y="474" font-size="15" font-weight="bold" fill="#8A5A00">가격으로 고르지 않습니다</text>
-    <text x="76" y="500" font-size="16" fill="#111827">차값 차이는 최대 1,354만 원인데, 차량형 GPR은<tspan x="76" dy="24">대당 <tspan font-weight="bold">2억~8억 원</tspan>입니다. 차이를 가르는 건</tspan><tspan x="76" dy="24">전원·고정 구조와 공식 컨버전 체계입니다.</tspan></text>
+    <text x="76" y="500" font-size="16" fill="#111827">차값 차이는 최대 1,354만 원인데, 차량형 GPR은<tspan x="76" dy="24">대당 <tspan font-weight="bold">2억~8억 원</tspan>(서울시 약 5억)입니다.</tspan><tspan x="76" dy="24">차이를 가르는 건 전원·고정 구조와 컨버전 체계입니다.</tspan></text>
     
     
     
@@ -76,10 +76,10 @@
     <text x="80" y="627" font-size="20" font-weight="bold" fill="#0B1E3C">전원·고정 구조와 <tspan fill="#B45309">공식 컨버전 체계</tspan>를 갖춘 PV5로, 같은 탐사실을 여러 대에 그대로 복제합니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 656 1168 34">
-    <text x="56" y="668" font-size="12" fill="#4B5563">출처: 기아 PV5 카고 가격표(2026.10.1)·제원 · 오토뷰(2026.1.28, PV5 컨버전 포털) · 스타리아 일렉트릭 출시(2026.4.23) · 2026 ST1 출시(2025.7.16)·현대차그룹 뉴스룸(317km)<tspan x="56" dy="16">포터II·봉고III EV 2025년형 발표(217km) · 시사저널(2025.4.25, 경기도청 인용 GPR 대당 2억~8억 원) · 가격은 표기한 트림 기준, 보조금 제외</tspan></text>
+    <text x="56" y="668" font-size="13" fill="#4B5563">출처: 기아 PV5 카고 가격표(2026.10.1)·제원 · 오토뷰(2026.1.28, PV5 컨버전 포털) · 스타리아 일렉트릭 출시(2026.4.23) · 2026 ST1 출시(2025.7.16)·현대차그룹 뉴스룸(317km)<tspan x="56" dy="16">포터II·봉고III EV 2025년형 발표(217km) · 시사저널(2025.4.25, 경기도청 인용 GPR 대당 2억~8억 원) · 가격은 표기한 트림 기준, 보조금 제외</tspan></text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
-    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">11 / 16</text>
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">09 / 13</text>
   </g>
 </svg>

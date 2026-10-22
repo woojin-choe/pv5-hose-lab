@@ -19,9 +19,9 @@
   <g id="cover-subtitle" data-pptx-bounds="64 396 440 44">
     <text x="64" y="428" font-size="30" font-weight="bold" fill="#D7DEE8">PV5 지하안전 순찰차</text>
   </g>
-  <g id="cover-tagline" data-pptx-bounds="64 456 440 92">
+  <g id="cover-tagline" data-pptx-bounds="64 456 560 92">
     <rect x="64" y="460" width="48" height="3" fill="#F5B700" />
-    <text x="64" y="502" font-size="21" fill="#D7DEE8">같은 길을 반복해서 보고,<tspan x="64" dy="32">구멍이 되기 전의 변화를 찾습니다.</tspan></text>
+    <text x="64" y="502" font-size="21" fill="#D7DEE8">지표투과레이더(GPR)로 같은 길을 반복해서 보고,<tspan x="64" dy="32">구멍이 되기 전의 변화를 찾습니다.</tspan></text>
   </g>
   <g id="cover-team" data-pptx-bounds="64 600 440 72" font-weight="bold">
     <text x="64" y="622" font-size="14" fill="#F5B700">TEAM</text>

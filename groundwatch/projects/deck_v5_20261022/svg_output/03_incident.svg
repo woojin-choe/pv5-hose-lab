@@ -54,7 +54,7 @@
     <text x="56" y="548" font-size="40" font-weight="bold" fill="#111827">6×4m</text>
     <text x="56" y="576" font-size="15" fill="#374151">함몰 규모</text>
     <text x="250" y="548" font-size="40" font-weight="bold" fill="#111827">2.5m</text>
-    <text x="250" y="576" font-size="15" fill="#374151">깊이 · 얕은 함몰</text>
+    <text x="250" y="576" font-size="15" fill="#374151">함몰 깊이</text>
     <text x="440" y="548" font-size="40" font-weight="bold" fill="#C62828">사망 1</text>
     <text x="440" y="576" font-size="15" fill="#374151">차량 추락 · 동승자</text>
   </g>
@@ -62,7 +62,7 @@
     <text x="56" y="652" font-size="12" fill="#4B5563">출처: 뉴시스·아시아경제(2024.8.30), 세계일보(2025.9.25)</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 600 22" fill="#4B5563" font-size="12">
-    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="636" y="706" text-anchor="end">03 / 16</text>
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="636" y="706" text-anchor="end">03 / 13</text>
   </g>
 </svg>

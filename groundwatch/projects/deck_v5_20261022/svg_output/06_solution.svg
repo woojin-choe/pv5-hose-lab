@@ -17,46 +17,68 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">같은 길을 약 2개월마다 다시 찍고, 달라진 곳만 다시 봅니다</text>
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">같은 길을 약 2개월마다 다시 찍고, 달라진 곳만 봅니다</text>
   </g>
-  <g id="compare" data-pptx-bounds="56 160 680 400">
-    <rect x="56" y="166" width="680" height="388" fill="#2A2E33" />
-    <image href="../images/sim_prev.png" x="56" y="166" width="680" height="192" preserveAspectRatio="none" />
-    <image href="../images/sim_cur.png" x="56" y="362" width="680" height="192" preserveAspectRatio="none" />
-    <rect x="68" y="178" width="96" height="28" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
-    <text x="116" y="198" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">지난 회차</text>
-    <rect x="68" y="374" width="96" height="28" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
-    <text x="116" y="394" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">이번 회차</text>
-    <rect x="300" y="452" width="300" height="96" fill="none" stroke="#F5B700" stroke-width="4" />
-    <rect x="300" y="424" width="150" height="28" fill="#F5B700" />
-    <text x="375" y="444" font-size="16" font-weight="bold" fill="#0B1E3C" text-anchor="middle">새로 커진 신호</text>
+  <g id="scans" data-pptx-bounds="56 150 1168 250">
+    <image href="../images/sim_prev.png" x="56" y="156" width="360" height="200" preserveAspectRatio="none" />
+    <rect x="64" y="164" width="95" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
+    <text x="74" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">지난 회차</text>
+    <text x="441" y="268" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">−</text>
+    <image href="../images/sim_cur.png" x="460" y="156" width="360" height="200" preserveAspectRatio="none" />
+    <rect x="468" y="164" width="95" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
+    <text x="478" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">이번 회차</text>
+    <text x="845" y="268" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">=</text>
+    <image href="../images/sim_diff.png" x="864" y="156" width="360" height="200" preserveAspectRatio="none" />
+    <rect x="872" y="164" width="155" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
+    <text x="882" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">자동 선별된 차이</text>
+    <text x="56" y="382" font-size="16" fill="#374151"><tspan font-weight="bold" fill="#0B1E3C">1 반복 측정</tspan> 새벽에 같은 경로를 약 2개월마다   <tspan font-weight="bold" fill="#0B1E3C">2 변화만 선별</tspan> 위치를 맞춰 빼고, AI가 신호 유형 분류   <tspan font-weight="bold" fill="#0B1E3C">3 현장 재확인</tspan> 승인된 곳만 수동 GPR</text>
   </g>
-  <g id="steps" data-pptx-bounds="784 166 440 388">
-    <text x="784" y="196" font-size="15" font-weight="bold" fill="#4B5563">1</text>
-    <text x="808" y="196" font-size="22" font-weight="bold" fill="#0B1E3C">반복 측정</text>
-    <text x="808" y="224" font-size="17" fill="#374151">PV5가 새벽에 같은 경로를 약 2개월마다 주행</text>
-    <line x1="784" y1="252" x2="1224" y2="252" stroke="#E2E6EC" stroke-width="1" />
-    <text x="784" y="292" font-size="15" font-weight="bold" fill="#4B5563">2</text>
-    <text x="808" y="292" font-size="22" font-weight="bold" fill="#0B1E3C">변화만 선별</text>
-    <text x="808" y="320" font-size="17" fill="#374151">회차 차분으로 달라진 곳을 고르고(7장)</text>
-    <text x="808" y="344" font-size="17" fill="#374151">AI가 신호 유형을 분류, 전문가가 승인</text>
-    <line x1="784" y1="372" x2="1224" y2="372" stroke="#E2E6EC" stroke-width="1" />
-    <text x="784" y="412" font-size="15" font-weight="bold" fill="#4B5563">3</text>
-    <text x="808" y="412" font-size="22" font-weight="bold" fill="#0B1E3C">현장 재확인</text>
-    <text x="808" y="440" font-size="17" fill="#374151">승인된 곳만 수동 GPR로 다시 보고</text>
-    <text x="808" y="464" font-size="17" fill="#374151">필요하면 천공·내시경으로 확정</text>
-    <line x1="784" y1="492" x2="1224" y2="492" stroke="#E2E6EC" stroke-width="1" />
-    <text x="784" y="530" font-size="17" fill="#111827">결과는 다음 순찰 경로에 다시 반영됩니다.</text>
+  <g id="diff" data-pptx-bounds="56 410 560 170">
+    <rect x="56" y="412" width="560" height="3" fill="#0B1E3C" />
+    <text x="56" y="442" font-size="15" font-weight="bold" fill="#B45309">무엇이 새로운가 <tspan font-weight="normal" fill="#4B5563">기존 → GroundWatch</tspan></text>
+    <text x="56" y="474" font-size="16" fill="#374151">다시 보는 곳</text>
+    <text x="196" y="474" font-size="16" fill="#4B5563">발견한 공동만 →</text>
+    <text x="340" y="474" font-size="17" font-weight="bold" fill="#0B1E3C">‘이상 없음’ 구간까지</text>
+    <text x="56" y="508" font-size="16" fill="#374151">판정 방식</text>
+    <text x="196" y="508" font-size="16" fill="#4B5563">회차마다 판독 →</text>
+    <text x="340" y="508" font-size="17" font-weight="bold" fill="#0B1E3C">지난 회차와의 차이만</text>
+    <text x="56" y="542" font-size="16" fill="#374151">현장 확인</text>
+    <text x="196" y="542" font-size="16" fill="#4B5563">별도 발주 →</text>
+    <text x="340" y="542" font-size="17" font-weight="bold" fill="#0B1E3C">같은 차에서 바로</text>
+    <text x="56" y="570" font-size="13" fill="#4B5563">기존: 일본 후지사와시·지오서치 경과관찰, 국토교통성 연구(3개월 주기)</text>
   </g>
-  <g id="conclusion" data-pptx-bounds="56 590 1168 44">
-    <rect x="56" y="590" width="4" height="44" fill="#F5B700" />
-    <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">자동 선별은 볼 순서만 정하고, 판정은 전문가가, 확정은 천공이 합니다.</text>
+  <g id="proof" data-pptx-bounds="664 410 560 176">
+    <rect x="664" y="412" width="560" height="3" fill="#0B1E3C" />
+    <text x="664" y="438" font-size="15" font-weight="bold" fill="#B45309">검증 · 전자기 시뮬레이션 (실측 아님) <tspan font-weight="normal" fill="#4B5563">변화 신호 세기</tspan></text>
+    <text x="664" y="466" font-size="14" fill="#374151">공동 20cm 성장</text>
+    <rect x="808" y="454" width="343" height="15" fill="#0B1E3C" />
+    <text x="1159" y="466" font-size="14" font-weight="bold" fill="#111827">2.9</text>
+    <text x="664" y="487" font-size="14" fill="#374151">공동 10cm 성장</text>
+    <rect x="808" y="475" width="293" height="15" fill="#0B1E3C" />
+    <text x="1109" y="487" font-size="14" font-weight="bold" fill="#111827">2.4</text>
+    <text x="664" y="508" font-size="14" fill="#374151">공동 5cm 성장</text>
+    <rect x="808" y="496" width="163" height="15" fill="#B45309" />
+    <text x="979" y="508" font-size="14" font-weight="bold" fill="#111827">1.4</text>
+    <text x="664" y="529" font-size="14" fill="#374151">주행선 8cm 어긋남</text>
+    <rect x="808" y="517" width="120" height="15" fill="#C62828" />
+    <text x="936" y="529" font-size="14" font-weight="bold" fill="#111827">1.0</text>
+    <text x="664" y="550" font-size="14" fill="#374151">함수비 변화</text>
+    <rect x="808" y="538" width="97" height="15" fill="#4B5563" />
+    <text x="936" y="550" font-size="14" font-weight="bold" fill="#111827">0.8</text>
+    <text x="664" y="571" font-size="14" fill="#374151">재포장</text>
+    <rect x="808" y="559" width="40" height="15" fill="#4B5563" />
+    <text x="936" y="571" font-size="14" font-weight="bold" fill="#111827">0.3</text>
+    <line x1="928" y1="450" x2="928" y2="580" stroke="#C62828" stroke-width="1.5" stroke-dasharray="4,3" />
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 596 1168 44">
+    <rect x="56" y="596" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="626" font-size="21" font-weight="bold" fill="#0B1E3C">10cm 이상 자란 공동은 오탐 요인의 2배 넘는 신호, 5cm는 경계 — 주행선 정합이 관건입니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="12" fill="#4B5563">약 2개월 = 차량 1대가 연 6,600km를 달려 도로 약 1,000km를 연 6회 반복(13장, 가설) · 회차 화면은 2D 전자기 시뮬레이션 결과(7장)</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">시뮬레이션: 2D 전자기 파동 계산(FDTD) · 400MHz · Ø0.8m 하수관 위 공동 반경 18cm 기준 · 세기 = 회차 차분 에너지 ÷ 가장 큰 오탐 요인 · 판정은 전문가, 확정은 천공</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
-    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">06 / 16</text>
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">06 / 13</text>
   </g>
 </svg>

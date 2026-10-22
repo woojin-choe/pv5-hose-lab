@@ -32,7 +32,7 @@
     <rect x="56" y="470" width="35" height="34" fill="#C62828" />
     <text x="103" y="496" font-size="26" font-weight="bold" fill="#C62828">100여 일</text>
   </g>
-  <g id="evidence" data-pptx-bounds="784 168 440 360">
+  <g id="evidence" data-pptx-bounds="784 168 440 384">
     <rect x="784" y="168" width="440" height="3" fill="#0B1E3C" />
     <text x="784" y="204" font-size="15" font-weight="bold" fill="#B45309">그 사이 공동은 자랍니다</text>
     <text x="784" y="250" font-size="26" font-weight="bold" fill="#0B1E3C">“예상보다 단기간에</text>
@@ -43,16 +43,19 @@
     <text x="784" y="414" font-size="16" fill="#111827">같은 도로를 반복 모니터링하자</text>
     <text x="784" y="438" font-size="16" fill="#111827">지하 1.64m 하수관 위 공동이</text>
     <text x="784" y="462" font-size="16" fill="#111827">급격히 자란 것이 확인됐습니다.</text>
+    <line x1="784" y1="486" x2="1224" y2="486" stroke="#E2E6EC" stroke-width="1" />
+    <text x="784" y="518" font-size="16" fill="#111827">연희동 공동을 놓쳤는지, 그 뒤 생겼는지는</text>
+    <text x="784" y="542" font-size="16" font-weight="bold" fill="#0B1E3C">한 번의 탐사로는 구분할 수 없습니다.</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 566 1168 44">
     <rect x="56" y="566" width="4" height="44" fill="#F5B700" />
     <text x="76" y="596" font-size="21" font-weight="bold" fill="#0B1E3C">한 번의 탐사는 그 시점만 말해 줍니다. 그 사이의 ‘변화’를 봐야 합니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="12" fill="#4B5563">출처: 지하안전법(지하시설물관리자 공동조사 5년 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 일본 국토교통성 도로정책 연구 30-5(2021)</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 지하안전법(지하시설물관리자 공동조사 5년 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 일본 국토교통성 도로정책 연구 30-5(2021)</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
-    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">04 / 16</text>
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">04 / 13</text>
   </g>
 </svg>
