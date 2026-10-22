@@ -182,11 +182,13 @@ svg("04_target.svg", head("문제", "우리가 막을 대상") + title("그 사�
     <image href="../images/ug_section_cut.png" x="56" y="166" width="640" height="407" preserveAspectRatio="xMidYMid meet" />
     <g font-size="15" font-weight="bold">
       <rect x="290" y="214" width="112" height="28" rx="14" fill="{NAVY}" />
-      <text x="346" y="233" fill="#FFFFFF" text-anchor="middle">③ 노면 침하</text>
+      <text x="346" y="233" fill="#FFFFFF" text-anchor="middle">3  노면 침하</text>
       <rect x="114" y="282" width="112" height="28" rx="14" fill="{NAVY}" />
-      <text x="170" y="301" fill="#FFFFFF" text-anchor="middle">② 공동 형성</text>
+      <text x="170" y="301" fill="#FFFFFF" text-anchor="middle">2  공동 형성</text>
       <rect x="406" y="340" width="124" height="28" rx="14" fill="{NAVY}" />
-      <text x="468" y="359" fill="#FFFFFF" text-anchor="middle">① 하수관 누수</text>
+      <text x="468" y="359" fill="#FFFFFF" text-anchor="middle">1  하수관 누수</text>
+      <rect x="138" y="524" width="160" height="28" rx="14" fill="#FFFFFF" stroke="#9AA3AF" stroke-width="1" />
+      <text x="218" y="543" fill="{SUB}" text-anchor="middle">깊은 층 · 대상 아님</text>
     </g>
   </g>
   <g id="stat" data-pptx-bounds="744 160 480 162">
@@ -266,7 +268,7 @@ svg("07_pv5_lab.svg", head("PV5", "PV5 이동형 탐사실") + title("PV5 한 �
     <text x="796" y="534" font-size="15" font-weight="bold" fill="{AMB}">그래도 여유 있습니다 <tspan font-weight="normal" fill="{MUTE}">[가설]</tspan></text>
     <text x="796" y="562" font-size="16" fill="{INK}">장비 약 300kg / 600kg · 전력 약 1.5kW / 3.6kW</text>
   </g>
-''' + foot(7, "출처: 기아 PV5 카고 가격표·제원·액세서리 · 오토뷰(2026, 공식 컨버전 파트너) · V2L 3.6kW는 해외 제원 · 배치도는 PV5 기반 콘셉트 · 실증 필요: 총중량·전자파"))
+''' + foot(7, "차량형 GPR은 하부형(배치도)·후방형(표지) 중 배터리 팩·지상고 간섭 시험 후 확정 · 출처: 기아 PV5 카고 제원·액세서리, 오토뷰(2026) · V2L 3.6kW는 해외 제원 · 배치도는 콘셉트"))
 
 # ---------------------------------------------------------------- 12 마무리
 svg("12_closing.svg", f'''  <defs>
@@ -305,7 +307,7 @@ import re
 V4 = os.path.join(os.path.dirname(__file__), "..", "..", "deck_v4_20261022", "svg_output")
 
 
-def port(src, dst, no, step, label, new_title, drops=(), edits=()):
+def port(src, dst, no, step, label, new_title, drops=(), edits=(), regex_drop=None):
     s = open(os.path.join(V4, src), encoding="utf-8").read()
     s = re.sub(r'  <g id="header".*?\n  </g>\n', head(step, label), s, count=1, flags=re.S)
     s = re.sub(r'(<g id="title"[^>]*>\s*<text [^>]*>)[^<]*(</text>)', lambda m: m.group(1) + new_title + m.group(2), s, count=1)
@@ -315,11 +317,14 @@ def port(src, dst, no, step, label, new_title, drops=(), edits=()):
     for a, b in edits:
         assert a in s, (src, a[:50])
         s = s.replace(a, b)
+    if regex_drop:
+        s, n = re.subn(regex_drop, "", s, count=1, flags=re.S)
+        assert n == 1, (src, "regex_drop")
     s = re.sub(r'\d\d / \d\d<', f"{no:02d} / {N}<", s)
     open(os.path.join(OUT, dst), "w", encoding="utf-8").write(s)
 
 
-port("08_app_ar.svg", "06_field.svg", 6, "해법", "현장 재확인", "차가 찾은 지점을, 작업자가 현장에서 바로 확인합니다")
+port("08_app_ar.svg", "06_field.svg", 6, "해법", "현장 재확인", "차가 찾은 지점을, 작업자가 현장에서 바로 확인합니다", regex_drop=r'\n      <g font-size="13" fill="#4B5563">.*?</g>')
 port("09_why_pv5.svg", "08_why_pv5.svg", 8, "PV5", "왜 PV5인가", "가격이 아니라 구조 때문에 PV5입니다",
      edits=[('<rect x="452" y="446" width="376" height="134" fill="#F3F5F8" />', ''),
             ('<text x="472" y="474" font-size="15" font-weight="bold" fill="#0B1E3C">PV5 공식 컨버전 체계</text>', ''),
@@ -331,8 +336,104 @@ port("09_why_pv5.svg", "08_why_pv5.svg", 8, "PV5", "왜 PV5인가", "가격이 �
              '<text x="672" y="500" font-size="16" fill="#111827">주행거리는 스타리아보다 10km 짧고, 전폭은 포터·봉고보다<tspan x="672" dy="24">155mm 넓습니다. 하루 순찰 약 30km <tspan fill="#4B5563">[가설]</tspan>에는</tspan><tspan x="672" dy="24">377km로 충분합니다.</tspan></text>'),
             ('<text x="76" y="500" font-size="15" fill="#111827">차값 차이는 최대 1,354만 원,<tspan x="76" dy="21">차량형 GPR은 대당 <tspan font-weight="bold">2억~8억 원</tspan>.</tspan><tspan x="76" dy="21">차이를 가르는 건 구조와</tspan><tspan x="76" dy="21">지원 체계입니다.</tspan></text>',
              '<text x="76" y="500" font-size="16" fill="#111827">차값 차이는 최대 1,354만 원인데, 차량형 GPR은<tspan x="76" dy="24">대당 <tspan font-weight="bold">2억~8억 원</tspan>입니다. 차이를 가르는 건</tspan><tspan x="76" dy="24">전원·고정 구조와 공식 컨버전 체계입니다.</tspan></text>')])
-port("10_validation.svg", "09_verify.svg", 9, "검증", "기술 실증 계획", "남은 질문은 4가지, 4단계로 실증합니다", drops=("evidence",),
-     edits=[('<g id="matrix"', '<g id="lead" data-pptx-bounds="56 138 1168 60">\n    <text x="56" y="164" font-size="19" fill="#374151">반복 탐사가 공동 성장을 잡는다는 것은 연구로 확인됐습니다(3장).</text>\n    <text x="56" y="192" font-size="19" font-weight="bold" fill="#0B1E3C">남은 질문은 하나, PV5에 실었을 때도 정확한가입니다.</text>\n  </g>\n  <g id="matrix"')])
-port("13_economics.svg", "10_economics.svg", 10, "사업", "시장과 수지", "차량 1대가 자치구 2곳만 맡아도 흑자입니다")
 port("14_go_to_market.svg", "11_entry.svg", 11, "사업", "첫 고객과 확장", "이미 GPR 예산을 쓰는 지자체에서 시작합니다")
+print("ok")
+
+
+# ---------------------------------------------------------------- 09 실증: 질문 4개 + 단계 4개
+def verify():
+    rows = [("EV 구동계와 GPR의 전자파 간섭", "차량에서 측정 자체가 불가", "주행·정차·V2L 상태별 잡음 비교"),
+            ("회차마다 같은 자리를 찍는가", "변화 비교가 불가", "RTK·IMU·휠 인코더로 위치 정합"),
+            ("AI가 변화를 맞게 고르는가", "재확인 출동이 과다", "공동 모사체 구간 · 계절 보정"),
+            ("밤에 AR이 정확히 맞는가", "현장 탐색 범위가 커짐", "맨홀·경계석 기준점 오차 측정")]
+    b = f'''  <g id="lead" data-pptx-bounds="56 138 1168 28">
+    <text x="56" y="160" font-size="19" fill="{SUB}">반복 탐사의 효과는 연구로 확인됐습니다(3장). 남은 건 <tspan font-weight="bold" fill="{NAVY}">PV5에 실었을 때도 정확한가</tspan>입니다.</text>
+  </g>
+  <g id="questions" data-pptx-bounds="56 186 1168 236">
+    <g font-size="14" font-weight="bold" fill="{MUTE}">
+      <text x="56" y="206">확인할 질문</text>
+      <text x="520" y="206">안 되면</text>
+      <text x="820" y="206">어떻게 확인하나</text>
+    </g>
+    <line x1="56" y1="216" x2="1224" y2="216" stroke="{NAVY}" stroke-width="1.5" />
+'''
+    y = 254
+    for i, (q, f, h) in enumerate(rows):
+        b += f'''    <text x="56" y="{y}" font-size="15" font-weight="bold" fill="{MUTE}">{i + 1}</text>
+    <text x="80" y="{y}" font-size="19" font-weight="bold" fill="{NAVY}">{q}</text>
+    <text x="520" y="{y}" font-size="17" fill="{RED}">{f}</text>
+    <text x="820" y="{y}" font-size="17" fill="{INK}">{h}</text>
+'''
+        if i < 3:
+            b += f'    <line x1="56" y1="{y + 18}" x2="1224" y2="{y + 18}" stroke="{LINE}" stroke-width="1" />\n'
+        y += 48
+    b += '  </g>\n'
+    stages = [("1단계", "폐쇄 시험장", "질문 1", "통과 → 차량 측정 가능"),
+              ("2단계", "통제된 시험 구간", "질문 2·3", "통과 → 회차 비교 가능"),
+              ("3단계", "실제 도로 위험구간", "질문 3·4", "통과 → 실증확인서"),
+              ("4단계", "실제 운영", "소요시간·재방문", "통과 → 연간 관제 계약")]
+    b += f'  <g id="stages" data-pptx-bounds="56 446 1168 130">\n    <text x="56" y="466" font-size="15" font-weight="bold" fill="{MUTE}">실증 순서</text>\n'
+    x = 56
+    for i, (n, place, q, ok) in enumerate(stages):
+        fill = NAVY if i == 3 else PALE
+        t1, t2 = ("#FFFFFF", YEL) if i == 3 else (NAVY, AMB)
+        b += f'''    <rect x="{x}" y="480" width="278" height="94" fill="{fill}" />
+    <text x="{x + 18}" y="508" font-size="14" font-weight="bold" fill="{t2}">{n} · {q}</text>
+    <text x="{x + 18}" y="536" font-size="20" font-weight="bold" fill="{t1}">{place}</text>
+    <text x="{x + 18}" y="562" font-size="15" fill="{t1}">{ok}</text>
+'''
+        if i < 3:
+            b += f'    <text x="{x + 286}" y="534" font-size="18" fill="{MUTE}">›</text>\n'
+        x += 297
+    b += '  </g>\n'
+    b += band(600, "정확도 숫자를 미리 약속하지 않고, 단계마다 통과 조건을 둡니다.")
+    return head("검증", "기술 실증 계획") + title("남은 질문은 4가지, 4단계로 실증합니다") + b + foot(
+        9, "인허가: 도로 영상은 개인정보보호법 제25조의2(2023.9)대로 차량 외부 표시 · GPR 전파 적합성평가·튜닝 승인은 사업화 전 확인 · 출처: 일본 국토교통성 연구(2021)")
+
+
+svg("09_verify.svg", verify())
+
+
+# ---------------------------------------------------------------- 10 수지: 막대 하나로 비용 vs 수입
+def econ():
+    X0, K = 330, 110  # 0억 위치, 1억당 px
+    b = f'''  <g id="market" data-pptx-bounds="56 138 1168 74">
+    <text x="56" y="176" font-size="30" font-weight="bold" fill="{NAVY}">96,712km</text>
+    <text x="56" y="202" font-size="15" fill="{SUB}">지자체가 관리하는 도로 (전국의 83%)</text>
+    <text x="452" y="176" font-size="30" font-weight="bold" fill="{NAVY}">2,308 → 11,380km</text>
+    <text x="452" y="202" font-size="15" fill="{SUB}">정부 지반탐사 2024 → 2026 (약 5배)</text>
+    <text x="900" y="176" font-size="30" font-weight="bold" fill="{NAVY}">131억 원</text>
+    <text x="900" y="202" font-size="15" fill="{SUB}">2026 국비 · GPR 장비·지자체 지원</text>
+  </g>
+  <g id="bars" data-pptx-bounds="56 232 1168 300">
+    <line x1="56" y1="234" x2="1224" y2="234" stroke="{NAVY}" stroke-width="1.5" />
+    <text x="56" y="262" font-size="15" font-weight="bold" fill="{MUTE}">연간 금액 (억 원)</text>
+'''
+    rows = [("차량 1대 연간 비용", "[가설]", 1.8, 2.4, "#9AA3AF", "1.8~2.4억"),
+            ("자치구 1곳 GPR 용역", "2026 발주", 1.6, 2.2, "#C9D3E2", "1.6~2.2억"),
+            ("자치구 2곳을 맡으면", "", 3.2, 4.3, NAVY, "3.2~4.3억"),
+            ("자치구 3곳을 맡으면", "", 4.8, 6.5, NAVY, "4.8~6.5억")]
+    y = 290
+    for name, tag, lo, hi, col, lab in rows:
+        b += f'''    <text x="56" y="{y + 24}" font-size="18" font-weight="bold" fill="{INK}">{name} <tspan font-size="14" font-weight="normal" fill="{MUTE}">{tag}</tspan></text>
+    <rect x="{X0}" y="{y}" width="{lo * K:.0f}" height="36" fill="{col}" />
+    <rect x="{X0 + lo * K:.0f}" y="{y}" width="{(hi - lo) * K:.0f}" height="36" fill="{col}" fill-opacity="0.45" />
+    <text x="{X0 + max(hi, 2.4) * K + 14:.0f}" y="{y + 25}" font-size="20" font-weight="bold" fill="{NAVY}">{lab}</text>
+'''
+        y += 58
+    xb = X0 + 2.4 * K
+    b += f'''    <line x1="{xb:.0f}" y1="278" x2="{xb:.0f}" y2="{y - 10}" stroke="{RED}" stroke-width="2" stroke-dasharray="6,5" />
+    <text x="{xb + 8:.0f}" y="282" font-size="14" font-weight="bold" fill="{RED}">비용 상한 2.4억</text>
+  </g>
+  <g id="basis" data-pptx-bounds="56 532 1168 50">
+    <text x="56" y="552" font-size="15" fill="{SUB}">비용 = PV5·차량형 GPR(2억~5억) 5년 감가 + 2인 1조 인건비 1억 + 장비·유지 0.3억 · 처리량 = 하루 30km × 220일 = 연 6,600km</text>
+    <text x="56" y="576" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{NAVY}">기아에게</tspan> 장비 포함 대당 2억 원 이상의 고부가 컨버전 PV5 · 국토안전관리원 GPR 13→32대 등 공공 반복 수요</text>
+  </g>
+'''
+    b += band(600, "비용은 연 약 2억 원. 자치구 2곳부터 수입이 비용을 넘습니다.")
+    return head("사업", "시장과 수지") + title("차량 1대가 자치구 2곳만 맡아도 흑자입니다") + b + foot(
+        10, "출처: e-나라지표 도로현황(2025.12) · 머니투데이(2025.12.23) · 뉴스서울(2025.12.3) · 시사저널(2025.4.25) · 나라장터 공고(산군 재게시, 2026) 강동구·도봉구 · 비용은 가설")
+
+
+svg("10_economics.svg", econ())
 print("ok")

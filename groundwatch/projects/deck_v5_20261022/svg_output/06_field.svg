@@ -41,12 +41,6 @@
       <rect x="1024" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
       <text x="1124" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">수동 GPR</text>
       <text x="1124" y="196" font-size="14" fill="#374151">다른 주파수·방향 교차검증</text>
-      <g font-size="13" fill="#4B5563">
-        <text x="277" y="230">보안 통신</text>
-        <text x="519" y="230">로컬 API</text>
-        <text x="761" y="230">보안 Wi-Fi</text>
-        <text x="1003" y="230">작업 안내</text>
-      </g>
     </g>
     <g stroke="#0B1E3C" stroke-width="2">
       <line x1="259" y1="179" x2="295" y2="179" marker-start="url(#linkEnd)" marker-end="url(#linkEnd)" />

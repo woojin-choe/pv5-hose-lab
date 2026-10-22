@@ -23,11 +23,13 @@
     <image href="../images/ug_section_cut.png" x="56" y="166" width="640" height="407" preserveAspectRatio="xMidYMid meet" />
     <g font-size="15" font-weight="bold">
       <rect x="290" y="214" width="112" height="28" rx="14" fill="#0B1E3C" />
-      <text x="346" y="233" fill="#FFFFFF" text-anchor="middle">③ 노면 침하</text>
+      <text x="346" y="233" fill="#FFFFFF" text-anchor="middle">3  노면 침하</text>
       <rect x="114" y="282" width="112" height="28" rx="14" fill="#0B1E3C" />
-      <text x="170" y="301" fill="#FFFFFF" text-anchor="middle">② 공동 형성</text>
+      <text x="170" y="301" fill="#FFFFFF" text-anchor="middle">2  공동 형성</text>
       <rect x="406" y="340" width="124" height="28" rx="14" fill="#0B1E3C" />
-      <text x="468" y="359" fill="#FFFFFF" text-anchor="middle">① 하수관 누수</text>
+      <text x="468" y="359" fill="#FFFFFF" text-anchor="middle">1  하수관 누수</text>
+      <rect x="138" y="524" width="160" height="28" rx="14" fill="#FFFFFF" stroke="#9AA3AF" stroke-width="1" />
+      <text x="218" y="543" fill="#374151" text-anchor="middle">깊은 층 · 대상 아님</text>
     </g>
   </g>
   <g id="stat" data-pptx-bounds="744 160 480 162">
