@@ -23,9 +23,9 @@
     <text x="56" y="160" font-size="18" fill="#374151">기아가 공개한 PV5 기능만 썼습니다. 실제 권한·범위는 기아 PBV 파트너 승인 후 확정합니다.</text>
   </g>
   <g id="photo" data-pptx-bounds="56 182 520 380">
-    <image href="../images/ivi_car_dash.png" x="56" y="182" width="520" height="380" preserveAspectRatio="xMidYMid slice" />
+    <image href="../images/pv5_v2l_kr.jpg" x="56" y="182" width="520" height="380" preserveAspectRatio="xMidYMid slice" />
     <rect x="66" y="192" width="214" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
-    <text x="173" y="210" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 12.9인치 · Pleos Connect</text>
+    <text x="173" y="210" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">[화면 예시] 장비 전원 · PIM 제어</text>
   </g>
   <g id="links" data-pptx-bounds="616 182 608 380">
     <text x="616" y="204" font-size="19" font-weight="bold" fill="#0B1E3C">Navihelper <tspan font-size="14" font-weight="normal" fill="#4B5563">내비 목적지·경로 연계</tspan></text>

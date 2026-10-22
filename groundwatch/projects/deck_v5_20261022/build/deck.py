@@ -69,13 +69,13 @@ def svg(name, body, role="content"):
 # ---------------------------------------------------------------- 01 표지
 svg("01_cover.svg", f'''  <defs>
     <linearGradient id="coverFade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="{NAVY}" stop-opacity="0.94" />
-      <stop offset="42%" stop-color="{NAVY}" stop-opacity="0.72" />
-      <stop offset="70%" stop-color="{NAVY}" stop-opacity="0" />
+      <stop offset="0%" stop-color="{NAVY}" stop-opacity="1" />
+      <stop offset="100%" stop-color="{NAVY}" stop-opacity="0" />
     </linearGradient>
   </defs>
-  <image id="cover-photo" data-pptx-role="background" href="../images/cover_hangang.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice" />
-  <rect id="cover-scrim" data-pptx-role="decoration" x="0" y="0" width="1280" height="720" fill="url(#coverFade)" />
+  <rect id="cover-bg" x="0" y="0" width="1280" height="720" fill="{NAVY}" />
+  <image id="cover-photo" data-pptx-role="background" href="../images/cover_pv5_front.png" x="400" y="0" width="1080" height="720" preserveAspectRatio="xMinYMid slice" />
+  <rect id="cover-scrim" data-pptx-role="decoration" x="400" y="0" width="200" height="720" fill="url(#coverFade)" />
   <g id="cover-kicker" data-pptx-bounds="64 196 440 30">
     <text x="64" y="218" font-size="17" font-weight="bold" fill="{YEL}">제5회 기아 PBV 아이디어 공모전 · 일반 부문</text>
   </g>
@@ -94,7 +94,8 @@ svg("01_cover.svg", f'''  <defs>
     <text x="64" y="622" font-size="14" fill="{YEL}">TEAM</text>
     <text x="64" y="656" font-size="22" fill="#FFFFFF">한 명이라도 살릴 수 있다면</text>
   </g>
-  <g id="cover-date" data-pptx-bounds="1080 674 160 24">
+  <g id="cover-date" data-pptx-bounds="980 658 260 40">
+    <text x="1232" y="672" font-size="11" fill="#C3CCD9" text-anchor="end">사진: Alexander Migl, CC BY-SA 4.0(편집)</text>
     <text x="1232" y="692" font-size="13" fill="#C3CCD9" text-anchor="end">2026. 10</text>
   </g>
 ''', role="cover")
@@ -155,7 +156,7 @@ svg("02_incident.svg", head("문제", "실제로 일어난 일") + f'''  <defs>
 svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹점은 탐사가 아니라, 탐사와 탐사 ‘사이’입니다") + f'''  <g id="gap-chart" data-pptx-bounds="56 168 680 360">
     <text x="56" y="196" font-size="18" font-weight="bold" fill="{NAVY}">한 번 탐사한 도로를 다시 보기까지</text>
     <line x1="56" y1="210" x2="736" y2="210" stroke="{NAVY}" stroke-width="1.5" />
-    <text x="56" y="256" font-size="18" fill="{INK}">법이 정한 공동조사 주기</text>
+    <text x="56" y="256" font-size="18" fill="{INK}">법정 공동조사 주기 <tspan font-size="15" fill="{SUB}">(하수관 등 관리자)</tspan></text>
     <rect x="56" y="270" width="600" height="34" fill="#9AA3AF" />
     <text x="668" y="296" font-size="26" font-weight="bold" fill="{INK}">5년</text>
     <text x="56" y="356" font-size="18" fill="{INK}">서울시가 줄인 정기점검 주기 <tspan font-size="15" fill="{SUB}">(2025.4)</tspan></text>
@@ -266,12 +267,12 @@ svg("07_pv5_lab.svg", head("PV5", "PV5 이동형 탐사실") + title("PV5 한 �
     <text x="776" y="388" font-size="15" fill="{MUTE}">회차마다 같은 위치에 장착 → 같은 조건으로 비교</text>
     <line x1="776" y1="408" x2="1224" y2="408" stroke="{LINE}" stroke-width="1" />
     <text x="776" y="448" font-size="20" font-weight="bold" fill="{NAVY}">복제한다 <tspan font-size="16" font-weight="normal" fill="{SUB}">기아 공식 컨버전 체계</tspan></text>
-    <text x="776" y="474" font-size="15" fill="{MUTE}">특장 파트너 10개사 · 3D CAD 제공 → 같은 사양 여러 대</text>
+    <text x="776" y="474" font-size="15" fill="{MUTE}">컨버전 포털: 차량 3D 데이터·인증자료 → 같은 사양 여러 대</text>
     <rect x="776" y="504" width="448" height="76" fill="{PALE}" />
     <text x="796" y="534" font-size="15" font-weight="bold" fill="{AMB}">그래도 여유 있습니다 <tspan font-weight="normal" fill="{MUTE}">[가설]</tspan></text>
     <text x="796" y="562" font-size="16" fill="{INK}">장비 약 300kg / 600kg · 전력 약 1.5kW / 3.6kW</text>
   </g>
-''' + foot(7, "차량형 GPR은 하부형(배치도)·후방형(표지) 중 배터리 팩·지상고 간섭 시험 후 확정 · 출처: 기아 PV5 카고 제원·액세서리, 오토뷰(2026) · V2L 3.6kW는 해외 제원 · 배치도는 콘셉트"))
+''' + foot(7, "차량형 GPR 장착(하부형·후방형)은 배터리 팩·지상고 간섭 시험 후 확정 · 출처: 기아 PV5 카고 제원·액세서리, 오토뷰(2026.1.28, 컨버전 포털) · V2L 3.6kW는 해외 제원 · 배치도는 콘셉트"))
 
 # ---------------------------------------------------------------- 12 마무리
 svg("12_closing.svg", f'''  <defs>
@@ -282,20 +283,22 @@ svg("12_closing.svg", f'''  <defs>
     </linearGradient>
   </defs>
   <rect x="0" y="0" width="1280" height="720" fill="{NAVY}" />
-  <image href="../images/pv5_rear_dawn.jpg" x="560" y="0" width="720" height="720" preserveAspectRatio="xMidYMid slice" />
+  <image href="../images/close_pv5_rear.png" x="560" y="0" width="720" height="720" preserveAspectRatio="xMidYMid slice" />
   <rect x="560" y="0" width="420" height="720" fill="url(#closeFade)" />
-  <g id="recap" data-pptx-bounds="64 96 620 300">
-    <text x="64" y="120" font-size="16" font-weight="bold" fill="{YEL}">GroundWatch가 바꾸는 것</text>
-    <text x="64" y="176" font-size="22" fill="#9FB0C8">한 번 찍고 끝나는 탐사</text>
-    <text x="64" y="212" font-size="26" font-weight="bold" fill="#FFFFFF">→ 같은 길의 ‘변화’를 보는 탐사</text>
-    <text x="64" y="268" font-size="22" fill="#9FB0C8">사람이 다시 찾아야 하는 의심 지점</text>
-    <text x="64" y="304" font-size="26" font-weight="bold" fill="#FFFFFF">→ 현장에서 바로 확인하는 재탐사</text>
-    <text x="64" y="360" font-size="22" fill="#9FB0C8">장비를 실은 차</text>
-    <text x="64" y="396" font-size="26" font-weight="bold" fill="#FFFFFF">→ 복제 가능한 PV5 탐사실</text>
+  <g id="recap" data-pptx-bounds="64 80 620 360">
+    <text x="64" y="104" font-size="16" font-weight="bold" fill="{YEL}">GroundWatch가 바꾸는 것</text>
+    <text x="64" y="150" font-size="20" fill="#9FB0C8">회차마다 따로 보는 탐사</text>
+    <text x="64" y="182" font-size="25" font-weight="bold" fill="#FFFFFF">→ 같은 길의 ‘변화’를 보는 탐사</text>
+    <text x="64" y="228" font-size="20" fill="#9FB0C8">다시 찾아가야 하는 의심 지점</text>
+    <text x="64" y="260" font-size="25" font-weight="bold" fill="#FFFFFF">→ 같은 차에서 바로 재탐사</text>
+    <text x="64" y="306" font-size="20" fill="#9FB0C8">장비를 실은 차</text>
+    <text x="64" y="338" font-size="25" font-weight="bold" fill="#FFFFFF">→ 업무에 연동된 PV5 탐사실</text>
+    <text x="64" y="384" font-size="20" fill="#9FB0C8">기아에게</text>
+    <text x="64" y="416" font-size="25" font-weight="bold" fill="#FFFFFF">→ 장비 포함 2억 원대 컨버전 PV5</text>
   </g>
-  <g id="closing" data-pptx-bounds="64 470 620 150">
-    <rect x="64" y="470" width="48" height="3" fill="{YEL}" />
-    <text x="64" y="530" font-size="38" font-weight="bold" fill="#FFFFFF">한 번의 조기 발견이,<tspan x="64" dy="52">한 사람의 무사 귀가가 되도록.</tspan></text>
+  <g id="closing" data-pptx-bounds="64 474 620 150">
+    <rect x="64" y="480" width="48" height="3" fill="{YEL}" />
+    <text x="64" y="540" font-size="38" font-weight="bold" fill="#FFFFFF">한 번의 조기 발견이,<tspan x="64" dy="52">한 사람의 무사 귀가가 되도록.</tspan></text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 670 1172 40">
     <text x="64" y="700" font-size="14" font-weight="bold" fill="{YEL}">TEAM 한 명이라도 살릴 수 있다면</text>
@@ -327,9 +330,18 @@ def port(src, dst, no, step, label, new_title, drops=(), edits=(), regex_drop=No
     open(os.path.join(OUT, dst), "w", encoding="utf-8").write(s)
 
 
-port("08_app_ar.svg", "06_field.svg", 6, "해법", "현장 재확인", "차가 찾은 지점을, 작업자가 현장에서 바로 확인합니다", regex_drop=r'\n      <g font-size="13" fill="#4B5563">.*?</g>')
+port("08_app_ar.svg", "06_field.svg", 6, "해법", "현장 재확인", "차가 찾은 지점을, 작업자가 현장에서 바로 확인합니다", regex_drop=r'\n      <g font-size="13" fill="#4B5563">.*?</g>',
+     edits=[('rx="8" fill="#0B1E3C" />', 'rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />'),
+            ('font-weight="bold" fill="#FFFFFF">GroundWatch Cloud', 'font-weight="bold" fill="#0B1E3C">GroundWatch Cloud'),
+            ('font-weight="bold" fill="#FFFFFF">Patrol 차량 앱', 'font-weight="bold" fill="#0B1E3C">Patrol 차량 앱'),
+            ('font-weight="bold" fill="#FFFFFF">Edge Gateway', 'font-weight="bold" fill="#0B1E3C">Edge Gateway'),
+            ('font-size="14" fill="#D6DDE8">4D', 'font-size="14" fill="#374151">4D'),
+            ('font-size="14" fill="#D6DDE8">업무', 'font-size="14" fill="#374151">업무'),
+            ('font-size="14" fill="#D6DDE8">센서', 'font-size="14" fill="#374151">센서')])
 port("09_why_pv5.svg", "08_why_pv5.svg", 8, "PV5", "왜 PV5인가", "가격이 아니라 구조 때문에 PV5입니다",
-     edits=[('<rect x="452" y="446" width="376" height="134" fill="#F3F5F8" />', ''),
+     regex_drop=None,
+     edits=[("오토뷰(2026, PV5 공식 컨버전 파트너·포털)", "오토뷰(2026.1.28, PV5 컨버전 포털)"),
+            ('<rect x="452" y="446" width="376" height="134" fill="#F3F5F8" />', ''),
             ('<text x="472" y="474" font-size="15" font-weight="bold" fill="#0B1E3C">PV5 공식 컨버전 체계</text>', ''),
             ('<text x="472" y="500" font-size="15" fill="#111827">국내 특장 파트너 10개사 선정<tspan x="472" dy="21">PBV 컨버전 포털: 3D CAD·기술 가이드</tspan><tspan x="472" dy="21">12V 전력 연결 블록·PIM 기본 적용</tspan><tspan x="472" dy="21">→ GPR 키트 표준화의 바탕</tspan></text>', ''),
             ('<rect x="848" y="446" width="376" height="134" fill="#F3F5F8" />', '<rect x="652" y="446" width="572" height="134" fill="#F3F5F8" />'),
@@ -382,9 +394,9 @@ def verify():
     b += f'  <g id="stages" data-pptx-bounds="56 446 1168 130">\n    <text x="56" y="466" font-size="15" font-weight="bold" fill="{MUTE}">실증 순서</text>\n'
     x = 56
     for i, (n, place, q, ok) in enumerate(stages):
-        fill = NAVY if i == 3 else PALE
-        t1, t2 = ("#FFFFFF", YEL) if i == 3 else (NAVY, AMB)
-        b += f'''    <rect x="{x}" y="480" width="278" height="94" fill="{fill}" />
+        t1, t2 = NAVY, AMB
+        b += f'''    <rect x="{x}" y="480" width="278" height="94" fill="{PALE}" />
+    <rect x="{x}" y="480" width="278" height="4" fill="{YEL if i == 3 else NAVY}" />
     <text x="{x + 18}" y="508" font-size="14" font-weight="bold" fill="{t2}">{n} · {q}</text>
     <text x="{x + 18}" y="536" font-size="20" font-weight="bold" fill="{t1}">{place}</text>
     <text x="{x + 18}" y="562" font-size="15" fill="{t1}">{ok}</text>
@@ -433,13 +445,13 @@ def econ():
     <text x="{xb + 8:.0f}" y="282" font-size="14" font-weight="bold" fill="{RED}">비용 상한 2.4억</text>
   </g>
   <g id="basis" data-pptx-bounds="56 532 1168 50">
-    <text x="56" y="552" font-size="15" fill="{SUB}">비용 = PV5·차량형 GPR(2억~5억) 5년 감가 + 2인 1조 인건비 1억 + 장비·유지 0.3억 · 처리량 = 하루 30km × 220일 = 연 6,600km → 도로 약 1,000km를 약 2개월마다</text>
-    <text x="56" y="576" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{NAVY}">기아에게</tspan> 장비 포함 대당 2억 원 이상의 고부가 컨버전 PV5 · 시·군·구 226곳의 권역별 플릿 수요</text>
+    <text x="56" y="552" font-size="15" fill="{SUB}">비용 = PV5·GPR(2억~5억, 서울시 대당 약 5억) 5년 감가 + 2인 인건비 1억 + 유지 0.3억 · 하루 30km×220일 → 도로 1,000km를 약 2개월마다</text>
+    <text x="56" y="576" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{RED}">핵심 가설</tspan> 기존 용역은 km당 약 200만 원(경기도 21.6억÷1,080km, 판독·보고 포함). 차이만 판독해 이 단가를 낮춘다 → 실증 3·4단계</text>
   </g>
 '''
     b += band(600, "비용은 연 약 2억 원. 지자체 2곳부터 수입이 비용을 넘습니다.")
     return head("사업", "시장과 수지") + title("차량 1대가 지자체 2곳만 맡아도 흑자입니다") + b + foot(
-        10, "출처: e-나라지표(2025.12) · 머니투데이(2025.12.23) · 뉴스서울(2025.12.3) · 시사저널(2025.4.25) · 나라장터 개찰(강동구·용인 기흥구) · 비용은 가설")
+        10, "출처: e-나라지표 · 머니투데이(2025.12.23) · 뉴스서울(2025.12.3) · 시사저널(2025.4.25) · 나라장터 개찰 · 헤럴드경제(2025.9.7) · 첫 해는 조사기관과 공동 수행 · 비용은 가설")
 
 
 svg("10_economics.svg", econ())
@@ -447,7 +459,7 @@ svg("10_economics.svg", econ())
 
 # ---------------------------------------------------------------- 02 한 장 요약 + 심사 기준별 근거 위치
 def summary():
-    cols = [("문제", "검사 100여 일 뒤 함몰", "법정 점검 5년, 서울 1년.<tspan x='{x}' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='{x}' dy='22'>아무도 보지 못합니다.</tspan>", "3~5장"),
+    cols = [("문제", "탐사 100여 일 뒤 함몰", "법정 점검 5년, 서울 1년.<tspan x='{x}' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='{x}' dy='22'>아무도 보지 못합니다.</tspan>", "3~5장"),
             ("해법", "같은 길을 약 2개월마다", "PV5가 GPR로 다시 찍고,<tspan x='{x}' dy='22'>달라진 곳만 골라</tspan><tspan x='{x}' dy='22'>현장에서 재확인합니다.</tspan>", "6~8장"),
             ("왜 PV5", "차가 업무의 일부가 됨", "PIM·Navihelper로 차와 연동,<tspan x='{x}' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='{x}' dy='22'>공식 컨버전으로 복제.</tspan>", "9~11장"),
             ("사업", "이미 있는 예산에서", "큰 지자체 GPR 용역 연 1.4~1.8억.<tspan x='{x}' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='{x}' dy='22'>흑자, 실증은 4단계로.</tspan>", "12~14장")]
@@ -531,9 +543,9 @@ def pv5link():
     <text x="56" y="160" font-size="18" fill="{SUB}">기아가 공개한 PV5 기능만 썼습니다. 실제 권한·범위는 기아 PBV 파트너 승인 후 확정합니다.</text>
   </g>
   <g id="photo" data-pptx-bounds="56 182 520 380">
-    <image href="../images/ivi_car_dash.png" x="56" y="182" width="520" height="380" preserveAspectRatio="xMidYMid slice" />
+    <image href="../images/pv5_v2l_kr.jpg" x="56" y="182" width="520" height="380" preserveAspectRatio="xMidYMid slice" />
     <rect x="66" y="192" width="214" height="26" rx="3" fill="{NAVY}" fill-opacity="0.9" />
-    <text x="173" y="210" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 12.9인치 · Pleos Connect</text>
+    <text x="173" y="210" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">[화면 예시] 장비 전원 · PIM 제어</text>
   </g>
   <g id="links" data-pptx-bounds="616 182 608 380">
 """

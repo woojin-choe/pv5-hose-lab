@@ -22,7 +22,7 @@
   <g id="gap-chart" data-pptx-bounds="56 168 680 360">
     <text x="56" y="196" font-size="18" font-weight="bold" fill="#0B1E3C">한 번 탐사한 도로를 다시 보기까지</text>
     <line x1="56" y1="210" x2="736" y2="210" stroke="#0B1E3C" stroke-width="1.5" />
-    <text x="56" y="256" font-size="18" fill="#111827">법이 정한 공동조사 주기</text>
+    <text x="56" y="256" font-size="18" fill="#111827">법정 공동조사 주기 <tspan font-size="15" fill="#374151">(하수관 등 관리자)</tspan></text>
     <rect x="56" y="270" width="600" height="34" fill="#9AA3AF" />
     <text x="668" y="296" font-size="26" font-weight="bold" fill="#111827">5년</text>
     <text x="56" y="356" font-size="18" fill="#111827">서울시가 줄인 정기점검 주기 <tspan font-size="15" fill="#374151">(2025.4)</tspan></text>

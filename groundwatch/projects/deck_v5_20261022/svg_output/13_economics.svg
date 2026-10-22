@@ -50,15 +50,15 @@
     <text x="602" y="282" font-size="14" font-weight="bold" fill="#C62828">비용 상한 2.4억</text>
   </g>
   <g id="basis" data-pptx-bounds="56 532 1168 50">
-    <text x="56" y="552" font-size="15" fill="#374151">비용 = PV5·차량형 GPR(2억~5억) 5년 감가 + 2인 1조 인건비 1억 + 장비·유지 0.3억 · 처리량 = 하루 30km × 220일 = 연 6,600km → 도로 약 1,000km를 약 2개월마다</text>
-    <text x="56" y="576" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#0B1E3C">기아에게</tspan> 장비 포함 대당 2억 원 이상의 고부가 컨버전 PV5 · 시·군·구 226곳의 권역별 플릿 수요</text>
+    <text x="56" y="552" font-size="15" fill="#374151">비용 = PV5·GPR(2억~5억, 서울시 대당 약 5억) 5년 감가 + 2인 인건비 1억 + 유지 0.3억 · 하루 30km×220일 → 도로 1,000km를 약 2개월마다</text>
+    <text x="56" y="576" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#C62828">핵심 가설</tspan> 기존 용역은 km당 약 200만 원(경기도 21.6억÷1,080km, 판독·보고 포함). 차이만 판독해 이 단가를 낮춘다 → 실증 3·4단계</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 600 1168 44">
     <rect x="56" y="600" width="4" height="44" fill="#F5B700" />
     <text x="76" y="630" font-size="21" font-weight="bold" fill="#0B1E3C">비용은 연 약 2억 원. 지자체 2곳부터 수입이 비용을 넘습니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="12" fill="#4B5563">출처: e-나라지표(2025.12) · 머니투데이(2025.12.23) · 뉴스서울(2025.12.3) · 시사저널(2025.4.25) · 나라장터 개찰(강동구·용인 기흥구) · 비용은 가설</text>
+    <text x="56" y="682" font-size="12" fill="#4B5563">출처: e-나라지표 · 머니투데이(2025.12.23) · 뉴스서울(2025.12.3) · 시사저널(2025.4.25) · 나라장터 개찰 · 헤럴드경제(2025.9.7) · 첫 해는 조사기관과 공동 수행 · 비용은 가설</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
