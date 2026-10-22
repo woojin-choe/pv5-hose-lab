@@ -2,7 +2,10 @@
 import os
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "svg_output")
-N = 12
+for _f in os.listdir(OUT):
+    if _f.endswith(".svg"):
+        os.remove(os.path.join(OUT, _f))
+N = 13
 NAVY, INK, SUB, MUTE, LINE, PALE = "#0B1E3C", "#111827", "#374151", "#4B5563", "#E2E6EC", "#F3F5F8"
 YEL, AMB, RED = "#F5B700", "#B45309", "#C62828"
 STEPS = ["문제", "해법", "PV5", "검증", "사업"]
@@ -116,8 +119,8 @@ svg("02_incident.svg", head("문제", "실제로 일어난 일") + f'''  <defs>
     <text x="56" y="154" font-size="18" font-weight="bold" fill="{RED}">2024. 8. 29 · 서울 서대문구 연희동</text>
   </g>
   <g id="title" data-pptx-bounds="56 168 623 136" letter-spacing="-1.5" font-weight="bold">
-    <text x="56" y="222" font-size="44" fill="{NAVY}">‘이상 없음’ 판정</text>
-    <text x="56" y="282" font-size="44" fill="{RED}">3개월 뒤, 도로가 무너졌습니다</text>
+    <text x="56" y="222" font-size="40" fill="{NAVY}">‘이상 없음’ 판정</text>
+    <text x="56" y="278" font-size="40" fill="{RED}">100여 일 뒤, 도로가 무너졌습니다</text>
   </g>
   <g id="timeline" data-pptx-bounds="56 330 600 150">
     <line x1="76" y1="404" x2="636" y2="404" stroke="#C3CCD9" stroke-width="3" />
@@ -160,7 +163,7 @@ svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹�
     <text x="188" y="396" font-size="26" font-weight="bold" fill="{NAVY}">1년</text>
     <text x="56" y="456" font-size="18" font-weight="bold" fill="{RED}">연희동: 탐사 ‘이상 없음’에서 함몰까지</text>
     <rect x="56" y="470" width="35" height="34" fill="{RED}" />
-    <text x="103" y="496" font-size="26" font-weight="bold" fill="{RED}">약 3.5개월</text>
+    <text x="103" y="496" font-size="26" font-weight="bold" fill="{RED}">100여 일</text>
   </g>
   <g id="evidence" data-pptx-bounds="784 168 440 360">
     <rect x="784" y="168" width="440" height="3" fill="{NAVY}" />
@@ -178,7 +181,7 @@ svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹�
 ''' + foot(3, "출처: 지하안전법(지하시설물관리자 공동조사 5년 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 일본 국토교통성 도로정책 연구 30-5(2021)"))
 
 # ---------------------------------------------------------------- 04 대상
-svg("04_target.svg", head("문제", "우리가 막을 대상") + title("그 사이 자라는 ‘얕은 공동’이 땅꺼짐 원인 1위입니다") + f'''  <g id="section" data-pptx-bounds="56 160 640 420">
+svg("04_target.svg", head("문제", "우리가 막을 대상") + title("원인 1위 하수관 손상은 ‘얕은 공동’부터 만듭니다") + f'''  <g id="section" data-pptx-bounds="56 160 640 420">
     <image href="../images/ug_section_cut.png" x="56" y="166" width="640" height="407" preserveAspectRatio="xMidYMid meet" />
     <g font-size="15" font-weight="bold">
       <rect x="290" y="214" width="112" height="28" rx="14" fill="{NAVY}" />
@@ -208,7 +211,7 @@ svg("04_target.svg", head("문제", "우리가 막을 대상") + title("그 사�
 ''' + foot(4, "출처: 국토교통부 지반침하 원인 통계(2020~2024) · 국토교통부 명일동 사고조사(2025.12.3) · 서울시 차량형 GPR 탐사 깊이 약 2m · 단면도는 원리 설명용"))
 
 # ---------------------------------------------------------------- 05 해법
-svg("05_solution.svg", head("해법", "GroundWatch의 핵심") + title("같은 길을 반복해서 찍고, 달라진 곳만 다시 봅니다") + f'''  <g id="compare" data-pptx-bounds="56 160 680 400">
+svg("05_solution.svg", head("해법", "GroundWatch의 핵심") + title("같은 길을 약 2개월마다 다시 찍고, 달라진 곳만 다시 봅니다") + f'''  <g id="compare" data-pptx-bounds="56 160 680 400">
     <rect x="56" y="166" width="680" height="388" fill="#2A2E33" />
     <image href="../images/bscan_prev_band.png" x="56" y="166" width="680" height="192" preserveAspectRatio="xMidYMid slice" />
     <image href="../images/bscan_cur_band.png" x="56" y="362" width="680" height="192" preserveAspectRatio="xMidYMid slice" />
@@ -223,7 +226,7 @@ svg("05_solution.svg", head("해법", "GroundWatch의 핵심") + title("같은 �
   <g id="steps" data-pptx-bounds="784 166 440 388">
     <text x="784" y="196" font-size="15" font-weight="bold" fill="{MUTE}">1</text>
     <text x="808" y="196" font-size="22" font-weight="bold" fill="{NAVY}">반복 측정</text>
-    <text x="808" y="224" font-size="17" fill="{SUB}">PV5가 새벽마다 같은 경로를 주행</text>
+    <text x="808" y="224" font-size="17" fill="{SUB}">PV5가 새벽에 같은 경로를 약 2개월마다 주행</text>
     <line x1="784" y1="252" x2="1224" y2="252" stroke="{LINE}" stroke-width="1" />
     <text x="784" y="292" font-size="15" font-weight="bold" fill="{MUTE}">2</text>
     <text x="808" y="292" font-size="22" font-weight="bold" fill="{NAVY}">변화만 선별</text>
@@ -238,7 +241,7 @@ svg("05_solution.svg", head("해법", "GroundWatch의 핵심") + title("같은 �
     <text x="784" y="530" font-size="17" fill="{INK}">결과는 다음 순찰 경로에 다시 반영됩니다.</text>
   </g>
   {band(590, "AI는 볼 순서를 정할 뿐, 판정은 전문가가 하고 확정은 천공이 합니다.").strip()}
-''' + foot(5, "B-scan 비교 화면은 설명용 예시입니다."))
+''' + foot(5, "약 2개월 = 차량 1대가 연 6,600km를 달려 도로 약 1,000km를 연 6회 반복(11장, 가설) · B-scan 비교 화면은 설명용 예시"))
 
 # ---------------------------------------------------------------- 07 PV5 탐사실 (6+7 통합)
 svg("07_pv5_lab.svg", head("PV5", "PV5 이동형 탐사실") + title("PV5 한 대가 그대로 이동형 탐사실이 됩니다") + f'''  <g id="cutaway" data-pptx-bounds="56 150 680 440">
@@ -336,7 +339,11 @@ port("09_why_pv5.svg", "08_why_pv5.svg", 8, "PV5", "왜 PV5인가", "가격이 �
              '<text x="672" y="500" font-size="16" fill="#111827">주행거리는 스타리아보다 10km 짧고, 전폭은 포터·봉고보다<tspan x="672" dy="24">155mm 넓습니다. 하루 순찰 약 30km <tspan fill="#4B5563">[가설]</tspan>에는</tspan><tspan x="672" dy="24">377km로 충분합니다.</tspan></text>'),
             ('<text x="76" y="500" font-size="15" fill="#111827">차값 차이는 최대 1,354만 원,<tspan x="76" dy="21">차량형 GPR은 대당 <tspan font-weight="bold">2억~8억 원</tspan>.</tspan><tspan x="76" dy="21">차이를 가르는 건 구조와</tspan><tspan x="76" dy="21">지원 체계입니다.</tspan></text>',
              '<text x="76" y="500" font-size="16" fill="#111827">차값 차이는 최대 1,354만 원인데, 차량형 GPR은<tspan x="76" dy="24">대당 <tspan font-weight="bold">2억~8억 원</tspan>입니다. 차이를 가르는 건</tspan><tspan x="76" dy="24">전원·고정 구조와 공식 컨버전 체계입니다.</tspan></text>')])
-port("14_go_to_market.svg", "11_entry.svg", 11, "사업", "첫 고객과 확장", "이미 GPR 예산을 쓰는 지자체에서 시작합니다")
+port("14_go_to_market.svg", "11_entry.svg", 11, "사업", "첫 고객과 확장", "이미 GPR 예산을 쓰는 지자체에서 시작합니다",
+     edits=[(">0.46~1.77억 원<", ">0.85~1.90억 원<"),
+            (">보령·안양·용인(기흥구) 낙찰, 이미 집행 중<", ">안양·강동구·용인 등 낙찰, 이미 집행 중<"),
+            ("자치구 2곳 연간 계약", "지자체 2곳 연간 계약"),
+            ("출처: 나라장터 2026 GPR 용역 낙찰(보령·안양·용인 기흥구)", "출처: 나라장터 2026 GPR 용역(안양 R26BK01572949 · 강동구 R26BK01599467 · 용인 R26BK01517362)")])
 print("ok")
 
 
@@ -347,7 +354,7 @@ def verify():
             ("AI가 변화를 맞게 고르는가", "재확인 출동이 과다", "공동 모사체 구간 · 계절 보정"),
             ("밤에 AR이 정확히 맞는가", "현장 탐색 범위가 커짐", "맨홀·경계석 기준점 오차 측정")]
     b = f'''  <g id="lead" data-pptx-bounds="56 138 1168 28">
-    <text x="56" y="160" font-size="19" fill="{SUB}">반복 탐사의 효과는 연구로 확인됐습니다(3장). 남은 건 <tspan font-weight="bold" fill="{NAVY}">PV5에 실었을 때도 정확한가</tspan>입니다.</text>
+    <text x="56" y="160" font-size="19" fill="{SUB}">반복 탐사의 효과는 연구로 확인됐습니다(4장). 남은 건 <tspan font-weight="bold" fill="{NAVY}">PV5에 실었을 때도 정확한가</tspan>입니다.</text>
   </g>
   <g id="questions" data-pptx-bounds="56 186 1168 236">
     <g font-size="14" font-weight="bold" fill="{MUTE}">
@@ -402,17 +409,17 @@ def econ():
     <text x="56" y="202" font-size="15" fill="{SUB}">지자체가 관리하는 도로 (전국의 83%)</text>
     <text x="452" y="176" font-size="30" font-weight="bold" fill="{NAVY}">2,308 → 11,380km</text>
     <text x="452" y="202" font-size="15" fill="{SUB}">정부 지반탐사 2024 → 2026 (약 5배)</text>
-    <text x="900" y="176" font-size="30" font-weight="bold" fill="{NAVY}">131억 원</text>
-    <text x="900" y="202" font-size="15" fill="{SUB}">2026 국비 · GPR 장비·지자체 지원</text>
+    <text x="900" y="176" font-size="30" font-weight="bold" fill="{NAVY}">44억 원</text>
+    <text x="900" y="202" font-size="15" fill="{SUB}">2026 국비 · 지자체 지반탐사 지원</text>
   </g>
   <g id="bars" data-pptx-bounds="56 232 1168 300">
     <line x1="56" y1="234" x2="1224" y2="234" stroke="{NAVY}" stroke-width="1.5" />
     <text x="56" y="262" font-size="15" font-weight="bold" fill="{MUTE}">연간 금액 (억 원)</text>
 '''
     rows = [("차량 1대 연간 비용", "[가설]", 1.8, 2.4, "#9AA3AF", "1.8~2.4억"),
-            ("자치구 1곳 GPR 용역", "2026 발주", 1.6, 2.2, "#C9D3E2", "1.6~2.2억"),
-            ("자치구 2곳을 맡으면", "", 3.2, 4.3, NAVY, "3.2~4.3억"),
-            ("자치구 3곳을 맡으면", "", 4.8, 6.5, NAVY, "4.8~6.5억")]
+            ("지자체 1곳 연간 GPR 용역", "강동구·용인급", 1.4, 1.8, "#C9D3E2", "1.4~1.8억"),
+            ("지자체 2곳을 맡으면", "", 2.8, 3.5, NAVY, "2.8~3.5억"),
+            ("지자체 3곳을 맡으면", "", 4.2, 5.3, NAVY, "4.2~5.3억")]
     y = 290
     for name, tag, lo, hi, col, lab in rows:
         b += f'''    <text x="56" y="{y + 24}" font-size="18" font-weight="bold" fill="{INK}">{name} <tspan font-size="14" font-weight="normal" fill="{MUTE}">{tag}</tspan></text>
@@ -426,14 +433,61 @@ def econ():
     <text x="{xb + 8:.0f}" y="282" font-size="14" font-weight="bold" fill="{RED}">비용 상한 2.4억</text>
   </g>
   <g id="basis" data-pptx-bounds="56 532 1168 50">
-    <text x="56" y="552" font-size="15" fill="{SUB}">비용 = PV5·차량형 GPR(2억~5억) 5년 감가 + 2인 1조 인건비 1억 + 장비·유지 0.3억 · 처리량 = 하루 30km × 220일 = 연 6,600km</text>
-    <text x="56" y="576" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{NAVY}">기아에게</tspan> 장비 포함 대당 2억 원 이상의 고부가 컨버전 PV5 · 국토안전관리원 GPR 13→32대 등 공공 반복 수요</text>
+    <text x="56" y="552" font-size="15" fill="{SUB}">비용 = PV5·차량형 GPR(2억~5억) 5년 감가 + 2인 1조 인건비 1억 + 장비·유지 0.3억 · 처리량 = 하루 30km × 220일 = 연 6,600km → 도로 약 1,000km를 약 2개월마다</text>
+    <text x="56" y="576" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{NAVY}">기아에게</tspan> 장비 포함 대당 2억 원 이상의 고부가 컨버전 PV5 · 시·군·구 226곳의 권역별 플릿 수요</text>
   </g>
 '''
-    b += band(600, "비용은 연 약 2억 원. 자치구 2곳부터 수입이 비용을 넘습니다.")
-    return head("사업", "시장과 수지") + title("차량 1대가 자치구 2곳만 맡아도 흑자입니다") + b + foot(
-        10, "출처: e-나라지표 도로현황(2025.12) · 머니투데이(2025.12.23) · 뉴스서울(2025.12.3) · 시사저널(2025.4.25) · 나라장터 공고(산군 재게시, 2026) 강동구·도봉구 · 비용은 가설")
+    b += band(600, "비용은 연 약 2억 원. 지자체 2곳부터 수입이 비용을 넘습니다.")
+    return head("사업", "시장과 수지") + title("차량 1대가 지자체 2곳만 맡아도 흑자입니다") + b + foot(
+        10, "출처: e-나라지표(2025.12) · 머니투데이(2025.12.23) · 뉴스서울(2025.12.3) · 시사저널(2025.4.25) · 나라장터 개찰(강동구·용인 기흥구) · 비용은 가설")
 
 
 svg("10_economics.svg", econ())
-print("ok")
+
+
+# ---------------------------------------------------------------- 02 한 장 요약 + 심사 기준별 근거 위치
+def summary():
+    cols = [("문제", "검사 100여 일 뒤 함몰", "법정 점검 5년, 서울 1년.<tspan x='{x}' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='{x}' dy='22'>아무도 보지 못합니다.</tspan>", "3~5장"),
+            ("해법", "같은 길을 약 2개월마다", "PV5가 GPR로 다시 찍고,<tspan x='{x}' dy='22'>달라진 곳만 골라</tspan><tspan x='{x}' dy='22'>현장에서 재확인합니다.</tspan>", "6~7장"),
+            ("왜 PV5", "싣고·켜고·고정·복제", "카고룸 4,420L · V2L ·<tspan x='{x}' dy='22'>L-Track · 공식 컨버전 체계로</tspan><tspan x='{x}' dy='22'>같은 탐사실을 여러 대로.</tspan>", "8~9장"),
+            ("사업", "이미 있는 예산에서", "큰 지자체 GPR 용역 연 1.4~1.8억.<tspan x='{x}' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='{x}' dy='22'>흑자, 실증은 4단계로.</tspan>", "10~12장")]
+    b = ""
+    x = 56
+    for i, (k, h, d, ref) in enumerate(cols):
+        b += f'''  <g id="col{i}" data-pptx-bounds="{x} 168 274 260">
+    <rect x="{x}" y="168" width="274" height="3" fill="{NAVY if i else RED}" />
+    <text x="{x}" y="202" font-size="16" font-weight="bold" fill="{RED if i == 0 else AMB}">{k}</text>
+    <text x="{x}" y="240" font-size="23" font-weight="bold" fill="{NAVY}">{h}</text>
+    <text x="{x}" y="282" font-size="17" fill="{SUB}">{d.format(x=x)}</text>
+    <text x="{x}" y="372" font-size="14" fill="{MUTE}">자세히 → {ref}</text>
+  </g>
+'''
+        x += 298
+    crit = [("기술적 완성도", "30", "6·7·10장"), ("시장 실현성", "25", "11·12장"), ("혁신성", "20", "4·6장"), ("PV5 연계성", "15", "8·9장"), ("사회적 가치", "10", "3·5장")]
+    b += f'''  <g id="criteria" data-pptx-bounds="56 440 1168 120">
+    <text x="56" y="462" font-size="15" font-weight="bold" fill="{MUTE}">심사 기준별 근거 위치</text>
+'''
+    x = 56
+    for name, pt, ref in crit:
+        b += f'''    <rect x="{x}" y="476" width="222" height="76" fill="{PALE}" />
+    <text x="{x + 16}" y="506" font-size="17" font-weight="bold" fill="{NAVY}">{name} <tspan font-size="14" font-weight="normal" fill="{MUTE}">{pt}점</tspan></text>
+    <text x="{x + 16}" y="536" font-size="16" fill="{SUB}">{ref}</text>
+'''
+        x += 236
+    b += "  </g>\n" + band(590, "한 번의 조기 발견이, 한 사람의 무사 귀가가 되도록.")
+    return head("", "한 장 요약") + title("GroundWatch는 탐사와 탐사 ‘사이’의 공백을 메웁니다") + b + foot(2, "심사 배점: 기아 PBV 아이디어 공모전 공식 안내(기술적 완성도 30 · 시장 실현성 25 · 혁신성 20 · PV5 연계성 15 · 사회적 가치 10)")
+
+
+svg("01b_summary.svg", summary())
+
+# ---------------------------------------------------------------- 파일명·쪽번호를 최종 순서로
+names = sorted(f for f in os.listdir(OUT) if f.endswith(".svg"))
+tmp = []
+for i, f in enumerate(names, 1):
+    t = open(os.path.join(OUT, f), encoding="utf-8").read()
+    t = re.sub(r"\d\d / \d\d<", f"{i:02d} / {N}<", t)
+    os.remove(os.path.join(OUT, f))
+    tmp.append((f"{i:02d}_" + f.split("_", 1)[1], t))
+for f, t in tmp:
+    open(os.path.join(OUT, f), "w", encoding="utf-8").write(t)
+print("ok", [f for f, _ in tmp])

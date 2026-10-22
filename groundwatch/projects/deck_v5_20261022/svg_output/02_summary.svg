@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <text x="210" y="45" font-size="14" fill="#374151">한 장 요약</text>
+    <text x="900" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">문제</text>
+    <text x="933" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="966" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">해법</text>
+    <text x="999" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1032" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">PV5</text>
+    <text x="1065" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1098" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">검증</text>
+    <text x="1131" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1164" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">사업</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">GroundWatch는 탐사와 탐사 ‘사이’의 공백을 메웁니다</text>
+  </g>
+  <g id="col0" data-pptx-bounds="56 168 274 260">
+    <rect x="56" y="168" width="274" height="3" fill="#C62828" />
+    <text x="56" y="202" font-size="16" font-weight="bold" fill="#C62828">문제</text>
+    <text x="56" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">검사 100여 일 뒤 함몰</text>
+    <text x="56" y="282" font-size="17" fill="#374151">법정 점검 5년, 서울 1년.<tspan x='56' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='56' dy='22'>아무도 보지 못합니다.</tspan></text>
+    <text x="56" y="372" font-size="14" fill="#4B5563">자세히 → 3~5장</text>
+  </g>
+  <g id="col1" data-pptx-bounds="354 168 274 260">
+    <rect x="354" y="168" width="274" height="3" fill="#0B1E3C" />
+    <text x="354" y="202" font-size="16" font-weight="bold" fill="#B45309">해법</text>
+    <text x="354" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">같은 길을 약 2개월마다</text>
+    <text x="354" y="282" font-size="17" fill="#374151">PV5가 GPR로 다시 찍고,<tspan x='354' dy='22'>달라진 곳만 골라</tspan><tspan x='354' dy='22'>현장에서 재확인합니다.</tspan></text>
+    <text x="354" y="372" font-size="14" fill="#4B5563">자세히 → 6~7장</text>
+  </g>
+  <g id="col2" data-pptx-bounds="652 168 274 260">
+    <rect x="652" y="168" width="274" height="3" fill="#0B1E3C" />
+    <text x="652" y="202" font-size="16" font-weight="bold" fill="#B45309">왜 PV5</text>
+    <text x="652" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">싣고·켜고·고정·복제</text>
+    <text x="652" y="282" font-size="17" fill="#374151">카고룸 4,420L · V2L ·<tspan x='652' dy='22'>L-Track · 공식 컨버전 체계로</tspan><tspan x='652' dy='22'>같은 탐사실을 여러 대로.</tspan></text>
+    <text x="652" y="372" font-size="14" fill="#4B5563">자세히 → 8~9장</text>
+  </g>
+  <g id="col3" data-pptx-bounds="950 168 274 260">
+    <rect x="950" y="168" width="274" height="3" fill="#0B1E3C" />
+    <text x="950" y="202" font-size="16" font-weight="bold" fill="#B45309">사업</text>
+    <text x="950" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">이미 있는 예산에서</text>
+    <text x="950" y="282" font-size="17" fill="#374151">큰 지자체 GPR 용역 연 1.4~1.8억.<tspan x='950' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='950' dy='22'>흑자, 실증은 4단계로.</tspan></text>
+    <text x="950" y="372" font-size="14" fill="#4B5563">자세히 → 10~12장</text>
+  </g>
+  <g id="criteria" data-pptx-bounds="56 440 1168 120">
+    <text x="56" y="462" font-size="15" font-weight="bold" fill="#4B5563">심사 기준별 근거 위치</text>
+    <rect x="56" y="476" width="222" height="76" fill="#F3F5F8" />
+    <text x="72" y="506" font-size="17" font-weight="bold" fill="#0B1E3C">기술적 완성도 <tspan font-size="14" font-weight="normal" fill="#4B5563">30점</tspan></text>
+    <text x="72" y="536" font-size="16" fill="#374151">6·7·10장</text>
+    <rect x="292" y="476" width="222" height="76" fill="#F3F5F8" />
+    <text x="308" y="506" font-size="17" font-weight="bold" fill="#0B1E3C">시장 실현성 <tspan font-size="14" font-weight="normal" fill="#4B5563">25점</tspan></text>
+    <text x="308" y="536" font-size="16" fill="#374151">11·12장</text>
+    <rect x="528" y="476" width="222" height="76" fill="#F3F5F8" />
+    <text x="544" y="506" font-size="17" font-weight="bold" fill="#0B1E3C">혁신성 <tspan font-size="14" font-weight="normal" fill="#4B5563">20점</tspan></text>
+    <text x="544" y="536" font-size="16" fill="#374151">4·6장</text>
+    <rect x="764" y="476" width="222" height="76" fill="#F3F5F8" />
+    <text x="780" y="506" font-size="17" font-weight="bold" fill="#0B1E3C">PV5 연계성 <tspan font-size="14" font-weight="normal" fill="#4B5563">15점</tspan></text>
+    <text x="780" y="536" font-size="16" fill="#374151">8·9장</text>
+    <rect x="1000" y="476" width="222" height="76" fill="#F3F5F8" />
+    <text x="1016" y="506" font-size="17" font-weight="bold" fill="#0B1E3C">사회적 가치 <tspan font-size="14" font-weight="normal" fill="#4B5563">10점</tspan></text>
+    <text x="1016" y="536" font-size="16" fill="#374151">3·5장</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 590 1168 44">
+    <rect x="56" y="590" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">한 번의 조기 발견이, 한 사람의 무사 귀가가 되도록.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="12" fill="#4B5563">심사 배점: 기아 PBV 아이디어 공모전 공식 안내(기술적 완성도 30 · 시장 실현성 25 · 혁신성 20 · PV5 연계성 15 · 사회적 가치 10)</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">02 / 13</text>
+  </g>
+</svg>

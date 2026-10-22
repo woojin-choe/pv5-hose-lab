@@ -35,8 +35,8 @@
     <text x="56" y="154" font-size="18" font-weight="bold" fill="#C62828">2024. 8. 29 · 서울 서대문구 연희동</text>
   </g>
   <g id="title" data-pptx-bounds="56 168 623 136" letter-spacing="-1.5" font-weight="bold">
-    <text x="56" y="222" font-size="44" fill="#0B1E3C">‘이상 없음’ 판정</text>
-    <text x="56" y="282" font-size="44" fill="#C62828">3개월 뒤, 도로가 무너졌습니다</text>
+    <text x="56" y="222" font-size="40" fill="#0B1E3C">‘이상 없음’ 판정</text>
+    <text x="56" y="278" font-size="40" fill="#C62828">100여 일 뒤, 도로가 무너졌습니다</text>
   </g>
   <g id="timeline" data-pptx-bounds="56 330 600 150">
     <line x1="76" y1="404" x2="636" y2="404" stroke="#C3CCD9" stroke-width="3" />
@@ -63,6 +63,6 @@
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 600 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="636" y="706" text-anchor="end">02 / 12</text>
+    <text x="636" y="706" text-anchor="end">03 / 13</text>
   </g>
 </svg>

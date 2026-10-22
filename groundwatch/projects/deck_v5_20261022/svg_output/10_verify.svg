@@ -20,7 +20,7 @@
     <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">남은 질문은 4가지, 4단계로 실증합니다</text>
   </g>
   <g id="lead" data-pptx-bounds="56 138 1168 28">
-    <text x="56" y="160" font-size="19" fill="#374151">반복 탐사의 효과는 연구로 확인됐습니다(3장). 남은 건 <tspan font-weight="bold" fill="#0B1E3C">PV5에 실었을 때도 정확한가</tspan>입니다.</text>
+    <text x="56" y="160" font-size="19" fill="#374151">반복 탐사의 효과는 연구로 확인됐습니다(4장). 남은 건 <tspan font-weight="bold" fill="#0B1E3C">PV5에 실었을 때도 정확한가</tspan>입니다.</text>
   </g>
   <g id="questions" data-pptx-bounds="56 186 1168 236">
     <g font-size="14" font-weight="bold" fill="#4B5563">
@@ -80,6 +80,6 @@
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">09 / 12</text>
+    <text x="1224" y="706" text-anchor="end">10 / 13</text>
   </g>
 </svg>

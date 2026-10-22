@@ -17,7 +17,7 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">그 사이 자라는 ‘얕은 공동’이 땅꺼짐 원인 1위입니다</text>
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">원인 1위 하수관 손상은 ‘얕은 공동’부터 만듭니다</text>
   </g>
   <g id="section" data-pptx-bounds="56 160 640 420">
     <image href="../images/ug_section_cut.png" x="56" y="166" width="640" height="407" preserveAspectRatio="xMidYMid meet" />
@@ -54,6 +54,6 @@
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">04 / 12</text>
+    <text x="1224" y="706" text-anchor="end">05 / 13</text>
   </g>
 </svg>
