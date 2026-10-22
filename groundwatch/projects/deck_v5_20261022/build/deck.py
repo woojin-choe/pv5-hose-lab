@@ -5,7 +5,7 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "svg_output")
 for _f in os.listdir(OUT):
     if _f.endswith(".svg"):
         os.remove(os.path.join(OUT, _f))
-N = 13
+N = 15
 NAVY, INK, SUB, MUTE, LINE, PALE = "#0B1E3C", "#111827", "#374151", "#4B5563", "#E2E6EC", "#F3F5F8"
 YEL, AMB, RED = "#F5B700", "#B45309", "#C62828"
 STEPS = ["문제", "해법", "PV5", "검증", "사업"]
@@ -213,15 +213,15 @@ svg("04_target.svg", head("문제", "우리가 막을 대상") + title("원인 1
 # ---------------------------------------------------------------- 05 해법
 svg("05_solution.svg", head("해법", "GroundWatch의 핵심") + title("같은 길을 약 2개월마다 다시 찍고, 달라진 곳만 다시 봅니다") + f'''  <g id="compare" data-pptx-bounds="56 160 680 400">
     <rect x="56" y="166" width="680" height="388" fill="#2A2E33" />
-    <image href="../images/bscan_prev_band.png" x="56" y="166" width="680" height="192" preserveAspectRatio="xMidYMid slice" />
-    <image href="../images/bscan_cur_band.png" x="56" y="362" width="680" height="192" preserveAspectRatio="xMidYMid slice" />
+    <image href="../images/sim_prev.png" x="56" y="166" width="680" height="192" preserveAspectRatio="none" />
+    <image href="../images/sim_cur.png" x="56" y="362" width="680" height="192" preserveAspectRatio="none" />
     <rect x="68" y="178" width="96" height="28" rx="3" fill="{NAVY}" fill-opacity="0.9" />
     <text x="116" y="198" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">지난 회차</text>
     <rect x="68" y="374" width="96" height="28" rx="3" fill="{NAVY}" fill-opacity="0.9" />
     <text x="116" y="394" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">이번 회차</text>
-    <rect x="410" y="400" width="300" height="140" fill="none" stroke="{YEL}" stroke-width="4" />
-    <rect x="410" y="370" width="150" height="28" fill="{YEL}" />
-    <text x="485" y="390" font-size="16" font-weight="bold" fill="{NAVY}" text-anchor="middle">새로 커진 신호</text>
+    <rect x="300" y="452" width="300" height="96" fill="none" stroke="{YEL}" stroke-width="4" />
+    <rect x="300" y="424" width="150" height="28" fill="{YEL}" />
+    <text x="375" y="444" font-size="16" font-weight="bold" fill="{NAVY}" text-anchor="middle">새로 커진 신호</text>
   </g>
   <g id="steps" data-pptx-bounds="784 166 440 388">
     <text x="784" y="196" font-size="15" font-weight="bold" fill="{MUTE}">1</text>
@@ -241,7 +241,7 @@ svg("05_solution.svg", head("해법", "GroundWatch의 핵심") + title("같은 �
     <text x="784" y="530" font-size="17" fill="{INK}">결과는 다음 순찰 경로에 다시 반영됩니다.</text>
   </g>
   {band(590, "AI는 볼 순서를 정할 뿐, 판정은 전문가가 하고 확정은 천공이 합니다.").strip()}
-''' + foot(5, "약 2개월 = 차량 1대가 연 6,600km를 달려 도로 약 1,000km를 연 6회 반복(11장, 가설) · B-scan 비교 화면은 설명용 예시"))
+''' + foot(5, "약 2개월 = 차량 1대가 연 6,600km를 달려 도로 약 1,000km를 연 6회 반복(13장, 가설) · 회차 화면은 2D 전자기 시뮬레이션 결과(7장)"))
 
 # ---------------------------------------------------------------- 07 PV5 탐사실 (6+7 통합)
 svg("07_pv5_lab.svg", head("PV5", "PV5 이동형 탐사실") + title("PV5 한 대가 그대로 이동형 탐사실이 됩니다") + f'''  <g id="cutaway" data-pptx-bounds="56 150 680 440">
@@ -351,7 +351,7 @@ print("ok")
 def verify():
     rows = [("EV 구동계와 GPR의 전자파 간섭", "차량에서 측정 자체가 불가", "주행·정차·V2L 상태별 잡음 비교"),
             ("회차마다 같은 자리를 찍는가", "변화 비교가 불가", "RTK·IMU·휠 인코더로 위치 정합"),
-            ("AI가 변화를 맞게 고르는가", "재확인 출동이 과다", "공동 모사체 구간 · 계절 보정"),
+            ("AI가 변화를 맞게 고르는가", "재확인 출동이 과다", "시뮬레이션 통과(7장) → 공동 모사체 실측"),
             ("밤에 AR이 정확히 맞는가", "현장 탐색 범위가 커짐", "맨홀·경계석 기준점 오차 측정")]
     b = f'''  <g id="lead" data-pptx-bounds="56 138 1168 28">
     <text x="56" y="160" font-size="19" fill="{SUB}">반복 탐사의 효과는 연구로 확인됐습니다(4장). 남은 건 <tspan font-weight="bold" fill="{NAVY}">PV5에 실었을 때도 정확한가</tspan>입니다.</text>
@@ -448,9 +448,9 @@ svg("10_economics.svg", econ())
 # ---------------------------------------------------------------- 02 한 장 요약 + 심사 기준별 근거 위치
 def summary():
     cols = [("문제", "검사 100여 일 뒤 함몰", "법정 점검 5년, 서울 1년.<tspan x='{x}' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='{x}' dy='22'>아무도 보지 못합니다.</tspan>", "3~5장"),
-            ("해법", "같은 길을 약 2개월마다", "PV5가 GPR로 다시 찍고,<tspan x='{x}' dy='22'>달라진 곳만 골라</tspan><tspan x='{x}' dy='22'>현장에서 재확인합니다.</tspan>", "6~7장"),
-            ("왜 PV5", "싣고·켜고·고정·복제", "카고룸 4,420L · V2L ·<tspan x='{x}' dy='22'>L-Track · 공식 컨버전 체계로</tspan><tspan x='{x}' dy='22'>같은 탐사실을 여러 대로.</tspan>", "8~9장"),
-            ("사업", "이미 있는 예산에서", "큰 지자체 GPR 용역 연 1.4~1.8억.<tspan x='{x}' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='{x}' dy='22'>흑자, 실증은 4단계로.</tspan>", "10~12장")]
+            ("해법", "같은 길을 약 2개월마다", "PV5가 GPR로 다시 찍고,<tspan x='{x}' dy='22'>달라진 곳만 골라</tspan><tspan x='{x}' dy='22'>현장에서 재확인합니다.</tspan>", "6~8장"),
+            ("왜 PV5", "차가 업무의 일부가 됨", "PIM·Navihelper로 차와 연동,<tspan x='{x}' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='{x}' dy='22'>공식 컨버전으로 복제.</tspan>", "9~11장"),
+            ("사업", "이미 있는 예산에서", "큰 지자체 GPR 용역 연 1.4~1.8억.<tspan x='{x}' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='{x}' dy='22'>흑자, 실증은 4단계로.</tspan>", "12~14장")]
     b = ""
     x = 56
     for i, (k, h, d, ref) in enumerate(cols):
@@ -463,7 +463,7 @@ def summary():
   </g>
 '''
         x += 298
-    crit = [("기술적 완성도", "30", "6·7·10장"), ("시장 실현성", "25", "11·12장"), ("혁신성", "20", "4·6장"), ("PV5 연계성", "15", "8·9장"), ("사회적 가치", "10", "3·5장")]
+    crit = [("기술적 완성도", "30", "7·8·12장"), ("시장 실현성", "25", "13·14장"), ("혁신성", "20", "4·7장"), ("PV5 연계성", "15", "9·10·11장"), ("사회적 가치", "10", "3·5장")]
     b += f'''  <g id="criteria" data-pptx-bounds="56 440 1168 120">
     <text x="56" y="462" font-size="15" font-weight="bold" fill="{MUTE}">심사 기준별 근거 위치</text>
 '''
@@ -479,6 +479,84 @@ def summary():
 
 
 svg("01b_summary.svg", summary())
+
+# ---------------------------------------------------------------- 07 혁신+증거: 기존 모니터링과의 차이, 시뮬레이션 검증
+def innovation():
+    b = f"""  <g id="compare" data-pptx-bounds="56 160 560 420">
+    <text x="56" y="186" font-size="15" font-weight="bold" fill="{MUTE}">기존 모니터링 (후지사와시·연구)</text>
+    <text x="330" y="186" font-size="15" font-weight="bold" fill="{NAVY}">GroundWatch</text>
+    <line x1="56" y1="198" x2="616" y2="198" stroke="{NAVY}" stroke-width="1.5" />
+"""
+    rows = [("다시 보는 곳", "이미 발견한 공동만", "‘이상 없음’ 구간까지 전체"),
+            ("판정 방식", "회차마다 따로 판독", "지난 회차와 맞춰 뺀 차이만"),
+            ("주기", "연구 노선 3개월 · 시 5년 계획", "업무 노선 약 2개월 [가설]"),
+            ("현장 확인", "별도 정밀조사 발주", "같은 차에서 바로 재탐사")]
+    y = 236
+    for k, a, g in rows:
+        b += f"""    <text x="56" y="{y - 22}" font-size="13" font-weight="bold" fill="{MUTE}">{k}</text>
+    <text x="56" y="{y + 4}" font-size="17" fill="{SUB}">{a}</text>
+    <text x="330" y="{y + 4}" font-size="17" font-weight="bold" fill="{NAVY}">{g}</text>
+    <line x1="56" y1="{y + 22}" x2="616" y2="{y + 22}" stroke="{LINE}" stroke-width="1" />
+"""
+        y += 84
+    b += "  </g>\n"
+    b += f"""  <g id="evidence" data-pptx-bounds="656 160 568 420">
+    <text x="656" y="186" font-size="15" font-weight="bold" fill="{AMB}">검증 · GPR 전자기 시뮬레이션 (실측 아님)</text>
+    <image href="../images/sim_diff.png" x="656" y="200" width="274" height="196" preserveAspectRatio="xMidYMid slice" />
+    <image href="../images/sim_ctrl.png" x="950" y="200" width="274" height="196" preserveAspectRatio="xMidYMid slice" />
+    <rect x="662" y="206" width="132" height="24" rx="3" fill="{NAVY}" fill-opacity="0.9" />
+    <text x="728" y="223" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">공동이 자란 회차</text>
+    <rect x="956" y="206" width="154" height="24" rx="3" fill="{NAVY}" fill-opacity="0.9" />
+    <text x="1033" y="223" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">변화 없는 회차(대조군)</text>
+    <text x="656" y="446" font-size="34" font-weight="bold" fill="{NAVY}">2,831</text>
+    <text x="656" y="470" font-size="15" fill="{SUB}">변화로 표시된 셀</text>
+    <text x="950" y="446" font-size="34" font-weight="bold" fill="{MUTE}">25</text>
+    <text x="950" y="470" font-size="15" fill="{SUB}">같은 기준의 오탐 셀 (약 1/113)</text>
+    <line x1="656" y1="490" x2="1224" y2="490" stroke="{LINE}" stroke-width="1" />
+    <text x="656" y="520" font-size="17" fill="{INK}">위치 오차 <tspan font-weight="bold" fill="{NAVY}">3cm</tspan> (추정 3.97m · 실제 4.00m)</text>
+    <text x="656" y="548" font-size="17" fill="{INK}">깊이 오차 <tspan font-weight="bold" fill="{RED}">17cm</tspan> (추정 1.05m · 실제 0.88m) → 실측 보정 과제</text>
+  </g>
+"""
+    b += band(596, "연구로 효과가 확인된 반복 모니터링을, 도로 전체의 상시 업무로 만듭니다.")
+    return head("해법", "무엇이 새로운가") + title("새 장비가 아니라 ‘변화를 판정하는 방법’이 새롭습니다") + b + foot(
+        7, "시뮬레이션: 2D FDTD · 400MHz · 토양 εr 9 · Ø0.8m 하수관 위 공동 반경 18→38cm · 함수비·잡음 변화 포함 · 출처: 후지사와시·지오서치 모니터링 보고(2025) · 일본 국토교통성 30-5")
+
+
+svg("05b_innovation.svg", innovation())
+
+
+# ---------------------------------------------------------------- 10 PV5 연동: 기아가 공개한 기능에만 근거
+def pv5link():
+    b = f"""  <g id="lead" data-pptx-bounds="56 138 1168 28">
+    <text x="56" y="160" font-size="18" fill="{SUB}">기아가 공개한 PV5 기능만 썼습니다. 실제 권한·범위는 기아 PBV 파트너 승인 후 확정합니다.</text>
+  </g>
+  <g id="photo" data-pptx-bounds="56 182 520 380">
+    <image href="../images/ivi_car_dash.png" x="56" y="182" width="520" height="380" preserveAspectRatio="xMidYMid slice" />
+    <rect x="66" y="192" width="214" height="26" rx="3" fill="{NAVY}" fill-opacity="0.9" />
+    <text x="173" y="210" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 12.9인치 · Pleos Connect</text>
+  </g>
+  <g id="links" data-pptx-bounds="616 182 608 380">
+"""
+    rows = [("Navihelper", "내비 목적지·경로 연계", "재확인 지점·순찰 경로를 차량 내비로 바로 안내"),
+            ("Vehicle API", "충전 상태·도어 등 차량 정보", "배터리 하한에서 장비 전원 정리, 문 열면 현장 모드"),
+            ("Gleo AI", "음성 명령·음성 인식", "운전자는 손 떼지 않고 ‘침하 의심’ 음성 기록"),
+            ("PIM 제어기·12V 블록", "IVI로 외부 전장 장비 제어", "차량 화면에서 GPR·작업등을 켜고 끔"),
+            ("Pleos App Market", "검증 후 지원 차종에 배포", "다른 지자체 PV5에 같은 앱을 설치")]
+    y = 204
+    for i, (k, f, u) in enumerate(rows):
+        b += f"""    <text x="616" y="{y}" font-size="19" font-weight="bold" fill="{NAVY}">{k} <tspan font-size="14" font-weight="normal" fill="{MUTE}">{f}</tspan></text>
+    <text x="616" y="{y + 26}" font-size="16" fill="{INK}">→ {u}</text>
+"""
+        if i < 4:
+            b += f'    <line x1="616" y1="{y + 44}" x2="1224" y2="{y + 44}" stroke="{LINE}" stroke-width="1" />\n'
+        y += 76
+    b += "  </g>\n" + band(590, "다른 밴은 장비를 싣는 데서 끝나지만, PV5에서는 차가 탐사 업무의 일부가 됩니다.")
+    return head("PV5", "PV5와 연결되는 지점") + title("GroundWatch는 PV5의 소프트웨어·전장 구조에 꽂힙니다") + b + foot(
+        10, "출처: 기아 PBV 아이디어 공모전 솔루션 부문 안내(Pleos Connect SDK·Vehicle API·Navihelper·Gleo AI·App Market) · 오토뷰(2026.1.28, PIM 제어기·12V 조인트 블록)")
+
+
+svg("07b_pv5link.svg", pv5link())
+
 
 # ---------------------------------------------------------------- 파일명·쪽번호를 최종 순서로
 names = sorted(f for f in os.listdir(OUT) if f.endswith(".svg"))

@@ -21,15 +21,15 @@
   </g>
   <g id="compare" data-pptx-bounds="56 160 680 400">
     <rect x="56" y="166" width="680" height="388" fill="#2A2E33" />
-    <image href="../images/bscan_prev_band.png" x="56" y="166" width="680" height="192" preserveAspectRatio="xMidYMid slice" />
-    <image href="../images/bscan_cur_band.png" x="56" y="362" width="680" height="192" preserveAspectRatio="xMidYMid slice" />
+    <image href="../images/sim_prev.png" x="56" y="166" width="680" height="192" preserveAspectRatio="none" />
+    <image href="../images/sim_cur.png" x="56" y="362" width="680" height="192" preserveAspectRatio="none" />
     <rect x="68" y="178" width="96" height="28" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
     <text x="116" y="198" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">지난 회차</text>
     <rect x="68" y="374" width="96" height="28" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
     <text x="116" y="394" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">이번 회차</text>
-    <rect x="410" y="400" width="300" height="140" fill="none" stroke="#F5B700" stroke-width="4" />
-    <rect x="410" y="370" width="150" height="28" fill="#F5B700" />
-    <text x="485" y="390" font-size="16" font-weight="bold" fill="#0B1E3C" text-anchor="middle">새로 커진 신호</text>
+    <rect x="300" y="452" width="300" height="96" fill="none" stroke="#F5B700" stroke-width="4" />
+    <rect x="300" y="424" width="150" height="28" fill="#F5B700" />
+    <text x="375" y="444" font-size="16" font-weight="bold" fill="#0B1E3C" text-anchor="middle">새로 커진 신호</text>
   </g>
   <g id="steps" data-pptx-bounds="784 166 440 388">
     <text x="784" y="196" font-size="15" font-weight="bold" fill="#4B5563">1</text>
@@ -53,10 +53,10 @@
     <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">AI는 볼 순서를 정할 뿐, 판정은 전문가가 하고 확정은 천공이 합니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="12" fill="#4B5563">약 2개월 = 차량 1대가 연 6,600km를 달려 도로 약 1,000km를 연 6회 반복(11장, 가설) · B-scan 비교 화면은 설명용 예시</text>
+    <text x="56" y="682" font-size="12" fill="#4B5563">약 2개월 = 차량 1대가 연 6,600km를 달려 도로 약 1,000km를 연 6회 반복(13장, 가설) · 회차 화면은 2D 전자기 시뮬레이션 결과(7장)</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">06 / 13</text>
+    <text x="1224" y="706" text-anchor="end">06 / 15</text>
   </g>
 </svg>

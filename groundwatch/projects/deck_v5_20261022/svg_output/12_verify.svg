@@ -42,7 +42,7 @@
     <text x="56" y="350" font-size="15" font-weight="bold" fill="#4B5563">3</text>
     <text x="80" y="350" font-size="19" font-weight="bold" fill="#0B1E3C">AI가 변화를 맞게 고르는가</text>
     <text x="520" y="350" font-size="17" fill="#C62828">재확인 출동이 과다</text>
-    <text x="820" y="350" font-size="17" fill="#111827">공동 모사체 구간 · 계절 보정</text>
+    <text x="820" y="350" font-size="17" fill="#111827">시뮬레이션 통과(7장) → 공동 모사체 실측</text>
     <line x1="56" y1="368" x2="1224" y2="368" stroke="#E2E6EC" stroke-width="1" />
     <text x="56" y="398" font-size="15" font-weight="bold" fill="#4B5563">4</text>
     <text x="80" y="398" font-size="19" font-weight="bold" fill="#0B1E3C">밤에 AR이 정확히 맞는가</text>
@@ -80,6 +80,6 @@
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">10 / 13</text>
+    <text x="1224" y="706" text-anchor="end">12 / 15</text>
   </g>
 </svg>
