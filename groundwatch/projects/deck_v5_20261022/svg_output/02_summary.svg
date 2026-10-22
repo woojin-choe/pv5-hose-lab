@@ -36,14 +36,14 @@
     <rect x="652" y="168" width="274" height="3" fill="#0B1E3C" />
     <text x="652" y="202" font-size="16" font-weight="bold" fill="#B45309">왜 PV5</text>
     <text x="652" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">차가 업무의 일부가 됨</text>
-    <text x="652" y="282" font-size="17" fill="#374151">PIM·Navihelper로 차와 연동,<tspan x='652' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='652' dy='22'>공식 컨버전으로 복제.</tspan></text>
+    <text x="652" y="282" font-size="17" fill="#374151">차량 내비·화면과 연동하고,<tspan x='652' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='652' dy='22'>공식 컨버전으로 복제.</tspan></text>
     <text x="652" y="372" font-size="14" fill="#4B5563">자세히 → 9~11장</text>
   </g>
   <g id="col3" data-pptx-bounds="950 168 274 260">
     <rect x="950" y="168" width="274" height="3" fill="#0B1E3C" />
     <text x="950" y="202" font-size="16" font-weight="bold" fill="#B45309">사업</text>
     <text x="950" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">이미 있는 예산에서</text>
-    <text x="950" y="282" font-size="17" fill="#374151">큰 지자체 GPR 용역 연 1.4~1.8억.<tspan x='950' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='950' dy='22'>흑자, 실증은 4단계로.</tspan></text>
+    <text x="950" y="282" font-size="17" fill="#374151">구·시 GPR 용역 연 1.4~1.8억.<tspan x='950' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='950' dy='22'>흑자, 실증은 4단계로.</tspan></text>
     <text x="950" y="372" font-size="14" fill="#4B5563">자세히 → 13~15장</text>
   </g>
   <g id="criteria" data-pptx-bounds="56 440 1168 120">

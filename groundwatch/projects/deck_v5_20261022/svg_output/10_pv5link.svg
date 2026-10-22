@@ -45,7 +45,7 @@
   </g>
   <g id="conclusion" data-pptx-bounds="56 590 1168 44">
     <rect x="56" y="590" width="4" height="44" fill="#F5B700" />
-    <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">다른 밴은 장비를 싣는 데서 끝나지만, PV5에서는 차가 탐사 업무의 일부가 됩니다.</text>
+    <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">장비를 싣는 것을 넘어, PV5에서는 차가 탐사 업무의 일부가 됩니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
     <text x="56" y="682" font-size="12" fill="#4B5563">출처: 기아 PBV 아이디어 공모전 솔루션 부문 안내(Pleos Connect SDK·Vehicle API·Navihelper·Gleo AI·App Market) · 오토뷰(2026.1.28, PIM 제어기·12V 조인트 블록)</text>

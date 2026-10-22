@@ -49,9 +49,9 @@
     <rect x="956" y="206" width="154" height="24" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
     <text x="1033" y="223" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">변화 없는 회차(대조군)</text>
     <text x="656" y="446" font-size="34" font-weight="bold" fill="#0B1E3C">2,831</text>
-    <text x="656" y="470" font-size="15" fill="#374151">변화로 표시된 셀</text>
+    <text x="656" y="470" font-size="15" fill="#374151">변화로 표시된 화소</text>
     <text x="950" y="446" font-size="34" font-weight="bold" fill="#4B5563">25</text>
-    <text x="950" y="470" font-size="15" fill="#374151">같은 기준의 오탐 셀 (약 1/113)</text>
+    <text x="950" y="470" font-size="15" fill="#374151">같은 기준의 오탐 화소 (약 1/113)</text>
     <line x1="656" y1="490" x2="1224" y2="490" stroke="#E2E6EC" stroke-width="1" />
     <text x="656" y="520" font-size="17" fill="#111827">위치 오차 <tspan font-weight="bold" fill="#0B1E3C">3cm</tspan> (추정 3.97m · 실제 4.00m)</text>
     <text x="656" y="548" font-size="17" fill="#111827">깊이 오차 <tspan font-weight="bold" fill="#C62828">17cm</tspan> (추정 1.05m · 실제 0.88m) → 실측 보정 과제</text>

@@ -47,7 +47,7 @@
     <circle cx="616" cy="404" r="16" fill="#C62828" />
     <text x="636" y="364" font-size="16" font-weight="bold" fill="#C62828" text-anchor="end">2024. 8. 29</text>
     <text x="636" y="386" font-size="15" fill="#C62828" text-anchor="end">도로 함몰</text>
-    <text x="356" y="444" font-size="16" fill="#374151" text-anchor="middle">이 사이의 변화는 아무도 보지 못했습니다</text>
+    <text x="356" y="444" font-size="16" fill="#374151" text-anchor="middle">그 사이 지하에서 무슨 일이 있었는지는 기록이 없습니다</text>
   </g>
   <g id="facts" data-pptx-bounds="56 488 600 110">
     <line x1="56" y1="492" x2="636" y2="492" stroke="#E2E6EC" stroke-width="1" />

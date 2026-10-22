@@ -132,7 +132,7 @@ svg("02_incident.svg", head("문제", "실제로 일어난 일") + f'''  <defs>
     <circle cx="616" cy="404" r="16" fill="{RED}" />
     <text x="636" y="364" font-size="16" font-weight="bold" fill="{RED}" text-anchor="end">2024. 8. 29</text>
     <text x="636" y="386" font-size="15" fill="{RED}" text-anchor="end">도로 함몰</text>
-    <text x="356" y="444" font-size="16" fill="{SUB}" text-anchor="middle">이 사이의 변화는 아무도 보지 못했습니다</text>
+    <text x="356" y="444" font-size="16" fill="{SUB}" text-anchor="middle">그 사이 지하에서 무슨 일이 있었는지는 기록이 없습니다</text>
   </g>
   <g id="facts" data-pptx-bounds="56 488 600 110">
     <line x1="56" y1="492" x2="636" y2="492" stroke="{LINE}" stroke-width="1" />
@@ -172,7 +172,7 @@ svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹�
     <text x="784" y="250" font-size="26" font-weight="bold" fill="{NAVY}">“예상보다 단기간에</text>
     <text x="784" y="286" font-size="26" font-weight="bold" fill="{NAVY}">공동이 성장할 수 있다”</text>
     <text x="784" y="330" font-size="16" fill="{SUB}">일본 국토교통성 위탁연구</text>
-    <text x="784" y="352" font-size="16" fill="{SUB}">(도쿄대·지오서치, 2018~2020)</text>
+    <text x="784" y="352" font-size="16" fill="{SUB}">(도쿄대·지오서치, 2018~2020 · 원문 번역)</text>
     <line x1="784" y1="380" x2="1224" y2="380" stroke="{LINE}" stroke-width="1" />
     <text x="784" y="414" font-size="16" fill="{INK}">같은 도로를 반복 모니터링하자</text>
     <text x="784" y="438" font-size="16" fill="{INK}">지하 1.64m 하수관 위 공동이</text>
@@ -203,7 +203,7 @@ svg("04_target.svg", head("문제", "우리가 막을 대상") + title("원인 1
   <g id="scope" data-pptx-bounds="744 340 480 220">
     <rect x="744" y="340" width="480" height="3" fill="{YEL}" />
     <text x="744" y="378" font-size="19" font-weight="bold" fill="{NAVY}">얕은 공동형 · 약 2m 이내 → GroundWatch 대상</text>
-    <text x="744" y="404" font-size="16" fill="{SUB}">공동이 먼저 생겨 함몰 전에 GPR로 찾을 수 있음</text>
+    <text x="744" y="404" font-size="16" fill="{SUB}">공동이 먼저 생겨 자람 → 반복 측정으로 잡을 수 있음</text>
     <rect x="744" y="440" width="480" height="3" fill="#C3CCD9" />
     <text x="744" y="478" font-size="19" font-weight="bold" fill="{MUTE}">심부 붕괴형 · 예: 명일동 16m → 대상 아님</text>
     <text x="744" y="504" font-size="16" fill="{SUB}">깊은 지층·터널 공사 영역은 공사장 계측이 맡음</text>
@@ -294,7 +294,7 @@ svg("12_closing.svg", f'''  <defs>
     <text x="64" y="306" font-size="20" fill="#9FB0C8">장비를 실은 차</text>
     <text x="64" y="338" font-size="25" font-weight="bold" fill="#FFFFFF">→ 업무에 연동된 PV5 탐사실</text>
     <text x="64" y="384" font-size="20" fill="#9FB0C8">기아에게</text>
-    <text x="64" y="416" font-size="25" font-weight="bold" fill="#FFFFFF">→ 장비 포함 2억 원대 컨버전 PV5</text>
+    <text x="64" y="416" font-size="25" font-weight="bold" fill="#FFFFFF">→ 장비 포함 대당 2.5억 원 이상 컨버전 PV5</text>
   </g>
   <g id="closing" data-pptx-bounds="64 474 620 150">
     <rect x="64" y="480" width="48" height="3" fill="{YEL}" />
@@ -446,7 +446,7 @@ def econ():
   </g>
   <g id="basis" data-pptx-bounds="56 532 1168 50">
     <text x="56" y="552" font-size="15" fill="{SUB}">비용 = PV5·GPR(2억~5억, 서울시 대당 약 5억) 5년 감가 + 2인 인건비 1억 + 유지 0.3억 · 하루 30km×220일 → 도로 1,000km를 약 2개월마다</text>
-    <text x="56" y="576" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{RED}">핵심 가설</tspan> 기존 용역은 km당 약 200만 원(경기도 21.6억÷1,080km, 판독·보고 포함). 차이만 판독해 이 단가를 낮춘다 → 실증 3·4단계</text>
+    <text x="56" y="576" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{RED}">핵심 가설</tspan> 지자체는 지금 예산 그대로, 우리는 차이만 판독해 같은 돈으로 연 1회 → 연 6회 → 실증 3·4단계</text>
   </g>
 '''
     b += band(600, "비용은 연 약 2억 원. 지자체 2곳부터 수입이 비용을 넘습니다.")
@@ -461,8 +461,8 @@ svg("10_economics.svg", econ())
 def summary():
     cols = [("문제", "탐사 100여 일 뒤 함몰", "법정 점검 5년, 서울 1년.<tspan x='{x}' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='{x}' dy='22'>아무도 보지 못합니다.</tspan>", "3~5장"),
             ("해법", "같은 길을 약 2개월마다", "PV5가 GPR로 다시 찍고,<tspan x='{x}' dy='22'>달라진 곳만 골라</tspan><tspan x='{x}' dy='22'>현장에서 재확인합니다.</tspan>", "6~8장"),
-            ("왜 PV5", "차가 업무의 일부가 됨", "PIM·Navihelper로 차와 연동,<tspan x='{x}' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='{x}' dy='22'>공식 컨버전으로 복제.</tspan>", "9~11장"),
-            ("사업", "이미 있는 예산에서", "큰 지자체 GPR 용역 연 1.4~1.8억.<tspan x='{x}' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='{x}' dy='22'>흑자, 실증은 4단계로.</tspan>", "13~15장")]
+            ("왜 PV5", "차가 업무의 일부가 됨", "차량 내비·화면과 연동하고,<tspan x='{x}' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='{x}' dy='22'>공식 컨버전으로 복제.</tspan>", "9~11장"),
+            ("사업", "이미 있는 예산에서", "구·시 GPR 용역 연 1.4~1.8억.<tspan x='{x}' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='{x}' dy='22'>흑자, 실증은 4단계로.</tspan>", "13~15장")]
     b = ""
     x = 56
     for i, (k, h, d, ref) in enumerate(cols):
@@ -521,9 +521,9 @@ def innovation():
     <rect x="956" y="206" width="154" height="24" rx="3" fill="{NAVY}" fill-opacity="0.9" />
     <text x="1033" y="223" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">변화 없는 회차(대조군)</text>
     <text x="656" y="446" font-size="34" font-weight="bold" fill="{NAVY}">2,831</text>
-    <text x="656" y="470" font-size="15" fill="{SUB}">변화로 표시된 셀</text>
+    <text x="656" y="470" font-size="15" fill="{SUB}">변화로 표시된 화소</text>
     <text x="950" y="446" font-size="34" font-weight="bold" fill="{MUTE}">25</text>
-    <text x="950" y="470" font-size="15" fill="{SUB}">같은 기준의 오탐 셀 (약 1/113)</text>
+    <text x="950" y="470" font-size="15" fill="{SUB}">같은 기준의 오탐 화소 (약 1/113)</text>
     <line x1="656" y1="490" x2="1224" y2="490" stroke="{LINE}" stroke-width="1" />
     <text x="656" y="520" font-size="17" fill="{INK}">위치 오차 <tspan font-weight="bold" fill="{NAVY}">3cm</tspan> (추정 3.97m · 실제 4.00m)</text>
     <text x="656" y="548" font-size="17" fill="{INK}">깊이 오차 <tspan font-weight="bold" fill="{RED}">17cm</tspan> (추정 1.05m · 실제 0.88m) → 실측 보정 과제</text>
@@ -562,7 +562,7 @@ def pv5link():
         if i < 4:
             b += f'    <line x1="616" y1="{y + 44}" x2="1224" y2="{y + 44}" stroke="{LINE}" stroke-width="1" />\n'
         y += 76
-    b += "  </g>\n" + band(590, "다른 밴은 장비를 싣는 데서 끝나지만, PV5에서는 차가 탐사 업무의 일부가 됩니다.")
+    b += "  </g>\n" + band(590, "장비를 싣는 것을 넘어, PV5에서는 차가 탐사 업무의 일부가 됩니다.")
     return head("PV5", "PV5와 연결되는 지점") + title("GroundWatch는 PV5의 소프트웨어·전장 구조에 꽂힙니다") + b + foot(
         10, "출처: 기아 PBV 아이디어 공모전 솔루션 부문 안내(Pleos Connect SDK·Vehicle API·Navihelper·Gleo AI·App Market) · 오토뷰(2026.1.28, PIM 제어기·12V 조인트 블록)")
 
@@ -575,13 +575,13 @@ def withkia():
     <text x="56" y="186" font-size="15" font-weight="bold" fill="{AMB}">기아에게 생기는 수요 (계산)</text>
     <rect x="56" y="200" width="540" height="3" fill="{NAVY}" />
     <text x="56" y="268" font-size="64" font-weight="bold" fill="{NAVY}" letter-spacing="-2">약 97대</text>
-    <text x="56" y="300" font-size="17" fill="{INK}">지자체 관리 도로 96,712km를 약 2개월마다 보려면</text>
+    <text x="56" y="300" font-size="17" fill="{INK}">지자체 관리 도로 전 구간을 약 2개월마다 볼 때(최대치)</text>
     <text x="56" y="324" font-size="15" fill="{SUB}">96,712km ÷ 차량 1대 담당 약 1,000km</text>
     <line x1="56" y1="352" x2="596" y2="352" stroke="{LINE}" stroke-width="1" />
     <text x="56" y="400" font-size="34" font-weight="bold" fill="{NAVY}">약 8대</text>
     <text x="230" y="392" font-size="17" fill="{INK}">서울 도로 8,342km만 맡을 때</text>
-    <text x="56" y="452" font-size="34" font-weight="bold" fill="{NAVY}">2억 원대</text>
-    <text x="230" y="444" font-size="17" fill="{INK}">장비 포함 컨버전 PV5 1대 가격대</text>
+    <text x="56" y="452" font-size="34" font-weight="bold" fill="{NAVY}">2.5억~5.5억</text>
+    <text x="300" y="444" font-size="17" fill="{INK}">장비 포함 PV5 1대<tspan x="300" dy="22" font-size="15" fill="{SUB}">GPR 2억~5억 + 차량</tspan></text>
     <text x="56" y="500" font-size="15" fill="{SUB}">대수는 많지 않지만, 대당 가격이 높고 공공 레퍼런스가 되는</text>
     <text x="56" y="522" font-size="15" fill="{SUB}">‘PV5 + 업무 앱’ 패키지의 첫 사례입니다.</text>
   </g>

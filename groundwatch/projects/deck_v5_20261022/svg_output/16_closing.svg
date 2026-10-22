@@ -19,7 +19,7 @@
     <text x="64" y="306" font-size="20" fill="#9FB0C8">장비를 실은 차</text>
     <text x="64" y="338" font-size="25" font-weight="bold" fill="#FFFFFF">→ 업무에 연동된 PV5 탐사실</text>
     <text x="64" y="384" font-size="20" fill="#9FB0C8">기아에게</text>
-    <text x="64" y="416" font-size="25" font-weight="bold" fill="#FFFFFF">→ 장비 포함 2억 원대 컨버전 PV5</text>
+    <text x="64" y="416" font-size="25" font-weight="bold" fill="#FFFFFF">→ 장비 포함 대당 2.5억 원 이상 컨버전 PV5</text>
   </g>
   <g id="closing" data-pptx-bounds="64 474 620 150">
     <rect x="64" y="480" width="48" height="3" fill="#F5B700" />
