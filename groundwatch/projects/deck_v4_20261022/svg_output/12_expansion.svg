@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="44" height="24" fill="#F5B700" />
+    <text x="218" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">확장</text>
+    <text x="252" y="45" font-size="14" fill="#4B5563">확장 가능성</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">한 대의 반복 순찰차에서 도시 지하 안전망으로 확장합니다</text>
+  </g>
+  <g id="patrol-map" data-pptx-bounds="56 150 680 446">
+    <image href="../images/ug_patrol.png" x="56" y="150" width="680" height="383" preserveAspectRatio="xMidYMid slice" />
+    <rect x="68" y="162" width="252" height="24" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
+    <text x="80" y="179" font-size="13" font-weight="bold" fill="#FFFFFF">위험도별 순찰 경로 예시 · 강동구 명일동 일대</text>
+    <g font-size="14" fill="#111827">
+      <rect x="56" y="552" width="22" height="6" fill="#E03131" />
+      <text x="84" y="559">집중관리 매일~주 1회</text>
+      <rect x="250" y="552" width="22" height="6" fill="#F08C00" />
+      <text x="278" y="559">노후 하수관·공사장 주 1회</text>
+      <rect x="476" y="552" width="22" height="6" fill="#4E8FD9" />
+      <text x="504" y="559">역세권 월 1회</text>
+      <rect x="56" y="578" width="22" height="6" fill="#3BA55C" />
+      <text x="84" y="585">일반 관리 분기~반기</text>
+      <rect x="250" y="578" width="22" height="6" fill="#8B5CF6" />
+      <text x="278" y="585">집중호우 이후 긴급 조사</text>
+      <text x="476" y="585" fill="#4B5563">주기는 발주기관과 합의 [예시]</text>
+    </g>
+  </g>
+  <g id="stages" data-pptx-bounds="776 150 448 446">
+    <line x1="792" y1="182" x2="792" y2="534" stroke="#C9D3E2" stroke-width="2" />
+    <g font-size="15" font-weight="bold" text-anchor="middle">
+      <circle cx="792" cy="176" r="15" fill="#E8ECF2" />
+      <text x="792" y="181" fill="#0B1E3C">1</text>
+      <circle cx="792" cy="264" r="15" fill="#C9D3E2" />
+      <text x="792" y="269" fill="#0B1E3C">2</text>
+      <circle cx="792" cy="352" r="15" fill="#2E4A78" />
+      <text x="792" y="357" fill="#FFFFFF">3</text>
+      <circle cx="792" cy="440" r="15" fill="#1C2F52" />
+      <text x="792" y="445" fill="#FFFFFF">4</text>
+      <circle cx="792" cy="528" r="15" fill="#0B1E3C" />
+      <text x="792" y="533" fill="#F5B700">5</text>
+    </g>
+    <g fill="#111827">
+      <text x="822" y="184" font-size="21" font-weight="bold">파일럿</text>
+      <text x="822" y="210" font-size="17" fill="#4B5563">지하철 공사구간·노후 하수관 주변</text>
+      <text x="822" y="272" font-size="21" font-weight="bold">자치구 정기 순찰</text>
+      <text x="822" y="298" font-size="17" fill="#4B5563">위험도별 주기로 같은 길을 반복 관리</text>
+      <text x="822" y="360" font-size="21" font-weight="bold">PV5 플릿 운영</text>
+      <text x="822" y="386" font-size="17" fill="#4B5563">여러 대가 권역을 나눠 같은 기준으로 순찰</text>
+      <text x="822" y="448" font-size="21" font-weight="bold">지하 데이터 결합</text>
+      <text x="822" y="474" font-size="17" fill="#4B5563">하수관·굴착공사·지하수·강우·보수 이력</text>
+      <text x="822" y="536" font-size="21" font-weight="bold">4D 도시 지하 변화지도</text>
+      <text x="822" y="562" font-size="17" fill="#4B5563">계약기관이 접근권한 안에서 활용</text>
+    </g>
+  </g>
+  <g id="targets" data-pptx-bounds="56 606 1168 40" fill="#0B1E3C">
+    <text x="56" y="632" font-size="16" font-weight="bold">확장 대상</text>
+    <g font-size="15">
+      <rect x="140" y="610" width="196" height="32" rx="16" fill="none" stroke="#9AA3AF" stroke-width="1" />
+      <text x="238" y="631" text-anchor="middle">서울시·자치구 도로관리</text>
+      <rect x="348" y="610" width="186" height="32" rx="16" fill="none" stroke="#9AA3AF" stroke-width="1" />
+      <text x="441" y="631" text-anchor="middle">도시철도 공사 영향구간</text>
+      <rect x="546" y="610" width="160" height="32" rx="16" fill="none" stroke="#9AA3AF" stroke-width="1" />
+      <text x="626" y="631" text-anchor="middle">상하수도 관리기관</text>
+      <rect x="718" y="610" width="236" height="32" rx="16" fill="none" stroke="#9AA3AF" stroke-width="1" />
+      <text x="836" y="631" text-anchor="middle">대형 굴착공사 발주기관·시공사</text>
+      <rect x="966" y="610" width="178" height="32" rx="16" fill="none" stroke="#9AA3AF" stroke-width="1" />
+      <text x="1055" y="631" text-anchor="middle">집중호우 후 긴급 탐사</text>
+    </g>
+  </g>
+  <g id="data-policy" data-pptx-bounds="56 652 1168 28">
+    <text x="56" y="672" font-size="15" fill="#4B5563"><tspan font-weight="bold" fill="#C62828">지하 데이터는 판매하지 않습니다.</tspan> 계약기관 내부의 접근제어형 관제 서비스로만 제공합니다 · 지도 데이터 © OpenStreetMap contributors</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">12 / 15</text>
+  </g>
+</svg>

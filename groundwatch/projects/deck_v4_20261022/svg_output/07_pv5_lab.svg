@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="57" height="24" fill="#F5B700" />
+    <text x="224.5" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">솔루션</text>
+    <text x="265" y="45" font-size="14" fill="#374151">PV5 이동형 탐사실</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">PV5 한 대가 측정 장비와 재검증 장비를 함께 싣습니다</text>
+  </g>
+  <g id="cutaway" data-pptx-bounds="56 140 666 444">
+    <image href="../images/cutaway_fixed.png" x="56" y="140" width="666" height="444" preserveAspectRatio="xMidYMid meet" />
+    <g font-size="16" font-weight="bold" text-anchor="middle">
+      <circle cx="346" cy="362" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="346" y="368" fill="#0B1E3C">A</text>
+      <circle cx="458" cy="300" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="458" y="306" fill="#0B1E3C">B</text>
+      <circle cx="603" cy="318" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="603" y="324" fill="#0B1E3C">C</text>
+    </g>
+  </g>
+  <g id="zone-legend" data-pptx-bounds="760 146 464 300">
+    <text x="760" y="164" font-size="16" font-weight="bold" fill="#0B1E3C">화물실 구성 <tspan font-weight="normal" fill="#374151">· 카고룸 2,255×1,565×1,520mm · 적재고 419mm</tspan></text>
+    <circle cx="774" cy="200" r="14" fill="#F5B700" />
+    <text x="774" y="206" font-size="15" font-weight="bold" fill="#0B1E3C" text-anchor="middle">A</text>
+    <text x="800" y="207" font-size="21" font-weight="bold" fill="#111827">화물실 전방 · 분석</text>
+    <text x="800" y="234" font-size="17" fill="#374151">Edge Gateway · 엣지 AI 컴퓨터 · GPR 제어<tspan x="800" dy="23">저장장치 · 보안 네트워크 · RTK 수신 · 전원 분배</tspan></text>
+    <circle cx="774" cy="298" r="14" fill="#F5B700" />
+    <text x="774" y="304" font-size="15" font-weight="bold" fill="#0B1E3C" text-anchor="middle">B</text>
+    <text x="800" y="305" font-size="21" font-weight="bold" fill="#111827">화물실 측면 · 재검증</text>
+    <text x="800" y="332" font-size="17" fill="#374151">지면 밀착형 수동 GPR · 산업용 AR 글래스<tspan x="800" dy="23">AR 충전·보관함 · RTK 이동국 · 교체형 안테나</tspan></text>
+    <circle cx="774" cy="396" r="14" fill="#F5B700" />
+    <text x="774" y="402" font-size="15" font-weight="bold" fill="#0B1E3C" text-anchor="middle">C</text>
+    <text x="800" y="403" font-size="21" font-weight="bold" fill="#111827">화물실 후방 · 안전</text>
+    <text x="800" y="430" font-size="17" fill="#374151">관로 내시경 · 작업 조명 · 라바콘 · 개인보호장비</text>
+  </g>
+  <g id="under-gpr" data-pptx-bounds="760 456 464 128">
+    <line x1="760" y1="458" x2="1224" y2="458" stroke="#D5DAE1" stroke-width="1" />
+    <image href="../images/pv5_rear_gpr_crop.png" x="760" y="472" width="180" height="108" preserveAspectRatio="xMidYMid slice" />
+    <rect x="764" y="476" width="72" height="20" rx="3" fill="#0B1E3C" fill-opacity="0.88" />
+    <text x="800" y="491" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">후방 장착형</text>
+    <text x="958" y="494" font-size="19" font-weight="bold" fill="#111827">차량형 다채널 GPR</text>
+    <text x="958" y="520" font-size="15" fill="#374151">하부형(왼쪽)과 후방 장착형(사진)<tspan x="958" dy="21">중 지상고·배터리 팩 간섭</tspan><tspan x="958" dy="21">시험으로 확정 <tspan fill="#4B5563">[설계 판단]</tspan></tspan></text>
+  </g>
+  <g id="budget" data-pptx-bounds="56 596 1168 66">
+    <line x1="56" y1="598" x2="1224" y2="598" stroke="#0B1E3C" stroke-width="2" />
+    <text x="56" y="628" font-size="19" font-weight="bold" fill="#0B1E3C">적재·전력 예산</text>
+    <text x="56" y="652" font-size="14" fill="#374151">[가설] 실증으로 확인</text>
+    <text x="300" y="630" font-size="24" font-weight="bold" fill="#0B1E3C">약 300kg <tspan font-size="18" fill="#4B5563">/ <tspan>600kg</tspan></tspan></text>
+    <text x="300" y="652" font-size="14" fill="#374151">장비 합계 · 최대 적재의 절반</text>
+    <text x="610" y="630" font-size="24" font-weight="bold" fill="#0B1E3C">약 1.5kW <tspan font-size="18" fill="#4B5563">/ 3.6kW</tspan></text>
+    <text x="610" y="652" font-size="14" fill="#374151">장비 소비전력 · V2L 최대 출력(해외 제원) 안</text>
+    <text x="920" y="630" font-size="24" font-weight="bold" fill="#0B1E3C">약 10kWh <tspan font-size="18" fill="#4B5563">/ 71.2kWh</tspan></text>
+    <text x="920" y="652" font-size="14" fill="#374151">하루 주행+장비 · 배터리의 약 14%</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 664 1168 28">
+    <text x="56" y="674" font-size="12" fill="#4B5563">가정: 하루 3시간·시속 10km 순찰(30km) · 장비 1.5kW 이하 · 수동 GPR 카트 약 27~34kg(GSSI UtilityScan Pro, 60~75lb)<tspan x="56" dy="15">실증 필요: 총중량·축하중·전자파 간섭·구조변경 승인 · 출처: 기아 PV5 카고 제원 · 배치도는 PV5 기반 콘셉트 이미지</tspan></text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">07 / 15</text>
+  </g>
+</svg>

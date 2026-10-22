@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs>
+    <linearGradient id="roadFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05070B" stop-opacity="0" />
+      <stop offset="100%" stop-color="#05070B" stop-opacity="0.85" />
+    </linearGradient>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 560 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="44" height="24" fill="#F5B700" />
+    <text x="218" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">문제</text>
+    <text x="252" y="45" font-size="14" fill="#374151">현재 문제상황</text>
+    <line x1="56" y1="62" x2="600" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="incident-map" data-pptx-bounds="640 0 640 720">
+    <image href="../images/myeongil_crop.png" x="640" y="0" width="640" height="720" preserveAspectRatio="xMidYMid slice" />
+    <rect x="640" y="380" width="640" height="340" fill="url(#roadFade)" />
+    <circle cx="1101" cy="431" r="54" fill="#E5484D" fill-opacity="0.14" />
+    <circle cx="1101" cy="431" r="28" fill="#E5484D" fill-opacity="0.32" />
+    <circle cx="1101" cy="431" r="8" fill="#FF5A5F" stroke="#FFFFFF" stroke-width="2" />
+    <rect x="846" y="312" width="226" height="58" rx="4" fill="#0B1E3C" fill-opacity="0.92" />
+    <text x="860" y="336" font-size="16" font-weight="bold" fill="#FFFFFF">2025. 3. 24 사고 지점</text>
+    <text x="860" y="358" font-size="14" fill="#D6DDE8">동남로 대명초교 사거리 인근</text>
+    <line x1="1066" y1="360" x2="1086" y2="414" stroke="#FFFFFF" stroke-width="1.2" />
+    <text x="680" y="568" font-size="30" font-weight="bold" fill="#FFFFFF">평범한 도로가<tspan x="680" dy="44">한 사람의 마지막 길이 되었습니다.</tspan></text>
+    <text x="680" y="684" font-size="12" fill="#C3CCD9">서울 강동구 명일동 일대 · 지도 데이터 © OpenStreetMap contributors · 위치는 보도 기준 인근 표시</text>
+  </g>
+  <g id="incident-date" data-pptx-bounds="56 132 544 28">
+    <text x="56" y="152" font-size="18" font-weight="bold" fill="#C62828">2025. 3. 24 · 서울 강동구 명일동</text>
+  </g>
+  <g id="title" data-pptx-bounds="50 166 550 172" letter-spacing="-1" font-weight="bold">
+    <text x="56" y="206" font-size="40" fill="#0B1E3C">도로가 무너지기까지</text>
+    <text x="52" y="300" font-size="96" fill="#C62828" letter-spacing="-3">1~2분</text>
+  </g>
+  <g id="fact-size" data-pptx-bounds="56 342 544 64">
+    <line x1="56" y1="346" x2="600" y2="346" stroke="#D5DAE1" stroke-width="1" />
+    <text x="56" y="390" font-size="36" font-weight="bold" fill="#111827">22m × 18m</text>
+    <text x="600" y="388" font-size="17" fill="#374151" text-anchor="end">붕괴 규모 (길이 × 폭)</text>
+  </g>
+  <g id="fact-depth" data-pptx-bounds="56 412 544 64">
+    <line x1="56" y1="416" x2="600" y2="416" stroke="#D5DAE1" stroke-width="1" />
+    <text x="56" y="460" font-size="36" font-weight="bold" fill="#111827">16m</text>
+    <text x="600" y="458" font-size="17" fill="#374151" text-anchor="end">깊이</text>
+  </g>
+  <g id="fact-casualty" data-pptx-bounds="56 482 544 64">
+    <line x1="56" y1="486" x2="600" y2="486" stroke="#D5DAE1" stroke-width="1" />
+    <text x="56" y="530" font-size="36" font-weight="bold" fill="#111827">사망 1 · 부상 1</text>
+    <text x="600" y="528" font-size="17" fill="#374151" text-anchor="end">인명 피해</text>
+    <line x1="56" y1="546" x2="600" y2="546" stroke="#D5DAE1" stroke-width="1" />
+  </g>
+  <g id="bridge-line" data-pptx-bounds="56 568 544 70">
+    <rect x="56" y="572" width="4" height="58" fill="#F5B700" />
+    <text x="76" y="594" font-size="20" font-weight="bold" fill="#0B1E3C">붕괴는 갑자기 보였지만,<tspan x="76" dy="30">위험은 지하에서 먼저 시작됐습니다.</tspan></text>
+  </g>
+  <g id="source" data-pptx-bounds="56 660 560 22">
+    <text x="56" y="674" font-size="12" fill="#4B5563">출처: 국토교통부 「땅꺼짐 사고 조사결과 발표」(2025.12.3), 명일동 사고조사 최종보고서</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 560 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="600" y="706" text-anchor="end">02 / 15</text>
+  </g>
+</svg>

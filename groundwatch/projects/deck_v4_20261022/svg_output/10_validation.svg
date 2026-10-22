@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="44" height="24" fill="#F5B700" />
+    <text x="218" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">검증</text>
+    <text x="252" y="45" font-size="14" fill="#374151">기술 검증 현황</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">상용 기술을 결합하고, 차량 통합 성능은 실증으로 확인합니다</text>
+  </g>
+  <g id="lead" data-pptx-bounds="56 137 1168 28">
+    <text x="56" y="158" font-size="18" fill="#374151">기반 기술은 이미 있습니다. 한 차량 안에서 반복 가능한 정확도로 묶이는지, 네 가지를 먼저 실증합니다.</text>
+  </g>
+  <g id="test-1" data-pptx-bounds="56 180 274 320">
+    <image href="../images/val_emi.png" x="56" y="180" width="274" height="172" preserveAspectRatio="xMidYMid slice" />
+    <rect x="62" y="186" width="102" height="22" rx="3" fill="#0B1E3C" fill-opacity="0.88" />
+    <text x="113" y="202" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">EV 구동계 × GPR</text>
+    <text x="56" y="382" font-size="14" font-weight="bold" fill="#4B5563">실증 01</text>
+    <text x="56" y="410" font-size="23" font-weight="bold" fill="#0B1E3C">전자파 간섭</text>
+    <g font-size="16" fill="#111827">
+      <rect x="56" y="430" width="6" height="6" fill="#F5B700" />
+      <text x="70" y="438">EV 구동계·인버터 잡음</text>
+      <rect x="56" y="456" width="6" height="6" fill="#F5B700" />
+      <text x="70" y="464">주행·정차·V2L 상태별 비교</text>
+      <rect x="56" y="482" width="6" height="6" fill="#C62828" />
+      <text x="70" y="490" fill="#C62828">크면 차량형 측정 불가</text>
+    </g>
+  </g>
+  <g id="test-2" data-pptx-bounds="354 180 274 320">
+    <image href="../images/val_route_real.png" x="354" y="180" width="274" height="172" preserveAspectRatio="xMidYMid slice" />
+    <rect x="360" y="186" width="90" height="22" rx="3" fill="#0B1E3C" fill-opacity="0.88" />
+    <text x="405" y="202" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">같은 경로 반복</text>
+    <text x="354" y="382" font-size="14" font-weight="bold" fill="#4B5563">실증 02</text>
+    <text x="354" y="410" font-size="23" font-weight="bold" fill="#0B1E3C">회차별 위치 정합</text>
+    <g font-size="16" fill="#111827">
+      <rect x="354" y="430" width="6" height="6" fill="#F5B700" />
+      <text x="368" y="438">같은 경로 반복 주행 오차</text>
+      <rect x="354" y="456" width="6" height="6" fill="#F5B700" />
+      <text x="368" y="464">RTK·IMU·휠 인코더 보정</text>
+      <rect x="354" y="482" width="6" height="6" fill="#C62828" />
+      <text x="368" y="490" fill="#C62828">어긋나면 변화 비교 불가</text>
+    </g>
+  </g>
+  <g id="test-3" data-pptx-bounds="652 180 274 320">
+    <rect x="652" y="180" width="274" height="172" fill="#D9DCE0" />
+    <image href="../images/val_bscan.png" x="652" y="180" width="274" height="172" preserveAspectRatio="xMidYMid slice" />
+    <rect x="658" y="186" width="114" height="22" rx="3" fill="#0B1E3C" fill-opacity="0.88" />
+    <text x="715" y="202" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">AI가 고른 변화 후보</text>
+    <text x="652" y="382" font-size="14" font-weight="bold" fill="#4B5563">실증 03</text>
+    <text x="652" y="410" font-size="23" font-weight="bold" fill="#0B1E3C">AI 탐지율·오탐률</text>
+    <g font-size="16" fill="#111827">
+      <rect x="652" y="430" width="6" height="6" fill="#F5B700" />
+      <text x="666" y="438">공동 모사체 구간 탐지율</text>
+      <rect x="652" y="456" width="6" height="6" fill="#F5B700" />
+      <text x="666" y="464">기존·신규 신호 구분</text>
+      <rect x="652" y="482" width="6" height="6" fill="#C62828" />
+      <text x="666" y="490" fill="#C62828">오탐 많으면 재확인 증가</text>
+    </g>
+  </g>
+  <g id="test-4" data-pptx-bounds="950 180 274 320">
+    <image href="../images/night_road_raw.jpg" x="950" y="180" width="274" height="172" preserveAspectRatio="xMidYMid slice" />
+    <circle cx="997" cy="327" r="9" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <circle cx="1049" cy="300" r="9" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <line x1="1005" y1="323" x2="1041" y2="304" stroke="#F5B700" stroke-width="2" stroke-dasharray="4,3" />
+    <rect x="1062" y="286" width="98" height="20" rx="3" fill="#0B1E3C" fill-opacity="0.88" />
+    <text x="1111" y="301" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">차선 끝 · 경계석</text>
+    <rect x="956" y="186" width="80" height="22" rx="3" fill="#0B1E3C" fill-opacity="0.88" />
+    <text x="996" y="202" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">야간 기준점</text>
+    <text x="950" y="382" font-size="14" font-weight="bold" fill="#4B5563">실증 04</text>
+    <text x="950" y="410" font-size="23" font-weight="bold" fill="#0B1E3C">야간 AR 위치 오차</text>
+    <g font-size="16" fill="#111827">
+      <rect x="950" y="430" width="6" height="6" fill="#F5B700" />
+      <text x="964" y="438">맨홀·경계석 기준점 인식</text>
+      <rect x="950" y="456" width="6" height="6" fill="#F5B700" />
+      <text x="964" y="464">야간·우천 조건 위치 오차</text>
+      <rect x="950" y="482" width="6" height="6" fill="#C62828" />
+      <text x="964" y="490" fill="#C62828">크면 수동 탐색 범위 확대</text>
+    </g>
+  </g>
+  <g id="also" data-pptx-bounds="56 512 1168 66">
+    <rect x="56" y="512" width="1168" height="66" fill="#F3F5F8" />
+    <text x="76" y="539" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#8A5A00">함께 확인</tspan>   장비 고정 상태의 반복 측정 일관성 · 적재중량·축하중·제동 안정성 · V2L 포함 실제 소비전력 · 차량 앱 배포 절차·접근 가능한 차량 데이터</text>
+    <text x="76" y="564" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">이미 상용</tspan>   차량형·수동 GPR · RTK-GNSS·IMU·휠 인코더 · 노면 카메라 · 엣지 컴퓨터 · GIS 이력 관리 · AAOS 앱 생태계 · 산업용 AR 글래스</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 594 1168 52">
+    <rect x="56" y="594" width="1168" height="52" fill="#0B1E3C" />
+    <text x="80" y="627" font-size="20" font-weight="bold" fill="#FFFFFF">핵심은 기술의 존재가 아니라, <tspan fill="#F5B700">한 차량에서 반복 가능한 정확도</tspan>로 연결되는가입니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 660 1168 20">
+    <text x="56" y="674" font-size="12" fill="#4B5563">이미지: 01 콘셉트 이미지 · 02 명일동 실제 도로(© OpenStreetMap contributors)에 회차별 궤적을 그린 설명도 · 03 B-scan은 설명용 예시 · 04 PattayaPatrol 사진(CC BY-SA 4.0) 기반 편집</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">10 / 15</text>
+  </g>
+</svg>
