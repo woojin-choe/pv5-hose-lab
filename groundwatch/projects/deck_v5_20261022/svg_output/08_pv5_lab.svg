@@ -31,8 +31,10 @@
       <circle cx="499.122009569378" cy="444.79665071770336" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
       <text x="499.122009569378" y="450.79665071770336" fill="#0B1E3C">D</text>
     </g>
-    <text x="56" y="522" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">A</tspan> 분석 장비 랙 (엣지 컴퓨터·GPR 제어)   <tspan font-weight="bold" fill="#0B1E3C">B</tspan> 수동 GPR·AR 글래스</text>
-    <text x="56" y="546" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">C</tspan> 내시경·안전장비   <tspan font-weight="bold" fill="#0B1E3C">D</tspan> 바닥 아래 차량형 다채널 GPR</text>
+    <text x="56" y="522" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">A</tspan> 분석 장비 랙 (엣지 컴퓨터·GPR 제어)</text>
+    <text x="400" y="522" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">B</tspan> 수동 GPR·AR 글래스</text>
+    <text x="56" y="546" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">C</tspan> 내시경·안전장비</text>
+    <text x="400" y="546" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">D</tspan> 바닥 아래 차량형 다채널 GPR</text>
     <text x="56" y="572" font-size="13" fill="#4B5563">콘셉트 이미지 · GPR 장착 위치는 배터리 팩 간섭 시험 후 확정</text>
   </g>
   <g id="spec" data-pptx-bounds="696 150 528 430">

@@ -157,8 +157,8 @@ svg("02_incident.svg", head("문제", "실제로 일어난 일", nav=False) + f'
 
 # ---------------------------------------------------------------- 03 맹점
 svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹점은 탐사가 아니라, 탐사와 탐사 ‘사이’입니다") + f'''  <g id="gap-chart" data-pptx-bounds="56 168 680 360">
-    <text x="56" y="196" font-size="18" font-weight="bold" fill="{NAVY}">한 번 탐사한 도로를 다시 보기까지</text>
-    <line x1="56" y1="210" x2="736" y2="210" stroke="{NAVY}" stroke-width="1.5" />
+    <rect x="56" y="168" width="680" height="3" fill="{NAVY}" />
+    <text x="56" y="204" font-size="15" font-weight="bold" fill="{AMB}">한 번 탐사한 도로를 다시 보기까지</text>
     <text x="56" y="256" font-size="18" fill="{INK}">법정 공동조사 주기 <tspan font-size="15" fill="{SUB}">(하수관 등 관리자)</tspan></text>
     <rect x="56" y="270" width="600" height="34" fill="#9AA3AF" />
     <text x="668" y="296" font-size="26" font-weight="bold" fill="{INK}">5년</text>
@@ -702,8 +702,10 @@ def pv5lab2():
       <circle cx="{CD[0]}" cy="{CD[1]}" r="17" fill="{YEL}" stroke="{NAVY}" stroke-width="2" />
       <text x="{CD[0]}" y="{CD[1] + 6}" fill="{NAVY}">D</text>
     </g>
-    <text x="56" y="522" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">A</tspan> 분석 장비 랙 (엣지 컴퓨터·GPR 제어)   <tspan font-weight="bold" fill="{NAVY}">B</tspan> 수동 GPR·AR 글래스</text>
-    <text x="56" y="546" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">C</tspan> 내시경·안전장비   <tspan font-weight="bold" fill="{NAVY}">D</tspan> 바닥 아래 차량형 다채널 GPR</text>
+    <text x="56" y="522" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">A</tspan> 분석 장비 랙 (엣지 컴퓨터·GPR 제어)</text>
+    <text x="400" y="522" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">B</tspan> 수동 GPR·AR 글래스</text>
+    <text x="56" y="546" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">C</tspan> 내시경·안전장비</text>
+    <text x="400" y="546" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">D</tspan> 바닥 아래 차량형 다채널 GPR</text>
     <text x="56" y="572" font-size="13" fill="{MUTE}">콘셉트 이미지 · GPR 장착 위치는 배터리 팩 간섭 시험 후 확정</text>
   </g>
   <g id="spec" data-pptx-bounds="696 150 528 430">
