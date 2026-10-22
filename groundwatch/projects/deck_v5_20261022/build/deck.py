@@ -127,14 +127,14 @@ svg("02_incident.svg", head("문제", "실제로 일어난 일", nav=False) + f'
     <text x="56" y="278" font-size="40" fill="{RED}">100여 일 뒤, 도로가 무너졌습니다</text>
   </g>
   <g id="timeline" data-pptx-bounds="56 330 600 150">
-    <line x1="76" y1="404" x2="636" y2="404" stroke="#C3CCD9" stroke-width="3" />
-    <rect x="76" y="398" width="560" height="12" fill="{YEL}" fill-opacity="0.25" />
-    <circle cx="96" cy="404" r="11" fill="{NAVY}" />
-    <text x="76" y="364" font-size="16" font-weight="bold" fill="{NAVY}">2024. 5. 7~16</text>
-    <text x="76" y="386" font-size="15" fill="{SUB}">정기 GPR 탐사 · 공동 없음</text>
-    <circle cx="616" cy="404" r="16" fill="{RED}" />
-    <text x="636" y="364" font-size="16" font-weight="bold" fill="{RED}" text-anchor="end">2024. 8. 29</text>
-    <text x="636" y="386" font-size="15" fill="{RED}" text-anchor="end">도로 함몰</text>
+    <rect x="86" y="399" width="540" height="10" fill="{YEL}" fill-opacity="0.28" />
+    <line x1="86" y1="404" x2="626" y2="404" stroke="#C3CCD9" stroke-width="2" />
+    <circle cx="86" cy="404" r="10" fill="{NAVY}" stroke="#FFFFFF" stroke-width="3" />
+    <circle cx="626" cy="404" r="10" fill="{RED}" stroke="#FFFFFF" stroke-width="3" />
+    <text x="76" y="358" font-size="16" font-weight="bold" fill="{NAVY}">2024. 5. 7~16</text>
+    <text x="76" y="380" font-size="15" fill="{SUB}">정기 GPR 탐사 · 공동 없음</text>
+    <text x="636" y="358" font-size="16" font-weight="bold" fill="{RED}" text-anchor="end">2024. 8. 29</text>
+    <text x="636" y="380" font-size="15" fill="{RED}" text-anchor="end">도로 함몰</text>
     <text x="356" y="444" font-size="16" fill="{SUB}" text-anchor="middle">그 사이 지하에서 무슨 일이 있었는지는 기록이 없습니다</text>
   </g>
   <g id="facts" data-pptx-bounds="56 488 600 110">
@@ -309,7 +309,7 @@ svg("12_closing.svg", f'''  <defs>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 662 1172 48">
     <text x="64" y="700" font-size="14" font-weight="bold" fill="{YEL}">TEAM 한 명이라도 살릴 수 있다면</text>
     <text x="64" y="676" font-size="11" fill="#9FB0C8">사진: Alexander Migl, CC BY-SA 4.0(편집)</text>
-    <text x="480" y="700" font-size="13" font-weight="bold" fill="{YEL}" text-anchor="end">12 / {N}</text>
+    <text x="1232" y="700" font-size="13" font-weight="bold" fill="{YEL}" text-anchor="end">12 / {N}</text>
   </g>
 ''', role="ending")
 
@@ -412,7 +412,7 @@ def verify():
     <text x="{x + 18}" y="562" font-size="15" fill="{t1}">{ok}</text>
 '''
         if i < 3:
-            b += f'    <text x="{x + 286}" y="534" font-size="18" fill="{MUTE}">›</text>\n'
+            b += f'    <text x="{x + 286}" y="536" font-size="18" fill="{MUTE}">›</text>\n'
         x += 297
     b += '  </g>\n'
     b += band(600, "정확도 숫자를 미리 약속하지 않고, 단계마다 통과 조건을 둡니다.")
@@ -959,6 +959,8 @@ tmp = []
 for i, f in enumerate(names, 1):
     t = open(os.path.join(OUT, f), encoding="utf-8").read()
     t = re.sub(r"\d\d / \d\d<", f"{i:02d} / {N}<", t)
+    t = t.replace('<text x="56" y="708">', '<text x="56" y="706">').replace('<text x="1224" y="708" text-anchor="end">', '<text x="1224" y="706" text-anchor="end">')
+    t = t.replace('<text x="56" y="280">차체 성격</text>', '<text x="56" y="278">차체 성격</text>')
     t = re.sub(r'<text x="56" y="70[68]">한 명이라도 살릴 수 있다면</text>', '<text x="56" y="706">PV5 GroundWatch</text>', t)
     os.remove(os.path.join(OUT, f))
     tmp.append((f"{i:02d}_" + f.split("_", 1)[1], t))

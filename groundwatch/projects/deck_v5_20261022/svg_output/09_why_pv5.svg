@@ -39,7 +39,7 @@
     </g>
     <line x1="56" y1="250" x2="1224" y2="250" stroke="#0B1E3C" stroke-width="1.5" />
     <g font-size="15" font-weight="bold" fill="#374151">
-      <text x="56" y="280">차체 성격</text>
+      <text x="56" y="278">차체 성격</text>
       <text x="56" y="358">차량 가격</text>
       <text x="56" y="410">1회 충전</text>
     </g>

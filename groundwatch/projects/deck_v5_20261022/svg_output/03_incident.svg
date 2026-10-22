@@ -29,14 +29,14 @@
     <text x="56" y="278" font-size="40" fill="#C62828">100여 일 뒤, 도로가 무너졌습니다</text>
   </g>
   <g id="timeline" data-pptx-bounds="56 330 600 150">
-    <line x1="76" y1="404" x2="636" y2="404" stroke="#C3CCD9" stroke-width="3" />
-    <rect x="76" y="398" width="560" height="12" fill="#F5B700" fill-opacity="0.25" />
-    <circle cx="96" cy="404" r="11" fill="#0B1E3C" />
-    <text x="76" y="364" font-size="16" font-weight="bold" fill="#0B1E3C">2024. 5. 7~16</text>
-    <text x="76" y="386" font-size="15" fill="#374151">정기 GPR 탐사 · 공동 없음</text>
-    <circle cx="616" cy="404" r="16" fill="#C62828" />
-    <text x="636" y="364" font-size="16" font-weight="bold" fill="#C62828" text-anchor="end">2024. 8. 29</text>
-    <text x="636" y="386" font-size="15" fill="#C62828" text-anchor="end">도로 함몰</text>
+    <rect x="86" y="399" width="540" height="10" fill="#F5B700" fill-opacity="0.28" />
+    <line x1="86" y1="404" x2="626" y2="404" stroke="#C3CCD9" stroke-width="2" />
+    <circle cx="86" cy="404" r="10" fill="#0B1E3C" stroke="#FFFFFF" stroke-width="3" />
+    <circle cx="626" cy="404" r="10" fill="#C62828" stroke="#FFFFFF" stroke-width="3" />
+    <text x="76" y="358" font-size="16" font-weight="bold" fill="#0B1E3C">2024. 5. 7~16</text>
+    <text x="76" y="380" font-size="15" fill="#374151">정기 GPR 탐사 · 공동 없음</text>
+    <text x="636" y="358" font-size="16" font-weight="bold" fill="#C62828" text-anchor="end">2024. 8. 29</text>
+    <text x="636" y="380" font-size="15" fill="#C62828" text-anchor="end">도로 함몰</text>
     <text x="356" y="444" font-size="16" fill="#374151" text-anchor="middle">그 사이 지하에서 무슨 일이 있었는지는 기록이 없습니다</text>
   </g>
   <g id="facts" data-pptx-bounds="56 488 600 110">

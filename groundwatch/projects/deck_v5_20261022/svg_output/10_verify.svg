@@ -56,19 +56,19 @@
     <text x="74" y="508" font-size="14" font-weight="bold" fill="#B45309">1단계 · 질문 1</text>
     <text x="74" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">폐쇄 시험장</text>
     <text x="74" y="562" font-size="15" fill="#0B1E3C">통과 → 차량 측정 가능</text>
-    <text x="342" y="534" font-size="18" fill="#4B5563">›</text>
+    <text x="342" y="536" font-size="18" fill="#4B5563">›</text>
     <rect x="353" y="480" width="278" height="94" fill="#F3F5F8" />
     <rect x="353" y="480" width="278" height="4" fill="#0B1E3C" />
     <text x="371" y="508" font-size="14" font-weight="bold" fill="#B45309">2단계 · 질문 2·3</text>
     <text x="371" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">통제된 시험 구간</text>
     <text x="371" y="562" font-size="15" fill="#0B1E3C">통과 → 회차 비교 가능</text>
-    <text x="639" y="534" font-size="18" fill="#4B5563">›</text>
+    <text x="639" y="536" font-size="18" fill="#4B5563">›</text>
     <rect x="650" y="480" width="278" height="94" fill="#F3F5F8" />
     <rect x="650" y="480" width="278" height="4" fill="#0B1E3C" />
     <text x="668" y="508" font-size="14" font-weight="bold" fill="#B45309">3단계 · 질문 3·4</text>
     <text x="668" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">실제 도로 위험구간</text>
     <text x="668" y="562" font-size="15" fill="#0B1E3C">통과 → 실증확인서</text>
-    <text x="936" y="534" font-size="18" fill="#4B5563">›</text>
+    <text x="936" y="536" font-size="18" fill="#4B5563">›</text>
     <rect x="947" y="480" width="278" height="94" fill="#F3F5F8" />
     <rect x="947" y="480" width="278" height="4" fill="#F5B700" />
     <text x="965" y="508" font-size="14" font-weight="bold" fill="#B45309">4단계 · 소요시간·재방문</text>
