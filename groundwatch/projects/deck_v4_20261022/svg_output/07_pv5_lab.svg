@@ -3,9 +3,9 @@
   <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
     <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
     <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
-    <rect x="196" y="28" width="57" height="24" fill="#F5B700" />
-    <text x="224.5" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">솔루션</text>
-    <text x="265" y="45" font-size="14" fill="#374151">PV5 이동형 탐사실</text>
+    <rect x="196" y="28" width="100" height="24" fill="#F5B700" />
+    <text x="246" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">PV5 탐사실</text>
+    <text x="308" y="45" font-size="14" fill="#374151">PV5 이동형 탐사실</text>
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
@@ -57,10 +57,10 @@
     <text x="920" y="652" font-size="14" fill="#374151">하루 주행+장비 · 배터리의 약 14%</text>
   </g>
   <g id="source" data-pptx-bounds="56 664 1168 28">
-    <text x="56" y="674" font-size="12" fill="#4B5563">가정: 하루 3시간·시속 10km 순찰(30km) · 장비 1.5kW 이하 · 수동 GPR 카트 약 27~34kg(GSSI UtilityScan Pro, 60~75lb)<tspan x="56" dy="15">실증 필요: 총중량·축하중·전자파 간섭·구조변경 승인 · 출처: 기아 PV5 카고 제원 · 배치도는 PV5 기반 콘셉트 이미지</tspan></text>
+    <text x="56" y="674" font-size="12" fill="#4B5563">가정: 하루 3시간·시속 10km 순찰(30km, 서울시 차량 GPR 운용 시속 5~30km) · 장비 1.5kW 이하 · 수동 GPR 카트 약 27~34kg(GSSI UtilityScan Pro, 60~75lb)<tspan x="56" dy="15">실증 필요: 총중량·축하중·전자파 간섭·구조변경 승인 · 출처: 기아 PV5 카고 제원 · 배치도는 PV5 기반 콘셉트 이미지</tspan></text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">07 / 15</text>
+    <text x="1224" y="706" text-anchor="end">07 / 16</text>
   </g>
 </svg>

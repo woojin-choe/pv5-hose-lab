@@ -21,13 +21,13 @@
   </g>
   <g id="market-facts" data-pptx-bounds="56 180 1168 112">
     <rect x="56" y="180" width="376" height="112" fill="#0B1E3C" />
-    <text x="78" y="226" font-size="32" font-weight="bold" fill="#F5B700">4,558만~1.77억 원</text>
+    <text x="78" y="226" font-size="32" font-weight="bold" fill="#F5B700">0.46~1.77억 원</text>
     <text x="78" y="254" font-size="16" font-weight="bold" fill="#FFFFFF">2026년 지자체 GPR 탐사 용역 낙찰액</text>
     <text x="78" y="276" font-size="14" fill="#D6DDE8">보령·안양·용인(기흥구) 낙찰, 이미 집행 중</text>
     <rect x="452" y="180" width="376" height="112" fill="#0B1E3C" />
-    <text x="474" y="226" font-size="32" font-weight="bold" fill="#F5B700">0대</text>
-    <text x="474" y="254" font-size="16" font-weight="bold" fill="#FFFFFF">경기도·31개 시·군의 GPR 보유 대수</text>
-    <text x="474" y="276" font-size="14" fill="#D6DDE8">장비 없이 외부 용역에 의존 (2025.4 보도)</text>
+    <text x="474" y="226" font-size="32" font-weight="bold" fill="#F5B700">21.6억 원</text>
+    <text x="474" y="254" font-size="16" font-weight="bold" fill="#FFFFFF">경기도 16개 시·군 GPR 탐사 지원</text>
+    <text x="474" y="276" font-size="14" fill="#D6DDE8">1,080km를 장비 구매 대신 용역으로 (2025.9)</text>
     <rect x="848" y="180" width="376" height="112" fill="#0B1E3C" />
     <text x="870" y="226" font-size="32" font-weight="bold" fill="#F5B700">최대 6년</text>
     <text x="870" y="254" font-size="16" font-weight="bold" fill="#FFFFFF">조달청 혁신제품 수의계약</text>
@@ -80,10 +80,10 @@
     <text x="80" y="617" font-size="20" font-weight="bold" fill="#FFFFFF">새 예산이 아니라, <tspan fill="#F5B700">지자체가 이미 쓰는 GPR 탐사 예산</tspan>에서 첫 계약을 만듭니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 650 1168 36">
-    <text x="56" y="662" font-size="12" fill="#4B5563">출처: 나라장터 2026년 GPR 탐사 용역 낙찰(보령 4,558만·안양 8,522만·용인 기흥구 1억 7,736만 원, 2026.5~6 개찰) · 시사저널(2025.4.25, 경기도 GPR 보유 현황)<tspan x="56" dy="16">조달청 혁신제품 지정제도(최대 6년 수의계약) · 서울시 테스트베드서울 2.0(과제당 최대 2억 원, 서울시장 명의 실증확인서) · 단계별 기간은 목표 [가설]</tspan></text>
+    <text x="56" y="662" font-size="12" fill="#4B5563">출처: 나라장터 2026년 GPR 탐사 용역 낙찰(보령 4,558만·안양 8,522만·용인 기흥구 1억 7,736만 원, 2026.5~6 개찰) · 헤럴드경제(2025.9.7, 경기도 지원사업 21.6억 원·1,080km)<tspan x="56" dy="16">조달청 혁신제품 지정제도(최대 6년 수의계약) · 서울시 테스트베드서울 2.0(과제당 최대 2억 원, 서울시장 명의 실증확인서) · 단계별 기간은 목표 [가설]</tspan></text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">14 / 15</text>
+    <text x="1224" y="706" text-anchor="end">15 / 16</text>
   </g>
 </svg>

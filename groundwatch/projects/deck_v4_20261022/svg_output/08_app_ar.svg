@@ -8,9 +8,9 @@
   <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
     <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
     <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
-    <rect x="196" y="28" width="57" height="24" fill="#F5B700" />
-    <text x="224.5" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">솔루션</text>
-    <text x="265" y="45" font-size="14" fill="#4B5563">차량 앱과 AR 현장 재확인</text>
+    <rect x="196" y="28" width="87" height="24" fill="#F5B700" />
+    <text x="239.5" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">현장 재확인</text>
+    <text x="295" y="45" font-size="14" fill="#4B5563">차량 앱과 AR 현장 재확인</text>
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
@@ -75,14 +75,14 @@
     <text x="672" y="331" font-size="13" fill="#E5E9F0">추정 깊이 0.9~1.3m · AI 신뢰도 84%</text>
     <text x="672" y="349" font-size="12" fill="#C9D3E2">[화면 예시] 전문가 승인 · 위치 오차 기준 충족</text>
     <text x="640" y="608" font-size="18" font-weight="bold" fill="#111827">차량 밖 · 산업용 AR 글래스 (정차 후 작업자만)</text>
-    <text x="640" y="634" font-size="16" fill="#4B5563">맨홀·차선·경계석·RTK 중 2~3개로 위치를 맞추고 재탐사 범위만 표시</text>
+    <text x="640" y="634" font-size="16" fill="#4B5563">두 손으로 수동 GPR을 미는 동안 재탐사 범위를 눈앞에 표시</text>
   </g>
   <g id="source" data-pptx-bounds="56 651 1168 40">
-    <text x="56" y="664" font-size="13" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">운용 원칙</tspan>  2인 1조(운전·안전통제 / 탐사·판독) · 운전자는 주행 중 AR을 쓰지 않음 · AR은 공동 모양이 아니라 재탐사 범위만 안내 · 화면 미러링이 아닌 보안 Wi-Fi 작업 데이터 연동</text>
+    <text x="56" y="664" font-size="13" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">운용 원칙</tspan>  2인 1조(운전·안전통제 / 탐사·판독) · 운전자는 주행 중 AR 미사용 · 기준점 2~3개로 위치 정합 · 재탐사 범위만 안내</text>
     <text x="56" y="684" font-size="12" fill="#4B5563">앱 배포·차량 데이터 접근은 기아 PBV 파트너 승인·공식 API 범위 확인 필요 · 도로 장면은 연출 이미지 · 화면 수치는 예시 · 실내 사진: Alexander Migl, CC BY-SA 4.0(화면 합성)</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 694 1168 20" fill="#4B5563" font-size="12">
     <text x="56" y="708">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="708" text-anchor="end">08 / 15</text>
+    <text x="1224" y="708" text-anchor="end">08 / 16</text>
   </g>
 </svg>

@@ -12,7 +12,7 @@
     <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">한 대의 반복 순찰차에서 도시 지하 안전망으로 확장합니다</text>
   </g>
   <g id="patrol-map" data-pptx-bounds="56 150 680 446">
-    <image href="../images/ug_patrol.png" x="56" y="150" width="680" height="383" preserveAspectRatio="xMidYMid slice" />
+    <image href="../images/patrol_map_real.png" x="56" y="150" width="680" height="383" preserveAspectRatio="xMidYMid slice" />
     <rect x="68" y="162" width="252" height="24" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
     <text x="80" y="179" font-size="13" font-weight="bold" fill="#FFFFFF">위험도별 순찰 경로 예시 · 강동구 명일동 일대</text>
     <g font-size="14" fill="#111827">
@@ -76,6 +76,6 @@
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">12 / 15</text>
+    <text x="1224" y="706" text-anchor="end">12 / 16</text>
   </g>
 </svg>

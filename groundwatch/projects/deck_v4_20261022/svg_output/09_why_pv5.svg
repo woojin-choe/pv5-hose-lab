@@ -3,77 +3,75 @@
   <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
     <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
     <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
-    <rect x="196" y="28" width="57" height="24" fill="#F5B700" />
-    <text x="224.5" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">솔루션</text>
-    <text x="265" y="45" font-size="14" fill="#374151">왜 PV5인가 · 전기 상용차 비교</text>
+    <rect x="196" y="28" width="62" height="24" fill="#F5B700" />
+    <text x="227" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">왜 PV5</text>
+    <text x="270" y="45" font-size="14" fill="#374151">그룹 전기 상용차 중 용도별 위치</text>
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">같은 조건의 전기 밴 중에서 PV5가 탐사실로 가장 맞습니다</text>
+    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">GPR 탐사실이라는 용도에는 PV5가 맞습니다</text>
   </g>
   <g id="lead" data-pptx-bounds="56 137 1168 28">
-    <text x="56" y="158" font-size="18" fill="#374151">공공기관은 새 차를 전기·수소차로 사야 합니다. 그래서 비교 대상은 전기 상용차이고, 공식 수치로만 비교했습니다.</text>
+    <text x="56" y="158" font-size="18" fill="#374151">그룹 전기 상용차는 용도가 나뉘어 있습니다. 탐사·판독·재검증을 한 차에서 하려면 무엇이 필요한지로 골랐습니다.</text>
   </g>
-  <g id="common" data-pptx-bounds="56 182 344 330">
-    <rect x="56" y="182" width="344" height="330" fill="#F3F5F8" />
-    <text x="76" y="212" font-size="15" font-weight="bold" fill="#4B5563">전기 밴이면 모두 충족하는 조건</text>
-    <text x="76" y="250" font-size="20" font-weight="bold" fill="#0B1E3C">공공 무공해차 의무구매</text>
-    <text x="76" y="276" font-size="15" fill="#111827">신규 구매·임차 차량 100%를<tspan x="76" dy="21">전기·수소차로 (승합·화물 포함,</tspan><tspan x="76" dy="21">특수·긴급차 등만 예외)</tspan></text>
-    <line x1="76" y1="350" x2="380" y2="350" stroke="#D5DAE1" stroke-width="1" />
-    <text x="76" y="384" font-size="20" font-weight="bold" fill="#0B1E3C">새벽 정차 중 공회전 없음</text>
-    <text x="76" y="410" font-size="15" fill="#111827">서울 공회전 제한장소 2,772곳,<tspan x="76" dy="21">5~25℃에서 2분 넘으면 과태료 5만 원</tspan><tspan x="76" dy="21">→ 시동 없이 장비를 켜 둘 수 있음</tspan></text>
-    <text x="76" y="496" font-size="14" font-weight="bold" fill="#8A5A00">PV5만의 장점으로 내세우지 않습니다</text>
-  </g>
-  <g id="compare" data-pptx-bounds="424 182 800 330">
-    <rect x="576" y="182" width="162" height="330" fill="#FFF6D6" />
-    <rect x="576" y="182" width="162" height="4" fill="#F5B700" />
-    <g font-size="15" font-weight="bold">
-      <text x="590" y="212" fill="#0B1E3C">PV5 카고</text>
-      <text x="590" y="232" font-size="13" font-weight="normal" fill="#374151">롱 · 롱레인지</text>
-      <text x="752" y="212" fill="#374151">스타리아 일렉트릭</text>
-      <text x="752" y="232" font-size="13" font-weight="normal" fill="#374151">카고 3인승</text>
-      <text x="912" y="212" fill="#374151">ST1</text>
-      <text x="912" y="232" font-size="13" font-weight="normal" fill="#374151">카고 스타일</text>
-      <text x="1072" y="212" fill="#374151">포터II·봉고III</text>
-      <text x="1072" y="232" font-size="13" font-weight="normal" fill="#374151">EV (2025년형~)</text>
+  <g id="compare" data-pptx-bounds="56 182 1168 248">
+    <rect x="216" y="182" width="252" height="248" fill="#FFF6D6" />
+    <rect x="216" y="182" width="252" height="4" fill="#F5B700" />
+    <g font-size="17" font-weight="bold">
+      <text x="232" y="214" fill="#0B1E3C">기아 PV5 카고</text>
+      <text x="484" y="214" fill="#374151">스타리아 일렉트릭 카고</text>
+      <text x="736" y="214" fill="#374151">현대 ST1 카고</text>
+      <text x="988" y="214" fill="#374151">포터II·봉고III EV</text>
     </g>
-    <line x1="424" y1="246" x2="1224" y2="246" stroke="#0B1E3C" stroke-width="1.5" />
+    <g font-size="14" fill="#374151">
+      <text x="232" y="236">롱 · 롱레인지</text>
+      <text x="484" y="236">3인승</text>
+      <text x="736" y="236">카고 스타일</text>
+      <text x="988" y="236">2025년형~</text>
+    </g>
+    <line x1="56" y1="250" x2="1224" y2="250" stroke="#0B1E3C" stroke-width="1.5" />
     <g font-size="15" font-weight="bold" fill="#374151">
-      <text x="424" y="296">차량 가격</text>
-      <text x="424" y="378">1회 충전</text>
-      <text x="424" y="456">적재 공간</text>
+      <text x="56" y="280">차체 성격</text>
+      <text x="56" y="358">차량 가격</text>
+      <text x="56" y="410">1회 충전</text>
     </g>
-    <g fill="#111827">
-      <text x="590" y="298" font-size="24" font-weight="bold" fill="#0B1E3C">4,520만 원</text>
-      <text x="752" y="298" font-size="21">5,792만 원</text>
-      <text x="912" y="298" font-size="21">5,874만 원</text>
-      <text x="1072" y="298" font-size="15" fill="#4B5563">비교 제외</text>
-      <line x1="424" y1="332" x2="1224" y2="332" stroke="#E2E6EC" stroke-width="1" />
-      <text x="590" y="380" font-size="24" font-weight="bold" fill="#0B1E3C">377km</text>
-      <text x="752" y="380" font-size="21" font-weight="bold" fill="#C62828">387km</text>
-      <text x="912" y="380" font-size="21">317km</text>
-      <text x="1072" y="380" font-size="21">217km</text>
-      <line x1="424" y1="414" x2="1224" y2="414" stroke="#E2E6EC" stroke-width="1" />
-      <text x="590" y="450" font-size="16" font-weight="bold" fill="#0B1E3C">밀폐 카고룸 4,420L<tspan x="590" dy="21" font-weight="normal" font-size="14" fill="#374151">적재고 419mm</tspan><tspan x="590" dy="20" font-weight="normal" font-size="14" fill="#374151">V2L·L-Track 장착</tspan></text>
-      <text x="752" y="456" font-size="16">밀폐 카고</text>
-      <text x="912" y="456" font-size="16">밀폐 카고 박스</text>
-      <text x="1072" y="450" font-size="16">개방형 적재함<tspan x="1072" dy="21" font-size="14" fill="#374151">탑 개조 필요</tspan></text>
+    <g fill="#111827" font-size="16">
+      <text x="232" y="278" font-weight="bold" fill="#0B1E3C">컨버전 전제 소형 PBV<tspan x="232" dy="21" font-weight="normal" fill="#374151">밀폐 카고룸 4,420L · V2L</tspan><tspan x="232" dy="21" font-weight="normal" fill="#374151">L-Track · 공식 컨버전 체계</tspan></text>
+      <text x="484" y="278">승합 기반 밴<tspan x="484" dy="21" fill="#374151">밀폐 카고</tspan></text>
+      <text x="736" y="278">물류 특화 카고<tspan x="736" dy="21" fill="#374151">밀폐 카고 박스</tspan></text>
+      <text x="988" y="278">1톤 트럭<tspan x="988" dy="21" fill="#374151">개방형 적재함</tspan></text>
+      <line x1="56" y1="330" x2="1224" y2="330" stroke="#E2E6EC" stroke-width="1" />
+      <text x="232" y="362" font-size="24" font-weight="bold" fill="#0B1E3C">4,520만 원</text>
+      <text x="484" y="362" font-size="21">5,792만 원</text>
+      <text x="736" y="362" font-size="21">5,874만 원</text>
+      <text x="988" y="362" font-size="15" fill="#4B5563">탑 개조 필요 · 비교 제외</text>
+      <line x1="56" y1="382" x2="1224" y2="382" stroke="#E2E6EC" stroke-width="1" />
+      <text x="232" y="414" font-size="24" font-weight="bold" fill="#0B1E3C">377km</text>
+      <text x="484" y="414" font-size="21">387km</text>
+      <text x="736" y="414" font-size="21">317km</text>
+      <text x="988" y="414" font-size="21">217km</text>
     </g>
   </g>
-  <g id="drawbacks" data-pptx-bounds="56 528 1168 54">
-    <text x="56" y="550" font-size="16" font-weight="bold" fill="#C62828">PV5가 불리한 점</text>
-    <text x="200" y="550" font-size="16" fill="#111827">주행거리는 스타리아보다 10km 짧고, 전폭 1,895mm는 포터·봉고(1,740mm)보다 155mm 넓습니다.</text>
-    <text x="200" y="574" font-size="16" fill="#111827">→ 하루 순찰 약 30km·장비 약 300kg <tspan fill="#4B5563">[가설]</tspan>이면 377km·최대 적재 600kg 안에서 충분히 운용됩니다.</text>
+  <g id="honest" data-pptx-bounds="56 446 1168 134">
+    <rect x="56" y="446" width="376" height="134" fill="#F3F5F8" />
+    <text x="76" y="474" font-size="15" font-weight="bold" fill="#8A5A00">가격으로 고르지 않습니다</text>
+    <text x="76" y="500" font-size="15" fill="#111827">차값 차이는 최대 1,354만 원,<tspan x="76" dy="21">차량형 GPR은 대당 <tspan font-weight="bold">2억~8억 원</tspan>.</tspan><tspan x="76" dy="21">차이를 가르는 건 구조와</tspan><tspan x="76" dy="21">지원 체계입니다.</tspan></text>
+    <rect x="452" y="446" width="376" height="134" fill="#F3F5F8" />
+    <text x="472" y="474" font-size="15" font-weight="bold" fill="#0B1E3C">PV5 공식 컨버전 체계</text>
+    <text x="472" y="500" font-size="15" fill="#111827">국내 특장 파트너 10개사 선정<tspan x="472" dy="21">PBV 컨버전 포털: 3D CAD·기술 가이드</tspan><tspan x="472" dy="21">12V 전력 연결 블록·PIM 기본 적용</tspan><tspan x="472" dy="21">→ GPR 키트 표준화의 바탕</tspan></text>
+    <rect x="848" y="446" width="376" height="134" fill="#F3F5F8" />
+    <text x="868" y="474" font-size="15" font-weight="bold" fill="#C62828">PV5가 불리한 점</text>
+    <text x="868" y="500" font-size="15" fill="#111827">주행거리는 스타리아보다 10km 짧고,<tspan x="868" dy="21">전폭은 포터·봉고보다 155mm 넓습니다.</tspan><tspan x="868" dy="21">→ 하루 순찰 약 30km <tspan fill="#4B5563">[가설]</tspan>에는</tspan><tspan x="868" dy="21">377km로 충분합니다.</tspan></text>
   </g>
-  <g id="conclusion" data-pptx-bounds="56 596 1168 52">
-    <rect x="56" y="596" width="1168" height="52" fill="#0B1E3C" />
-    <text x="80" y="629" font-size="20" font-weight="bold" fill="#FFFFFF">조건은 같고, <tspan fill="#F5B700">도입비는 가장 낮으며</tspan>, 탐사실에 필요한 전원·고정 구조를 <tspan fill="#F5B700">순정으로</tspan> 제공합니다.</text>
+  <g id="conclusion" data-pptx-bounds="56 594 1168 52">
+    <rect x="56" y="594" width="1168" height="52" fill="#0B1E3C" />
+    <text x="80" y="627" font-size="20" font-weight="bold" fill="#FFFFFF">전원·고정 구조와 <tspan fill="#F5B700">공식 컨버전 체계</tspan>를 갖춘 PV5로, 같은 탐사실을 여러 대에 그대로 복제합니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 656 1168 34">
-    <text x="56" y="668" font-size="12" fill="#4B5563">출처: 기아 PV5 카고 가격표(2026.10.1 기준)·제원 · 현대차 스타리아 일렉트릭 출시(2026.4.23) · 2026 ST1 출시(2025.7.16)·현대차그룹 뉴스룸(317km) · 현대차·기아 포터II·봉고III EV 2025년형 발표<tspan x="56" dy="16">산업통상부 공공부문 무공해차 의무구매(2026.6.30) · 서울시 자동차 공회전 제한(제한장소 2,772곳, 2020.12) · 가격은 표기한 트림 기준, 보조금 제외 · 포터·봉고는 적재함 개조가 필요해 가격 비교 제외</tspan></text>
+    <text x="56" y="668" font-size="12" fill="#4B5563">출처: 기아 PV5 카고 가격표(2026.10.1)·제원 · 오토뷰(2026, PV5 공식 컨버전 파트너·포털) · 스타리아 일렉트릭 출시(2026.4.23) · 2026 ST1 출시(2025.7.16)·현대차그룹 뉴스룸(317km)<tspan x="56" dy="16">포터II·봉고III EV 2025년형 발표(217km) · 시사저널(2025.4.25, 경기도청 인용 GPR 대당 2억~8억 원) · 가격은 표기한 트림 기준, 보조금 제외</tspan></text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
-    <text x="1224" y="706" text-anchor="end">09 / 15</text>
+    <text x="1224" y="706" text-anchor="end">09 / 16</text>
   </g>
 </svg>
