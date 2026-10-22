@@ -25,9 +25,9 @@
     <rect x="64" y="480" width="48" height="3" fill="#F5B700" />
     <text x="64" y="540" font-size="38" font-weight="bold" fill="#FFFFFF">한 번의 조기 발견이,<tspan x="64" dy="52">한 사람의 무사 귀가가 되도록.</tspan></text>
   </g>
-  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 670 1172 40">
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 662 1172 48">
     <text x="64" y="700" font-size="14" font-weight="bold" fill="#F5B700">TEAM 한 명이라도 살릴 수 있다면</text>
-    <text x="1232" y="684" font-size="11" fill="#D6DDE8" text-anchor="end">사진: Alexander Migl, CC BY-SA 4.0(편집)</text>
-    <text x="1232" y="704" font-size="13" font-weight="bold" fill="#F5B700" text-anchor="end">13 / 13</text>
+    <text x="64" y="676" font-size="11" fill="#9FB0C8">사진: Alexander Migl, CC BY-SA 4.0(편집)</text>
+    <text x="480" y="700" font-size="13" font-weight="bold" fill="#F5B700" text-anchor="end">14 / 14</text>
   </g>
 </svg>

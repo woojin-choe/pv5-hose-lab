@@ -37,14 +37,14 @@
     <text x="652" y="202" font-size="16" font-weight="bold" fill="#B45309">왜 PV5</text>
     <text x="652" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">차가 업무의 일부가 됨</text>
     <text x="652" y="282" font-size="17" fill="#374151">차량 내비·화면과 연동하고,<tspan x='652' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='652' dy='22'>공식 컨버전으로 복제.</tspan></text>
-    <text x="652" y="372" font-size="14" fill="#4B5563">자세히 → 8~9장</text>
+    <text x="652" y="372" font-size="14" fill="#4B5563">자세히 → 8~10장</text>
   </g>
   <g id="col3" data-pptx-bounds="950 168 274 260">
     <rect x="950" y="168" width="274" height="3" fill="#0B1E3C" />
     <text x="950" y="202" font-size="16" font-weight="bold" fill="#B45309">사업</text>
     <text x="950" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">같은 길을 6번, 1회의 1/3</text>
     <text x="950" y="282" font-size="17" fill="#374151">현행 km당 92만 원 vs<tspan x='950' dy='22'>반복 탐사 원가 4.7만 원.</tspan><tspan x='950' dy='22'>실증은 4단계로.</tspan></text>
-    <text x="950" y="372" font-size="14" fill="#4B5563">자세히 → 10~12장</text>
+    <text x="950" y="372" font-size="14" fill="#4B5563">자세히 → 11~13장</text>
   </g>
   <g id="keynum" data-pptx-bounds="56 440 1168 120">
     <text x="56" y="462" font-size="15" font-weight="bold" fill="#4B5563">숫자 셋으로 보면</text>
@@ -63,10 +63,10 @@
     <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">한 번의 조기 발견이, 한 사람의 무사 귀가가 되도록.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="13" fill="#4B5563">근거: 3장 뉴시스·세계일보 · 6장 GPR 전자기 시뮬레이션 · 11장 서울시 2024 공동조사용역 최종보고서</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">근거: 3장 뉴시스·세계일보 · 6장 GPR 전자기 시뮬레이션 · 12장 서울시 2024 공동조사용역 최종보고서</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>
-    <text x="1224" y="706" text-anchor="end">02 / 13</text>
+    <text x="1224" y="706" text-anchor="end">02 / 14</text>
   </g>
 </svg>

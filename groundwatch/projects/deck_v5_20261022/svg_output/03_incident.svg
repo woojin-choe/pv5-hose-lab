@@ -4,16 +4,6 @@
     <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
     <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
     <text x="210" y="45" font-size="14" fill="#374151">실제로 일어난 일</text>
-    <text x="900" y="45" font-size="14" font-weight="bold" fill="#0B1E3C" text-anchor="middle">문제</text>
-    <rect x="876" y="54" width="48" height="3" fill="#F5B700" />
-    <text x="933" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
-    <text x="966" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">해법</text>
-    <text x="999" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
-    <text x="1032" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">PV5</text>
-    <text x="1065" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
-    <text x="1098" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">검증</text>
-    <text x="1131" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
-    <text x="1164" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">사업</text>
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <defs>
@@ -63,6 +53,6 @@
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 600 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>
-    <text x="636" y="706" text-anchor="end">03 / 13</text>
+    <text x="636" y="706" text-anchor="end">03 / 14</text>
   </g>
 </svg>

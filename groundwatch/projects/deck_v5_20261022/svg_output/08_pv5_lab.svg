@@ -17,45 +17,58 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">PV5 한 대가 탐사실이 되고, 차가 업무의 일부가 됩니다</text>
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">PV5 화물칸 하나에 탐사실이 들어가고, 차량과 연결됩니다</text>
   </g>
-  <g id="cutaway" data-pptx-bounds="56 146 640 440">
-    <image href="../images/cutaway_fixed.png" x="56" y="146" width="640" height="427" preserveAspectRatio="xMidYMid meet" />
+  <g id="cutaway" data-pptx-bounds="56 160 640 420">
+    <image href="../images/cargo_interior.png" x="56" y="168" width="620" height="282" preserveAspectRatio="xMidYMid meet" />
     <g font-size="16" font-weight="bold" text-anchor="middle">
-      <circle cx="327" cy="358" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
-      <text x="327" y="364" fill="#0B1E3C">A</text>
-      <circle cx="440" cy="297" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
-      <text x="440" y="303" fill="#0B1E3C">B</text>
-      <circle cx="582" cy="314" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
-      <text x="582" y="320" fill="#0B1E3C">C</text>
+      <circle cx="233" cy="322" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="233" y="328" fill="#0B1E3C">A</text>
+      <circle cx="457" cy="308" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="457" y="314" fill="#0B1E3C">B</text>
+      <circle cx="566" cy="285" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="566" y="291" fill="#0B1E3C">C</text>
     </g>
-    <text x="56" y="580" font-size="14" fill="#4B5563">A 분석 장비 · B 수동 GPR·AR 글래스 · C 안전장비 · 하부 GPR은 간섭 시험 후 위치 확정</text>
+    <text x="56" y="480" font-size="16" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">A</tspan> 분석 장비 랙 — 엣지 컴퓨터·GPR 제어·저장장치</text>
+    <text x="56" y="508" font-size="16" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">B</tspan> 재검증 — 수동 GPR 카트·AR 글래스·RTK 이동국</text>
+    <text x="56" y="536" font-size="16" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">C</tspan> 안전 — 내시경·작업등·라바콘·보호구</text>
+    <text x="56" y="566" font-size="14" fill="#4B5563">차량형 GPR 장착 위치와 치수는 다음 장(현장 사양)</text>
   </g>
-  <g id="verbs" data-pptx-bounds="736 150 488 430">
-    <text x="736" y="176" font-size="21" font-weight="bold" fill="#0B1E3C">싣는다 <tspan font-size="15" font-weight="normal" fill="#4B5563">카고룸 4,420L · 최대 적재 600kg</tspan></text>
-    <text x="736" y="202" font-size="16" fill="#111827">장비 약 300kg + 2인 약 150kg [가설] — 150kg 여유</text>
-    <line x1="736" y1="220" x2="1224" y2="220" stroke="#E2E6EC" stroke-width="1" />
-    <text x="736" y="258" font-size="21" font-weight="bold" fill="#0B1E3C">켠다 <tspan font-size="15" font-weight="normal" fill="#4B5563">실내·실외 V2L · PIM 제어기(외부 장비 제어)</tspan></text>
-    <text x="736" y="284" font-size="16" fill="#111827">시동 없이 장비 운용, 차량 화면에서 전원 제어</text>
-    <line x1="736" y1="302" x2="1224" y2="302" stroke="#E2E6EC" stroke-width="1" />
-    <text x="736" y="340" font-size="21" font-weight="bold" fill="#0B1E3C">고정한다 <tspan font-size="15" font-weight="normal" fill="#4B5563">L-Track·몰리 패널(순정 액세서리)</tspan></text>
-    <text x="736" y="366" font-size="16" fill="#111827">회차마다 같은 위치 → 같은 조건으로 비교</text>
-    <line x1="736" y1="384" x2="1224" y2="384" stroke="#E2E6EC" stroke-width="1" />
-    <text x="736" y="422" font-size="21" font-weight="bold" fill="#0B1E3C">안내한다 <tspan font-size="15" font-weight="normal" fill="#4B5563">Pleos Connect 내비 연동(Navihelper)</tspan></text>
-    <text x="736" y="448" font-size="16" fill="#111827">재확인 지점을 차량 내비로 바로 안내</text>
-    <line x1="736" y1="466" x2="1224" y2="466" stroke="#E2E6EC" stroke-width="1" />
-    <text x="736" y="504" font-size="21" font-weight="bold" fill="#0B1E3C">복제한다 <tspan font-size="15" font-weight="normal" fill="#4B5563">컨버전 포털 · Pleos App Market</tspan></text>
-    <text x="736" y="530" font-size="16" fill="#111827">같은 사양·같은 앱을 다른 지자체 PV5로</text>
+  <g id="spec" data-pptx-bounds="696 150 528 430">
+    <g font-size="13" font-weight="bold" fill="#4B5563">
+      <text x="696" y="166">탐사실에 필요한 것</text>
+      <text x="866" y="166">PV5에서 확인된 사양</text>
+    </g>
+    <line x1="696" y1="178" x2="1224" y2="178" stroke="#0B1E3C" stroke-width="1.5" />
+    <text x="696" y="214" font-size="17" font-weight="bold" fill="#0B1E3C">장비 적재</text>
+    <text x="866" y="214" font-size="16" fill="#111827">카고룸 4,420L · 최대 적재 600kg</text>
+    <text x="866" y="238" font-size="14" fill="#374151">장비 약 300kg + 2인 약 150kg [가설]</text>
+    <line x1="696" y1="258" x2="1224" y2="258" stroke="#E2E6EC" stroke-width="1" />
+    <text x="696" y="290" font-size="17" font-weight="bold" fill="#0B1E3C">장비 전원</text>
+    <text x="866" y="290" font-size="16" fill="#111827">실내·실외 V2L (최대 3.6kW, 해외 제원)</text>
+    <text x="866" y="314" font-size="14" fill="#374151">시동 없이 GPR·컴퓨터 운용</text>
+    <line x1="696" y1="334" x2="1224" y2="334" stroke="#E2E6EC" stroke-width="1" />
+    <text x="696" y="366" font-size="17" font-weight="bold" fill="#0B1E3C">같은 위치 고정</text>
+    <text x="866" y="366" font-size="16" fill="#111827">L-Track·몰리 패널 (순정 액세서리)</text>
+    <text x="866" y="390" font-size="14" fill="#374151">회차마다 같은 자리에 장착</text>
+    <line x1="696" y1="410" x2="1224" y2="410" stroke="#E2E6EC" stroke-width="1" />
+    <text x="696" y="442" font-size="17" font-weight="bold" fill="#0B1E3C">차량과 연동</text>
+    <text x="866" y="442" font-size="16" fill="#111827">PIM 제어기 · Pleos Connect 내비 API</text>
+    <text x="866" y="466" font-size="14" fill="#374151">재확인 지점 안내, 화면에서 장비 제어</text>
+    <line x1="696" y1="486" x2="1224" y2="486" stroke="#E2E6EC" stroke-width="1" />
+    <text x="696" y="518" font-size="17" font-weight="bold" fill="#0B1E3C">여러 대 복제</text>
+    <text x="866" y="518" font-size="16" fill="#111827">컨버전 포털 (차량 3D 데이터·인증자료)</text>
+    <text x="866" y="542" font-size="14" fill="#374151">같은 사양의 탐사실을 지자체별로</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 598 1168 44">
     <rect x="56" y="598" width="4" height="44" fill="#F5B700" />
     <text x="76" y="628" font-size="21" font-weight="bold" fill="#0B1E3C">장비를 싣는 것을 넘어, PV5에서는 차가 탐사 업무의 일부가 됩니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 기아 PV5 카고 제원·액세서리 · 공모전 솔루션 부문 안내(Pleos Connect) · 오토뷰(2026.1.28, PIM·포털) · V2L 3.6kW 해외 제원 · 배치도 콘셉트</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 기아 PV5 카고 제원·액세서리 · 공모전 솔루션 부문 안내(Pleos Connect) · 오토뷰(2026.1.28) · V2L 3.6kW 해외 제원 · 내부 배치는 콘셉트</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>
-    <text x="1224" y="706" text-anchor="end">08 / 13</text>
+    <text x="1224" y="706" text-anchor="end">08 / 14</text>
   </g>
 </svg>

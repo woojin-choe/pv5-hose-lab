@@ -1,9 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
-  <defs>
-    <marker id="linkEnd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <polygon points="0,0 10,5 0,10" fill="#0B1E3C" />
-    </marker>
-  </defs>
   <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
   <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
     <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
@@ -22,68 +17,104 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">차가 찾은 지점을, 작업자가 현장에서 바로 확인합니다</text>
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">차가 찾은 지점을, 작업자가 현장에서 바로 확인합니다</text>
   </g>
-  <g id="system-chain" data-pptx-bounds="56 146 1168 92">
-    <g text-anchor="middle">
-      <rect x="56" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
-      <text x="156" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">GroundWatch Cloud</text>
-      <text x="156" y="196" font-size="14" fill="#374151">4D 지도 · AI 분석 · 경로</text>
-      <rect x="298" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
-      <text x="398" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">Patrol 차량 앱</text>
-      <text x="398" y="196" font-size="14" fill="#374151">업무·경로 관리</text>
-      <rect x="540" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
-      <text x="640" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">Edge Gateway</text>
-      <text x="640" y="196" font-size="14" fill="#374151">센서 동기화·로컬 통신</text>
-      <rect x="782" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
-      <text x="882" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">AR 글래스</text>
-      <text x="882" y="196" font-size="14" fill="#374151">위치 정합·탐사 안내</text>
-      <rect x="1024" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
-      <text x="1124" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">수동 GPR</text>
-      <text x="1124" y="196" font-size="14" fill="#374151">다른 주파수·방향 교차검증</text>
-    </g>
-    <g stroke="#0B1E3C" stroke-width="2">
-      <line x1="259" y1="179" x2="295" y2="179" marker-start="url(#linkEnd)" marker-end="url(#linkEnd)" />
-      <line x1="501" y1="179" x2="537" y2="179" marker-start="url(#linkEnd)" marker-end="url(#linkEnd)" />
-      <line x1="743" y1="179" x2="779" y2="179" marker-start="url(#linkEnd)" marker-end="url(#linkEnd)" />
-      <line x1="985" y1="179" x2="1021" y2="179" marker-start="url(#linkEnd)" marker-end="url(#linkEnd)" />
-    </g>
+  <g id="chain" data-pptx-bounds="56 146 1168 56">
+    <rect x="56" y="150" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="1.5" />
+    <text x="158" y="178" font-size="16" font-weight="bold" fill="#0B1E3C" text-anchor="middle">클라우드 · 4D 지도</text>
+    <text x="274" y="180" font-size="18" fill="#0B1E3C" text-anchor="middle">→</text>
+    <rect x="297" y="150" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="1.5" />
+    <text x="399" y="178" font-size="16" font-weight="bold" fill="#0B1E3C" text-anchor="middle">PV5 차량 앱</text>
+    <text x="515" y="180" font-size="18" fill="#0B1E3C" text-anchor="middle">→</text>
+    <rect x="538" y="150" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="1.5" />
+    <text x="640" y="178" font-size="16" font-weight="bold" fill="#0B1E3C" text-anchor="middle">엣지 게이트웨이</text>
+    <text x="756" y="180" font-size="18" fill="#0B1E3C" text-anchor="middle">→</text>
+    <rect x="779" y="150" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="1.5" />
+    <text x="881" y="178" font-size="16" font-weight="bold" fill="#0B1E3C" text-anchor="middle">AR 글래스</text>
+    <text x="997" y="180" font-size="18" fill="#0B1E3C" text-anchor="middle">→</text>
+    <rect x="1020" y="150" width="204" height="44" rx="6" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="1.5" />
+    <text x="1122" y="178" font-size="16" font-weight="bold" fill="#0B1E3C" text-anchor="middle">수동 GPR</text>
   </g>
-  <g id="cabin-panel" data-pptx-bounds="56 250 556 400">
-    <image href="../images/ivi_car_dash.png" x="56" y="250" width="556" height="330" preserveAspectRatio="xMidYMid slice" />
-    <rect x="66" y="260" width="138" height="24" rx="3" fill="#0B1E3C" />
-    <text x="135" y="277" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">[화면 예시] 운행 전</text>
-    <text x="56" y="608" font-size="18" font-weight="bold" fill="#111827">운전석 · GroundWatch Patrol 앱</text>
-    <text x="56" y="634" font-size="16" fill="#4B5563">순찰경로·재확인 지점·장비 상태, 도착 전 안전 정차 위치 안내</text>
+  <g id="screens" data-pptx-bounds="56 216 1168 370">
+<rect x="56" y="222" width="560" height="300" rx="14" fill="#0F1A2B" />
+<text x="74" y="250" font-size="15" font-weight="bold" fill="#FFFFFF">GroundWatch Patrol</text>
+<text x="598" y="250" font-size="13" fill="#9FB0C8" text-anchor="end">04:42 · 배터리 86%</text>
+<rect x="72" y="266" width="320" height="240" rx="8" fill="#1B2638" />
+<line x1="72" y1="306.0" x2="392" y2="314.0" stroke="#2C3A52" stroke-width="5" />
+<line x1="125.3" y1="266" x2="115.3" y2="506" stroke="#2C3A52" stroke-width="5" />
+<line x1="72" y1="346.0" x2="392" y2="354.0" stroke="#2C3A52" stroke-width="5" />
+<line x1="178.7" y1="266" x2="168.7" y2="506" stroke="#2C3A52" stroke-width="5" />
+<line x1="72" y1="386.0" x2="392" y2="394.0" stroke="#2C3A52" stroke-width="5" />
+<line x1="232.0" y1="266" x2="222.0" y2="506" stroke="#2C3A52" stroke-width="5" />
+<line x1="72" y1="426.0" x2="392" y2="434.0" stroke="#2C3A52" stroke-width="5" />
+<line x1="285.3" y1="266" x2="275.3" y2="506" stroke="#2C3A52" stroke-width="5" />
+<line x1="72" y1="466.0" x2="392" y2="474.0" stroke="#2C3A52" stroke-width="5" />
+<line x1="338.7" y1="266" x2="328.7" y2="506" stroke="#2C3A52" stroke-width="5" />
+<polyline points="102,466 182,434 262,406 302,346 362,306" fill="none" stroke="#4E9BEA" stroke-width="6" stroke-linejoin="round" />
+<polyline points="102,466 182,434 262,406" fill="none" stroke="#3BA55C" stroke-width="6" stroke-linejoin="round" />
+<circle cx="182" cy="434" r="11" fill="#F5B700" stroke="#0F1A2B" stroke-width="2" />
+<text x="182" y="439" font-size="13" font-weight="bold" fill="#0F1A2B" text-anchor="middle">1</text>
+<circle cx="302" cy="346" r="11" fill="#F5B700" stroke="#0F1A2B" stroke-width="2" />
+<text x="302" y="351" font-size="13" font-weight="bold" fill="#0F1A2B" text-anchor="middle">2</text>
+<circle cx="362" cy="306" r="11" fill="#C62828" stroke="#0F1A2B" stroke-width="2" />
+<text x="362" y="311" font-size="13" font-weight="bold" fill="#0F1A2B" text-anchor="middle">3</text>
+<rect x="406" y="266" width="194" height="40" rx="6" fill="#1B2638" />
+<text x="416" y="291" font-size="13" fill="#9FB0C8">오늘 순찰</text>
+<text x="590" y="291" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="end">38.4km</text>
+<rect x="406" y="314" width="194" height="40" rx="6" fill="#1B2638" />
+<text x="416" y="339" font-size="13" fill="#9FB0C8">재확인 지점</text>
+<text x="590" y="339" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="end">3곳</text>
+<rect x="406" y="362" width="194" height="40" rx="6" fill="#1B2638" />
+<text x="416" y="387" font-size="13" fill="#9FB0C8">GPR·게이트웨이</text>
+<text x="590" y="387" font-size="14" font-weight="bold" fill="#5AD27A" text-anchor="end">연결됨</text>
+<rect x="406" y="416" width="194" height="90" rx="8" fill="#F5B700" />
+<text x="503" y="468" font-size="18" font-weight="bold" fill="#0F1A2B" text-anchor="middle">순찰 시작</text>
+
+<g>
+<rect x="664" y="222" width="560" height="300" fill="#1B2433" />
+<rect x="664" y="222" width="560" height="92" fill="#263247" />
+<rect x="678" y="284" width="40" height="30" fill="#33405A" />
+<rect x="1170" y="288" width="38" height="26" fill="#33405A" />
+<rect x="728" y="270" width="40" height="44" fill="#33405A" />
+<rect x="1122" y="272" width="38" height="42" fill="#33405A" />
+<rect x="778" y="256" width="40" height="58" fill="#33405A" />
+<rect x="1074" y="288" width="38" height="26" fill="#33405A" />
+<rect x="828" y="284" width="40" height="30" fill="#33405A" />
+<rect x="1026" y="272" width="38" height="42" fill="#33405A" />
+<rect x="878" y="270" width="40" height="44" fill="#33405A" />
+<rect x="978" y="288" width="38" height="26" fill="#33405A" />
+<rect x="928" y="256" width="40" height="58" fill="#33405A" />
+<rect x="930" y="272" width="38" height="42" fill="#33405A" />
+<path d="M904.0,314 L984.0,314 L1224,492 L1224,522 L664,522 L664,492 Z" fill="#3A3F47" />
+<path d="M941.0,314 L947.0,314 L953.0,522 L935.0,522 Z" fill="#F5B700" />
+<line x1="904.0" y1="314" x2="664" y2="492" stroke="#D9DDE3" stroke-width="3" />
+<path d="M974.0,392 L1064.0,392 L1114.0,462 L964.0,462 Z" fill="#F5B700" fill-opacity="0.28" stroke="#F5B700" stroke-width="2.5" />
+<line x1="971" y1="415" x2="1080" y2="415" stroke="#F5B700" stroke-width="1.2" stroke-dasharray="5,4" />
+<line x1="967" y1="438" x2="1097" y2="438" stroke="#F5B700" stroke-width="1.2" stroke-dasharray="5,4" />
+<ellipse cx="874.0" cy="484" rx="48" ry="14" fill="#4B5563" stroke="#FFFFFF" stroke-width="2.5" />
+</g>
+<rect x="664" y="222" width="560" height="24" fill="#C62828" fill-opacity="0.92" />
+<text x="944" y="239" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">GPR 기반 추정 위치 · 굴착 전 정밀조사와 승인 필요</text>
+<rect x="678" y="258" width="236" height="52" rx="6" fill="#0B1E3C" fill-opacity="0.9" />
+<text x="690" y="280" font-size="14" font-weight="bold" fill="#FFFFFF">재확인 R-0427 · 재탐사 3/4회</text>
+<text x="690" y="300" font-size="13" fill="#D6DDE8">추정 깊이 0.9~1.3m · 신규 변화</text>
+<text x="874.0" y="514" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">기준점 · 맨홀</text>
+<text x="1038.0" y="382" font-size="14" font-weight="bold" fill="#F5B700" text-anchor="middle">재탐사 범위</text>
+
+    <text x="56" y="552" font-size="18" font-weight="bold" fill="#111827">운전석 · PV5 화면의 Patrol 앱 <tspan font-size="14" font-weight="normal" fill="#4B5563">[화면 예시]</tspan></text>
+    <text x="56" y="578" font-size="15" fill="#374151">오늘의 순찰 경로와 재확인 지점, 장비 연결 상태</text>
+    <text x="664" y="552" font-size="18" font-weight="bold" fill="#111827">차 밖 · 작업자 AR 글래스 <tspan font-size="14" font-weight="normal" fill="#4B5563">[화면 예시]</tspan></text>
+    <text x="664" y="578" font-size="15" fill="#374151">두 손으로 수동 GPR을 미는 동안 재탐사 범위를 표시</text>
   </g>
-  <g id="ar-panel" data-pptx-bounds="640 250 584 400">
-    <image href="../images/kr_road_ar.png" x="640" y="250" width="584" height="330" preserveAspectRatio="xMidYMid slice" />
-    <polygon points="909,438 990,438 1049,508 850,508" fill="#F5B700" fill-opacity="0.26" stroke="#F5B700" stroke-width="2.5" />
-    <g stroke="#F5B700" stroke-width="1.5" stroke-dasharray="6,4">
-      <line x1="894" y1="456" x2="1005" y2="456" />
-      <line x1="879" y1="474" x2="1020" y2="474" />
-      <line x1="864" y1="492" x2="1035" y2="492" />
-    </g>
-    <ellipse cx="932" cy="551" rx="98" ry="33" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
-    <rect x="1040" y="534" width="112" height="22" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
-    <text x="1096" y="550" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">기준점 1 · 맨홀</text>
-    <circle cx="770" cy="501" r="7" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
-    <rect x="660" y="458" width="124" height="22" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
-    <text x="722" y="474" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">기준점 2 · 경계석</text>
-    <rect x="640" y="250" width="584" height="24" fill="#C62828" fill-opacity="0.92" />
-    <text x="932" y="267" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">GPR 기반 추정 위치입니다. 굴착 전 정밀조사와 관계기관 승인이 필요합니다.</text>
-    <rect x="656" y="286" width="270" height="72" rx="6" fill="#0B1E3C" fill-opacity="0.85" />
-    <text x="672" y="310" font-size="15" font-weight="bold" fill="#FFFFFF">재확인 R-0427 · 재탐사 3 / 4회</text>
-    <text x="672" y="331" font-size="13" fill="#E5E9F0">추정 깊이 0.9~1.3m · 지난 회차 대비 신규</text>
-    <text x="672" y="349" font-size="12" fill="#C9D3E2">[화면 예시] 전문가 승인 · 위치 오차 기준 충족</text>
-    <text x="640" y="608" font-size="18" font-weight="bold" fill="#111827">차량 밖 · 산업용 AR 글래스 (정차 후 작업자만)</text>
-    <text x="640" y="634" font-size="16" fill="#4B5563">두 손으로 수동 GPR을 미는 동안 재탐사 범위를 눈앞에 표시</text>
+  <g id="conclusion" data-pptx-bounds="56 600 1168 44">
+    <rect x="56" y="600" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="630" font-size="21" font-weight="bold" fill="#0B1E3C">2인 1조로, 운전자는 주행 중 AR을 쓰지 않고, 정차 후 작업자만 씁니다.</text>
   </g>
-  <g id="source" data-pptx-bounds="56 664 1168 20">
-    <text x="56" y="678" font-size="13" fill="#4B5563">2인 1조 운용 · 운전자는 주행 중 AR 미사용 · 앱 배포는 기아 PBV 파트너 승인 필요 · 화면 수치는 예시 · 실내 사진: Alexander Migl, CC BY-SA 4.0</text>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#4B5563">AR은 공동의 실제 모양이 아니라 재탐사 범위만 안내 · 앱 배포와 차량 데이터 접근은 기아 PBV 파트너 승인 필요 · 화면은 예시</text>
   </g>
-  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 694 1168 20" fill="#4B5563" font-size="12">
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>
-    <text x="1224" y="708" text-anchor="end">07 / 13</text>
+    <text x="1224" y="706" text-anchor="end">07 / 14</text>
   </g>
 </svg>

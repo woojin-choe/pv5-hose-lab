@@ -20,18 +20,49 @@
     <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">같은 길을 약 2개월마다 다시 찍고, 달라진 곳만 봅니다</text>
   </g>
   <g id="scans" data-pptx-bounds="56 150 1168 250">
-    <image href="../images/sim_prev.png" x="56" y="156" width="360" height="200" preserveAspectRatio="none" />
-    <rect x="64" y="164" width="95" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
-    <text x="74" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">지난 회차</text>
-    <text x="441" y="268" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">−</text>
-    <image href="../images/sim_cur.png" x="460" y="156" width="360" height="200" preserveAspectRatio="none" />
-    <rect x="468" y="164" width="95" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
-    <text x="478" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">이번 회차</text>
-    <text x="845" y="268" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">=</text>
-    <image href="../images/sim_diff.png" x="864" y="156" width="360" height="200" preserveAspectRatio="none" />
-    <rect x="872" y="164" width="155" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
-    <text x="882" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">자동 선별된 차이</text>
-    <text x="56" y="382" font-size="16" fill="#374151"><tspan font-weight="bold" fill="#0B1E3C">1 반복 측정</tspan> 새벽에 같은 경로를 약 2개월마다   <tspan font-weight="bold" fill="#0B1E3C">2 변화만 선별</tspan> 위치를 맞춰 빼고, AI가 신호 유형 분류   <tspan font-weight="bold" fill="#0B1E3C">3 현장 재확인</tspan> 승인된 곳만 수동 GPR</text>
+<g>
+<rect x="56" y="152" width="340" height="210" fill="#CDBB9F" />
+<rect x="56" y="324.5" width="340" height="37.5" fill="#A8957A" />
+<rect x="56" y="161.0" width="340" height="18.8" fill="#8B9099" />
+<rect x="56" y="152" width="340" height="9.0" fill="#2B3036" />
+<path d="M186.8,261.5 C186.8,232.4 208.4,230.0 226.0,230.0 C245.6,230.0 265.1,233.0 265.1,261.5 Z" fill="#24282F" />
+<circle cx="226.0" cy="272.0" r="30.0" fill="#E5E7EB" stroke="#6B7280" stroke-width="3" />
+<circle cx="226.0" cy="272.0" r="23.4" fill="#4B5563" />
+</g>
+<rect x="56" y="152" width="340" height="210" fill="none" stroke="#0B1E3C" stroke-width="1" />
+<rect x="64" y="160" width="97" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.92" />
+<text x="75" y="178" font-size="15" font-weight="bold" fill="#FFFFFF">지난 회차</text>
+<text x="433" y="269.0" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">→</text>
+<g>
+<rect x="470" y="152" width="340" height="210" fill="#CDBB9F" />
+<rect x="470" y="324.5" width="340" height="37.5" fill="#A8957A" />
+<rect x="470" y="161.0" width="340" height="18.8" fill="#8B9099" />
+<rect x="470" y="152" width="340" height="9.0" fill="#2B3036" />
+<path d="M583.0,261.5 C583.0,224.0 614.4,219.5 640.0,219.5 C668.5,219.5 697.0,225.1 697.0,261.5 Z" fill="#24282F" />
+<circle cx="640.0" cy="272.0" r="30.0" fill="#E5E7EB" stroke="#6B7280" stroke-width="3" />
+<circle cx="640.0" cy="272.0" r="23.4" fill="#4B5563" />
+</g>
+<rect x="470" y="152" width="340" height="210" fill="none" stroke="#0B1E3C" stroke-width="1" />
+<rect x="478" y="160" width="127" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.92" />
+<text x="489" y="178" font-size="15" font-weight="bold" fill="#FFFFFF">약 2개월 뒤</text>
+<text x="847" y="269.0" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">=</text>
+<g>
+<rect x="884" y="152" width="340" height="210" fill="#CDBB9F" />
+<rect x="884" y="324.5" width="340" height="37.5" fill="#A8957A" />
+<rect x="884" y="161.0" width="340" height="18.8" fill="#8B9099" />
+<rect x="884" y="152" width="340" height="9.0" fill="#2B3036" />
+<circle cx="1054.0" cy="272.0" r="30.0" fill="#E5E7EB" stroke="#6B7280" stroke-width="3" />
+<circle cx="1054.0" cy="272.0" r="23.4" fill="#4B5563" />
+</g>
+<rect x="884" y="152" width="340" height="210" fill="none" stroke="#0B1E3C" stroke-width="1" />
+<rect x="884" y="152" width="340" height="210" fill="#0B1E3C" fill-opacity="0.75" />
+<path d="M997.0,261.5 C997.0,224.0 1028.3,219.5 1054.0,219.5 C1082.5,219.5 1111.0,225.1 1111.0,261.5 Z" fill="#F5B700" />
+<path d="M1014.9,261.5 C1014.9,232.4 1036.4,230.0 1054.0,230.0 C1073.6,230.0 1093.2,233.0 1093.2,261.5 Z" fill="#0B1E3C" />
+<circle cx="1054.0" cy="272.0" r="30.0" fill="none" stroke="#9AA3AF" stroke-width="2" />
+<text x="1210" y="346" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="end">커진 부분만 남음</text>
+<rect x="892" y="160" width="157" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.92" />
+<text x="903" y="178" font-size="15" font-weight="bold" fill="#FFFFFF">자동 선별된 차이</text>
+    <text x="56" y="390" font-size="16" fill="#374151"><tspan font-weight="bold" fill="#0B1E3C">1 반복 측정</tspan> 새벽에 같은 경로를 약 2개월마다   <tspan font-weight="bold" fill="#0B1E3C">2 변화만 선별</tspan> 위치를 맞춰 빼고, AI가 신호 유형 분류   <tspan font-weight="bold" fill="#0B1E3C">3 현장 재확인</tspan> 승인된 곳만 수동 GPR</text>
   </g>
   <g id="diff" data-pptx-bounds="56 410 560 170">
     <rect x="56" y="412" width="560" height="3" fill="#0B1E3C" />
@@ -79,6 +110,6 @@
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>
-    <text x="1224" y="706" text-anchor="end">06 / 13</text>
+    <text x="1224" y="706" text-anchor="end">06 / 14</text>
   </g>
 </svg>
