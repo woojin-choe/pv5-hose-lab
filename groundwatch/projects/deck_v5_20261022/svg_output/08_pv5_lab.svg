@@ -22,8 +22,8 @@
   <g id="cutaway" data-pptx-bounds="56 160 640 420">
     <image href="../images/cutaway_nowheel.png" x="56" y="150" width="620" height="349" preserveAspectRatio="xMidYMid meet" />
     <g font-size="16" font-weight="bold" text-anchor="middle">
-      <circle cx="258" cy="305" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
-      <text x="258" y="311" fill="#0B1E3C">A</text>
+      <circle cx="319" cy="298" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="319" y="304" fill="#0B1E3C">A</text>
       <circle cx="449" cy="272" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
       <text x="449" y="278" fill="#0B1E3C">B</text>
       <circle cx="571" cy="272" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
