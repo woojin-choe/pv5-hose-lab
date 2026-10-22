@@ -30,9 +30,9 @@
     </g>
   </g>
   <g id="feat-2" data-pptx-bounds="652 184 572 178">
-    <image href="../images/pv5_feat_v2l.png" x="652" y="184" width="258" height="172" preserveAspectRatio="xMidYMid slice" />
-    <rect x="658" y="190" width="120" height="22" rx="3" fill="#0B1E3C" fill-opacity="0.88" />
-    <text x="718" y="206" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">V2X/V2L 설정 화면</text>
+    <image href="../images/pv5_v2l_kr.jpg" x="652" y="184" width="258" height="172" preserveAspectRatio="xMidYMid slice" />
+    <rect x="658" y="190" width="132" height="22" rx="3" fill="#0B1E3C" fill-opacity="0.88" />
+    <text x="724" y="206" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">[화면 예시] 장비 전원</text>
     <text x="932" y="206" font-size="14" font-weight="bold" fill="#4B5563">PV5 특징 02</text>
     <text x="932" y="236" font-size="24" font-weight="bold" fill="#0B1E3C">즉시 전원</text>
     <g font-size="17" fill="#111827">
@@ -79,7 +79,7 @@
     <text x="80" y="613" font-size="20" font-weight="bold" fill="#FFFFFF">개조해서 매다는 짐이 아니라 <tspan fill="#F5B700">처음부터 끼우는 모듈</tspan>이라, 같은 사양으로 여러 대에 복제합니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 646 1168 40">
-    <text x="56" y="660" font-size="12" fill="#4B5563">출처: 기아 PV5 카고 가격표·제원(카고룸·최대 적재 600kg은 롱레인지 3도어) · 기아 PV5 카고 특징·액세서리(L-Track·몰리 패널) · 현대차그룹 PV5 테크 데이(2025.7.23, 플렉시블 바디·컨버전)<tspan x="56" dy="18">V2L 3.6kW는 해외 공개 제원 · 사진: 02 RuinDig, CC BY 4.0(Japan Mobility Show 2025 전시차 화면, 일부 크롭) · 01·03·04 PV5 기반 콘셉트 이미지</tspan></text>
+    <text x="56" y="660" font-size="12" fill="#4B5563">출처: 기아 PV5 카고 가격표·제원(카고룸·최대 적재 600kg은 롱레인지 3도어) · 기아 PV5 카고 특징·액세서리(L-Track·몰리 패널) · 현대차그룹 PV5 테크 데이(2025.7.23, 플렉시블 바디·컨버전)<tspan x="56" dy="18">V2L 3.6kW는 해외 공개 제원 · 사진: 02 PV5 실내 Alexander Migl, CC BY-SA 4.0(화면 합성, 수치는 예시) · 01·03·04 PV5 기반 콘셉트 이미지</tspan></text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
