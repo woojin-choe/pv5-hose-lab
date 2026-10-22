@@ -19,52 +19,31 @@
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
     <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">땅꺼짐 원인 1위는 하수관 손상, 그 위 2m가 탐사 대상입니다</text>
   </g>
-  <g id="section" data-pptx-bounds="56 160 680 420">
-<g>
-<rect x="110" y="168" width="420" height="360" fill="#CDBB9F" />
-<rect x="110" y="463.7" width="420" height="64.3" fill="#A8957A" />
-<rect x="110" y="183.4" width="420" height="32.1" fill="#8B9099" />
-<rect x="110" y="168" width="420" height="15.4" fill="#2B3036" />
-<path d="M226.7,355.7 C226.7,293.5 278.0,286.3 320.0,286.3 C366.7,286.3 413.3,295.3 413.3,355.7 Z" fill="#24282F" />
-<circle cx="320.0" cy="373.7" r="51.4" fill="#E5E7EB" stroke="#6B7280" stroke-width="3" />
-<circle cx="320.0" cy="373.7" r="40.1" fill="#4B5563" />
-</g>
-<rect x="110" y="168" width="420" height="360" fill="none" stroke="#0B1E3C" stroke-width="1" />
-<rect x="110" y="168" width="420" height="257.1" fill="#F5B700" fill-opacity="0.18" />
-<line x1="110" y1="425.1" x2="530" y2="425.1" stroke="#F5B700" stroke-width="3" />
-<line x1="100" y1="168.0" x2="110" y2="168.0" stroke="#0B1E3C" stroke-width="1.5" />
-<text x="94" y="173.0" font-size="14" fill="#374151" text-anchor="end">0m</text>
-<line x1="100" y1="296.6" x2="110" y2="296.6" stroke="#0B1E3C" stroke-width="1.5" />
-<text x="94" y="301.6" font-size="14" fill="#374151" text-anchor="end">1m</text>
-<line x1="100" y1="425.1" x2="110" y2="425.1" stroke="#0B1E3C" stroke-width="1.5" />
-<text x="94" y="430.1" font-size="14" fill="#374151" text-anchor="end">2m</text>
-<line x1="360.0" y1="175.7" x2="548.0" y2="175.7" stroke="#0B1E3C" stroke-width="1.2" />
-<circle cx="360.0" cy="175.7" r="3.5" fill="#0B1E3C" />
-<text x="554.0" y="180.7" font-size="15" font-weight="bold" fill="#0B1E3C">노면 침하</text>
-<line x1="365.0" y1="299.1" x2="548.0" y2="299.1" stroke="#0B1E3C" stroke-width="1.2" />
-<circle cx="365.0" cy="299.1" r="3.5" fill="#0B1E3C" />
-<text x="554.0" y="304.1" font-size="15" font-weight="bold" fill="#0B1E3C">흙이 쓸려 생긴 공동</text>
-<line x1="371.4" y1="373.7" x2="548.0" y2="373.7" stroke="#0B1E3C" stroke-width="1.2" />
-<circle cx="371.4" cy="373.7" r="3.5" fill="#0B1E3C" />
-<text x="554.0" y="378.7" font-size="15" font-weight="bold" fill="#0B1E3C">하수관 누수</text>
-<line x1="530.0" y1="425.1" x2="548.0" y2="425.1" stroke="#B45309" stroke-width="1.2" />
-<circle cx="530.0" cy="425.1" r="3.5" fill="#B45309" />
-<text x="554.0" y="430.1" font-size="15" font-weight="bold" fill="#B45309">GPR 탐사 깊이 약 2m</text>
-<text x="110" y="556" font-size="15" fill="#4B5563">≈ 16m · 명일동 같은 심부 붕괴는 이 깊이 밖(공사장 계측의 영역)</text>
-
+  <g id="section" data-pptx-bounds="56 160 640 420">
+    <image href="../images/ug_section_cut.png" x="56" y="166" width="640" height="407" preserveAspectRatio="xMidYMid meet" />
+    <g font-size="15" font-weight="bold">
+      <rect x="290" y="214" width="112" height="28" rx="14" fill="#0B1E3C" />
+      <text x="346" y="233" fill="#FFFFFF" text-anchor="middle">3  노면 침하</text>
+      <rect x="114" y="282" width="112" height="28" rx="14" fill="#0B1E3C" />
+      <text x="170" y="301" fill="#FFFFFF" text-anchor="middle">2  공동 형성</text>
+      <rect x="406" y="340" width="124" height="28" rx="14" fill="#0B1E3C" />
+      <text x="468" y="359" fill="#FFFFFF" text-anchor="middle">1  하수관 누수</text>
+      <rect x="138" y="524" width="160" height="28" rx="14" fill="#FFFFFF" stroke="#9AA3AF" stroke-width="1" />
+      <text x="218" y="543" fill="#374151" text-anchor="middle">깊은 층 · 대상 아님</text>
+    </g>
   </g>
-  <g id="stat" data-pptx-bounds="784 160 440 162">
-    <text x="784" y="250" font-size="80" font-weight="bold" fill="#0B1E3C" letter-spacing="-3">45.4%</text>
-    <text x="784" y="286" font-size="20" font-weight="bold" fill="#111827">지반침하 원인 1위 · 하수관 손상</text>
-    <text x="784" y="312" font-size="16" fill="#374151">전국 867건 중 394건 (2020~2024)</text>
+  <g id="stat" data-pptx-bounds="744 160 480 162">
+    <text x="744" y="250" font-size="88" font-weight="bold" fill="#0B1E3C" letter-spacing="-3">45.4%</text>
+    <text x="744" y="286" font-size="20" font-weight="bold" fill="#111827">지반침하 원인 1위 · 하수관 손상</text>
+    <text x="744" y="312" font-size="16" fill="#374151">전국 867건 중 394건 (2020~2024)</text>
   </g>
-  <g id="scope" data-pptx-bounds="784 340 440 220">
-    <rect x="784" y="340" width="440" height="3" fill="#F5B700" />
-    <text x="784" y="378" font-size="19" font-weight="bold" fill="#0B1E3C">얕은 공동형 · 약 2m 이내 → GroundWatch 대상</text>
-    <text x="784" y="404" font-size="16" fill="#374151">공동이 먼저 생겨 자람 → 반복 측정으로 잡을 수 있음</text>
-    <rect x="784" y="440" width="440" height="3" fill="#C3CCD9" />
-    <text x="784" y="478" font-size="19" font-weight="bold" fill="#4B5563">심부 붕괴형 · 예: 명일동 16m → 대상 아님</text>
-    <text x="784" y="504" font-size="16" fill="#374151">깊은 지층·터널 공사 영역은 공사장 계측이 맡음</text>
+  <g id="scope" data-pptx-bounds="744 340 480 220">
+    <rect x="744" y="340" width="480" height="3" fill="#F5B700" />
+    <text x="744" y="378" font-size="19" font-weight="bold" fill="#0B1E3C">얕은 공동형 · 약 2m 이내 → GroundWatch 대상</text>
+    <text x="744" y="404" font-size="16" fill="#374151">공동이 먼저 생겨 자람 → 반복 측정으로 잡을 수 있음</text>
+    <rect x="744" y="440" width="480" height="3" fill="#C3CCD9" />
+    <text x="744" y="478" font-size="19" font-weight="bold" fill="#4B5563">심부 붕괴형 · 예: 명일동 16m → 대상 아님</text>
+    <text x="744" y="504" font-size="16" fill="#374151">깊은 지층·터널 공사 영역은 공사장 계측이 맡음</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 600 1168 44">
     <rect x="56" y="600" width="4" height="44" fill="#F5B700" />
@@ -75,6 +54,6 @@
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>
-    <text x="1224" y="706" text-anchor="end">05 / 14</text>
+    <text x="1224" y="706" text-anchor="end">05 / 13</text>
   </g>
 </svg>

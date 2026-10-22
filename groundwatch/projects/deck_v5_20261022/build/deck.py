@@ -7,7 +7,7 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "svg_output")
 for _f in os.listdir(OUT):
     if _f.endswith(".svg"):
         os.remove(os.path.join(OUT, _f))
-N = 14
+N = 13
 NAVY, INK, SUB, MUTE, LINE, PALE = "#0B1E3C", "#111827", "#374151", "#4B5563", "#E2E6EC", "#F3F5F8"
 YEL, AMB, RED = "#F5B700", "#B45309", "#C62828"
 STEPS = ["문제", "해법", "PV5", "검증", "사업"]
@@ -188,21 +188,31 @@ svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹�
 ''' + foot(3, "출처: 지하안전법(지하시설물관리자 공동조사 5년 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 일본 국토교통성 도로정책 연구 30-5(2021)"))
 
 # ---------------------------------------------------------------- 04 대상
-svg("04_target.svg", head("문제", "우리가 막을 대상") + title("땅꺼짐 원인 1위는 하수관 손상, 그 위 2m가 탐사 대상입니다") + f'''  <g id="section" data-pptx-bounds="56 160 680 420">
-{vec.target_figure2()}
+svg("04_target.svg", head("문제", "우리가 막을 대상") + title("땅꺼짐 원인 1위는 하수관 손상, 그 위 2m가 탐사 대상입니다") + f'''  <g id="section" data-pptx-bounds="56 160 640 420">
+    <image href="../images/ug_section_cut.png" x="56" y="166" width="640" height="407" preserveAspectRatio="xMidYMid meet" />
+    <g font-size="15" font-weight="bold">
+      <rect x="290" y="214" width="112" height="28" rx="14" fill="{NAVY}" />
+      <text x="346" y="233" fill="#FFFFFF" text-anchor="middle">3  노면 침하</text>
+      <rect x="114" y="282" width="112" height="28" rx="14" fill="{NAVY}" />
+      <text x="170" y="301" fill="#FFFFFF" text-anchor="middle">2  공동 형성</text>
+      <rect x="406" y="340" width="124" height="28" rx="14" fill="{NAVY}" />
+      <text x="468" y="359" fill="#FFFFFF" text-anchor="middle">1  하수관 누수</text>
+      <rect x="138" y="524" width="160" height="28" rx="14" fill="#FFFFFF" stroke="#9AA3AF" stroke-width="1" />
+      <text x="218" y="543" fill="{SUB}" text-anchor="middle">깊은 층 · 대상 아님</text>
+    </g>
   </g>
-  <g id="stat" data-pptx-bounds="784 160 440 162">
-    <text x="784" y="250" font-size="80" font-weight="bold" fill="{NAVY}" letter-spacing="-3">45.4%</text>
-    <text x="784" y="286" font-size="20" font-weight="bold" fill="{INK}">지반침하 원인 1위 · 하수관 손상</text>
-    <text x="784" y="312" font-size="16" fill="{SUB}">전국 867건 중 394건 (2020~2024)</text>
+  <g id="stat" data-pptx-bounds="744 160 480 162">
+    <text x="744" y="250" font-size="88" font-weight="bold" fill="{NAVY}" letter-spacing="-3">45.4%</text>
+    <text x="744" y="286" font-size="20" font-weight="bold" fill="{INK}">지반침하 원인 1위 · 하수관 손상</text>
+    <text x="744" y="312" font-size="16" fill="{SUB}">전국 867건 중 394건 (2020~2024)</text>
   </g>
-  <g id="scope" data-pptx-bounds="784 340 440 220">
-    <rect x="784" y="340" width="440" height="3" fill="{YEL}" />
-    <text x="784" y="378" font-size="19" font-weight="bold" fill="{NAVY}">얕은 공동형 · 약 2m 이내 → GroundWatch 대상</text>
-    <text x="784" y="404" font-size="16" fill="{SUB}">공동이 먼저 생겨 자람 → 반복 측정으로 잡을 수 있음</text>
-    <rect x="784" y="440" width="440" height="3" fill="#C3CCD9" />
-    <text x="784" y="478" font-size="19" font-weight="bold" fill="{MUTE}">심부 붕괴형 · 예: 명일동 16m → 대상 아님</text>
-    <text x="784" y="504" font-size="16" fill="{SUB}">깊은 지층·터널 공사 영역은 공사장 계측이 맡음</text>
+  <g id="scope" data-pptx-bounds="744 340 480 220">
+    <rect x="744" y="340" width="480" height="3" fill="{YEL}" />
+    <text x="744" y="378" font-size="19" font-weight="bold" fill="{NAVY}">얕은 공동형 · 약 2m 이내 → GroundWatch 대상</text>
+    <text x="744" y="404" font-size="16" fill="{SUB}">공동이 먼저 생겨 자람 → 반복 측정으로 잡을 수 있음</text>
+    <rect x="744" y="440" width="480" height="3" fill="#C3CCD9" />
+    <text x="744" y="478" font-size="19" font-weight="bold" fill="{MUTE}">심부 붕괴형 · 예: 명일동 16m → 대상 아님</text>
+    <text x="744" y="504" font-size="16" fill="{SUB}">깊은 지층·터널 공사 영역은 공사장 계측이 맡음</text>
   </g>
   {band(600, "차량형 GPR이 보는 깊이(약 2m)에, 가장 흔한 원인이 있습니다.").strip()}
 ''' + foot(4, "출처: 국토교통부 지반침하 원인 통계(2020~2024) · 국토교통부 명일동 사고조사(2025.12.3) · 서울시 차량형 GPR 탐사 깊이 약 2m · 단면도는 원리 설명용"))
@@ -461,8 +471,8 @@ svg("10_economics.svg", econ())
 def summary():
     cols = [("문제", "탐사 100여 일 뒤 함몰", "법정 점검 5년, 서울 1년.<tspan x='{x}' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='{x}' dy='22'>아무도 보지 못합니다.</tspan>", "3~5장"),
             ("해법", "같은 길을 약 2개월마다", "PV5가 GPR로 다시 찍고,<tspan x='{x}' dy='22'>달라진 곳만 골라</tspan><tspan x='{x}' dy='22'>현장에서 재확인합니다.</tspan>", "6~7장"),
-            ("왜 PV5", "차가 업무의 일부가 됨", "차량 내비·화면과 연동하고,<tspan x='{x}' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='{x}' dy='22'>공식 컨버전으로 복제.</tspan>", "8~10장"),
-            ("사업", "같은 길을 6번, 1회의 1/3", "현행 km당 92만 원 vs<tspan x='{x}' dy='22'>반복 탐사 원가 4.7만 원.</tspan><tspan x='{x}' dy='22'>실증은 4단계로.</tspan>", "11~13장")]
+            ("왜 PV5", "차가 업무의 일부가 됨", "차량 내비·화면과 연동하고,<tspan x='{x}' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='{x}' dy='22'>공식 컨버전으로 복제.</tspan>", "8~9장"),
+            ("사업", "같은 길을 6번, 1회의 1/3", "현행 km당 92만 원 vs<tspan x='{x}' dy='22'>반복 탐사 원가 4.7만 원.</tspan><tspan x='{x}' dy='22'>실증은 4단계로.</tspan>", "10~12장")]
     b = ""
     x = 56
     for i, (k, h, d, ref) in enumerate(cols):
@@ -487,7 +497,7 @@ def summary():
 '''
         x += 396
     b += "  </g>\n" + band(590, "한 번의 조기 발견이, 한 사람의 무사 귀가가 되도록.")
-    return head("", "한 장 요약") + title("GroundWatch는 탐사와 탐사 ‘사이’의 공백을 메웁니다") + b + foot(2, "근거: 3장 뉴시스·세계일보 · 6장 GPR 전자기 시뮬레이션 · 12장 서울시 2024 공동조사용역 최종보고서")
+    return head("", "한 장 요약") + title("GroundWatch는 탐사와 탐사 ‘사이’의 공백을 메웁니다") + b + foot(2, "근거: 3장 뉴시스·세계일보 · 6장 GPR 전자기 시뮬레이션 · 11장 서울시 2024 공동조사용역 최종보고서")
 
 
 svg("01b_summary.svg", summary())
@@ -617,8 +627,18 @@ svg("11b_withkia.svg", withkia())
 # ================================================================ 압축본: 같은 이야기를 하는 장을 합친다
 def solution2():
     b = f"""  <g id="scans" data-pptx-bounds="56 150 1168 250">
-{vec.change_figure2()}"""
-    b += f"""    <text x="56" y="390" font-size="16" fill="{SUB}"><tspan font-weight="bold" fill="{NAVY}">1 반복 측정</tspan> 새벽에 같은 경로를 약 2개월마다   <tspan font-weight="bold" fill="{NAVY}">2 변화만 선별</tspan> 위치를 맞춰 빼고, AI가 신호 유형 분류   <tspan font-weight="bold" fill="{NAVY}">3 현장 재확인</tspan> 승인된 곳만 수동 GPR</text>
+"""
+    imgs = [("sim_prev.png", "지난 회차"), ("sim_cur.png", "이번 회차"), ("sim_diff.png", "자동 선별된 차이")]
+    x = 56
+    for i, (f, lab) in enumerate(imgs):
+        b += f"""    <image href="../images/{f}" x="{x}" y="156" width="360" height="200" preserveAspectRatio="none" />
+    <rect x="{x + 8}" y="164" width="{len(lab) * 15 + 20}" height="26" rx="3" fill="{NAVY}" fill-opacity="0.9" />
+    <text x="{x + 18}" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">{lab}</text>
+"""
+        if i < 2:
+            b += f'    <text x="{x + 385}" y="268" font-size="34" font-weight="bold" fill="{NAVY}" text-anchor="middle">{"−" if i == 0 else "="}</text>\n'
+        x += 404
+    b += f"""    <text x="56" y="382" font-size="16" fill="{SUB}"><tspan font-weight="bold" fill="{NAVY}">1 반복 측정</tspan> 새벽에 같은 경로를 약 2개월마다   <tspan font-weight="bold" fill="{NAVY}">2 변화만 선별</tspan> 위치를 맞춰 빼고, AI가 신호 유형 분류   <tspan font-weight="bold" fill="{NAVY}">3 현장 재확인</tspan> 승인된 곳만 수동 GPR</text>
   </g>
   <g id="diff" data-pptx-bounds="56 410 560 170">
     <rect x="56" y="412" width="560" height="3" fill="{NAVY}" />
@@ -663,14 +683,15 @@ def solution2():
         6, "시뮬레이션: 2D 전자기 파동 계산(FDTD) · 400MHz · Ø0.8m 하수관 위 공동 반경 18cm 기준 · 세기 = 회차 차분 에너지 ÷ 가장 큰 오탐 요인 · 판정은 전문가, 확정은 천공")
 
 
-_S = 620 / 1330
-CA, CB, CC = (56 + _S * 380, 168 + _S * 330), (56 + _S * 860, 168 + _S * 300), (56 + _S * 1095, 168 + _S * 250)
+_S = 620 / 1672
+CA, CB, CC = (56 + _S * 545, 150 + _S * 418), (56 + _S * 1060, 150 + _S * 330), (56 + _S * 1390, 150 + _S * 330)
+CD = (56 + _S * 1195, 150 + _S * 795)
 CA, CB, CC = [tuple(round(v) for v in c) for c in (CA, CB, CC)]
 
 
 def pv5lab2():
     b = f"""  <g id="cutaway" data-pptx-bounds="56 160 640 420">
-    <image href="../images/cargo_interior.png" x="56" y="168" width="620" height="282" preserveAspectRatio="xMidYMid meet" />
+    <image href="../images/cutaway_nowheel.png" x="56" y="150" width="620" height="349" preserveAspectRatio="xMidYMid meet" />
     <g font-size="16" font-weight="bold" text-anchor="middle">
       <circle cx="{CA[0]}" cy="{CA[1]}" r="17" fill="{YEL}" stroke="{NAVY}" stroke-width="2" />
       <text x="{CA[0]}" y="{CA[1] + 6}" fill="{NAVY}">A</text>
@@ -678,11 +699,12 @@ def pv5lab2():
       <text x="{CB[0]}" y="{CB[1] + 6}" fill="{NAVY}">B</text>
       <circle cx="{CC[0]}" cy="{CC[1]}" r="17" fill="{YEL}" stroke="{NAVY}" stroke-width="2" />
       <text x="{CC[0]}" y="{CC[1] + 6}" fill="{NAVY}">C</text>
+      <circle cx="{CD[0]}" cy="{CD[1]}" r="17" fill="{YEL}" stroke="{NAVY}" stroke-width="2" />
+      <text x="{CD[0]}" y="{CD[1] + 6}" fill="{NAVY}">D</text>
     </g>
-    <text x="56" y="480" font-size="16" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">A</tspan> 분석 장비 랙 — 엣지 컴퓨터·GPR 제어·저장장치</text>
-    <text x="56" y="508" font-size="16" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">B</tspan> 재검증 — 수동 GPR 카트·AR 글래스·RTK 이동국</text>
-    <text x="56" y="536" font-size="16" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">C</tspan> 안전 — 내시경·작업등·라바콘·보호구</text>
-    <text x="56" y="566" font-size="14" fill="{MUTE}">차량형 GPR 장착 위치와 치수는 다음 장(현장 사양)</text>
+    <text x="56" y="522" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">A</tspan> 분석 장비 랙 (엣지 컴퓨터·GPR 제어)   <tspan font-weight="bold" fill="{NAVY}">B</tspan> 수동 GPR·AR 글래스</text>
+    <text x="56" y="546" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">C</tspan> 내시경·안전장비   <tspan font-weight="bold" fill="{NAVY}">D</tspan> 바닥 아래 차량형 다채널 GPR</text>
+    <text x="56" y="572" font-size="13" fill="{MUTE}">콘셉트 이미지 · GPR 장착 위치는 배터리 팩 간섭 시험 후 확정</text>
   </g>
   <g id="spec" data-pptx-bounds="696 150 528 430">
     <g font-size="13" font-weight="bold" fill="{MUTE}">
@@ -706,7 +728,7 @@ def pv5lab2():
             b += f'    <line x1="696" y1="{y + 44}" x2="1224" y2="{y + 44}" stroke="{LINE}" stroke-width="1" />\n'
         y += 76
     b += "  </g>\n" + band(598, "장비를 싣는 것을 넘어, PV5에서는 차가 탐사 업무의 일부가 됩니다.")
-    return head("PV5", "PV5 이동형 탐사실") + title("PV5 화물칸 하나에 탐사실이 들어가고, 차량과 연결됩니다") + b + foot(
+    return head("PV5", "PV5 이동형 탐사실") + title("PV5 한 대에 탐사실이 들어가고, 차량과 연결됩니다") + b + foot(
         8, "출처: 기아 PV5 카고 제원·액세서리 · 공모전 솔루션 부문 안내(Pleos Connect) · 오토뷰(2026.1.28) · V2L 3.6kW 해외 제원 · 내부 배치는 콘셉트")
 
 
@@ -843,7 +865,6 @@ def mount():
         9, "치수: 기아 PV5 카고 롱 공식 제원 · 배터리 바닥 장착(Autocar) · GPR: 서울시 2024 용역 보고서 · RTK: 측량용 수신기 제조사 사양 · 실루엣 비율 근사")
 
 
-svg("07c_mount.svg", mount())
 
 
 # ================================================================ 현장 재확인 — 같은 톤의 벡터 화면 예시
@@ -928,7 +949,6 @@ def field2():
         7, "AR은 공동의 실제 모양이 아니라 재탐사 범위만 안내 · 앱 배포와 차량 데이터 접근은 기아 PBV 파트너 승인 필요 · 화면은 예시")
 
 
-svg("06_field.svg", field2())
 
 svg("07_pv5_lab.svg", pv5lab2())
 svg("11_entry.svg", entry2())
