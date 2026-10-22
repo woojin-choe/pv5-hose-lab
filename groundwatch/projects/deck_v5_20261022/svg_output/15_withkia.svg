@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <text x="210" y="45" font-size="14" fill="#374151">기아와 함께 할 일</text>
+    <text x="900" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">문제</text>
+    <text x="933" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="966" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">해법</text>
+    <text x="999" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1032" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">PV5</text>
+    <text x="1065" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1098" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">검증</text>
+    <text x="1131" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1164" y="45" font-size="14" font-weight="bold" fill="#0B1E3C" text-anchor="middle">사업</text>
+    <rect x="1140" y="54" width="48" height="3" fill="#F5B700" />
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">기아가 지원하면, 6개월 안에 첫 실증을 보여드립니다</text>
+  </g>
+  <g id="volume" data-pptx-bounds="56 160 540 400">
+    <text x="56" y="186" font-size="15" font-weight="bold" fill="#B45309">기아에게 생기는 수요 (계산)</text>
+    <rect x="56" y="200" width="540" height="3" fill="#0B1E3C" />
+    <text x="56" y="268" font-size="64" font-weight="bold" fill="#0B1E3C" letter-spacing="-2">약 97대</text>
+    <text x="56" y="300" font-size="17" fill="#111827">지자체 관리 도로 96,712km를 약 2개월마다 보려면</text>
+    <text x="56" y="324" font-size="15" fill="#374151">96,712km ÷ 차량 1대 담당 약 1,000km</text>
+    <line x1="56" y1="352" x2="596" y2="352" stroke="#E2E6EC" stroke-width="1" />
+    <text x="56" y="400" font-size="34" font-weight="bold" fill="#0B1E3C">약 8대</text>
+    <text x="230" y="392" font-size="17" fill="#111827">서울 도로 8,342km만 맡을 때</text>
+    <text x="56" y="452" font-size="34" font-weight="bold" fill="#0B1E3C">2억 원대</text>
+    <text x="230" y="444" font-size="17" fill="#111827">장비 포함 컨버전 PV5 1대 가격대</text>
+    <text x="56" y="500" font-size="15" fill="#374151">대수는 많지 않지만, 대당 가격이 높고 공공 레퍼런스가 되는</text>
+    <text x="56" y="522" font-size="15" fill="#374151">‘PV5 + 업무 앱’ 패키지의 첫 사례입니다.</text>
+  </g>
+  <g id="ask" data-pptx-bounds="656 160 568 400">
+    <text x="656" y="186" font-size="15" font-weight="bold" fill="#B45309">수상 후 기아와 함께 할 첫 6개월</text>
+    <rect x="656" y="200" width="568" height="3" fill="#0B1E3C" />
+    <text x="656" y="236" font-size="15" font-weight="bold" fill="#4B5563">1</text>
+    <text x="680" y="236" font-size="20" font-weight="bold" fill="#0B1E3C">PV5 실물 1대</text>
+    <text x="680" y="262" font-size="16" fill="#111827">→ 1단계 폐쇄 시험장 실증</text>
+    <text x="680" y="286" font-size="13" fill="#4B5563">공모전 혜택: 우수작 PV5 대여 검토</text>
+    <line x1="656" y1="302" x2="1224" y2="302" stroke="#E2E6EC" stroke-width="1" />
+    <text x="656" y="320" font-size="15" font-weight="bold" fill="#4B5563">2</text>
+    <text x="680" y="320" font-size="20" font-weight="bold" fill="#0B1E3C">Pleos Playground·SDK</text>
+    <text x="680" y="346" font-size="16" fill="#111827">→ Navihelper·Vehicle API 연동 시제품</text>
+    <text x="680" y="370" font-size="13" fill="#4B5563">Pleos Playground: 공개 개발자 환경(SDK 문서·도구)</text>
+    <line x1="656" y1="386" x2="1224" y2="386" stroke="#E2E6EC" stroke-width="1" />
+    <text x="656" y="404" font-size="15" font-weight="bold" fill="#4B5563">3</text>
+    <text x="680" y="404" font-size="20" font-weight="bold" fill="#0B1E3C">컨버전 포털·PIM 기술 지원</text>
+    <text x="680" y="430" font-size="16" fill="#111827">→ GPR 장착 위치·전원 간섭 검토</text>
+    <text x="680" y="454" font-size="13" fill="#4B5563">기아 컨버전 포털(3D 데이터·인증자료)</text>
+    <line x1="656" y1="470" x2="1224" y2="470" stroke="#E2E6EC" stroke-width="1" />
+    <text x="656" y="488" font-size="15" font-weight="bold" fill="#4B5563">4</text>
+    <text x="680" y="488" font-size="20" font-weight="bold" fill="#0B1E3C">지자체 파일럿 연결</text>
+    <text x="680" y="514" font-size="16" fill="#111827">→ 2단계 통제 구간 → 3단계 실제 도로</text>
+    <text x="680" y="538" font-size="13" fill="#4B5563">공모전 혜택: PoC·사업화 연계, 전문가 멘토링</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 590 1168 44">
+    <rect x="56" y="590" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">기아가 이미 약속한 혜택만으로, 6개월 안에 1단계 실증 결과를 가져옵니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="12" fill="#4B5563">대수는 계산값(차량 1대 연 6,600km 가설 기준) · 지원 항목 출처: 기아 PBV 아이디어 공모전 안내(PoC·사업화 연계, PV5 대여 검토, 멘토링) · 일정은 목표 [가설]</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">15 / 16</text>
+  </g>
+</svg>

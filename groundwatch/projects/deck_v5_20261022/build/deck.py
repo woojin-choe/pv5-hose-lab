@@ -5,7 +5,7 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "svg_output")
 for _f in os.listdir(OUT):
     if _f.endswith(".svg"):
         os.remove(os.path.join(OUT, _f))
-N = 15
+N = 16
 NAVY, INK, SUB, MUTE, LINE, PALE = "#0B1E3C", "#111827", "#374151", "#4B5563", "#E2E6EC", "#F3F5F8"
 YEL, AMB, RED = "#F5B700", "#B45309", "#C62828"
 STEPS = ["문제", "해법", "PV5", "검증", "사업"]
@@ -231,8 +231,8 @@ svg("05_solution.svg", head("해법", "GroundWatch의 핵심") + title("같은 �
     <line x1="784" y1="252" x2="1224" y2="252" stroke="{LINE}" stroke-width="1" />
     <text x="784" y="292" font-size="15" font-weight="bold" fill="{MUTE}">2</text>
     <text x="808" y="292" font-size="22" font-weight="bold" fill="{NAVY}">변화만 선별</text>
-    <text x="808" y="320" font-size="17" fill="{SUB}">AI가 지난 회차와 달라진 곳을 고르고</text>
-    <text x="808" y="344" font-size="17" fill="{SUB}">전문가가 원시 데이터로 승인</text>
+    <text x="808" y="320" font-size="17" fill="{SUB}">회차 차분으로 달라진 곳을 고르고(7장)</text>
+    <text x="808" y="344" font-size="17" fill="{SUB}">AI가 신호 유형을 분류, 전문가가 승인</text>
     <line x1="784" y1="372" x2="1224" y2="372" stroke="{LINE}" stroke-width="1" />
     <text x="784" y="412" font-size="15" font-weight="bold" fill="{MUTE}">3</text>
     <text x="808" y="412" font-size="22" font-weight="bold" fill="{NAVY}">현장 재확인</text>
@@ -241,7 +241,7 @@ svg("05_solution.svg", head("해법", "GroundWatch의 핵심") + title("같은 �
     <line x1="784" y1="492" x2="1224" y2="492" stroke="{LINE}" stroke-width="1" />
     <text x="784" y="530" font-size="17" fill="{INK}">결과는 다음 순찰 경로에 다시 반영됩니다.</text>
   </g>
-  {band(590, "AI는 볼 순서를 정할 뿐, 판정은 전문가가 하고 확정은 천공이 합니다.").strip()}
+  {band(590, "자동 선별은 볼 순서만 정하고, 판정은 전문가가, 확정은 천공이 합니다.").strip()}
 ''' + foot(5, "약 2개월 = 차량 1대가 연 6,600km를 달려 도로 약 1,000km를 연 6회 반복(13장, 가설) · 회차 화면은 2D 전자기 시뮬레이션 결과(7장)"))
 
 # ---------------------------------------------------------------- 07 PV5 탐사실 (6+7 통합)
@@ -462,7 +462,7 @@ def summary():
     cols = [("문제", "탐사 100여 일 뒤 함몰", "법정 점검 5년, 서울 1년.<tspan x='{x}' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='{x}' dy='22'>아무도 보지 못합니다.</tspan>", "3~5장"),
             ("해법", "같은 길을 약 2개월마다", "PV5가 GPR로 다시 찍고,<tspan x='{x}' dy='22'>달라진 곳만 골라</tspan><tspan x='{x}' dy='22'>현장에서 재확인합니다.</tspan>", "6~8장"),
             ("왜 PV5", "차가 업무의 일부가 됨", "PIM·Navihelper로 차와 연동,<tspan x='{x}' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='{x}' dy='22'>공식 컨버전으로 복제.</tspan>", "9~11장"),
-            ("사업", "이미 있는 예산에서", "큰 지자체 GPR 용역 연 1.4~1.8억.<tspan x='{x}' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='{x}' dy='22'>흑자, 실증은 4단계로.</tspan>", "12~14장")]
+            ("사업", "이미 있는 예산에서", "큰 지자체 GPR 용역 연 1.4~1.8억.<tspan x='{x}' dy='22'>차량 1대가 2곳을 맡으면</tspan><tspan x='{x}' dy='22'>흑자, 실증은 4단계로.</tspan>", "13~15장")]
     b = ""
     x = 56
     for i, (k, h, d, ref) in enumerate(cols):
@@ -475,7 +475,7 @@ def summary():
   </g>
 '''
         x += 298
-    crit = [("기술적 완성도", "30", "7·8·12장"), ("시장 실현성", "25", "13·14장"), ("혁신성", "20", "4·7장"), ("PV5 연계성", "15", "9·10·11장"), ("사회적 가치", "10", "3·5장")]
+    crit = [("기술적 완성도", "30", "7·8·12장"), ("시장 실현성", "25", "13·14·15장"), ("혁신성", "20", "4·7장"), ("PV5 연계성", "15", "9·10·11장"), ("사회적 가치", "10", "3·5장")]
     b += f'''  <g id="criteria" data-pptx-bounds="56 440 1168 120">
     <text x="56" y="462" font-size="15" font-weight="bold" fill="{MUTE}">심사 기준별 근거 위치</text>
 '''
@@ -568,6 +568,48 @@ def pv5link():
 
 
 svg("07b_pv5link.svg", pv5link())
+
+# ---------------------------------------------------------------- 14b 기아와 함께: 수요 대수 추정 + 요청 사항
+def withkia():
+    b = f"""  <g id="volume" data-pptx-bounds="56 160 540 400">
+    <text x="56" y="186" font-size="15" font-weight="bold" fill="{AMB}">기아에게 생기는 수요 (계산)</text>
+    <rect x="56" y="200" width="540" height="3" fill="{NAVY}" />
+    <text x="56" y="268" font-size="64" font-weight="bold" fill="{NAVY}" letter-spacing="-2">약 97대</text>
+    <text x="56" y="300" font-size="17" fill="{INK}">지자체 관리 도로 96,712km를 약 2개월마다 보려면</text>
+    <text x="56" y="324" font-size="15" fill="{SUB}">96,712km ÷ 차량 1대 담당 약 1,000km</text>
+    <line x1="56" y1="352" x2="596" y2="352" stroke="{LINE}" stroke-width="1" />
+    <text x="56" y="400" font-size="34" font-weight="bold" fill="{NAVY}">약 8대</text>
+    <text x="230" y="392" font-size="17" fill="{INK}">서울 도로 8,342km만 맡을 때</text>
+    <text x="56" y="452" font-size="34" font-weight="bold" fill="{NAVY}">2억 원대</text>
+    <text x="230" y="444" font-size="17" fill="{INK}">장비 포함 컨버전 PV5 1대 가격대</text>
+    <text x="56" y="500" font-size="15" fill="{SUB}">대수는 많지 않지만, 대당 가격이 높고 공공 레퍼런스가 되는</text>
+    <text x="56" y="522" font-size="15" fill="{SUB}">‘PV5 + 업무 앱’ 패키지의 첫 사례입니다.</text>
+  </g>
+  <g id="ask" data-pptx-bounds="656 160 568 400">
+    <text x="656" y="186" font-size="15" font-weight="bold" fill="{AMB}">수상 후 기아와 함께 할 첫 6개월</text>
+    <rect x="656" y="200" width="568" height="3" fill="{NAVY}" />
+"""
+    asks = [("PV5 실물 1대", "1단계 폐쇄 시험장 실증", "공모전 혜택: 우수작 PV5 대여 검토"),
+            ("Pleos Playground·SDK", "Navihelper·Vehicle API 연동 시제품", "Pleos Playground: 공개 개발자 환경(SDK 문서·도구)"),
+            ("컨버전 포털·PIM 기술 지원", "GPR 장착 위치·전원 간섭 검토", "기아 컨버전 포털(3D 데이터·인증자료)"),
+            ("지자체 파일럿 연결", "2단계 통제 구간 → 3단계 실제 도로", "공모전 혜택: PoC·사업화 연계, 전문가 멘토링")]
+    y = 236
+    for i, (k, d, src) in enumerate(asks):
+        b += f"""    <text x="656" y="{y}" font-size="15" font-weight="bold" fill="{MUTE}">{i + 1}</text>
+    <text x="680" y="{y}" font-size="20" font-weight="bold" fill="{NAVY}">{k}</text>
+    <text x="680" y="{y + 26}" font-size="16" fill="{INK}">→ {d}</text>
+    <text x="680" y="{y + 50}" font-size="13" fill="{MUTE}">{src}</text>
+"""
+        if i < 3:
+            b += f'    <line x1="656" y1="{y + 66}" x2="1224" y2="{y + 66}" stroke="{LINE}" stroke-width="1" />\n'
+        y += 84
+    b += "  </g>\n" + band(590, "기아가 이미 약속한 혜택만으로, 6개월 안에 1단계 실증 결과를 가져옵니다.")
+    return head("사업", "기아와 함께 할 일") + title("기아가 지원하면, 6개월 안에 첫 실증을 보여드립니다") + b + foot(
+        15, "대수는 계산값(차량 1대 연 6,600km 가설 기준) · 지원 항목 출처: 기아 PBV 아이디어 공모전 안내(PoC·사업화 연계, PV5 대여 검토, 멘토링) · 일정은 목표 [가설]")
+
+
+svg("11b_withkia.svg", withkia())
+
 
 
 # ---------------------------------------------------------------- 파일명·쪽번호를 최종 순서로
