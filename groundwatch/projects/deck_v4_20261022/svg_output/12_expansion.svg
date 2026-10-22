@@ -9,7 +9,7 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">한 대의 반복 순찰차에서 도시 지하 안전망으로 확장합니다</text>
+    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">한 대의 순찰차에서 도시 전체 지하 안전망으로 넓힙니다</text>
   </g>
   <g id="patrol-map" data-pptx-bounds="56 150 680 446">
     <image href="../images/patrol_map_real.png" x="56" y="150" width="680" height="383" preserveAspectRatio="xMidYMid slice" />

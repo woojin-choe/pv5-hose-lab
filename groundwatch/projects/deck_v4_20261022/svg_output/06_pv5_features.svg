@@ -9,10 +9,7 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">PV5가 순정으로 제공하는 구조 위에 GPR 장비를 끼웁니다</text>
-  </g>
-  <g id="lead" data-pptx-bounds="56 137 1168 28">
-    <text x="56" y="158" font-size="18" fill="#374151">싣고, 켜고, 고정하고, 여러 대에 복제하는 구조를 차량과 기아 순정 액세서리가 이미 제공합니다.</text>
+    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">PV5는 장비를 싣고, 켜고, 고정하는 구조를 이미 갖췄습니다</text>
   </g>
   <g id="feat-1" data-pptx-bounds="56 184 572 178">
     <image href="../images/feat_cargo.jpg" x="56" y="184" width="258" height="172" preserveAspectRatio="xMidYMid slice" />
@@ -25,8 +22,6 @@
       <text x="350" y="268">카고룸 4,420L · 최대 적재 600kg</text>
       <rect x="336" y="288" width="6" height="6" fill="#F5B700" />
       <text x="350" y="296">GPR 카트·엣지 PC를 한 번에</text>
-      <rect x="336" y="316" width="6" height="6" fill="#F5B700" />
-      <text x="350" y="324">내시경·안전장비까지 적재</text>
     </g>
   </g>
   <g id="feat-2" data-pptx-bounds="652 184 572 178">
@@ -40,8 +35,6 @@
       <text x="946" y="268">실내·실외 V2L · 최대 3.6kW</text>
       <rect x="932" y="288" width="6" height="6" fill="#F5B700" />
       <text x="946" y="296">GPR 제어부·엣지 PC 상시 구동</text>
-      <rect x="932" y="316" width="6" height="6" fill="#F5B700" />
-      <text x="946" y="324">AR 글래스·수동 GPR 현장 충전</text>
     </g>
   </g>
   <g id="feat-3" data-pptx-bounds="56 380 572 178">
@@ -55,8 +48,6 @@
       <text x="350" y="464">L-Track·몰리 패널 (순정 액세서리)</text>
       <rect x="336" y="484" width="6" height="6" fill="#F5B700" />
       <text x="350" y="492">GPR 카트·장비 케이스 고정</text>
-      <rect x="336" y="512" width="6" height="6" fill="#F5B700" />
-      <text x="350" y="520">회차마다 같은 위치에 장착</text>
     </g>
   </g>
   <g id="feat-4" data-pptx-bounds="652 380 572 178">
@@ -68,18 +59,16 @@
     <g font-size="17" fill="#111827">
       <rect x="932" y="456" width="6" height="6" fill="#F5B700" />
       <text x="946" y="464">플렉시블 바디: 표준 차체 + 모듈</text>
-      <rect x="932" y="484" width="6" height="6" fill="#F5B700" />
-      <text x="946" y="492">파트너사 PV5 전용 랙킹·선반</text>
       <rect x="932" y="512" width="6" height="6" fill="#F5B700" />
       <text x="946" y="520">GPR 탐사 키트도 같은 방식 <tspan fill="#4B5563">[제안]</tspan></text>
     </g>
   </g>
   <g id="conclusion" data-pptx-bounds="56 580 1168 52">
-    <rect x="56" y="580" width="1168" height="52" fill="#0B1E3C" />
-    <text x="80" y="613" font-size="20" font-weight="bold" fill="#FFFFFF">개조해서 매다는 짐이 아니라 <tspan fill="#F5B700">처음부터 끼우는 모듈</tspan>이라, 같은 사양으로 여러 대에 복제합니다.</text>
+    <rect x="56" y="580" width="4" height="52" fill="#F5B700" />
+    <text x="80" y="613" font-size="20" font-weight="bold" fill="#0B1E3C">개조해서 매다는 짐이 아니라 <tspan fill="#B45309">처음부터 끼우는 모듈</tspan>이라, 같은 사양으로 여러 대에 복제합니다.</text>
   </g>
-  <g id="source" data-pptx-bounds="56 646 1168 40">
-    <text x="56" y="660" font-size="12" fill="#4B5563">출처: 기아 PV5 카고 가격표·제원(카고룸·최대 적재 600kg은 롱레인지 3도어) · 기아 PV5 카고 특징·액세서리(L-Track·몰리 패널) · 현대차그룹 PV5 테크 데이(2025.7.23, 플렉시블 바디·컨버전)<tspan x="56" dy="18">V2L 3.6kW는 해외 공개 제원 · 사진: 02 PV5 실내 Alexander Migl, CC BY-SA 4.0(화면 합성, 수치는 예시) · 01·03 장비 배치도 확대(콘셉트) · 04 PV5 카고 실차 Alexander Migl, CC BY-SA 4.0</tspan></text>
+  <g id="source" data-pptx-bounds="56 664 1168 20">
+    <text x="56" y="678" font-size="12" fill="#4B5563">출처: 기아 PV5 카고 가격표·제원·액세서리 · 현대차그룹 PV5 테크 데이(2025.7.23) · V2L 3.6kW는 해외 제원 · 사진: Alexander Migl, CC BY-SA 4.0</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>

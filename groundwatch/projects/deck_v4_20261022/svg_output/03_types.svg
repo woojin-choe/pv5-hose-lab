@@ -14,7 +14,7 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">땅꺼짐은 깊이에 따라 막는 방법이 다릅니다</text>
+    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">원인 1위인 얕은 공동은 함몰 전에 찾을 수 있습니다</text>
   </g>
   <g id="depth-bands" data-pptx-bounds="56 206 148 290">
     <rect x="198" y="208" width="4" height="154" fill="#F5B700" />
@@ -48,7 +48,6 @@
   </g>
   <g id="figure-caption" data-pptx-bounds="56 522 676 60">
     <text x="56" y="540" font-size="16" font-weight="bold" fill="#0B1E3C">하수관 누수 → 흙 유실 → 공동 → 노면 침하</text>
-    <text x="56" y="566" font-size="16" fill="#374151">공동이 자라는 동안 도로 표면은 멀쩡해 보입니다.</text>
   </g>
   <g id="cause-stat" data-pptx-bounds="770 160 454 70">
     <text x="770" y="214" font-size="52" font-weight="bold" fill="#0B1E3C" letter-spacing="-1.5">45.4%</text>
@@ -82,26 +81,12 @@
       <text x="1048" y="440">공사장 계측·지반조사<tspan x="1048" dy="20">(GroundWatch 범위 밖)</tspan></text>
     </g>
   </g>
-  <g id="method" data-pptx-bounds="770 492 454 96">
-    <text x="770" y="508" font-size="15" font-weight="bold" fill="#0B1E3C">GroundWatch가 얕은 공동을 찾는 방법</text>
-    <rect x="770" y="520" width="132" height="64" fill="#F3F5F8" />
-    <text x="782" y="546" font-size="15" font-weight="bold" fill="#0B1E3C">같은 길 반복</text>
-    <text x="782" y="568" font-size="13" fill="#374151">차량형 GPR 순찰</text>
-    <line x1="904" y1="552" x2="928" y2="552" stroke="#0B1E3C" stroke-width="2" marker-end="url(#chainHead)" />
-    <rect x="931" y="520" width="132" height="64" fill="#F3F5F8" />
-    <text x="943" y="546" font-size="15" font-weight="bold" fill="#0B1E3C">회차 비교</text>
-    <text x="943" y="568" font-size="13" fill="#374151">AI 후보·전문가 승인</text>
-    <line x1="1065" y1="552" x2="1089" y2="552" stroke="#0B1E3C" stroke-width="2" marker-end="url(#chainHead)" />
-    <rect x="1092" y="520" width="132" height="64" fill="#0B1E3C" />
-    <text x="1104" y="546" font-size="15" font-weight="bold" fill="#FFFFFF">변한 지점만</text>
-    <text x="1104" y="568" font-size="13" fill="#F5B700">수동 GPR 재확인</text>
-  </g>
   <g id="conclusion" data-pptx-bounds="56 604 1168 50">
-    <rect x="56" y="604" width="1168" height="50" fill="#0B1E3C" />
-    <text x="80" y="636" font-size="20" font-weight="bold" fill="#FFFFFF">한 번의 탐사가 아니라 <tspan fill="#F5B700">회차 사이의 변화</tspan>로, 얕은 공동을 함몰 전에 찾습니다.</text>
+    <rect x="56" y="604" width="4" height="50" fill="#F5B700" />
+    <text x="80" y="636" font-size="20" font-weight="bold" fill="#0B1E3C">한 번의 탐사가 아니라 <tspan fill="#B45309">회차 사이의 변화</tspan>로, 얕은 공동을 함몰 전에 찾습니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 664 1168 20">
-    <text x="56" y="678" font-size="12" fill="#4B5563">출처: 국토교통부 지반침하 원인 통계(2020~2024, 867건) · 국토교통부 명일동 사고조사 결과(2025.12.3) · 서울시 차량형 GPR 탐사 깊이 약 2m · 단면도는 원리 설명용 도식(깊이 비례 아님)</text>
+    <text x="56" y="678" font-size="12" fill="#4B5563">출처: 국토교통부 지반침하 원인 통계(2020~2024) · 국토교통부 명일동 사고조사(2025.12.3) · 단면도는 원리 설명용 도식</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>

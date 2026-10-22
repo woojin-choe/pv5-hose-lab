@@ -9,10 +9,7 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">폐쇄 구간에서 시작해 실제 도로까지 검증 범위를 넓힙니다</text>
-  </g>
-  <g id="lead" data-pptx-bounds="56 140 1168 30">
-    <text x="56" y="162" font-size="19" fill="#4B5563">장비 안정성 → 같은 길의 반복 일관성 → 실제 도로에서의 효용 순서로 검증합니다.</text>
+    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">폐쇄 시험장에서 실제 도로까지 4단계로 검증합니다</text>
   </g>
   <g id="stage-1" data-pptx-bounds="56 378 280 206">
     <text x="56" y="390" font-size="15" font-weight="bold" fill="#4B5563">폐쇄 시험장 · 장비 단위</text>

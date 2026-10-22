@@ -17,8 +17,5 @@ roads = [
 for col, pts in roads:
     d.line(P(pts), fill=(255, 255, 255), width=13, joint="curve")
     d.line(P(pts), fill=col, width=9, joint="curve")
-# 명일동 사고 지점(보도 기준 인근)
-cx, cy = (1040 - x0) * S, (1078 - y0) * S
-d.ellipse((cx - 13, cy - 13, cx + 13, cy + 13), fill=(255, 90, 95), outline=(255, 255, 255), width=4)
 im.save("patrol_map_real.png")
 print(im.size)

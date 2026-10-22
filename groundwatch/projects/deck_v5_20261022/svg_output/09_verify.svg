@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <text x="210" y="45" font-size="14" fill="#374151">기술 실증 계획</text>
+    <text x="900" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">문제</text>
+    <text x="933" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="966" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">해법</text>
+    <text x="999" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1032" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">PV5</text>
+    <text x="1065" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1098" y="45" font-size="14" font-weight="bold" fill="#0B1E3C" text-anchor="middle">검증</text>
+    <rect x="1074" y="54" width="48" height="3" fill="#F5B700" />
+    <text x="1131" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1164" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">사업</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">남은 질문은 4가지, 4단계로 실증합니다</text>
+  </g>
+  <g id="lead" data-pptx-bounds="56 138 1168 60">
+    <text x="56" y="164" font-size="19" fill="#374151">반복 탐사가 공동 성장을 잡는다는 것은 연구로 확인됐습니다(3장).</text>
+    <text x="56" y="192" font-size="19" font-weight="bold" fill="#0B1E3C">남은 질문은 하나, PV5에 실었을 때도 정확한가입니다.</text>
+  </g>
+  <g id="matrix" data-pptx-bounds="56 268 1168 266">
+    <g font-size="14" font-weight="bold" fill="#4B5563">
+      <text x="56" y="288">먼저 실증할 4가지</text>
+      <text x="380" y="288">실패하면</text>
+      <text x="700" y="288">어떻게 확인하나</text>
+      <text x="1080" y="288">실증 단계</text>
+    </g>
+    <line x1="56" y1="298" x2="1224" y2="298" stroke="#0B1E3C" stroke-width="1.5" />
+    <g font-size="16" fill="#111827">
+      <text x="56" y="330" font-weight="bold" fill="#0B1E3C">EV 구동계 × GPR 전자파 간섭</text>
+      <text x="380" y="330" fill="#C62828">차량형 측정 자체가 불가</text>
+      <text x="700" y="330">주행·정차·V2L 상태별 잡음 비교</text>
+      <text x="1080" y="330" font-weight="bold">1단계</text>
+      <line x1="56" y1="348" x2="1224" y2="348" stroke="#E2E6EC" stroke-width="1" />
+      <text x="56" y="380" font-weight="bold" fill="#0B1E3C">회차별 위치 정합</text>
+      <text x="380" y="380" fill="#C62828">변화 비교가 불가</text>
+      <text x="700" y="380">RTK·IMU·휠 인코더 · 시계열 3D GPR 정합</text>
+      <text x="1080" y="380" font-weight="bold">2단계</text>
+      <line x1="56" y1="398" x2="1224" y2="398" stroke="#E2E6EC" stroke-width="1" />
+      <text x="56" y="430" font-weight="bold" fill="#0B1E3C">AI 변화 탐지율·오탐률</text>
+      <text x="380" y="430" fill="#C62828">재확인 출동이 과다</text>
+      <text x="700" y="430">공동 모사체 구간 · 계절별 함수비 보정</text>
+      <text x="1080" y="430" font-weight="bold">2~3단계</text>
+      <line x1="56" y1="448" x2="1224" y2="448" stroke="#E2E6EC" stroke-width="1" />
+      <text x="56" y="480" font-weight="bold" fill="#0B1E3C">야간 AR 위치 오차</text>
+      <text x="380" y="480" fill="#C62828">수동 탐색 범위가 커짐</text>
+      <text x="700" y="480">맨홀·경계석 기준점, 야간·우천 오차</text>
+      <text x="1080" y="480" font-weight="bold">3단계</text>
+    </g>
+  </g>
+  <g id="regulation" data-pptx-bounds="56 546 1168 92">
+    <rect x="56" y="546" width="1168" height="92" fill="#F3F5F8" />
+    <text x="76" y="574" font-size="15" font-weight="bold" fill="#8A5A00">인허가 · 법규</text>
+    <text x="210" y="574" font-size="15" fill="#111827"><tspan font-weight="bold">도로 영상</tspan>  개인정보보호법 제25조의2(이동형 영상정보처리기기, 2023.9 시행) → 차량 외부에 촬영 사실 표시</text>
+    <text x="210" y="599" font-size="15" fill="#111827"><tspan font-weight="bold">GPR 전파</tspan>  국립전파연구원 적합성평가 대상·기준 확인 <tspan fill="#4B5563">[사업화 전 확인]</tspan></text>
+    <text x="210" y="624" font-size="15" fill="#111827"><tspan font-weight="bold">차량 장착</tspan>  튜닝 승인 해당 여부를 한국교통안전공단에 확인 · 기아 공식 컨버전 파트너를 거쳐 장착 <tspan fill="#4B5563">[사업화 전 확인]</tspan></text>
+  </g>
+  <g id="source" data-pptx-bounds="56 664 1168 20">
+    <text x="56" y="678" font-size="12" fill="#4B5563">출처: 일본 국토교통성 도로정책 연구 30-5(2021) · Ling et al., Remote Sensing(2022) · 개인정보보호법 제25조의2 · 자동차관리법 시행규칙 제55조</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">09 / 12</text>
+  </g>
+</svg>

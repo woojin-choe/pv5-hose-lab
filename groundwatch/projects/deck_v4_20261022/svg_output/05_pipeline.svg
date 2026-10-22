@@ -17,10 +17,7 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">반복 순찰이 탐사 결과를 다음 현장 업무로 연결합니다</text>
-  </g>
-  <g id="lead" data-pptx-bounds="56 140 1168 30">
-    <text x="56" y="162" font-size="19" fill="#4B5563">한 번의 탐사로 끝내지 않고, 같은 길을 회차마다 다시 보며 달라진 곳만 현장에서 확인합니다.</text>
+    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">같은 길을 반복해서 보고, 달라진 곳만 다시 확인합니다</text>
   </g>
   <g id="stage-1" data-pptx-bounds="56 182 274 336">
     <image href="../images/pv5_front_dawn.jpg" x="56" y="182" width="274" height="170" preserveAspectRatio="xMidYMid slice" />
@@ -101,8 +98,8 @@
     <text x="640" y="558" font-size="17" font-weight="bold" fill="#0B1E3C" text-anchor="middle">확인 결과가 다음 순찰로 돌아갑니다</text>
   </g>
   <g id="role-band" data-pptx-bounds="56 588 1168 52">
-    <rect x="56" y="588" width="1168" height="52" fill="#0B1E3C" />
-    <text x="80" y="621" font-size="21" font-weight="bold" fill="#FFFFFF">AI는 <tspan fill="#F5B700">검토 순서</tspan>를 정하고, 판정은 <tspan fill="#F5B700">전문가</tspan>가, 최종 확인은 <tspan fill="#F5B700">천공·내시경</tspan>이 맡습니다.</text>
+    <rect x="56" y="588" width="4" height="52" fill="#F5B700" />
+    <text x="80" y="621" font-size="21" font-weight="bold" fill="#0B1E3C">AI는 <tspan fill="#B45309">검토 순서</tspan>를 정하고, 판정은 <tspan fill="#B45309">전문가</tspan>가, 최종 확인은 <tspan fill="#B45309">천공·내시경</tspan>이 맡습니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 652 1168 22">
     <text x="56" y="666" font-size="12" fill="#4B5563">B-scan 비교는 설명용 예시 · PV5: 실차 사진 기반 편집 이미지 · 도로 장면은 연출 이미지 · 지도 데이터 © OpenStreetMap contributors</text>

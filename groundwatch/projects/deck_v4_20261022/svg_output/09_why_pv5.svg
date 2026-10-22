@@ -9,7 +9,7 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">GPR 탐사실이라는 용도에는 PV5가 맞습니다</text>
+    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">가격이 아니라 구조 때문에 PV5입니다</text>
   </g>
   <g id="lead" data-pptx-bounds="56 137 1168 28">
     <text x="56" y="158" font-size="18" fill="#374151">그룹 전기 상용차는 용도가 나뉘어 있습니다. 탐사·판독·재검증을 한 차에서 하려면 무엇이 필요한지로 골랐습니다.</text>
@@ -64,8 +64,8 @@
     <text x="868" y="500" font-size="15" fill="#111827">주행거리는 스타리아보다 10km 짧고,<tspan x="868" dy="21">전폭은 포터·봉고보다 155mm 넓습니다.</tspan><tspan x="868" dy="21">→ 하루 순찰 약 30km <tspan fill="#4B5563">[가설]</tspan>에는</tspan><tspan x="868" dy="21">377km로 충분합니다.</tspan></text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 594 1168 52">
-    <rect x="56" y="594" width="1168" height="52" fill="#0B1E3C" />
-    <text x="80" y="627" font-size="20" font-weight="bold" fill="#FFFFFF">전원·고정 구조와 <tspan fill="#F5B700">공식 컨버전 체계</tspan>를 갖춘 PV5로, 같은 탐사실을 여러 대에 그대로 복제합니다.</text>
+    <rect x="56" y="594" width="4" height="52" fill="#F5B700" />
+    <text x="80" y="627" font-size="20" font-weight="bold" fill="#0B1E3C">전원·고정 구조와 <tspan fill="#B45309">공식 컨버전 체계</tspan>를 갖춘 PV5로, 같은 탐사실을 여러 대에 그대로 복제합니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 656 1168 34">
     <text x="56" y="668" font-size="12" fill="#4B5563">출처: 기아 PV5 카고 가격표(2026.10.1)·제원 · 오토뷰(2026, PV5 공식 컨버전 파트너·포털) · 스타리아 일렉트릭 출시(2026.4.23) · 2026 ST1 출시(2025.7.16)·현대차그룹 뉴스룸(317km)<tspan x="56" dy="16">포터II·봉고III EV 2025년형 발표(217km) · 시사저널(2025.4.25, 경기도청 인용 GPR 대당 2억~8억 원) · 가격은 표기한 트림 기준, 보조금 제외</tspan></text>

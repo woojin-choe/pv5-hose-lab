@@ -9,13 +9,13 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">반복 탐사의 효과는 연구로 확인됐고, 차량 통합은 실증합니다</text>
+    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">반복 탐사의 효과는 확인됐고, 남은 건 4가지 실증입니다</text>
   </g>
   <g id="evidence" data-pptx-bounds="56 140 1168 112">
-    <rect x="56" y="140" width="1168" height="112" fill="#0B1E3C" />
-    <text x="80" y="170" font-size="15" font-weight="bold" fill="#F5B700">근거 · 일본 국토교통성 위탁연구(도쿄대·지오서치, 2018~2020)</text>
-    <text x="80" y="204" font-size="22" font-weight="bold" fill="#FFFFFF">같은 도로를 반복 조사하자 <tspan fill="#F5B700">예상보다 빨리 자라는 공동</tspan>이 확인됐습니다.</text>
-    <text x="80" y="234" font-size="16" fill="#D6DDE8">지하 1.64m 하수관(Φ800) 위 공동이 급격히 성장 · 관 내부 카메라로 안 보이는 경미한 손상도 원인 · 성장 속도 정량화는 과제</text>
+    <rect x="56" y="140" width="1168" height="3" fill="#0B1E3C" />
+    <text x="80" y="170" font-size="15" font-weight="bold" fill="#B45309">근거 · 일본 국토교통성 위탁연구(도쿄대·지오서치, 2018~2020)</text>
+    <text x="80" y="204" font-size="22" font-weight="bold" fill="#0B1E3C">같은 도로를 반복 조사하자 <tspan fill="#B45309">예상보다 빨리 자라는 공동</tspan>이 확인됐습니다.</text>
+    <text x="80" y="234" font-size="16" fill="#374151">지하 1.64m 하수관(Φ800) 위 공동이 급격히 성장 · 관 내부 카메라로 안 보이는 경미한 손상도 원인 · 성장 속도 정량화는 과제</text>
   </g>
   <g id="matrix" data-pptx-bounds="56 268 1168 266">
     <g font-size="14" font-weight="bold" fill="#4B5563">
@@ -46,7 +46,6 @@
       <text x="700" y="480">맨홀·경계석 기준점, 야간·우천 오차</text>
       <text x="1080" y="480" font-weight="bold">3단계</text>
     </g>
-    <text x="56" y="522" font-size="14" fill="#374151"><tspan font-weight="bold" fill="#0B1E3C">이미 상용</tspan>  차량형·수동 GPR · RTK-GNSS·IMU · 노면 카메라 · 엣지 컴퓨터 · GIS 이력 관리 · AAOS 앱 생태계 · 산업용 AR 글래스(RealWear Navigator 520 등)</text>
   </g>
   <g id="regulation" data-pptx-bounds="56 546 1168 92">
     <rect x="56" y="546" width="1168" height="92" fill="#F3F5F8" />
@@ -55,9 +54,8 @@
     <text x="210" y="599" font-size="15" fill="#111827"><tspan font-weight="bold">GPR 전파</tspan>  국립전파연구원 적합성평가 대상·기준 확인 <tspan fill="#4B5563">[사업화 전 확인]</tspan></text>
     <text x="210" y="624" font-size="15" fill="#111827"><tspan font-weight="bold">차량 장착</tspan>  튜닝 승인 해당 여부를 한국교통안전공단에 확인 · 기아 공식 컨버전 파트너를 거쳐 장착 <tspan fill="#4B5563">[사업화 전 확인]</tspan></text>
   </g>
-  <g id="source" data-pptx-bounds="56 650 1168 34">
-    <text x="56" y="662" font-size="12" fill="#4B5563">출처: 일본 국토교통성 도로정책 연구 30-5 연구종료보고서(2021)·중간 개요 · Ling et al., Remote Sensing 14(7):1593(2022, 시계열 3D GPR) · 개인정보보호법 제25조의2</text>
-    <text x="56" y="678" font-size="12" fill="#4B5563">자동차관리법 시행규칙 제55조(튜닝 승인 대상) · RealWear Navigator 520 제조사 판매가 US$3,750 · HoloLens 2는 2024년 단종으로 제외</text>
+  <g id="source" data-pptx-bounds="56 664 1168 20">
+    <text x="56" y="678" font-size="12" fill="#4B5563">출처: 일본 국토교통성 도로정책 연구 30-5(2021) · Ling et al., Remote Sensing(2022) · 개인정보보호법 제25조의2 · 자동차관리법 시행규칙 제55조</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
