@@ -382,7 +382,7 @@ def verify():
     stages = [("1단계", "폐쇄 시험장", "질문 1", "통과 → 차량 측정 가능"),
               ("2단계", "통제된 시험 구간", "질문 2·3", "통과 → 회차 비교 가능"),
               ("3단계", "실제 도로 위험구간", "질문 3·4", "통과 → 실증확인서"),
-              ("4단계", "실제 운영", "소요시간·재방문", "통과 → 연간 관제 계약")]
+              ("4단계", "실제 운영", "운영 지표", "통과 → 연간 관제 계약")]
     b += f'  <g id="stages" data-pptx-bounds="56 446 1168 130">\n    <text x="56" y="466" font-size="15" font-weight="bold" fill="{MUTE}">실증 순서</text>\n'
     x = 56
     for i, (n, place, q, ok) in enumerate(stages):
@@ -942,8 +942,8 @@ svg("11_entry.svg", entry2())
 
 def current():
     b = f"""  <g id="photo" data-pptx-bounds="56 150 520 300">
-    <image href="../images/gpr_handheld.jpg" x="56" y="150" width="520" height="272" preserveAspectRatio="xMidYMid slice" />
-    <text x="56" y="442" font-size="12" fill="{MUTE}">수동형 GPR 탐사 장비 · 사진: The Charles Machine Works, CC BY-SA 2.0</text>
+    <image href="../images/gpr_handheld_road.jpg" x="56" y="150" width="520" height="272" preserveAspectRatio="xMidYMid slice" />
+    <text x="56" y="442" font-size="12" fill="{MUTE}">수동형 GPR 탐사 장비 · 사진: The Charles Machine Works, CC BY-SA 2.0(배경 편집)</text>
   </g>
   <g id="stats" data-pptx-bounds="56 462 520 100">
 """
@@ -988,7 +988,7 @@ def players():
     cols = [("구매자", "지자체·발주기관", ["서울시·자치구 도로관리", "도시철도 공사 발주기관", "상하수도 관리기관"]),
             ("실제 사용자", "현장 조사팀", ["지하안전·도로관리 담당자", "GPR 판독 전문가", "현장 조사원 (2인 1조)"]),
             ("협력사", "장비·조사 파트너", ["기존 GPR 조사기관", "PV5 특장(컨버전) 업체", "GIS·AR 장비사"]),
-            ("기아가 얻는 것", "공공 업무용 PV5", ["탐사형 컨버전 플릿 판매", "Pleos 앱·Fleet 공공 레퍼런스", "같은 키트로 지자체마다 복제"])]
+            ("기아가 얻는 것", "공공 업무용 PV5", ["탐사형 PV5 최대 약 97대 (계산)", "Pleos 앱·Fleet 공공 레퍼런스", "같은 키트로 지자체마다 복제"])]
     b = ""
     x = 56
     for i, (k, h, ds) in enumerate(cols):
@@ -1068,6 +1068,7 @@ UNIT_FIX = [
     ("반복 탐사는 km당 약 5만 원이면 원가가 맞습니다", "반복 탐사는 km당 약 4.7만 원이면 원가가 맞습니다"),
     ("합계 약 3.1억 원 ÷ 연 6,600km", "합계 3.09억 원 ÷ 연 6,600km"),
     ("같은 길을 6번, 1회의 1/3", "6번 보고 비용 3분의 1"),
+    ("(실제 장비 탐사 속도는 시속 20~30km)", "· 보수적 가정 (장비 탐사 속도는 시속 20~30km)"),
 ]
 
 

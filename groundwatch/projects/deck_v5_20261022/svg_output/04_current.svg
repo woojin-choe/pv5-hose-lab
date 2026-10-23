@@ -20,8 +20,8 @@
     <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">서울은 이미 3만 km를 탐사해 공동 7,760개를 찾았습니다</text>
   </g>
   <g id="photo" data-pptx-bounds="56 150 520 300">
-    <image href="../images/gpr_handheld.jpg" x="56" y="150" width="520" height="272" preserveAspectRatio="xMidYMid slice" />
-    <text x="56" y="442" font-size="12" fill="#4B5563">수동형 GPR 탐사 장비 · 사진: The Charles Machine Works, CC BY-SA 2.0</text>
+    <image href="../images/gpr_handheld_road.jpg" x="56" y="150" width="520" height="272" preserveAspectRatio="xMidYMid slice" />
+    <text x="56" y="442" font-size="12" fill="#4B5563">수동형 GPR 탐사 장비 · 사진: The Charles Machine Works, CC BY-SA 2.0(배경 편집)</text>
   </g>
   <g id="stats" data-pptx-bounds="56 462 520 100">
     <rect x="56" y="466" width="160" height="3" fill="#0B1E3C" />

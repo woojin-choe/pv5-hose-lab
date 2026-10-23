@@ -71,7 +71,7 @@
     <text x="936" y="536" font-size="18" fill="#4B5563">›</text>
     <rect x="947" y="480" width="278" height="94" fill="#F3F5F8" />
     <rect x="947" y="480" width="278" height="4" fill="#F5B700" />
-    <text x="965" y="508" font-size="15" font-weight="bold" fill="#B45309">4단계 · 소요시간·재방문</text>
+    <text x="965" y="508" font-size="15" font-weight="bold" fill="#B45309">4단계 · 운영 지표</text>
     <text x="965" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">실제 운영</text>
     <text x="965" y="562" font-size="15" fill="#0B1E3C">통과 → 연간 관제 계약</text>
   </g>
