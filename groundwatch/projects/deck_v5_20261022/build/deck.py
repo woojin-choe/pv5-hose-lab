@@ -707,13 +707,13 @@ def solution2():
 
 _S = 620 / 1672
 CA, CB, CC = (56 + _S * 710, 150 + _S * 400), (56 + _S * 1060, 150 + _S * 330), (56 + _S * 1390, 150 + _S * 330)
-CD = (56 + _S * 1195, 150 + _S * 795)
+CD = (56 + _S * 1560, 150 + _S * 745)  # 뒷바퀴 뒤 후방 하부 GPR 바로 오른쪽
 CA, CB, CC = [tuple(round(v) for v in c) for c in (CA, CB, CC)]
 
 
 def pv5lab2():
     b = f"""  <g id="cutaway" data-pptx-bounds="56 160 640 420">
-    <image href="../images/cutaway_nowheel.png" x="56" y="150" width="620" height="349" preserveAspectRatio="xMidYMid meet" />
+    <image href="../images/cutaway_rearmount.png" x="56" y="150" width="620" height="349" preserveAspectRatio="xMidYMid meet" />
     <g font-size="16" font-weight="bold" text-anchor="middle">
       <circle cx="{CA[0]}" cy="{CA[1]}" r="17" fill="{YEL}" stroke="{NAVY}" stroke-width="2" />
       <text x="{CA[0]}" y="{CA[1] + 6}" fill="{NAVY}">A</text>
