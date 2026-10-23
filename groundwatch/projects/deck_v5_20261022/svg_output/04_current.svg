@@ -45,7 +45,7 @@
     <text x="664" y="226" font-size="18" fill="#111827">민원·노후 관로·공사구간으로 조사 대상 선정</text>
     <circle cx="637" cy="270" r="13" fill="#0B1E3C" />
     <text x="637" y="275" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
-    <text x="664" y="276" font-size="18" fill="#111827">차량형 GPR이 도로를 한 번 스캔 (폭 3m 이내)</text>
+    <text x="664" y="276" font-size="18" fill="#111827">차량형 GPR이 도로를 <tspan font-weight="bold" fill="#C62828">한 번</tspan> 스캔 (폭 3m 이내)</text>
     <circle cx="637" cy="320" r="13" fill="#0B1E3C" />
     <text x="637" y="325" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
     <text x="664" y="326" font-size="18" fill="#111827">분석자가 판독해 공동 의심 지점 선별</text>

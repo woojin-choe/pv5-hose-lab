@@ -20,18 +20,23 @@
     <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">같은 길을 약 2개월마다 다시 찍고, 달라진 곳만 봅니다</text>
   </g>
   <g id="scans" data-pptx-bounds="56 150 1168 250">
-    <image href="../images/sim_prev.png" x="56" y="156" width="360" height="200" preserveAspectRatio="none" />
+    <image href="../images/sim_prev.png" x="56" y="156" width="360" height="186" preserveAspectRatio="none" />
+    <text x="56" y="368" font-size="16" font-weight="bold" fill="#0B1E3C">새벽, 같은 경로를 약 2개월마다</text>
+    <text x="56" y="390" font-size="15" fill="#374151">공동 반경 18cm</text>
     <rect x="64" y="164" width="95" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
     <text x="74" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">지난 회차</text>
-    <text x="441" y="268" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">−</text>
-    <image href="../images/sim_cur.png" x="460" y="156" width="360" height="200" preserveAspectRatio="none" />
+    <text x="441" y="261" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">−</text>
+    <image href="../images/sim_cur.png" x="460" y="156" width="360" height="186" preserveAspectRatio="none" />
+    <text x="460" y="368" font-size="16" font-weight="bold" fill="#0B1E3C">같은 길을 다시 찍으면</text>
+    <text x="460" y="390" font-size="15" fill="#374151">공동이 20cm 자라 있음</text>
     <rect x="468" y="164" width="95" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
     <text x="478" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">이번 회차</text>
-    <text x="845" y="268" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">=</text>
-    <image href="../images/sim_diff.png" x="864" y="156" width="360" height="200" preserveAspectRatio="none" />
+    <text x="845" y="261" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">=</text>
+    <image href="../images/sim_diff.png" x="864" y="156" width="360" height="186" preserveAspectRatio="none" />
+    <text x="864" y="368" font-size="16" font-weight="bold" fill="#0B1E3C">위치를 맞춰 빼면 변화만 남음</text>
+    <text x="864" y="390" font-size="15" fill="#374151">전문가 승인 → 수동 GPR로 현장 재확인</text>
     <rect x="872" y="164" width="155" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
     <text x="882" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">자동 선별된 차이</text>
-    <text x="56" y="382" font-size="16" fill="#374151"><tspan font-weight="bold" fill="#0B1E3C">1 반복 측정</tspan> 새벽에 같은 경로를 약 2개월마다   <tspan font-weight="bold" fill="#0B1E3C">2 변화만 선별</tspan> 위치를 맞춰 빼고, AI가 신호 유형 분류   <tspan font-weight="bold" fill="#0B1E3C">3 현장 재확인</tspan> 승인된 곳만 수동 GPR</text>
   </g>
   <g id="diff" data-pptx-bounds="56 410 560 170">
     <rect x="56" y="412" width="560" height="3" fill="#0B1E3C" />

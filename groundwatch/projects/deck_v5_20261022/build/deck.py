@@ -281,16 +281,17 @@ svg("07_pv5_lab.svg", head("PV5", "PV5 이동형 탐사실") + title("PV5 한 �
 ''' + foot(7, "차량형 GPR 장착(하부형·후방형)은 배터리 팩·지상고 간섭 시험 후 확정 · 출처: 기아 PV5 카고 제원·액세서리, 오토뷰(2026.1.28, 컨버전 포털) · V2L 3.6kW는 해외 제원 · 배치도는 콘셉트"))
 
 # ---------------------------------------------------------------- 12 마무리
-svg("12_closing.svg", f'''  <rect x="0" y="0" width="1280" height="720" fill="{NAVY}" />
-  <image href="../images/close_pv5_front_soft.png" x="220" y="26" width="840" height="560" preserveAspectRatio="xMidYMid meet" />
-  <g id="closing" data-pptx-bounds="160 600 960 80">
-    <text x="640" y="622" font-size="15" font-weight="bold" fill="{YEL}" text-anchor="middle">PV5 GroundWatch · 지하안전 순찰차</text>
-    <text x="640" y="664" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">한 번의 조기 발견이, 한 사람의 무사 귀가가 되도록.</text>
+svg("12_closing.svg", f'''  <image href="../images/close_dawn.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice" />
+  <image href="../images/close_shade.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+  <g id="closing" data-pptx-bounds="64 552 640 112">
+    <text x="64" y="572" font-size="15" font-weight="bold" fill="{YEL}">PV5 GroundWatch · 지하안전 순찰차</text>
+    <text x="64" y="614" font-size="32" font-weight="bold" fill="#FFFFFF">한 번의 조기 발견이,</text>
+    <text x="64" y="658" font-size="32" font-weight="bold" fill="#FFFFFF">한 사람의 무사 귀가가 되도록.</text>
   </g>
-  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 688 1172 24">
-    <text x="64" y="706" font-size="14" font-weight="bold" fill="{YEL}">TEAM 한 명이라도 살릴 수 있다면</text>
-    <text x="1060" y="706" font-size="11" fill="#9FB0C8" text-anchor="end">사진: Alexander Migl, CC BY-SA 4.0(편집)</text>
-    <text x="1232" y="706" font-size="13" font-weight="bold" fill="{YEL}" text-anchor="end">12 / {N}</text>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 684 1172 28">
+    <text x="64" y="704" font-size="14" font-weight="bold" fill="{YEL}">TEAM 한 명이라도 살릴 수 있다면</text>
+    <text x="1100" y="704" font-size="11" fill="#C3CCD9" text-anchor="end">PV5 기반 콘셉트 이미지</text>
+    <text x="1232" y="704" font-size="13" font-weight="bold" fill="{YEL}" text-anchor="end">12 / {N}</text>
   </g>
 ''', role="ending")
 
@@ -609,18 +610,21 @@ svg("11b_withkia.svg", withkia())
 def solution2():
     b = f"""  <g id="scans" data-pptx-bounds="56 150 1168 250">
 """
-    imgs = [("sim_prev.png", "지난 회차"), ("sim_cur.png", "이번 회차"), ("sim_diff.png", "자동 선별된 차이")]
+    imgs = [("sim_prev.png", "지난 회차", "새벽, 같은 경로를 약 2개월마다", "공동 반경 18cm"),
+            ("sim_cur.png", "이번 회차", "같은 길을 다시 찍으면", "공동이 20cm 자라 있음"),
+            ("sim_diff.png", "자동 선별된 차이", "위치를 맞춰 빼면 변화만 남음", "전문가 승인 → 수동 GPR로 현장 재확인")]
     x = 56
-    for i, (f, lab) in enumerate(imgs):
-        b += f"""    <image href="../images/{f}" x="{x}" y="156" width="360" height="200" preserveAspectRatio="none" />
+    for i, (f, lab, c1, c2) in enumerate(imgs):
+        b += f"""    <image href="../images/{f}" x="{x}" y="156" width="360" height="186" preserveAspectRatio="none" />
+    <text x="{x}" y="368" font-size="16" font-weight="bold" fill="{NAVY}">{c1}</text>
+    <text x="{x}" y="390" font-size="15" fill="{SUB}">{c2}</text>
     <rect x="{x + 8}" y="164" width="{len(lab) * 15 + 20}" height="26" rx="3" fill="{NAVY}" fill-opacity="0.9" />
     <text x="{x + 18}" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">{lab}</text>
 """
         if i < 2:
-            b += f'    <text x="{x + 385}" y="268" font-size="34" font-weight="bold" fill="{NAVY}" text-anchor="middle">{"−" if i == 0 else "="}</text>\n'
+            b += f'    <text x="{x + 385}" y="261" font-size="34" font-weight="bold" fill="{NAVY}" text-anchor="middle">{"−" if i == 0 else "="}</text>\n'
         x += 404
-    b += f"""    <text x="56" y="382" font-size="16" fill="{SUB}"><tspan font-weight="bold" fill="{NAVY}">1 반복 측정</tspan> 새벽에 같은 경로를 약 2개월마다   <tspan font-weight="bold" fill="{NAVY}">2 변화만 선별</tspan> 위치를 맞춰 빼고, AI가 신호 유형 분류   <tspan font-weight="bold" fill="{NAVY}">3 현장 재확인</tspan> 승인된 곳만 수동 GPR</text>
-  </g>
+    b += f"""  </g>
   <g id="diff" data-pptx-bounds="56 410 560 170">
     <rect x="56" y="412" width="560" height="3" fill="{NAVY}" />
     <text x="56" y="442" font-size="15" font-weight="bold" fill="{AMB}">무엇이 새로운가 <tspan font-weight="normal" fill="{MUTE}">기존 → GroundWatch</tspan></text>
@@ -958,7 +962,7 @@ def current():
     <rect x="624" y="150" width="600" height="3" fill="{NAVY}" />
     <text x="624" y="184" font-size="15" font-weight="bold" fill="{AMB}">지금의 업무 흐름 · 서울시</text>
 """
-    steps = ["민원·노후 관로·공사구간으로 조사 대상 선정", "차량형 GPR이 도로를 한 번 스캔 (폭 3m 이내)",
+    steps = ["민원·노후 관로·공사구간으로 조사 대상 선정", "차량형 GPR이 도로를 <tspan font-weight=\"bold\" fill=\"#C62828\">한 번</tspan> 스캔 (폭 3m 이내)",
              "분석자가 판독해 공동 의심 지점 선별", "작업자가 수동 GPR로 다시 조사",
              "교통통제 후 천공·내시경으로 확인", "공동이 확인되면 복구"]
     y = 226
