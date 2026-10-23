@@ -340,6 +340,27 @@ port("08_app_ar.svg", "06_field.svg", 6, "해법", "현장 재확인", "차가 �
             ('font-size="14" fill="#D6DDE8">4D', 'font-size="14" fill="#374151">4D'),
             ('font-size="14" fill="#D6DDE8">업무', 'font-size="14" fill="#374151">업무'),
             ('font-size="14" fill="#D6DDE8">센서', 'font-size="14" fill="#374151">센서')])
+def field_flow():
+    """6장(현장 재확인) 위쪽: 시스템 상자 대신 현장에서 일어나는 순서 5단계를 가는 선으로."""
+    f = os.path.join(OUT, "06_field.svg")
+    t = open(f, encoding="utf-8").read()
+    steps = [("차량 GPR", "지난 회차와 달라진 곳 검출"), ("클라우드", "판독자가 재확인 지점 승인"), ("PV5 화면", "안전한 정차 위치 안내"),
+             ("AR 글래스", "재탐사 범위를 노면에 표시"), ("수동 GPR", "다른 주파수로 교차 확인")]
+    g = '  <g id="system-chain" data-pptx-bounds="56 146 1168 92">\n'
+    g += f'    <line x1="56" y1="160" x2="1224" y2="160" stroke="{LINE}" stroke-width="2" />\n'
+    for i, (k, d) in enumerate(steps):
+        x = 56 + 240 * i
+        g += f'    <circle cx="{x + 6}" cy="160" r="6" fill="{NAVY if i < 4 else YEL}" />\n'
+        g += f'    <text x="{x}" y="196" font-size="17" font-weight="bold" fill="{NAVY}"><tspan fill="{AMB}">{i + 1}</tspan>  {k}</text>\n'
+        g += f'    <text x="{x}" y="220" font-size="15" fill="{SUB}">{d}</text>\n'
+    g += '  </g>\n'
+    t, n = re.subn(r'  <g id="system-chain".*?\n  </g>\n', g, t, count=1, flags=re.S)
+    assert n == 1
+    open(f, "w", encoding="utf-8").write(t)
+
+
+field_flow()
+
 port("09_why_pv5.svg", "08_why_pv5.svg", 8, "PV5", "왜 PV5인가", "가격이 아니라 장비 연동·컨버전 체계 때문에 PV5입니다",
      regex_drop=None,
      edits=[('<text x="232" y="362" font-size="24" font-weight="bold" fill="#0B1E3C">4,520만 원</text>', '<text x="232" y="362" font-size="21" fill="#0B1E3C">4,520만 원</text>'),
@@ -1008,9 +1029,9 @@ svg("02b_current.svg", current())
 
 def players():
     """13장: 위는 누가 사고·쓰고·돕는지(3칸), 아래는 기아가 얻는 것을 남색 패널로 크게."""
-    cols = [("구매자", "지자체·발주기관", "서울시·자치구 도로관리, 도시철도·상하수도 발주기관"),
-            ("실제 사용자", "현장 조사팀 (2인 1조)", "지하안전·도로관리 담당자와 GPR 판독 전문가"),
-            ("협력사", "장비·조사 파트너", "판정·책임은 기존 조사기관, 장착은 PV5 컨버전 업체")]
+    cols = [("구매자", "지자체·발주기관", ["서울시·자치구 도로관리", "도시철도·상하수도 발주기관"]),
+            ("실제 사용자", "현장 조사팀 (2인 1조)", ["지하안전·도로관리 담당자", "GPR 판독 전문가"]),
+            ("협력사", "장비·조사 파트너", ["판정·책임은 기존 조사기관", "장착은 PV5 컨버전 업체"])]
     b = ""
     x = 56
     for i, (k, h, d) in enumerate(cols):
@@ -1018,7 +1039,8 @@ def players():
     <rect x="{x}" y="168" width="368" height="3" fill="{NAVY}" />
     <text x="{x}" y="200" font-size="15" font-weight="bold" fill="{AMB}">{k}</text>
     <text x="{x}" y="236" font-size="23" font-weight="bold" fill="{NAVY}">{h}</text>
-    <text x="{x}" y="270" font-size="16" fill="{SUB}">{d}</text>
+    <text x="{x}" y="268" font-size="16" fill="{SUB}">{d[0]}</text>
+    <text x="{x}" y="292" font-size="16" fill="{SUB}">{d[1]}</text>
   </g>
 """
         x += 400
