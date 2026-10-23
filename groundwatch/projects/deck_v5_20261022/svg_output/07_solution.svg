@@ -55,7 +55,7 @@
     <text x="196" y="542" font-size="16" fill="#4B5563">별도 2차 조사</text>
     <text x="348" y="542" font-size="16" fill="#4B5563">→</text>
     <text x="396" y="542" font-size="17" font-weight="bold" fill="#0B1E3C">같은 차에서 바로</text>
-    <text x="56" y="571" font-size="13" fill="#4B5563">기존: 서울시 공사장 주변 주·월 1회 탐사(2025~) · AI 판독은 서울시도 2020년부터 사용</text>
+    <text x="56" y="571" font-size="13" fill="#4B5563">기존: 서울시 공사장 주변 주·월 1회 탐사(2026) · AI 판독은 서울시도 2020년부터 사용</text>
   </g>
   <g id="proof" data-pptx-bounds="664 410 560 176">
     <rect x="664" y="412" width="560" height="3" fill="#0B1E3C" />
@@ -82,7 +82,7 @@
   </g>
   <g id="conclusion" data-pptx-bounds="56 596 1168 44">
     <rect x="56" y="596" width="4" height="44" fill="#F5B700" />
-    <text x="76" y="626" font-size="21" font-weight="bold" fill="#0B1E3C">10cm 자란 공동은 가장 큰 오탐 요인보다 2배 넘게 뚜렷합니다. 남은 관건은 주행선 정합입니다.</text>
+    <text x="76" y="626" font-size="21" font-weight="bold" fill="#0B1E3C">10cm 이상 자란 공동은 오탐 요인의 2배 넘는 신호, 5cm는 경계 — 주행선 정합이 관건입니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
     <text x="56" y="682" font-size="13" fill="#4B5563">시뮬레이션: 2D 전자기 파동 계산(FDTD) · 400MHz · Ø0.8m 하수관 위 공동 반경 18cm 기준 · 세기 = 회차 차분 에너지 ÷ 가장 큰 오탐 요인 · 판정은 전문가, 확정은 천공</text>

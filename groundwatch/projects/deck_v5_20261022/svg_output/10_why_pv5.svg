@@ -22,20 +22,20 @@
   <g id="lead" data-pptx-bounds="56 137 1168 28">
     <text x="56" y="158" font-size="18" fill="#374151">차가 바뀌어도 회차 비교가 이어지려면, 모든 차가 같은 위치·같은 조건으로 재야 합니다. 몇 cm 차이도 오탐이 됩니다(7장).</text>
   </g>
-  <g id="premise" data-pptx-bounds="56 168 1168 226">
-    <line x1="56" y1="293.1" x2="1224" y2="293.1" stroke="#F5B700" stroke-width="2" stroke-dasharray="6,5" />
-    <image href="../images/pv5_side_real.png" x="70" y="176.1" width="300.0" height="128.7" />
+  <g id="premise" data-pptx-bounds="56 162 1168 232">
+    <line x1="56" y1="285.9" x2="1224" y2="285.9" stroke="#F5B700" stroke-width="2" stroke-dasharray="6,5" />
+    <image href="../images/pv5_side_gpr.png" x="70" y="173.2" width="300.0" height="127.6" />
     <text x="220.0" y="326" font-size="16" font-weight="bold" fill="#111827" text-anchor="middle">1호차</text>
     <text x="220.0" y="346" font-size="15" fill="#4B5563" text-anchor="middle">같은 노선을 6회</text>
     <text x="420" y="262" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">=</text>
-    <image href="../images/pv5_side_real.png" x="470" y="176.1" width="300.0" height="128.7" />
+    <image href="../images/pv5_side_gpr.png" x="470" y="173.2" width="300.0" height="127.6" />
     <text x="620.0" y="326" font-size="16" font-weight="bold" fill="#111827" text-anchor="middle">예비차·재배치 차</text>
     <text x="620.0" y="346" font-size="15" fill="#4B5563" text-anchor="middle">정비·교체·노선 재배치 때</text>
     <text x="820" y="262" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">=</text>
-    <image href="../images/pv5_side_real.png" x="870" y="176.1" width="300.0" height="128.7" />
+    <image href="../images/pv5_side_gpr.png" x="870" y="173.2" width="300.0" height="127.6" />
     <text x="1020.0" y="326" font-size="16" font-weight="bold" fill="#111827" text-anchor="middle">다른 도시 PV5</text>
     <text x="1020.0" y="346" font-size="15" fill="#4B5563" text-anchor="middle">같은 판독 기준·AI 학습 데이터</text>
-    <text x="1224" y="319.1" font-size="13" font-weight="bold" fill="#B45309" text-anchor="end">GPR 높이·위치 동일</text>
+    <text x="1224" y="311.9" font-size="13" font-weight="bold" fill="#B45309" text-anchor="end">GPR 높이·위치 동일</text>
     <text x="56" y="384" font-size="17" font-weight="bold" fill="#0B1E3C">주행선 차이는 RTK·IMU로 맞추고(11장), 차마다 다른 장착 조건은 <tspan fill="#B45309">PV5 표준 컨버전으로 맞춥니다.</tspan></text>
   </g>
   <g id="compare" data-pptx-bounds="56 404 1168 90">
@@ -53,11 +53,11 @@
     <text x="652" y="482" font-size="16" fill="#111827">단말기 없이 차량 관제</text>
     <rect x="950" y="404" width="274" height="3" fill="#0B1E3C" />
     <text x="950" y="434" font-size="19" font-weight="bold" fill="#0B1E3C">적재고 419mm</text>
-    <text x="950" y="460" font-size="16" fill="#111827">수동 GPR 카트를 바로 내려</text>
-    <text x="950" y="482" font-size="16" fill="#111827">같은 차에서 현장 재확인<tspan fill="#4B5563"> (ST1 495mm)</tspan></text>
+    <text x="950" y="460" font-size="16" fill="#111827">승인된 지점을 다음 순찰 때</text>
+    <text x="950" y="482" font-size="16" fill="#111827">같은 차에서 재탐사<tspan fill="#4B5563"> (ST1 495mm)</tspan></text>
   </g>
   <g id="kit" data-pptx-bounds="56 512 1168 44">
-    <text x="56" y="528" font-size="15" fill="#4B5563"><tspan font-weight="bold" fill="#374151">기본 조건</tspan>  2025년 의무구매 대상 공공 신차의 94.6%가 무공해차입니다. V2L·L-Track·적재공간은 다른 밴에도 있어 선택 이유로 삼지 않았습니다.</text>
+    <text x="56" y="528" font-size="15" fill="#4B5563"><tspan font-weight="bold" fill="#374151">기본 조건</tspan>  전기차라 새벽에 조용하고, 2025년 공공 신차의 94.6%가 무공해차입니다. V2L·L-Track·적재공간은 다른 밴에도 있어 선택 이유로 삼지 않았습니다.</text>
     <text x="56" y="550" font-size="15" fill="#4B5563"><tspan font-weight="bold" fill="#374151">불리한 점</tspan>  주행거리 377km는 스타리아보다 10km 짧지만 하루 약 30km [가설]에는 충분합니다. 차값 차이(최대 1,354만 원)는 GPR(대당 2억~8억 원)에 비해 작습니다.</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 594 1168 52">
@@ -65,7 +65,7 @@
     <text x="80" y="627" font-size="20" font-weight="bold" fill="#0B1E3C">어느 도시의 어느 PV5가 재도, <tspan fill="#B45309">같은 기준으로 비교</tspan>됩니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 656 1168 34">
-    <text x="56" y="668" font-size="13" fill="#4B5563">출처: 오토뷰(2026.1.28, 컨버전 포털·PIM·조인트 블록) · 공모전 솔루션 부문 안내(Pleos SDK·앱 마켓) · 기아 PV5 카고 카탈로그(2026.9)<tspan x="56" dy="16">현대차그룹 뉴스룸(2024.4, ST1 495mm) · 스타리아 일렉트릭 출시(2026.4.23) · 시사저널(2025.4.25, GPR 대당 2억~8억 원) · 공공부문 무공해차 실적(2026.6.30)</tspan></text>
+    <text x="56" y="668" font-size="13" fill="#4B5563">출처: 오토뷰(2026.1.28, PBV 컨버전 포털·컨버전 센터·PIM·조인트 블록) · 공모전 솔루션 부문 안내(Pleos Connect SDK·앱 마켓) · 기아 PV5 카고 카탈로그(2026.9, Pleos Fleet·적재고)<tspan x="56" dy="16">현대차그룹 뉴스룸(2024.4, ST1 적재고 495mm) · GSSI UtilityScan 브로셔(카트 무게) · 스타리아 일렉트릭 출시(2026.4.23) · 시사저널(2025.4.25, GPR 대당 2억~8억 원) · 공공부문 무공해차 구매 실적(2026.6.30)</tspan></text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>

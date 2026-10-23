@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <text x="210" y="45" font-size="14" fill="#374151">한 장 요약</text>
+    <text x="900" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">문제</text>
+    <text x="933" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="966" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">해법</text>
+    <text x="999" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1032" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">PV5</text>
+    <text x="1065" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1098" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">검증</text>
+    <text x="1131" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1164" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">사업</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">GroundWatch는 탐사와 탐사 ‘사이’의 공백을 메웁니다</text>
+  </g>
+  <g id="col0" data-pptx-bounds="56 168 274 180">
+    <rect x="56" y="168" width="274" height="3" fill="#C62828" />
+    <text x="56" y="202" font-size="16" font-weight="bold" fill="#C62828">문제</text>
+    <text x="56" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">탐사 100여 일 뒤 함몰</text>
+    <text x="56" y="282" font-size="17" fill="#374151">법정 점검 5년, 서울 1년(발표).<tspan x='56' dy='22'>그 사이 새로 생기고 자라는</tspan><tspan x='56' dy='22'>공동은 다음 점검까지 안 보입니다.</tspan></text>
+  </g>
+  <g id="col1" data-pptx-bounds="354 168 274 180">
+    <rect x="354" y="168" width="274" height="3" fill="#0B1E3C" />
+    <text x="354" y="202" font-size="16" font-weight="bold" fill="#B45309">해법</text>
+    <text x="354" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">같은 길을 약 2개월마다</text>
+    <text x="354" y="282" font-size="17" fill="#374151">PV5가 GPR로 다시 찍고,<tspan x='354' dy='22'>달라진 곳만 골라</tspan><tspan x='354' dy='22'>현장에서 재확인합니다.</tspan></text>
+  </g>
+  <g id="col2" data-pptx-bounds="652 168 274 180">
+    <rect x="652" y="168" width="274" height="3" fill="#0B1E3C" />
+    <text x="652" y="202" font-size="16" font-weight="bold" fill="#B45309">왜 PV5</text>
+    <text x="652" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">모든 차가 똑같이 잰다</text>
+    <text x="652" y="282" font-size="17" fill="#374151">컨버전 포털로 같은 위치에 장착,<tspan x='652' dy='22'>PIM으로 차가 장비를 제어,</tspan><tspan x='652' dy='22'>Fleet·앱 마켓으로 여러 도시에.</tspan></text>
+  </g>
+  <g id="col3" data-pptx-bounds="950 168 274 180">
+    <rect x="950" y="168" width="274" height="3" fill="#0B1E3C" />
+    <text x="950" y="202" font-size="16" font-weight="bold" fill="#B45309">사업</text>
+    <text x="950" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">약 30% 더해 1년에 6번</text>
+    <text x="950" y="282" font-size="17" fill="#374151">현행 전체 공정 km당 92만 원에<tspan x='950' dy='22'>1차 탐사 6회 원가 28만 원을</tspan><tspan x='950' dy='22'>더해 같은 길을 1년에 6번 봅니다.</tspan></text>
+  </g>
+  <g id="keynum" data-pptx-bounds="56 398 1168 120">
+    <text x="56" y="420" font-size="15" font-weight="bold" fill="#4B5563">숫자로 보면</text>
+    <rect x="56" y="434" width="376" height="3" fill="#0B1E3C" />
+    <text x="56" y="480" font-size="32" font-weight="bold" fill="#0B1E3C">100여 일</text>
+    <text x="56" y="508" font-size="15" fill="#374151">‘이상 없음’ 판정에서 함몰까지 (2024 연희동)</text>
+    <rect x="452" y="434" width="376" height="3" fill="#0B1E3C" />
+    <text x="452" y="480" font-size="32" font-weight="bold" fill="#0B1E3C">2.4배</text>
+    <text x="452" y="508" font-size="15" fill="#374151">10cm 자란 공동의 신호 ÷ 가장 큰 오탐 요인 (7장 시뮬레이션)</text>
+    <rect x="848" y="434" width="376" height="3" fill="#0B1E3C" />
+    <text x="848" y="480" font-size="32" font-weight="bold" fill="#0B1E3C">최대 88대</text>
+    <text x="848" y="508" font-size="15" fill="#374151">전국 지자체가 쓸 탐사형 PV5 (13장 계산, 차량 약 40억 원)</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 590 1168 44">
+    <rect x="56" y="590" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">기아 PV5 AI 순찰차가 도로 위를 본다면, GroundWatch는 도로 아래를 봅니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#4B5563">근거: 3장 뉴시스·세계일보 · 7장 GPR 전자기 시뮬레이션 · 12장 서울시 2024 공동조사용역 최종보고서 · 13장 머니투데이(2026.6.26, 경찰청 PV5 AI 순찰차)</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">02 / 15</text>
+  </g>
+</svg>

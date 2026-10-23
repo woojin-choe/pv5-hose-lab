@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="ending" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <image href="../images/close_dawn.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice" />
+  <image href="../images/close_shade.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+  <g id="closing" data-pptx-bounds="64 552 640 112">
+    <text x="64" y="572" font-size="15" font-weight="bold" fill="#F5B700">PV5 GroundWatch · 지하안전 순찰차</text>
+    <text x="64" y="614" font-size="32" font-weight="bold" fill="#FFFFFF">같은 길을 다시 보는 일이,</text>
+    <text x="64" y="658" font-size="32" font-weight="bold" fill="#FFFFFF">한 사람의 무사 귀가가 되도록.</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 684 1172 28">
+    <text x="64" y="704" font-size="14" font-weight="bold" fill="#F5B700">TEAM 한 명이라도 살릴 수 있다면</text>
+    <text x="1100" y="704" font-size="11" fill="#C3CCD9" text-anchor="end">PV5 기반 콘셉트 이미지</text>
+    <text x="1232" y="704" font-size="13" font-weight="bold" fill="#F5B700" text-anchor="end">15 / 15</text>
+  </g>
+</svg>

@@ -43,14 +43,14 @@
     <text x="744" y="404" font-size="16" fill="#374151">공동이 먼저 생겨 자람 → 반복 측정으로 잡을 수 있음</text>
     <rect x="744" y="440" width="480" height="3" fill="#C3CCD9" />
     <text x="744" y="478" font-size="19" font-weight="bold" fill="#4B5563">심부 붕괴형 · 지하 10m 이상 → 대상 아님</text>
-    <text x="744" y="504" font-size="16" fill="#374151">예: 명일동(깊이 16m) · 깊은 굴착 공사장은 계측이 맡음</text>
+    <text x="744" y="504" font-size="16" fill="#374151">예: 명일동(함몰 깊이 16m) · 깊은 굴착·터널 공사장은 계측이 맡음</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 600 1168 44">
     <rect x="56" y="600" width="4" height="44" fill="#F5B700" />
     <text x="76" y="630" font-size="21" font-weight="bold" fill="#0B1E3C">차량형 GPR이 보는 깊이(약 2m)에, 가장 흔한 원인이 있습니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 국토교통부 지반침하 원인 통계(2020~2024)·명일동 사고조사(2025.12.3) · 이투데이(2025.4.23, GPR 탐지 깊이 약 2m) · 단면도는 원리 설명용</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 국토교통부 지반침하 원인 통계(2020~2024) · 국토교통부 명일동 사고조사(2025.12.3) · 서울시 차량형 GPR 탐사 깊이 약 2m · 이투데이(2025.4.23, 10m 이상 굴착 공사장 점검) · 단면도는 원리 설명용</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>
