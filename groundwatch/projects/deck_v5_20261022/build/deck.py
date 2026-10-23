@@ -179,24 +179,21 @@ svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹�
     <text x="56" y="538" font-size="15" fill="{SUB}">공사장 주변은 2026년부터 주·월 1회 탐사하지만, 회차마다 따로 판독합니다.</text>
     <text x="56" y="560" font-size="15" fill="{SUB}">사고 뒤 정한 성산로 월 1회 탐사도 계약 절차로 반년 넘게 시행되지 못했습니다.</text>
   </g>
-  <g id="evidence" data-pptx-bounds="784 168 440 460">
+  <g id="evidence" data-pptx-bounds="784 168 440 392">
     <rect x="784" y="168" width="440" height="3" fill="{NAVY}" />
     <text x="784" y="204" font-size="15" font-weight="bold" fill="{AMB}">같은 공동을 다시 보면 · 서울 실측</text>
-    <text x="784" y="254" font-size="34" font-weight="bold" fill="{NAVY}">30곳 중 21곳 크기 변화</text>
-    <text x="784" y="284" font-size="16" fill="{SUB}">서울 11개 자치구 공동을 차량 GPR로 재탐사</text>
-    <text x="784" y="306" font-size="16" fill="{SUB}">(발견 후 209~989일 · 인천대 연구, 2020)</text>
-    <line x1="784" y1="330" x2="1224" y2="330" stroke="{LINE}" stroke-width="1" />
-    <text x="784" y="362" font-size="17" fill="{INK}"><tspan font-weight="bold" fill="{RED}">1년이 안 돼</tspan> ‘관찰’ → ‘우선복구’로 등급 상승</text>
-    <text x="784" y="388" font-size="17" fill="{INK}">13곳은 크기와 함께 관리 등급도 바뀜</text>
-    <line x1="784" y1="414" x2="1224" y2="414" stroke="{LINE}" stroke-width="1" />
-    <text x="784" y="444" font-size="16" fill="{SUB}">국내 연구 결론: 시간이 지날수록 공동은 계속</text>
-    <text x="784" y="466" font-size="16" fill="{SUB}">자라고, 공동 위 흙은 최대 20cm 얇아졌습니다</text>
-    <line x1="784" y1="490" x2="1224" y2="490" stroke="{LINE}" stroke-width="1" />
-    <text x="784" y="518" font-size="16" fill="{INK}">연희동 공동을 놓쳤는지, 그 뒤 생겼는지는</text>
-    <text x="784" y="542" font-size="16" font-weight="bold" fill="{NAVY}">한 번의 탐사로는 구분할 수 없습니다.</text>
-    <line x1="784" y1="566" x2="1224" y2="566" stroke="{LINE}" stroke-width="1" />
-    <text x="784" y="594" font-size="16" fill="{INK}">2022~2026.6 전국에서 찾은 공동 1,111곳 중</text>
-    <text x="784" y="618" font-size="16" font-weight="bold" fill="{NAVY}">385곳(34.7%)이 아직 복구 전입니다.</text>
+    <text x="784" y="256" font-size="36" font-weight="bold" fill="{NAVY}">30곳 중 21곳 크기 변화</text>
+    <text x="784" y="288" font-size="16" fill="{SUB}">서울 11개 자치구 공동을 차량 GPR로 재탐사</text>
+    <text x="784" y="310" font-size="16" fill="{SUB}">(발견 후 209~989일 · 인천대 연구, 2020)</text>
+    <line x1="784" y1="338" x2="1224" y2="338" stroke="{LINE}" stroke-width="1" />
+    <text x="784" y="372" font-size="17" fill="{INK}"><tspan font-weight="bold" fill="{RED}">1년이 안 돼</tspan> ‘관찰’ → ‘우선복구’로 등급 상승</text>
+    <text x="784" y="398" font-size="17" fill="{INK}">13곳은 크기와 함께 관리 등급도 바뀜</text>
+    <line x1="784" y1="426" x2="1224" y2="426" stroke="{LINE}" stroke-width="1" />
+    <text x="784" y="460" font-size="17" fill="{INK}">연희동 공동을 놓쳤는지, 그 뒤 생겼는지는</text>
+    <text x="784" y="486" font-size="17" font-weight="bold" fill="{NAVY}">한 번의 탐사로는 구분할 수 없습니다.</text>
+    <line x1="784" y1="514" x2="1224" y2="514" stroke="{LINE}" stroke-width="1" />
+    <text x="784" y="548" font-size="17" fill="{INK}">전국 공동 1,111곳 중 <tspan font-weight="bold" fill="{NAVY}">385곳(34.7%)이 복구 전</tspan></text>
+    <text x="784" y="572" font-size="15" fill="{SUB}">2022~2026.6 · 찾은 뒤에도 다시 봐야 할 곳이 쌓여 있습니다</text>
   </g>
   {band(596, "한 번의 탐사는 그 시점만 말해 줍니다. 그 사이의 ‘변화’를 봐야 합니다.").strip()}
 ''' + foot2(3, "출처: 지하안전법(공동조사 5년 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 박정준·김인대, 한국재난정보학회논문집 16(1)(2020)",
@@ -227,10 +224,10 @@ svg("04_target.svg", head("문제", "우리가 막을 대상") + title("땅꺼�
     <text x="744" y="404" font-size="16" fill="{SUB}">공동이 먼저 생겨 자람 → 반복 측정으로 잡을 수 있음</text>
     <rect x="744" y="440" width="480" height="3" fill="#C3CCD9" />
     <text x="744" y="478" font-size="19" font-weight="bold" fill="{MUTE}">심부 붕괴형 · 지하 10m 이상 → 대상 아님</text>
-    <text x="744" y="504" font-size="16" fill="{SUB}">예: 명일동(함몰 깊이 16m) · 깊은 굴착·터널 공사장은 계측이 맡음</text>
+    <text x="744" y="504" font-size="16" fill="{SUB}">예: 명일동(깊이 16m) · 깊은 굴착 공사장은 계측이 맡음</text>
   </g>
   {band(600, "차량형 GPR이 보는 깊이(약 2m)에, 가장 흔한 원인이 있습니다.").strip()}
-''' + foot(4, "출처: 국토교통부 지반침하 원인 통계(2020~2024) · 국토교통부 명일동 사고조사(2025.12.3) · 서울시 차량형 GPR 탐사 깊이 약 2m · 이투데이(2025.4.23, 10m 이상 굴착 공사장 점검) · 단면도는 원리 설명용"))
+''' + foot(4, "출처: 국토교통부 지반침하 원인 통계(2020~2024)·명일동 사고조사(2025.12.3) · 서울시 차량형 GPR 탐사 깊이 약 2m · 이투데이(2025.4.23) · 단면도는 원리 설명용"))
 
 # ---------------------------------------------------------------- 05 해법
 svg("05_solution.svg", head("해법", "GroundWatch의 핵심") + title("같은 길을 약 2개월마다 다시 찍고, 달라진 곳만 다시 봅니다") + f'''  <g id="compare" data-pptx-bounds="56 160 680 400">
@@ -473,7 +470,7 @@ def summary():
     b = ""
     x = 56
     for i, (k, h, d) in enumerate(cols):
-        b += f'''  <g id="col{i}" data-pptx-bounds="{x} 168 274 260">
+        b += f'''  <g id="col{i}" data-pptx-bounds="{x} 168 274 180">
     <rect x="{x}" y="168" width="274" height="3" fill="{NAVY if i else RED}" />
     <text x="{x}" y="202" font-size="16" font-weight="bold" fill="{RED if i == 0 else AMB}">{k}</text>
     <text x="{x}" y="240" font-size="23" font-weight="bold" fill="{NAVY}">{h}</text>
@@ -481,9 +478,9 @@ def summary():
   </g>
 '''
         x += 298
-    keyn = [("100여 일", "‘이상 없음’ 탐사에서 함몰까지 (연희동)"), ("2.4배", "10cm 자란 공동 vs 가장 큰 오탐 요인 (시뮬레이션)"), ("1회 → 6회", "1년에 같은 길을 보는 횟수 · 추가 원가는 현행의 약 30%")]
+    keyn = [("100여 일", "‘이상 없음’ 판정에서 함몰까지 (2024 연희동)"), ("2.4배", "10cm 자란 공동의 신호 ÷ 가장 큰 오탐 요인 (7장 시뮬레이션)"), ("최대 88대", "전국 지자체가 쓸 탐사형 PV5 (14장 계산, 차량 약 40억 원)")]
     b += f'''  <g id="keynum" data-pptx-bounds="56 398 1168 120">
-    <text x="56" y="420" font-size="15" font-weight="bold" fill="{MUTE}">숫자 셋으로 보면</text>
+    <text x="56" y="420" font-size="15" font-weight="bold" fill="{MUTE}">숫자로 보면</text>
 '''
     x = 56
     for v, k in keyn:
@@ -492,8 +489,8 @@ def summary():
     <text x="{x}" y="508" font-size="15" fill="{SUB}">{k}</text>
 '''
         x += 396
-    b += "  </g>\n" + band(590, "기아가 예시로 든 ‘스마트 순찰 및 재난 대응 차량’을, 땅 아래로 넓힙니다.")
-    return head("", "한 장 요약") + title("GroundWatch는 탐사와 탐사 ‘사이’의 공백을 메웁니다") + b + foot(2, "근거: 3장 뉴시스·세계일보 · 7장 GPR 전자기 시뮬레이션 · 12장 서울시 2024 공동조사용역 최종보고서")
+    b += "  </g>\n" + band(590, "기아 PV5 AI 순찰차가 도로 위를 본다면, GroundWatch는 도로 아래를 봅니다.")
+    return head("", "한 장 요약") + title("GroundWatch는 탐사와 탐사 ‘사이’의 공백을 메웁니다") + b + foot(2, "근거: 3장 뉴시스·세계일보 · 7장 GPR 전자기 시뮬레이션 · 12장 서울시 2024 공동조사용역 최종보고서 · 13장 머니투데이(2026.6.26, 경찰청 PV5 AI 순찰차)")
 
 
 svg("01b_summary.svg", summary())
@@ -682,7 +679,7 @@ def solution2():
     <line x1="928" y1="450" x2="928" y2="580" stroke="{RED}" stroke-width="1.5" stroke-dasharray="4,3" />
   </g>
 """
-    b += band(596, "10cm 이상 자란 공동은 오탐 요인의 2배 넘는 신호, 5cm는 경계 — 주행선 정합이 관건입니다.")
+    b += band(596, "10cm 자란 공동은 가장 큰 오탐 요인보다 2배 넘게 뚜렷합니다. 남은 관건은 주행선 정합입니다.")
     return head("해법", "GroundWatch의 핵심") + title("같은 길을 약 2개월마다 다시 찍고, 달라진 곳만 봅니다") + b + foot(
         6, "시뮬레이션: 2D 전자기 파동 계산(FDTD) · 400MHz · Ø0.8m 하수관 위 공동 반경 18cm 기준 · 세기 = 회차 차분 에너지 ÷ 가장 큰 오탐 요인 · 판정은 전문가, 확정은 천공")
 
@@ -719,7 +716,7 @@ def pv5lab2():
     </g>
     <line x1="696" y1="178" x2="1224" y2="178" stroke="{NAVY}" stroke-width="1.5" />
 """
-    rows = [("장비 적재", "카고룸 4,420L · 최대 적재 550kg · 적재고 419mm", "순정 액세서리 기준 · 장비 약 300kg [가설] · 카트 바로 하차"),
+    rows = [("장비 적재", "카고룸 4,420L · 적재 550kg · 적재고 419mm", "적재는 순정 액세서리 장착 시 · 장비 약 300kg [가설]"),
             ("장비 전원", "실내·실외 V2L (최대 3.6kW, 해외 제원)", "장비 1.5kW · 하루 10kWh = 배터리의 14% [가설]"),
             ("같은 위치 고정", "L-Track·몰리 패널 (순정 액세서리)", "회차마다 같은 자리에 장착"),
             ("차량과 연동", "Pleos Connect SDK · Navihelper · PIM", "재확인 지점 안내, 화면에서 장비 제어"),
@@ -1064,7 +1061,7 @@ def why_kit():
     sc = 300 / IW
     iy = 300 - GROUND_Y * sc
     gy = iy + GPR_Y * sc
-    g = '  <g id="premise" data-pptx-bounds="56 162 1168 232">\n'
+    g = '  <g id="premise" data-pptx-bounds="56 168 1168 226">\n'
     g += f'    <line x1="56" y1="{gy:.1f}" x2="1224" y2="{gy:.1f}" stroke="{YEL}" stroke-width="2" stroke-dasharray="6,5" />\n'
     cars = [("1호차", "같은 노선을 6회"), ("예비차·재배치 차", "정비·교체·노선 재배치 때"), ("다른 도시 PV5", "같은 판독 기준·AI 학습 데이터")]
     for k, (name, sub) in enumerate(cars):
@@ -1082,7 +1079,7 @@ def why_kit():
     feats = [("PBV 컨버전 포털", ["3D 데이터·인증자료로", "모든 차에 같은 위치 장착"]),
              ("PIM · 조인트 블록", [f'차속 신호로 같은 간격 기록<tspan fill="{MUTE}"> (제안)</tspan>', "외부 장비 전원도 차가 제어"]),
              ("Pleos Fleet · 앱 마켓", ["여러 도시가 같은 앱·같은 기준으로,", "단말기 없이 차량 관제"]),
-             ("적재고 419mm", ["승인된 지점을 다음 순찰 때", f'같은 차에서 재탐사<tspan fill="{MUTE}"> (ST1 495mm)</tspan>'])]
+             ("적재고 419mm", ["수동 GPR 카트를 바로 내려", f'같은 차에서 현장 재확인<tspan fill="{MUTE}"> (ST1 495mm)</tspan>'])]
     g += '  <g id="compare" data-pptx-bounds="56 404 1168 90">\n'
     for k, (name, lines) in enumerate(feats):
         x = 56 + 298 * k
@@ -1104,8 +1101,8 @@ def why_kit():
                    lambda m: m.group(1) + f'어느 도시의 어느 PV5가 재도, <tspan fill="{AMB}">같은 기준으로 비교</tspan>됩니다.' + m.group(2), t, count=1, flags=re.S)
     assert n == 1
     t, n = re.subn(r'(<g id="source"[^>]*>\s*<text [^>]*>).*?(</text>)',
-                   lambda m: m.group(1) + '출처: 오토뷰(2026.1.28, PBV 컨버전 포털·컨버전 센터·PIM·조인트 블록) · 공모전 솔루션 부문 안내(Pleos Connect SDK·앱 마켓) · 기아 PV5 카고 카탈로그(2026.9, Pleos Fleet·적재고)'
-                   + '<tspan x="56" dy="16">현대차그룹 뉴스룸(2024.4, ST1 적재고 495mm) · GSSI UtilityScan 브로셔(카트 무게) · 스타리아 일렉트릭 출시(2026.4.23) · 시사저널(2025.4.25, GPR 대당 2억~8억 원) · 공공부문 무공해차 구매 실적(2026.6.30)</tspan>'
+                   lambda m: m.group(1) + '출처: 오토뷰(2026.1.28, 컨버전 포털·PIM·조인트 블록) · 공모전 솔루션 부문 안내(Pleos SDK·앱 마켓) · 기아 PV5 카고 카탈로그(2026.9)'
+                   + '<tspan x="56" dy="16">현대차그룹 뉴스룸(2024.4, ST1 495mm) · 스타리아 일렉트릭 출시(2026.4.23) · 시사저널(2025.4.25, GPR 대당 2억~8억 원) · 공공부문 무공해차 실적(2026.6.30)</tspan>'
                    + m.group(2), t, count=1, flags=re.S)
     assert n == 1
     open(f, "w", encoding="utf-8").write(t)
