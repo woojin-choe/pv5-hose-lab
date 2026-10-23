@@ -45,7 +45,7 @@
     <text x="88" y="370" font-size="16" font-weight="bold" fill="#F5B700">기아가 얻는 것</text>
     <text x="88" y="414" font-size="15" fill="#D6DDE8">PV5 판매</text>
     <text x="88" y="462" font-size="34" font-weight="bold" fill="#FFFFFF">최대 약 88대</text>
-    <text x="88" y="500" font-size="16" fill="#D6DDE8">전국 지자체 탐사형 수요 (14장 계산)</text>
+    <text x="88" y="500" font-size="16" fill="#D6DDE8">지자체 도로를 2개월마다 볼 때 최대</text>
     <text x="88" y="526" font-size="16" fill="#D6DDE8">차량 매출 약 40억 원 · 서울만 약 8대</text>
     <line x1="444" y1="396" x2="444" y2="540" stroke="#3B4F70" stroke-width="1" />
     <text x="464" y="414" font-size="15" fill="#D6DDE8">생태계 레퍼런스</text>
@@ -63,7 +63,7 @@
     <text x="76" y="626" font-size="21" font-weight="bold" fill="#0B1E3C">지하 데이터는 판매하지 않습니다. 계약기관 안에서 권한대로만 씁니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="13" fill="#4B5563">머니투데이(2026.6.26, 경찰청 PV5 AI 순찰차) · 88대·40억 원은 14장 계산(1대 연 1,100km 반복, 대당 4,520만 원) · 구매·협력 구조와 데이터 원칙은 제안 [가설]</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">88대 = 지자체 관리 도로 96,712km ÷ 1대 1,100km(연 6,600km를 6회) [가설] · 40억 원 = 88대 × 4,520만 원 · 국가지표체계(2025) · 머니투데이(2026.6.26, 경찰청 PV5 AI 순찰차)</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>

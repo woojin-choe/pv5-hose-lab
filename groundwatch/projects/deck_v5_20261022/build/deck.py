@@ -499,7 +499,7 @@ def summary():
   </g>
 '''
         x += 298
-    keyn = [("100여 일", "‘이상 없음’ 판정에서 함몰까지 (2024 연희동)"), ("2.4배", "10cm 자란 공동의 신호 ÷ 가장 큰 오탐 요인 (7장 시뮬레이션)"), ("최대 88대", "전국 지자체가 쓸 탐사형 PV5 (14장 계산, 차량 약 40억 원)")]
+    keyn = [("100여 일", "‘이상 없음’ 판정에서 함몰까지 (2024 연희동)"), ("2.4배", "10cm 자란 공동의 신호 ÷ 가장 큰 오탐 요인 (7장 시뮬레이션)"), ("최대 88대", "전국 지자체가 쓸 탐사형 PV5 (13장 계산, 차량 약 40억 원)")]
     b += f'''  <g id="keynum" data-pptx-bounds="56 398 1168 120">
     <text x="56" y="420" font-size="15" font-weight="bold" fill="{MUTE}">숫자로 보면</text>
 '''
@@ -791,7 +791,7 @@ def entry2():
     <text x="736" y="294" font-size="15" font-weight="bold" fill="{AMB}">그다음</text>
     <rect x="736" y="304" width="488" height="3" fill="{NAVY}" />
     <text x="736" y="342" font-size="19" font-weight="bold" fill="{NAVY}">1~2년 <tspan font-weight="normal" fill="{INK}">조사기관과 시·군 용역 공동 수주</tspan></text>
-    <text x="736" y="369" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{AMB}">통과 조건</tspan> 실증확인서 확보 · 테스트베드서울(최대 2억 원)</text>
+    <text x="736" y="369" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{AMB}">통과 조건</tspan> 실증확인서(테스트베드서울) · 용역 실적</text>
     <text x="736" y="406" font-size="19" font-weight="bold" fill="{NAVY}">2~3년 <tspan font-weight="normal" fill="{INK}">혁신제품 지정 → 연간 관제 계약</tspan></text>
     <text x="736" y="433" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{AMB}">통과 조건</tspan> 자치구 2곳 연간 계약 [목표]</text>
     <text x="736" y="470" font-size="19" font-weight="bold" fill="{NAVY}">3년~ <tspan font-weight="normal" fill="{INK}">권역별 PV5 플릿 · 상하수도 기관</tspan></text>
@@ -1044,7 +1044,7 @@ def players():
   </g>
 """
         x += 400
-    gains = [("PV5 판매", "최대 약 88대", ["전국 지자체 탐사형 수요 (14장 계산)", "차량 매출 약 40억 원 · 서울만 약 8대"]),
+    gains = [("PV5 판매", "최대 약 88대", ["지자체 도로를 2개월마다 볼 때 최대", "차량 매출 약 40억 원 · 서울만 약 8대"]),
              ("생태계 레퍼런스", "같은 키트, 모든 도시", ["컨버전 포털 표준 장착으로 복제", "Pleos Fleet 공공 관제 사례"]),
              ("공공안전 라인업", "지상 + 지하", ["2026.6 경찰청 PV5 AI 순찰차(지상)", "GroundWatch가 도로 아래를 맡음"])]
     b += f"""  <g id="kia" data-pptx-bounds="56 330 1168 236">
@@ -1063,7 +1063,7 @@ def players():
     b += "  </g>\n"
     b += band(596, "지하 데이터는 판매하지 않습니다. 계약기관 안에서 권한대로만 씁니다.")
     return head("사업", "누가 사고 누가 쓰나") + title("지자체가 사고 현장팀이 쓰며, 기아는 공공 PV5 시장을 엽니다") + b + foot(
-        13, "머니투데이(2026.6.26, 경찰청 PV5 AI 순찰차) · 88대·40억 원은 14장 계산(1대 연 1,100km 반복, 대당 4,520만 원) · 구매·협력 구조와 데이터 원칙은 제안 [가설]")
+        13, "88대 = 지자체 관리 도로 96,712km ÷ 1대 1,100km(연 6,600km를 6회) [가설] · 40억 원 = 88대 × 4,520만 원 · 국가지표체계(2025) · 머니투데이(2026.6.26, 경찰청 PV5 AI 순찰차)")
 
 
 svg("10b_players.svg", players())
