@@ -162,7 +162,7 @@ svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹�
     <text x="56" y="256" font-size="18" fill="{INK}">법정 공동조사 주기 <tspan font-size="15" fill="{SUB}">(하수관 등 관리자)</tspan></text>
     <rect x="56" y="270" width="600" height="34" fill="#9AA3AF" />
     <text x="668" y="296" font-size="26" font-weight="bold" fill="{INK}">5년</text>
-    <text x="56" y="356" font-size="18" fill="{INK}">서울시가 줄인 정기점검 주기 <tspan font-size="15" fill="{SUB}">(2025.4)</tspan></text>
+    <text x="56" y="356" font-size="18" fill="{INK}">서울시가 줄이기로 한 정기점검 주기 <tspan font-size="15" fill="{SUB}">(2025.4 발표)</tspan></text>
     <rect x="56" y="370" width="120" height="34" fill="{NAVY}" />
     <text x="188" y="396" font-size="26" font-weight="bold" fill="{NAVY}">1년</text>
     <text x="56" y="456" font-size="18" font-weight="bold" fill="{RED}">연희동: 탐사 ‘이상 없음’에서 함몰까지</text>
@@ -172,7 +172,7 @@ svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹�
   <g id="evidence" data-pptx-bounds="784 168 440 384">
     <rect x="784" y="168" width="440" height="3" fill="{NAVY}" />
     <text x="784" y="204" font-size="15" font-weight="bold" fill="{AMB}">그 사이 공동은 자랍니다</text>
-    <text x="784" y="250" font-size="26" font-weight="bold" fill="{NAVY}">“예상보다 단기간에</text>
+    <text x="784" y="250" font-size="26" font-weight="bold" fill="{NAVY}">“종래 생각보다 단기간에</text>
     <text x="784" y="286" font-size="26" font-weight="bold" fill="{NAVY}">공동이 성장할 수 있다”</text>
     <text x="784" y="330" font-size="16" fill="{SUB}">일본 국토교통성 위탁연구</text>
     <text x="784" y="352" font-size="16" fill="{SUB}">(도쿄대·지오서치, 2018~2020 · 원문 번역)</text>
@@ -281,35 +281,16 @@ svg("07_pv5_lab.svg", head("PV5", "PV5 이동형 탐사실") + title("PV5 한 �
 ''' + foot(7, "차량형 GPR 장착(하부형·후방형)은 배터리 팩·지상고 간섭 시험 후 확정 · 출처: 기아 PV5 카고 제원·액세서리, 오토뷰(2026.1.28, 컨버전 포털) · V2L 3.6kW는 해외 제원 · 배치도는 콘셉트"))
 
 # ---------------------------------------------------------------- 12 마무리
-svg("12_closing.svg", f'''  <defs>
-    <linearGradient id="closeFade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="{NAVY}" stop-opacity="1" />
-      <stop offset="55%" stop-color="{NAVY}" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="{NAVY}" stop-opacity="0" />
-    </linearGradient>
-  </defs>
-  <rect x="0" y="0" width="1280" height="720" fill="{NAVY}" />
-  <image href="../images/close_pv5_rear_b.jpg" x="560" y="0" width="720" height="720" preserveAspectRatio="xMidYMid slice" />
-  <rect x="560" y="0" width="420" height="720" fill="url(#closeFade)" />
-  <g id="recap" data-pptx-bounds="64 80 620 360">
-    <text x="64" y="104" font-size="16" font-weight="bold" fill="{YEL}">GroundWatch가 바꾸는 것</text>
-    <text x="64" y="150" font-size="20" fill="#9FB0C8">회차마다 따로 보는 탐사</text>
-    <text x="64" y="182" font-size="25" font-weight="bold" fill="#FFFFFF">→ 같은 길의 ‘변화’를 보는 탐사</text>
-    <text x="64" y="228" font-size="20" fill="#9FB0C8">다시 찾아가야 하는 의심 지점</text>
-    <text x="64" y="260" font-size="25" font-weight="bold" fill="#FFFFFF">→ 같은 차에서 바로 재탐사</text>
-    <text x="64" y="306" font-size="20" fill="#9FB0C8">장비를 실은 차</text>
-    <text x="64" y="338" font-size="25" font-weight="bold" fill="#FFFFFF">→ 업무에 연동된 PV5 탐사실</text>
-    <text x="64" y="384" font-size="20" fill="#9FB0C8">기아에게</text>
-    <text x="64" y="416" font-size="25" font-weight="bold" fill="#FFFFFF">→ 공공 탐사용 PV5 플릿 (최대 약 97대)</text>
+svg("12_closing.svg", f'''  <rect x="0" y="0" width="1280" height="720" fill="{NAVY}" />
+  <image href="../images/close_pv5_front_soft.png" x="220" y="26" width="840" height="560" preserveAspectRatio="xMidYMid meet" />
+  <g id="closing" data-pptx-bounds="160 600 960 80">
+    <text x="640" y="622" font-size="15" font-weight="bold" fill="{YEL}" text-anchor="middle">PV5 GroundWatch · 지하안전 순찰차</text>
+    <text x="640" y="664" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">한 번의 조기 발견이, 한 사람의 무사 귀가가 되도록.</text>
   </g>
-  <g id="closing" data-pptx-bounds="64 474 620 150">
-    <rect x="64" y="480" width="48" height="3" fill="{YEL}" />
-    <text x="64" y="540" font-size="38" font-weight="bold" fill="#FFFFFF">한 번의 조기 발견이,<tspan x="64" dy="52">한 사람의 무사 귀가가 되도록.</tspan></text>
-  </g>
-  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 662 1172 48">
-    <text x="64" y="700" font-size="14" font-weight="bold" fill="{YEL}">TEAM 한 명이라도 살릴 수 있다면</text>
-    <text x="64" y="676" font-size="11" fill="#9FB0C8">사진: Alexander Migl, CC BY-SA 4.0(편집)</text>
-    <text x="1232" y="700" font-size="13" font-weight="bold" fill="{YEL}" text-anchor="end">12 / {N}</text>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 688 1172 24">
+    <text x="64" y="706" font-size="14" font-weight="bold" fill="{YEL}">TEAM 한 명이라도 살릴 수 있다면</text>
+    <text x="1060" y="706" font-size="11" fill="#9FB0C8" text-anchor="end">사진: Alexander Migl, CC BY-SA 4.0(편집)</text>
+    <text x="1232" y="706" font-size="13" font-weight="bold" fill="{YEL}" text-anchor="end">12 / {N}</text>
   </g>
 ''', role="ending")
 
@@ -496,7 +477,7 @@ def summary():
     <text x="{x}" y="550" font-size="15" fill="{SUB}">{k}</text>
 '''
         x += 396
-    b += "  </g>\n" + band(590, "기아가 찾는 ‘첨단 장비 탑재 스마트 순찰 PV5’를, 땅 아래로 넓힙니다.")
+    b += "  </g>\n" + band(590, "기아가 예시로 든 ‘스마트 순찰 및 재난 대응 차량’을, 땅 아래로 넓힙니다.")
     return head("", "한 장 요약") + title("GroundWatch는 탐사와 탐사 ‘사이’의 공백을 메웁니다") + b + foot(2, "근거: 3장 뉴시스·세계일보 · 7장 GPR 전자기 시뮬레이션 · 12장 서울시 2024 공동조사용역 최종보고서")
 
 
@@ -652,7 +633,7 @@ def solution2():
     <text x="56" y="542" font-size="16" fill="{SUB}">현장 확인</text>
     <text x="196" y="542" font-size="16" fill="{MUTE}">별도 발주 →</text>
     <text x="340" y="542" font-size="17" font-weight="bold" fill="{NAVY}">같은 차에서 바로</text>
-    <text x="56" y="570" font-size="13" fill="{MUTE}">기존: 일본 후지사와시·지오서치 경과관찰, 국토교통성 연구(3개월 주기)</text>
+    <text x="56" y="571" font-size="13" fill="{MUTE}">기존: 일본 후지사와시·지오서치 경과관찰, 국토교통성 연구(3개월 주기)</text>
   </g>
   <g id="proof" data-pptx-bounds="664 410 560 176">
     <rect x="664" y="412" width="560" height="3" fill="{NAVY}" />
@@ -738,7 +719,7 @@ def entry2():
     b = f"""  <g id="facts" data-pptx-bounds="56 146 1168 104">
 """
     facts = [("0.85~1.90억 원", "2026 지자체 GPR 용역 낙찰액", "안양·강동구·용인, 이미 집행 중"),
-             ("21.6억 원", "경기도 16개 시·군 탐사 지원", "장비 대신 용역으로 1,080km (2025.9)"),
+             ("21.6억 원", "경기도 16개 시·군 탐사 지원", "1,080km 지반탐사 지원 (2025.9)"),
              ("최대 약 97대", "기아 PV5 수요 (계산)", "차량 매출 최대 약 44억 원 · 서울만 약 8대")]
     x = 56
     for v, k, d in facts:
@@ -1021,7 +1002,7 @@ def players():
     b += f"""  <g id="data" data-pptx-bounds="56 404 1168 130">
     <rect x="56" y="408" width="560" height="3" fill="{NAVY}" />
     <text x="56" y="442" font-size="15" font-weight="bold" fill="{AMB}">기아가 이미 가는 방향</text>
-    <text x="56" y="480" font-size="18" fill="{INK}">공모전 예시 ‘첨단 장비 탑재 스마트 순찰 차량’</text>
+    <text x="56" y="480" font-size="18" fill="{INK}">공모전 예시 ‘스마트 순찰 및 재난 대응 차량’</text>
     <text x="56" y="508" font-size="18" fill="{INK}">2026.6 <tspan font-weight="bold" fill="{NAVY}">경찰청과 PV5 AI 순찰차</tspan> 공개</text>
     <rect x="664" y="408" width="560" height="3" fill="{RED}" />
     <text x="664" y="442" font-size="15" font-weight="bold" fill="{RED}">데이터 원칙</text>

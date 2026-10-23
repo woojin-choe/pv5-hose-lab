@@ -25,7 +25,7 @@
     <text x="56" y="256" font-size="18" fill="#111827">법정 공동조사 주기 <tspan font-size="15" fill="#374151">(하수관 등 관리자)</tspan></text>
     <rect x="56" y="270" width="600" height="34" fill="#9AA3AF" />
     <text x="668" y="296" font-size="26" font-weight="bold" fill="#111827">5년</text>
-    <text x="56" y="356" font-size="18" fill="#111827">서울시가 줄인 정기점검 주기 <tspan font-size="15" fill="#374151">(2025.4)</tspan></text>
+    <text x="56" y="356" font-size="18" fill="#111827">서울시가 줄이기로 한 정기점검 주기 <tspan font-size="15" fill="#374151">(2025.4 발표)</tspan></text>
     <rect x="56" y="370" width="120" height="34" fill="#0B1E3C" />
     <text x="188" y="396" font-size="26" font-weight="bold" fill="#0B1E3C">1년</text>
     <text x="56" y="456" font-size="18" font-weight="bold" fill="#C62828">연희동: 탐사 ‘이상 없음’에서 함몰까지</text>
@@ -35,7 +35,7 @@
   <g id="evidence" data-pptx-bounds="784 168 440 384">
     <rect x="784" y="168" width="440" height="3" fill="#0B1E3C" />
     <text x="784" y="204" font-size="15" font-weight="bold" fill="#B45309">그 사이 공동은 자랍니다</text>
-    <text x="784" y="250" font-size="26" font-weight="bold" fill="#0B1E3C">“예상보다 단기간에</text>
+    <text x="784" y="250" font-size="26" font-weight="bold" fill="#0B1E3C">“종래 생각보다 단기간에</text>
     <text x="784" y="286" font-size="26" font-weight="bold" fill="#0B1E3C">공동이 성장할 수 있다”</text>
     <text x="784" y="330" font-size="16" fill="#374151">일본 국토교통성 위탁연구</text>
     <text x="784" y="352" font-size="16" fill="#374151">(도쿄대·지오서치, 2018~2020 · 원문 번역)</text>
