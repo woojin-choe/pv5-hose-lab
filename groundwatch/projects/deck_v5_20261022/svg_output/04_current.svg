@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <text x="210" y="45" font-size="14" fill="#374151">지금의 탐사</text>
+    <text x="900" y="45" font-size="14" font-weight="bold" fill="#0B1E3C" text-anchor="middle">문제</text>
+    <rect x="876" y="54" width="48" height="3" fill="#F5B700" />
+    <text x="933" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="966" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">해법</text>
+    <text x="999" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1032" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">PV5</text>
+    <text x="1065" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1098" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">검증</text>
+    <text x="1131" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1164" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">사업</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">서울은 이미 3만 km를 탐사해 공동 7,760개를 찾았습니다</text>
+  </g>
+  <g id="photo" data-pptx-bounds="56 150 520 300">
+    <image href="../images/gpr_handheld.jpg" x="56" y="150" width="520" height="272" preserveAspectRatio="xMidYMid slice" />
+    <text x="56" y="442" font-size="12" fill="#4B5563">수동형 GPR 탐사 장비 · 사진: The Charles Machine Works, CC BY-SA 2.0</text>
+  </g>
+  <g id="stats" data-pptx-bounds="56 462 520 100">
+    <rect x="56" y="466" width="160" height="3" fill="#0B1E3C" />
+    <text x="56" y="504" font-size="28" font-weight="bold" fill="#0B1E3C">33,129km</text>
+    <text x="56" y="530" font-size="15" font-weight="bold" fill="#111827">누적 차량 GPR 탐사</text>
+    <text x="56" y="552" font-size="14" fill="#374151">2014~2025.9</text>
+    <rect x="236" y="466" width="160" height="3" fill="#0B1E3C" />
+    <text x="236" y="504" font-size="28" font-weight="bold" fill="#0B1E3C">7,760개</text>
+    <text x="236" y="530" font-size="15" font-weight="bold" fill="#111827">같은 기간 찾은 공동</text>
+    <text x="236" y="552" font-size="14" fill="#374151">약 4.3km마다 1개</text>
+    <rect x="416" y="466" width="160" height="3" fill="#0B1E3C" />
+    <text x="416" y="504" font-size="28" font-weight="bold" fill="#0B1E3C">16,423km</text>
+    <text x="416" y="530" font-size="15" font-weight="bold" fill="#111827">2026년 탐사 계획</text>
+    <text x="416" y="552" font-size="14" fill="#374151">인력 9명 → 19명</text>
+  </g>
+  <g id="flow" data-pptx-bounds="624 150 600 412">
+    <rect x="624" y="150" width="600" height="3" fill="#0B1E3C" />
+    <text x="624" y="184" font-size="15" font-weight="bold" fill="#B45309">지금의 업무 흐름 · 서울시</text>
+    <circle cx="637" cy="220" r="13" fill="#0B1E3C" />
+    <text x="637" y="225" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="664" y="226" font-size="18" fill="#111827">민원·노후 관로·공사구간으로 조사 대상 선정</text>
+    <circle cx="637" cy="270" r="13" fill="#0B1E3C" />
+    <text x="637" y="275" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="664" y="276" font-size="18" fill="#111827">차량형 GPR이 도로를 한 번 스캔 (폭 3m 이내)</text>
+    <circle cx="637" cy="320" r="13" fill="#0B1E3C" />
+    <text x="637" y="325" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="664" y="326" font-size="18" fill="#111827">분석자가 판독해 공동 의심 지점 선별</text>
+    <circle cx="637" cy="370" r="13" fill="#0B1E3C" />
+    <text x="637" y="375" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="664" y="376" font-size="18" fill="#111827">작업자가 수동 GPR로 다시 조사</text>
+    <circle cx="637" cy="420" r="13" fill="#0B1E3C" />
+    <text x="637" y="425" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text x="664" y="426" font-size="18" fill="#111827">교통통제 후 천공·내시경으로 확인</text>
+    <circle cx="637" cy="470" r="13" fill="#0B1E3C" />
+    <text x="637" y="475" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6</text>
+    <text x="664" y="476" font-size="18" fill="#111827">공동이 확인되면 복구</text>
+    <line x1="624" y1="512" x2="1224" y2="512" stroke="#E2E6EC" stroke-width="1" />
+    <text x="624" y="548" font-size="17" fill="#111827">한 번 스캔으로 끝나고, <tspan font-weight="bold" fill="#C62828">같은 길은 다음 정기점검 때</tspan> 다시 봅니다.</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 596 1168 44">
+    <rect x="56" y="596" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="626" font-size="21" font-weight="bold" fill="#0B1E3C">GPR은 이미 검증된 기술입니다. 바꿀 것은 한 번 보고 끝나는 방식입니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 메트로신문(2025.10.19, 누적 탐사·공동) · 머니투데이(2026.3.23, 2026 계획·인력) · 서울시 안전정보(차량탑재형 GPR 폭 3m 이내)</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">04 / 15</text>
+  </g>
+</svg>

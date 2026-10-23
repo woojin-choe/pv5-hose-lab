@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <text x="210" y="45" font-size="14" fill="#374151">누가 사고 누가 쓰나</text>
+    <text x="900" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">문제</text>
+    <text x="933" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="966" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">해법</text>
+    <text x="999" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1032" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">PV5</text>
+    <text x="1065" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1098" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">검증</text>
+    <text x="1131" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1164" y="45" font-size="14" font-weight="bold" fill="#0B1E3C" text-anchor="middle">사업</text>
+    <rect x="1140" y="54" width="48" height="3" fill="#F5B700" />
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">지자체가 사고, 현장팀이 쓰고, 기아는 PV5를 공급합니다</text>
+  </g>
+  <g id="who0" data-pptx-bounds="56 168 274 230">
+    <rect x="56" y="168" width="274" height="3" fill="#0B1E3C" />
+    <text x="56" y="202" font-size="15" font-weight="bold" fill="#B45309">구매자</text>
+    <text x="56" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">지자체·발주기관</text>
+    <text x="56" y="282" font-size="17" fill="#374151">서울시·자치구 도로관리</text>
+    <text x="56" y="310" font-size="17" fill="#374151">도시철도 공사 발주기관</text>
+    <text x="56" y="338" font-size="17" fill="#374151">상하수도 관리기관</text>
+  </g>
+  <g id="who1" data-pptx-bounds="354 168 274 230">
+    <rect x="354" y="168" width="274" height="3" fill="#0B1E3C" />
+    <text x="354" y="202" font-size="15" font-weight="bold" fill="#B45309">실제 사용자</text>
+    <text x="354" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">현장 조사팀</text>
+    <text x="354" y="282" font-size="17" fill="#374151">지하안전·도로관리 담당자</text>
+    <text x="354" y="310" font-size="17" fill="#374151">GPR 판독 전문가</text>
+    <text x="354" y="338" font-size="17" fill="#374151">현장 조사원 (2인 1조)</text>
+  </g>
+  <g id="who2" data-pptx-bounds="652 168 274 230">
+    <rect x="652" y="168" width="274" height="3" fill="#0B1E3C" />
+    <text x="652" y="202" font-size="15" font-weight="bold" fill="#B45309">협력사</text>
+    <text x="652" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">장비·조사 파트너</text>
+    <text x="652" y="282" font-size="17" fill="#374151">기존 GPR 조사기관</text>
+    <text x="652" y="310" font-size="17" fill="#374151">PV5 특장(컨버전) 업체</text>
+    <text x="652" y="338" font-size="17" fill="#374151">GIS·AR 장비사</text>
+  </g>
+  <g id="who3" data-pptx-bounds="950 168 274 230">
+    <rect x="950" y="168" width="274" height="3" fill="#F5B700" />
+    <text x="950" y="202" font-size="15" font-weight="bold" fill="#B45309">기아가 얻는 것</text>
+    <text x="950" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">공공 업무용 PV5</text>
+    <text x="950" y="282" font-size="17" fill="#374151">탐사형 컨버전 플릿 판매</text>
+    <text x="950" y="310" font-size="17" fill="#374151">Pleos 차량 앱 공공 레퍼런스</text>
+    <text x="950" y="338" font-size="17" fill="#374151">같은 키트로 지자체마다 복제</text>
+  </g>
+  <g id="data" data-pptx-bounds="56 404 1168 130">
+    <rect x="56" y="408" width="560" height="3" fill="#0B1E3C" />
+    <text x="56" y="442" font-size="15" font-weight="bold" fill="#B45309">회차가 쌓이면</text>
+    <text x="56" y="480" font-size="18" fill="#111827">하수관 노후도·굴착공사·강우 이력과 겹쳐</text>
+    <text x="56" y="508" font-size="18" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">다음 순찰의 우선순위</tspan>를 정합니다.</text>
+    <rect x="664" y="408" width="560" height="3" fill="#C62828" />
+    <text x="664" y="442" font-size="15" font-weight="bold" fill="#C62828">데이터 원칙</text>
+    <text x="664" y="480" font-size="18" font-weight="bold" fill="#0B1E3C">지하 데이터는 판매하지 않습니다.</text>
+    <text x="664" y="508" font-size="18" fill="#111827">계약기관 안에서 접근 권한대로만 씁니다.</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 596 1168 44">
+    <rect x="56" y="596" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="626" font-size="21" font-weight="bold" fill="#0B1E3C">살 곳은 이미 있고, 기아는 그 업무에 맞춘 PV5를 공급합니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#4B5563">구매·협력 구조와 데이터 원칙은 제안 [가설] · 기아 몫은 공모전 안내의 PV5 컨버전·Pleos 연계 기준 · 수요 대수는 13장</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">14 / 15</text>
+  </g>
+</svg>

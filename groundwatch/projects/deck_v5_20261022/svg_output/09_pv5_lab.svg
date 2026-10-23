@@ -45,11 +45,11 @@
     <line x1="696" y1="178" x2="1224" y2="178" stroke="#0B1E3C" stroke-width="1.5" />
     <text x="696" y="214" font-size="17" font-weight="bold" fill="#0B1E3C">장비 적재</text>
     <text x="866" y="214" font-size="16" fill="#111827">카고룸 4,420L · 최대 적재 600kg</text>
-    <text x="866" y="238" font-size="14" fill="#374151">장비 약 300kg + 2인 약 150kg [가설]</text>
+    <text x="866" y="238" font-size="14" fill="#374151">장비 약 300kg + 2인 약 150kg = 450kg [가설]</text>
     <line x1="696" y1="258" x2="1224" y2="258" stroke="#E2E6EC" stroke-width="1" />
     <text x="696" y="290" font-size="17" font-weight="bold" fill="#0B1E3C">장비 전원</text>
     <text x="866" y="290" font-size="16" fill="#111827">실내·실외 V2L (최대 3.6kW, 해외 제원)</text>
-    <text x="866" y="314" font-size="14" fill="#374151">시동 없이 GPR·컴퓨터 운용</text>
+    <text x="866" y="314" font-size="14" fill="#374151">장비 약 1.5kW · 하루 약 10kWh = 배터리의 14% [가설]</text>
     <line x1="696" y1="334" x2="1224" y2="334" stroke="#E2E6EC" stroke-width="1" />
     <text x="696" y="366" font-size="17" font-weight="bold" fill="#0B1E3C">같은 위치 고정</text>
     <text x="866" y="366" font-size="16" fill="#111827">L-Track·몰리 패널 (순정 액세서리)</text>
@@ -68,10 +68,10 @@
     <text x="76" y="628" font-size="21" font-weight="bold" fill="#0B1E3C">장비를 싣는 것을 넘어, PV5에서는 차가 탐사 업무의 일부가 됩니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 기아 PV5 카고 제원·액세서리 · 공모전 솔루션 부문 안내(Pleos Connect) · 오토뷰(2026.1.28) · V2L 3.6kW 해외 제원 · 내부 배치는 콘셉트</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 기아 PV5 카고 제원·액세서리 · 공모전 솔루션 부문 안내(Pleos Connect) · 오토뷰(2026.1.28) · V2L 3.6kW 해외 제원 · 배터리 71.2kWh · 내부 배치는 콘셉트</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>
-    <text x="1224" y="706" text-anchor="end">08 / 13</text>
+    <text x="1224" y="706" text-anchor="end">09 / 15</text>
   </g>
 </svg>
