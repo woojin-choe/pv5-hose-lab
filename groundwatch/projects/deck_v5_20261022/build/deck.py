@@ -171,21 +171,22 @@ svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹�
   </g>
   <g id="evidence" data-pptx-bounds="784 168 440 384">
     <rect x="784" y="168" width="440" height="3" fill="{NAVY}" />
-    <text x="784" y="204" font-size="15" font-weight="bold" fill="{AMB}">그 사이 공동은 자랍니다</text>
-    <text x="784" y="250" font-size="26" font-weight="bold" fill="{NAVY}">“종래 생각보다 단기간에</text>
-    <text x="784" y="286" font-size="26" font-weight="bold" fill="{NAVY}">공동이 성장할 수 있다”</text>
-    <text x="784" y="330" font-size="16" fill="{SUB}">일본 국토교통성 위탁연구</text>
-    <text x="784" y="352" font-size="16" fill="{SUB}">(도쿄대·지오서치, 2018~2020 · 원문 번역)</text>
-    <line x1="784" y1="380" x2="1224" y2="380" stroke="{LINE}" stroke-width="1" />
-    <text x="784" y="414" font-size="16" fill="{INK}">같은 도로를 반복 모니터링하자</text>
-    <text x="784" y="438" font-size="16" fill="{INK}">지하 1.64m 하수관 위 공동이</text>
-    <text x="784" y="462" font-size="16" fill="{INK}">급격히 자란 것이 확인됐습니다.</text>
-    <line x1="784" y1="486" x2="1224" y2="486" stroke="{LINE}" stroke-width="1" />
+    <text x="784" y="204" font-size="15" font-weight="bold" fill="{AMB}">같은 길을 다시 보면 · 일본 실측</text>
+    <text x="784" y="254" font-size="34" font-weight="bold" fill="{NAVY}">1년 새 신규 공동 23곳</text>
+    <text x="784" y="284" font-size="16" fill="{SUB}">후지사와시, 차량 GPR로 반년마다 재탐사</text>
+    <text x="784" y="306" font-size="16" fill="{SUB}">(첫 조사 83곳 대비 28% · 도쿄대·지오서치)</text>
+    <line x1="784" y1="330" x2="1224" y2="330" stroke="{LINE}" stroke-width="1" />
+    <text x="784" y="362" font-size="17" fill="{INK}"><tspan font-weight="bold" fill="{RED}">‘긴급 대응’ 공동 3곳</tspan>이 1년 안에 새로 생김</text>
+    <text x="784" y="388" font-size="17" fill="{INK}">7곳은 공동 폭이 0.1~0.3m 넓어짐</text>
+    <line x1="784" y1="414" x2="1224" y2="414" stroke="{LINE}" stroke-width="1" />
+    <text x="784" y="444" font-size="16" fill="{SUB}">국토교통성 연구 결론: “종래 생각보다</text>
+    <text x="784" y="466" font-size="16" fill="{SUB}">단기간에 공동이 성장할 수 있다”</text>
+    <line x1="784" y1="490" x2="1224" y2="490" stroke="{LINE}" stroke-width="1" />
     <text x="784" y="518" font-size="16" fill="{INK}">연희동 공동을 놓쳤는지, 그 뒤 생겼는지는</text>
     <text x="784" y="542" font-size="16" font-weight="bold" fill="{NAVY}">한 번의 탐사로는 구분할 수 없습니다.</text>
   </g>
   {band(566, "한 번의 탐사는 그 시점만 말해 줍니다. 그 사이의 ‘변화’를 봐야 합니다.").strip()}
-''' + foot(3, "출처: 지하안전법(지하시설물관리자 공동조사 5년 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 일본 국토교통성 도로정책 연구 30-5(2021)"))
+''' + foot(3, "출처: 지하안전법(공동조사 5년 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 지오서치·후지사와시·도쿄대 모니터링(2018) · 국토교통성 연구 30-5(2021)"))
 
 # ---------------------------------------------------------------- 04 대상
 svg("04_target.svg", head("문제", "우리가 막을 대상") + title("땅꺼짐 원인 1위는 하수관 손상, 그 위 2m가 탐사 대상입니다") + f'''  <g id="section" data-pptx-bounds="56 160 640 420">
@@ -451,10 +452,10 @@ svg("10_economics.svg", econ())
 
 # ---------------------------------------------------------------- 02 한 장 요약 + 심사 기준별 근거 위치
 def summary():
-    cols = [("문제", "탐사 100여 일 뒤 함몰", "법정 점검 5년, 서울 1년.<tspan x='{x}' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='{x}' dy='22'>아무도 보지 못합니다.</tspan>", "3~6장"),
+    cols = [("문제", "탐사 100여 일 뒤 함몰", "법정 점검 5년, 서울 1년.<tspan x='{x}' dy='22'>그 사이 새로 생기고 자라는</tspan><tspan x='{x}' dy='22'>공동은 다음 점검까지 안 보입니다.</tspan>", "3~6장"),
             ("해법", "같은 길을 약 2개월마다", "PV5가 GPR로 다시 찍고,<tspan x='{x}' dy='22'>달라진 곳만 골라</tspan><tspan x='{x}' dy='22'>현장에서 재확인합니다.</tspan>", "7~8장"),
             ("왜 PV5", "차가 업무의 일부가 됨", "차량 내비·화면과 연동하고,<tspan x='{x}' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='{x}' dy='22'>공식 컨버전으로 복제.</tspan>", "9~10장"),
-            ("사업", "같은 길을 6번, 1회의 1/3", "현행 km당 92만 원 vs<tspan x='{x}' dy='22'>반복 탐사 원가 4.7만 원.</tspan><tspan x='{x}' dy='22'>실증은 4단계로.</tspan>", "11~14장")]
+            ("사업", "km당 4.7만 원으로 반복", "현행 전체 공정 km당 92만 원<tspan x='{x}' dy='22'>(천공·복구 포함). 2차 조사는</tspan><tspan x='{x}' dy='22'>변화가 나온 곳에만.</tspan>", "11~14장")]
     b = ""
     x = 56
     for i, (k, h, d, ref) in enumerate(cols):
@@ -467,7 +468,7 @@ def summary():
   </g>
 '''
         x += 298
-    keyn = [("100여 일", "‘이상 없음’ 탐사에서 함몰까지 (연희동)"), ("2.4배", "10cm 자란 공동 vs 가장 큰 오탐 요인 (시뮬레이션)"), ("92만 → 28만 원", "도로 1km·1년: 현행 1회 vs 반복 6회")]
+    keyn = [("100여 일", "‘이상 없음’ 탐사에서 함몰까지 (연희동)"), ("2.4배", "10cm 자란 공동 vs 가장 큰 오탐 요인 (시뮬레이션)"), ("92만 → 28만 원", "도로 1km·1년: 현행 전체 공정 1회 vs 반복 탐사 6회")]
     b += f'''  <g id="keynum" data-pptx-bounds="56 440 1168 120">
     <text x="56" y="462" font-size="15" font-weight="bold" fill="{MUTE}">숫자 셋으로 보면</text>
 '''
@@ -629,15 +630,15 @@ def solution2():
     <rect x="56" y="412" width="560" height="3" fill="{NAVY}" />
     <text x="56" y="442" font-size="15" font-weight="bold" fill="{AMB}">무엇이 새로운가 <tspan font-weight="normal" fill="{MUTE}">기존 → GroundWatch</tspan></text>
     <text x="56" y="474" font-size="16" fill="{SUB}">다시 보는 곳</text>
-    <text x="196" y="474" font-size="16" fill="{MUTE}">발견한 공동만 →</text>
-    <text x="340" y="474" font-size="17" font-weight="bold" fill="{NAVY}">‘이상 없음’ 구간까지</text>
+    <text x="196" y="474" font-size="16" fill="{MUTE}">연구 노선 25.8km →</text>
+    <text x="396" y="474" font-size="17" font-weight="bold" fill="{NAVY}">업무 노선 전체</text>
     <text x="56" y="508" font-size="16" fill="{SUB}">판정 방식</text>
-    <text x="196" y="508" font-size="16" fill="{MUTE}">회차마다 판독 →</text>
-    <text x="340" y="508" font-size="17" font-weight="bold" fill="{NAVY}">지난 회차와의 차이만</text>
+    <text x="196" y="508" font-size="16" fill="{MUTE}">회차마다 따로 판독 →</text>
+    <text x="396" y="508" font-size="17" font-weight="bold" fill="{NAVY}">지난 회차와의 차이만</text>
     <text x="56" y="542" font-size="16" fill="{SUB}">현장 확인</text>
-    <text x="196" y="542" font-size="16" fill="{MUTE}">별도 발주 →</text>
-    <text x="340" y="542" font-size="17" font-weight="bold" fill="{NAVY}">같은 차에서 바로</text>
-    <text x="56" y="571" font-size="13" fill="{MUTE}">기존: 일본 후지사와시·지오서치 경과관찰, 국토교통성 연구(3개월 주기)</text>
+    <text x="196" y="542" font-size="16" fill="{MUTE}">별도 2차 조사 →</text>
+    <text x="396" y="542" font-size="17" font-weight="bold" fill="{NAVY}">같은 차에서 바로</text>
+    <text x="56" y="571" font-size="13" fill="{MUTE}">기존: 일본 후지사와시 반년 주기·국토교통성 연구 3개월 주기 모니터링</text>
   </g>
   <g id="proof" data-pptx-bounds="664 410 560 176">
     <rect x="664" y="412" width="560" height="3" fill="{NAVY}" />
@@ -690,8 +691,8 @@ def pv5lab2():
     <text x="56" y="522" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">A</tspan> 분석 장비 랙 (엣지 컴퓨터·GPR 제어)</text>
     <text x="400" y="522" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">B</tspan> 수동 GPR·AR 글래스</text>
     <text x="56" y="546" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">C</tspan> 내시경·안전장비</text>
-    <text x="400" y="546" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">D</tspan> 바닥 아래 차량형 다채널 GPR</text>
-    <text x="56" y="572" font-size="13" fill="{MUTE}">콘셉트 이미지 · GPR 장착 위치는 배터리 팩 간섭 시험 후 확정</text>
+    <text x="400" y="546" font-size="15" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">D</tspan> 차체 후방 하부 다채널 GPR</text>
+    <text x="56" y="572" font-size="13" fill="{MUTE}">콘셉트 이미지 · GPR은 바닥 배터리 팩을 피해 후방 하부에 장착하는 안 [가설]</text>
   </g>
   <g id="spec" data-pptx-bounds="696 150 528 430">
     <g font-size="13" font-weight="bold" fill="{MUTE}">
@@ -809,7 +810,7 @@ def econ3():
     <text x="664" y="514" font-size="16" font-weight="bold" fill="{NAVY}">변화가 나온 곳에만, 지금 단가대로</text>
   </g>
 """
-    b += band(596, "현행 1회 전체 탐사비의 약 3분의 1로, 같은 길을 1년에 6번 봅니다.")
+    b += band(596, "반복 탐사 6회 원가가 현행 전체 공정 1회 비용의 약 3분의 1입니다.")
     return head("사업", "단가와 수지") + title("반복 탐사는 km당 약 5만 원이면 원가가 맞습니다") + b + foot(
         11, "출처: 서울시 「지반침하 특별점검 공동조사용역 최종보고서」(2024.10, 사업비 1,780,900,000원·수행 1,930.6km) · 이투데이(2025.4.23, 차량형 GPR 3대 15억 원) · 원가는 가설")
 
@@ -987,7 +988,7 @@ svg("02b_current.svg", current())
 def players():
     cols = [("구매자", "지자체·발주기관", ["서울시·자치구 도로관리", "도시철도 공사 발주기관", "상하수도 관리기관"]),
             ("실제 사용자", "현장 조사팀", ["지하안전·도로관리 담당자", "GPR 판독 전문가", "현장 조사원 (2인 1조)"]),
-            ("협력사", "장비·조사 파트너", ["기존 GPR 조사기관", "PV5 특장(컨버전) 업체", "GIS·AR 장비사"]),
+            ("협력사", "장비·조사 파트너", ["기존 조사기관 (판정·책임)", "PV5 특장(컨버전) 업체", "GIS·AR 장비사"]),
             ("기아가 얻는 것", "공공 업무용 PV5", ["탐사형 PV5 최대 약 97대 (계산)", "Pleos 앱·Fleet 공공 레퍼런스", "같은 키트로 지자체마다 복제"])]
     b = ""
     x = 56

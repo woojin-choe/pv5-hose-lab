@@ -42,15 +42,15 @@
     <rect x="56" y="412" width="560" height="3" fill="#0B1E3C" />
     <text x="56" y="442" font-size="15" font-weight="bold" fill="#B45309">무엇이 새로운가 <tspan font-weight="normal" fill="#4B5563">기존 → GroundWatch</tspan></text>
     <text x="56" y="474" font-size="16" fill="#374151">다시 보는 곳</text>
-    <text x="196" y="474" font-size="16" fill="#4B5563">발견한 공동만 →</text>
-    <text x="340" y="474" font-size="17" font-weight="bold" fill="#0B1E3C">‘이상 없음’ 구간까지</text>
+    <text x="196" y="474" font-size="16" fill="#4B5563">연구 노선 25.8km →</text>
+    <text x="396" y="474" font-size="17" font-weight="bold" fill="#0B1E3C">업무 노선 전체</text>
     <text x="56" y="508" font-size="16" fill="#374151">판정 방식</text>
-    <text x="196" y="508" font-size="16" fill="#4B5563">회차마다 판독 →</text>
-    <text x="340" y="508" font-size="17" font-weight="bold" fill="#0B1E3C">지난 회차와의 차이만</text>
+    <text x="196" y="508" font-size="16" fill="#4B5563">회차마다 따로 판독 →</text>
+    <text x="396" y="508" font-size="17" font-weight="bold" fill="#0B1E3C">지난 회차와의 차이만</text>
     <text x="56" y="542" font-size="16" fill="#374151">현장 확인</text>
-    <text x="196" y="542" font-size="16" fill="#4B5563">별도 발주 →</text>
-    <text x="340" y="542" font-size="17" font-weight="bold" fill="#0B1E3C">같은 차에서 바로</text>
-    <text x="56" y="571" font-size="13" fill="#4B5563">기존: 일본 후지사와시·지오서치 경과관찰, 국토교통성 연구(3개월 주기)</text>
+    <text x="196" y="542" font-size="16" fill="#4B5563">별도 2차 조사 →</text>
+    <text x="396" y="542" font-size="17" font-weight="bold" fill="#0B1E3C">같은 차에서 바로</text>
+    <text x="56" y="571" font-size="13" fill="#4B5563">기존: 일본 후지사와시 반년 주기·국토교통성 연구 3개월 주기 모니터링</text>
   </g>
   <g id="proof" data-pptx-bounds="664 410 560 176">
     <rect x="664" y="412" width="560" height="3" fill="#0B1E3C" />

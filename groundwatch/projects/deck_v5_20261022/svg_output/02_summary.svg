@@ -22,7 +22,7 @@
     <rect x="56" y="168" width="274" height="3" fill="#C62828" />
     <text x="56" y="202" font-size="16" font-weight="bold" fill="#C62828">문제</text>
     <text x="56" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">탐사 100여 일 뒤 함몰</text>
-    <text x="56" y="282" font-size="17" fill="#374151">법정 점검 5년, 서울 1년.<tspan x='56' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='56' dy='22'>아무도 보지 못합니다.</tspan></text>
+    <text x="56" y="282" font-size="17" fill="#374151">법정 점검 5년, 서울 1년.<tspan x='56' dy='22'>그 사이 새로 생기고 자라는</tspan><tspan x='56' dy='22'>공동은 다음 점검까지 안 보입니다.</tspan></text>
     <text x="56" y="372" font-size="15" fill="#4B5563">자세히 → 3~6장</text>
   </g>
   <g id="col1" data-pptx-bounds="354 168 274 260">
@@ -42,8 +42,8 @@
   <g id="col3" data-pptx-bounds="950 168 274 260">
     <rect x="950" y="168" width="274" height="3" fill="#0B1E3C" />
     <text x="950" y="202" font-size="16" font-weight="bold" fill="#B45309">사업</text>
-    <text x="950" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">6번 보고 비용 3분의 1</text>
-    <text x="950" y="282" font-size="17" fill="#374151">현행 km당 92만 원 vs<tspan x='950' dy='22'>반복 탐사 원가 4.7만 원.</tspan><tspan x='950' dy='22'>실증은 4단계로.</tspan></text>
+    <text x="950" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">km당 4.7만 원으로 반복</text>
+    <text x="950" y="282" font-size="17" fill="#374151">현행 전체 공정 km당 92만 원<tspan x='950' dy='22'>(천공·복구 포함). 2차 조사는</tspan><tspan x='950' dy='22'>변화가 나온 곳에만.</tspan></text>
     <text x="950" y="372" font-size="15" fill="#4B5563">자세히 → 11~14장</text>
   </g>
   <g id="keynum" data-pptx-bounds="56 440 1168 120">
@@ -56,7 +56,7 @@
     <text x="452" y="550" font-size="15" fill="#374151">10cm 자란 공동 vs 가장 큰 오탐 요인 (시뮬레이션)</text>
     <rect x="848" y="476" width="376" height="3" fill="#0B1E3C" />
     <text x="848" y="522" font-size="32" font-weight="bold" fill="#0B1E3C">92만 원 → 28만 원</text>
-    <text x="848" y="550" font-size="15" fill="#374151">도로 1km·1년: 현행 1회 vs 반복 6회</text>
+    <text x="848" y="550" font-size="15" fill="#374151">도로 1km·1년: 현행 전체 공정 1회 vs 반복 탐사 6회</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 590 1168 44">
     <rect x="56" y="590" width="4" height="44" fill="#F5B700" />

@@ -39,7 +39,7 @@
     <rect x="652" y="168" width="274" height="3" fill="#0B1E3C" />
     <text x="652" y="202" font-size="15" font-weight="bold" fill="#B45309">협력사</text>
     <text x="652" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">장비·조사 파트너</text>
-    <text x="652" y="282" font-size="17" fill="#374151">기존 GPR 조사기관</text>
+    <text x="652" y="282" font-size="17" fill="#374151">기존 조사기관 (판정·책임)</text>
     <text x="652" y="310" font-size="17" fill="#374151">PV5 특장(컨버전) 업체</text>
     <text x="652" y="338" font-size="17" fill="#374151">GIS·AR 장비사</text>
   </g>

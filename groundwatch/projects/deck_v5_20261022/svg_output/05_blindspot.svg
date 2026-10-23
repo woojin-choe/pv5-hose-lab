@@ -34,16 +34,17 @@
   </g>
   <g id="evidence" data-pptx-bounds="784 168 440 384">
     <rect x="784" y="168" width="440" height="3" fill="#0B1E3C" />
-    <text x="784" y="204" font-size="15" font-weight="bold" fill="#B45309">그 사이 공동은 자랍니다</text>
-    <text x="784" y="250" font-size="26" font-weight="bold" fill="#0B1E3C">“종래 생각보다 단기간에</text>
-    <text x="784" y="286" font-size="26" font-weight="bold" fill="#0B1E3C">공동이 성장할 수 있다”</text>
-    <text x="784" y="330" font-size="16" fill="#374151">일본 국토교통성 위탁연구</text>
-    <text x="784" y="352" font-size="16" fill="#374151">(도쿄대·지오서치, 2018~2020 · 원문 번역)</text>
-    <line x1="784" y1="380" x2="1224" y2="380" stroke="#E2E6EC" stroke-width="1" />
-    <text x="784" y="414" font-size="16" fill="#111827">같은 도로를 반복 모니터링하자</text>
-    <text x="784" y="438" font-size="16" fill="#111827">지하 1.64m 하수관 위 공동이</text>
-    <text x="784" y="462" font-size="16" fill="#111827">급격히 자란 것이 확인됐습니다.</text>
-    <line x1="784" y1="486" x2="1224" y2="486" stroke="#E2E6EC" stroke-width="1" />
+    <text x="784" y="204" font-size="15" font-weight="bold" fill="#B45309">같은 길을 다시 보면 · 일본 실측</text>
+    <text x="784" y="254" font-size="34" font-weight="bold" fill="#0B1E3C">1년 새 신규 공동 23곳</text>
+    <text x="784" y="284" font-size="16" fill="#374151">후지사와시, 차량 GPR로 반년마다 재탐사</text>
+    <text x="784" y="306" font-size="16" fill="#374151">(첫 조사 83곳 대비 28% · 도쿄대·지오서치)</text>
+    <line x1="784" y1="330" x2="1224" y2="330" stroke="#E2E6EC" stroke-width="1" />
+    <text x="784" y="362" font-size="17" fill="#111827"><tspan font-weight="bold" fill="#C62828">‘긴급 대응’ 공동 3곳</tspan>이 1년 안에 새로 생김</text>
+    <text x="784" y="388" font-size="17" fill="#111827">7곳은 공동 폭이 0.1~0.3m 넓어짐</text>
+    <line x1="784" y1="414" x2="1224" y2="414" stroke="#E2E6EC" stroke-width="1" />
+    <text x="784" y="444" font-size="16" fill="#374151">국토교통성 연구 결론: “종래 생각보다</text>
+    <text x="784" y="466" font-size="16" fill="#374151">단기간에 공동이 성장할 수 있다”</text>
+    <line x1="784" y1="490" x2="1224" y2="490" stroke="#E2E6EC" stroke-width="1" />
     <text x="784" y="518" font-size="16" fill="#111827">연희동 공동을 놓쳤는지, 그 뒤 생겼는지는</text>
     <text x="784" y="542" font-size="16" font-weight="bold" fill="#0B1E3C">한 번의 탐사로는 구분할 수 없습니다.</text>
   </g>
@@ -52,7 +53,7 @@
     <text x="76" y="596" font-size="21" font-weight="bold" fill="#0B1E3C">한 번의 탐사는 그 시점만 말해 줍니다. 그 사이의 ‘변화’를 봐야 합니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 지하안전법(지하시설물관리자 공동조사 5년 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 일본 국토교통성 도로정책 연구 30-5(2021)</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 지하안전법(공동조사 5년 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 지오서치·후지사와시·도쿄대 모니터링(2018) · 국토교통성 연구 30-5(2021)</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>

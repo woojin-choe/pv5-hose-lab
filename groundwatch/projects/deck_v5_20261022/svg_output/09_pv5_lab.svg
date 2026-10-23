@@ -34,8 +34,8 @@
     <text x="56" y="522" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">A</tspan> 분석 장비 랙 (엣지 컴퓨터·GPR 제어)</text>
     <text x="400" y="522" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">B</tspan> 수동 GPR·AR 글래스</text>
     <text x="56" y="546" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">C</tspan> 내시경·안전장비</text>
-    <text x="400" y="546" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">D</tspan> 바닥 아래 차량형 다채널 GPR</text>
-    <text x="56" y="572" font-size="13" fill="#4B5563">콘셉트 이미지 · GPR 장착 위치는 배터리 팩 간섭 시험 후 확정</text>
+    <text x="400" y="546" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">D</tspan> 차체 후방 하부 다채널 GPR</text>
+    <text x="56" y="572" font-size="13" fill="#4B5563">콘셉트 이미지 · GPR은 바닥 배터리 팩을 피해 후방 하부에 장착하는 안 [가설]</text>
   </g>
   <g id="spec" data-pptx-bounds="696 150 528 430">
     <g font-size="13" font-weight="bold" fill="#4B5563">
