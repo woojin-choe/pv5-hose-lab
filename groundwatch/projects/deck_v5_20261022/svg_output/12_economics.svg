@@ -51,18 +51,20 @@
   <g id="compare" data-pptx-bounds="664 262 560 300">
     <text x="664" y="286" font-size="16" font-weight="bold" fill="#0B1E3C">같은 도로 1km를 1년 동안</text>
     <line x1="664" y1="298" x2="1224" y2="298" stroke="#0B1E3C" stroke-width="1.5" />
-    <text x="664" y="334" font-size="16" fill="#111827">현행 전체 공정 1회</text>
-    <rect x="664" y="344" width="460" height="34" fill="#9AA3AF" />
-    <text x="1134" y="368" font-size="18" font-weight="bold" fill="#111827">92만 원</text>
-    <text x="664" y="412" font-size="16" fill="#111827">GroundWatch 반복 탐사 6회 (약 2개월마다)</text>
-    <rect x="664" y="422" width="141" height="34" fill="#0B1E3C" />
-    <text x="815" y="446" font-size="18" font-weight="bold" fill="#0B1E3C">28만 원 <tspan font-size="15" font-weight="normal" fill="#4B5563">(4.7만 원 × 6회)</tspan></text>
-    <text x="664" y="490" font-size="16" fill="#111827">천공·복구 같은 2차 조사는</text>
-    <text x="664" y="514" font-size="16" font-weight="bold" fill="#0B1E3C">변화가 나온 곳에만, 지금 단가대로</text>
+    <text x="664" y="334" font-size="16" fill="#111827">지금 · 현행 전체 공정 1회 (천공·복구 포함 가격)</text>
+    <rect x="664" y="344" width="360" height="34" fill="#9AA3AF" />
+    <text x="1033" y="368" font-size="18" font-weight="bold" fill="#111827">92만 원</text>
+    <text x="664" y="412" font-size="16" fill="#111827">GroundWatch를 더하면 · 반복 탐사 6회 원가 (4.7만 원 × 6회)</text>
+    <rect x="664" y="422" width="360" height="34" fill="#9AA3AF" />
+    <rect x="1024" y="422" width="110" height="34" fill="#0B1E3C" />
+    <text x="1143" y="446" font-size="18" font-weight="bold" fill="#0B1E3C">+28만 원</text>
+    <text x="664" y="490" font-size="16" fill="#111827">첫 회차가 현행 1차 탐사를 대신하면 실제 추가분은 더 작고,</text>
+    <text x="664" y="514" font-size="16" font-weight="bold" fill="#0B1E3C">천공·복구는 변화가 나온 곳에만 지금 단가로 붙습니다</text>
+    <text x="664" y="542" font-size="15" fill="#4B5563">km는 탐사 연장(차량 1회 주행) 기준 · 가격과 원가는 빼지 않고 더해서 봅니다</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 596 1168 44">
     <rect x="56" y="596" width="4" height="44" fill="#F5B700" />
-    <text x="76" y="626" font-size="21" font-weight="bold" fill="#0B1E3C">반복 탐사 6회 원가가 현행 전체 공정 1회 비용의 약 3분의 1입니다.</text>
+    <text x="76" y="626" font-size="21" font-weight="bold" fill="#0B1E3C">현행 전체 공정 비용에 약 30%를 더하면, 1년에 한 번 보던 길을 6번 봅니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
     <text x="56" y="682" font-size="13" fill="#4B5563">출처: 서울시 「지반침하 특별점검 공동조사용역 최종보고서」(2024.10, 사업비 17억 8,090만 원·수행 1,930.6km) · 이투데이(2025.4.23, 차량형 GPR 3대 15억 원) · 원가는 가설</text>

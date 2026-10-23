@@ -44,8 +44,8 @@
     </g>
     <line x1="696" y1="178" x2="1224" y2="178" stroke="#0B1E3C" stroke-width="1.5" />
     <text x="696" y="214" font-size="17" font-weight="bold" fill="#0B1E3C">장비 적재</text>
-    <text x="866" y="214" font-size="16" fill="#111827">카고룸 4,420L · 최대 적재 550kg</text>
-    <text x="866" y="238" font-size="15" fill="#374151">순정 액세서리 장착 기준 · 장비 약 300kg [가설]</text>
+    <text x="866" y="214" font-size="16" fill="#111827">카고룸 4,420L · 최대 적재 550kg · 적재고 419mm</text>
+    <text x="866" y="238" font-size="15" fill="#374151">순정 액세서리 기준 · 장비 약 300kg [가설] · 카트 바로 하차</text>
     <line x1="696" y1="258" x2="1224" y2="258" stroke="#E2E6EC" stroke-width="1" />
     <text x="696" y="290" font-size="17" font-weight="bold" fill="#0B1E3C">장비 전원</text>
     <text x="866" y="290" font-size="16" fill="#111827">실내·실외 V2L (최대 3.6kW, 해외 제원)</text>

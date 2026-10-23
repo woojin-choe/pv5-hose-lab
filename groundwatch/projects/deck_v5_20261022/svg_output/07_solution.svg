@@ -40,17 +40,22 @@
   </g>
   <g id="diff" data-pptx-bounds="56 410 560 170">
     <rect x="56" y="412" width="560" height="3" fill="#0B1E3C" />
-    <text x="56" y="442" font-size="15" font-weight="bold" fill="#B45309">무엇이 새로운가 <tspan font-weight="normal" fill="#4B5563">기존 → GroundWatch</tspan></text>
+    <text x="56" y="438" font-size="15" font-weight="bold" fill="#B45309">무엇이 새로운가</text>
+    <text x="196" y="438" font-size="15" fill="#4B5563">기존</text>
+    <text x="396" y="438" font-size="15" font-weight="bold" fill="#0B1E3C">GroundWatch</text>
     <text x="56" y="474" font-size="16" fill="#374151">다시 보는 곳</text>
-    <text x="196" y="474" font-size="16" fill="#4B5563">연구 노선 25.8km →</text>
+    <text x="196" y="474" font-size="16" fill="#4B5563">공사장 주변 구간</text>
+    <text x="348" y="474" font-size="16" fill="#4B5563">→</text>
     <text x="396" y="474" font-size="17" font-weight="bold" fill="#0B1E3C">업무 노선 전체</text>
     <text x="56" y="508" font-size="16" fill="#374151">판정 방식</text>
-    <text x="196" y="508" font-size="16" fill="#4B5563">회차마다 따로 판독 →</text>
+    <text x="196" y="508" font-size="16" fill="#4B5563">회차마다 따로 판독</text>
+    <text x="348" y="508" font-size="16" fill="#4B5563">→</text>
     <text x="396" y="508" font-size="17" font-weight="bold" fill="#0B1E3C">지난 회차와의 차이만</text>
     <text x="56" y="542" font-size="16" fill="#374151">현장 확인</text>
-    <text x="196" y="542" font-size="16" fill="#4B5563">별도 2차 조사 →</text>
+    <text x="196" y="542" font-size="16" fill="#4B5563">별도 2차 조사</text>
+    <text x="348" y="542" font-size="16" fill="#4B5563">→</text>
     <text x="396" y="542" font-size="17" font-weight="bold" fill="#0B1E3C">같은 차에서 바로</text>
-    <text x="56" y="571" font-size="13" fill="#4B5563">기존: 일본 후지사와시 반년 주기·국토교통성 연구 3개월 주기 모니터링</text>
+    <text x="56" y="571" font-size="13" fill="#4B5563">기존: 서울시 공사장 주변 주·월 1회 탐사(2026) · AI 판독은 서울시도 2020년부터 사용</text>
   </g>
   <g id="proof" data-pptx-bounds="664 410 560 176">
     <rect x="664" y="412" width="560" height="3" fill="#0B1E3C" />

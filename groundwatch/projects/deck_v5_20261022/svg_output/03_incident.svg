@@ -17,9 +17,9 @@
     <rect x="680" y="430" width="600" height="290" fill="url(#mapFade)" />
     <rect x="700" y="150" width="226" height="56" rx="4" fill="#0B1E3C" fill-opacity="0.92" />
     <text x="714" y="174" font-size="16" font-weight="bold" fill="#FFFFFF">2024.8.29 사고 구간</text>
-    <text x="714" y="195" font-size="15" fill="#D6DDE8">서대문구 연희동 성산로</text>
+    <text x="714" y="195" font-size="15" fill="#D6DDE8">서대문구 연희동 413-128 일대</text>
     <text x="712" y="590" font-size="28" font-weight="bold" fill="#FFFFFF">평범한 도로가<tspan x="712" dy="42">한 사람의 마지막 길이 되었습니다.</tspan></text>
-    <text x="712" y="690" font-size="12" fill="#C3CCD9">지도 © OpenStreetMap contributors · 정확한 지점은 보도되지 않아 구간으로 표시</text>
+    <text x="712" y="690" font-size="12" fill="#C3CCD9">지도 © OpenStreetMap contributors · 사고 지점(413-128 일대, 뉴시스)을 성산로 구간으로 표시</text>
   </g>
   <g id="kicker" data-pptx-bounds="56 132 600 28">
     <text x="56" y="154" font-size="18" font-weight="bold" fill="#C62828">2024.8.29 · 서울 서대문구 연희동</text>
@@ -37,7 +37,8 @@
     <text x="76" y="380" font-size="15" fill="#374151">정기 GPR 탐사 · 공동 없음</text>
     <text x="636" y="358" font-size="16" font-weight="bold" fill="#C62828" text-anchor="end">2024.8.29</text>
     <text x="636" y="380" font-size="15" fill="#C62828" text-anchor="end">도로 함몰</text>
-    <text x="356" y="444" font-size="16" fill="#374151" text-anchor="middle">그 사이 지하에서 무슨 일이 있었는지는 기록이 없습니다</text>
+    <text x="356" y="440" font-size="16" fill="#374151" text-anchor="middle">그 사이 지하에서 무슨 일이 있었는지는 기록이 없습니다</text>
+    <text x="356" y="464" font-size="15" font-weight="bold" fill="#C62828" text-anchor="middle">같은 날, 약 30m 옆에서도 도로 침하가 하나 더 발견됐습니다</text>
   </g>
   <g id="facts" data-pptx-bounds="56 488 600 110">
     <line x1="56" y1="492" x2="636" y2="492" stroke="#E2E6EC" stroke-width="1" />
