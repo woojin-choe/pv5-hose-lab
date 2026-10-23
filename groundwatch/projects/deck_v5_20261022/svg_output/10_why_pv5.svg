@@ -23,19 +23,19 @@
     <text x="56" y="158" font-size="18" fill="#374151">차가 바뀌어도 회차 비교가 이어지려면, 모든 차가 같은 위치·같은 조건으로 재야 합니다. 몇 cm 차이도 오탐이 됩니다(7장).</text>
   </g>
   <g id="premise" data-pptx-bounds="56 168 1168 226">
-    <line x1="56" y1="285.9" x2="1224" y2="285.9" stroke="#F5B700" stroke-width="2" stroke-dasharray="6,5" />
-    <image href="../images/pv5_side_gpr.png" x="70" y="173.2" width="300.0" height="127.6" />
+    <line x1="56" y1="293.1" x2="1224" y2="293.1" stroke="#F5B700" stroke-width="2" stroke-dasharray="6,5" />
+    <image href="../images/pv5_side_real.png" x="70" y="176.1" width="300.0" height="128.7" />
     <text x="220.0" y="326" font-size="16" font-weight="bold" fill="#111827" text-anchor="middle">1호차</text>
     <text x="220.0" y="346" font-size="15" fill="#4B5563" text-anchor="middle">같은 노선을 6회</text>
     <text x="420" y="262" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">=</text>
-    <image href="../images/pv5_side_gpr.png" x="470" y="173.2" width="300.0" height="127.6" />
+    <image href="../images/pv5_side_real.png" x="470" y="176.1" width="300.0" height="128.7" />
     <text x="620.0" y="326" font-size="16" font-weight="bold" fill="#111827" text-anchor="middle">예비차·재배치 차</text>
     <text x="620.0" y="346" font-size="15" fill="#4B5563" text-anchor="middle">정비·교체·노선 재배치 때</text>
     <text x="820" y="262" font-size="34" font-weight="bold" fill="#0B1E3C" text-anchor="middle">=</text>
-    <image href="../images/pv5_side_gpr.png" x="870" y="173.2" width="300.0" height="127.6" />
+    <image href="../images/pv5_side_real.png" x="870" y="176.1" width="300.0" height="128.7" />
     <text x="1020.0" y="326" font-size="16" font-weight="bold" fill="#111827" text-anchor="middle">다른 도시 PV5</text>
     <text x="1020.0" y="346" font-size="15" fill="#4B5563" text-anchor="middle">같은 판독 기준·AI 학습 데이터</text>
-    <text x="1224" y="311.9" font-size="13" font-weight="bold" fill="#B45309" text-anchor="end">GPR 높이·위치 동일</text>
+    <text x="1224" y="319.1" font-size="13" font-weight="bold" fill="#B45309" text-anchor="end">GPR 높이·위치 동일</text>
     <text x="56" y="384" font-size="17" font-weight="bold" fill="#0B1E3C">주행선 차이는 RTK·IMU로 맞추고(11장), 차마다 다른 장착 조건은 <tspan fill="#B45309">PV5 표준 컨버전으로 맞춥니다.</tspan></text>
   </g>
   <g id="compare" data-pptx-bounds="56 404 1168 90">

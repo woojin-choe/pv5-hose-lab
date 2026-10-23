@@ -1077,8 +1077,8 @@ def why_kit():
     t = t.replace("그룹 전기 상용차는 용도가 나뉘어 있습니다. 탐사·판독·재검증을 한 차에서 하려면 무엇이 필요한지로 골랐습니다.",
                   "차가 바뀌어도 회차 비교가 이어지려면, 모든 차가 같은 위치·같은 조건으로 재야 합니다. 몇 cm 차이도 오탐이 됩니다(7장).")
     # 1) 전제 그림: 차가 바뀌어도(예비차·다른 도시) GPR이 같은 높이·위치 → 회차 비교가 이어짐
-    #    pv5_side_gpr.png: 1455×619 측면 일러스트(투명 배경), 후방 하부 GPR 상자 x 1240~1407 · y 532~561, 지면 y≈615
-    IW, IH, GPR_Y, GROUND_Y = 1455, 619, (532 + 561) / 2, 615
+    #    pv5_side_real.png: 1000×429 실사 측면(9장 컷어웨이를 닫아 생성, 투명 배경), 후방 하부 GPR y≈372~406, 접지 y≈413
+    IW, IH, GPR_Y, GROUND_Y = 1000, 429, 390, 413
     sc = 300 / IW
     iy = 300 - GROUND_Y * sc
     gy = iy + GPR_Y * sc
@@ -1087,7 +1087,7 @@ def why_kit():
     cars = [("1호차", "같은 노선을 6회"), ("예비차·재배치 차", "정비·교체·노선 재배치 때"), ("다른 도시 PV5", "같은 판독 기준·AI 학습 데이터")]
     for k, (name, sub) in enumerate(cars):
         ix = 70 + 400 * k
-        g += f'    <image href="../images/pv5_side_gpr.png" x="{ix}" y="{iy:.1f}" width="{IW * sc:.1f}" height="{IH * sc:.1f}" />\n'
+        g += f'    <image href="../images/pv5_side_real.png" x="{ix}" y="{iy:.1f}" width="{IW * sc:.1f}" height="{IH * sc:.1f}" />\n'
         cx = ix + IW * sc / 2
         g += f'    <text x="{cx:.1f}" y="326" font-size="16" font-weight="bold" fill="{INK}" text-anchor="middle">{name}</text>\n'
         g += f'    <text x="{cx:.1f}" y="346" font-size="14" fill="{MUTE}" text-anchor="middle">{sub}</text>\n'
