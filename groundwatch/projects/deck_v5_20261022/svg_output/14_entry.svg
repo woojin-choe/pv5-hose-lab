@@ -29,9 +29,9 @@
     <text x="452" y="222" font-size="16" font-weight="bold" fill="#0B1E3C">경기도 16개 시·군 탐사 지원</text>
     <text x="452" y="244" font-size="15" fill="#374151">1,080km 지반탐사 지원 (2025.9)</text>
     <rect x="848" y="148" width="376" height="3" fill="#0B1E3C" />
-    <text x="848" y="196" font-size="30" font-weight="bold" fill="#B45309">최대 약 88대</text>
-    <text x="848" y="222" font-size="16" font-weight="bold" fill="#0B1E3C">기아 PV5 수요 (계산)</text>
-    <text x="848" y="244" font-size="15" fill="#374151">차량 매출 최대 약 40억 원 · 서울만 약 8대</text>
+    <text x="848" y="196" font-size="30" font-weight="bold" fill="#B45309">최대 6년</text>
+    <text x="848" y="222" font-size="16" font-weight="bold" fill="#0B1E3C">조달청 혁신제품 수의계약</text>
+    <text x="848" y="244" font-size="15" fill="#374151">지정되면 같은 제품을 경쟁입찰 없이 구매</text>
   </g>
   <g id="ask" data-pptx-bounds="56 272 640 300">
     <text x="56" y="294" font-size="15" font-weight="bold" fill="#B45309">수상 후 첫 6개월 · 기아가 안내한 혜택으로</text>
@@ -55,16 +55,15 @@
   <g id="next" data-pptx-bounds="736 272 488 310">
     <text x="736" y="294" font-size="15" font-weight="bold" fill="#B45309">그다음</text>
     <rect x="736" y="304" width="488" height="3" fill="#0B1E3C" />
-    <text x="736" y="340" font-size="19" font-weight="bold" fill="#0B1E3C">1~2년 <tspan font-weight="normal" fill="#111827">조사기관과 시·군 용역 공동 수주</tspan></text>
-    <text x="736" y="367" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#B45309">통과 조건</tspan> 실증확인서·용역 실적 확보</text>
-    <text x="736" y="396" font-size="19" font-weight="bold" fill="#0B1E3C">2~3년 <tspan font-weight="normal" fill="#111827">혁신제품 지정 → 연간 관제 계약</tspan></text>
-    <text x="736" y="423" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#B45309">통과 조건</tspan> 자치구 2곳 연간 계약 [목표]</text>
-    <text x="736" y="452" font-size="19" font-weight="bold" fill="#0B1E3C">3년~ <tspan font-weight="normal" fill="#111827">권역별 PV5 플릿 · 상하수도 기관</tspan></text>
-    <text x="736" y="479" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#B45309">목표</tspan> 광역지자체 PV5 플릿 구매</text>
-    <text x="736" y="508" font-size="15" fill="#374151">조달청 혁신제품: 지정 시 최대 6년 수의계약</text>
-    <text x="736" y="530" font-size="15" fill="#374151">테스트베드서울: 과제당 최대 2억 원 실증</text>
-    <text x="736" y="552" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#111827">매출</tspan> 파일럿 용역 → 연간 반복관제 → PV5 탐사실 패키지</text>
-    <text x="736" y="574" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#111827">가격</tspan> 구간 km·재확인 건수 기준</text>
+    <text x="736" y="342" font-size="19" font-weight="bold" fill="#0B1E3C">1~2년 <tspan font-weight="normal" fill="#111827">조사기관과 시·군 용역 공동 수주</tspan></text>
+    <text x="736" y="369" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#B45309">통과 조건</tspan> 실증확인서 확보 · 테스트베드서울(최대 2억 원)</text>
+    <text x="736" y="406" font-size="19" font-weight="bold" fill="#0B1E3C">2~3년 <tspan font-weight="normal" fill="#111827">혁신제품 지정 → 연간 관제 계약</tspan></text>
+    <text x="736" y="433" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#B45309">통과 조건</tspan> 자치구 2곳 연간 계약 [목표]</text>
+    <text x="736" y="470" font-size="19" font-weight="bold" fill="#0B1E3C">3년~ <tspan font-weight="normal" fill="#111827">권역별 PV5 플릿 · 상하수도 기관</tspan></text>
+    <text x="736" y="497" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#B45309">목표</tspan> 광역지자체 PV5 플릿 구매</text>
+    <line x1="736" y1="522" x2="1224" y2="522" stroke="#E2E6EC" stroke-width="1" />
+    <text x="736" y="550" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#111827">매출</tspan> 파일럿 용역 → 연간 반복관제 → PV5 탐사실 패키지</text>
+    <text x="736" y="573" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#111827">가격</tspan> 구간 km와 재확인 건수 기준</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 596 1168 44">
     <rect x="56" y="596" width="4" height="44" fill="#F5B700" />

@@ -740,7 +740,7 @@ def entry2():
 """
     facts = [("0.85~1.90억 원", "2026 지자체 GPR 용역 낙찰액", "안양·강동구·용인, 이미 집행 중"),
              ("21.6억 원", "경기도 16개 시·군 탐사 지원", "1,080km 지반탐사 지원 (2025.9)"),
-             ("최대 약 88대", "기아 PV5 수요 (계산)", "차량 매출 최대 약 40억 원 · 서울만 약 8대")]
+             ("최대 6년", "조달청 혁신제품 수의계약", "지정되면 같은 제품을 경쟁입찰 없이 구매")]
     x = 56
     for v, k, d in facts:
         b += f"""    <rect x="{x}" y="148" width="376" height="3" fill="{NAVY}" />
@@ -769,16 +769,15 @@ def entry2():
   <g id="next" data-pptx-bounds="736 272 488 310">
     <text x="736" y="294" font-size="15" font-weight="bold" fill="{AMB}">그다음</text>
     <rect x="736" y="304" width="488" height="3" fill="{NAVY}" />
-    <text x="736" y="340" font-size="19" font-weight="bold" fill="{NAVY}">1~2년 <tspan font-weight="normal" fill="{INK}">조사기관과 시·군 용역 공동 수주</tspan></text>
-    <text x="736" y="367" font-size="14" fill="{SUB}"><tspan font-weight="bold" fill="{AMB}">통과 조건</tspan> 실증확인서·용역 실적 확보</text>
-    <text x="736" y="396" font-size="19" font-weight="bold" fill="{NAVY}">2~3년 <tspan font-weight="normal" fill="{INK}">혁신제품 지정 → 연간 관제 계약</tspan></text>
-    <text x="736" y="423" font-size="14" fill="{SUB}"><tspan font-weight="bold" fill="{AMB}">통과 조건</tspan> 자치구 2곳 연간 계약 [목표]</text>
-    <text x="736" y="452" font-size="19" font-weight="bold" fill="{NAVY}">3년~ <tspan font-weight="normal" fill="{INK}">권역별 PV5 플릿 · 상하수도 기관</tspan></text>
-    <text x="736" y="479" font-size="14" fill="{SUB}"><tspan font-weight="bold" fill="{AMB}">목표</tspan> 광역지자체 PV5 플릿 구매</text>
-    <text x="736" y="508" font-size="15" fill="{SUB}">조달청 혁신제품: 지정 시 최대 6년 수의계약</text>
-    <text x="736" y="530" font-size="15" fill="{SUB}">테스트베드서울: 과제당 최대 2억 원 실증</text>
-    <text x="736" y="552" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{INK}">매출</tspan> 파일럿 용역 → 연간 반복관제 → PV5 탐사실 패키지</text>
-    <text x="736" y="574" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{INK}">가격</tspan> 구간 km·재확인 건수 기준</text>
+    <text x="736" y="342" font-size="19" font-weight="bold" fill="{NAVY}">1~2년 <tspan font-weight="normal" fill="{INK}">조사기관과 시·군 용역 공동 수주</tspan></text>
+    <text x="736" y="369" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{AMB}">통과 조건</tspan> 실증확인서 확보 · 테스트베드서울(최대 2억 원)</text>
+    <text x="736" y="406" font-size="19" font-weight="bold" fill="{NAVY}">2~3년 <tspan font-weight="normal" fill="{INK}">혁신제품 지정 → 연간 관제 계약</tspan></text>
+    <text x="736" y="433" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{AMB}">통과 조건</tspan> 자치구 2곳 연간 계약 [목표]</text>
+    <text x="736" y="470" font-size="19" font-weight="bold" fill="{NAVY}">3년~ <tspan font-weight="normal" fill="{INK}">권역별 PV5 플릿 · 상하수도 기관</tspan></text>
+    <text x="736" y="497" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{AMB}">목표</tspan> 광역지자체 PV5 플릿 구매</text>
+    <line x1="736" y1="522" x2="1224" y2="522" stroke="{LINE}" stroke-width="1" />
+    <text x="736" y="550" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{INK}">매출</tspan> 파일럿 용역 → 연간 반복관제 → PV5 탐사실 패키지</text>
+    <text x="736" y="573" font-size="15" fill="{SUB}"><tspan font-weight="bold" fill="{INK}">가격</tspan> 구간 km와 재확인 건수 기준</text>
   </g>
 """
     b += band(596, "새 예산이 아니라 지자체가 이미 쓰는 탐사 예산에서, 기아와 함께 첫 실증을 만듭니다.")
@@ -1008,41 +1007,41 @@ svg("02b_current.svg", current())
 
 
 def players():
-    cols = [("구매자", "지자체·발주기관", ["서울시·자치구 도로관리", "도시철도 공사 발주기관", "상하수도 관리기관"]),
-            ("실제 사용자", "현장 조사팀", ["지하안전·도로관리 담당자", "GPR 판독 전문가", "현장 조사원 (2인 1조)"]),
-            ("협력사", "장비·조사 파트너", ["기존 조사기관 (판정·책임)", "PV5 특장(컨버전) 업체", "GIS·AR 장비사"]),
-            ("기아가 얻는 것", "공공 업무용 PV5", ["탐사형 PV5 최대 약 88대 (계산)", "Pleos 앱·Fleet 공공 레퍼런스", "같은 키트로 지자체마다 복제"])]
+    """13장: 위는 누가 사고·쓰고·돕는지(3칸), 아래는 기아가 얻는 것을 남색 패널로 크게."""
+    cols = [("구매자", "지자체·발주기관", "서울시·자치구 도로관리, 도시철도·상하수도 발주기관"),
+            ("실제 사용자", "현장 조사팀 (2인 1조)", "지하안전·도로관리 담당자와 GPR 판독 전문가"),
+            ("협력사", "장비·조사 파트너", "판정·책임은 기존 조사기관, 장착은 PV5 컨버전 업체")]
     b = ""
     x = 56
-    for i, (k, h, ds) in enumerate(cols):
-        b += f"""  <g id="who{i}" data-pptx-bounds="{x} 168 274 230">
-    <rect x="{x}" y="168" width="274" height="3" fill="{YEL if i == 3 else NAVY}" />
-    <text x="{x}" y="202" font-size="15" font-weight="bold" fill="{AMB}">{k}</text>
-    <text x="{x}" y="240" font-size="23" font-weight="bold" fill="{NAVY}">{h}</text>
-"""
-        yy = 282
-        for d in ds:
-            b += f'    <text x="{x}" y="{yy}" font-size="17" fill="{SUB}">{d}</text>\n'
-            yy += 28
-        b += "  </g>\n"
-        x += 298
-    b += f"""  <g id="data" data-pptx-bounds="56 404 1168 130">
-    <rect x="56" y="408" width="560" height="3" fill="{NAVY}" />
-    <text x="56" y="442" font-size="15" font-weight="bold" fill="{AMB}">기아가 이미 가는 방향</text>
-    <text x="56" y="480" font-size="18" fill="{INK}">공모전 예시 ‘스마트 순찰 및 재난 대응 차량’</text>
-    <text x="56" y="508" font-size="18" fill="{INK}">2026.6 <tspan font-weight="bold" fill="{NAVY}">경찰청과 PV5 AI 순찰차</tspan> 공개</text>
-    <rect x="664" y="408" width="560" height="3" fill="{RED}" />
-    <text x="664" y="442" font-size="15" font-weight="bold" fill="{RED}">데이터 원칙</text>
-    <text x="664" y="480" font-size="18" font-weight="bold" fill="{NAVY}">지하 데이터는 판매하지 않습니다.</text>
-    <text x="664" y="508" font-size="18" fill="{INK}">계약기관 안에서 접근 권한대로만 씁니다.</text>
+    for i, (k, h, d) in enumerate(cols):
+        b += f"""  <g id="who{i}" data-pptx-bounds="{x} 168 368 140">
+    <rect x="{x}" y="168" width="368" height="3" fill="{NAVY}" />
+    <text x="{x}" y="200" font-size="15" font-weight="bold" fill="{AMB}">{k}</text>
+    <text x="{x}" y="236" font-size="23" font-weight="bold" fill="{NAVY}">{h}</text>
+    <text x="{x}" y="270" font-size="16" fill="{SUB}">{d}</text>
   </g>
 """
-    b += band(596, "기아가 지상 순찰차를 만들었다면, GroundWatch는 지하를 보는 PV5 순찰차입니다.")
-    return head("사업", "누가 사고 누가 쓰나") + title("지자체가 사고, 현장팀이 쓰고, 기아는 PV5를 공급합니다") + b + foot(
-        14, "공모전 컨버전 부문 안내(공공서비스 특화) · 머니투데이(2026.6.26, 경찰청 AI 순찰차) · 구매·협력 구조와 데이터 원칙은 제안 [가설]")
-
-
-
+        x += 400
+    gains = [("PV5 판매", "최대 약 88대", ["전국 지자체 탐사형 수요 (14장 계산)", "차량 매출 약 40억 원 · 서울만 약 8대"]),
+             ("생태계 레퍼런스", "같은 키트, 모든 도시", ["컨버전 포털 표준 장착으로 복제", "Pleos Fleet 공공 관제 사례"]),
+             ("공공안전 라인업", "지상 + 지하", ["2026.6 경찰청 PV5 AI 순찰차(지상)", "GroundWatch가 도로 아래를 맡음"])]
+    b += f"""  <g id="kia" data-pptx-bounds="56 330 1168 236">
+    <rect x="56" y="330" width="1168" height="236" fill="{NAVY}" />
+    <text x="88" y="370" font-size="16" font-weight="bold" fill="{YEL}">기아가 얻는 것</text>
+"""
+    x = 88
+    for k, (lab, big, ds) in enumerate(gains):
+        if k:
+            b += f'    <line x1="{x - 20}" y1="396" x2="{x - 20}" y2="540" stroke="#3B4F70" stroke-width="1" />\n'
+        b += f'    <text x="{x}" y="414" font-size="15" fill="#D6DDE8">{lab}</text>\n'
+        b += f'    <text x="{x}" y="462" font-size="34" font-weight="bold" fill="#FFFFFF">{big}</text>\n'
+        for n_, d in enumerate(ds):
+            b += f'    <text x="{x}" y="{500 + 26 * n_}" font-size="16" fill="#D6DDE8">{d}</text>\n'
+        x += 376
+    b += "  </g>\n"
+    b += band(596, "지하 데이터는 판매하지 않습니다. 계약기관 안에서 권한대로만 씁니다.")
+    return head("사업", "누가 사고 누가 쓰나") + title("지자체가 사고 현장팀이 쓰며, 기아는 공공 PV5 시장을 엽니다") + b + foot(
+        13, "머니투데이(2026.6.26, 경찰청 PV5 AI 순찰차) · 88대·40억 원은 14장 계산(1대 연 1,100km 반복, 대당 4,520만 원) · 구매·협력 구조와 데이터 원칙은 제안 [가설]")
 
 
 svg("10b_players.svg", players())
