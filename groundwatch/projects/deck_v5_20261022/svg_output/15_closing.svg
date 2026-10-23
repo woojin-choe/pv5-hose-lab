@@ -4,7 +4,7 @@
   <image href="../images/close_shade.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
   <g id="closing" data-pptx-bounds="64 552 640 112">
     <text x="64" y="572" font-size="15" font-weight="bold" fill="#F5B700">PV5 GroundWatch · 지하안전 순찰차</text>
-    <text x="64" y="614" font-size="32" font-weight="bold" fill="#FFFFFF">한 번의 조기 발견이,</text>
+    <text x="64" y="614" font-size="32" font-weight="bold" fill="#FFFFFF">같은 길을 다시 보는 일이,</text>
     <text x="64" y="658" font-size="32" font-weight="bold" fill="#FFFFFF">한 사람의 무사 귀가가 되도록.</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 684 1172 28">
