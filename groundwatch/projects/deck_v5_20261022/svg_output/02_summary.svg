@@ -23,28 +23,28 @@
     <text x="56" y="202" font-size="16" font-weight="bold" fill="#C62828">문제</text>
     <text x="56" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">탐사 100여 일 뒤 함몰</text>
     <text x="56" y="282" font-size="17" fill="#374151">법정 점검 5년, 서울 1년.<tspan x='56' dy='22'>그 사이 자라는 얕은 공동을</tspan><tspan x='56' dy='22'>아무도 보지 못합니다.</tspan></text>
-    <text x="56" y="372" font-size="14" fill="#4B5563">자세히 → 3~6장</text>
+    <text x="56" y="372" font-size="15" fill="#4B5563">자세히 → 3~6장</text>
   </g>
   <g id="col1" data-pptx-bounds="354 168 274 260">
     <rect x="354" y="168" width="274" height="3" fill="#0B1E3C" />
     <text x="354" y="202" font-size="16" font-weight="bold" fill="#B45309">해법</text>
     <text x="354" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">같은 길을 약 2개월마다</text>
     <text x="354" y="282" font-size="17" fill="#374151">PV5가 GPR로 다시 찍고,<tspan x='354' dy='22'>달라진 곳만 골라</tspan><tspan x='354' dy='22'>현장에서 재확인합니다.</tspan></text>
-    <text x="354" y="372" font-size="14" fill="#4B5563">자세히 → 7~8장</text>
+    <text x="354" y="372" font-size="15" fill="#4B5563">자세히 → 7~8장</text>
   </g>
   <g id="col2" data-pptx-bounds="652 168 274 260">
     <rect x="652" y="168" width="274" height="3" fill="#0B1E3C" />
     <text x="652" y="202" font-size="16" font-weight="bold" fill="#B45309">왜 PV5</text>
     <text x="652" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">차가 업무의 일부가 됨</text>
     <text x="652" y="282" font-size="17" fill="#374151">차량 내비·화면과 연동하고,<tspan x='652' dy='22'>V2L·L-Track으로 싣고 고정,</tspan><tspan x='652' dy='22'>공식 컨버전으로 복제.</tspan></text>
-    <text x="652" y="372" font-size="14" fill="#4B5563">자세히 → 9~10장</text>
+    <text x="652" y="372" font-size="15" fill="#4B5563">자세히 → 9~10장</text>
   </g>
   <g id="col3" data-pptx-bounds="950 168 274 260">
     <rect x="950" y="168" width="274" height="3" fill="#0B1E3C" />
     <text x="950" y="202" font-size="16" font-weight="bold" fill="#B45309">사업</text>
     <text x="950" y="240" font-size="23" font-weight="bold" fill="#0B1E3C">6번 보고 비용 3분의 1</text>
     <text x="950" y="282" font-size="17" fill="#374151">현행 km당 92만 원 vs<tspan x='950' dy='22'>반복 탐사 원가 4.7만 원.</tspan><tspan x='950' dy='22'>실증은 4단계로.</tspan></text>
-    <text x="950" y="372" font-size="14" fill="#4B5563">자세히 → 11~14장</text>
+    <text x="950" y="372" font-size="15" fill="#4B5563">자세히 → 11~14장</text>
   </g>
   <g id="keynum" data-pptx-bounds="56 440 1168 120">
     <text x="56" y="462" font-size="15" font-weight="bold" fill="#4B5563">숫자 셋으로 보면</text>
@@ -60,7 +60,7 @@
   </g>
   <g id="conclusion" data-pptx-bounds="56 590 1168 44">
     <rect x="56" y="590" width="4" height="44" fill="#F5B700" />
-    <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">한 번의 조기 발견이, 한 사람의 무사 귀가가 되도록.</text>
+    <text x="76" y="620" font-size="21" font-weight="bold" fill="#0B1E3C">기아가 찾는 ‘첨단 장비 탑재 스마트 순찰 PV5’를, 땅 아래로 넓힙니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
     <text x="56" y="682" font-size="13" fill="#4B5563">근거: 3장 뉴시스·세계일보 · 7장 GPR 전자기 시뮬레이션 · 12장 서울시 2024 공동조사용역 최종보고서</text>

@@ -25,7 +25,7 @@
     <text x="64" y="502" font-size="21" fill="#D7DEE8">지표투과레이더(GPR)로 같은 길을 반복해서 보고,<tspan x="64" dy="32">구멍이 되기 전의 변화를 찾습니다.</tspan></text>
   </g>
   <g id="cover-team" data-pptx-bounds="64 600 440 72" font-weight="bold">
-    <text x="64" y="622" font-size="14" fill="#F5B700">TEAM</text>
+    <text x="64" y="622" font-size="15" fill="#F5B700">TEAM</text>
     <text x="64" y="656" font-size="22" fill="#FFFFFF">한 명이라도 살릴 수 있다면</text>
   </g>
   <g id="cover-date" data-pptx-bounds="980 658 260 40">

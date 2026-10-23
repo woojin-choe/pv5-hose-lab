@@ -23,34 +23,34 @@
     <rect x="56" y="148" width="376" height="3" fill="#0B1E3C" />
     <text x="56" y="196" font-size="30" font-weight="bold" fill="#B45309">0.85억~1.90억 원</text>
     <text x="56" y="222" font-size="16" font-weight="bold" fill="#0B1E3C">2026 지자체 GPR 용역 낙찰액</text>
-    <text x="56" y="244" font-size="14" fill="#374151">안양·강동구·용인, 이미 집행 중</text>
+    <text x="56" y="244" font-size="15" fill="#374151">안양·강동구·용인, 이미 집행 중</text>
     <rect x="452" y="148" width="376" height="3" fill="#0B1E3C" />
     <text x="452" y="196" font-size="30" font-weight="bold" fill="#B45309">21.6억 원</text>
     <text x="452" y="222" font-size="16" font-weight="bold" fill="#0B1E3C">경기도 16개 시·군 탐사 지원</text>
-    <text x="452" y="244" font-size="14" fill="#374151">장비 대신 용역으로 1,080km (2025.9)</text>
+    <text x="452" y="244" font-size="15" fill="#374151">장비 대신 용역으로 1,080km (2025.9)</text>
     <rect x="848" y="148" width="376" height="3" fill="#0B1E3C" />
     <text x="848" y="196" font-size="30" font-weight="bold" fill="#B45309">최대 약 97대</text>
     <text x="848" y="222" font-size="16" font-weight="bold" fill="#0B1E3C">기아 PV5 수요 (계산)</text>
-    <text x="848" y="244" font-size="14" fill="#374151">차량 매출 최대 약 44억 원 · 서울만 약 8대</text>
+    <text x="848" y="244" font-size="15" fill="#374151">차량 매출 최대 약 44억 원 · 서울만 약 8대</text>
   </g>
   <g id="ask" data-pptx-bounds="56 272 640 300">
     <text x="56" y="294" font-size="15" font-weight="bold" fill="#B45309">수상 후 첫 6개월 · 기아가 안내한 혜택으로</text>
     <rect x="56" y="304" width="640" height="3" fill="#0B1E3C" />
     <text x="56" y="340" font-size="15" font-weight="bold" fill="#4B5563">1</text>
-    <text x="80" y="340" font-size="19" font-weight="bold" fill="#0B1E3C">PV5 실물 대여</text>
+    <text x="80" y="340" font-size="19" font-weight="bold" fill="#0B1E3C">PV5 실물 대여 검토</text>
     <text x="380" y="340" font-size="17" fill="#111827">→ 1단계 폐쇄 시험장 실증</text>
     <line x1="56" y1="362" x2="696" y2="362" stroke="#E2E6EC" stroke-width="1" />
     <text x="56" y="396" font-size="15" font-weight="bold" fill="#4B5563">2</text>
-    <text x="80" y="396" font-size="19" font-weight="bold" fill="#0B1E3C">Pleos Playground·SDK</text>
-    <text x="380" y="396" font-size="17" fill="#111827">→ 내비·차량 연동 시제품</text>
+    <text x="80" y="396" font-size="19" font-weight="bold" fill="#0B1E3C">전문가 멘토링·기술 지원</text>
+    <text x="380" y="396" font-size="17" fill="#111827">→ GPR 장착·전원 간섭 검토</text>
     <line x1="56" y1="418" x2="696" y2="418" stroke="#E2E6EC" stroke-width="1" />
     <text x="56" y="452" font-size="15" font-weight="bold" fill="#4B5563">3</text>
-    <text x="80" y="452" font-size="19" font-weight="bold" fill="#0B1E3C">컨버전 포털·PIM 기술 지원</text>
-    <text x="380" y="452" font-size="17" fill="#111827">→ GPR 장착·전원 간섭 검토</text>
+    <text x="80" y="452" font-size="19" font-weight="bold" fill="#0B1E3C">PoC·사업화 연계</text>
+    <text x="380" y="452" font-size="17" fill="#111827">→ 지자체 1곳 파일럿 연결</text>
     <line x1="56" y1="474" x2="696" y2="474" stroke="#E2E6EC" stroke-width="1" />
     <text x="56" y="508" font-size="15" font-weight="bold" fill="#4B5563">4</text>
-    <text x="80" y="508" font-size="19" font-weight="bold" fill="#0B1E3C">PoC·사업화 연계, 멘토링</text>
-    <text x="380" y="508" font-size="17" fill="#111827">→ 지자체 1곳 파일럿 연결</text>
+    <text x="80" y="508" font-size="19" font-weight="bold" fill="#0B1E3C">기아 네트워크 협력</text>
+    <text x="380" y="508" font-size="17" fill="#111827">→ 컨버전 파트너와 탐사실 키트화</text>
   </g>
   <g id="next" data-pptx-bounds="736 272 488 300">
     <text x="736" y="294" font-size="15" font-weight="bold" fill="#B45309">그다음</text>
@@ -66,10 +66,10 @@
     <text x="76" y="626" font-size="21" font-weight="bold" fill="#0B1E3C">새 예산이 아니라 지자체가 이미 쓰는 탐사 예산에서, 기아와 함께 첫 실증을 만듭니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 나라장터 2026(R26BK01572949 · R26BK01599467 · R26BK01517362) · 헤럴드경제(2025.9.7) · 조달청 · 테스트베드서울 · 공모전 안내 · 일정은 목표</text>
+    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 나라장터 2026(R26BK01572949 · R26BK01599467 · R26BK01517362) · 헤럴드경제(2025.9.7) · 조달청 · 테스트베드서울 · 공모전 일반 부문 혜택 안내 · 일정은 목표</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>
-    <text x="1224" y="706" text-anchor="end">13 / 15</text>
+    <text x="1224" y="706" text-anchor="end">14 / 15</text>
   </g>
 </svg>

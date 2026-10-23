@@ -50,24 +50,24 @@
   <g id="proof" data-pptx-bounds="664 410 560 176">
     <rect x="664" y="412" width="560" height="3" fill="#0B1E3C" />
     <text x="664" y="438" font-size="15" font-weight="bold" fill="#B45309">검증 · 전자기 시뮬레이션 (실측 아님) <tspan font-weight="normal" fill="#4B5563">변화 신호 세기</tspan></text>
-    <text x="664" y="466" font-size="14" fill="#374151">공동 20cm 성장</text>
+    <text x="664" y="466" font-size="15" fill="#374151">공동 20cm 성장</text>
     <rect x="808" y="454" width="343" height="15" fill="#0B1E3C" />
-    <text x="1159" y="466" font-size="14" font-weight="bold" fill="#111827">2.9</text>
-    <text x="664" y="487" font-size="14" fill="#374151">공동 10cm 성장</text>
+    <text x="1159" y="466" font-size="15" font-weight="bold" fill="#111827">2.9</text>
+    <text x="664" y="487" font-size="15" fill="#374151">공동 10cm 성장</text>
     <rect x="808" y="475" width="293" height="15" fill="#0B1E3C" />
-    <text x="1109" y="487" font-size="14" font-weight="bold" fill="#111827">2.4</text>
-    <text x="664" y="508" font-size="14" fill="#374151">공동 5cm 성장</text>
+    <text x="1109" y="487" font-size="15" font-weight="bold" fill="#111827">2.4</text>
+    <text x="664" y="508" font-size="15" fill="#374151">공동 5cm 성장</text>
     <rect x="808" y="496" width="163" height="15" fill="#B45309" />
-    <text x="979" y="508" font-size="14" font-weight="bold" fill="#111827">1.4</text>
-    <text x="664" y="529" font-size="14" fill="#374151">주행선 8cm 어긋남</text>
+    <text x="979" y="508" font-size="15" font-weight="bold" fill="#111827">1.4</text>
+    <text x="664" y="529" font-size="15" fill="#374151">주행선 8cm 어긋남</text>
     <rect x="808" y="517" width="120" height="15" fill="#C62828" />
-    <text x="936" y="529" font-size="14" font-weight="bold" fill="#111827">1.0</text>
-    <text x="664" y="550" font-size="14" fill="#374151">함수비 변화</text>
+    <text x="936" y="529" font-size="15" font-weight="bold" fill="#111827">1.0</text>
+    <text x="664" y="550" font-size="15" fill="#374151">함수비 변화</text>
     <rect x="808" y="538" width="97" height="15" fill="#4B5563" />
-    <text x="936" y="550" font-size="14" font-weight="bold" fill="#111827">0.8</text>
-    <text x="664" y="571" font-size="14" fill="#374151">재포장</text>
+    <text x="936" y="550" font-size="15" font-weight="bold" fill="#111827">0.8</text>
+    <text x="664" y="571" font-size="15" fill="#374151">재포장</text>
     <rect x="808" y="559" width="40" height="15" fill="#4B5563" />
-    <text x="936" y="571" font-size="14" font-weight="bold" fill="#111827">0.3</text>
+    <text x="936" y="571" font-size="15" font-weight="bold" fill="#111827">0.3</text>
     <line x1="928" y1="450" x2="928" y2="580" stroke="#C62828" stroke-width="1.5" stroke-dasharray="4,3" />
   </g>
   <g id="conclusion" data-pptx-bounds="56 596 1168 44">

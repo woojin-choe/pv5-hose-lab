@@ -22,25 +22,25 @@
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
   <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">차가 찾은 지점을, 작업자가 현장에서 바로 확인합니다</text>
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">차가 찾은 지점을, 작업자가 현장에서 바로 확인합니다</text>
   </g>
   <g id="system-chain" data-pptx-bounds="56 146 1168 92">
     <g text-anchor="middle">
       <rect x="56" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
       <text x="156" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">GroundWatch Cloud</text>
-      <text x="156" y="196" font-size="14" fill="#374151">4D 지도 · AI 분석 · 경로</text>
+      <text x="156" y="196" font-size="15" fill="#374151">4D 지도 · AI 분석 · 경로</text>
       <rect x="298" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
       <text x="398" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">Patrol 차량 앱</text>
-      <text x="398" y="196" font-size="14" fill="#374151">업무·경로 관리</text>
+      <text x="398" y="196" font-size="15" fill="#374151">업무·경로 관리</text>
       <rect x="540" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
       <text x="640" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">Edge Gateway</text>
-      <text x="640" y="196" font-size="14" fill="#374151">센서 동기화·로컬 통신</text>
+      <text x="640" y="196" font-size="15" fill="#374151">센서 동기화·로컬 통신</text>
       <rect x="782" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
       <text x="882" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">AR 글래스</text>
-      <text x="882" y="196" font-size="14" fill="#374151">위치 정합·탐사 안내</text>
+      <text x="882" y="196" font-size="15" fill="#374151">위치 정합·탐사 안내</text>
       <rect x="1024" y="150" width="200" height="58" rx="8" fill="#FFFFFF" stroke="#0B1E3C" stroke-width="2" />
       <text x="1124" y="174" font-size="16" font-weight="bold" fill="#0B1E3C">수동 GPR</text>
-      <text x="1124" y="196" font-size="14" fill="#374151">다른 주파수·방향 교차검증</text>
+      <text x="1124" y="196" font-size="15" fill="#374151">다른 주파수·방향 교차검증</text>
     </g>
     <g stroke="#0B1E3C" stroke-width="2">
       <line x1="259" y1="179" x2="295" y2="179" marker-start="url(#linkEnd)" marker-end="url(#linkEnd)" />

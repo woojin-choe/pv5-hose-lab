@@ -23,7 +23,7 @@
     <text x="56" y="160" font-size="19" fill="#374151">공동이 단기간에 자랄 수 있다는 것은 연구로 확인됐습니다(5장). 남은 건 <tspan font-weight="bold" fill="#0B1E3C">PV5에 실었을 때도 정확한가</tspan>입니다.</text>
   </g>
   <g id="questions" data-pptx-bounds="56 186 1168 236">
-    <g font-size="14" font-weight="bold" fill="#4B5563">
+    <g font-size="15" font-weight="bold" fill="#4B5563">
       <text x="56" y="206">확인할 질문</text>
       <text x="520" y="206">안 되면</text>
       <text x="820" y="206">어떻게 확인하나</text>
@@ -53,25 +53,25 @@
     <text x="56" y="466" font-size="15" font-weight="bold" fill="#4B5563">실증 순서</text>
     <rect x="56" y="480" width="278" height="94" fill="#F3F5F8" />
     <rect x="56" y="480" width="278" height="4" fill="#0B1E3C" />
-    <text x="74" y="508" font-size="14" font-weight="bold" fill="#B45309">1단계 · 질문 1</text>
+    <text x="74" y="508" font-size="15" font-weight="bold" fill="#B45309">1단계 · 질문 1</text>
     <text x="74" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">폐쇄 시험장</text>
     <text x="74" y="562" font-size="15" fill="#0B1E3C">통과 → 차량 측정 가능</text>
     <text x="342" y="536" font-size="18" fill="#4B5563">›</text>
     <rect x="353" y="480" width="278" height="94" fill="#F3F5F8" />
     <rect x="353" y="480" width="278" height="4" fill="#0B1E3C" />
-    <text x="371" y="508" font-size="14" font-weight="bold" fill="#B45309">2단계 · 질문 2·3</text>
+    <text x="371" y="508" font-size="15" font-weight="bold" fill="#B45309">2단계 · 질문 2·3</text>
     <text x="371" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">통제된 시험 구간</text>
     <text x="371" y="562" font-size="15" fill="#0B1E3C">통과 → 회차 비교 가능</text>
     <text x="639" y="536" font-size="18" fill="#4B5563">›</text>
     <rect x="650" y="480" width="278" height="94" fill="#F3F5F8" />
     <rect x="650" y="480" width="278" height="4" fill="#0B1E3C" />
-    <text x="668" y="508" font-size="14" font-weight="bold" fill="#B45309">3단계 · 질문 3·4</text>
+    <text x="668" y="508" font-size="15" font-weight="bold" fill="#B45309">3단계 · 질문 3·4</text>
     <text x="668" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">실제 도로 위험구간</text>
     <text x="668" y="562" font-size="15" fill="#0B1E3C">통과 → 실증확인서</text>
     <text x="936" y="536" font-size="18" fill="#4B5563">›</text>
     <rect x="947" y="480" width="278" height="94" fill="#F3F5F8" />
     <rect x="947" y="480" width="278" height="4" fill="#F5B700" />
-    <text x="965" y="508" font-size="14" font-weight="bold" fill="#B45309">4단계 · 소요시간·재방문</text>
+    <text x="965" y="508" font-size="15" font-weight="bold" fill="#B45309">4단계 · 소요시간·재방문</text>
     <text x="965" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">실제 운영</text>
     <text x="965" y="562" font-size="15" fill="#0B1E3C">통과 → 연간 관제 계약</text>
   </g>

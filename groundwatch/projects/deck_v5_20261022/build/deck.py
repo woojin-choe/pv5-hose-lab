@@ -496,7 +496,7 @@ def summary():
     <text x="{x}" y="550" font-size="15" fill="{SUB}">{k}</text>
 '''
         x += 396
-    b += "  </g>\n" + band(590, "한 번의 조기 발견이, 한 사람의 무사 귀가가 되도록.")
+    b += "  </g>\n" + band(590, "기아가 찾는 ‘첨단 장비 탑재 스마트 순찰 PV5’를, 땅 아래로 넓힙니다.")
     return head("", "한 장 요약") + title("GroundWatch는 탐사와 탐사 ‘사이’의 공백을 메웁니다") + b + foot(2, "근거: 3장 뉴시스·세계일보 · 7장 GPR 전자기 시뮬레이션 · 12장 서울시 2024 공동조사용역 최종보고서")
 
 
@@ -715,11 +715,11 @@ def pv5lab2():
     </g>
     <line x1="696" y1="178" x2="1224" y2="178" stroke="{NAVY}" stroke-width="1.5" />
 """
-    rows = [("장비 적재", "카고룸 4,420L · 최대 적재 600kg", "장비 약 300kg + 2인 약 150kg = 450kg [가설]"),
-            ("장비 전원", "실내·실외 V2L (최대 3.6kW, 해외 제원)", "장비 약 1.5kW · 하루 약 10kWh = 배터리의 14% [가설]"),
+    rows = [("장비 적재", "카고룸 4,420L · 최대 적재 550kg", "순정 액세서리 장착 기준 · 장비 약 300kg [가설]"),
+            ("장비 전원", "실내·실외 V2L (최대 3.6kW, 해외 제원)", "장비 1.5kW · 하루 10kWh = 배터리의 14% [가설]"),
             ("같은 위치 고정", "L-Track·몰리 패널 (순정 액세서리)", "회차마다 같은 자리에 장착"),
-            ("차량과 연동", "PIM 제어기 · Pleos Connect 내비 API", "재확인 지점 안내, 화면에서 장비 제어"),
-            ("여러 대 복제", "컨버전 포털 (차량 3D 데이터·인증자료)", "같은 사양의 탐사실을 지자체별로")]
+            ("차량과 연동", "Pleos Connect SDK · Navihelper · PIM", "재확인 지점 안내, 화면에서 장비 제어"),
+            ("여러 대 운영", "컨버전 포털 · Pleos Fleet 관제", "같은 탐사실을 복제, 단말기 없이 플릿 관제")]
     y = 214
     for i, (k, v, u) in enumerate(rows):
         b += f"""    <text x="696" y="{y}" font-size="17" font-weight="bold" fill="{NAVY}">{k}</text>
@@ -731,7 +731,7 @@ def pv5lab2():
         y += 76
     b += "  </g>\n" + band(598, "장비를 싣는 것을 넘어, PV5에서는 차가 탐사 업무의 일부가 됩니다.")
     return head("PV5", "PV5 이동형 탐사실") + title("PV5 한 대에 탐사실이 들어가고, 차량과 연결됩니다") + b + foot(
-        8, "출처: 기아 PV5 카고 제원·액세서리 · 공모전 솔루션 부문 안내(Pleos Connect) · 오토뷰(2026.1.28) · V2L 3.6kW 해외 제원 · 배터리 71.2kWh · 내부 배치는 콘셉트")
+        8, "출처: 기아 PV5 카고 카탈로그(2026.9)·공식 제원표 · 공모전 솔루션 부문 안내(Pleos Connect SDK) · 오토뷰(2026.1.28, PIM) · V2L 3.6kW 해외 제원 · 배치는 콘셉트")
 
 
 def entry2():
@@ -753,8 +753,8 @@ def entry2():
     <text x="56" y="294" font-size="15" font-weight="bold" fill="{AMB}">수상 후 첫 6개월 · 기아가 안내한 혜택으로</text>
     <rect x="56" y="304" width="640" height="3" fill="{NAVY}" />
 """
-    asks = [("PV5 실물 대여", "1단계 폐쇄 시험장 실증"), ("Pleos Playground·SDK", "내비·차량 연동 시제품"),
-            ("컨버전 포털·PIM 기술 지원", "GPR 장착·전원 간섭 검토"), ("PoC·사업화 연계, 멘토링", "지자체 1곳 파일럿 연결")]
+    asks = [("PV5 실물 대여 검토", "1단계 폐쇄 시험장 실증"), ("전문가 멘토링·기술 지원", "GPR 장착·전원 간섭 검토"),
+            ("PoC·사업화 연계", "지자체 1곳 파일럿 연결"), ("기아 네트워크 협력", "컨버전 파트너와 탐사실 키트화")]
     y = 340
     for i, (k, d) in enumerate(asks):
         b += f"""    <text x="56" y="{y}" font-size="15" font-weight="bold" fill="{MUTE}">{i + 1}</text>
@@ -777,7 +777,7 @@ def entry2():
 """
     b += band(596, "새 예산이 아니라 지자체가 이미 쓰는 탐사 예산에서, 기아와 함께 첫 실증을 만듭니다.")
     return head("사업", "첫 고객과 기아와 할 일") + title("지자체 예산에서 시작해, 6개월 안에 1단계 실증을 마칩니다") + b + foot(
-        12, "출처: 나라장터 2026(R26BK01572949 · R26BK01599467 · R26BK01517362) · 헤럴드경제(2025.9.7) · 조달청 · 테스트베드서울 · 공모전 안내 · 일정은 목표")
+        12, "출처: 나라장터 2026(R26BK01572949 · R26BK01599467 · R26BK01517362) · 헤럴드경제(2025.9.7) · 조달청 · 테스트베드서울 · 공모전 일반 부문 혜택 안내 · 일정은 목표")
 
 
 for _f in ["05b_innovation.svg", "07b_pv5link.svg", "11b_withkia.svg"]:
@@ -1003,7 +1003,7 @@ def players():
     cols = [("구매자", "지자체·발주기관", ["서울시·자치구 도로관리", "도시철도 공사 발주기관", "상하수도 관리기관"]),
             ("실제 사용자", "현장 조사팀", ["지하안전·도로관리 담당자", "GPR 판독 전문가", "현장 조사원 (2인 1조)"]),
             ("협력사", "장비·조사 파트너", ["기존 GPR 조사기관", "PV5 특장(컨버전) 업체", "GIS·AR 장비사"]),
-            ("기아가 얻는 것", "공공 업무용 PV5", ["탐사형 컨버전 플릿 판매", "Pleos 차량 앱 공공 레퍼런스", "같은 키트로 지자체마다 복제"])]
+            ("기아가 얻는 것", "공공 업무용 PV5", ["탐사형 컨버전 플릿 판매", "Pleos 앱·Fleet 공공 레퍼런스", "같은 키트로 지자체마다 복제"])]
     b = ""
     x = 56
     for i, (k, h, ds) in enumerate(cols):
@@ -1020,21 +1020,53 @@ def players():
         x += 298
     b += f"""  <g id="data" data-pptx-bounds="56 404 1168 130">
     <rect x="56" y="408" width="560" height="3" fill="{NAVY}" />
-    <text x="56" y="442" font-size="15" font-weight="bold" fill="{AMB}">회차가 쌓이면</text>
-    <text x="56" y="480" font-size="18" fill="{INK}">하수관 노후도·굴착공사·강우 이력과 겹쳐</text>
-    <text x="56" y="508" font-size="18" fill="{INK}"><tspan font-weight="bold" fill="{NAVY}">다음 순찰의 우선순위</tspan>를 정합니다.</text>
+    <text x="56" y="442" font-size="15" font-weight="bold" fill="{AMB}">기아가 이미 가는 방향</text>
+    <text x="56" y="480" font-size="18" fill="{INK}">공모전 예시 ‘첨단 장비 탑재 스마트 순찰 차량’</text>
+    <text x="56" y="508" font-size="18" fill="{INK}">2026.6 <tspan font-weight="bold" fill="{NAVY}">경찰청과 PV5 AI 순찰차</tspan> 공개</text>
     <rect x="664" y="408" width="560" height="3" fill="{RED}" />
     <text x="664" y="442" font-size="15" font-weight="bold" fill="{RED}">데이터 원칙</text>
     <text x="664" y="480" font-size="18" font-weight="bold" fill="{NAVY}">지하 데이터는 판매하지 않습니다.</text>
     <text x="664" y="508" font-size="18" fill="{INK}">계약기관 안에서 접근 권한대로만 씁니다.</text>
   </g>
 """
-    b += band(596, "살 곳은 이미 있고, 기아는 그 업무에 맞춘 PV5를 공급합니다.")
+    b += band(596, "기아가 지상 순찰차를 만들었다면, GroundWatch는 지하를 보는 PV5 순찰차입니다.")
     return head("사업", "누가 사고 누가 쓰나") + title("지자체가 사고, 현장팀이 쓰고, 기아는 PV5를 공급합니다") + b + foot(
-        14, "구매·협력 구조와 데이터 원칙은 제안 [가설] · 기아 몫은 공모전 안내의 PV5 컨버전·Pleos 연계 기준 · 수요 대수는 13장")
+        14, "공모전 컨버전 부문 안내(공공서비스 특화) · 머니투데이(2026.6.26, 경찰청 AI 순찰차) · 구매·협력 구조와 데이터 원칙은 제안 [가설]")
 
 
-svg("11b_players.svg", players())
+svg("10b_players.svg", players())
+
+
+# 10장(왜 PV5): 하단을 기아 카탈로그 실물 사진 근거로 교체
+def why_kit():
+    f = os.path.join(OUT, "08_why_pv5.svg")
+    t = open(f, encoding="utf-8").read()
+    t = t.replace("그룹 전기 상용차는 용도가 나뉘어 있습니다. 탐사·판독·재검증을 한 차에서 하려면 무엇이 필요한지로 골랐습니다.",
+                  "차값 차이는 최대 1,354만 원, 차량형 GPR은 대당 2억~8억 원(서울시 약 5억 원)입니다. 그래서 전원·고정 구조로 골랐습니다.")
+    cards = [("kia_v2l_cargo.png", "카고룸 실내 V2L 콘센트", "시동 없이 GPR·컴퓨터 전원"),
+             ("kia_ltrack.png", "L-Track 러기지 트림", "회차마다 같은 자리에 장비 고정"),
+             ("kia_cargo_room.png", "카고룸 2,255×1,565×1,520mm", "랙·수동 GPR 카트를 함께 적재")]
+    g = '  <g id="kit" data-pptx-bounds="56 446 1168 140">\n'
+    x = 56
+    for img, h, d in cards:
+        g += f'    <image href="../images/{img}" x="{x}" y="446" width="274" height="92" preserveAspectRatio="xMidYMid slice" />\n'
+        g += f'    <text x="{x}" y="560" font-size="15" font-weight="bold" fill="{INK}">{h}</text>\n'
+        g += f'    <text x="{x}" y="580" font-size="13" fill="{SUB}">{d}</text>\n'
+        x += 298
+    g += f'    <rect x="950" y="446" width="274" height="3" fill="{RED}" />\n'
+    g += f'    <text x="950" y="474" font-size="15" font-weight="bold" fill="{RED}">PV5가 불리한 점</text>\n'
+    g += f'    <text x="950" y="504" font-size="16" fill="{INK}">주행거리 377km는 스타리아보다</text>\n'
+    g += f'    <text x="950" y="528" font-size="16" fill="{INK}">10km 짧습니다. 하루 순찰 약</text>\n'
+    g += f'    <text x="950" y="552" font-size="16" fill="{INK}">30km <tspan fill="{MUTE}">[가설]</tspan>에는 충분합니다.</text>\n'
+    g += '  </g>\n'
+    t, n = re.subn(r'  <g id="honest".*?\n  </g>\n', g, t, count=1, flags=re.S)
+    assert n == 1
+    t = t.replace(" · 2026 ST1 출시(2025.7.16)·현대차그룹 뉴스룸(317km)", " · ST1(2025.7.16, 317km)")
+    t = t.replace("포터II·봉고III EV 2025년형 발표(217km)", "포터II·봉고III EV(2025년형, 217km)").replace("가격은 표기한 트림 기준, 보조금 제외", "가격은 보조금 제외 · 사진: 기아 PV5 카고 카탈로그(2026.9)")
+    open(f, "w", encoding="utf-8").write(t)
+
+
+why_kit()
 
 # ---------------------------------------------------------------- 표기 통일: 금액은 숫자마다 단위+원, 날짜는 2024.8.29, 속도는 시속
 UNIT_FIX = [
@@ -1065,6 +1097,14 @@ for i, f in enumerate(names, 1):
     for _a, _b in UNIT_FIX:
         t = t.replace(_a, _b)
     t = re.sub(r'<text x="56" y="70[68]">한 명이라도 살릴 수 있다면</text>', '<text x="56" y="706">PV5 GroundWatch</text>', t)
+    # 타이포 통일: 제목 40px, 본문 최소 15px(머리말·출처·쪽번호·사진 위 작은 표기는 제외)
+    t = re.sub(r'(<g id="title"[^>]*>\s*<text x="56" y=")1[12]\d(" font-size=")3[89]', r'\g<1>120\g<2>40', t)
+    def _bump(m):
+        g = m.group(0)
+        if re.match(r'  <g id="(header|footer|source)"', g):
+            return g
+        return g.replace('font-size="14"', 'font-size="15"')
+    t = re.sub(r'  <g id="[^"]*".*?\n  </g>\n', _bump, t, flags=re.S)
     os.remove(os.path.join(OUT, f))
     tmp.append((f"{i:02d}_" + f.split("_", 1)[1], t))
 for f, t in tmp:
