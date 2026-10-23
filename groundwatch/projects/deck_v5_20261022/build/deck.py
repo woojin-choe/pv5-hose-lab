@@ -739,7 +739,7 @@ def pv5lab2():
 """
     rows = [("장비 적재", "카고룸 4,420L · 적재 550kg · 적재고 419mm", "적재는 순정 액세서리 장착 시 · 장비 약 300kg [가설]"),
             ("장비 전원", "실내·실외 V2L (최대 3.6kW, 해외 제원)", "장비 1.5kW · 하루 10kWh = 배터리의 14% [가설]"),
-            ("같은 위치 고정", "L-Track·몰리 패널 (순정 액세서리)", "회차마다 같은 자리에 장착"),
+            ("같은 위치 고정", "L-Track(순정 옵션) · 몰리 패널(기아 샵)", "회차마다 같은 자리에 장착"),
             ("차량과 연동", "Pleos Connect SDK · Navihelper · PIM", "재확인 지점 안내, 화면에서 장비 제어"),
             ("여러 대 운영", "컨버전 포털 · Pleos Fleet 관제", "같은 탐사실을 복제, 단말기 없이 플릿 관제")]
     y = 214
@@ -753,7 +753,7 @@ def pv5lab2():
         y += 76
     b += "  </g>\n" + band(598, "장비를 싣는 것을 넘어, PV5에서는 차가 탐사 업무의 일부가 됩니다.")
     return head("PV5", "PV5 이동형 탐사실") + title("PV5 한 대에 탐사실이 들어가고, 차량과 연결됩니다") + b + foot(
-        8, "출처: 기아 PV5 카고 카탈로그(2026.9)·공식 제원표 · 공모전 솔루션 부문 안내(Pleos Connect SDK) · 오토뷰(2026.1.28, PIM) · V2L 3.6kW 해외 제원 · 배치는 콘셉트")
+        8, "출처: 기아 PV5 카고 카탈로그(2026.9)·공식 제원표 · 공모전 솔루션 부문 안내(Pleos Connect SDK) · 오토뷰(2026.1.28, PIM) · 카고룸 4,420L(VDA)·V2L 3.6kW는 해외 제원 · 배치는 콘셉트")
 
 
 def entry2():
@@ -1113,7 +1113,7 @@ def why_kit():
     assert n == 1
     # 3) 기본 조건·불리한 점: 강조 없이 각주 두 줄
     g = '  <g id="kit" data-pptx-bounds="56 512 1168 44">\n'
-    g += f'    <text x="56" y="528" font-size="14" fill="{MUTE}"><tspan font-weight="bold" fill="{SUB}">기본 조건</tspan>  전기차라 새벽에 조용하고, 2025년 공공 신차의 94.6%가 무공해차입니다. V2L·L-Track·적재공간은 다른 밴에도 있어 선택 이유로 삼지 않았습니다.</text>\n'
+    g += f'    <text x="56" y="528" font-size="14" fill="{MUTE}"><tspan font-weight="bold" fill="{SUB}">기본 조건</tspan>  2025년 의무구매 대상 공공 신차의 94.6%가 무공해차입니다. V2L·L-Track·적재공간은 다른 밴에도 있어 선택 이유로 삼지 않았습니다.</text>\n'
     g += f'    <text x="56" y="550" font-size="14" fill="{MUTE}"><tspan font-weight="bold" fill="{SUB}">불리한 점</tspan>  주행거리 377km는 스타리아보다 10km 짧지만 하루 약 30km [가설]에는 충분합니다. 차값 차이(최대 1,354만 원)는 GPR(대당 2억~8억 원)에 비해 작습니다.</text>\n'
     g += '  </g>\n'
     t, n = re.subn(r'  <g id="honest".*?\n  </g>\n', g, t, count=1, flags=re.S)
