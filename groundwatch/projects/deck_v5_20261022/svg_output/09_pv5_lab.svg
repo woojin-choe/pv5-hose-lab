@@ -20,7 +20,7 @@
     <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">PV5 한 대에 탐사실이 들어가고, 차량과 연결됩니다</text>
   </g>
   <g id="cutaway" data-pptx-bounds="56 160 640 420">
-    <image href="../images/cutaway_rearmount.png" x="56" y="150" width="620" height="349" preserveAspectRatio="xMidYMid meet" />
+    <image href="../images/cutaway_nowheel.png" x="56" y="150" width="620" height="349" preserveAspectRatio="xMidYMid meet" />
     <g font-size="16" font-weight="bold" text-anchor="middle">
       <circle cx="319" cy="298" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
       <text x="319" y="304" fill="#0B1E3C">A</text>
@@ -28,8 +28,8 @@
       <text x="449" y="278" fill="#0B1E3C">B</text>
       <circle cx="571" cy="272" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
       <text x="571" y="278" fill="#0B1E3C">C</text>
-      <circle cx="634.4688995215311" cy="426.25598086124404" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
-      <text x="634.4688995215311" y="432.25598086124404" fill="#0B1E3C">D</text>
+      <circle cx="499.122009569378" cy="444.79665071770336" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="499.122009569378" y="450.79665071770336" fill="#0B1E3C">D</text>
     </g>
     <text x="56" y="522" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">A</tspan> 분석 장비 랙 (엣지 컴퓨터·GPR 제어)</text>
     <text x="400" y="522" font-size="15" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">B</tspan> 수동 GPR·AR 글래스</text>
