@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="44" height="24" fill="#F5B700" />
+    <text x="218" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">검증</text>
+    <text x="252" y="45" font-size="14" fill="#4B5563">단계별 실증 계획</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">폐쇄 시험장에서 실제 도로까지 4단계로 검증합니다</text>
+  </g>
+  <g id="stage-1" data-pptx-bounds="56 378 280 206">
+    <text x="56" y="390" font-size="15" font-weight="bold" fill="#4B5563">폐쇄 시험장 · 장비 단위</text>
+    <rect x="56" y="400" width="280" height="184" fill="#E8ECF2" />
+    <text x="76" y="430" font-size="14" font-weight="bold" fill="#4B5563">1단계</text>
+    <text x="76" y="460" font-size="22" font-weight="bold" fill="#0B1E3C">장비 통합 시험</text>
+    <text x="76" y="494" font-size="16" fill="#111827">장착 구조·진동 · 전력 사용량<tspan x="76" dy="24">전자파 간섭 · 통신 지연·누락</tspan></text>
+    <line x1="76" y1="538" x2="316" y2="538" stroke="#B4BFCF" stroke-width="1" />
+    <text font-size="15" font-weight="bold" x="76" y="566" fill="#0B1E3C">통과 → 차량형 측정 가능</text>
+  </g>
+  <g id="stage-2" data-pptx-bounds="352 323 280 261">
+    <text x="352" y="335" font-size="15" font-weight="bold" fill="#4B5563">통제된 시험 구간</text>
+    <rect x="352" y="345" width="280" height="239" fill="#C9D3E2" />
+    <text x="372" y="375" font-size="14" font-weight="bold" fill="#4B5563">2단계</text>
+    <text x="372" y="405" font-size="22" font-weight="bold" fill="#0B1E3C">통제된 반복 주행</text>
+    <text x="372" y="439" font-size="16" fill="#111827">공동 모사체 구간 반복 측정<tspan x="372" dy="24">위치 정합 오차·회차 편차</tspan><tspan x="372" dy="24">AI의 기존·신규 신호 구분</tspan></text>
+    <line x1="372" y1="538" x2="612" y2="538" stroke="#9DABC0" stroke-width="1" />
+    <text font-size="15" font-weight="bold" x="372" y="566" fill="#0B1E3C">통과 → 회차 비교 가능</text>
+  </g>
+  <g id="stage-3" data-pptx-bounds="648 268 280 316">
+    <text x="648" y="280" font-size="15" font-weight="bold" fill="#4B5563">실제 도로 위험구간</text>
+    <rect x="648" y="290" width="280" height="294" fill="#2E4A78" />
+    <text x="668" y="320" font-size="14" font-weight="bold" fill="#D6DDE8">3단계</text>
+    <text x="668" y="350" font-size="22" font-weight="bold" fill="#FFFFFF">실제 도로 파일럿</text>
+    <text x="668" y="384" font-size="16" fill="#E5E9F0">지자체·조사기업과 구간 선정<tspan x="668" dy="24">기존 전문 장비 결과와 비교</tspan><tspan x="668" dy="24">전문가 판독·천공으로 검증</tspan></text>
+    <line x1="668" y1="538" x2="908" y2="538" stroke="#5B739B" stroke-width="1" />
+    <text font-size="15" font-weight="bold" x="668" y="566" fill="#F5B700">통과 → 효용 입증·실증서</text>
+  </g>
+  <g id="stage-4" data-pptx-bounds="944 213 280 371">
+    <text x="944" y="225" font-size="15" font-weight="bold" fill="#4B5563">실제 운영 환경</text>
+    <rect x="944" y="235" width="280" height="349" fill="#0B1E3C" />
+    <text x="964" y="265" font-size="14" font-weight="bold" fill="#F5B700">4단계</text>
+    <text x="964" y="295" font-size="22" font-weight="bold" fill="#FFFFFF">운영성 검증</text>
+    <text x="964" y="329" font-size="16" fill="#E5E9F0">새벽 순찰 소요시간<tspan x="964" dy="24">재확인 생성 → 현장 도착 시간</tspan><tspan x="964" dy="24">AR 위치 보정 성공률</tspan><tspan x="964" dy="24">재방문·수작업 입력 감소량</tspan></text>
+    <line x1="964" y1="538" x2="1204" y2="538" stroke="#3A4F73" stroke-width="1" />
+    <text font-size="15" font-weight="bold" x="964" y="566" fill="#F5B700">통과 → 연간 관제 계약</text>
+  </g>
+  <g id="target-note" data-pptx-bounds="56 604 1168 48">
+    <rect x="56" y="604" width="1168" height="48" fill="#FFF6DC" />
+    <rect x="56" y="604" width="5" height="48" fill="#F5B700" />
+    <text x="80" y="634" font-size="18" fill="#0B1E3C"><tspan font-weight="bold">정량 목표치는 파일럿 설계 때 발주기관과 확정합니다.</tspan> 지금은 근거 없는 정확도 수치를 제시하지 않습니다.</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">11 / 16</text>
+  </g>
+</svg>

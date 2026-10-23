@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="74" height="24" fill="#F5B700" />
+    <text x="233" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">사업 모델</text>
+    <text x="282" y="45" font-size="14" fill="#374151">시장 규모와 차량 1대의 수지</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">차량 1대가 자치구 2곳만 맡아도 흑자입니다</text>
+  </g>
+  <g id="market" data-pptx-bounds="56 140 1168 104">
+    <rect x="56" y="140" width="376" height="3" fill="#0B1E3C" />
+    <text x="76" y="182" font-size="30" font-weight="bold" fill="#B45309">96,712km</text>
+    <text x="76" y="208" font-size="15" font-weight="bold" fill="#0B1E3C">지자체가 관리하는 도로 (전국의 83%)</text>
+    <rect x="452" y="140" width="376" height="3" fill="#0B1E3C" />
+    <text x="472" y="182" font-size="30" font-weight="bold" fill="#B45309">2,308 → 11,380km</text>
+    <text x="472" y="208" font-size="15" font-weight="bold" fill="#0B1E3C">정부 지반탐사 연장 2024 → 2026</text>
+    <rect x="848" y="140" width="376" height="3" fill="#0B1E3C" />
+    <text x="868" y="182" font-size="30" font-weight="bold" fill="#B45309">131억 원</text>
+    <text x="868" y="208" font-size="15" font-weight="bold" fill="#0B1E3C">2026 국비 · GPR 장비 87억 + 지자체 지원 44억</text>
+  </g>
+  <g id="cost" data-pptx-bounds="56 262 560 262">
+    <text x="56" y="284" font-size="16" font-weight="bold" fill="#0B1E3C">차량 1대 연간 비용 <tspan font-weight="normal" fill="#4B5563">[가설]</tspan></text>
+    <line x1="56" y1="296" x2="616" y2="296" stroke="#0B1E3C" stroke-width="1.5" />
+    <g font-size="16" fill="#111827">
+      <text x="56" y="326">PV5 카고 4,520만 원 · 5년 감가</text>
+      <text x="616" y="326" text-anchor="end" font-weight="bold">0.09억</text>
+      <line x1="56" y1="340" x2="616" y2="340" stroke="#E2E6EC" stroke-width="1" />
+      <text x="56" y="370">차량형 GPR 2억~5억 원 · 5년 감가</text>
+      <text x="616" y="370" text-anchor="end" font-weight="bold">0.40~1.00억</text>
+      <line x1="56" y1="384" x2="616" y2="384" stroke="#E2E6EC" stroke-width="1" />
+      <text x="56" y="414">2인 1조 인건비 (운전·안전 / 탐사·판독)</text>
+      <text x="616" y="414" text-anchor="end" font-weight="bold">1.00억</text>
+      <line x1="56" y1="428" x2="616" y2="428" stroke="#E2E6EC" stroke-width="1" />
+      <text x="56" y="458">수동 GPR·AR 글래스·분석·유지보수</text>
+      <text x="616" y="458" text-anchor="end" font-weight="bold">0.30억</text>
+    </g>
+    <rect x="56" y="474" width="560" height="44" fill="#F3F5F8" />
+    <text x="72" y="503" font-size="17" font-weight="bold" fill="#0B1E3C">합계</text>
+    <text x="600" y="503" font-size="22" font-weight="bold" fill="#0B1E3C" text-anchor="end">약 1.8~2.4억 원 / 년</text>
+  </g>
+  <g id="revenue" data-pptx-bounds="664 262 560 262">
+    <text x="664" y="284" font-size="16" font-weight="bold" fill="#0B1E3C">수입 근거 · 자치구 연간 GPR 용역 발주 규모 (2026)</text>
+    <line x1="664" y1="296" x2="1224" y2="296" stroke="#0B1E3C" stroke-width="1.5" />
+    <g font-size="16" fill="#111827">
+      <text x="664" y="326">서울 강동구 (연간단가 · 배정예산)</text>
+      <text x="1224" y="326" text-anchor="end" font-weight="bold">1.60억</text>
+      <line x1="664" y1="340" x2="1224" y2="340" stroke="#E2E6EC" stroke-width="1" />
+      <text x="664" y="370">서울 도봉구 (정기점검 · 공고 금액)</text>
+      <text x="1224" y="370" text-anchor="end" font-weight="bold">2.16억</text>
+      <line x1="664" y1="384" x2="1224" y2="384" stroke="#E2E6EC" stroke-width="1" />
+      <text x="664" y="414">자치구 2곳을 맡을 때</text>
+      <text x="1224" y="414" text-anchor="end" font-weight="bold">약 3.2~4.3억</text>
+      <line x1="664" y1="428" x2="1224" y2="428" stroke="#E2E6EC" stroke-width="1" />
+      <text x="664" y="458">자치구 3곳을 맡을 때</text>
+      <text x="1224" y="458" text-anchor="end" font-weight="bold">약 4.8~6.5억</text>
+    </g>
+    <rect x="664" y="474" width="560" height="44" fill="#FFF6D6" />
+    <text x="680" y="503" font-size="15" fill="#111827"><tspan font-weight="bold">감당 가능?</tspan> 연 6,600km(30km×220일) → 3개 구 1,000km 연 6회</text>
+  </g>
+  <g id="kia" data-pptx-bounds="56 538 1168 44">
+    <text x="56" y="566" font-size="16" fill="#111827"><tspan font-weight="bold" fill="#0B1E3C">기아에게</tspan>  장비 포함 대당 2억 원 이상의 고부가 컨버전 PV5 · 공공 반복 수요(시·군·구, 국토안전관리원 GPR 13→32대 확충) · Pleos 공공 업무 앱 레퍼런스</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 592 1168 52">
+    <rect x="56" y="592" width="4" height="52" fill="#F5B700" />
+    <text x="80" y="625" font-size="20" font-weight="bold" fill="#0B1E3C">비용은 연 약 2억 원, 자치구 한 곳의 연간 용역 발주가 <tspan fill="#B45309">1.6~2.2억 원</tspan> — 2곳부터 흑자 구간입니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 654 1168 34">
+    <text x="56" y="666" font-size="12" fill="#4B5563">출처: e-나라지표 도로현황(2025.12) · 머니투데이(2025.12.23) · 뉴스서울(2025.12.3) · 시사저널(2025.4.25, GPR 2억~8억) · 이투데이(2025.4.23, 3대 15억)</text>
+    <text x="56" y="682" font-size="12" fill="#4B5563">나라장터 공고(산군 재게시, 2026) 강동구·도봉구 · 인건비·유지비·하루 30km·220일은 가설, 파일럿에서 확정 · 감가는 잔존가치 0 단순 계산</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">14 / 16</text>
+  </g>
+</svg>

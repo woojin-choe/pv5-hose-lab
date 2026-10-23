@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="74" height="24" fill="#F5B700" />
+    <text x="233" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">기존 방식</text>
+    <text x="282" y="45" font-size="14" fill="#4B5563">기존 조사 방식</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">서울시는 이미 탐사하지만, 점검 사이 1년은 비어 있습니다</text>
+  </g>
+  <g id="seoul-found" data-pptx-bounds="56 152 520 150">
+    <rect x="56" y="152" width="520" height="3" fill="#0B1E3C" />
+    <text x="80" y="184" font-size="15" font-weight="bold" fill="#B45309">서울시 차량 GPR 탐사 누적 · 2014~2025.9</text>
+    <text x="80" y="236" font-size="40" font-weight="bold" fill="#0B1E3C">33,129km</text>
+    <text x="282" y="236" font-size="22" font-weight="bold" fill="#374151">→</text>
+    <text x="316" y="236" font-size="40" font-weight="bold" fill="#0B1E3C">7,760개</text>
+    <text x="80" y="268" font-size="16" fill="#374151">탐사한 도로 연장</text>
+    <text x="316" y="268" font-size="16" fill="#374151">발견한 공동</text>
+    <text x="80" y="290" font-size="15" font-weight="bold" fill="#B45309">약 4.3km마다 공동 1개 <tspan font-weight="normal" fill="#374151">(7,760 ÷ 33,129km)</tspan></text>
+  </g>
+  <g id="seoul-fleet" data-pptx-bounds="56 318 520 150">
+    <text x="56" y="340" font-size="15" font-weight="bold" fill="#0B1E3C">2026 서울시 GPR 장비 · 10대</text>
+    <rect x="56" y="352" width="164" height="112" fill="#F3F5F8" />
+    <text x="74" y="404" font-size="40" font-weight="bold" fill="#0B1E3C">6<tspan font-size="20">대</tspan></text>
+    <text x="74" y="432" font-size="16" font-weight="bold" fill="#111827">차량형</text>
+    <text x="74" y="452" font-size="13" fill="#374151">차에 싣고 주행 탐사</text>
+    <rect x="234" y="352" width="164" height="112" fill="#F3F5F8" />
+    <text x="252" y="404" font-size="40" font-weight="bold" fill="#0B1E3C">1<tspan font-size="20">대</tspan></text>
+    <text x="252" y="432" font-size="16" font-weight="bold" fill="#111827">전동형</text>
+    <text x="252" y="452" font-size="13" fill="#374151">자체 구동 카트형</text>
+    <rect x="412" y="352" width="164" height="112" fill="#F3F5F8" />
+    <text x="430" y="404" font-size="40" font-weight="bold" fill="#0B1E3C">3<tspan font-size="20">대</tspan></text>
+    <text x="430" y="432" font-size="16" font-weight="bold" fill="#111827">핸드형</text>
+    <text x="430" y="452" font-size="13" fill="#374151">사람이 밀어 탐사</text>
+  </g>
+  <g id="gap-timeline" data-pptx-bounds="624 152 600 430">
+    <text x="624" y="176" font-size="18" font-weight="bold" fill="#0B1E3C">점검과 점검 사이의 공백</text>
+    <line x1="624" y1="190" x2="1224" y2="190" stroke="#0B1E3C" stroke-width="1.5" />
+    <g font-size="17" fill="#111827">
+      <text x="624" y="238">법정 공동조사 주기</text>
+      <rect x="624" y="252" width="540" height="26" fill="#9AA3AF" />
+      <text x="1224" y="271" text-anchor="end" font-size="22" font-weight="bold">5년</text>
+      <text x="624" y="326">서울시 정기점검 주기 <tspan fill="#374151" font-size="15">(2025.4 단축)</tspan></text>
+      <rect x="624" y="340" width="108" height="26" fill="#0B1E3C" />
+      <text x="746" y="360" font-size="22" font-weight="bold">1년</text>
+      <text x="624" y="414" font-weight="bold" fill="#C62828">연희동: 탐사에서 함몰까지</text>
+      <rect x="624" y="428" width="32" height="26" fill="#C62828" />
+      <text x="670" y="448" font-size="22" font-weight="bold" fill="#C62828">약 3.5개월</text>
+    </g>
+    <text x="624" y="512" font-size="18" fill="#111827">주기를 1년으로 줄여도, 그 사이 자라는 공동은</text>
+    <text x="624" y="540" font-size="18" font-weight="bold" fill="#0B1E3C">달라진 곳을 골라 더 자주 봐야 잡힙니다.</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 600 1168 52">
+    <rect x="56" y="600" width="4" height="52" fill="#F5B700" />
+    <text x="80" y="634" font-size="21" font-weight="bold" fill="#0B1E3C">기존 GPR을 대체하지 않습니다. <tspan fill="#B45309">측정과 측정 사이의 시간</tspan>, 그리고 현장 업무를 연결합니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 664 1168 20">
+    <text x="56" y="678" font-size="12" fill="#4B5563">출처: 메트로신문(2025.10.19) · 머니투데이(2026.3.23) · 이투데이(2025.4.23) · 지하안전법 · 뉴시스(2024.8.30)</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">04 / 16</text>
+  </g>
+</svg>

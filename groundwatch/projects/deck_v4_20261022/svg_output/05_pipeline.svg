@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#0B1E3C" />
+    </marker>
+    <marker id="loopHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#4B5563" />
+    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="74" height="24" fill="#F5B700" />
+    <text x="233" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">운영 방식</text>
+    <text x="282" y="45" font-size="14" fill="#4B5563">GroundWatch 운영 파이프라인</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="38" font-weight="bold" fill="#0B1E3C">같은 길을 반복해서 보고, 달라진 곳만 다시 확인합니다</text>
+  </g>
+  <g id="stage-1" data-pptx-bounds="56 182 274 336">
+    <image href="../images/pv5_front_dawn.jpg" x="56" y="182" width="274" height="170" preserveAspectRatio="xMidYMid slice" />
+    <text x="56" y="384" font-size="14" font-weight="bold" fill="#4B5563">STEP 01</text>
+    <text x="56" y="414" font-size="24" font-weight="bold" fill="#0B1E3C">반복 측정</text>
+    <g font-size="17" fill="#111827">
+      <rect x="56" y="438" width="6" height="6" fill="#F5B700" />
+      <text x="70" y="446">위험·정기 순찰구간 등록</text>
+      <rect x="56" y="466" width="6" height="6" fill="#F5B700" />
+      <text x="70" y="474">새벽에 같은 경로 반복 주행</text>
+      <rect x="56" y="494" width="6" height="6" fill="#F5B700" />
+      <text x="70" y="502">GPR·카메라 동시 수집</text>
+    </g>
+  </g>
+  <g id="arrow-12" data-pptx-bounds="330 258 24 18">
+    <line x1="333" y1="267" x2="350" y2="267" stroke="#0B1E3C" stroke-width="2" marker-end="url(#arrowHead)" />
+  </g>
+  <g id="stage-2" data-pptx-bounds="354 182 274 336">
+    <rect x="354" y="182" width="274" height="170" fill="#2A2E33" />
+    <image href="../images/bscan_prev_band.png" x="354" y="182" width="274" height="83" preserveAspectRatio="xMidYMid slice" />
+    <image href="../images/bscan_cur_band.png" x="354" y="269" width="274" height="83" preserveAspectRatio="xMidYMid slice" />
+    <rect x="360" y="188" width="62" height="20" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
+    <text x="391" y="203" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">이전 회차</text>
+    <rect x="360" y="275" width="62" height="20" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
+    <text x="391" y="290" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">이번 회차</text>
+    <rect x="464" y="287" width="142" height="58" fill="none" stroke="#F5B700" stroke-width="2.5" />
+    <text x="354" y="384" font-size="14" font-weight="bold" fill="#4B5563">STEP 02</text>
+    <text x="354" y="414" font-size="24" font-weight="bold" fill="#0B1E3C">변화 감지</text>
+    <g font-size="17" fill="#111827">
+      <rect x="354" y="438" width="6" height="6" fill="#F5B700" />
+      <text x="368" y="446">위치·깊이·시간으로 4D 저장</text>
+      <rect x="354" y="466" width="6" height="6" fill="#F5B700" />
+      <text x="368" y="474">AI가 이전 회차와 변화 선별</text>
+      <rect x="354" y="494" width="6" height="6" fill="#F5B700" />
+      <text x="368" y="502">전문가가 원시 데이터로 승인</text>
+    </g>
+  </g>
+  <g id="arrow-23" data-pptx-bounds="628 258 24 18">
+    <line x1="631" y1="267" x2="648" y2="267" stroke="#0B1E3C" stroke-width="2" marker-end="url(#arrowHead)" />
+  </g>
+  <g id="stage-3" data-pptx-bounds="652 182 274 336">
+    <image href="../images/kr_road.jpg" x="652" y="182" width="274" height="170" preserveAspectRatio="xMidYMid slice" />
+    <polygon points="778,278 816,278 844,311 751,311" fill="#F5B700" fill-opacity="0.30" stroke="#F5B700" stroke-width="2" />
+    <rect x="658" y="188" width="104" height="20" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
+    <text x="710" y="203" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">AR 재탐사 범위</text>
+    <text x="652" y="384" font-size="14" font-weight="bold" fill="#4B5563">STEP 03</text>
+    <text x="652" y="414" font-size="24" font-weight="bold" fill="#0B1E3C">현장 재확인</text>
+    <g font-size="17" fill="#111827">
+      <rect x="652" y="438" width="6" height="6" fill="#F5B700" />
+      <text x="666" y="446">앱이 지점·안전 정차 위치 안내</text>
+      <rect x="652" y="466" width="6" height="6" fill="#F5B700" />
+      <text x="666" y="474">AR 글래스 + 수동 GPR 재탐사</text>
+      <rect x="652" y="494" width="6" height="6" fill="#F5B700" />
+      <text x="666" y="502">필요 시 천공·내시경 요청</text>
+    </g>
+  </g>
+  <g id="arrow-34" data-pptx-bounds="926 258 24 18">
+    <line x1="929" y1="267" x2="946" y2="267" stroke="#0B1E3C" stroke-width="2" marker-end="url(#arrowHead)" />
+  </g>
+  <g id="stage-4" data-pptx-bounds="950 182 274 336">
+    <image href="../images/patrol_map_real.png" x="950" y="182" width="274" height="170" preserveAspectRatio="xMidYMid slice" />
+    <rect x="956" y="188" width="92" height="20" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
+    <text x="1002" y="203" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">회차 이력 지도</text>
+    <text x="950" y="384" font-size="14" font-weight="bold" fill="#4B5563">STEP 04</text>
+    <text x="950" y="414" font-size="24" font-weight="bold" fill="#0B1E3C">결과 축적</text>
+    <g font-size="17" fill="#111827">
+      <rect x="950" y="438" width="6" height="6" fill="#F5B700" />
+      <text x="964" y="446">확인·보수 이력을 지도에 저장</text>
+      <rect x="950" y="466" width="6" height="6" fill="#F5B700" />
+      <text x="964" y="474">다음 회차 순찰 경로에 반영</text>
+      <rect x="950" y="494" width="6" height="6" fill="#F5B700" />
+      <text x="964" y="502">AI 검증 데이터로 축적</text>
+    </g>
+  </g>
+  <g id="return-loop" data-pptx-bounds="180 520 920 52">
+    <path d="M1087 524 V552 H193 V530" fill="none" stroke="#4B5563" stroke-width="1.5" stroke-dasharray="5,5" marker-end="url(#loopHead)" />
+    <rect x="470" y="537" width="340" height="30" fill="#FFFFFF" />
+    <text x="640" y="558" font-size="17" font-weight="bold" fill="#0B1E3C" text-anchor="middle">확인 결과가 다음 순찰로 돌아갑니다</text>
+  </g>
+  <g id="role-band" data-pptx-bounds="56 588 1168 52">
+    <rect x="56" y="588" width="4" height="52" fill="#F5B700" />
+    <text x="80" y="621" font-size="21" font-weight="bold" fill="#0B1E3C">AI는 <tspan fill="#B45309">검토 순서</tspan>를 정하고, 판정은 <tspan fill="#B45309">전문가</tspan>가, 최종 확인은 <tspan fill="#B45309">천공·내시경</tspan>이 맡습니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 652 1168 22">
+    <text x="56" y="666" font-size="12" fill="#4B5563">B-scan 비교는 설명용 예시 · PV5: 실차 사진 기반 편집 이미지 · 도로 장면은 연출 이미지 · 지도 데이터 © OpenStreetMap contributors</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">05 / 16</text>
+  </g>
+</svg>

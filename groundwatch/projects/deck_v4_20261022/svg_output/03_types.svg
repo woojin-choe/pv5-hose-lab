@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs>
+    <marker id="chainHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#0B1E3C" />
+    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <rect x="196" y="28" width="44" height="24" fill="#F5B700" />
+    <text x="218" y="45" font-size="13" font-weight="bold" fill="#0B1E3C" text-anchor="middle">문제</text>
+    <text x="252" y="45" font-size="14" fill="#374151">땅꺼짐 유형과 GroundWatch의 대상</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="118" font-size="38" font-weight="bold" fill="#0B1E3C">원인 1위인 얕은 공동은 함몰 전에 찾을 수 있습니다</text>
+  </g>
+  <g id="depth-bands" data-pptx-bounds="56 206 148 290">
+    <rect x="198" y="208" width="4" height="154" fill="#F5B700" />
+    <text x="188" y="250" font-size="16" font-weight="bold" fill="#0B1E3C" text-anchor="end">얕은 층</text>
+    <text x="188" y="272" font-size="15" fill="#111827" text-anchor="end">약 2m 이내</text>
+    <text x="188" y="304" font-size="14" font-weight="bold" fill="#8A5A00" text-anchor="end">차량형 GPR 순찰</text>
+    <text x="188" y="324" font-size="14" font-weight="bold" fill="#8A5A00" text-anchor="end">수동 GPR 재확인</text>
+    <rect x="198" y="368" width="4" height="124" fill="#9AA3AF" />
+    <text x="188" y="414" font-size="16" font-weight="bold" fill="#374151" text-anchor="end">깊은 층</text>
+    <text x="188" y="440" font-size="14" fill="#374151" text-anchor="end">공사장 계측</text>
+    <text x="188" y="460" font-size="14" fill="#374151" text-anchor="end">지반조사</text>
+  </g>
+  <g id="section-figure" data-pptx-bounds="212 172 520 332">
+    <image href="../images/ug_section_cut.png" x="212" y="172" width="520" height="331" preserveAspectRatio="xMidYMid meet" />
+    <g font-size="14" font-weight="bold">
+      <rect x="404" y="214" width="104" height="26" rx="13" fill="#0B1E3C" />
+      <circle cx="418" cy="227" r="10" fill="#F5B700" />
+      <text x="418" y="232" font-size="12" fill="#0B1E3C" text-anchor="middle">3</text>
+      <text x="434" y="232" fill="#FFFFFF">노면 침하</text>
+      <rect x="262" y="270" width="104" height="26" rx="13" fill="#0B1E3C" />
+      <circle cx="276" cy="283" r="10" fill="#F5B700" />
+      <text x="276" y="288" font-size="12" fill="#0B1E3C" text-anchor="middle">2</text>
+      <text x="292" y="288" fill="#FFFFFF">공동 형성</text>
+      <rect x="500" y="320" width="118" height="26" rx="13" fill="#0B1E3C" />
+      <circle cx="514" cy="333" r="10" fill="#F5B700" />
+      <text x="514" y="338" font-size="12" fill="#0B1E3C" text-anchor="middle">1</text>
+      <text x="530" y="338" fill="#FFFFFF">하수관 누수</text>
+      <rect x="370" y="402" width="160" height="26" rx="13" fill="#FFFFFF" stroke="#9AA3AF" stroke-width="1" />
+      <text x="450" y="420" fill="#374151" text-anchor="middle">터널·깊은 지층 결함</text>
+    </g>
+  </g>
+  <g id="figure-caption" data-pptx-bounds="56 522 676 60">
+    <text x="56" y="540" font-size="16" font-weight="bold" fill="#0B1E3C">하수관 누수 → 흙 유실 → 공동 → 노면 침하</text>
+  </g>
+  <g id="cause-stat" data-pptx-bounds="770 160 454 70">
+    <text x="770" y="214" font-size="52" font-weight="bold" fill="#0B1E3C" letter-spacing="-1.5">45.4%</text>
+    <text x="960" y="192" font-size="18" font-weight="bold" fill="#0B1E3C">지반침하 원인 1위 · 하수관 손상</text>
+    <text x="960" y="216" font-size="15" fill="#374151">전국 867건 중 394건 (2020~2024)</text>
+    <line x1="770" y1="236" x2="1224" y2="236" stroke="#D5DAE1" stroke-width="1" />
+  </g>
+  <g id="type-table" data-pptx-bounds="770 252 454 222">
+    <rect x="834" y="252" width="190" height="50" fill="#F5B700" />
+    <text x="848" y="273" font-size="16" font-weight="bold" fill="#0B1E3C">얕은 공동형</text>
+    <text x="848" y="293" font-size="13" font-weight="bold" fill="#0B1E3C">대상 · 예: 연희동 2.5m</text>
+    <rect x="1034" y="252" width="190" height="50" fill="#E5E7EB" />
+    <text x="1048" y="273" font-size="16" font-weight="bold" fill="#374151">심부 붕괴형</text>
+    <text x="1048" y="293" font-size="13" fill="#374151">범위 밖 · 예: 명일동 16m</text>
+    <rect x="834" y="302" width="190" height="172" fill="#FFF6D6" />
+    <g font-size="14" font-weight="bold" fill="#374151">
+      <text x="770" y="332">원인</text>
+      <text x="770" y="390">징후</text>
+      <text x="770" y="448">대응</text>
+    </g>
+    <line x1="770" y1="360" x2="1224" y2="360" stroke="#E5E7EB" stroke-width="1" />
+    <line x1="770" y1="418" x2="1224" y2="418" stroke="#E5E7EB" stroke-width="1" />
+    <g font-size="15" fill="#111827">
+      <text x="848" y="324">하수관 손상으로<tspan x="848" dy="20">흙이 쓸려 나감</tspan></text>
+      <text x="848" y="382">공동이 먼저 생김<tspan x="848" dy="20" font-weight="bold">함몰 전 탐지 가능</tspan></text>
+      <text x="848" y="440">차량형 GPR 반복 순찰<tspan x="848" dy="20">+ 수동 GPR 재확인</tspan></text>
+    </g>
+    <g font-size="15" fill="#374151">
+      <text x="1048" y="324">깊은 지층 결함·지하수위<tspan x="1048" dy="20">저하·터널 공사 영향</tspan></text>
+      <text x="1048" y="382">지표 탐사로는<tspan x="1048" dy="20">확인이 어려움</tspan></text>
+      <text x="1048" y="440">공사장 계측·지반조사<tspan x="1048" dy="20">(GroundWatch 범위 밖)</tspan></text>
+    </g>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 604 1168 50">
+    <rect x="56" y="604" width="4" height="50" fill="#F5B700" />
+    <text x="80" y="636" font-size="20" font-weight="bold" fill="#0B1E3C">한 번의 탐사가 아니라 <tspan fill="#B45309">회차 사이의 변화</tspan>로, 얕은 공동을 함몰 전에 찾습니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 664 1168 20">
+    <text x="56" y="678" font-size="12" fill="#4B5563">출처: 국토교통부 지반침하 원인 통계(2020~2024) · 국토교통부 명일동 사고조사(2025.12.3) · 단면도는 원리 설명용 도식</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">한 명이라도 살릴 수 있다면</text>
+    <text x="1224" y="706" text-anchor="end">03 / 16</text>
+  </g>
+</svg>

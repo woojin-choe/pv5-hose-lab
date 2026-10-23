@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <text x="210" y="45" font-size="14" fill="#374151">기술 실증 계획</text>
+    <text x="900" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">문제</text>
+    <text x="933" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="966" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">해법</text>
+    <text x="999" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1032" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">PV5</text>
+    <text x="1065" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1098" y="45" font-size="14" font-weight="bold" fill="#0B1E3C" text-anchor="middle">검증</text>
+    <rect x="1074" y="54" width="48" height="3" fill="#F5B700" />
+    <text x="1131" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1164" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">사업</text>
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">남은 질문은 4가지, 4단계로 실증합니다</text>
+  </g>
+  <g id="lead" data-pptx-bounds="56 138 1168 28">
+    <text x="56" y="160" font-size="19" fill="#374151">공동이 단기간에 자랄 수 있다는 것은 연구로 확인됐습니다(4장). 남은 건 <tspan font-weight="bold" fill="#0B1E3C">PV5에 실었을 때도 정확한가</tspan>입니다.</text>
+  </g>
+  <g id="questions" data-pptx-bounds="56 186 1168 236">
+    <g font-size="14" font-weight="bold" fill="#4B5563">
+      <text x="56" y="206">확인할 질문</text>
+      <text x="520" y="206">안 되면</text>
+      <text x="820" y="206">어떻게 확인하나</text>
+    </g>
+    <line x1="56" y1="216" x2="1224" y2="216" stroke="#0B1E3C" stroke-width="1.5" />
+    <text x="56" y="254" font-size="15" font-weight="bold" fill="#4B5563">1</text>
+    <text x="80" y="254" font-size="19" font-weight="bold" fill="#0B1E3C">EV 구동계와 GPR의 전자파 간섭</text>
+    <text x="520" y="254" font-size="17" fill="#C62828">차량에서 측정 자체가 불가</text>
+    <text x="820" y="254" font-size="17" fill="#111827">주행·정차·V2L 상태별 잡음 비교</text>
+    <line x1="56" y1="272" x2="1224" y2="272" stroke="#E2E6EC" stroke-width="1" />
+    <text x="56" y="302" font-size="15" font-weight="bold" fill="#4B5563">2</text>
+    <text x="80" y="302" font-size="19" font-weight="bold" fill="#0B1E3C">회차마다 같은 자리를 찍는가</text>
+    <text x="520" y="302" font-size="17" fill="#C62828">변화 비교가 불가</text>
+    <text x="820" y="302" font-size="17" fill="#111827">8cm 어긋남이 최대 오탐(6장) → RTK·IMU 정합</text>
+    <line x1="56" y1="320" x2="1224" y2="320" stroke="#E2E6EC" stroke-width="1" />
+    <text x="56" y="350" font-size="15" font-weight="bold" fill="#4B5563">3</text>
+    <text x="80" y="350" font-size="19" font-weight="bold" fill="#0B1E3C">AI가 변화를 맞게 고르는가</text>
+    <text x="520" y="350" font-size="17" fill="#C62828">재확인 출동이 과다</text>
+    <text x="820" y="350" font-size="17" fill="#111827">시뮬레이션 통과(6장) → 공동 모사체 실측</text>
+    <line x1="56" y1="368" x2="1224" y2="368" stroke="#E2E6EC" stroke-width="1" />
+    <text x="56" y="398" font-size="15" font-weight="bold" fill="#4B5563">4</text>
+    <text x="80" y="398" font-size="19" font-weight="bold" fill="#0B1E3C">밤에 AR이 정확히 맞는가</text>
+    <text x="520" y="398" font-size="17" fill="#C62828">현장 탐색 범위가 커짐</text>
+    <text x="820" y="398" font-size="17" fill="#111827">맨홀·경계석 기준점 오차 측정</text>
+  </g>
+  <g id="stages" data-pptx-bounds="56 446 1168 130">
+    <text x="56" y="466" font-size="15" font-weight="bold" fill="#4B5563">실증 순서</text>
+    <rect x="56" y="480" width="278" height="94" fill="#F3F5F8" />
+    <rect x="56" y="480" width="278" height="4" fill="#0B1E3C" />
+    <text x="74" y="508" font-size="14" font-weight="bold" fill="#B45309">1단계 · 질문 1</text>
+    <text x="74" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">폐쇄 시험장</text>
+    <text x="74" y="562" font-size="15" fill="#0B1E3C">통과 → 차량 측정 가능</text>
+    <text x="342" y="536" font-size="18" fill="#4B5563">›</text>
+    <rect x="353" y="480" width="278" height="94" fill="#F3F5F8" />
+    <rect x="353" y="480" width="278" height="4" fill="#0B1E3C" />
+    <text x="371" y="508" font-size="14" font-weight="bold" fill="#B45309">2단계 · 질문 2·3</text>
+    <text x="371" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">통제된 시험 구간</text>
+    <text x="371" y="562" font-size="15" fill="#0B1E3C">통과 → 회차 비교 가능</text>
+    <text x="639" y="536" font-size="18" fill="#4B5563">›</text>
+    <rect x="650" y="480" width="278" height="94" fill="#F3F5F8" />
+    <rect x="650" y="480" width="278" height="4" fill="#0B1E3C" />
+    <text x="668" y="508" font-size="14" font-weight="bold" fill="#B45309">3단계 · 질문 3·4</text>
+    <text x="668" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">실제 도로 위험구간</text>
+    <text x="668" y="562" font-size="15" fill="#0B1E3C">통과 → 실증확인서</text>
+    <text x="936" y="536" font-size="18" fill="#4B5563">›</text>
+    <rect x="947" y="480" width="278" height="94" fill="#F3F5F8" />
+    <rect x="947" y="480" width="278" height="4" fill="#F5B700" />
+    <text x="965" y="508" font-size="14" font-weight="bold" fill="#B45309">4단계 · 소요시간·재방문</text>
+    <text x="965" y="536" font-size="20" font-weight="bold" fill="#0B1E3C">실제 운영</text>
+    <text x="965" y="562" font-size="15" fill="#0B1E3C">통과 → 연간 관제 계약</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 600 1168 44">
+    <rect x="56" y="600" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="630" font-size="21" font-weight="bold" fill="#0B1E3C">정확도 숫자를 미리 약속하지 않고, 단계마다 통과 조건을 둡니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#4B5563">인허가: 도로 영상은 개인정보보호법 제25조의2(2023.9)대로 차량 외부 표시 · GPR 전파 적합성평가·튜닝 승인은 사업화 전 확인 · 출처: 일본 국토교통성 연구(2021)</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">10 / 13</text>
+  </g>
+</svg>
