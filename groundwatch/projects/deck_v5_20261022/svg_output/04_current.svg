@@ -26,7 +26,7 @@
   <g id="stats" data-pptx-bounds="56 462 520 100">
     <rect x="56" y="466" width="160" height="3" fill="#0B1E3C" />
     <text x="56" y="504" font-size="28" font-weight="bold" fill="#0B1E3C">33,129km</text>
-    <text x="56" y="530" font-size="15" font-weight="bold" fill="#111827">누적 차량 GPR 탐사</text>
+    <text x="56" y="530" font-size="15" font-weight="bold" fill="#111827">누적 GPR 탐사</text>
     <text x="56" y="552" font-size="15" fill="#374151">2014~2025.9</text>
     <rect x="236" y="466" width="160" height="3" fill="#0B1E3C" />
     <text x="236" y="504" font-size="28" font-weight="bold" fill="#0B1E3C">7,760개</text>

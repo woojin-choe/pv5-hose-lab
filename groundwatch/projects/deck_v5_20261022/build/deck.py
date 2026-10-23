@@ -143,7 +143,7 @@ svg("02_incident.svg", head("문제", "실제로 일어난 일", nav=False) + f'
     <text x="636" y="358" font-size="16" font-weight="bold" fill="{RED}" text-anchor="end">2024. 8. 29</text>
     <text x="636" y="380" font-size="15" fill="{RED}" text-anchor="end">도로 함몰</text>
     <text x="356" y="440" font-size="16" fill="{SUB}" text-anchor="middle">그 사이 지하에서 무슨 일이 있었는지는 기록이 없습니다</text>
-    <text x="356" y="464" font-size="15" font-weight="bold" fill="{RED}" text-anchor="middle">같은 날, 약 30m 옆에서도 도로 침하가 하나 더 발견됐습니다</text>
+    <text x="356" y="464" font-size="15" font-weight="bold" fill="{RED}" text-anchor="middle">다음 날, 약 30m 옆에서도 도로 침하가 하나 더 발견됐습니다</text>
   </g>
   <g id="facts" data-pptx-bounds="56 488 600 110">
     <line x1="56" y1="492" x2="636" y2="492" stroke="{LINE}" stroke-width="1" />
@@ -176,15 +176,15 @@ svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹�
     <text x="56" y="456" font-size="18" font-weight="bold" fill="{RED}">연희동: 탐사 ‘이상 없음’에서 함몰까지</text>
     <rect x="56" y="470" width="35" height="34" fill="{RED}" />
     <text x="103" y="496" font-size="26" font-weight="bold" fill="{RED}">100여 일</text>
-    <text x="56" y="538" font-size="15" fill="{SUB}">공사장 주변은 2026년부터 주·월 1회 탐사하지만, 회차마다 따로 판독합니다.</text>
-    <text x="56" y="560" font-size="15" fill="{SUB}">사고 뒤 정한 성산로 월 1회 탐사도 계약 절차로 반년 넘게 시행되지 못했습니다.</text>
+    <text x="56" y="538" font-size="15" fill="{SUB}">공사장 주변은 2025년부터 주·월 1회 탐사하지만, 회차마다 따로 판독합니다.</text>
+    <text x="56" y="560" font-size="15" fill="{SUB}">사고 뒤 정한 성산로 월 1회 탐사도 입찰·계약 절차로 이듬해 3월까지 못 했습니다.</text>
   </g>
   <g id="evidence" data-pptx-bounds="784 168 440 392">
     <rect x="784" y="168" width="440" height="3" fill="{NAVY}" />
     <text x="784" y="204" font-size="15" font-weight="bold" fill="{AMB}">같은 공동을 다시 보면 · 서울 실측</text>
     <text x="784" y="256" font-size="36" font-weight="bold" fill="{NAVY}">30곳 중 21곳 크기 변화</text>
-    <text x="784" y="288" font-size="16" fill="{SUB}">서울 11개 자치구 공동을 차량 GPR로 재탐사</text>
-    <text x="784" y="310" font-size="16" fill="{SUB}">(발견 후 209~989일 · 인천대 연구, 2020)</text>
+    <text x="784" y="288" font-size="16" fill="{SUB}">서울 11개 자치구 공동 30곳을 209~989일 뒤 재탐사</text>
+    <text x="784" y="310" font-size="16" fill="{SUB}">9곳은 그사이 복구, 다시 잰 21곳 모두 변화 (인천대, 2020)</text>
     <line x1="784" y1="338" x2="1224" y2="338" stroke="{LINE}" stroke-width="1" />
     <text x="784" y="372" font-size="17" fill="{INK}"><tspan font-weight="bold" fill="{RED}">1년이 안 돼</tspan> ‘관찰’ → ‘우선복구’로 등급 상승</text>
     <text x="784" y="398" font-size="17" fill="{INK}">13곳은 크기와 함께 관리 등급도 바뀜</text>
@@ -196,8 +196,8 @@ svg("03_blindspot.svg", head("문제", "지금 체계의 맹점") + title("맹�
     <text x="784" y="572" font-size="15" fill="{SUB}">2022~2026.6 · 찾은 뒤에도 다시 봐야 할 곳이 쌓여 있습니다</text>
   </g>
   {band(596, "한 번의 탐사는 그 시점만 말해 줍니다. 그 사이의 ‘변화’를 봐야 합니다.").strip()}
-''' + foot2(3, "출처: 지하안전법(공동조사 5년 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 박정준·김인대, 한국재난정보학회논문집 16(1)(2020)",
-            "서울시(2026.3.23, 공사장 주변 탐사) · 경향신문(2025.3.28, 성산로 월 1회 탐사) · 경북매일(2026.9.2, 국토안전관리원 미복구 공동 자료)"))
+''' + foot2(3, "출처: 지하안전법 시행규칙 별표 3(공동조사 5년마다 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 박정준·김인대, 한국재난정보학회논문집 16(1)(2020)",
+            "메트로신문(2025.10.19, 공사장 주변 탐사) · 경향신문(2025.3.28, 성산로 월 1회 탐사) · 경북매일(2026.9.2, 국토안전관리원 미복구 공동 자료)"))
 
 # ---------------------------------------------------------------- 04 대상
 svg("04_target.svg", head("문제", "우리가 막을 대상") + title("땅꺼짐 원인 1위는 하수관 손상, 그 위 2m가 탐사 대상입니다") + f'''  <g id="section" data-pptx-bounds="56 160 640 420">
@@ -227,7 +227,7 @@ svg("04_target.svg", head("문제", "우리가 막을 대상") + title("땅꺼�
     <text x="744" y="504" font-size="16" fill="{SUB}">예: 명일동(깊이 16m) · 깊은 굴착 공사장은 계측이 맡음</text>
   </g>
   {band(600, "차량형 GPR이 보는 깊이(약 2m)에, 가장 흔한 원인이 있습니다.").strip()}
-''' + foot(4, "출처: 국토교통부 지반침하 원인 통계(2020~2024)·명일동 사고조사(2025.12.3) · 서울시 차량형 GPR 탐사 깊이 약 2m · 이투데이(2025.4.23) · 단면도는 원리 설명용"))
+''' + foot(4, "출처: 국토교통부 지반침하 원인 통계(2020~2024)·명일동 사고조사(2025.12.3) · 이투데이(2025.4.23, GPR 탐지 깊이 약 2m) · 단면도는 원리 설명용"))
 
 # ---------------------------------------------------------------- 05 해법
 svg("05_solution.svg", head("해법", "GroundWatch의 핵심") + title("같은 길을 약 2개월마다 다시 찍고, 달라진 곳만 다시 봅니다") + f'''  <g id="compare" data-pptx-bounds="56 160 680 400">
@@ -674,7 +674,7 @@ def solution2():
     <text x="196" y="542" font-size="16" fill="{MUTE}">별도 2차 조사</text>
     <text x="348" y="542" font-size="16" fill="{MUTE}">→</text>
     <text x="396" y="542" font-size="17" font-weight="bold" fill="{NAVY}">같은 차에서 바로</text>
-    <text x="56" y="571" font-size="13" fill="{MUTE}">기존: 서울시 공사장 주변 주·월 1회 탐사(2026) · AI 판독은 서울시도 2020년부터 사용</text>
+    <text x="56" y="571" font-size="13" fill="{MUTE}">기존: 서울시 공사장 주변 주·월 1회 탐사(2025~) · AI 판독은 서울시도 2020년부터 사용</text>
   </g>
   <g id="proof" data-pptx-bounds="664 410 560 176">
     <rect x="664" y="412" width="560" height="3" fill="{NAVY}" />
@@ -990,7 +990,7 @@ def current():
   </g>
   <g id="stats" data-pptx-bounds="56 462 520 100">
 """
-    stats = [("33,129km", "누적 차량 GPR 탐사", "2014~2025.9"), ("7,760개", "같은 기간 찾은 공동", "약 4.3km마다 1개"),
+    stats = [("33,129km", "누적 GPR 탐사", "2014~2025.9"), ("7,760개", "같은 기간 찾은 공동", "약 4.3km마다 1개"),
              ("16,423km", "2026년 탐사 계획", "인력 9명 → 19명")]
     x = 56
     for v, k, d in stats:

@@ -38,7 +38,7 @@
     <text x="636" y="358" font-size="16" font-weight="bold" fill="#C62828" text-anchor="end">2024.8.29</text>
     <text x="636" y="380" font-size="15" fill="#C62828" text-anchor="end">도로 함몰</text>
     <text x="356" y="440" font-size="16" fill="#374151" text-anchor="middle">그 사이 지하에서 무슨 일이 있었는지는 기록이 없습니다</text>
-    <text x="356" y="464" font-size="15" font-weight="bold" fill="#C62828" text-anchor="middle">같은 날, 약 30m 옆에서도 도로 침하가 하나 더 발견됐습니다</text>
+    <text x="356" y="464" font-size="15" font-weight="bold" fill="#C62828" text-anchor="middle">다음 날, 약 30m 옆에서도 도로 침하가 하나 더 발견됐습니다</text>
   </g>
   <g id="facts" data-pptx-bounds="56 488 600 110">
     <line x1="56" y1="492" x2="636" y2="492" stroke="#E2E6EC" stroke-width="1" />
