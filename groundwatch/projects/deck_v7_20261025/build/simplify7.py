@@ -208,3 +208,86 @@ def run(G, OUT):
     f = "03_incident.svg"; t = read(f)
     t = re.sub(r'\n    <text [^>]*>다음 날, 약 30m 옆에서도[^<]*</text>', "", t)
     open(path(f), "w", encoding="utf-8").write(t)
+
+
+def finalize(G, OUT):
+    """제목을 '이 장에서 말하고 싶은 한 문장'으로 짧게 바꾸고 44px로 키운다. 빽빽한 장은 다시 짠다."""
+    head, svg, band = G["head"], G["svg"], G["band"]
+    path = lambda f: os.path.join(OUT, f)
+    read = lambda f: open(path(f), encoding="utf-8").read()
+
+    def keep_tail(t):
+        s = re.search(r'  <g id="source".*?\n  </g>\n', t, re.S).group(0)
+        return s + re.search(r'  <g id="footer".*?\n  </g>\n', t, re.S).group(0)
+
+    def title(t):
+        return f'  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">\n    <text x="56" y="128" font-size="44" font-weight="bold" fill="{NAVY}">{t}</text>\n  </g>\n'
+
+    # ---- 9 요약 → 숫자 셋
+    f = "02_summary.svg"; tail = keep_tail(read(f))
+    nums = [("100여 일", "‘이상 없음’에서 함몰까지", "2024 연희동", RED),
+            ("2.4배", "자란 공동이 오탐보다 뚜렷", "전자기 시뮬레이션", NAVY),
+            ("최대 88대", "전국 지자체 탐사형 PV5", "차량 매출 약 40억 원", NAVY)]
+    b = '  <g id="keynum" data-pptx-bounds="56 190 1168 260">\n'
+    for k, (v, l1, l2, c) in enumerate(nums):
+        x = 56 + 400 * k
+        b += f'    <rect x="{x}" y="200" width="368" height="4" fill="{c}" />\n'
+        b += f'    <text x="{x}" y="310" font-size="80" font-weight="bold" fill="{c}" letter-spacing="-3">{v}</text>\n'
+        b += f'    <text x="{x}" y="362" font-size="24" font-weight="bold" fill="{INK}">{l1}</text>\n'
+        b += f'    <text x="{x}" y="396" font-size="18" fill="{MUTE}">{l2}</text>\n'
+    b += "  </g>\n" + band(500, "기아 PV5 AI 순찰차가 도로 위를 본다면, GroundWatch는 도로 아래를 봅니다.")
+    svg(f, head("", "한 장 요약") + title("숫자 세 개로 보는 GroundWatch") + b + tail)
+
+    # ---- 13 왜 PV5: 부제·각주 줄 삭제, 기능 글씨 키움
+    f = "10_why_pv5.svg"; t = read(f)
+    t = re.sub(r'  <g id="lead".*?\n  </g>\n', "", t, flags=re.S)
+    t = re.sub(r'\n    <text x="56" y="384"[^\n]*</text>', "", t)
+    t = t.replace('font-size="21" font-weight="bold" fill="#0B1E3C">', 'font-size="24" font-weight="bold" fill="#0B1E3C">')
+    t = re.sub(r'(<text x="\d+" y="484") font-size="18"', r'\1 font-size="19"', t)
+    open(path(f), "w", encoding="utf-8").write(t)
+
+    # ---- 14 검증: 상자 글씨 키움
+    f = "11_verify.svg"; t = read(f)
+    t = t.replace('font-size="26" font-weight="bold" fill="#0B1E3C">', 'font-size="28" font-weight="bold" fill="#0B1E3C">')
+    t = re.sub(r'(y="(368|448)") font-size="18"', r'\1 font-size="20"', t)
+    open(path(f), "w", encoding="utf-8").write(t)
+
+    # ---- 17 진입: 큰 숫자 하나 + 단계 넷
+    f = "14_entry.svg"; tail = keep_tail(read(f))
+    b = f'''  <g id="hero" data-pptx-bounds="56 180 520 300">
+    <text x="56" y="218" font-size="18" font-weight="bold" fill="{AMB}">지자체가 이미 쓰는 GPR 용역 예산 · 2026 낙찰</text>
+    <text x="56" y="320" font-size="76" font-weight="bold" fill="{NAVY}" letter-spacing="-3">1~2억 원</text>
+    <text x="56" y="366" font-size="22" font-weight="bold" fill="{INK}">안양·강동구·용인, 건당 0.85억~1.90억 원</text>
+    <text x="56" y="400" font-size="18" fill="{MUTE}">경기도는 16개 시·군 탐사에 21.6억 원 지원(2025.9)</text>
+  </g>
+  <g id="road" data-pptx-bounds="640 180 584 320">
+    <line x1="652" y1="210" x2="652" y2="437" stroke="{LINE}" stroke-width="2" />
+'''
+    steps = [("수상 후 6개월", "PV5 실물 대여로 폐쇄 시험장 실증", YEL), ("1~2년", "조사기관과 시·군 용역 공동 수주", NAVY),
+             ("2~3년", "혁신제품 지정 → 연간 관제 계약", NAVY), ("3년~", "권역별 PV5 플릿 구매", NAVY)]
+    y = 210
+    for when, what, c in steps:
+        b += f'    <circle cx="652" cy="{y - 7}" r="8" fill="{c}" />\n'
+        b += f'    <text x="676" y="{y}" font-size="22" font-weight="bold" fill="{NAVY}">{when}</text>\n'
+        b += f'    <text x="676" y="{y + 32}" font-size="19" fill="{INK}">{what}</text>\n'
+        y += 78
+    b += '  </g>\n'
+    b += band(540, "새 예산이 아니라 이미 쓰는 탐사 예산에서, 기아와 함께 첫 실증을 만듭니다.")
+    svg(f, head("사업", "첫 고객과 기아와 할 일") + title("지자체 예산에서 바로 시작합니다") + b + tail)
+
+    # ---- 나머지 장: 제목만 짧고 크게
+    titles = {"04_current.svg": "탐사는 이미 합니다. 한 번 보고 끝날 뿐입니다",
+              "05_blindspot.svg": "문제는 탐사와 탐사 ‘사이’입니다",
+              "06_target.svg": "원인 1위 하수관 손상, 땅속 2m 안에 있습니다",
+              "07_solution.svg": "같은 길을 다시 찍고, 달라진 곳만 봅니다",
+              "08_field.svg": "찾은 지점은 현장에서 바로 확인합니다",
+              "09_pv5_lab.svg": "PV5 한 대가 이동형 탐사실이 됩니다",
+              "10_why_pv5.svg": "어느 PV5가 재도, 같은 기준으로 잽니다",
+              "11_verify.svg": "남은 질문은 4단계로 검증합니다",
+              "12_economics.svg": "km당 4.7만 원이면 됩니다",
+              "13_players.svg": "기아는 공공 PV5 시장을 엽니다"}
+    for f, tt in titles.items():
+        t = read(f)
+        t, n = re.subn(r'  <g id="title".*?\n  </g>\n', lambda m: title(tt), t, count=1, flags=re.S)
+        assert n == 1, f
+        open(path(f), "w", encoding="utf-8").write(t)

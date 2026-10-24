@@ -16,8 +16,8 @@
     <text x="1164" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">사업</text>
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
-  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">땅꺼짐 원인 1위는 하수관 손상, 그 위 2m가 탐사 대상입니다</text>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="44" font-weight="bold" fill="#0B1E3C">원인 1위 하수관 손상, 땅속 2m 안에 있습니다</text>
   </g>
   <g id="section" data-pptx-bounds="56 160 640 420">
     <image href="../images/ug_section_cut.png" x="56" y="166" width="640" height="407" preserveAspectRatio="xMidYMid meet" />

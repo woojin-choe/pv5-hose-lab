@@ -16,8 +16,8 @@
     <rect x="1140" y="54" width="48" height="3" fill="#F5B700" />
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
-  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">반복 탐사는 km당 약 4.7만 원이면 원가가 맞습니다</text>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="44" font-weight="bold" fill="#0B1E3C">km당 4.7만 원이면 됩니다</text>
   </g>
   <g id="hero" data-pptx-bounds="56 160 520 260">
     <text x="56" y="200" font-size="17" font-weight="bold" fill="#B45309">반복 탐사 1회 원가 [가설]</text>

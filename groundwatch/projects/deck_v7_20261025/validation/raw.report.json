@@ -2,15 +2,15 @@
   "schema": "ppt-master.pptx-postflight-report.v1",
   "status": "passed-with-warnings",
   "output": {
-    "path": "/private/tmp/claude-501/-Users-seohogyun-Documents-git-workspace-pv5-hose-lab/3d0b9843-8a01-4867-83c1-0215867cfe7f/scratchpad/v7f/raw.pptx",
-    "bytes": 10023100
+    "path": "/private/tmp/claude-501/-Users-seohogyun-Documents-git-workspace-pv5-hose-lab/3d0b9843-8a01-4867-83c1-0215867cfe7f/scratchpad/v7h/raw.pptx",
+    "bytes": 10021395
   },
   "source": {
     "svg_slide_count": 18,
     "layout_definition_count": 0,
     "fingerprint": {
       "algorithm": "sha256",
-      "digest": "cca9e1274fc9b504ff0841a375a988e385837d14064b1570522bbe685f5d6d1a",
+      "digest": "a0a23afff2c6d6f4dc4ca1c309aaadcbb570365dafebc714d54afbd6dbd2a8d3",
       "file_count": 18,
       "files": [
         {
@@ -23,15 +23,15 @@
         },
         {
           "file": "03_current.svg",
-          "sha256": "4922e745c732d1704c91683d9dd541b8ff137d331a412ae5c43e55b0bc999113"
+          "sha256": "763e15b322bdd63d223fc93644f8e28559ae726581d0d22e8c0e5f484d7c1132"
         },
         {
           "file": "04_blindspot.svg",
-          "sha256": "7c02f99d5cdcfa94fdd03430cecd3fcc002ac0e45bcfdb8d25ae21b44eb01156"
+          "sha256": "c5119be561414217b677f7d2e0734f7fc5dacd019be7ff7f571e9f2f1e402ed0"
         },
         {
           "file": "05_target.svg",
-          "sha256": "b7192521c9eec7cc837389b70826138cca7b165e08372524ba8744430aaf5cd2"
+          "sha256": "2e6cebf5d42eee2cca691da3eb52eca143177eb2df867efb52b770e65903f265"
         },
         {
           "file": "06_q_more.svg",
@@ -47,39 +47,39 @@
         },
         {
           "file": "09_summary.svg",
-          "sha256": "f17c3e8ab017ee3959668bdd6389e9bfbd505ed2f2d694b9d1cdd622ad3be357"
+          "sha256": "d75d85bf90126fbc0b2094192f74fd100fe83b2ed73285b913e96f3e85b0861f"
         },
         {
           "file": "10_solution.svg",
-          "sha256": "3c80d63018bf8a8891dcbef18b4a4b172c94cd19b7f522bf43a3fc9c4639228d"
+          "sha256": "56f2fa30a623e1be8df88bc333305252ad495f21f2f291ff80ab9662e32c9a7a"
         },
         {
           "file": "11_field.svg",
-          "sha256": "6d31f5f906828810316fb7905c0dd5c92b6b1b29ed234c8d75dae73a388e6b3a"
+          "sha256": "eb9848569fa86a76813e9b9072b9d57d110fd85cc6d0378a0a76cd1f1e07957e"
         },
         {
           "file": "12_pv5_lab.svg",
-          "sha256": "a4d07b21f1ba34f324b3d6cbc1134a04141b7bba8f295dd0dfad417ae84f42dc"
+          "sha256": "b0772f455058d6baf4a969a3d0fa7c7481eb40c0ccca21fc77dc19f8f5c88c81"
         },
         {
           "file": "13_why_pv5.svg",
-          "sha256": "5eb238b475ba111251cfdc021fc66a70632d10e5694b6a345d6bf4161be3b527"
+          "sha256": "b3433f78c86464b75e32d0376c07fe970b5746c0cd9dcfdbadbbb20af23eb8e8"
         },
         {
           "file": "14_verify.svg",
-          "sha256": "c6e95635cb45eeb2ef0c78b23d80c19e8b7c28c60b865a6c8a429d4a59420418"
+          "sha256": "a6466767ca90073277579280323e3cc0c2ad9e58d12fdace5ccdd56db66744bb"
         },
         {
           "file": "15_economics.svg",
-          "sha256": "3283303b9efa5f66c7fcdc39d46829d866809dc79303860e3954aa61f5debf2a"
+          "sha256": "eaf1308f4d3c3d9d31c204d41704c1026725e44aa3970e250d666a600bf1c7b9"
         },
         {
           "file": "16_players.svg",
-          "sha256": "a4dc878c994a8c4fed96669f8c29e0836b92720273190ae3f040be5cf798b752"
+          "sha256": "e493e071735dd293d4c1e9f4ddd0b22071251980c20f79a2fe1d82549c71c5db"
         },
         {
           "file": "17_entry.svg",
-          "sha256": "b0c5071eb87a36fe21dcb6c8dab199692eb0ff1ac62c49a1b42535a3239f2321"
+          "sha256": "b0a1f0fcdfd1b0e531669c18b3490b4c5bfb16b6361507ad3167184bbb1a9aaf"
         },
         {
           "file": "18_close.svg",
@@ -121,7 +121,7 @@
     "source_match": "passed",
     "source_fingerprint": {
       "algorithm": "sha256",
-      "digest": "cca9e1274fc9b504ff0841a375a988e385837d14064b1570522bbe685f5d6d1a",
+      "digest": "a0a23afff2c6d6f4dc4ca1c309aaadcbb570365dafebc714d54afbd6dbd2a8d3",
       "file_count": 18,
       "files": [
         {
@@ -134,15 +134,15 @@
         },
         {
           "file": "03_current.svg",
-          "sha256": "4922e745c732d1704c91683d9dd541b8ff137d331a412ae5c43e55b0bc999113"
+          "sha256": "763e15b322bdd63d223fc93644f8e28559ae726581d0d22e8c0e5f484d7c1132"
         },
         {
           "file": "04_blindspot.svg",
-          "sha256": "7c02f99d5cdcfa94fdd03430cecd3fcc002ac0e45bcfdb8d25ae21b44eb01156"
+          "sha256": "c5119be561414217b677f7d2e0734f7fc5dacd019be7ff7f571e9f2f1e402ed0"
         },
         {
           "file": "05_target.svg",
-          "sha256": "b7192521c9eec7cc837389b70826138cca7b165e08372524ba8744430aaf5cd2"
+          "sha256": "2e6cebf5d42eee2cca691da3eb52eca143177eb2df867efb52b770e65903f265"
         },
         {
           "file": "06_q_more.svg",
@@ -158,39 +158,39 @@
         },
         {
           "file": "09_summary.svg",
-          "sha256": "f17c3e8ab017ee3959668bdd6389e9bfbd505ed2f2d694b9d1cdd622ad3be357"
+          "sha256": "d75d85bf90126fbc0b2094192f74fd100fe83b2ed73285b913e96f3e85b0861f"
         },
         {
           "file": "10_solution.svg",
-          "sha256": "3c80d63018bf8a8891dcbef18b4a4b172c94cd19b7f522bf43a3fc9c4639228d"
+          "sha256": "56f2fa30a623e1be8df88bc333305252ad495f21f2f291ff80ab9662e32c9a7a"
         },
         {
           "file": "11_field.svg",
-          "sha256": "6d31f5f906828810316fb7905c0dd5c92b6b1b29ed234c8d75dae73a388e6b3a"
+          "sha256": "eb9848569fa86a76813e9b9072b9d57d110fd85cc6d0378a0a76cd1f1e07957e"
         },
         {
           "file": "12_pv5_lab.svg",
-          "sha256": "a4d07b21f1ba34f324b3d6cbc1134a04141b7bba8f295dd0dfad417ae84f42dc"
+          "sha256": "b0772f455058d6baf4a969a3d0fa7c7481eb40c0ccca21fc77dc19f8f5c88c81"
         },
         {
           "file": "13_why_pv5.svg",
-          "sha256": "5eb238b475ba111251cfdc021fc66a70632d10e5694b6a345d6bf4161be3b527"
+          "sha256": "b3433f78c86464b75e32d0376c07fe970b5746c0cd9dcfdbadbbb20af23eb8e8"
         },
         {
           "file": "14_verify.svg",
-          "sha256": "c6e95635cb45eeb2ef0c78b23d80c19e8b7c28c60b865a6c8a429d4a59420418"
+          "sha256": "a6466767ca90073277579280323e3cc0c2ad9e58d12fdace5ccdd56db66744bb"
         },
         {
           "file": "15_economics.svg",
-          "sha256": "3283303b9efa5f66c7fcdc39d46829d866809dc79303860e3954aa61f5debf2a"
+          "sha256": "eaf1308f4d3c3d9d31c204d41704c1026725e44aa3970e250d666a600bf1c7b9"
         },
         {
           "file": "16_players.svg",
-          "sha256": "a4dc878c994a8c4fed96669f8c29e0836b92720273190ae3f040be5cf798b752"
+          "sha256": "e493e071735dd293d4c1e9f4ddd0b22071251980c20f79a2fe1d82549c71c5db"
         },
         {
           "file": "17_entry.svg",
-          "sha256": "b0c5071eb87a36fe21dcb6c8dab199692eb0ff1ac62c49a1b42535a3239f2321"
+          "sha256": "b0a1f0fcdfd1b0e531669c18b3490b4c5bfb16b6361507ad3167184bbb1a9aaf"
         },
         {
           "file": "18_close.svg",
@@ -210,7 +210,7 @@
         "issues": []
       },
       "introduced": {
-        "count": 36,
+        "count": 47,
         "issues": [
           {
             "file": "01_open.svg",
@@ -241,8 +241,16 @@
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
           },
           {
+            "file": "03_current.svg",
+            "message": "<text> (x=56, y=128; text='탐사는 이미 합니다. 한 번 보고 끝…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(987.0, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          },
+          {
             "file": "04_blindspot.svg",
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+          },
+          {
+            "file": "04_blindspot.svg",
+            "message": "<text> (x=56, y=128; text='문제는 탐사와 탐사 ‘사이’입니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(734.1, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
           },
           {
             "file": "04_blindspot.svg",
@@ -251,6 +259,10 @@
           {
             "file": "05_target.svg",
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+          },
+          {
+            "file": "05_target.svg",
+            "message": "<text> (x=56, y=128; text='원인 1위 하수관 손상, 땅속 2m …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(982.5, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
           },
           {
             "file": "05_target.svg",
@@ -302,11 +314,15 @@
           },
           {
             "file": "09_summary.svg",
-            "message": "<text> (x=848, y=438; text='전국 지자체가 쓸 탐사형 PV5 (1…') exceeds <g id=\"keynum\"> data-pptx-bounds on the horizontal axis: content (848.0, 425.2)-(1271.0, 443.2), container (56.0, 296.0)-(1224.0, 456.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.1 px per mixed char at 15px incl. headroom; ≈77 chars fit in 1168 px"
+            "message": "<text> (x=56, y=128; text='숫자 세 개로 보는 GroundWat…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(717.8, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
           },
           {
             "file": "10_solution.svg",
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+          },
+          {
+            "file": "10_solution.svg",
+            "message": "<text> (x=56, y=128; text='같은 길을 다시 찍고, 달라진 곳만 …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(883.6, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
           },
           {
             "file": "10_solution.svg",
@@ -317,8 +333,16 @@
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
           },
           {
+            "file": "11_field.svg",
+            "message": "<text> (x=56, y=128; text='찾은 지점은 현장에서 바로 확인합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(831.6, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          },
+          {
             "file": "12_pv5_lab.svg",
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+          },
+          {
+            "file": "12_pv5_lab.svg",
+            "message": "<text> (x=56, y=128; text='PV5 한 대가 이동형 탐사실이 됩니…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(790.9, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
           },
           {
             "file": "12_pv5_lab.svg",
@@ -329,16 +353,32 @@
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
           },
           {
+            "file": "13_why_pv5.svg",
+            "message": "<text> (x=56, y=128; text='어느 PV5가 재도, 같은 기준으로 …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(861.4, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          },
+          {
             "file": "14_verify.svg",
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+          },
+          {
+            "file": "14_verify.svg",
+            "message": "<text> (x=56, y=128; text='남은 질문은 4단계로 검증합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(708.5, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
           },
           {
             "file": "15_economics.svg",
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
           },
           {
+            "file": "15_economics.svg",
+            "message": "<text> (x=56, y=128; text='km당 4.7만 원이면 됩니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(594.5, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          },
+          {
             "file": "16_players.svg",
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+          },
+          {
+            "file": "16_players.svg",
+            "message": "<text> (x=56, y=128; text='기아는 공공 PV5 시장을 엽니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(688.1, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
           },
           {
             "file": "16_players.svg",
@@ -347,6 +387,10 @@
           {
             "file": "17_entry.svg",
             "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+          },
+          {
+            "file": "17_entry.svg",
+            "message": "<text> (x=56, y=128; text='지자체 예산에서 바로 시작합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 90.6)-(728.2, 143.4), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 2.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
           },
           {
             "file": "18_close.svg",

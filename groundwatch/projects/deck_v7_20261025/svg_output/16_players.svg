@@ -16,8 +16,8 @@
     <rect x="1140" y="54" width="48" height="3" fill="#F5B700" />
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
-  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">지자체가 사고 현장팀이 쓰며, 기아는 공공 PV5 시장을 엽니다</text>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="44" font-weight="bold" fill="#0B1E3C">기아는 공공 PV5 시장을 엽니다</text>
   </g>
   <g id="who0" data-pptx-bounds="56 168 368 90">
     <rect x="56" y="168" width="368" height="3" fill="#0B1E3C" />

@@ -7,6 +7,7 @@ OUT = os.path.join(HERE, "..", "svg_output")
 import sys; sys.path.insert(0, HERE)
 import simplify7
 simplify7.run(G, OUT)  # 근거 장: 한 장 = 한 메시지
+simplify7.finalize(G, OUT)  # 제목 = 말하고 싶은 한 문장, 크게
 NAVY, YEL = "#0B1E3C", "#F5B700"
 LIGHT, DIM = "#FFFFFF", "#D6DDE8"
 

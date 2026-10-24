@@ -16,8 +16,8 @@
     <text x="1164" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">사업</text>
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
-  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">맹점은 탐사가 아니라, 탐사와 탐사 ‘사이’입니다</text>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="44" font-weight="bold" fill="#0B1E3C">문제는 탐사와 탐사 ‘사이’입니다</text>
   </g>
   <g id="gap-chart" data-pptx-bounds="56 168 700 380">
     <text x="56" y="204" font-size="19" fill="#111827">법정 공동조사 주기</text>

@@ -16,8 +16,8 @@
     <text x="1164" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">사업</text>
     <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
   </g>
-  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
-    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">GPR 탐사는 이미 합니다. 한 번 보고 끝날 뿐입니다</text>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="44" font-weight="bold" fill="#0B1E3C">탐사는 이미 합니다. 한 번 보고 끝날 뿐입니다</text>
   </g>
   <g id="photo" data-pptx-bounds="56 160 600 430">
     <image href="../images/gpr_handheld_road.jpg" x="56" y="160" width="600" height="400" preserveAspectRatio="xMidYMid slice" />
