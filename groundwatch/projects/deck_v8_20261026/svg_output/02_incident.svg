@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
-  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
-  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#0D1524" />
   <g id="chapter" data-pptx-bounds="56 36 600 30">
     <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
     <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">문제<tspan fill="#8E9AAB" font-weight="normal">   실제로 일어난 일</tspan></text>

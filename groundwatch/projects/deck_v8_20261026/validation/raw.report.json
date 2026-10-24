@@ -2,15 +2,15 @@
   "schema": "ppt-master.pptx-postflight-report.v1",
   "status": "passed-with-warnings",
   "output": {
-    "path": "/private/tmp/claude-501/-Users-seohogyun-Documents-git-workspace-pv5-hose-lab/3d0b9843-8a01-4867-83c1-0215867cfe7f/scratchpad/v8b/raw.pptx",
-    "bytes": 10889220
+    "path": "/private/tmp/claude-501/-Users-seohogyun-Documents-git-workspace-pv5-hose-lab/3d0b9843-8a01-4867-83c1-0215867cfe7f/scratchpad/v8f/raw.pptx",
+    "bytes": 7669919
   },
   "source": {
     "svg_slide_count": 18,
     "layout_definition_count": 0,
     "fingerprint": {
       "algorithm": "sha256",
-      "digest": "e9f97e91f37603bb6bb4df220f4e6ef330ef6eefc9f6f2ef67b61e1c39d66e85",
+      "digest": "f5a4856596c702ce17f8994d4c7e4a0e6eb8e37f9e932bf6c50fc8308b805035",
       "file_count": 18,
       "files": [
         {
@@ -19,19 +19,19 @@
         },
         {
           "file": "02_incident.svg",
-          "sha256": "4fecacf9471911d1a2a2b9dc33408f0cd61a6c80af09356092a297a11920c0c1"
+          "sha256": "1e908bfa8f6facd8f38b24deef6b11ffbf42c86158b01b7523e5bdb0d19b5700"
         },
         {
           "file": "03_current.svg",
-          "sha256": "90ec7fa2b273eb62d5aa8d24f4aac2f1202ae2d5e4ca04cad16a4f2d5c5bb596"
+          "sha256": "d4cd5ac0d5dc8bd3b3504925d866d58f589fffcb2214c0aa142d8e98a18c357d"
         },
         {
           "file": "04_blindspot.svg",
-          "sha256": "da90a0326e0910dd94ea28c9c4c037e9ce995da0373420c4dcf3d1adbeba78da"
+          "sha256": "a1fc86839f3ea58c71ff0100158cae80ba328e6a167f57f4aa9d45021e078696"
         },
         {
           "file": "05_target.svg",
-          "sha256": "ea91a7fe74ce2983b15ab288d6ac29fad427dba0be1858622d884855948081d2"
+          "sha256": "2b70510d4c17f1f470e80dfbf69d8cbbb1546695c9ed7ed9832ff3cd9975d784"
         },
         {
           "file": "06_q_more.svg",
@@ -47,39 +47,39 @@
         },
         {
           "file": "09_summary.svg",
-          "sha256": "7ba5eb1f17b61398f857200b325033e12fbead115905f249f1dc4570dbfc1675"
+          "sha256": "579096315b20c7adcfc05c8cee6202874b8a89520edafb7c284705b37f98ce10"
         },
         {
           "file": "10_solution.svg",
-          "sha256": "26c8f13dd32b78d32537413469aa67d40126d3fcbcd539afcadae7a59c45b843"
+          "sha256": "edabff62fdbd89cfbbc71d53ae5874030838b94705dd5b6fe90328b10d684e5f"
         },
         {
           "file": "11_field.svg",
-          "sha256": "9130722ced00ed86bb55528581d436401112577991b9ccda55cad29408467130"
+          "sha256": "6e32e41b90b4fb9b49b5d71b36405cfc9169cd426a78b03ba1053175c50c0ba5"
         },
         {
           "file": "12_pv5_lab.svg",
-          "sha256": "cc2e22e56df892974bae40c1b2f4ab48926fb5a20ac817779a8ffbe3b4a624c1"
+          "sha256": "74472bb08e4bdc3aafe1b2e4b797ff91663a5e68ea57e385857e765f0f1b7603"
         },
         {
           "file": "13_why_pv5.svg",
-          "sha256": "80f4ac64c659210db72e6e4e902b4f255bf6f5a08cf55dec393c1ce314f70d1e"
+          "sha256": "02cae66fb88b18b8e4654085ee91824eaf2811dac193ea889454c57a7665f7dc"
         },
         {
           "file": "14_verify.svg",
-          "sha256": "c9a532b7abc676e3e12719938cf4ae02b43e64778cb433ba8e043bb3e8a15887"
+          "sha256": "07234d414a6ef6a9ea5feff7fb5b8b54852ec7b06f913397d7bbe091abd516c4"
         },
         {
           "file": "15_economics.svg",
-          "sha256": "c2054423fd2a0bd77f73bb215dbac09028cf88ef46af1b55d2ea91f0ba502650"
+          "sha256": "5a29129a064a33493a98135d7eb37a238570b0cff77bdc97f311d01d22136feb"
         },
         {
           "file": "16_players.svg",
-          "sha256": "53d9b4e35fe04b55c786c725446f8c974580b5c07fb0a2311c3d3a247f2bfeab"
+          "sha256": "e70d130a4d55116f49bc238a5b8fea10d688b3d25d3bd033be63704ae940516c"
         },
         {
           "file": "17_entry.svg",
-          "sha256": "d15a6fa0257845da3342a8903ba81c4d226793c0c86b697b4815280b651fdd3f"
+          "sha256": "46ccce949fd45a450571471e93690726cc7c0b5861e1f21b98e219b3b7e97e1f"
         },
         {
           "file": "18_close.svg",
@@ -121,7 +121,7 @@
     "source_match": "passed",
     "source_fingerprint": {
       "algorithm": "sha256",
-      "digest": "e9f97e91f37603bb6bb4df220f4e6ef330ef6eefc9f6f2ef67b61e1c39d66e85",
+      "digest": "f5a4856596c702ce17f8994d4c7e4a0e6eb8e37f9e932bf6c50fc8308b805035",
       "file_count": 18,
       "files": [
         {
@@ -130,19 +130,19 @@
         },
         {
           "file": "02_incident.svg",
-          "sha256": "4fecacf9471911d1a2a2b9dc33408f0cd61a6c80af09356092a297a11920c0c1"
+          "sha256": "1e908bfa8f6facd8f38b24deef6b11ffbf42c86158b01b7523e5bdb0d19b5700"
         },
         {
           "file": "03_current.svg",
-          "sha256": "90ec7fa2b273eb62d5aa8d24f4aac2f1202ae2d5e4ca04cad16a4f2d5c5bb596"
+          "sha256": "d4cd5ac0d5dc8bd3b3504925d866d58f589fffcb2214c0aa142d8e98a18c357d"
         },
         {
           "file": "04_blindspot.svg",
-          "sha256": "da90a0326e0910dd94ea28c9c4c037e9ce995da0373420c4dcf3d1adbeba78da"
+          "sha256": "a1fc86839f3ea58c71ff0100158cae80ba328e6a167f57f4aa9d45021e078696"
         },
         {
           "file": "05_target.svg",
-          "sha256": "ea91a7fe74ce2983b15ab288d6ac29fad427dba0be1858622d884855948081d2"
+          "sha256": "2b70510d4c17f1f470e80dfbf69d8cbbb1546695c9ed7ed9832ff3cd9975d784"
         },
         {
           "file": "06_q_more.svg",
@@ -158,39 +158,39 @@
         },
         {
           "file": "09_summary.svg",
-          "sha256": "7ba5eb1f17b61398f857200b325033e12fbead115905f249f1dc4570dbfc1675"
+          "sha256": "579096315b20c7adcfc05c8cee6202874b8a89520edafb7c284705b37f98ce10"
         },
         {
           "file": "10_solution.svg",
-          "sha256": "26c8f13dd32b78d32537413469aa67d40126d3fcbcd539afcadae7a59c45b843"
+          "sha256": "edabff62fdbd89cfbbc71d53ae5874030838b94705dd5b6fe90328b10d684e5f"
         },
         {
           "file": "11_field.svg",
-          "sha256": "9130722ced00ed86bb55528581d436401112577991b9ccda55cad29408467130"
+          "sha256": "6e32e41b90b4fb9b49b5d71b36405cfc9169cd426a78b03ba1053175c50c0ba5"
         },
         {
           "file": "12_pv5_lab.svg",
-          "sha256": "cc2e22e56df892974bae40c1b2f4ab48926fb5a20ac817779a8ffbe3b4a624c1"
+          "sha256": "74472bb08e4bdc3aafe1b2e4b797ff91663a5e68ea57e385857e765f0f1b7603"
         },
         {
           "file": "13_why_pv5.svg",
-          "sha256": "80f4ac64c659210db72e6e4e902b4f255bf6f5a08cf55dec393c1ce314f70d1e"
+          "sha256": "02cae66fb88b18b8e4654085ee91824eaf2811dac193ea889454c57a7665f7dc"
         },
         {
           "file": "14_verify.svg",
-          "sha256": "c9a532b7abc676e3e12719938cf4ae02b43e64778cb433ba8e043bb3e8a15887"
+          "sha256": "07234d414a6ef6a9ea5feff7fb5b8b54852ec7b06f913397d7bbe091abd516c4"
         },
         {
           "file": "15_economics.svg",
-          "sha256": "c2054423fd2a0bd77f73bb215dbac09028cf88ef46af1b55d2ea91f0ba502650"
+          "sha256": "5a29129a064a33493a98135d7eb37a238570b0cff77bdc97f311d01d22136feb"
         },
         {
           "file": "16_players.svg",
-          "sha256": "53d9b4e35fe04b55c786c725446f8c974580b5c07fb0a2311c3d3a247f2bfeab"
+          "sha256": "e70d130a4d55116f49bc238a5b8fea10d688b3d25d3bd033be63704ae940516c"
         },
         {
           "file": "17_entry.svg",
-          "sha256": "d15a6fa0257845da3342a8903ba81c4d226793c0c86b697b4815280b651fdd3f"
+          "sha256": "46ccce949fd45a450571471e93690726cc7c0b5861e1f21b98e219b3b7e97e1f"
         },
         {
           "file": "18_close.svg",
@@ -210,7 +210,7 @@
         "issues": []
       },
       "introduced": {
-        "count": 59,
+        "count": 62,
         "issues": [
           {
             "file": "01_open.svg",
@@ -222,7 +222,7 @@
           },
           {
             "file": "02_incident.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[8]:fill '#F5B700' -> None; text[9]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[4]:fill '#F5B700' -> None; text[5]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "02_incident.svg",
@@ -238,7 +238,7 @@
           },
           {
             "file": "03_current.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[10]:fill '#F5B700' -> None; text[11]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "03_current.svg",
@@ -250,7 +250,7 @@
           },
           {
             "file": "04_blindspot.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[10]:fill '#F5B700' -> None; text[11]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "04_blindspot.svg",
@@ -266,7 +266,7 @@
           },
           {
             "file": "05_target.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[10]:fill '#F5B700' -> None; text[11]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "05_target.svg",
@@ -322,7 +322,7 @@
           },
           {
             "file": "09_summary.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[10]:fill '#F5B700' -> None; text[11]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "09_summary.svg",
@@ -334,7 +334,7 @@
           },
           {
             "file": "10_solution.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[10]:fill '#F5B700' -> None; text[11]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[11]:fill '#F5B700' -> None; text[12]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "10_solution.svg",
@@ -350,7 +350,7 @@
           },
           {
             "file": "11_field.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[13]:fill '#F5B700' -> None; text[14]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[16]:fill '#F5B700' -> None; text[17]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "11_field.svg",
@@ -358,11 +358,15 @@
           },
           {
             "file": "11_field.svg",
-            "message": "<text> (x=56, y=128; text='찾은 지점은 현장에서 바로 확인합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(904.8, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+            "message": "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"story-text\"> x=64.0, y=262.0..324.0, 2 lines; <g id=\"story-text\"> x=64.0, y=404.0..436.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          },
+          {
+            "file": "11_field.svg",
+            "message": "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
           },
           {
             "file": "12_pv5_lab.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[10]:fill '#F5B700' -> None; text[11]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "12_pv5_lab.svg",
@@ -378,7 +382,7 @@
           },
           {
             "file": "13_why_pv5.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[10]:fill '#F5B700' -> None; text[11]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "13_why_pv5.svg",
@@ -389,8 +393,12 @@
             "message": "<text> (x=56, y=128; text='어느 PV5가 재도, 같은 기준으로 …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(937.7, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
           },
           {
+            "file": "13_why_pv5.svg",
+            "message": "<text> (x=56, y=668; text='출처: 오토뷰(2026.1.28, 컨…') exceeds <g id=\"source\"> data-pptx-bounds on the horizontal axis: content (56.0, 657.0)-(1268.1, 672.5), container (56.0, 656.0)-(1224.0, 690.0), overflow horizontal 3.8%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈11.3 px per mixed char at 13px incl. headroom; ≈103 chars fit in 1168 px"
+          },
+          {
             "file": "14_verify.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[10]:fill '#F5B700' -> None; text[11]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "14_verify.svg",
@@ -402,7 +410,7 @@
           },
           {
             "file": "15_economics.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[17]:fill '#F5B700' -> None; text[18]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[11]:fill '#F5B700' -> None; text[12]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "15_economics.svg",
@@ -413,8 +421,12 @@
             "message": "<text> (x=56, y=128; text='km당 4.7만 원이면 됩니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(645.6, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
           },
           {
+            "file": "15_economics.svg",
+            "message": "<text> (x=1122, y=404; text='+28만 원') exceeds <g id=\"bars\"> data-pptx-bounds on the horizontal axis: content (1122.0, 381.9)-(1233.5, 413.1), container (640.0, 160.0)-(1224.0, 460.0), overflow horizontal 1.6%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈22.3 px per mixed char at 26px incl. headroom; ≈26 chars fit in 584 px"
+          },
+          {
             "file": "16_players.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[17]:fill '#F5B700' -> None; text[18]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[11]:fill '#F5B700' -> None; text[12]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "16_players.svg",
@@ -430,7 +442,7 @@
           },
           {
             "file": "17_entry.svg",
-            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[17]:fill '#F5B700' -> None; text[18]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+            "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[11]:fill '#F5B700' -> None; text[12]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
           },
           {
             "file": "17_entry.svg",

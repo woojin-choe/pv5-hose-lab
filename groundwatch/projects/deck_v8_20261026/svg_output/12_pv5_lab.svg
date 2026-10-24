@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
-  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
-  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#0D1524" />
   <g id="watermark" data-pptx-role="decoration" data-pptx-bounds="900 440 332 278">
     <text x="1232" y="636" font-size="200" font-weight="bold" fill="#121B2B" text-anchor="end" letter-spacing="-12">12</text>
   </g>

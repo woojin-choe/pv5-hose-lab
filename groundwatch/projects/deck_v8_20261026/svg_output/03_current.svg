@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
-  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
-  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#0D1524" />
   <g id="watermark" data-pptx-role="decoration" data-pptx-bounds="900 440 332 278">
     <text x="1232" y="636" font-size="200" font-weight="bold" fill="#121B2B" text-anchor="end" letter-spacing="-12">03</text>
   </g>
@@ -26,7 +25,7 @@
     <text x="712" y="556" font-size="22" font-weight="bold" fill="#E8ECF2"><tspan fill="#FF6B5E">다음 정기점검 때</tspan> 다시 봅니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
-    <text x="56" y="682" font-size="13" fill="#8E9AAB">출처: 메트로신문(2025.10.19, 누적 탐사·공동) · 머니투데이(2026.3.23, 2026 계획·인력) · 서울시 안전정보(차량탑재형 GPR 폭 3m 이내)</text>
+    <text x="56" y="682" font-size="13" fill="#8E9AAB">출처: 메트로신문(2025.10.19, 누적 탐사·공동) · 서울시 안전정보(차량탑재형 GPR 폭 3m 이내)</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#8E9AAB" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>

@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
-  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
-  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#0D1524" />
   <g id="watermark" data-pptx-role="decoration" data-pptx-bounds="900 440 332 278">
     <text x="1232" y="636" font-size="200" font-weight="bold" fill="#121B2B" text-anchor="end" letter-spacing="-12">13</text>
   </g>
@@ -45,7 +44,7 @@
     <text x="80" y="627" font-size="20" font-weight="bold" fill="#FFFFFF">어느 도시의 어느 PV5가 재도, <tspan fill="#F5B700">같은 기준으로 비교</tspan>됩니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 656 1168 34">
-    <text x="56" y="668" font-size="13" fill="#8E9AAB">출처: 오토뷰(2026.1.28, 컨버전 포털·PIM·조인트 블록) · 공모전 솔루션 부문 안내(Pleos SDK·앱 마켓) · 기아 PV5 카고 카탈로그(2026.9)<tspan x="56" dy="16">현대차그룹 뉴스룸(2024.4, ST1 495mm) · 스타리아 일렉트릭 출시(2026.4.23) · 시사저널(2025.4.25, GPR 대당 2억~8억 원) · 공공부문 무공해차 실적(2026.6.30)</tspan></text>
+    <text x="56" y="668" font-size="13" fill="#8E9AAB">출처: 오토뷰(2026.1.28, 컨버전 포털·PIM·조인트 블록) · 공모전 솔루션 부문 안내(Pleos SDK·앱 마켓) · 기아 PV5 카고 카탈로그(2026.9) · 현대차그룹 뉴스룸(2024.4, ST1 적재고 495mm)</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#8E9AAB" font-size="12">
     <text x="56" y="706">PV5 GroundWatch</text>
