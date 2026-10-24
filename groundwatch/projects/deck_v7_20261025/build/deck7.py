@@ -2,8 +2,11 @@
 # deck.py로 15장을 만든 뒤, 표지·마지막 장을 이야기 장으로 바꾸고 18장 순서로 다시 번호를 매긴다.
 import os, re, runpy
 HERE = os.path.dirname(os.path.abspath(__file__))
-runpy.run_path(os.path.join(HERE, "deck.py"), run_name="__main__")
+G = runpy.run_path(os.path.join(HERE, "deck.py"), run_name="__main__")
 OUT = os.path.join(HERE, "..", "svg_output")
+import sys; sys.path.insert(0, HERE)
+import simplify7
+simplify7.run(G, OUT)  # 근거 장: 한 장 = 한 메시지
 NAVY, YEL = "#0B1E3C", "#F5B700"
 LIGHT, DIM = "#FFFFFF", "#D6DDE8"
 

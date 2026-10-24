@@ -4,7 +4,7 @@
   "target": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025",
   "source_fingerprint": {
     "algorithm": "sha256",
-    "digest": "4628b1077310efeb7cd7b0bff2473d02acc934cb481efa5f1efa421bf963f20f",
+    "digest": "cca9e1274fc9b504ff0841a375a988e385837d14064b1570522bbe685f5d6d1a",
     "file_count": 18,
     "files": [
       {
@@ -13,19 +13,19 @@
       },
       {
         "file": "02_incident.svg",
-        "sha256": "6ac9d39e769edb6553608e0948036fed3e8c2d3017b72f461acf49d702973dab"
+        "sha256": "83d981dffa7862599eeda2e8325ad8a89f644334bb2ca3b6eaf51451af6b2635"
       },
       {
         "file": "03_current.svg",
-        "sha256": "c9a79d79520e6742a0dfecb33d24bd497f9b517e6bd62c6de9d32eb5c5b909f7"
+        "sha256": "4922e745c732d1704c91683d9dd541b8ff137d331a412ae5c43e55b0bc999113"
       },
       {
         "file": "04_blindspot.svg",
-        "sha256": "9723ff87473925285c8eab3fbeb917ccf9d73dc1188b1c3b7a3a66d110ed1f9b"
+        "sha256": "7c02f99d5cdcfa94fdd03430cecd3fcc002ac0e45bcfdb8d25ae21b44eb01156"
       },
       {
         "file": "05_target.svg",
-        "sha256": "40e359ff975fcfbad13625fdfa5b357c59c03432cb190be53cd348188f107147"
+        "sha256": "b7192521c9eec7cc837389b70826138cca7b165e08372524ba8744430aaf5cd2"
       },
       {
         "file": "06_q_more.svg",
@@ -41,39 +41,39 @@
       },
       {
         "file": "09_summary.svg",
-        "sha256": "9f0a2741fccb5d4ad8b50fb7d58598025820f377a63ebf90c38c0af968200d34"
+        "sha256": "f17c3e8ab017ee3959668bdd6389e9bfbd505ed2f2d694b9d1cdd622ad3be357"
       },
       {
         "file": "10_solution.svg",
-        "sha256": "0f5a4a3ec40aa6fae30cbcd9fdd57e5242f575b2374b7d37521c523a98a32045"
+        "sha256": "3c80d63018bf8a8891dcbef18b4a4b172c94cd19b7f522bf43a3fc9c4639228d"
       },
       {
         "file": "11_field.svg",
-        "sha256": "ae2aa7146bd3f1c6b8c2bff7dd6469f20c065256b186b2bdb8ceac44be3f3a86"
+        "sha256": "6d31f5f906828810316fb7905c0dd5c92b6b1b29ed234c8d75dae73a388e6b3a"
       },
       {
         "file": "12_pv5_lab.svg",
-        "sha256": "df87ac2c50d1f09337d7d64b1d18bdfd6ea2acd1eddc699fc3214d041b1fd9d7"
+        "sha256": "a4d07b21f1ba34f324b3d6cbc1134a04141b7bba8f295dd0dfad417ae84f42dc"
       },
       {
         "file": "13_why_pv5.svg",
-        "sha256": "2c0d045a5aea8bc42b19332db294602036e29186801dafe088df7a3194efb445"
+        "sha256": "5eb238b475ba111251cfdc021fc66a70632d10e5694b6a345d6bf4161be3b527"
       },
       {
         "file": "14_verify.svg",
-        "sha256": "e1318ef541f7105c7c636496277cd709152bd2fa07d26793a7fa3afdeb6c5212"
+        "sha256": "c6e95635cb45eeb2ef0c78b23d80c19e8b7c28c60b865a6c8a429d4a59420418"
       },
       {
         "file": "15_economics.svg",
-        "sha256": "6a155b3fe4a04c6fd052de2947041726002981cc73854fe05bc047144b73b908"
+        "sha256": "3283303b9efa5f66c7fcdc39d46829d866809dc79303860e3954aa61f5debf2a"
       },
       {
         "file": "16_players.svg",
-        "sha256": "284199e80be23d89c221948e974694c4ff912a2ca5281b3f0d66ef5da1446dfe"
+        "sha256": "a4dc878c994a8c4fed96669f8c29e0836b92720273190ae3f040be5cf798b752"
       },
       {
         "file": "17_entry.svg",
-        "sha256": "679d561e67eb24bfd98a6fdd7af1cdfeb8809099896d372fb111d230b65e43d9"
+        "sha256": "b0c5071eb87a36fe21dcb6c8dab199692eb0ff1ac62c49a1b42535a3239f2321"
       },
       {
         "file": "18_close.svg",
@@ -94,7 +94,7 @@
       "issues": []
     },
     "introduced": {
-      "count": 44,
+      "count": 36,
       "issues": [
         {
           "file": "01_open.svg",
@@ -130,19 +130,15 @@
         },
         {
           "file": "04_blindspot.svg",
-          "message": "<text> (x=784, y=310; text='9곳은 그사이 복구, 다시 잰 21곳…') exceeds <g id=\"evidence\"> data-pptx-bounds on the horizontal axis: content (784.0, 296.4)-(1237.7, 315.6), container (784.0, 168.0)-(1224.0, 560.0), overflow horizontal 3.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.6 px per mixed char at 16px incl. headroom; ≈28 chars fit in 440 px"
-        },
-        {
-          "file": "04_blindspot.svg",
-          "message": "<text> (x=784, y=572; text='2022~2026.6 · 찾은 뒤에도…') exceeds <g id=\"evidence\"> data-pptx-bounds on the vertical axis: content (784.0, 559.2)-(1216.1, 577.2), container (784.0, 168.0)-(1224.0, 560.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
-        },
-        {
-          "file": "04_blindspot.svg",
-          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"evidence\"> x=784.0, y=288.0..310.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"evidence\"> x=792.0, y=390.0..414.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
         },
         {
           "file": "05_target.svg",
           "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "05_target.svg",
+          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"scope\"> x=744.0, y=396.0..436.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
         },
         {
           "file": "06_q_more.svg",
@@ -190,15 +186,15 @@
         },
         {
           "file": "09_summary.svg",
-          "message": "<text> (x=56, y=282; text='법정 점검 5년, 서울 1년(발표).…') exceeds <g id=\"col0\"> data-pptx-bounds on the horizontal axis: content (56.0, 267.6)-(340.9, 331.9), container (56.0, 168.0)-(330.0, 348.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈19.0 px per mixed char at 17px incl. headroom; ≈14 chars fit in 274 px"
-        },
-        {
-          "file": "09_summary.svg",
-          "message": "<text> (x=848, y=508; text='전국 지자체가 쓸 탐사형 PV5 (1…') exceeds <g id=\"keynum\"> data-pptx-bounds on the horizontal axis: content (848.0, 495.2)-(1271.0, 513.2), container (56.0, 398.0)-(1224.0, 518.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.1 px per mixed char at 15px incl. headroom; ≈77 chars fit in 1168 px"
+          "message": "<text> (x=848, y=438; text='전국 지자체가 쓸 탐사형 PV5 (1…') exceeds <g id=\"keynum\"> data-pptx-bounds on the horizontal axis: content (848.0, 425.2)-(1271.0, 443.2), container (56.0, 296.0)-(1224.0, 456.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.1 px per mixed char at 15px incl. headroom; ≈77 chars fit in 1168 px"
         },
         {
           "file": "10_solution.svg",
           "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "10_solution.svg",
+          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"hero\"> x=336.0, y=486.0..522.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
         },
         {
           "file": "11_field.svg",
@@ -210,31 +206,11 @@
         },
         {
           "file": "12_pv5_lab.svg",
-          "message": "<text> (x=866, y=238; text='적재는 순정 액세서리 장착 시 · 장…') exceeds <g id=\"spec\"> data-pptx-bounds on the horizontal axis: content (866.0, 225.2)-(1247.5, 243.2), container (696.0, 150.0)-(1224.0, 580.0), overflow horizontal 4.4%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.3 px per mixed char at 15px incl. headroom; ≈34 chars fit in 528 px"
-        },
-        {
-          "file": "12_pv5_lab.svg",
           "message": "<text> (x=56, y=682; text='출처: 기아 PV5 카고 카탈로그(2…') exceeds <g id=\"source\"> data-pptx-bounds on the horizontal axis: content (56.0, 671.0)-(1282.0, 686.5), container (56.0, 668.0)-(1224.0, 688.0), overflow horizontal 5.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈11.0 px per mixed char at 13px incl. headroom; ≈105 chars fit in 1168 px"
         },
         {
           "file": "13_why_pv5.svg",
-          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): kit:fill None -> '#4B5563'; kit:font-size None -> '15'; text[58]:fill '#4B5563' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-        },
-        {
-          "file": "13_why_pv5.svg",
           "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
-        },
-        {
-          "file": "13_why_pv5.svg",
-          "message": "<text> (x=950, y=482; text='같은 차에서 현장 재확인 (ST1 4…') exceeds <g id=\"compare\"> data-pptx-bounds on the horizontal axis: content (950.0, 468.4)-(1248.2, 487.6), container (56.0, 404.0)-(1224.0, 494.0), overflow horizontal 2.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈14.9 px per mixed char at 16px incl. headroom; ≈78 chars fit in 1168 px"
-        },
-        {
-          "file": "13_why_pv5.svg",
-          "message": "<text> (x=56, y=550; text='불리한 점 주행거리 377km는 스타…') exceeds <g id=\"kit\"> data-pptx-bounds on the horizontal axis: content (56.0, 537.2)-(1248.8, 555.2), container (56.0, 512.0)-(1224.0, 556.0), overflow horizontal 2.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈14.4 px per mixed char at 15px incl. headroom; ≈81 chars fit in 1168 px"
-        },
-        {
-          "file": "13_why_pv5.svg",
-          "message": "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"compare\"> x=56.0, y=460.0..482.0, 2 lines; <g id=\"compare\"> x=652.0, y=460.0..482.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
         },
         {
           "file": "14_verify.svg",
@@ -245,20 +221,12 @@
           "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
         },
         {
-          "file": "15_economics.svg",
-          "message": "<text> (x=56, y=542; text='6,600km = 하루 30km × …') exceeds <g id=\"cost\"> data-pptx-bounds on the horizontal axis: content (56.0, 529.2)-(643.3, 547.2), container (56.0, 262.0)-(616.0, 562.0), overflow horizontal 4.9%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈13.3 px per mixed char at 15px incl. headroom; ≈41 chars fit in 560 px"
-        },
-        {
-          "file": "15_economics.svg",
-          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"now\"> x=900.0, y=214.0..236.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
-        },
-        {
           "file": "16_players.svg",
           "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
         },
         {
           "file": "16_players.svg",
-          "message": "Detected 6 paragraph-like line run(s) split across sibling <text> elements (<g id=\"who0\"> x=56.0, y=268.0..292.0, 2 lines; <g id=\"who1\"> x=456.0, y=268.0..292.0, 2 lines; <g id=\"who2\"> x=856.0, y=268.0..292.0, 2 lines; +3 more). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+          "message": "Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id=\"kia\"> x=88.0, y=500.0..526.0, 2 lines; <g id=\"kia\"> x=464.0, y=500.0..526.0, 2 lines; <g id=\"kia\"> x=840.0, y=500.0..526.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
         },
         {
           "file": "17_entry.svg",
@@ -295,14 +263,14 @@
     "scope": "informational-not-a-quota",
     "pages": 18,
     "totals": {
-      "text_elements": 559,
+      "text_elements": 440,
       "image_placements": 17,
       "icons": 0,
-      "svg_geometry_elements": 201,
+      "svg_geometry_elements": 155,
       "preset_shapes": 0,
       "page_frame_elements": 10,
       "marker_uses": 0,
-      "inline_emphasis_runs": 32,
+      "inline_emphasis_runs": 9,
       "gradient_uses": 11,
       "filter_uses": 0,
       "text_effects": 0
@@ -314,20 +282,20 @@
       "charts": 0,
       "tables": 0,
       "formulas": 0,
-      "inline_emphasis_runs": 9,
+      "inline_emphasis_runs": 5,
       "gradient_uses": 6,
       "filter_uses": 0,
       "text_effects": 0
     },
     "relationship_pages": null,
     "geometry_elements": {
-      "circle": 18,
+      "circle": 7,
       "ellipse": 1,
-      "line": 47,
+      "line": 25,
       "path": 0,
       "polygon": 1,
       "polyline": 0,
-      "rect": 134
+      "rect": 121
     },
     "preset_names": {},
     "native_objects": {
@@ -427,7 +395,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 24,
+          "text_elements": 23,
           "images": {
             "placements": 1,
             "files": [
@@ -472,11 +440,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 24,
+        "text_elements": 23,
         "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "6ac9d39e769edb6553608e0948036fed3e8c2d3017b72f461acf49d702973dab"
+      "source_sha256": "83d981dffa7862599eeda2e8325ad8a89f644334bb2ca3b6eaf51451af6b2635"
     },
     {
       "file": "03_current.svg",
@@ -489,25 +457,25 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 40,
+          "text_elements": 23,
           "images": {
             "placements": 1,
             "files": [
               "gpr_handheld_road.jpg"
             ],
-            "max_frame_share": 0.1535
+            "max_frame_share": 0.2604
           },
           "icons": 0,
           "effects": {
-            "inline_emphasis_runs": 2,
+            "inline_emphasis_runs": 1,
             "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 8,
-              "circle": 6,
+              "rect": 3,
+              "circle": 0,
               "ellipse": 0,
               "line": 2,
               "polyline": 0,
@@ -534,11 +502,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 40,
-        "tspan_elements": 2
+        "text_elements": 23,
+        "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "c9a79d79520e6742a0dfecb33d24bd497f9b517e6bd62c6de9d32eb5c5b909f7"
+      "source_sha256": "4922e745c732d1704c91683d9dd541b8ff137d331a412ae5c43e55b0bc999113"
     },
     {
       "file": "04_blindspot.svg",
@@ -547,14 +515,12 @@
       "errors": [],
       "warnings": [
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=784, y=310; text='9곳은 그사이 복구, 다시 잰 21곳…') exceeds <g id=\"evidence\"> data-pptx-bounds on the horizontal axis: content (784.0, 296.4)-(1237.7, 315.6), container (784.0, 168.0)-(1224.0, 560.0), overflow horizontal 3.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.6 px per mixed char at 16px incl. headroom; ≈28 chars fit in 440 px",
-        "<text> (x=784, y=572; text='2022~2026.6 · 찾은 뒤에도…') exceeds <g id=\"evidence\"> data-pptx-bounds on the vertical axis: content (784.0, 559.2)-(1216.1, 577.2), container (784.0, 168.0)-(1224.0, 560.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
-        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"evidence\"> x=784.0, y=288.0..310.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"evidence\"> x=792.0, y=390.0..414.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
       ],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 35,
+          "text_elements": 27,
           "images": {
             "placements": 0,
             "files": [],
@@ -562,76 +528,14 @@
           },
           "icons": 0,
           "effects": {
-            "inline_emphasis_runs": 4,
+            "inline_emphasis_runs": 1,
             "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 9,
-              "circle": 0,
-              "ellipse": 0,
-              "line": 4,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 0
-            },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 0,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Pretendard, 'Malgun Gothic', sans-serif"
-        ],
-        "text_elements": 35,
-        "tspan_elements": 5
-      },
-      "passed": true,
-      "source_sha256": "9723ff87473925285c8eab3fbeb917ccf9d73dc1188b1c3b7a3a66d110ed1f9b"
-    },
-    {
-      "file": "05_target.svg",
-      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/05_target.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [
-        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
-      ],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 27,
-          "images": {
-            "placements": 1,
-            "files": [
-              "ug_section_cut.png"
-            ],
-            "max_frame_share": 0.2826
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 10,
+              "rect": 8,
               "circle": 0,
               "ellipse": 0,
               "line": 1,
@@ -660,10 +564,73 @@
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
         "text_elements": 27,
+        "tspan_elements": 2
+      },
+      "passed": true,
+      "source_sha256": "7c02f99d5cdcfa94fdd03430cecd3fcc002ac0e45bcfdb8d25ae21b44eb01156"
+    },
+    {
+      "file": "05_target.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/05_target.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"scope\"> x=744.0, y=396.0..436.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 26,
+          "images": {
+            "placements": 1,
+            "files": [
+              "ug_section_cut.png"
+            ],
+            "max_frame_share": 0.2826
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 9,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 26,
         "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "40e359ff975fcfbad13625fdfa5b357c59c03432cb190be53cd348188f107147"
+      "source_sha256": "b7192521c9eec7cc837389b70826138cca7b165e08372524ba8744430aaf5cd2"
     },
     {
       "file": "06_q_more.svg",
@@ -865,13 +832,12 @@
       "errors": [],
       "warnings": [
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=282; text='법정 점검 5년, 서울 1년(발표).…') exceeds <g id=\"col0\"> data-pptx-bounds on the horizontal axis: content (56.0, 267.6)-(340.9, 331.9), container (56.0, 168.0)-(330.0, 348.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈19.0 px per mixed char at 17px incl. headroom; ≈14 chars fit in 274 px",
-        "<text> (x=848, y=508; text='전국 지자체가 쓸 탐사형 PV5 (1…') exceeds <g id=\"keynum\"> data-pptx-bounds on the horizontal axis: content (848.0, 495.2)-(1271.0, 513.2), container (56.0, 398.0)-(1224.0, 518.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.1 px per mixed char at 15px incl. headroom; ≈77 chars fit in 1168 px"
+        "<text> (x=848, y=438; text='전국 지자체가 쓸 탐사형 PV5 (1…') exceeds <g id=\"keynum\"> data-pptx-bounds on the horizontal axis: content (848.0, 425.2)-(1271.0, 443.2), container (56.0, 296.0)-(1224.0, 456.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.1 px per mixed char at 15px incl. headroom; ≈77 chars fit in 1168 px"
       ],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 35,
+          "text_elements": 31,
           "images": {
             "placements": 0,
             "files": [],
@@ -914,11 +880,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 35,
-        "tspan_elements": 8
+        "text_elements": 31,
+        "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "9f0a2741fccb5d4ad8b50fb7d58598025820f377a63ebf90c38c0af968200d34"
+      "source_sha256": "f17c3e8ab017ee3959668bdd6389e9bfbd505ed2f2d694b9d1cdd622ad3be357"
     },
     {
       "file": "10_solution.svg",
@@ -926,12 +892,13 @@
       "exists": true,
       "errors": [],
       "warnings": [
-        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"hero\"> x=336.0, y=486.0..522.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
       ],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 56,
+          "text_elements": 30,
           "images": {
             "placements": 3,
             "files": [
@@ -943,17 +910,17 @@
           },
           "icons": 0,
           "effects": {
-            "inline_emphasis_runs": 1,
+            "inline_emphasis_runs": 0,
             "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 15,
+              "rect": 7,
               "circle": 0,
               "ellipse": 0,
-              "line": 2,
+              "line": 1,
               "polyline": 0,
               "polygon": 0,
               "path": 0
@@ -978,11 +945,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 56,
-        "tspan_elements": 1
+        "text_elements": 30,
+        "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "0f5a4a3ec40aa6fae30cbcd9fdd57e5242f575b2374b7d37521c523a98a32045"
+      "source_sha256": "3c80d63018bf8a8891dcbef18b4a4b172c94cd19b7f522bf43a3fc9c4639228d"
     },
     {
       "file": "11_field.svg",
@@ -995,7 +962,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 36,
+          "text_elements": 25,
           "images": {
             "placements": 2,
             "files": [
@@ -1006,7 +973,7 @@
           },
           "icons": 0,
           "effects": {
-            "inline_emphasis_runs": 5,
+            "inline_emphasis_runs": 1,
             "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
@@ -1014,9 +981,9 @@
           "geometry": {
             "svg_elements": {
               "rect": 8,
-              "circle": 6,
+              "circle": 1,
               "ellipse": 1,
-              "line": 5,
+              "line": 4,
               "polyline": 0,
               "polygon": 1,
               "path": 0
@@ -1041,11 +1008,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 36,
-        "tspan_elements": 5
+        "text_elements": 25,
+        "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "ae2aa7146bd3f1c6b8c2bff7dd6469f20c065256b186b2bdb8ceac44be3f3a86"
+      "source_sha256": "6d31f5f906828810316fb7905c0dd5c92b6b1b29ed234c8d75dae73a388e6b3a"
     },
     {
       "file": "12_pv5_lab.svg",
@@ -1054,13 +1021,12 @@
       "errors": [],
       "warnings": [
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=866, y=238; text='적재는 순정 액세서리 장착 시 · 장…') exceeds <g id=\"spec\"> data-pptx-bounds on the horizontal axis: content (866.0, 225.2)-(1247.5, 243.2), container (696.0, 150.0)-(1224.0, 580.0), overflow horizontal 4.4%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.3 px per mixed char at 15px incl. headroom; ≈34 chars fit in 528 px",
         "<text> (x=56, y=682; text='출처: 기아 PV5 카고 카탈로그(2…') exceeds <g id=\"source\"> data-pptx-bounds on the horizontal axis: content (56.0, 671.0)-(1282.0, 686.5), container (56.0, 668.0)-(1224.0, 688.0), overflow horizontal 5.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈11.0 px per mixed char at 13px incl. headroom; ≈105 chars fit in 1168 px"
       ],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 42,
+          "text_elements": 34,
           "images": {
             "placements": 1,
             "files": [
@@ -1077,10 +1043,10 @@
           },
           "geometry": {
             "svg_elements": {
-              "rect": 4,
+              "rect": 7,
               "circle": 4,
               "ellipse": 0,
-              "line": 6,
+              "line": 1,
               "polyline": 0,
               "polygon": 0,
               "path": 0
@@ -1105,11 +1071,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 42,
+        "text_elements": 34,
         "tspan_elements": 4
       },
       "passed": true,
-      "source_sha256": "df87ac2c50d1f09337d7d64b1d18bdfd6ea2acd1eddc699fc3214d041b1fd9d7"
+      "source_sha256": "a4d07b21f1ba34f324b3d6cbc1134a04141b7bba8f295dd0dfad417ae84f42dc"
     },
     {
       "file": "13_why_pv5.svg",
@@ -1117,16 +1083,12 @@
       "exists": true,
       "errors": [],
       "warnings": [
-        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): kit:fill None -> '#4B5563'; kit:font-size None -> '15'; text[58]:fill '#4B5563' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
-        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=950, y=482; text='같은 차에서 현장 재확인 (ST1 4…') exceeds <g id=\"compare\"> data-pptx-bounds on the horizontal axis: content (950.0, 468.4)-(1248.2, 487.6), container (56.0, 404.0)-(1224.0, 494.0), overflow horizontal 2.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈14.9 px per mixed char at 16px incl. headroom; ≈78 chars fit in 1168 px",
-        "<text> (x=56, y=550; text='불리한 점 주행거리 377km는 스타…') exceeds <g id=\"kit\"> data-pptx-bounds on the horizontal axis: content (56.0, 537.2)-(1248.8, 555.2), container (56.0, 512.0)-(1224.0, 556.0), overflow horizontal 2.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈14.4 px per mixed char at 15px incl. headroom; ≈81 chars fit in 1168 px",
-        "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"compare\"> x=56.0, y=460.0..482.0, 2 lines; <g id=\"compare\"> x=652.0, y=460.0..482.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
       ],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 41,
+          "text_elements": 35,
           "images": {
             "placements": 3,
             "files": [
@@ -1136,7 +1098,7 @@
           },
           "icons": 0,
           "effects": {
-            "inline_emphasis_runs": 6,
+            "inline_emphasis_runs": 2,
             "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
@@ -1171,11 +1133,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 41,
-        "tspan_elements": 7
+        "text_elements": 35,
+        "tspan_elements": 3
       },
       "passed": true,
-      "source_sha256": "2c0d045a5aea8bc42b19332db294602036e29186801dafe088df7a3194efb445"
+      "source_sha256": "5eb238b475ba111251cfdc021fc66a70632d10e5694b6a345d6bf4161be3b527"
     },
     {
       "file": "14_verify.svg",
@@ -1188,7 +1150,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 52,
+          "text_elements": 40,
           "images": {
             "placements": 0,
             "files": [],
@@ -1196,7 +1158,7 @@
           },
           "icons": 0,
           "effects": {
-            "inline_emphasis_runs": 1,
+            "inline_emphasis_runs": 0,
             "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
@@ -1206,7 +1168,7 @@
               "rect": 12,
               "circle": 0,
               "ellipse": 0,
-              "line": 5,
+              "line": 1,
               "polyline": 0,
               "polygon": 0,
               "path": 0
@@ -1231,11 +1193,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 52,
-        "tspan_elements": 1
+        "text_elements": 40,
+        "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "e1318ef541f7105c7c636496277cd709152bd2fa07d26793a7fa3afdeb6c5212"
+      "source_sha256": "c6e95635cb45eeb2ef0c78b23d80c19e8b7c28c60b865a6c8a429d4a59420418"
     },
     {
       "file": "15_economics.svg",
@@ -1243,14 +1205,12 @@
       "exists": true,
       "errors": [],
       "warnings": [
-        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=542; text='6,600km = 하루 30km × …') exceeds <g id=\"cost\"> data-pptx-bounds on the horizontal axis: content (56.0, 529.2)-(643.3, 547.2), container (56.0, 262.0)-(616.0, 562.0), overflow horizontal 4.9%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈13.3 px per mixed char at 15px incl. headroom; ≈41 chars fit in 560 px",
-        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"now\"> x=900.0, y=214.0..236.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
       ],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 42,
+          "text_elements": 25,
           "images": {
             "placements": 0,
             "files": [],
@@ -1258,17 +1218,17 @@
           },
           "icons": 0,
           "effects": {
-            "inline_emphasis_runs": 1,
+            "inline_emphasis_runs": 0,
             "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 8,
+              "rect": 7,
               "circle": 0,
               "ellipse": 0,
-              "line": 8,
+              "line": 1,
               "polyline": 0,
               "polygon": 0,
               "path": 0
@@ -1293,11 +1253,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 42,
-        "tspan_elements": 1
+        "text_elements": 25,
+        "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "6a155b3fe4a04c6fd052de2947041726002981cc73854fe05bc047144b73b908"
+      "source_sha256": "3283303b9efa5f66c7fcdc39d46829d866809dc79303860e3954aa61f5debf2a"
     },
     {
       "file": "16_players.svg",
@@ -1306,12 +1266,12 @@
       "errors": [],
       "warnings": [
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "Detected 6 paragraph-like line run(s) split across sibling <text> elements (<g id=\"who0\"> x=56.0, y=268.0..292.0, 2 lines; <g id=\"who1\"> x=456.0, y=268.0..292.0, 2 lines; <g id=\"who2\"> x=856.0, y=268.0..292.0, 2 lines; +3 more). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        "Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id=\"kia\"> x=88.0, y=500.0..526.0, 2 lines; <g id=\"kia\"> x=464.0, y=500.0..526.0, 2 lines; <g id=\"kia\"> x=840.0, y=500.0..526.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
       ],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 41,
+          "text_elements": 35,
           "images": {
             "placements": 0,
             "files": [],
@@ -1354,11 +1314,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 41,
+        "text_elements": 35,
         "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "284199e80be23d89c221948e974694c4ff912a2ca5281b3f0d66ef5da1446dfe"
+      "source_sha256": "a4dc878c994a8c4fed96669f8c29e0836b92720273190ae3f040be5cf798b752"
     },
     {
       "file": "17_entry.svg",
@@ -1371,7 +1331,7 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 47,
+          "text_elements": 45,
           "images": {
             "placements": 0,
             "files": [],
@@ -1379,7 +1339,7 @@
           },
           "icons": 0,
           "effects": {
-            "inline_emphasis_runs": 8,
+            "inline_emphasis_runs": 0,
             "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
@@ -1389,7 +1349,7 @@
               "rect": 9,
               "circle": 0,
               "ellipse": 0,
-              "line": 5,
+              "line": 4,
               "polyline": 0,
               "polygon": 0,
               "path": 0
@@ -1414,11 +1374,11 @@
         "fonts": [
           "Pretendard, 'Malgun Gothic', sans-serif"
         ],
-        "text_elements": 47,
-        "tspan_elements": 8
+        "text_elements": 45,
+        "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "679d561e67eb24bfd98a6fdd7af1cdfeb8809099896d372fb111d230b65e43d9"
+      "source_sha256": "b0c5071eb87a36fe21dcb6c8dab199692eb0ff1ac62c49a1b42535a3239f2321"
     },
     {
       "file": "18_close.svg",

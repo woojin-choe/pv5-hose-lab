@@ -52,18 +52,15 @@
     <text x="80" y="508" font-size="19" font-weight="bold" fill="#0B1E3C">기아 네트워크 협력</text>
     <text x="380" y="508" font-size="17" fill="#111827">→ 컨버전 파트너와 탐사실 키트화</text>
   </g>
-  <g id="next" data-pptx-bounds="736 272 488 310">
+  <g id="next" data-pptx-bounds="736 272 488 300">
     <text x="736" y="294" font-size="15" font-weight="bold" fill="#B45309">그다음</text>
     <rect x="736" y="304" width="488" height="3" fill="#0B1E3C" />
-    <text x="736" y="342" font-size="19" font-weight="bold" fill="#0B1E3C">1~2년 <tspan font-weight="normal" fill="#111827">조사기관과 시·군 용역 공동 수주</tspan></text>
-    <text x="736" y="369" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#B45309">통과 조건</tspan> 실증확인서(테스트베드서울) · 용역 실적</text>
-    <text x="736" y="406" font-size="19" font-weight="bold" fill="#0B1E3C">2~3년 <tspan font-weight="normal" fill="#111827">혁신제품 지정 → 연간 관제 계약</tspan></text>
-    <text x="736" y="433" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#B45309">통과 조건</tspan> 자치구 2곳 연간 계약 [목표]</text>
-    <text x="736" y="470" font-size="19" font-weight="bold" fill="#0B1E3C">3년~ <tspan font-weight="normal" fill="#111827">권역별 PV5 플릿 · 상하수도 기관</tspan></text>
-    <text x="736" y="497" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#B45309">목표</tspan> 광역지자체 PV5 플릿 구매</text>
-    <line x1="736" y1="522" x2="1224" y2="522" stroke="#E2E6EC" stroke-width="1" />
-    <text x="736" y="550" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#111827">매출</tspan> 파일럿 용역 → 연간 반복관제 → PV5 탐사실 패키지</text>
-    <text x="736" y="573" font-size="15" fill="#374151"><tspan font-weight="bold" fill="#111827">가격</tspan> 구간 km와 재확인 건수 기준</text>
+    <text x="736" y="350" font-size="22" font-weight="bold" fill="#0B1E3C">1~2년</text>
+    <text x="836" y="350" font-size="19" fill="#111827">조사기관과 시·군 용역 공동 수주</text>
+    <text x="736" y="414" font-size="22" font-weight="bold" fill="#0B1E3C">2~3년</text>
+    <text x="836" y="414" font-size="19" fill="#111827">혁신제품 지정 → 연간 관제 계약</text>
+    <text x="736" y="478" font-size="22" font-weight="bold" fill="#0B1E3C">3년~</text>
+    <text x="836" y="478" font-size="19" fill="#111827">권역별 PV5 플릿 · 상하수도 기관</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 596 1168 44">
     <rect x="56" y="596" width="4" height="44" fill="#F5B700" />

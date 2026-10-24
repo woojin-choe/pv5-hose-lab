@@ -38,27 +38,19 @@
     <text x="1224" y="319.1" font-size="13" font-weight="bold" fill="#B45309" text-anchor="end">GPR 높이·위치 동일</text>
     <text x="56" y="384" font-size="17" font-weight="bold" fill="#0B1E3C">주행선 차이는 RTK·IMU로 맞추고(14장), 차마다 다른 장착 조건은 <tspan fill="#B45309">PV5 표준 컨버전으로 맞춥니다.</tspan></text>
   </g>
-  <g id="compare" data-pptx-bounds="56 404 1168 90">
-    <rect x="56" y="404" width="274" height="3" fill="#0B1E3C" />
-    <text x="56" y="434" font-size="19" font-weight="bold" fill="#0B1E3C">PBV 컨버전 포털</text>
-    <text x="56" y="460" font-size="16" fill="#111827">3D 데이터·인증자료로</text>
-    <text x="56" y="482" font-size="16" fill="#111827">모든 차에 같은 위치 장착</text>
-    <rect x="354" y="404" width="274" height="3" fill="#0B1E3C" />
-    <text x="354" y="434" font-size="19" font-weight="bold" fill="#0B1E3C">PIM · 조인트 블록</text>
-    <text x="354" y="460" font-size="16" fill="#111827">차속 신호로 같은 간격 기록<tspan fill="#4B5563"> (제안)</tspan></text>
-    <text x="354" y="482" font-size="16" fill="#111827">외부 장비 전원도 차가 제어</text>
-    <rect x="652" y="404" width="274" height="3" fill="#0B1E3C" />
-    <text x="652" y="434" font-size="19" font-weight="bold" fill="#0B1E3C">Pleos Fleet · 앱 마켓</text>
-    <text x="652" y="460" font-size="16" fill="#111827">여러 도시가 같은 앱·같은 기준으로,</text>
-    <text x="652" y="482" font-size="16" fill="#111827">단말기 없이 차량 관제</text>
-    <rect x="950" y="404" width="274" height="3" fill="#0B1E3C" />
-    <text x="950" y="434" font-size="19" font-weight="bold" fill="#0B1E3C">적재고 419mm</text>
-    <text x="950" y="460" font-size="16" fill="#111827">수동 GPR 카트를 바로 내려</text>
-    <text x="950" y="482" font-size="16" fill="#111827">같은 차에서 현장 재확인<tspan fill="#4B5563"> (ST1 495mm)</tspan></text>
-  </g>
-  <g id="kit" data-pptx-bounds="56 512 1168 44">
-    <text x="56" y="528" font-size="15" fill="#4B5563"><tspan font-weight="bold" fill="#374151">기본 조건</tspan>  2025년 의무구매 대상 공공 신차의 94.6%가 무공해차입니다. V2L·L-Track·적재공간은 다른 밴에도 있어 선택 이유로 삼지 않았습니다.</text>
-    <text x="56" y="550" font-size="15" fill="#4B5563"><tspan font-weight="bold" fill="#374151">불리한 점</tspan>  주행거리 377km는 스타리아보다 10km 짧지만 하루 약 30km [가설]에는 충분합니다. 차값 차이(최대 1,354만 원)는 GPR(대당 2억~8억 원)에 비해 작습니다.</text>
+  <g id="compare" data-pptx-bounds="56 410 1168 110">
+    <rect x="56" y="414" width="274" height="3" fill="#0B1E3C" />
+    <text x="56" y="452" font-size="21" font-weight="bold" fill="#0B1E3C">PBV 컨버전 포털</text>
+    <text x="56" y="484" font-size="18" fill="#111827">모든 차에 같은 위치 장착</text>
+    <rect x="354" y="414" width="274" height="3" fill="#0B1E3C" />
+    <text x="354" y="452" font-size="21" font-weight="bold" fill="#0B1E3C">PIM · 조인트 블록</text>
+    <text x="354" y="484" font-size="18" fill="#111827">차가 장비 전원·기록을 제어</text>
+    <rect x="652" y="414" width="274" height="3" fill="#0B1E3C" />
+    <text x="652" y="452" font-size="21" font-weight="bold" fill="#0B1E3C">Pleos Fleet</text>
+    <text x="652" y="484" font-size="18" fill="#111827">단말기 없이 여러 도시 관제</text>
+    <rect x="950" y="414" width="274" height="3" fill="#0B1E3C" />
+    <text x="950" y="452" font-size="21" font-weight="bold" fill="#0B1E3C">적재고 419mm</text>
+    <text x="950" y="484" font-size="18" fill="#111827">카트를 바로 내려 현장 재확인</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 594 1168 52">
     <rect x="56" y="594" width="4" height="52" fill="#F5B700" />

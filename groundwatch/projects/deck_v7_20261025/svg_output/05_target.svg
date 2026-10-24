@@ -37,13 +37,11 @@
     <text x="744" y="286" font-size="20" font-weight="bold" fill="#111827">지반침하 원인 1위 · 하수관 손상</text>
     <text x="744" y="312" font-size="16" fill="#374151">전국 867건 중 394건 (2020~2024)</text>
   </g>
-  <g id="scope" data-pptx-bounds="744 340 480 220">
-    <rect x="744" y="340" width="480" height="3" fill="#F5B700" />
-    <text x="744" y="378" font-size="19" font-weight="bold" fill="#0B1E3C">얕은 공동형 · 약 2m 이내 → GroundWatch 대상</text>
-    <text x="744" y="404" font-size="16" fill="#374151">공동이 먼저 생겨 자람 → 반복 측정으로 잡을 수 있음</text>
-    <rect x="744" y="440" width="480" height="3" fill="#C3CCD9" />
-    <text x="744" y="478" font-size="19" font-weight="bold" fill="#4B5563">심부 붕괴형 · 지하 10m 이상 → 대상 아님</text>
-    <text x="744" y="504" font-size="16" fill="#374151">예: 명일동(깊이 16m) · 깊은 굴착 공사장은 계측이 맡음</text>
+  <g id="scope" data-pptx-bounds="744 340 480 160">
+    <rect x="744" y="352" width="480" height="3" fill="#F5B700" />
+    <text x="744" y="396" font-size="24" font-weight="bold" fill="#0B1E3C">GroundWatch 대상</text>
+    <text x="744" y="436" font-size="24" font-weight="bold" fill="#0B1E3C">약 2m 이내의 얕은 공동</text>
+    <text x="744" y="474" font-size="17" fill="#4B5563">깊은 굴착·터널 공사장은 계측이 맡습니다</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 600 1168 44">
     <rect x="56" y="600" width="4" height="44" fill="#F5B700" />
