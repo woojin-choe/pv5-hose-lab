@@ -109,4 +109,13 @@ for f in sorted(os.listdir(OUT)):
         assert body.count(a) >= 1 or head_part.count(a) >= 1, (no, a[:40])
         body = body.replace(a, b2); head_part = head_part.replace(a, b2)
     open(p, "w", encoding="utf-8").write(head_part + body)
+# 문구 다듬기(copy8.py)
+import sys; sys.path.insert(0, HERE)
+from copy8 import COPY
+for f in sorted(os.listdir(OUT)):
+    p = os.path.join(OUT, f); t = open(p, encoding="utf-8").read()
+    for a, b in COPY.get(f[:2], []):
+        assert a in t, (f, a)
+        t = t.replace(a, b)
+    open(p, "w", encoding="utf-8").write(t)
 print("theme8 ok")

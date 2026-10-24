@@ -4,7 +4,7 @@
   "target": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v8_20261026",
   "source_fingerprint": {
     "algorithm": "sha256",
-    "digest": "f5a4856596c702ce17f8994d4c7e4a0e6eb8e37f9e932bf6c50fc8308b805035",
+    "digest": "c7efeb44e08040ca642058a1317451bce2b7663033e6aeb6655d3aada5b34e2b",
     "file_count": 18,
     "files": [
       {
@@ -13,67 +13,67 @@
       },
       {
         "file": "02_incident.svg",
-        "sha256": "1e908bfa8f6facd8f38b24deef6b11ffbf42c86158b01b7523e5bdb0d19b5700"
+        "sha256": "b806b68e4802df585baebd735574a2f084e01da4504cb9c47627ec1730dd78be"
       },
       {
         "file": "03_current.svg",
-        "sha256": "d4cd5ac0d5dc8bd3b3504925d866d58f589fffcb2214c0aa142d8e98a18c357d"
+        "sha256": "54db4bae2793a09e60a8867b06c9ae861d749ccb3ddd415345f2f463ade0d5ff"
       },
       {
         "file": "04_blindspot.svg",
-        "sha256": "a1fc86839f3ea58c71ff0100158cae80ba328e6a167f57f4aa9d45021e078696"
+        "sha256": "14dadc048fb7d0bc7dd926dc0c77e8601275519990253ce13d3f1a1da075df0f"
       },
       {
         "file": "05_target.svg",
-        "sha256": "2b70510d4c17f1f470e80dfbf69d8cbbb1546695c9ed7ed9832ff3cd9975d784"
+        "sha256": "39d24964b410d7fa8bbf395791d77ff4ec9cdc38f3a2221172fe677beefd6f10"
       },
       {
         "file": "06_q_more.svg",
-        "sha256": "8269c7a3772b1da107aad962b5581a58b696f4d5466cfe530b8cfb4b15f44a9b"
+        "sha256": "c1848c616deec14e1e989f1023dfa0a17670500fdc4f3fa177ca8da29a5ef529"
       },
       {
         "file": "07_q_diff.svg",
-        "sha256": "a52434555a46d1878cec41f69f0813bf6f6cfdff9b210dcda6b2f750e671f88e"
+        "sha256": "38d4620f45b275255252bf118d6ea58b2fe02d1b3ec02fb36bbd095734f5f0ef"
       },
       {
         "file": "08_reveal.svg",
-        "sha256": "2b5cf16fdef871781449ec83b2774e7c667775a41886ba1e0fd4becf818bf315"
+        "sha256": "cd39a53a142b0e0ff774bf16eb01ff5fafa02a72deb64b19fbb17823d44dccd0"
       },
       {
         "file": "09_summary.svg",
-        "sha256": "579096315b20c7adcfc05c8cee6202874b8a89520edafb7c284705b37f98ce10"
+        "sha256": "55b4dd2bfdaff36c432a0431b5ab025b97eda6772aad54fe4fc2b869090e6cc1"
       },
       {
         "file": "10_solution.svg",
-        "sha256": "edabff62fdbd89cfbbc71d53ae5874030838b94705dd5b6fe90328b10d684e5f"
+        "sha256": "81ee5e7ac9a40f0973229518d06f7219dacfdb797f2b758c7183372e57038155"
       },
       {
         "file": "11_field.svg",
-        "sha256": "6e32e41b90b4fb9b49b5d71b36405cfc9169cd426a78b03ba1053175c50c0ba5"
+        "sha256": "bf2e25cc31a5908c0725637ff09a24225c6088551a13ccbf6db1b0c6b7d33755"
       },
       {
         "file": "12_pv5_lab.svg",
-        "sha256": "74472bb08e4bdc3aafe1b2e4b797ff91663a5e68ea57e385857e765f0f1b7603"
+        "sha256": "c86986a4931c6d1cceb5c57d3e50020f9ee126f937866a4c2f8504cbff8e793e"
       },
       {
         "file": "13_why_pv5.svg",
-        "sha256": "02cae66fb88b18b8e4654085ee91824eaf2811dac193ea889454c57a7665f7dc"
+        "sha256": "1564d7a3aebfb97b996894cbac3a1c7a1473367c33fd6b9e97d7ba8bb964ed39"
       },
       {
         "file": "14_verify.svg",
-        "sha256": "07234d414a6ef6a9ea5feff7fb5b8b54852ec7b06f913397d7bbe091abd516c4"
+        "sha256": "32bbd4794dcc40f2b8e89f6121fc537f2826579a3affb5914928d84cea5024db"
       },
       {
         "file": "15_economics.svg",
-        "sha256": "5a29129a064a33493a98135d7eb37a238570b0cff77bdc97f311d01d22136feb"
+        "sha256": "3448614eb5ec531cd891f75f3a9226657d68f860b6f38dab77c415434f20d56c"
       },
       {
         "file": "16_players.svg",
-        "sha256": "e70d130a4d55116f49bc238a5b8fea10d688b3d25d3bd033be63704ae940516c"
+        "sha256": "f7cd3b0b546c6d6480d22fcffb548dc76efa76addef9a44ef0edaebe25e08b4b"
       },
       {
         "file": "17_entry.svg",
-        "sha256": "46ccce949fd45a450571471e93690726cc7c0b5861e1f21b98e219b3b7e97e1f"
+        "sha256": "c582e26c592f4d8da9060ad004b37222e2627442764927ab2bd39e35b2668e2a"
       },
       {
         "file": "18_close.svg",
@@ -118,7 +118,7 @@
         },
         {
           "file": "02_incident.svg",
-          "message": "<text> (x=56, y=278; text='100여 일 뒤, 도로가 무너졌습니다') exceeds <g id=\"title\"> data-pptx-bounds on the horizontal axis: content (56.0, 244.0)-(686.9, 292.0), container (56.0, 168.0)-(679.0, 304.0), overflow horizontal 1.3%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈39.4 px per mixed char at 40px incl. headroom; ≈15 chars fit in 623 px"
+          "message": "<text> (x=56, y=278; text='100여 일 뒤, 도로는 무너졌습니다') exceeds <g id=\"title\"> data-pptx-bounds on the horizontal axis: content (56.0, 244.0)-(686.9, 292.0), container (56.0, 168.0)-(679.0, 304.0), overflow horizontal 1.3%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈39.4 px per mixed char at 40px incl. headroom; ≈15 chars fit in 623 px"
         },
         {
           "file": "03_current.svg",
@@ -130,7 +130,7 @@
         },
         {
           "file": "03_current.svg",
-          "message": "<text> (x=56, y=128; text='탐사는 이미 합니다. 한 번 보고 끝…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(1075.1, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='탐사는 있습니다. 다시 보는 체계가 …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(1045.8, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "04_blindspot.svg",
@@ -142,7 +142,7 @@
         },
         {
           "file": "04_blindspot.svg",
-          "message": "<text> (x=56, y=128; text='문제는 탐사와 탐사 ‘사이’입니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(798.1, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='공백은 탐사와 탐사 ‘사이’에 있습니…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(911.3, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "04_blindspot.svg",
@@ -158,7 +158,7 @@
         },
         {
           "file": "05_target.svg",
-          "message": "<text> (x=56, y=128; text='원인 1위 하수관 손상, 땅속 2m …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(1070.4, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='원인 1위 하수관 손상, 지하 2m …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(1169.0, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "05_target.svg",
@@ -214,7 +214,7 @@
         },
         {
           "file": "09_summary.svg",
-          "message": "<text> (x=56, y=128; text='숫자 세 개로 보는 GroundWat…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(781.0, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='세 개의 숫자로 요약합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(643.7, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "10_solution.svg",
@@ -226,7 +226,7 @@
         },
         {
           "file": "10_solution.svg",
-          "message": "<text> (x=56, y=128; text='같은 길을 다시 찍고, 달라진 곳만 …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(961.9, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='다시 측정하고, 달라진 곳만 선별합니…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(932.6, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "10_solution.svg",
@@ -258,7 +258,7 @@
         },
         {
           "file": "12_pv5_lab.svg",
-          "message": "<text> (x=56, y=128; text='PV5 한 대가 이동형 탐사실이 됩니…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(860.5, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='PV5, 그 자체로 이동형 탐사실') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(727.4, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "12_pv5_lab.svg",
@@ -274,7 +274,7 @@
         },
         {
           "file": "13_why_pv5.svg",
-          "message": "<text> (x=56, y=128; text='어느 PV5가 재도, 같은 기준으로 …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(937.7, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='차량이 바뀌어도, 같은 조건으로') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(770.1, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "13_why_pv5.svg",
@@ -290,7 +290,7 @@
         },
         {
           "file": "14_verify.svg",
-          "message": "<text> (x=56, y=128; text='남은 질문은 4단계로 검증합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(770.1, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='남은 과제는 네 단계로 증명합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(806.2, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "15_economics.svg",
@@ -302,7 +302,7 @@
         },
         {
           "file": "15_economics.svg",
-          "message": "<text> (x=56, y=128; text='km당 4.7만 원이면 됩니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(645.6, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='반복 탐사 원가, km당 4.7만 원') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(751.9, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "15_economics.svg",
@@ -318,7 +318,7 @@
         },
         {
           "file": "16_players.svg",
-          "message": "<text> (x=56, y=128; text='기아는 공공 PV5 시장을 엽니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(748.0, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='기아에게는, 공공 PV5라는 새 시장') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(824.5, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "16_players.svg",
@@ -334,7 +334,7 @@
         },
         {
           "file": "17_entry.svg",
-          "message": "<text> (x=56, y=128; text='지자체 예산에서 바로 시작합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(791.6, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+          "message": "<text> (x=56, y=128; text='이미 집행 중인 예산에서 시작합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(855.5, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
         },
         {
           "file": "18_close.svg",
@@ -494,7 +494,7 @@
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[4]:fill '#F5B700' -> None; text[5]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
         "<text> (x=712, y=690; text='지도 © OpenStreetMap c…') exceeds <g id=\"incident-map\"> data-pptx-bounds on the horizontal axis: content (712.0, 679.8)-(1283.3, 694.2), container (680.0, 0.0)-(1280.0, 720.0), overflow horizontal 0.5%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈9.8 px per mixed char at 12px incl. headroom; ≈60 chars fit in 600 px",
-        "<text> (x=56, y=278; text='100여 일 뒤, 도로가 무너졌습니다') exceeds <g id=\"title\"> data-pptx-bounds on the horizontal axis: content (56.0, 244.0)-(686.9, 292.0), container (56.0, 168.0)-(679.0, 304.0), overflow horizontal 1.3%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈39.4 px per mixed char at 40px incl. headroom; ≈15 chars fit in 623 px"
+        "<text> (x=56, y=278; text='100여 일 뒤, 도로는 무너졌습니다') exceeds <g id=\"title\"> data-pptx-bounds on the horizontal axis: content (56.0, 244.0)-(686.9, 292.0), container (56.0, 168.0)-(679.0, 304.0), overflow horizontal 1.3%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈39.4 px per mixed char at 40px incl. headroom; ≈15 chars fit in 623 px"
       ],
       "info": {
         "viewbox": "0 0 1280 720",
@@ -548,7 +548,7 @@
         "tspan_elements": 2
       },
       "passed": true,
-      "source_sha256": "1e908bfa8f6facd8f38b24deef6b11ffbf42c86158b01b7523e5bdb0d19b5700"
+      "source_sha256": "b806b68e4802df585baebd735574a2f084e01da4504cb9c47627ec1730dd78be"
     },
     {
       "file": "03_current.svg",
@@ -558,7 +558,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='탐사는 이미 합니다. 한 번 보고 끝…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(1075.1, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+        "<text> (x=56, y=128; text='탐사는 있습니다. 다시 보는 체계가 …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(1045.8, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
       ],
       "info": {
         "viewbox": "0 0 1280 720",
@@ -612,7 +612,7 @@
         "tspan_elements": 2
       },
       "passed": true,
-      "source_sha256": "d4cd5ac0d5dc8bd3b3504925d866d58f589fffcb2214c0aa142d8e98a18c357d"
+      "source_sha256": "54db4bae2793a09e60a8867b06c9ae861d749ccb3ddd415345f2f463ade0d5ff"
     },
     {
       "file": "04_blindspot.svg",
@@ -622,7 +622,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='문제는 탐사와 탐사 ‘사이’입니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(798.1, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "<text> (x=56, y=128; text='공백은 탐사와 탐사 ‘사이’에 있습니…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(911.3, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
         "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"evidence\"> x=792.0, y=390.0..414.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
       ],
       "info": {
@@ -675,7 +675,7 @@
         "tspan_elements": 3
       },
       "passed": true,
-      "source_sha256": "a1fc86839f3ea58c71ff0100158cae80ba328e6a167f57f4aa9d45021e078696"
+      "source_sha256": "14dadc048fb7d0bc7dd926dc0c77e8601275519990253ce13d3f1a1da075df0f"
     },
     {
       "file": "05_target.svg",
@@ -685,7 +685,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='원인 1위 하수관 손상, 땅속 2m …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(1070.4, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "<text> (x=56, y=128; text='원인 1위 하수관 손상, 지하 2m …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(1169.0, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
         "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"scope\"> x=744.0, y=396.0..436.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
       ],
       "info": {
@@ -740,7 +740,7 @@
         "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "2b70510d4c17f1f470e80dfbf69d8cbbb1546695c9ed7ed9832ff3cd9975d784"
+      "source_sha256": "39d24964b410d7fa8bbf395791d77ff4ec9cdc38f3a2221172fe677beefd6f10"
     },
     {
       "file": "06_q_more.svg",
@@ -805,7 +805,7 @@
         "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "8269c7a3772b1da107aad962b5581a58b696f4d5466cfe530b8cfb4b15f44a9b"
+      "source_sha256": "c1848c616deec14e1e989f1023dfa0a17670500fdc4f3fa177ca8da29a5ef529"
     },
     {
       "file": "07_q_diff.svg",
@@ -869,7 +869,7 @@
         "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "a52434555a46d1878cec41f69f0813bf6f6cfdff9b210dcda6b2f750e671f88e"
+      "source_sha256": "38d4620f45b275255252bf118d6ea58b2fe02d1b3ec02fb36bbd095734f5f0ef"
     },
     {
       "file": "08_reveal.svg",
@@ -933,7 +933,7 @@
         "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "2b5cf16fdef871781449ec83b2774e7c667775a41886ba1e0fd4becf818bf315"
+      "source_sha256": "cd39a53a142b0e0ff774bf16eb01ff5fafa02a72deb64b19fbb17823d44dccd0"
     },
     {
       "file": "09_summary.svg",
@@ -943,7 +943,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='숫자 세 개로 보는 GroundWat…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(781.0, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+        "<text> (x=56, y=128; text='세 개의 숫자로 요약합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(643.7, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
       ],
       "info": {
         "viewbox": "0 0 1280 720",
@@ -995,7 +995,7 @@
         "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "579096315b20c7adcfc05c8cee6202874b8a89520edafb7c284705b37f98ce10"
+      "source_sha256": "55b4dd2bfdaff36c432a0431b5ab025b97eda6772aad54fe4fc2b869090e6cc1"
     },
     {
       "file": "10_solution.svg",
@@ -1005,7 +1005,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[11]:fill '#F5B700' -> None; text[12]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='같은 길을 다시 찍고, 달라진 곳만 …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(961.9, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "<text> (x=56, y=128; text='다시 측정하고, 달라진 곳만 선별합니…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(932.6, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
         "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"hero\"> x=336.0, y=486.0..522.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
       ],
       "info": {
@@ -1063,7 +1063,7 @@
         "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "edabff62fdbd89cfbbc71d53ae5874030838b94705dd5b6fe90328b10d684e5f"
+      "source_sha256": "81ee5e7ac9a40f0973229518d06f7219dacfdb797f2b758c7183372e57038155"
     },
     {
       "file": "11_field.svg",
@@ -1128,7 +1128,7 @@
         "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "6e32e41b90b4fb9b49b5d71b36405cfc9169cd426a78b03ba1053175c50c0ba5"
+      "source_sha256": "bf2e25cc31a5908c0725637ff09a24225c6088551a13ccbf6db1b0c6b7d33755"
     },
     {
       "file": "12_pv5_lab.svg",
@@ -1138,7 +1138,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='PV5 한 대가 이동형 탐사실이 됩니…') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(860.5, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "<text> (x=56, y=128; text='PV5, 그 자체로 이동형 탐사실') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(727.4, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
         "<text> (x=56, y=682; text='출처: 기아 PV5 카고 카탈로그(2…') exceeds <g id=\"source\"> data-pptx-bounds on the horizontal axis: content (56.0, 671.0)-(1282.0, 686.5), container (56.0, 668.0)-(1224.0, 688.0), overflow horizontal 5.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈11.0 px per mixed char at 13px incl. headroom; ≈105 chars fit in 1168 px"
       ],
       "info": {
@@ -1193,7 +1193,7 @@
         "tspan_elements": 5
       },
       "passed": true,
-      "source_sha256": "74472bb08e4bdc3aafe1b2e4b797ff91663a5e68ea57e385857e765f0f1b7603"
+      "source_sha256": "c86986a4931c6d1cceb5c57d3e50020f9ee126f937866a4c2f8504cbff8e793e"
     },
     {
       "file": "13_why_pv5.svg",
@@ -1203,7 +1203,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='어느 PV5가 재도, 같은 기준으로 …') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(937.7, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "<text> (x=56, y=128; text='차량이 바뀌어도, 같은 조건으로') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(770.1, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
         "<text> (x=56, y=668; text='출처: 오토뷰(2026.1.28, 컨…') exceeds <g id=\"source\"> data-pptx-bounds on the horizontal axis: content (56.0, 657.0)-(1268.1, 672.5), container (56.0, 656.0)-(1224.0, 690.0), overflow horizontal 3.8%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈11.3 px per mixed char at 13px incl. headroom; ≈103 chars fit in 1168 px"
       ],
       "info": {
@@ -1258,7 +1258,7 @@
         "tspan_elements": 2
       },
       "passed": true,
-      "source_sha256": "02cae66fb88b18b8e4654085ee91824eaf2811dac193ea889454c57a7665f7dc"
+      "source_sha256": "1564d7a3aebfb97b996894cbac3a1c7a1473367c33fd6b9e97d7ba8bb964ed39"
     },
     {
       "file": "14_verify.svg",
@@ -1268,7 +1268,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[6]:fill '#F5B700' -> None; text[7]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='남은 질문은 4단계로 검증합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(770.1, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+        "<text> (x=56, y=128; text='남은 과제는 네 단계로 증명합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(806.2, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
       ],
       "info": {
         "viewbox": "0 0 1280 720",
@@ -1320,7 +1320,7 @@
         "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "07234d414a6ef6a9ea5feff7fb5b8b54852ec7b06f913397d7bbe091abd516c4"
+      "source_sha256": "32bbd4794dcc40f2b8e89f6121fc537f2826579a3affb5914928d84cea5024db"
     },
     {
       "file": "15_economics.svg",
@@ -1330,7 +1330,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[11]:fill '#F5B700' -> None; text[12]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='km당 4.7만 원이면 됩니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(645.6, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "<text> (x=56, y=128; text='반복 탐사 원가, km당 4.7만 원') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(751.9, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
         "<text> (x=1122, y=404; text='+28만 원') exceeds <g id=\"bars\"> data-pptx-bounds on the horizontal axis: content (1122.0, 381.9)-(1233.5, 413.1), container (640.0, 160.0)-(1224.0, 460.0), overflow horizontal 1.6%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈22.3 px per mixed char at 26px incl. headroom; ≈26 chars fit in 584 px"
       ],
       "info": {
@@ -1385,7 +1385,7 @@
         "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "5a29129a064a33493a98135d7eb37a238570b0cff77bdc97f311d01d22136feb"
+      "source_sha256": "3448614eb5ec531cd891f75f3a9226657d68f860b6f38dab77c415434f20d56c"
     },
     {
       "file": "16_players.svg",
@@ -1395,7 +1395,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[11]:fill '#F5B700' -> None; text[12]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='기아는 공공 PV5 시장을 엽니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(748.0, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "<text> (x=56, y=128; text='기아에게는, 공공 PV5라는 새 시장') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(824.5, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
         "Detected 3 paragraph-like line run(s) split across sibling <text> elements (<g id=\"kia\"> x=88.0, y=500.0..526.0, 2 lines; <g id=\"kia\"> x=464.0, y=500.0..526.0, 2 lines; <g id=\"kia\"> x=840.0, y=500.0..526.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
       ],
       "info": {
@@ -1450,7 +1450,7 @@
         "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "e70d130a4d55116f49bc238a5b8fea10d688b3d25d3bd033be63704ae940516c"
+      "source_sha256": "f7cd3b0b546c6d6480d22fcffb548dc76efa76addef9a44ef0edaebe25e08b4b"
     },
     {
       "file": "17_entry.svg",
@@ -1460,7 +1460,7 @@
       "warnings": [
         "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): chapter:fill None -> '#F5B700'; rect[11]:fill '#F5B700' -> None; text[12]:fill '#F5B700' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
         "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
-        "<text> (x=56, y=128; text='지자체 예산에서 바로 시작합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(791.6, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+        "<text> (x=56, y=128; text='이미 집행 중인 예산에서 시작합니다') exceeds <g id=\"title\"> data-pptx-bounds on the vertical axis: content (56.0, 87.2)-(855.5, 144.8), container (56.0, 78.0)-(1224.0, 142.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
       ],
       "info": {
         "viewbox": "0 0 1280 720",
@@ -1514,7 +1514,7 @@
         "tspan_elements": 1
       },
       "passed": true,
-      "source_sha256": "46ccce949fd45a450571471e93690726cc7c0b5861e1f21b98e219b3b7e97e1f"
+      "source_sha256": "c582e26c592f4d8da9060ad004b37222e2627442764927ab2bd39e35b2668e2a"
     },
     {
       "file": "18_close.svg",

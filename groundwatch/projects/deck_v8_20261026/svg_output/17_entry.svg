@@ -5,13 +5,13 @@
   <rect id="photo8-scrim" data-pptx-role="decoration" x="0" y="0" width="1280" height="720" fill="url(#ph8)" />
   <g id="chapter" data-pptx-bounds="56 36 600 30">
     <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
-    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">사업<tspan fill="#8E9AAB" font-weight="normal">   첫 고객과 기아와 할 일</tspan></text>
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">사업<tspan fill="#8E9AAB" font-weight="normal">   진입 전략</tspan></text>
   </g>
   <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
-    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">지자체 예산에서 바로 시작합니다</text>
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">이미 집행 중인 예산에서 시작합니다</text>
   </g>
   <g id="hero" data-pptx-bounds="56 180 520 300">
-    <text x="56" y="218" font-size="18" font-weight="bold" fill="#F5B700">지자체가 이미 쓰는 GPR 용역 예산 · 2026 낙찰</text>
+    <text x="56" y="218" font-size="18" font-weight="bold" fill="#F5B700">지자체 GPR 탐사 용역 · 2026 낙찰</text>
     <text x="56" y="320" font-size="76" font-weight="bold" fill="#FFFFFF" letter-spacing="-3">1~2억 원</text>
     <text x="56" y="366" font-size="22" font-weight="bold" fill="#E8ECF2">안양·강동구·용인, 건당 0.85억~1.90억 원</text>
     <text x="56" y="400" font-size="18" fill="#8E9AAB">경기도는 16개 시·군 탐사에 21.6억 원 지원(2025.9)</text>
@@ -33,7 +33,7 @@
   </g>
   <g id="conclusion" data-pptx-bounds="56 540 1168 44">
     <rect x="56" y="540" width="4" height="44" fill="#F5B700" />
-    <text x="76" y="570" font-size="21" font-weight="bold" fill="#FFFFFF">새 예산이 아니라 이미 쓰는 탐사 예산에서, 기아와 함께 첫 실증을 만듭니다.</text>
+    <text x="76" y="570" font-size="21" font-weight="bold" fill="#FFFFFF">새 예산이 아닌 기존 탐사 예산에서, 기아와 함께 첫 실증을 시작합니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
     <text x="56" y="682" font-size="13" fill="#8E9AAB">출처: 나라장터 2026(R26BK01572949 · R26BK01599467 · R26BK01517362) · 헤럴드경제(2025.9.7) · 조달청 · 테스트베드서울 · 공모전 일반 부문 혜택 안내 · 일정은 목표</text>

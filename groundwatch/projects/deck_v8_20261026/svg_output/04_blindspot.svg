@@ -5,16 +5,16 @@
   </g>
   <g id="chapter" data-pptx-bounds="56 36 600 30">
     <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
-    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">문제<tspan fill="#8E9AAB" font-weight="normal">   지금 체계의 맹점</tspan></text>
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">문제<tspan fill="#8E9AAB" font-weight="normal">   구조적 공백</tspan></text>
   </g>
   <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
-    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">문제는 탐사와 탐사 ‘사이’입니다</text>
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">공백은 탐사와 탐사 ‘사이’에 있습니다</text>
   </g>
   <g id="gap-chart" data-pptx-bounds="56 168 700 380">
     <text x="56" y="204" font-size="19" fill="#E8ECF2">법정 공동조사 주기</text>
     <rect x="56" y="218" width="600" height="44" fill="#3B4557" />
     <text x="672" y="250" font-size="32" font-weight="bold" fill="#E8ECF2">5년</text>
-    <text x="56" y="322" font-size="19" fill="#E8ECF2">서울시가 줄이기로 한 주기 <tspan font-size="15" fill="#8E9AAB">(2025.4 발표)</tspan></text>
+    <text x="56" y="322" font-size="19" fill="#E8ECF2">서울시 단축 주기 <tspan font-size="15" fill="#8E9AAB">(2025.4 발표)</tspan></text>
     <rect x="56" y="336" width="120" height="44" fill="#C3CBD8" />
     <text x="192" y="368" font-size="32" font-weight="bold" fill="#FFFFFF">1년</text>
     <text x="56" y="440" font-size="19" font-weight="bold" fill="#FF6B5E">연희동: ‘이상 없음’에서 함몰까지</text>
@@ -23,15 +23,15 @@
   </g>
   <g id="evidence" data-pptx-bounds="792 168 432 380">
     <rect x="792" y="168" width="432" height="3" fill="#FFFFFF" />
-    <text x="792" y="210" font-size="17" font-weight="bold" fill="#F5B700">같은 공동을 다시 재 보니</text>
+    <text x="792" y="210" font-size="17" font-weight="bold" fill="#F5B700">동일 공동 재탐사 결과</text>
     <text x="792" y="300" font-size="76" font-weight="bold" fill="#FFFFFF" letter-spacing="-3">21곳 모두</text>
-    <text x="792" y="346" font-size="24" font-weight="bold" fill="#E8ECF2">크기가 변해 있었습니다</text>
+    <text x="792" y="346" font-size="24" font-weight="bold" fill="#E8ECF2">규모 변화 확인</text>
     <text x="792" y="390" font-size="16" fill="#8E9AAB">서울 공동 30곳을 209~989일 뒤 재탐사,</text>
     <text x="792" y="414" font-size="16" fill="#8E9AAB">그사이 복구된 9곳 제외 · 인천대 연구(2020)</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 560 1168 44">
     <rect x="56" y="560" width="4" height="44" fill="#F5B700" />
-    <text x="76" y="590" font-size="21" font-weight="bold" fill="#FFFFFF">한 번의 탐사는 그 시점만 말해 줍니다. 그 사이의 ‘변화’를 봐야 합니다.</text>
+    <text x="76" y="590" font-size="21" font-weight="bold" fill="#FFFFFF">한 번의 탐사는 그 시점만 증명합니다. 필요한 것은 ‘변화’의 기록입니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 656 1168 34">
     <text x="56" y="668" font-size="13" fill="#8E9AAB">출처: 지하안전법 시행규칙 별표 3(공동조사 5년마다 1회 이상) · 이투데이(2025.4.23) · 뉴시스(2024.8.30) · 박정준·김인대, 한국재난정보학회논문집 16(1)(2020)<tspan x="56" dy="16">메트로신문(2025.10.19, 공사장 주변 탐사) · 경향신문(2025.3.28, 성산로 월 1회 탐사) · 경북매일(2026.9.2, 국토안전관리원 미복구 공동 자료)</tspan></text>

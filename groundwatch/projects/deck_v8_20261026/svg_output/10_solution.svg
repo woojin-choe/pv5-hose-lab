@@ -8,23 +8,23 @@
     <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">해법<tspan fill="#8E9AAB" font-weight="normal">   GroundWatch의 핵심</tspan></text>
   </g>
   <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
-    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">같은 길을 다시 찍고, 달라진 곳만 봅니다</text>
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">다시 측정하고, 달라진 곳만 선별합니다</text>
   </g>
   <g id="scans" data-pptx-bounds="56 150 1168 250">
     <image href="../images/sim_prev.png" x="56" y="156" width="360" height="186" preserveAspectRatio="none" />
-    <text x="56" y="368" font-size="16" font-weight="bold" fill="#FFFFFF">새벽, 같은 경로를 약 2개월마다</text>
+    <text x="56" y="368" font-size="16" font-weight="bold" fill="#FFFFFF">새벽 시간대 · 약 2개월 주기</text>
     <text x="56" y="390" font-size="15" fill="#C3CBD8">공동 반경 18cm</text>
     <rect x="64" y="164" width="95" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
     <text x="74" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">지난 회차</text>
     <text x="441" y="261" font-size="34" font-weight="bold" fill="#FFFFFF" text-anchor="middle">−</text>
     <image href="../images/sim_cur.png" x="460" y="156" width="360" height="186" preserveAspectRatio="none" />
-    <text x="460" y="368" font-size="16" font-weight="bold" fill="#FFFFFF">같은 길을 다시 찍으면</text>
-    <text x="460" y="390" font-size="15" fill="#C3CBD8">공동이 20cm 자라 있음</text>
+    <text x="460" y="368" font-size="16" font-weight="bold" fill="#FFFFFF">동일 구간 재측정</text>
+    <text x="460" y="390" font-size="15" fill="#C3CBD8">공동 반경 20cm로 성장</text>
     <rect x="468" y="164" width="95" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
     <text x="478" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">이번 회차</text>
     <text x="845" y="261" font-size="34" font-weight="bold" fill="#FFFFFF" text-anchor="middle">=</text>
     <image href="../images/sim_diff.png" x="864" y="156" width="360" height="186" preserveAspectRatio="none" />
-    <text x="864" y="368" font-size="16" font-weight="bold" fill="#FFFFFF">위치를 맞춰 빼면 변화만 남음</text>
+    <text x="864" y="368" font-size="16" font-weight="bold" fill="#FFFFFF">위치 정합 후 차분 · 변화만 추출</text>
     <text x="864" y="390" font-size="15" fill="#C3CBD8">전문가 승인 → 수동 GPR로 현장 재확인</text>
     <rect x="872" y="164" width="155" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
     <text x="882" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">자동 선별된 차이</text>
@@ -32,8 +32,8 @@
   <g id="hero" data-pptx-bounds="56 420 1168 170">
     <rect x="56" y="420" width="1168" height="3" fill="#FFFFFF" />
     <text x="56" y="526" font-size="88" font-weight="bold" fill="#FFFFFF" letter-spacing="-3">2.4배</text>
-    <text x="336" y="486" font-size="24" font-weight="bold" fill="#E8ECF2">10cm 자란 공동의 변화 신호가</text>
-    <text x="336" y="522" font-size="24" font-weight="bold" fill="#E8ECF2">가장 큰 오탐 요인보다 2.4배 뚜렷합니다</text>
+    <text x="336" y="486" font-size="24" font-weight="bold" fill="#E8ECF2">10cm 성장한 공동의 변화 신호는</text>
+    <text x="336" y="522" font-size="24" font-weight="bold" fill="#E8ECF2">최대 오탐 요인 대비 2.4배입니다</text>
     <text x="336" y="558" font-size="16" fill="#8E9AAB">전자기 시뮬레이션 결과이며 현장 정확도가 아닙니다 · 판정은 전문가, 확정은 천공</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">

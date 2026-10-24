@@ -5,10 +5,10 @@
   <rect id="photo8-scrim" data-pptx-role="decoration" x="0" y="0" width="1280" height="720" fill="url(#ph8)" />
   <g id="chapter" data-pptx-bounds="56 36 600 30">
     <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
-    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">사업<tspan fill="#8E9AAB" font-weight="normal">   누가 사고 누가 쓰나</tspan></text>
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">사업<tspan fill="#8E9AAB" font-weight="normal">   구매·운영 구조</tspan></text>
   </g>
   <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
-    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">기아는 공공 PV5 시장을 엽니다</text>
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">기아에게는, 공공 PV5라는 새 시장</text>
   </g>
   <g id="who0" data-pptx-bounds="56 168 368 90">
     <rect x="56" y="168" width="368" height="3" fill="#FFFFFF" />
@@ -41,11 +41,11 @@
     <text x="840" y="414" font-size="15" fill="#D6DDE8">공공안전 라인업</text>
     <text x="840" y="462" font-size="34" font-weight="bold" fill="#FFFFFF">지상 + 지하</text>
     <text x="840" y="500" font-size="16" fill="#D6DDE8">2026.6 경찰청 PV5 AI 순찰차(지상)</text>
-    <text x="840" y="526" font-size="16" fill="#D6DDE8">GroundWatch가 도로 아래를 맡음</text>
+    <text x="840" y="526" font-size="16" fill="#D6DDE8">GroundWatch가 도로 아래를 담당</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 596 1168 44">
     <rect x="56" y="596" width="4" height="44" fill="#F5B700" />
-    <text x="76" y="626" font-size="21" font-weight="bold" fill="#FFFFFF">지하 데이터는 판매하지 않습니다. 계약기관 안에서 권한대로만 씁니다.</text>
+    <text x="76" y="626" font-size="21" font-weight="bold" fill="#FFFFFF">지하 데이터는 판매하지 않으며, 계약기관 내 권한 범위에서만 활용합니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
     <text x="56" y="682" font-size="13" fill="#8E9AAB">88대 = 지자체 관리 도로 96,712km ÷ 1대 1,100km(연 6,600km를 6회) [가설] · 40억 원 = 88대 × 4,520만 원 · 국가지표체계(2025) · 머니투데이(2026.6.26, 경찰청 PV5 AI 순찰차)</text>

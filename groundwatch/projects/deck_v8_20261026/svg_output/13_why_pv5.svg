@@ -8,7 +8,7 @@
     <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">PV5<tspan fill="#8E9AAB" font-weight="normal">   왜 PV5인가</tspan></text>
   </g>
   <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
-    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">어느 PV5가 재도, 같은 기준으로 잽니다</text>
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">차량이 바뀌어도, 같은 조건으로</text>
   </g>
   <g id="premise" data-pptx-bounds="56 168 1168 226">
     <line x1="56" y1="293.1" x2="1224" y2="293.1" stroke="#F5B700" stroke-width="2" stroke-dasharray="6,5" />
@@ -28,20 +28,20 @@
   <g id="compare" data-pptx-bounds="56 410 1168 110">
     <rect x="56" y="414" width="274" height="3" fill="#FFFFFF" />
     <text x="56" y="452" font-size="24" font-weight="bold" fill="#FFFFFF">PBV 컨버전 포털</text>
-    <text x="56" y="484" font-size="19" fill="#E8ECF2">모든 차에 같은 위치 장착</text>
+    <text x="56" y="484" font-size="19" fill="#E8ECF2">장비 장착 조건 표준화</text>
     <rect x="354" y="414" width="274" height="3" fill="#FFFFFF" />
     <text x="354" y="452" font-size="24" font-weight="bold" fill="#FFFFFF">PIM · 조인트 블록</text>
-    <text x="354" y="484" font-size="19" fill="#E8ECF2">차가 장비 전원·기록을 제어</text>
+    <text x="354" y="484" font-size="19" fill="#E8ECF2">차량 신호로 전원·기록 제어</text>
     <rect x="652" y="414" width="274" height="3" fill="#FFFFFF" />
     <text x="652" y="452" font-size="24" font-weight="bold" fill="#FFFFFF">Pleos Fleet</text>
-    <text x="652" y="484" font-size="19" fill="#E8ECF2">단말기 없이 여러 도시 관제</text>
+    <text x="652" y="484" font-size="19" fill="#E8ECF2">여러 대·여러 도시 통합 운영</text>
     <rect x="950" y="414" width="274" height="3" fill="#FFFFFF" />
     <text x="950" y="452" font-size="24" font-weight="bold" fill="#FFFFFF">적재고 419mm</text>
-    <text x="950" y="484" font-size="19" fill="#E8ECF2">카트를 바로 내려 현장 재확인</text>
+    <text x="950" y="484" font-size="19" fill="#E8ECF2">수동 GPR 즉시 하차·재확인</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 594 1168 52">
     <rect x="56" y="594" width="4" height="52" fill="#F5B700" />
-    <text x="80" y="627" font-size="20" font-weight="bold" fill="#FFFFFF">어느 도시의 어느 PV5가 재도, <tspan fill="#F5B700">같은 기준으로 비교</tspan>됩니다.</text>
+    <text x="80" y="627" font-size="20" font-weight="bold" fill="#FFFFFF">어느 도시, 어느 PV5에서도 <tspan fill="#F5B700">동일한 기준으로 비교</tspan>됩니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 656 1168 34">
     <text x="56" y="668" font-size="13" fill="#8E9AAB">출처: 오토뷰(2026.1.28, 컨버전 포털·PIM·조인트 블록) · 공모전 솔루션 부문 안내(Pleos SDK·앱 마켓) · 기아 PV5 카고 카탈로그(2026.9) · 현대차그룹 뉴스룸(2024.4, ST1 적재고 495mm)</text>

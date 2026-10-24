@@ -21,9 +21,9 @@
   <g id="story-text" data-pptx-bounds="64 150 700 440">
     <text x="64" y="250" font-size="28" font-weight="normal" fill="#D6DDE8" letter-spacing="0">매번 전체 공정을 반복하지 않고,</text>
     <text x="64" y="322" font-size="50" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">달라진 곳부터</text>
-    <text x="64" y="386" font-size="50" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">찾아볼 수 있다면요?</text>
-    <text x="64" y="466" font-size="20" font-weight="normal" fill="#D6DDE8" letter-spacing="0">같은 길을 반복해서 재고, 지난 기록과 달라진 곳만 골라</text>
-    <text x="64" y="498" font-size="20" font-weight="normal" fill="#D6DDE8" letter-spacing="0">전문가가 검토한 지점만 현장에서 다시 확인합니다.</text>
+    <text x="64" y="386" font-size="50" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">찾아낼 수 있다면.</text>
+    <text x="64" y="466" font-size="20" font-weight="normal" fill="#D6DDE8" letter-spacing="0">같은 길을 반복 측정해 지난 기록과 달라진 곳만 선별하고,</text>
+    <text x="64" y="498" font-size="20" font-weight="normal" fill="#D6DDE8" letter-spacing="0">전문가가 검토한 지점만 현장에서 재확인합니다.</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1160 28">
     <text x="64" y="696" font-size="14" font-weight="bold" fill="#F5B700"></text>

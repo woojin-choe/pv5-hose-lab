@@ -8,7 +8,7 @@
     <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">사업<tspan fill="#8E9AAB" font-weight="normal">   단가와 수지</tspan></text>
   </g>
   <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
-    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">km당 4.7만 원이면 됩니다</text>
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">반복 탐사 원가, km당 4.7만 원</text>
   </g>
   <g id="hero" data-pptx-bounds="56 160 520 260">
     <text x="56" y="200" font-size="17" font-weight="bold" fill="#F5B700">반복 탐사 1회 원가 [가설]</text>
@@ -17,18 +17,18 @@
     <text x="56" y="380" font-size="16" fill="#8E9AAB">차량 1대 연 3.09억 원 ÷ 6,600km(하루 30km × 220일)</text>
   </g>
   <g id="bars" data-pptx-bounds="640 160 584 300">
-    <text x="640" y="200" font-size="17" font-weight="bold" fill="#F5B700">같은 길 1km를 1년 동안</text>
-    <text x="640" y="250" font-size="18" fill="#E8ECF2">지금 · 전체 공정 1회</text>
+    <text x="640" y="200" font-size="17" font-weight="bold" fill="#F5B700">동일 구간 1km · 연간 기준</text>
+    <text x="640" y="250" font-size="18" fill="#E8ECF2">현행 · 전체 공정 1회</text>
     <rect x="640" y="262" width="360" height="44" fill="#5B6678" />
     <text x="1016" y="294" font-size="26" font-weight="bold" fill="#E8ECF2">92만 원</text>
-    <text x="640" y="360" font-size="18" fill="#E8ECF2">GroundWatch · 여기에 반복 6회</text>
+    <text x="640" y="360" font-size="18" fill="#E8ECF2">GroundWatch · 반복 탐사 6회 추가</text>
     <rect x="640" y="372" width="360" height="44" fill="#5B6678" />
     <rect x="1000" y="372" width="110" height="44" fill="#F5B700" />
     <text x="1122" y="404" font-size="26" font-weight="bold" fill="#FFFFFF">+28만 원</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 500 1168 44">
     <rect x="56" y="500" width="4" height="44" fill="#F5B700" />
-    <text x="76" y="530" font-size="21" font-weight="bold" fill="#FFFFFF">현행 비용에 약 30%를 더하면, 1년에 한 번 보던 길을 6번 봅니다.</text>
+    <text x="76" y="530" font-size="21" font-weight="bold" fill="#FFFFFF">현행 비용의 약 30%로, 연 1회 보던 길을 연 6회 살핍니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
     <text x="56" y="682" font-size="13" fill="#8E9AAB">출처: 서울시 「지반침하 특별점검 공동조사용역 최종보고서」(2024.10, 사업비 17억 8,090만 원·수행 1,930.6km) · 이투데이(2025.4.23, 차량형 GPR 3대 15억 원) · 원가는 가설</text>

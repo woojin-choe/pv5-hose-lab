@@ -5,10 +5,10 @@
   </g>
   <g id="chapter" data-pptx-bounds="56 36 600 30">
     <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
-    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">문제<tspan fill="#8E9AAB" font-weight="normal">   지금의 탐사</tspan></text>
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">문제<tspan fill="#8E9AAB" font-weight="normal">   현행 탐사 체계</tspan></text>
   </g>
   <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
-    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">탐사는 이미 합니다. 한 번 보고 끝날 뿐입니다</text>
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">탐사는 있습니다. 다시 보는 체계가 없습니다</text>
   </g>
   <g id="photo" data-pptx-bounds="56 160 600 430">
     <image href="../images/gpr_handheld_road.jpg" x="56" y="160" width="600" height="400" preserveAspectRatio="xMidYMid slice" />
@@ -16,13 +16,13 @@
   </g>
   <g id="stats" data-pptx-bounds="712 160 512 420">
     <text x="712" y="236" font-size="64" font-weight="bold" fill="#FFFFFF" letter-spacing="-2">33,129km</text>
-    <text x="712" y="270" font-size="19" font-weight="bold" fill="#E8ECF2">서울 누적 GPR 탐사</text>
+    <text x="712" y="270" font-size="19" font-weight="bold" fill="#E8ECF2">서울시 누적 GPR 탐사 연장</text>
     <text x="712" y="296" font-size="16" fill="#8E9AAB">2014~2025.9</text>
     <text x="712" y="396" font-size="64" font-weight="bold" fill="#FFFFFF" letter-spacing="-2">7,760개</text>
-    <text x="712" y="430" font-size="19" font-weight="bold" fill="#E8ECF2">같은 기간 찾은 공동</text>
+    <text x="712" y="430" font-size="19" font-weight="bold" fill="#E8ECF2">같은 기간 발견된 공동</text>
     <line x1="712" y1="478" x2="1224" y2="478" stroke="#2E3A50" stroke-width="1" />
-    <text x="712" y="522" font-size="22" font-weight="bold" fill="#E8ECF2">그런데 같은 길은</text>
-    <text x="712" y="556" font-size="22" font-weight="bold" fill="#E8ECF2"><tspan fill="#FF6B5E">다음 정기점검 때</tspan> 다시 봅니다.</text>
+    <text x="712" y="522" font-size="22" font-weight="bold" fill="#E8ECF2">같은 길을 다시 보는 시점은</text>
+    <text x="712" y="556" font-size="22" font-weight="bold" fill="#E8ECF2"><tspan fill="#FF6B5E">다음 정기점검</tspan>입니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
     <text x="56" y="682" font-size="13" fill="#8E9AAB">출처: 메트로신문(2025.10.19, 누적 탐사·공동) · 서울시 안전정보(차량탑재형 GPR 폭 3m 이내)</text>

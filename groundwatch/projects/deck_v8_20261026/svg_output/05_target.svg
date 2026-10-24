@@ -5,10 +5,10 @@
   </g>
   <g id="chapter" data-pptx-bounds="56 36 600 30">
     <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
-    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">문제<tspan fill="#8E9AAB" font-weight="normal">   우리가 막을 대상</tspan></text>
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">문제<tspan fill="#8E9AAB" font-weight="normal">   대상 범위</tspan></text>
   </g>
   <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
-    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">원인 1위 하수관 손상, 땅속 2m 안에 있습니다</text>
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">원인 1위 하수관 손상, 지하 2m 안에서 시작됩니다</text>
   </g>
   <g id="section" data-pptx-bounds="56 160 640 420">
     <image href="../images/ug_section_cut.png" x="56" y="166" width="640" height="407" preserveAspectRatio="xMidYMid meet" />
@@ -32,11 +32,11 @@
     <rect x="744" y="352" width="480" height="3" fill="#F5B700" />
     <text x="744" y="396" font-size="24" font-weight="bold" fill="#FFFFFF">GroundWatch 대상</text>
     <text x="744" y="436" font-size="24" font-weight="bold" fill="#FFFFFF">약 2m 이내의 얕은 공동</text>
-    <text x="744" y="474" font-size="17" fill="#8E9AAB">깊은 굴착·터널 공사장은 계측이 맡습니다</text>
+    <text x="744" y="474" font-size="17" fill="#8E9AAB">심부 굴착·터널 구간은 계측의 영역입니다</text>
   </g>
   <g id="conclusion" data-pptx-bounds="56 600 1168 44">
     <rect x="56" y="600" width="4" height="44" fill="#F5B700" />
-    <text x="76" y="630" font-size="21" font-weight="bold" fill="#FFFFFF">차량형 GPR이 보는 깊이(약 2m)에, 가장 흔한 원인이 있습니다.</text>
+    <text x="76" y="630" font-size="21" font-weight="bold" fill="#FFFFFF">차량형 GPR의 탐사 심도(약 2m)에, 가장 흔한 원인이 있습니다.</text>
   </g>
   <g id="source" data-pptx-bounds="56 668 1168 20">
     <text x="56" y="682" font-size="13" fill="#8E9AAB">출처: 국토교통부 지반침하 원인 통계(2020~2024)·명일동 사고조사(2025.12.3) · 이투데이(2025.4.23, GPR 탐지 깊이 약 2m) · 단면도는 원리 설명용</text>

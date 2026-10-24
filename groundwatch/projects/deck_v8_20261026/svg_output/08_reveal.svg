@@ -23,8 +23,8 @@
     <text x="64" y="316" font-size="76" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">PV5</text>
     <text x="64" y="396" font-size="64" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">GroundWatch</text>
     <text x="64" y="452" font-size="30" font-weight="bold" fill="#D7DEE8" letter-spacing="0">PV5 지하안전 순찰차</text>
-    <text x="64" y="512" font-size="21" font-weight="normal" fill="#D6DDE8" letter-spacing="0">약 2개월마다 도로 아래를 다시 재고,</text>
-    <text x="64" y="544" font-size="21" font-weight="normal" fill="#D6DDE8" letter-spacing="0">지난 기록과 달라진 곳을 찾습니다.</text>
+    <text x="64" y="512" font-size="21" font-weight="normal" fill="#D6DDE8" letter-spacing="0">약 2개월 주기로 같은 도로 아래를 다시 측정하고,</text>
+    <text x="64" y="544" font-size="21" font-weight="normal" fill="#D6DDE8" letter-spacing="0">지난 기록과의 차이를 찾아냅니다.</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1160 28">
     <text x="64" y="696" font-size="14" font-weight="bold" fill="#F5B700">TEAM 한 명이라도 살릴 수 있다면</text>

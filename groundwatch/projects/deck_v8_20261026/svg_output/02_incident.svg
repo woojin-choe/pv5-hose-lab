@@ -2,7 +2,7 @@
   <rect id="bg" x="0" y="0" width="1280" height="720" fill="#0D1524" />
   <g id="chapter" data-pptx-bounds="56 36 600 30">
     <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
-    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">문제<tspan fill="#8E9AAB" font-weight="normal">   실제로 일어난 일</tspan></text>
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">문제<tspan fill="#8E9AAB" font-weight="normal">   2024 연희동</tspan></text>
   </g>
   <defs>
     <linearGradient id="mapFade" x1="0" y1="0" x2="0" y2="1">
@@ -24,7 +24,7 @@
   </g>
   <g id="title" data-pptx-bounds="56 168 623 136" letter-spacing="-1.5" font-weight="bold">
     <text x="56" y="222" font-size="40" fill="#FFFFFF">‘이상 없음’ 판정</text>
-    <text x="56" y="278" font-size="40" fill="#FF6B5E">100여 일 뒤, 도로가 무너졌습니다</text>
+    <text x="56" y="278" font-size="40" fill="#FF6B5E">100여 일 뒤, 도로는 무너졌습니다</text>
   </g>
   <g id="timeline" data-pptx-bounds="56 330 600 150">
     <rect x="86" y="399" width="540" height="10" fill="#F5B700" fill-opacity="0.28" />
@@ -35,7 +35,7 @@
     <text x="76" y="380" font-size="15" fill="#C3CBD8">정기 GPR 탐사 · 공동 없음</text>
     <text x="636" y="358" font-size="16" font-weight="bold" fill="#FF6B5E" text-anchor="end">2024.8.29</text>
     <text x="636" y="380" font-size="15" fill="#FF6B5E" text-anchor="end">도로 함몰</text>
-    <text x="356" y="440" font-size="16" fill="#C3CBD8" text-anchor="middle">그 사이 지하에서 무슨 일이 있었는지는 기록이 없습니다</text>
+    <text x="356" y="440" font-size="16" fill="#C3CBD8" text-anchor="middle">그 사이 지하의 변화는 어디에도 기록되지 않았습니다</text>
   </g>
   <g id="facts" data-pptx-bounds="56 488 600 110">
     <line x1="56" y1="492" x2="636" y2="492" stroke="#2E3A50" stroke-width="1" />

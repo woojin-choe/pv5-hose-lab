@@ -21,10 +21,10 @@
   </g>
   <g id="story-text" data-pptx-bounds="64 150 700 440">
     <text x="64" y="262" font-size="48" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">의심 지점은</text>
-    <text x="64" y="324" font-size="48" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">사람이 직접 다시 잽니다.</text>
-    <text x="64" y="404" font-size="21" font-weight="normal" fill="#D6DDE8" letter-spacing="0">판독자가 승인한 지점에 도착하면,</text>
-    <text x="64" y="436" font-size="21" font-weight="normal" fill="#D6DDE8" letter-spacing="0">같은 차에 실린 수동 GPR로 다른 주파수·방향에서 다시 잽니다.</text>
-    <text x="64" y="500" font-size="21" font-weight="bold" fill="#FFFFFF" letter-spacing="0">AR 글래스는 다시 잴 범위만 안내합니다.</text>
+    <text x="64" y="324" font-size="48" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">사람이 직접 재측정합니다.</text>
+    <text x="64" y="404" font-size="21" font-weight="normal" fill="#D6DDE8" letter-spacing="0">전문가가 승인한 지점에 도착하면,</text>
+    <text x="64" y="436" font-size="21" font-weight="normal" fill="#D6DDE8" letter-spacing="0">같은 차에 실린 수동 GPR로 다른 주파수와 방향에서 다시 측정합니다.</text>
+    <text x="64" y="500" font-size="21" font-weight="bold" fill="#FFFFFF" letter-spacing="0">AR 글래스는 재측정 범위만 안내합니다.</text>
     <text x="64" y="560" font-size="16" font-weight="normal" fill="#D6DDE8" letter-spacing="0">2인 1조 운영 · 운전자는 주행 중 AR 미사용 · 공동 확정은 천공 등 정밀 확인</text>
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1160 28">
