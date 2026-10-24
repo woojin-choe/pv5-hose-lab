@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <g id="watermark" data-pptx-role="decoration" data-pptx-bounds="900 440 332 278">
+    <text x="1232" y="636" font-size="200" font-weight="bold" fill="#121B2B" text-anchor="end" letter-spacing="-12">10</text>
+  </g>
+  <g id="chapter" data-pptx-bounds="56 36 600 30">
+    <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">해법<tspan fill="#8E9AAB" font-weight="normal">   GroundWatch의 핵심</tspan></text>
+  </g>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">같은 길을 다시 찍고, 달라진 곳만 봅니다</text>
+  </g>
+  <g id="scans" data-pptx-bounds="56 150 1168 250">
+    <image href="../images/sim_prev.png" x="56" y="156" width="360" height="186" preserveAspectRatio="none" />
+    <text x="56" y="368" font-size="16" font-weight="bold" fill="#FFFFFF">새벽, 같은 경로를 약 2개월마다</text>
+    <text x="56" y="390" font-size="15" fill="#C3CBD8">공동 반경 18cm</text>
+    <rect x="64" y="164" width="95" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
+    <text x="74" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">지난 회차</text>
+    <text x="441" y="261" font-size="34" font-weight="bold" fill="#FFFFFF" text-anchor="middle">−</text>
+    <image href="../images/sim_cur.png" x="460" y="156" width="360" height="186" preserveAspectRatio="none" />
+    <text x="460" y="368" font-size="16" font-weight="bold" fill="#FFFFFF">같은 길을 다시 찍으면</text>
+    <text x="460" y="390" font-size="15" fill="#C3CBD8">공동이 20cm 자라 있음</text>
+    <rect x="468" y="164" width="95" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
+    <text x="478" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">이번 회차</text>
+    <text x="845" y="261" font-size="34" font-weight="bold" fill="#FFFFFF" text-anchor="middle">=</text>
+    <image href="../images/sim_diff.png" x="864" y="156" width="360" height="186" preserveAspectRatio="none" />
+    <text x="864" y="368" font-size="16" font-weight="bold" fill="#FFFFFF">위치를 맞춰 빼면 변화만 남음</text>
+    <text x="864" y="390" font-size="15" fill="#C3CBD8">전문가 승인 → 수동 GPR로 현장 재확인</text>
+    <rect x="872" y="164" width="155" height="26" rx="3" fill="#0B1E3C" fill-opacity="0.9" />
+    <text x="882" y="182" font-size="15" font-weight="bold" fill="#FFFFFF">자동 선별된 차이</text>
+  </g>
+  <g id="hero" data-pptx-bounds="56 420 1168 170">
+    <rect x="56" y="420" width="1168" height="3" fill="#FFFFFF" />
+    <text x="56" y="526" font-size="88" font-weight="bold" fill="#FFFFFF" letter-spacing="-3">2.4배</text>
+    <text x="336" y="486" font-size="24" font-weight="bold" fill="#E8ECF2">10cm 자란 공동의 변화 신호가</text>
+    <text x="336" y="522" font-size="24" font-weight="bold" fill="#E8ECF2">가장 큰 오탐 요인보다 2.4배 뚜렷합니다</text>
+    <text x="336" y="558" font-size="16" fill="#8E9AAB">전자기 시뮬레이션 결과이며 현장 정확도가 아닙니다 · 판정은 전문가, 확정은 천공</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#8E9AAB">시뮬레이션: 2D 전자기 파동 계산(FDTD) · 400MHz · Ø0.8m 하수관 위 공동 반경 18cm 기준 · 세기 = 회차 차분 에너지 ÷ 가장 큰 오탐 요인 · 판정은 전문가, 확정은 천공</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#8E9AAB" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">10 / 18</text>
+  </g>
+</svg>

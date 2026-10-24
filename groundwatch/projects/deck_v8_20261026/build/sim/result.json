@@ -1,0 +1,14 @@
+{
+ "align_shift_traces": 0,
+ "align_corr": 0.559,
+ "flag_cells": 2831,
+ "x_center_m": 3.97,
+ "depth_top_m": 1.05,
+ "width_m": 4.32,
+ "true_x_m": 4.0,
+ "true_top_prev_m": 1.18,
+ "true_top_cur_m": 0.88,
+ "flag_cells_change": 2831,
+ "flag_cells_control": 25,
+ "energy_ratio_change_vs_control": 3.9
+}

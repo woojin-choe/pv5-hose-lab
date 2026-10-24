@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs>
+    <marker id="linkEnd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <polygon points="0,0 10,5 0,10" fill="#0B1E3C" />
+    </marker>
+  </defs>
+  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <g id="watermark" data-pptx-role="decoration" data-pptx-bounds="900 440 332 278">
+    <text x="1232" y="636" font-size="200" font-weight="bold" fill="#121B2B" text-anchor="end" letter-spacing="-12">11</text>
+  </g>
+  <g id="chapter" data-pptx-bounds="56 36 600 30">
+    <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">해법<tspan fill="#8E9AAB" font-weight="normal">   현장 재확인</tspan></text>
+  </g>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">찾은 지점은 현장에서 바로 확인합니다</text>
+  </g>
+  <g id="lead" data-pptx-bounds="56 150 1168 70">
+    <text x="56" y="196" font-size="24" fill="#C3CBD8">판독자가 승인한 지점만, <tspan font-weight="bold" fill="#FFFFFF">2인 1조가 현장에서 바로</tspan> 다시 확인합니다.</text>
+  </g>
+  <g id="cabin-panel" data-pptx-bounds="56 250 556 400">
+    <image href="../images/ivi_car_dash.png" x="56" y="250" width="556" height="330" preserveAspectRatio="xMidYMid slice" />
+    <rect x="66" y="260" width="138" height="24" rx="3" fill="#0B1E3C" />
+    <text x="135" y="277" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">[화면 예시] 운행 전</text>
+    <text x="56" y="608" font-size="18" font-weight="bold" fill="#E8ECF2">운전석 · GroundWatch Patrol 앱</text>
+  </g>
+  <g id="ar-panel" data-pptx-bounds="640 250 584 400">
+    <image href="../images/kr_road_ar.png" x="640" y="250" width="584" height="330" preserveAspectRatio="xMidYMid slice" />
+    <polygon points="909,438 990,438 1049,508 850,508" fill="#F5B700" fill-opacity="0.26" stroke="#F5B700" stroke-width="2.5" />
+    <g stroke="#F5B700" stroke-width="1.5" stroke-dasharray="6,4">
+      <line x1="894" y1="456" x2="1005" y2="456" />
+      <line x1="879" y1="474" x2="1020" y2="474" />
+      <line x1="864" y1="492" x2="1035" y2="492" />
+    </g>
+    <ellipse cx="932" cy="551" rx="98" ry="33" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <rect x="1040" y="534" width="112" height="22" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
+    <text x="1096" y="550" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">기준점 1 · 맨홀</text>
+    <circle cx="770" cy="501" r="7" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <rect x="660" y="458" width="124" height="22" rx="3" fill="#0B1E3C" fill-opacity="0.85" />
+    <text x="722" y="474" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">기준점 2 · 경계석</text>
+    <rect x="640" y="250" width="584" height="24" fill="#C62828" fill-opacity="0.92" />
+    <text x="932" y="267" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">GPR 기반 추정 위치입니다. 굴착 전 정밀조사와 관계기관 승인이 필요합니다.</text>
+    <rect x="656" y="286" width="270" height="72" rx="6" fill="#0B1E3C" fill-opacity="0.85" />
+    <text x="672" y="310" font-size="15" font-weight="bold" fill="#FFFFFF">재확인 R-0427 · 재탐사 3 / 4회</text>
+    <text x="672" y="331" font-size="13" fill="#E5E9F0">추정 깊이 0.9~1.3m · 지난 회차 대비 신규</text>
+    <text x="672" y="349" font-size="12" fill="#C9D3E2">[화면 예시] 전문가 승인 · 위치 오차 기준 충족</text>
+    <text x="640" y="608" font-size="18" font-weight="bold" fill="#E8ECF2">차량 밖 · 산업용 AR 글래스 (정차 후 작업자만)</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 664 1168 20">
+    <text x="56" y="678" font-size="13" fill="#8E9AAB">2인 1조 운용 · 운전자는 주행 중 AR 미사용 · 앱 배포는 기아 PBV 파트너 승인 필요 · 화면 수치는 예시 · 실내 사진: Alexander Migl, CC BY-SA 4.0</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 694 1168 20" fill="#8E9AAB" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">11 / 18</text>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <g id="watermark" data-pptx-role="decoration" data-pptx-bounds="900 440 332 278">
+    <text x="1232" y="636" font-size="200" font-weight="bold" fill="#121B2B" text-anchor="end" letter-spacing="-12">12</text>
+  </g>
+  <g id="chapter" data-pptx-bounds="56 36 600 30">
+    <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">PV5<tspan fill="#8E9AAB" font-weight="normal">   PV5 이동형 탐사실</tspan></text>
+  </g>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">PV5 한 대가 이동형 탐사실이 됩니다</text>
+  </g>
+  <g id="cutaway" data-pptx-bounds="56 160 640 420">
+    <image href="../images/cutaway_nowheel.png" x="56" y="150" width="620" height="349" preserveAspectRatio="xMidYMid meet" />
+    <g font-size="16" font-weight="bold" text-anchor="middle">
+      <circle cx="319" cy="298" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="319" y="304" fill="#0B1E3C">A</text>
+      <circle cx="449" cy="272" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="449" y="278" fill="#0B1E3C">B</text>
+      <circle cx="571" cy="272" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="571" y="278" fill="#0B1E3C">C</text>
+      <circle cx="499.122009569378" cy="444.79665071770336" r="17" fill="#F5B700" stroke="#0B1E3C" stroke-width="2" />
+      <text x="499.122009569378" y="450.79665071770336" fill="#0B1E3C">D</text>
+    </g>
+    <text x="56" y="522" font-size="15" fill="#E8ECF2"><tspan font-weight="bold" fill="#FFFFFF">A</tspan> 분석 장비 랙 (엣지 컴퓨터·GPR 제어)</text>
+    <text x="400" y="522" font-size="15" fill="#E8ECF2"><tspan font-weight="bold" fill="#FFFFFF">B</tspan> 수동 GPR·AR 글래스</text>
+    <text x="56" y="546" font-size="15" fill="#E8ECF2"><tspan font-weight="bold" fill="#FFFFFF">C</tspan> 내시경·안전장비</text>
+    <text x="400" y="546" font-size="15" fill="#E8ECF2"><tspan font-weight="bold" fill="#FFFFFF">D</tspan> 차체 후방 하부 다채널 GPR</text>
+    <text x="56" y="572" font-size="13" fill="#8E9AAB">콘셉트 이미지 · GPR은 바닥 배터리 팩을 피해 후방 하부에 장착하는 안 [가설]</text>
+  </g>
+  <g id="spec" data-pptx-bounds="720 160 504 400">
+    <rect x="720" y="160" width="504" height="3" fill="#FFFFFF" />
+    <text x="720" y="200" font-size="18" font-weight="bold" fill="#F5B700">싣는다</text>
+    <text x="720" y="246" font-size="34" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">4,420L · 550kg</text>
+    <text x="720" y="276" font-size="16" fill="#8E9AAB">장비 약 300kg [가설]</text>
+    <rect x="720" y="296" width="504" height="3" fill="#FFFFFF" />
+    <text x="720" y="336" font-size="18" font-weight="bold" fill="#F5B700">켠다</text>
+    <text x="720" y="382" font-size="34" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">V2L 최대 3.6kW</text>
+    <text x="720" y="412" font-size="16" fill="#8E9AAB">장비 1.5kW · 배터리의 14%/일 [가설]</text>
+    <rect x="720" y="432" width="504" height="3" fill="#FFFFFF" />
+    <text x="720" y="472" font-size="18" font-weight="bold" fill="#F5B700">연결한다</text>
+    <text x="720" y="518" font-size="34" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">PIM · Pleos</text>
+    <text x="720" y="548" font-size="16" fill="#8E9AAB">재확인 지점 안내 · 장비 제어 · 여러 대 관제</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 598 1168 44">
+    <rect x="56" y="598" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="628" font-size="21" font-weight="bold" fill="#FFFFFF">장비를 싣는 것을 넘어, PV5에서는 차가 탐사 업무의 일부가 됩니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#8E9AAB">출처: 기아 PV5 카고 카탈로그(2026.9)·공식 제원표 · 공모전 솔루션 부문 안내(Pleos Connect SDK) · 오토뷰(2026.1.28, PIM) · 카고룸 4,420L(VDA)·V2L 3.6kW는 해외 제원 · 배치는 콘셉트</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#8E9AAB" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">12 / 18</text>
+  </g>
+</svg>

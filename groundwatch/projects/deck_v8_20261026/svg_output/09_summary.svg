@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <g id="watermark" data-pptx-role="decoration" data-pptx-bounds="900 440 332 278">
+    <text x="1232" y="636" font-size="200" font-weight="bold" fill="#121B2B" text-anchor="end" letter-spacing="-12">09</text>
+  </g>
+  <g id="chapter" data-pptx-bounds="56 36 600 30">
+    <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">요약<tspan fill="#8E9AAB" font-weight="normal">   한 장 요약</tspan></text>
+  </g>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">숫자 세 개로 보는 GroundWatch</text>
+  </g>
+  <g id="keynum" data-pptx-bounds="56 190 1168 260">
+    <rect x="56" y="200" width="368" height="4" fill="#FF6B5E" />
+    <text x="56" y="310" font-size="80" font-weight="bold" fill="#FF6B5E" letter-spacing="-3">100여 일</text>
+    <text x="56" y="362" font-size="24" font-weight="bold" fill="#E8ECF2">‘이상 없음’에서 함몰까지</text>
+    <text x="56" y="396" font-size="18" fill="#8E9AAB">2024 연희동</text>
+    <rect x="456" y="200" width="368" height="4" fill="#FFFFFF" />
+    <text x="456" y="310" font-size="80" font-weight="bold" fill="#FFFFFF" letter-spacing="-3">2.4배</text>
+    <text x="456" y="362" font-size="24" font-weight="bold" fill="#E8ECF2">자란 공동이 오탐보다 뚜렷</text>
+    <text x="456" y="396" font-size="18" fill="#8E9AAB">전자기 시뮬레이션</text>
+    <rect x="856" y="200" width="368" height="4" fill="#FFFFFF" />
+    <text x="856" y="310" font-size="80" font-weight="bold" fill="#FFFFFF" letter-spacing="-3">최대 88대</text>
+    <text x="856" y="362" font-size="24" font-weight="bold" fill="#E8ECF2">전국 지자체 탐사형 PV5</text>
+    <text x="856" y="396" font-size="18" fill="#8E9AAB">차량 매출 약 40억 원</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 500 1168 44">
+    <rect x="56" y="500" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="530" font-size="21" font-weight="bold" fill="#FFFFFF">기아 PV5 AI 순찰차가 도로 위를 본다면, GroundWatch는 도로 아래를 봅니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#8E9AAB">근거: 2장 뉴시스·세계일보 · 10장 GPR 전자기 시뮬레이션 · 15장 서울시 2024 공동조사용역 최종보고서 · 16장 머니투데이(2026.6.26, 경찰청 PV5 AI 순찰차)</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#8E9AAB" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">09 / 18</text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <defs><linearGradient id="ph8" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0A0F19" stop-opacity="0.95" /><stop offset="55%" stop-color="#0A0F19" stop-opacity="0.82" /><stop offset="100%" stop-color="#0A0F19" stop-opacity="0.55" /></linearGradient></defs>
+  <image id="photo8" data-pptx-role="background" href="../images/story_nightvan.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice" />
+  <rect id="photo8-scrim" data-pptx-role="decoration" x="0" y="0" width="1280" height="720" fill="url(#ph8)" />
+  <g id="watermark" data-pptx-role="decoration" data-pptx-bounds="900 440 332 278">
+    <text x="1232" y="636" font-size="200" font-weight="bold" fill="#121B2B" text-anchor="end" letter-spacing="-12">17</text>
+  </g>
+  <g id="chapter" data-pptx-bounds="56 36 600 30">
+    <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">사업<tspan fill="#8E9AAB" font-weight="normal">   첫 고객과 기아와 할 일</tspan></text>
+  </g>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">지자체 예산에서 바로 시작합니다</text>
+  </g>
+  <g id="hero" data-pptx-bounds="56 180 520 300">
+    <text x="56" y="218" font-size="18" font-weight="bold" fill="#F5B700">지자체가 이미 쓰는 GPR 용역 예산 · 2026 낙찰</text>
+    <text x="56" y="320" font-size="76" font-weight="bold" fill="#FFFFFF" letter-spacing="-3">1~2억 원</text>
+    <text x="56" y="366" font-size="22" font-weight="bold" fill="#E8ECF2">안양·강동구·용인, 건당 0.85억~1.90억 원</text>
+    <text x="56" y="400" font-size="18" fill="#8E9AAB">경기도는 16개 시·군 탐사에 21.6억 원 지원(2025.9)</text>
+  </g>
+  <g id="road" data-pptx-bounds="640 180 584 320">
+    <line x1="652" y1="210" x2="652" y2="437" stroke="#2E3A50" stroke-width="2" />
+    <circle cx="652" cy="203" r="8" fill="#F5B700" />
+    <text x="676" y="210" font-size="22" font-weight="bold" fill="#FFFFFF">수상 후 6개월</text>
+    <text x="676" y="242" font-size="19" fill="#E8ECF2">PV5 실물 대여로 폐쇄 시험장 실증</text>
+    <circle cx="652" cy="281" r="8" fill="#FFFFFF" />
+    <text x="676" y="288" font-size="22" font-weight="bold" fill="#FFFFFF">1~2년</text>
+    <text x="676" y="320" font-size="19" fill="#E8ECF2">조사기관과 시·군 용역 공동 수주</text>
+    <circle cx="652" cy="359" r="8" fill="#FFFFFF" />
+    <text x="676" y="366" font-size="22" font-weight="bold" fill="#FFFFFF">2~3년</text>
+    <text x="676" y="398" font-size="19" fill="#E8ECF2">혁신제품 지정 → 연간 관제 계약</text>
+    <circle cx="652" cy="437" r="8" fill="#FFFFFF" />
+    <text x="676" y="444" font-size="22" font-weight="bold" fill="#FFFFFF">3년~</text>
+    <text x="676" y="476" font-size="19" fill="#E8ECF2">권역별 PV5 플릿 구매</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 540 1168 44">
+    <rect x="56" y="540" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="570" font-size="21" font-weight="bold" fill="#FFFFFF">새 예산이 아니라 이미 쓰는 탐사 예산에서, 기아와 함께 첫 실증을 만듭니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#8E9AAB">출처: 나라장터 2026(R26BK01572949 · R26BK01599467 · R26BK01517362) · 헤럴드경제(2025.9.7) · 조달청 · 테스트베드서울 · 공모전 일반 부문 혜택 안내 · 일정은 목표</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#8E9AAB" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">17 / 18</text>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <g id="watermark" data-pptx-role="decoration" data-pptx-bounds="900 440 332 278">
+    <text x="1232" y="636" font-size="200" font-weight="bold" fill="#121B2B" text-anchor="end" letter-spacing="-12">14</text>
+  </g>
+  <g id="chapter" data-pptx-bounds="56 36 600 30">
+    <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">검증<tspan fill="#8E9AAB" font-weight="normal">   기술 실증 계획</tspan></text>
+  </g>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">남은 질문은 4단계로 검증합니다</text>
+  </g>
+  <g id="stages" data-pptx-bounds="56 170 1168 330">
+    <rect x="56" y="176" width="274" height="300" fill="#131D2E" />
+    <rect x="56" y="176" width="274" height="5" fill="#FFFFFF" />
+    <text x="78" y="226" font-size="18" font-weight="bold" fill="#F5B700">1단계</text>
+    <text x="78" y="270" font-size="28" font-weight="bold" fill="#FFFFFF">폐쇄 시험장</text>
+    <text x="78" y="340" font-size="15" font-weight="bold" fill="#8E9AAB">확인할 것</text>
+    <text x="78" y="368" font-size="20" fill="#E8ECF2">EV와 GPR 전자파 간섭</text>
+    <text x="78" y="420" font-size="15" font-weight="bold" fill="#8E9AAB">통과하면</text>
+    <text x="78" y="448" font-size="20" font-weight="bold" fill="#FFFFFF">→ 차량에서 측정 가능</text>
+    <rect x="354" y="176" width="274" height="300" fill="#131D2E" />
+    <rect x="354" y="176" width="274" height="5" fill="#FFFFFF" />
+    <text x="376" y="226" font-size="18" font-weight="bold" fill="#F5B700">2단계</text>
+    <text x="376" y="270" font-size="28" font-weight="bold" fill="#FFFFFF">통제된 시험 구간</text>
+    <text x="376" y="340" font-size="15" font-weight="bold" fill="#8E9AAB">확인할 것</text>
+    <text x="376" y="368" font-size="20" fill="#E8ECF2">회차마다 같은 자리를 찍는가</text>
+    <text x="376" y="420" font-size="15" font-weight="bold" fill="#8E9AAB">통과하면</text>
+    <text x="376" y="448" font-size="20" font-weight="bold" fill="#FFFFFF">→ 회차 비교 가능</text>
+    <rect x="652" y="176" width="274" height="300" fill="#131D2E" />
+    <rect x="652" y="176" width="274" height="5" fill="#FFFFFF" />
+    <text x="674" y="226" font-size="18" font-weight="bold" fill="#F5B700">3단계</text>
+    <text x="674" y="270" font-size="28" font-weight="bold" fill="#FFFFFF">실제 도로 위험구간</text>
+    <text x="674" y="340" font-size="15" font-weight="bold" fill="#8E9AAB">확인할 것</text>
+    <text x="674" y="368" font-size="20" fill="#E8ECF2">AI 선별 · 야간 AR 정확도</text>
+    <text x="674" y="420" font-size="15" font-weight="bold" fill="#8E9AAB">통과하면</text>
+    <text x="674" y="448" font-size="20" font-weight="bold" fill="#FFFFFF">→ 실증확인서</text>
+    <rect x="950" y="176" width="274" height="300" fill="#131D2E" />
+    <rect x="950" y="176" width="274" height="5" fill="#F5B700" />
+    <text x="972" y="226" font-size="18" font-weight="bold" fill="#F5B700">4단계</text>
+    <text x="972" y="270" font-size="28" font-weight="bold" fill="#FFFFFF">실제 운영</text>
+    <text x="972" y="340" font-size="15" font-weight="bold" fill="#8E9AAB">확인할 것</text>
+    <text x="972" y="368" font-size="20" fill="#E8ECF2">운영 지표</text>
+    <text x="972" y="420" font-size="15" font-weight="bold" fill="#8E9AAB">통과하면</text>
+    <text x="972" y="448" font-size="20" font-weight="bold" fill="#FFFFFF">→ 연간 관제 계약</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 530 1168 44">
+    <rect x="56" y="530" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="560" font-size="21" font-weight="bold" fill="#FFFFFF">정확도 숫자를 미리 약속하지 않고, 단계마다 통과 조건을 둡니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#8E9AAB">인허가: 도로 영상은 개인정보보호법 제25조의2(2023.9)대로 차량 외부 표시 · GPR 전파 적합성평가·튜닝 승인은 사업화 전 확인 · 출처: 인천대 공동 재탐사 연구(2020)</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#8E9AAB" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">14 / 18</text>
+  </g>
+</svg>

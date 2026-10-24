@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <defs><linearGradient id="bg8" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#101A2B" /><stop offset="100%" stop-color="#0A0F19" /></linearGradient></defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="url(#bg8)" />
+  <g id="watermark" data-pptx-role="decoration" data-pptx-bounds="900 440 332 278">
+    <text x="1232" y="636" font-size="200" font-weight="bold" fill="#121B2B" text-anchor="end" letter-spacing="-12">13</text>
+  </g>
+  <g id="chapter" data-pptx-bounds="56 36 600 30">
+    <rect x="56" y="44" width="28" height="4" fill="#F5B700" />
+    <text x="96" y="52" font-size="16" font-weight="bold" fill="#F5B700">PV5<tspan fill="#8E9AAB" font-weight="normal">   왜 PV5인가</tspan></text>
+  </g>
+  <g id="title" data-pptx-bounds="56 78 1168 64" letter-spacing="-1.5">
+    <text x="56" y="128" font-size="48" font-weight="bold" fill="#FFFFFF">어느 PV5가 재도, 같은 기준으로 잽니다</text>
+  </g>
+  <g id="premise" data-pptx-bounds="56 168 1168 226">
+    <line x1="56" y1="293.1" x2="1224" y2="293.1" stroke="#F5B700" stroke-width="2" stroke-dasharray="6,5" />
+    <image href="../images/pv5_side_real.png" x="70" y="176.1" width="300.0" height="128.7" />
+    <text x="220.0" y="326" font-size="16" font-weight="bold" fill="#E8ECF2" text-anchor="middle">1호차</text>
+    <text x="220.0" y="346" font-size="15" fill="#8E9AAB" text-anchor="middle">같은 노선을 6회</text>
+    <text x="420" y="262" font-size="34" font-weight="bold" fill="#FFFFFF" text-anchor="middle">=</text>
+    <image href="../images/pv5_side_real.png" x="470" y="176.1" width="300.0" height="128.7" />
+    <text x="620.0" y="326" font-size="16" font-weight="bold" fill="#E8ECF2" text-anchor="middle">예비차·재배치 차</text>
+    <text x="620.0" y="346" font-size="15" fill="#8E9AAB" text-anchor="middle">정비·교체·노선 재배치 때</text>
+    <text x="820" y="262" font-size="34" font-weight="bold" fill="#FFFFFF" text-anchor="middle">=</text>
+    <image href="../images/pv5_side_real.png" x="870" y="176.1" width="300.0" height="128.7" />
+    <text x="1020.0" y="326" font-size="16" font-weight="bold" fill="#E8ECF2" text-anchor="middle">다른 도시 PV5</text>
+    <text x="1020.0" y="346" font-size="15" fill="#8E9AAB" text-anchor="middle">같은 판독 기준·AI 학습 데이터</text>
+    <text x="1224" y="319.1" font-size="13" font-weight="bold" fill="#F5B700" text-anchor="end">GPR 높이·위치 동일</text>
+  </g>
+  <g id="compare" data-pptx-bounds="56 410 1168 110">
+    <rect x="56" y="414" width="274" height="3" fill="#FFFFFF" />
+    <text x="56" y="452" font-size="24" font-weight="bold" fill="#FFFFFF">PBV 컨버전 포털</text>
+    <text x="56" y="484" font-size="19" fill="#E8ECF2">모든 차에 같은 위치 장착</text>
+    <rect x="354" y="414" width="274" height="3" fill="#FFFFFF" />
+    <text x="354" y="452" font-size="24" font-weight="bold" fill="#FFFFFF">PIM · 조인트 블록</text>
+    <text x="354" y="484" font-size="19" fill="#E8ECF2">차가 장비 전원·기록을 제어</text>
+    <rect x="652" y="414" width="274" height="3" fill="#FFFFFF" />
+    <text x="652" y="452" font-size="24" font-weight="bold" fill="#FFFFFF">Pleos Fleet</text>
+    <text x="652" y="484" font-size="19" fill="#E8ECF2">단말기 없이 여러 도시 관제</text>
+    <rect x="950" y="414" width="274" height="3" fill="#FFFFFF" />
+    <text x="950" y="452" font-size="24" font-weight="bold" fill="#FFFFFF">적재고 419mm</text>
+    <text x="950" y="484" font-size="19" fill="#E8ECF2">카트를 바로 내려 현장 재확인</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 594 1168 52">
+    <rect x="56" y="594" width="4" height="52" fill="#F5B700" />
+    <text x="80" y="627" font-size="20" font-weight="bold" fill="#FFFFFF">어느 도시의 어느 PV5가 재도, <tspan fill="#F5B700">같은 기준으로 비교</tspan>됩니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 656 1168 34">
+    <text x="56" y="668" font-size="13" fill="#8E9AAB">출처: 오토뷰(2026.1.28, 컨버전 포털·PIM·조인트 블록) · 공모전 솔루션 부문 안내(Pleos SDK·앱 마켓) · 기아 PV5 카고 카탈로그(2026.9)<tspan x="56" dy="16">현대차그룹 뉴스룸(2024.4, ST1 495mm) · 스타리아 일렉트릭 출시(2026.4.23) · 시사저널(2025.4.25, GPR 대당 2억~8억 원) · 공공부문 무공해차 실적(2026.6.30)</tspan></text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#8E9AAB" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">13 / 18</text>
+  </g>
+</svg>
