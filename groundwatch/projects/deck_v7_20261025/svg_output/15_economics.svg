@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="header" data-pptx-role="header" data-pptx-bounds="56 24 1168 40">
+    <rect x="56" y="28" width="140" height="24" fill="#0B1E3C" />
+    <text x="126" y="45" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PV5 GroundWatch</text>
+    <text x="210" y="45" font-size="14" fill="#374151">단가와 수지</text>
+    <text x="900" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">문제</text>
+    <text x="933" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="966" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">해법</text>
+    <text x="999" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1032" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">PV5</text>
+    <text x="1065" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1098" y="45" font-size="14" font-weight="normal" fill="#9AA3AF" text-anchor="middle">검증</text>
+    <text x="1131" y="45" font-size="12" fill="#C3CCD9" text-anchor="middle">›</text>
+    <text x="1164" y="45" font-size="14" font-weight="bold" fill="#0B1E3C" text-anchor="middle">사업</text>
+    <rect x="1140" y="54" width="48" height="3" fill="#F5B700" />
+    <line x1="56" y1="62" x2="1224" y2="62" stroke="#0B1E3C" stroke-width="1" />
+  </g>
+  <g id="title" data-pptx-bounds="56 80 1168 56" letter-spacing="-1">
+    <text x="56" y="120" font-size="40" font-weight="bold" fill="#0B1E3C">반복 탐사는 km당 약 4.7만 원이면 원가가 맞습니다</text>
+  </g>
+  <g id="now" data-pptx-bounds="56 146 1168 96">
+    <rect x="56" y="148" width="1168" height="3" fill="#0B1E3C" />
+    <text x="56" y="182" font-size="15" font-weight="bold" fill="#B45309">지금의 실제 단가 · 서울시 2024 지반침하 특별점검 공동조사용역</text>
+    <text x="56" y="226" font-size="36" font-weight="bold" fill="#0B1E3C">17.8억 원 ÷ 1,930.6km = km당 약 92만 원</text>
+    <text x="900" y="214" font-size="15" fill="#374151">1·2차 탐사, 천공 499곳,</text>
+    <text x="900" y="236" font-size="15" fill="#374151">공동 채움 285곳 포함 · 1회</text>
+  </g>
+  <g id="cost" data-pptx-bounds="56 262 560 300">
+    <text x="56" y="286" font-size="16" font-weight="bold" fill="#0B1E3C">GroundWatch 차량 1대 연간 원가 <tspan font-weight="normal" fill="#4B5563">[가설]</tspan></text>
+    <line x1="56" y1="298" x2="616" y2="298" stroke="#0B1E3C" stroke-width="1.5" />
+    <text x="56" y="326" font-size="16" fill="#111827">PV5 카고 4,520만 원 · 5년</text>
+    <text x="616" y="326" font-size="16" font-weight="bold" fill="#111827" text-anchor="end">0.09억 원</text>
+    <line x1="56" y1="338" x2="616" y2="338" stroke="#E2E6EC" stroke-width="1" />
+    <text x="56" y="362" font-size="16" fill="#111827">차량형 GPR 약 5억 원(3대 15억 원) · 5년</text>
+    <text x="616" y="362" font-size="16" font-weight="bold" fill="#111827" text-anchor="end">1.00억 원</text>
+    <line x1="56" y1="374" x2="616" y2="374" stroke="#E2E6EC" stroke-width="1" />
+    <text x="56" y="398" font-size="16" fill="#111827">현장 2인 (운전·안전 / 탐사)</text>
+    <text x="616" y="398" font-size="16" font-weight="bold" fill="#111827" text-anchor="end">1.20억 원</text>
+    <line x1="56" y1="410" x2="616" y2="410" stroke="#E2E6EC" stroke-width="1" />
+    <text x="56" y="434" font-size="16" fill="#111827">판독 전문가 0.5인</text>
+    <text x="616" y="434" font-size="16" font-weight="bold" fill="#111827" text-anchor="end">0.40억 원</text>
+    <line x1="56" y1="446" x2="616" y2="446" stroke="#E2E6EC" stroke-width="1" />
+    <text x="56" y="470" font-size="16" fill="#111827">수동 GPR·AR·클라우드·보험·유지</text>
+    <text x="616" y="470" font-size="16" font-weight="bold" fill="#111827" text-anchor="end">0.40억 원</text>
+    <line x1="56" y1="482" x2="616" y2="482" stroke="#E2E6EC" stroke-width="1" />
+    <text x="56" y="516" font-size="18" font-weight="bold" fill="#0B1E3C">합계 3.09억 원 ÷ 연 6,600km</text>
+    <text x="616" y="516" font-size="22" font-weight="bold" fill="#0B1E3C" text-anchor="end">km당 약 4.7만 원</text>
+    <text x="56" y="542" font-size="15" fill="#4B5563">6,600km = 하루 30km × 220일 · 보수적 가정 (장비 적정 탐사 속도 시속 15~30km)</text>
+  </g>
+  <g id="compare" data-pptx-bounds="664 262 560 300">
+    <text x="664" y="286" font-size="16" font-weight="bold" fill="#0B1E3C">같은 길 1km(탐사 연장)를 1년 동안</text>
+    <line x1="664" y1="298" x2="1224" y2="298" stroke="#0B1E3C" stroke-width="1.5" />
+    <text x="664" y="334" font-size="16" fill="#111827">지금 · 현행 전체 공정 1회 (천공·복구 포함 가격)</text>
+    <rect x="664" y="344" width="360" height="34" fill="#9AA3AF" />
+    <text x="1033" y="368" font-size="18" font-weight="bold" fill="#111827">92만 원</text>
+    <text x="664" y="412" font-size="16" fill="#111827">GroundWatch를 더하면 · 반복 탐사 6회 원가 (4.7만 원 × 6회)</text>
+    <rect x="664" y="422" width="360" height="34" fill="#9AA3AF" />
+    <rect x="1024" y="422" width="110" height="34" fill="#0B1E3C" />
+    <text x="1143" y="446" font-size="18" font-weight="bold" fill="#0B1E3C">+28만 원</text>
+    <text x="664" y="490" font-size="16" fill="#111827">첫 회차가 현행 1차 탐사를 대신하면 실제 추가분은 더 작고,</text>
+    <text x="664" y="514" font-size="16" font-weight="bold" fill="#0B1E3C">천공·복구는 변화가 나온 곳에만 지금 단가로 붙습니다</text>
+    <text x="664" y="542" font-size="15" fill="#4B5563">km는 탐사 연장(차량 1회 주행) 기준 · 가격과 원가는 빼지 않고 더해서 봅니다</text>
+  </g>
+  <g id="conclusion" data-pptx-bounds="56 596 1168 44">
+    <rect x="56" y="596" width="4" height="44" fill="#F5B700" />
+    <text x="76" y="626" font-size="21" font-weight="bold" fill="#0B1E3C">현행 전체 공정 비용에 약 30%를 더하면, 1년에 한 번 보던 길을 6번 봅니다.</text>
+  </g>
+  <g id="source" data-pptx-bounds="56 668 1168 20">
+    <text x="56" y="682" font-size="13" fill="#4B5563">출처: 서울시 「지반침하 특별점검 공동조사용역 최종보고서」(2024.10, 사업비 17억 8,090만 원·수행 1,930.6km) · 이투데이(2025.4.23, 차량형 GPR 3대 15억 원) · 원가는 가설</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="56 692 1168 22" fill="#4B5563" font-size="12">
+    <text x="56" y="706">PV5 GroundWatch</text>
+    <text x="1224" y="706" text-anchor="end">15 / 18</text>
+  </g>
+</svg>

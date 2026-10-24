@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ko-KR" data-pptx-page-role="content" font-family="Pretendard, 'Malgun Gothic', sans-serif">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#0B1E3C" />
+  <defs>
+    <linearGradient id="storyFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0B1E3C" stop-opacity="0.9" />
+      <stop offset="45%" stop-color="#0B1E3C" stop-opacity="0.63" />
+      <stop offset="78%" stop-color="#0B1E3C" stop-opacity="0.15" />
+    </linearGradient>
+    <linearGradient id="storyFoot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1E3C" stop-opacity="0" />
+      <stop offset="100%" stop-color="#0B1E3C" stop-opacity="0.85" />
+    </linearGradient>
+  </defs>
+  <rect id="story-bg" x="0" y="0" width="1280" height="720" fill="#0B1E3C" />
+  <image id="story-photo" data-pptx-role="background" href="../images/story_jongno.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice" />
+  <rect id="story-scrim" data-pptx-role="decoration" x="0" y="0" width="1280" height="720" fill="url(#storyFade)" />
+  <rect id="story-foot-scrim" data-pptx-role="decoration" x="0" y="600" width="1280" height="120" fill="url(#storyFoot)" />
+  <g id="story-brand" data-pptx-bounds="64 32 400 24">
+    <text x="64" y="50" font-size="14" font-weight="bold" fill="#D6DDE8">PV5 GroundWatch</text>
+  </g>
+  <g id="story-text" data-pptx-bounds="64 150 700 440">
+    <text x="64" y="250" font-size="28" font-weight="normal" fill="#D6DDE8" letter-spacing="0">매번 전체 공정을 반복하지 않고,</text>
+    <text x="64" y="322" font-size="50" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">달라진 곳부터</text>
+    <text x="64" y="386" font-size="50" font-weight="bold" fill="#FFFFFF" letter-spacing="-1">찾아볼 수 있다면요?</text>
+    <text x="64" y="466" font-size="20" font-weight="normal" fill="#D6DDE8" letter-spacing="0">같은 길을 반복해서 재고, 지난 기록과 달라진 곳만 골라</text>
+    <text x="64" y="498" font-size="20" font-weight="normal" fill="#D6DDE8" letter-spacing="0">전문가가 검토한 지점만 현장에서 다시 확인합니다.</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1160 28">
+    <text x="64" y="696" font-size="14" font-weight="bold" fill="#F5B700"></text>
+    <text x="1224" y="696" font-size="13" fill="#D6DDE8" text-anchor="end">사진: 서울연구원, CC BY 4.0  ·  07 / 18</text>
+  </g>
+</svg>

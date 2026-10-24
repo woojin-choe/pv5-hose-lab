@@ -1,0 +1,1487 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "final",
+  "target": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "4628b1077310efeb7cd7b0bff2473d02acc934cb481efa5f1efa421bf963f20f",
+    "file_count": 18,
+    "files": [
+      {
+        "file": "01_open.svg",
+        "sha256": "66d22ca3d4f40eecd45e66ee119239d81a4ddfdc526895693c299ee06ee9272f"
+      },
+      {
+        "file": "02_incident.svg",
+        "sha256": "6ac9d39e769edb6553608e0948036fed3e8c2d3017b72f461acf49d702973dab"
+      },
+      {
+        "file": "03_current.svg",
+        "sha256": "c9a79d79520e6742a0dfecb33d24bd497f9b517e6bd62c6de9d32eb5c5b909f7"
+      },
+      {
+        "file": "04_blindspot.svg",
+        "sha256": "9723ff87473925285c8eab3fbeb917ccf9d73dc1188b1c3b7a3a66d110ed1f9b"
+      },
+      {
+        "file": "05_target.svg",
+        "sha256": "40e359ff975fcfbad13625fdfa5b357c59c03432cb190be53cd348188f107147"
+      },
+      {
+        "file": "06_q_more.svg",
+        "sha256": "8269c7a3772b1da107aad962b5581a58b696f4d5466cfe530b8cfb4b15f44a9b"
+      },
+      {
+        "file": "07_q_diff.svg",
+        "sha256": "a52434555a46d1878cec41f69f0813bf6f6cfdff9b210dcda6b2f750e671f88e"
+      },
+      {
+        "file": "08_reveal.svg",
+        "sha256": "2b5cf16fdef871781449ec83b2774e7c667775a41886ba1e0fd4becf818bf315"
+      },
+      {
+        "file": "09_summary.svg",
+        "sha256": "9f0a2741fccb5d4ad8b50fb7d58598025820f377a63ebf90c38c0af968200d34"
+      },
+      {
+        "file": "10_solution.svg",
+        "sha256": "0f5a4a3ec40aa6fae30cbcd9fdd57e5242f575b2374b7d37521c523a98a32045"
+      },
+      {
+        "file": "11_field.svg",
+        "sha256": "ae2aa7146bd3f1c6b8c2bff7dd6469f20c065256b186b2bdb8ceac44be3f3a86"
+      },
+      {
+        "file": "12_pv5_lab.svg",
+        "sha256": "df87ac2c50d1f09337d7d64b1d18bdfd6ea2acd1eddc699fc3214d041b1fd9d7"
+      },
+      {
+        "file": "13_why_pv5.svg",
+        "sha256": "2c0d045a5aea8bc42b19332db294602036e29186801dafe088df7a3194efb445"
+      },
+      {
+        "file": "14_verify.svg",
+        "sha256": "e1318ef541f7105c7c636496277cd709152bd2fa07d26793a7fa3afdeb6c5212"
+      },
+      {
+        "file": "15_economics.svg",
+        "sha256": "6a155b3fe4a04c6fd052de2947041726002981cc73854fe05bc047144b73b908"
+      },
+      {
+        "file": "16_players.svg",
+        "sha256": "284199e80be23d89c221948e974694c4ff912a2ca5281b3f0d66ef5da1446dfe"
+      },
+      {
+        "file": "17_entry.svg",
+        "sha256": "679d561e67eb24bfd98a6fdd7af1cdfeb8809099896d372fb111d230b65e43d9"
+      },
+      {
+        "file": "18_close.svg",
+        "sha256": "655343d892162803f69fa462059a85a09ca0a605d682fd6d3e80160b162bd9fd"
+      }
+    ]
+  },
+  "summary": {
+    "total": 18,
+    "passed": 0,
+    "warnings": 18,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 44,
+      "issues": [
+        {
+          "file": "01_open.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "01_open.svg",
+          "message": "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+        },
+        {
+          "file": "02_incident.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): title:font-size None -> '40'; text[24]:font-size '40' -> None; text[25]:font-size '40' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "02_incident.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "02_incident.svg",
+          "message": "<text> (x=712, y=690; text='지도 © OpenStreetMap c…') exceeds <g id=\"incident-map\"> data-pptx-bounds on the horizontal axis: content (712.0, 679.8)-(1283.3, 694.2), container (680.0, 0.0)-(1280.0, 720.0), overflow horizontal 0.5%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈9.8 px per mixed char at 12px incl. headroom; ≈60 chars fit in 600 px"
+        },
+        {
+          "file": "02_incident.svg",
+          "message": "<text> (x=56, y=278; text='100여 일 뒤, 도로가 무너졌습니다') exceeds <g id=\"title\"> data-pptx-bounds on the horizontal axis: content (56.0, 244.0)-(686.9, 292.0), container (56.0, 168.0)-(679.0, 304.0), overflow horizontal 1.3%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈39.4 px per mixed char at 40px incl. headroom; ≈15 chars fit in 623 px"
+        },
+        {
+          "file": "03_current.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "04_blindspot.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "04_blindspot.svg",
+          "message": "<text> (x=784, y=310; text='9곳은 그사이 복구, 다시 잰 21곳…') exceeds <g id=\"evidence\"> data-pptx-bounds on the horizontal axis: content (784.0, 296.4)-(1237.7, 315.6), container (784.0, 168.0)-(1224.0, 560.0), overflow horizontal 3.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.6 px per mixed char at 16px incl. headroom; ≈28 chars fit in 440 px"
+        },
+        {
+          "file": "04_blindspot.svg",
+          "message": "<text> (x=784, y=572; text='2022~2026.6 · 찾은 뒤에도…') exceeds <g id=\"evidence\"> data-pptx-bounds on the vertical axis: content (784.0, 559.2)-(1216.1, 577.2), container (784.0, 168.0)-(1224.0, 560.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+        },
+        {
+          "file": "04_blindspot.svg",
+          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"evidence\"> x=784.0, y=288.0..310.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "05_target.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "06_q_more.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "06_q_more.svg",
+          "message": "<text> (x=64, y=584; text='출처: 서울시 「지반침하 특별점검 공…') exceeds <g id=\"story-text\"> data-pptx-bounds on the horizontal axis: content (64.0, 573.0)-(787.0, 588.5), container (64.0, 150.0)-(764.0, 590.0), overflow horizontal 3.3%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈11.9 px per mixed char at 13px incl. headroom; ≈59 chars fit in 700 px"
+        },
+        {
+          "file": "06_q_more.svg",
+          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"story-text\"> x=64.0, y=220.0..280.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "06_q_more.svg",
+          "message": "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+        },
+        {
+          "file": "07_q_diff.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "07_q_diff.svg",
+          "message": "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"story-text\"> x=64.0, y=322.0..386.0, 2 lines; <g id=\"story-text\"> x=64.0, y=466.0..498.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "07_q_diff.svg",
+          "message": "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+        },
+        {
+          "file": "08_reveal.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "08_reveal.svg",
+          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"story-text\"> x=64.0, y=512.0..544.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "08_reveal.svg",
+          "message": "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+        },
+        {
+          "file": "09_summary.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "09_summary.svg",
+          "message": "<text> (x=56, y=282; text='법정 점검 5년, 서울 1년(발표).…') exceeds <g id=\"col0\"> data-pptx-bounds on the horizontal axis: content (56.0, 267.6)-(340.9, 331.9), container (56.0, 168.0)-(330.0, 348.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈19.0 px per mixed char at 17px incl. headroom; ≈14 chars fit in 274 px"
+        },
+        {
+          "file": "09_summary.svg",
+          "message": "<text> (x=848, y=508; text='전국 지자체가 쓸 탐사형 PV5 (1…') exceeds <g id=\"keynum\"> data-pptx-bounds on the horizontal axis: content (848.0, 495.2)-(1271.0, 513.2), container (56.0, 398.0)-(1224.0, 518.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.1 px per mixed char at 15px incl. headroom; ≈77 chars fit in 1168 px"
+        },
+        {
+          "file": "10_solution.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "11_field.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "12_pv5_lab.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "12_pv5_lab.svg",
+          "message": "<text> (x=866, y=238; text='적재는 순정 액세서리 장착 시 · 장…') exceeds <g id=\"spec\"> data-pptx-bounds on the horizontal axis: content (866.0, 225.2)-(1247.5, 243.2), container (696.0, 150.0)-(1224.0, 580.0), overflow horizontal 4.4%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.3 px per mixed char at 15px incl. headroom; ≈34 chars fit in 528 px"
+        },
+        {
+          "file": "12_pv5_lab.svg",
+          "message": "<text> (x=56, y=682; text='출처: 기아 PV5 카고 카탈로그(2…') exceeds <g id=\"source\"> data-pptx-bounds on the horizontal axis: content (56.0, 671.0)-(1282.0, 686.5), container (56.0, 668.0)-(1224.0, 688.0), overflow horizontal 5.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈11.0 px per mixed char at 13px incl. headroom; ≈105 chars fit in 1168 px"
+        },
+        {
+          "file": "13_why_pv5.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): kit:fill None -> '#4B5563'; kit:font-size None -> '15'; text[58]:fill '#4B5563' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "13_why_pv5.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "13_why_pv5.svg",
+          "message": "<text> (x=950, y=482; text='같은 차에서 현장 재확인 (ST1 4…') exceeds <g id=\"compare\"> data-pptx-bounds on the horizontal axis: content (950.0, 468.4)-(1248.2, 487.6), container (56.0, 404.0)-(1224.0, 494.0), overflow horizontal 2.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈14.9 px per mixed char at 16px incl. headroom; ≈78 chars fit in 1168 px"
+        },
+        {
+          "file": "13_why_pv5.svg",
+          "message": "<text> (x=56, y=550; text='불리한 점 주행거리 377km는 스타…') exceeds <g id=\"kit\"> data-pptx-bounds on the horizontal axis: content (56.0, 537.2)-(1248.8, 555.2), container (56.0, 512.0)-(1224.0, 556.0), overflow horizontal 2.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈14.4 px per mixed char at 15px incl. headroom; ≈81 chars fit in 1168 px"
+        },
+        {
+          "file": "13_why_pv5.svg",
+          "message": "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"compare\"> x=56.0, y=460.0..482.0, 2 lines; <g id=\"compare\"> x=652.0, y=460.0..482.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "14_verify.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "15_economics.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "15_economics.svg",
+          "message": "<text> (x=56, y=542; text='6,600km = 하루 30km × …') exceeds <g id=\"cost\"> data-pptx-bounds on the horizontal axis: content (56.0, 529.2)-(643.3, 547.2), container (56.0, 262.0)-(616.0, 562.0), overflow horizontal 4.9%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈13.3 px per mixed char at 15px incl. headroom; ≈41 chars fit in 560 px"
+        },
+        {
+          "file": "15_economics.svg",
+          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"now\"> x=900.0, y=214.0..236.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "16_players.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "16_players.svg",
+          "message": "Detected 6 paragraph-like line run(s) split across sibling <text> elements (<g id=\"who0\"> x=56.0, y=268.0..292.0, 2 lines; <g id=\"who1\"> x=456.0, y=268.0..292.0, 2 lines; <g id=\"who2\"> x=856.0, y=268.0..292.0, 2 lines; +3 more). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "17_entry.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "18_close.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+        },
+        {
+          "file": "18_close.svg",
+          "message": "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+        }
+      ]
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {},
+    "fonts": {},
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 18,
+    "totals": {
+      "text_elements": 559,
+      "image_placements": 17,
+      "icons": 0,
+      "svg_geometry_elements": 201,
+      "preset_shapes": 0,
+      "page_frame_elements": 10,
+      "marker_uses": 0,
+      "inline_emphasis_runs": 32,
+      "gradient_uses": 11,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 12,
+      "icons": 0,
+      "presets": 0,
+      "charts": 0,
+      "tables": 0,
+      "formulas": 0,
+      "inline_emphasis_runs": 9,
+      "gradient_uses": 6,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": null,
+    "geometry_elements": {
+      "circle": 18,
+      "ellipse": 1,
+      "line": 47,
+      "path": 0,
+      "polygon": 1,
+      "polyline": 0,
+      "rect": 134
+    },
+    "preset_names": {},
+    "native_objects": {
+      "chart": 0,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 0
+    },
+    "image_page_max_frame_share_range": [
+      0.0419,
+      1.0
+    ]
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_open.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/01_open.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 7,
+          "images": {
+            "placements": 1,
+            "files": [
+              "story_trip.jpg"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 2,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 7,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "66d22ca3d4f40eecd45e66ee119239d81a4ddfdc526895693c299ee06ee9272f"
+    },
+    {
+      "file": "02_incident.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/02_incident.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): title:font-size None -> '40'; text[24]:font-size '40' -> None; text[25]:font-size '40' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "<text> (x=712, y=690; text='지도 © OpenStreetMap c…') exceeds <g id=\"incident-map\"> data-pptx-bounds on the horizontal axis: content (712.0, 679.8)-(1283.3, 694.2), container (680.0, 0.0)-(1280.0, 720.0), overflow horizontal 0.5%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈9.8 px per mixed char at 12px incl. headroom; ≈60 chars fit in 600 px",
+        "<text> (x=56, y=278; text='100여 일 뒤, 도로가 무너졌습니다') exceeds <g id=\"title\"> data-pptx-bounds on the horizontal axis: content (56.0, 244.0)-(686.9, 292.0), container (56.0, 168.0)-(679.0, 304.0), overflow horizontal 1.3%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈39.4 px per mixed char at 40px incl. headroom; ≈15 chars fit in 623 px"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 24,
+          "images": {
+            "placements": 1,
+            "files": [
+              "yeonhui_crop.png"
+            ],
+            "max_frame_share": 0.4688
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 2,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 24,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "6ac9d39e769edb6553608e0948036fed3e8c2d3017b72f461acf49d702973dab"
+    },
+    {
+      "file": "03_current.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/03_current.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 40,
+          "images": {
+            "placements": 1,
+            "files": [
+              "gpr_handheld_road.jpg"
+            ],
+            "max_frame_share": 0.1535
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 6,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 40,
+        "tspan_elements": 2
+      },
+      "passed": true,
+      "source_sha256": "c9a79d79520e6742a0dfecb33d24bd497f9b517e6bd62c6de9d32eb5c5b909f7"
+    },
+    {
+      "file": "04_blindspot.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/04_blindspot.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "<text> (x=784, y=310; text='9곳은 그사이 복구, 다시 잰 21곳…') exceeds <g id=\"evidence\"> data-pptx-bounds on the horizontal axis: content (784.0, 296.4)-(1237.7, 315.6), container (784.0, 168.0)-(1224.0, 560.0), overflow horizontal 3.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.6 px per mixed char at 16px incl. headroom; ≈28 chars fit in 440 px",
+        "<text> (x=784, y=572; text='2022~2026.6 · 찾은 뒤에도…') exceeds <g id=\"evidence\"> data-pptx-bounds on the vertical axis: content (784.0, 559.2)-(1216.1, 577.2), container (784.0, 168.0)-(1224.0, 560.0), overflow horizontal 0.0%, vertical 4.4% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"evidence\"> x=784.0, y=288.0..310.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 35,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 9,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 35,
+        "tspan_elements": 5
+      },
+      "passed": true,
+      "source_sha256": "9723ff87473925285c8eab3fbeb917ccf9d73dc1188b1c3b7a3a66d110ed1f9b"
+    },
+    {
+      "file": "05_target.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/05_target.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 27,
+          "images": {
+            "placements": 1,
+            "files": [
+              "ug_section_cut.png"
+            ],
+            "max_frame_share": 0.2826
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 10,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 27,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "40e359ff975fcfbad13625fdfa5b357c59c03432cb190be53cd348188f107147"
+    },
+    {
+      "file": "06_q_more.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/06_q_more.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "<text> (x=64, y=584; text='출처: 서울시 「지반침하 특별점검 공…') exceeds <g id=\"story-text\"> data-pptx-bounds on the horizontal axis: content (64.0, 573.0)-(787.0, 588.5), container (64.0, 150.0)-(764.0, 590.0), overflow horizontal 3.3%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈11.9 px per mixed char at 13px incl. headroom; ≈59 chars fit in 700 px",
+        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"story-text\"> x=64.0, y=220.0..280.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate.",
+        "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 10,
+          "images": {
+            "placements": 1,
+            "files": [
+              "story_traffic.jpg"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 2,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 10,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "8269c7a3772b1da107aad962b5581a58b696f4d5466cfe530b8cfb4b15f44a9b"
+    },
+    {
+      "file": "07_q_diff.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/07_q_diff.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"story-text\"> x=64.0, y=322.0..386.0, 2 lines; <g id=\"story-text\"> x=64.0, y=466.0..498.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate.",
+        "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 8,
+          "images": {
+            "placements": 1,
+            "files": [
+              "story_jongno.jpg"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 2,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 8,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "a52434555a46d1878cec41f69f0813bf6f6cfdff9b210dcda6b2f750e671f88e"
+    },
+    {
+      "file": "08_reveal.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/08_reveal.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"story-text\"> x=64.0, y=512.0..544.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate.",
+        "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 9,
+          "images": {
+            "placements": 1,
+            "files": [
+              "cover_hangang.jpg"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 2,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 9,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "2b5cf16fdef871781449ec83b2774e7c667775a41886ba1e0fd4becf818bf315"
+    },
+    {
+      "file": "09_summary.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/09_summary.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "<text> (x=56, y=282; text='법정 점검 5년, 서울 1년(발표).…') exceeds <g id=\"col0\"> data-pptx-bounds on the horizontal axis: content (56.0, 267.6)-(340.9, 331.9), container (56.0, 168.0)-(330.0, 348.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈19.0 px per mixed char at 17px incl. headroom; ≈14 chars fit in 274 px",
+        "<text> (x=848, y=508; text='전국 지자체가 쓸 탐사형 PV5 (1…') exceeds <g id=\"keynum\"> data-pptx-bounds on the horizontal axis: content (848.0, 495.2)-(1271.0, 513.2), container (56.0, 398.0)-(1224.0, 518.0), overflow horizontal 4.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.1 px per mixed char at 15px incl. headroom; ≈77 chars fit in 1168 px"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 35,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 10,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 35,
+        "tspan_elements": 8
+      },
+      "passed": true,
+      "source_sha256": "9f0a2741fccb5d4ad8b50fb7d58598025820f377a63ebf90c38c0af968200d34"
+    },
+    {
+      "file": "10_solution.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/10_solution.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 56,
+          "images": {
+            "placements": 3,
+            "files": [
+              "sim_cur.png",
+              "sim_diff.png",
+              "sim_prev.png"
+            ],
+            "max_frame_share": 0.0727
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 15,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 56,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "0f5a4a3ec40aa6fae30cbcd9fdd57e5242f575b2374b7d37521c523a98a32045"
+    },
+    {
+      "file": "11_field.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/11_field.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 36,
+          "images": {
+            "placements": 2,
+            "files": [
+              "ivi_car_dash.png",
+              "kr_road_ar.png"
+            ],
+            "max_frame_share": 0.2091
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 5,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 6,
+              "ellipse": 1,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 1,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 36,
+        "tspan_elements": 5
+      },
+      "passed": true,
+      "source_sha256": "ae2aa7146bd3f1c6b8c2bff7dd6469f20c065256b186b2bdb8ceac44be3f3a86"
+    },
+    {
+      "file": "12_pv5_lab.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/12_pv5_lab.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "<text> (x=866, y=238; text='적재는 순정 액세서리 장착 시 · 장…') exceeds <g id=\"spec\"> data-pptx-bounds on the horizontal axis: content (866.0, 225.2)-(1247.5, 243.2), container (696.0, 150.0)-(1224.0, 580.0), overflow horizontal 4.4%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.3 px per mixed char at 15px incl. headroom; ≈34 chars fit in 528 px",
+        "<text> (x=56, y=682; text='출처: 기아 PV5 카고 카탈로그(2…') exceeds <g id=\"source\"> data-pptx-bounds on the horizontal axis: content (56.0, 671.0)-(1282.0, 686.5), container (56.0, 668.0)-(1224.0, 688.0), overflow horizontal 5.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈11.0 px per mixed char at 13px incl. headroom; ≈105 chars fit in 1168 px"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 42,
+          "images": {
+            "placements": 1,
+            "files": [
+              "cutaway_nowheel.png"
+            ],
+            "max_frame_share": 0.2348
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 4,
+              "ellipse": 0,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 42,
+        "tspan_elements": 4
+      },
+      "passed": true,
+      "source_sha256": "df87ac2c50d1f09337d7d64b1d18bdfd6ea2acd1eddc699fc3214d041b1fd9d7"
+    },
+    {
+      "file": "13_why_pv5.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/13_why_pv5.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): kit:fill None -> '#4B5563'; kit:font-size None -> '15'; text[58]:fill '#4B5563' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "<text> (x=950, y=482; text='같은 차에서 현장 재확인 (ST1 4…') exceeds <g id=\"compare\"> data-pptx-bounds on the horizontal axis: content (950.0, 468.4)-(1248.2, 487.6), container (56.0, 404.0)-(1224.0, 494.0), overflow horizontal 2.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈14.9 px per mixed char at 16px incl. headroom; ≈78 chars fit in 1168 px",
+        "<text> (x=56, y=550; text='불리한 점 주행거리 377km는 스타…') exceeds <g id=\"kit\"> data-pptx-bounds on the horizontal axis: content (56.0, 537.2)-(1248.8, 555.2), container (56.0, 512.0)-(1224.0, 556.0), overflow horizontal 2.1%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈14.4 px per mixed char at 15px incl. headroom; ≈81 chars fit in 1168 px",
+        "Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id=\"compare\"> x=56.0, y=460.0..482.0, 2 lines; <g id=\"compare\"> x=652.0, y=460.0..482.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 41,
+          "images": {
+            "placements": 3,
+            "files": [
+              "pv5_side_real.png"
+            ],
+            "max_frame_share": 0.0419
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 6,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 41,
+        "tspan_elements": 7
+      },
+      "passed": true,
+      "source_sha256": "2c0d045a5aea8bc42b19332db294602036e29186801dafe088df7a3194efb445"
+    },
+    {
+      "file": "14_verify.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/14_verify.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 52,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 12,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 52,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "e1318ef541f7105c7c636496277cd709152bd2fa07d26793a7fa3afdeb6c5212"
+    },
+    {
+      "file": "15_economics.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/15_economics.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "<text> (x=56, y=542; text='6,600km = 하루 30km × …') exceeds <g id=\"cost\"> data-pptx-bounds on the horizontal axis: content (56.0, 529.2)-(643.3, 547.2), container (56.0, 262.0)-(616.0, 562.0), overflow horizontal 4.9%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈13.3 px per mixed char at 15px incl. headroom; ≈41 chars fit in 560 px",
+        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"now\"> x=900.0, y=214.0..236.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 42,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 8,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 42,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "6a155b3fe4a04c6fd052de2947041726002981cc73854fe05bc047144b73b908"
+    },
+    {
+      "file": "16_players.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/16_players.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "Detected 6 paragraph-like line run(s) split across sibling <text> elements (<g id=\"who0\"> x=56.0, y=268.0..292.0, 2 lines; <g id=\"who1\"> x=456.0, y=268.0..292.0, 2 lines; <g id=\"who2\"> x=856.0, y=268.0..292.0, 2 lines; +3 more). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 41,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 41,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "284199e80be23d89c221948e974694c4ff912a2ca5281b3f0d66ef5da1446dfe"
+    },
+    {
+      "file": "17_entry.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/17_entry.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 47,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 8,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 9,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 47,
+        "tspan_elements": 8
+      },
+      "passed": true,
+      "source_sha256": "679d561e67eb24bfd98a6fdd7af1cdfeb8809099896d372fb111d230b65e43d9"
+    },
+    {
+      "file": "18_close.svg",
+      "path": "/Users/seohogyun/Documents/git_workspace/pv5-hose-lab/groundwatch/projects/deck_v7_20261025/svg_output/18_close.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, 'Malgun Gothic', sans-serif",
+        "1 ungrouped top-level Slide-local element(s) in svg_output (<rect id=\"story-bg\">); group only logical content units in a top-level <g id=\"...\">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as \"background\" or \"decoration\""
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 7,
+          "images": {
+            "placements": 1,
+            "files": [
+              "story_trip.jpg"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 2,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, 'Malgun Gothic', sans-serif"
+        ],
+        "text_elements": 7,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "655343d892162803f69fa462059a85a09ca0a605d682fd6d3e80160b162bd9fd"
+    }
+  ]
+}
